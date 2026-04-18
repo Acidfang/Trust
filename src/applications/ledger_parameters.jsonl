@@ -1,7 +1,0 @@
-{"parameter_id": "coherence_threshold", "name": "Coherence Threshold", "type": "float", "range": [0.0, 1.0], "default": 0.7, "user_tunable": true, "description": "Minimum coherence level required for election acceptance"}
-{"parameter_id": "election_speed_ms", "name": "Election Speed", "type": "integer", "range": [10, 5000], "default": 100, "unit": "milliseconds", "user_tunable": true, "description": "Time interval between elections"}
-{"parameter_id": "allow_backtracking", "name": "Allow Backtracking", "type": "boolean", "default": true, "user_tunable": true, "description": "Whether ARIA can revise previous decisions"}
-{"parameter_id": "user_influence_weight", "name": "User Influence Weight", "type": "float", "range": [0.0, 1.0], "default": 0.5, "user_tunable": true, "description": "How much user preferences influence ARIA's decisions"}
-{"parameter_id": "coherence_decay_rate", "name": "Coherence Decay Rate", "type": "float", "range": [0.0, 0.1], "default": 0.01, "user_tunable": true, "description": "Rate at which coherence naturally degrades"}
-{"parameter_id": "manifestation_enabled", "name": "Enable Manifestation", "type": "boolean", "default": false, "user_tunable": true, "description": "Whether ARIA decisions produce real-world output"}
-{"parameter_id": "prediction_lookahead", "name": "Prediction Depth", "type": "integer", "range": [1, 20], "default": 5, "user_tunable": true, "description": "How many elections ahead to simulate"}

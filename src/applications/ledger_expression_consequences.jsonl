@@ -1,7 +1,0 @@
-# ledger_expression_consequences.jsonl - Validation of expressions against reality
-# Records whether expressions were validated or falsified by subsequent events
-# Created: 2026-03-29T00:00:00Z
-# Append-only: True
-# ZEROPOINT: True
-{"timestamp": 1774753104.5254529, "event_type": "validation", "elected": "true", "utilities": {"coherence_maintained": true, "measure": {"before": 0.82, "after": 0.81}}}
-{"timestamp": 1774753120.396096, "event_type": "validation", "elected": "true", "utilities": {"coherence_maintained": true, "measure": {"before": 0.82, "after": 0.81}}}

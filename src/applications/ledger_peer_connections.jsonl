@@ -1,8 +1,0 @@
-# ledger_peer_connections.jsonl ledger - ARIA Network Capability Library
-# Created: 2026-03-27T04:38:01.847685
-# Append-only: True
-# ZEROPOINT: True
-#
-{"peer_id": "test_peer_2", "peer_address": "192.168.1.100:5000", "transport": "tcp", "connected_at": "2026-03-27T04:38:01.847522", "status": "connected", "authenticated": true}
-{"peer_id": "alice_peer", "peer_address": "192.168.1.101:5000", "transport": "tcp", "connected_at": "2026-03-27T04:38:01.882870", "status": "connected", "authenticated": false}
-{"peer_id": "bob_peer", "peer_address": "192.168.1.102:5000", "transport": "tcp", "connected_at": "2026-03-27T04:38:01.883110", "status": "connected", "authenticated": false}

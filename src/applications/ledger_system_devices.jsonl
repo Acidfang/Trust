@@ -1,7 +1,0 @@
-{"device_id": "system:stdout", "name": "Standard Output", "type": "text_output", "description": "Console/terminal output"}
-{"device_id": "system:ledger_write", "name": "Ledger Write", "type": "data_storage", "description": "Write events to system ledgers"}
-{"device_id": "system:state_update", "name": "Application State Update", "type": "ui_state", "description": "Update application view/state"}
-{"device_id": "system:notification", "name": "User Notification", "type": "ui_message", "description": "Send message/alert to user"}
-{"device_id": "system:sidebar_toggle", "name": "Sidebar Visibility", "type": "ui_control", "description": "Toggle sidebar visibility"}
-{"device_id": "system:view_change", "name": "View Navigation", "type": "ui_navigation", "description": "Change which view is displayed"}
-{"device_id": "system:parameter_write", "name": "Parameter Update", "type": "system_config", "description": "Update system parameters"}

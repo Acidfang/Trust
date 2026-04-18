@@ -1,6 +1,0 @@
-{"election_type": "navigate", "target_device": "system:view_change", "description": "Navigate to a different view"}
-{"election_type": "toggle_sidebar", "target_device": "system:sidebar_toggle", "description": "Toggle sidebar visibility"}
-{"election_type": "parameter_change", "target_device": "system:parameter_write", "description": "Update a system parameter"}
-{"election_type": "state_update", "target_device": "system:state_update", "description": "Update application state"}
-{"election_type": "input_event", "target_device": "system:ledger_write", "description": "Record user input to ledger"}
-{"election_type": "notification", "target_device": "system:notification", "description": "Send notification to user"}

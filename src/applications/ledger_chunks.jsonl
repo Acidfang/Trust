@@ -1,5 +1,0 @@
-{"timestamp": "2026-03-29T20:09:47.376562", "filepath": "test_parallel_binary.bin", "chunk_number": 0, "position_bytes": 0, "size_bytes": 512, "hash": "7ecda305aa440c457635b56cea0540dbf87bb52ee0b87dc2980a9de26e33eabe"}
-{"timestamp": "2026-03-29T20:09:47.377127", "filepath": "test_parallel_binary.bin", "chunk_number": 1, "position_bytes": 512, "size_bytes": 512, "hash": "9399f3a0b55f1e439d59ca07fe953b8814278d67c48c24789f2993af243f9401"}
-{"timestamp": "2026-03-29T20:09:47.377557", "filepath": "test_parallel_binary.bin", "chunk_number": 2, "position_bytes": 1024, "size_bytes": 512, "hash": "f2cff87da73579c28ac32f338af3c5388355b819c9e24574a3655eb8f536c728"}
-{"timestamp": "2026-03-29T20:09:47.378029", "filepath": "test_parallel_binary.bin", "chunk_number": 3, "position_bytes": 1536, "size_bytes": 512, "hash": "6d2a1953df8befd69865272135e8b4c15948b3998df781fdd44d2b34d0cd72ea"}
-{"timestamp": "2026-03-29T20:09:47.378257", "filepath": "test_parallel_binary.bin", "chunk_number": 4, "position_bytes": 2048, "size_bytes": 52, "hash": "e6f5b3970b23945c94240f281b2e199c03a0d80bad6aa07d95a4292ea2e3350f"}

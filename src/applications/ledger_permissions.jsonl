@@ -1,6 +1,0 @@
-# ledger_permissions.jsonl ledger - ARIA Multiuser Capability Library
-# Created: 2026-03-27T04:38:01.837962
-# Append-only: True
-# ZEROPOINT: True
-#
-{"grantor_id": "user:admin", "grantee_id": "user:alice", "resource_id": "resource:doc1", "permission_level": "edit", "scope": "resource", "granted_at": "2026-03-27T04:38:01.837672"}

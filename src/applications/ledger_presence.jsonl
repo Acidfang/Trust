@@ -1,8 +1,0 @@
-# ledger_presence.jsonl ledger - ARIA Multiuser Capability Library
-# Created: 2026-03-27T04:38:01.838844
-# Append-only: True
-# ZEROPOINT: True
-#
-{"user_id": "user:alice", "session_id": "sess_user:alice_abc123", "status": "online", "last_activity": "office", "location": null, "updated_at": "2026-03-27T04:38:01.838464"}
-{"user_id": "user:alice", "session_id": "sess_alice", "status": "online", "last_activity": "2026-03-27T04:38:01.894752", "location": null, "updated_at": "2026-03-27T04:38:01.894754"}
-{"user_id": "user:bob", "session_id": "sess_bob", "status": "online", "last_activity": "2026-03-27T04:38:01.894976", "location": null, "updated_at": "2026-03-27T04:38:01.894980"}

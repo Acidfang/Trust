@@ -1,7 +1,0 @@
-# test_user/provide_feedback ledger - User Capability Library
-# Created: 2026-03-27T17:17:13.498291
-# Append-only: True
-# ZEROPOINT: True
-#
-{"timestamp": "2026-03-27T17:17:13.498676", "user_id": "test_user", "operation": "provide_feedback", "elapsed_ms": "0.01", "result": "{'operation': 'provide_feedback', 'feedback': 'Excellent dark theme!', 'target': 'theme_selection', ", "success": true}
-{"timestamp": "2026-03-27T17:17:19.331678", "user_id": "test_user", "operation": "provide_feedback", "elapsed_ms": "0.01", "result": "{'operation': 'provide_feedback', 'feedback': 'Excellent dark theme!', 'target': 'theme_selection', ", "success": true}

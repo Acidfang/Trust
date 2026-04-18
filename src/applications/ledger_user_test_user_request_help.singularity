@@ -1,7 +1,0 @@
-# test_user/request_help ledger - User Capability Library
-# Created: 2026-03-27T17:17:13.497682
-# Append-only: True
-# ZEROPOINT: True
-#
-{"timestamp": "2026-03-27T17:17:13.498144", "user_id": "test_user", "operation": "request_help", "elapsed_ms": "0.01", "result": "{'operation': 'request_help', 'topic': 'coherence_metric', 'context': 'coherence_dashboard', 'timest", "success": true}
-{"timestamp": "2026-03-27T17:17:19.331477", "user_id": "test_user", "operation": "request_help", "elapsed_ms": "0.01", "result": "{'operation': 'request_help', 'topic': 'coherence_metric', 'context': 'coherence_dashboard', 'timest", "success": true}

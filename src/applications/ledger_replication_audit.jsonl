@@ -1,7 +1,0 @@
-# ledger_replication_audit.jsonl ledger - ARIA Network Capability Library
-# Created: 2026-03-27T04:38:01.848187
-# Append-only: True
-# ZEROPOINT: True
-#
-{"state_id": "state:doc1", "strategy": "full", "target_peers": ["test_peer_2"], "sent_at": "2026-03-27T04:38:01.848005", "bytes_sent": 44, "status": "sent"}
-{"state_id": "state:doc1", "strategy": "full", "target_peers": ["bob_peer"], "sent_at": "2026-03-27T04:38:01.887747", "bytes_sent": 41, "status": "sent"}

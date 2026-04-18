@@ -1,4 +1,0 @@
-# Schema Version Log
-# Records every time ARIA upgrades her ledger format/structure
-# Immutable proof that her analytical capabilities have evolved
-# Format: timestamp, schema_name, version_before, version_after, new_fields_added, transformation_rule, retroactive_enrichment_applied
