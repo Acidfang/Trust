@@ -1,28 +1,372 @@
-# Auto-generated framework index with system mappings
+# Comprehensive Framework Index with Interactive Learning Integration
+# Each framework includes: basics, real examples, visualizations, comparisons, case studies
+
 frameworks:
+  # ====================
+  # FOUNDATION FRAMEWORKS
+  # ====================
+  
+  - name: universal-foundation
+    title: "Universal Foundation: dℹ/dt = -∇Φ"
+    short_description: "The single law governing all coherent systems"
+    full_description: "Every coherent system in existence—from electrons to economies—evolves by flowing downhill in potential energy. This is the foundation of everything."
+    path: framework/universal-foundation
+    readme: framework/universal-foundation/README.md
+    difficulty: intermediate
+    time_estimate: "2-3 hours for mastery"
+    
+    # Real-world examples showing this principle
+    real_examples:
+      - name: "Physical Particle"
+        domain: physics
+        description: "Electron orbiting nucleus"
+        baseline: "Electron falls into stable orbital (lowest potential)"
+        improvement: "Show how orbital energy relates to Φ, quantum tunneling as escape from local minimum"
+        
+      - name: "Chemical Reaction"
+        domain: chemistry
+        description: "Reactants forming products"
+        baseline: "Molecules arrange into lower-energy configuration"
+        improvement: "Interactive energy diagram showing reaction coordinate, activation barrier, product stability"
+        
+      - name: "Biological Folding"
+        domain: biology
+        description: "Protein folding into 3D structure"
+        baseline: "Protein folds to minimize free energy"
+        improvement: "Animated 3D model showing how chain folding reduces potential, misfolding consequences"
+        
+      - name: "Learning & Memory"
+        domain: psychology
+        description: "Neural connections strengthening"
+        baseline: "Repeated experience lowers activation energy for synaptic firing"
+        improvement: "Show Hebbian learning as minimizing prediction error (potential)"
+        
+      - name: "Market Equilibrium"
+        domain: economics
+        description: "Price settling at supply-demand intersection"
+        baseline: "Market converges to price where supply = demand"
+        improvement: "Interactive market simulator showing price discovery as gradient descent"
+        
+      - name: "Social Stability"
+        domain: sociology
+        description: "Communities organizing around shared values"
+        baseline: "Groups form around minimal-conflict configurations"
+        improvement: "Show polarization as multiple potential wells, consensus as single well"
+    
+    # Interactive tools for this framework
+    interactive_tools:
+      - tool: potential-landscape-explorer
+        type: visualization + manipulation
+        description: "Adjust potential shape, watch system flow downhill"
+        real_example: "Harmonic potential vs double-well vs custom"
+        
+      - tool: energy-minimization-simulator
+        type: interactive simulation
+        description: "See gradient descent in action"
+        real_example: "Ball rolling downhill in different landscapes"
+        
+      - tool: domain-mapper
+        type: interactive comparison
+        description: "See how dℹ/dt = -∇Φ appears in different domains"
+        real_example: "Select domain, see equivalent formulation"
+    
+    domains: [physics, chemistry, biology, psychology, economics, sociology, AI, medicine]
+    files:
+      - FOUNDATION.md
+      - MATHEMATICS.md
+      - UNIVERSAL_APPLICATION.md
+      - Demo.py
+    has_demo: true
+    has_interactive: true
+    systems: [all-domains]
+    
+  # ====================
+  # APPLIED FRAMEWORKS  
+  # ====================
+  
   - name: cosmology-reversal
     title: "Cosmology Reversal Module"
-    description: "Using the universal physics foundation's single evolution law:"
+    short_description: "Understanding history by reversing time's arrow"
+    full_description: "Using the universal law, we can reverse-engineer how systems evolve backward in time, revealing the deep structure of causality."
     path: framework/cosmology-reversal
     readme: framework/cosmology-reversal/README.md
+    difficulty: advanced
+    time_estimate: "3-4 hours"
+    
+    real_examples:
+      - name: "Universe Expansion Reversal"
+        domain: cosmology
+        description: "Tracing universe back to Big Bang"
+        baseline: "Run Einstein equations backward, time reversal symmetry"
+        improvement: "Interactive timeline showing particle creation, recombination, inflation phases"
+        
+      - name: "Ecosystem Evolution Reversal"
+        domain: biology
+        description: "Reconstructing ancient ecosystems"
+        baseline: "Use fossil record + evolutionary law to trace back"
+        improvement: "Animated ecosystem reconstruction, species interactions over time"
+        
+      - name: "Historical Event Analysis"
+        domain: history
+        description: "Understanding how current tensions originated"
+        baseline: "Trace geopolitical tensions backward to root causes"
+        improvement: "Interactive historical simulator, what-if scenarios"
+    
+    interactive_tools:
+      - tool: timeline-reversal-viewer
+        type: visualization
+        description: "Watch complex system evolution in reverse"
+        
+      - tool: causality-tracer
+        type: interactive exploration
+        description: "Trace events backward to first cause"
+    
+    domains: [cosmology, biology, history, archaeology, economics]
     files:
       - CosmologyReversal.py
       - Demo.py
       - README.md
+      - HISTORICAL_APPLICATIONS.md
     has_demo: true
-    has_tests: false
-    systems: [cosmology, temporal, gravitational, reversal]
+    has_interactive: true
+    systems: [temporal, gravitational, evolutionary]
     
-  - name: universal-physics
-    title: "Universal Physics Engine"
-    description: "All coherent physical systems obey this single law. This engine implements it."
-    path: framework/universal-physics
-    readme: framework/universal-physics/README.md
+  - name: help-systems-framework
+    title: "Universal Help Systems Framework"
+    short_description: "The structure of all systems that help people grow"
+    full_description: "Therapists, teachers, parents, and coaches all use the same invisible architecture. Understanding it makes helping more effective."
+    path: framework/help-systems
+    readme: framework/help-systems/README.md
+    difficulty: beginner-to-intermediate
+    time_estimate: "1-2 hours"
+    
+    real_examples:
+      - name: "Classroom Teaching"
+        domain: education
+        description: "Teacher guiding students to mastery"
+        baseline: "Gradual release of responsibility model"
+        improvement: "Interactive classroom simulator, adjust autonomy level, see learning outcomes"
+        
+      - name: "Therapy Sessions"
+        domain: psychology
+        description: "Therapist helping client heal"
+        baseline: "CBT progression from guided to self-directed"
+        improvement: "Case study viewer showing session progression, autonomy growth over time"
+        
+      - name: "Parenting Stages"
+        domain: family
+        description: "Parent supporting child development"
+        baseline: "Stages from dependent to independent"
+        improvement: "Interactive parenting decision tree, alignment with child's autonomy level"
+        
+      - name: "Athletic Coaching"
+        domain: sports
+        description: "Coach developing athlete skills"
+        baseline: "Scaffolding from demonstration to independent performance"
+        improvement: "Training progression simulator, individualized coaching paths"
+        
+      - name: "Software Onboarding"
+        domain: technology
+        description: "Team member learning new codebase"
+        baseline: "Guided tours → pair programming → independent work"
+        improvement: "Interactive onboarding journey, personalized learning tracks"
+    
+    interactive_tools:
+      - tool: help-system-designer
+        type: interactive builder
+        description: "Design a help system for any domain"
+        
+      - tool: autonomy-level-matcher
+        type: decision tree
+        description: "What autonomy level matches this person's current state?"
+        
+      - tool: progression-tracker
+        type: progress visualization
+        description: "Track transitions from Guided → Supported → Autonomous"
+    
+    domains: [education, psychology, parenting, coaching, management, onboarding]
     files:
-      - ARCHITECTURE.md
-      - Demo.js
-      - README.md
-      - package.json
+      - HELP_SYSTEMS_FRAMEWORK.md
+      - LEVELS_EXPLAINED.md
+      - Demo.py
+      - CASE_STUDIES.md
     has_demo: true
-    has_tests: true
-    systems: [photon, electron, atom, molecule, cell, galaxy]
+    has_interactive: true
+    systems: [learning, growth, support]
+    
+  - name: cosmic-eras
+    title: "The Cosmic Eras Framework"
+    short_description: "History as progressive sophistication of consciousness"
+    full_description: "From quantum plasma to conscious AI: each era shows new organizational principles emerging. Understanding the pattern helps predict what's next."
+    path: framework/cosmic-eras
+    readme: framework/cosmic-eras/README.md
+    difficulty: beginner
+    time_estimate: "1 hour"
+    
+    real_examples:
+      - name: "From Atoms to Cells"
+        domain: biology
+        description: "How chemistry became life"
+        baseline: "Molecular organization → self-replicating systems"
+        improvement: "Animated progression showing exactly when life-like properties emerge"
+        
+      - name: "From Individuals to Societies"
+        domain: sociology
+        description: "How consciousness became collective"
+        baseline: "Individual agency → group dynamics → cultural institutions"
+        improvement: "Interactive society builder, see how institutions emerge from simple rules"
+        
+      - name: "From Neurons to Thought"
+        domain: neuroscience
+        description: "How firing patterns become consciousness"
+        baseline: "Neural activity → emergent cognition"
+        improvement: "Interactive neural network that develops its own learning rules"
+    
+    interactive_tools:
+      - tool: cosmic-timeline
+        type: interactive timeline
+        description: "Explore each era, see emergence of new properties"
+        
+      - tool: era-characteristics-comparer
+        type: comparison matrix
+        description: "Compare organization principles across eras"
+        
+      - tool: emergence-simulator
+        type: simulation
+        description: "Watch complexity emerge from simple rules"
+    
+    domains: [cosmology, biology, history, sociology, neuroscience, technology]
+    files:
+      - ERAS_OVERVIEW.md
+      - EACH_ERA_DETAILED.md
+      - Demo.py
+      - EMERGENCE_PATTERNS.md
+    has_demo: true
+    has_interactive: true
+    systems: [evolution, emergence, organization]
+    
+  # ====================
+  # SPECIALIZED FRAMEWORKS
+  # ====================
+  
+  - name: binary-computing-logic
+    title: "Binary Computing Logic & Self-Verification"
+    short_description: "Pure computational logic that verifies itself"
+    full_description: "In computing domain (unlike physics), you can think any system and verify its coherence purely through logic, without external reference."
+    path: framework/binary-computing
+    readme: framework/binary-computing/README.md
+    difficulty: intermediate
+    time_estimate: "2 hours"
+    
+    real_examples:
+      - name: "State Machine Design"
+        domain: computer-science
+        description: "Design AND verify a state machine"
+        baseline: "Standard state machine theory"
+        improvement: "Interactive state machine builder with automatic verification"
+        
+      - name: "Logic Circuit Design"
+        domain: electrical-engineering
+        description: "Design combinational logic"
+        baseline: "Boolean algebra, truth tables"
+        improvement: "Interactive circuit simulator, automatic coherence checking"
+        
+      - name: "Protocol Verification"
+        domain: distributed-systems
+        description: "Verify distributed algorithm correctness"
+        baseline: "Message sequences, proof of correctness"
+        improvement: "Interactive protocol designer, automatic deadlock detection"
+    
+    interactive_tools:
+      - tool: state-machine-verifier
+        type: interactive builder + verifier
+        description: "Design states, transitions, automatically check coherence"
+        
+      - tool: logic-simulator
+        type: visual simulator
+        description: "See computing logic in action"
+        
+      - tool: coherence-checker
+        type: automatic analysis
+        description: "Verify system logic is consistent"
+    
+    domains: [computer-science, logic, formal-verification]
+    files:
+      - BINARY_LOGIC_EXPLAINED.md
+      - STATE_MACHINES.md
+      - VERIFICATION_PATTERNS.md
+      - Demo.py
+    has_demo: true
+    has_interactive: true
+    systems: [logic, computation, verification]
+    
+  # ====================
+  # TEACHING & REFERENCE
+  # ====================
+  
+  - name: domain-explorer
+    title: "Cross-Domain Explorer"
+    short_description: "See how same principle appears everywhere"
+    full_description: "Most powerful learning: recognize the SAME pattern appearing in physics, biology, psychology, economics, AI simultaneously."
+    path: tools/domain-explorer
+    readme: tools/domain-explorer/README.md
+    difficulty: beginner-to-advanced
+    time_estimate: "Varies by exploration depth"
+    
+    interactive_tools:
+      - tool: domain-mapper
+        type: faceted search
+        description: "Pick concept, see all domain manifestations"
+        
+      - tool: pattern-matcher
+        type: visual comparison
+        description: "Side-by-side comparison across domains"
+        
+      - tool: example-gallery
+        type: browsable collection
+        description: "Browse 100+ real examples organized by domain"
+    
+    has_interactive: true
+    
+  - name: comparison-framework
+    title: "Framework Comparison Tool"
+    short_description: "How frameworks relate and compare"
+    full_description: "Not all frameworks apply equally to all domains. This tool shows which frameworks best explain which domains."
+    path: tools/comparison
+    readme: tools/comparison/README.md
+    difficulty: beginner
+    time_estimate: "30 minutes"
+    
+    interactive_tools:
+      - tool: framework-domain-matrix
+        type: interactive matrix
+        description: "Rows=frameworks, columns=domains, strength of fit"
+        
+      - tool: framework-ranking
+        type: scoring visualizer
+        description: "For YOUR specific domain, which framework explains best?"
+        
+      - tool: framework-combinations
+        type: multi-select explorer
+        description: "What combo of frameworks needed for complex system?"
+    
+    has_interactive: true
+    
+  - name: quick-reference
+    title: "Quick Reference Cards"
+    short_description: "One-page summaries for quick lookup"
+    full_description: "Laminate and carry: essential equations, key examples, decision trees."
+    path: tools/quick-reference
+    readme: tools/quick-reference/README.md
+    difficulty: beginner
+    time_estimate: "5-10 minutes per card"
+    
+    cards:
+      - "Universal Foundation Equation"
+      - "Help Systems Levels"
+      - "Cosmic Eras Progression"
+      - "Domain Mapper"
+      - "Coherence Checklist"
+    
+    has_interactive: true
+    printable: true
