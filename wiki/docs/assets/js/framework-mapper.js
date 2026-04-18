@@ -3,20 +3,53 @@
  * 
  * Renders the framework map as an interactive network diagram.
  * Shows how all systems connect through the universal law.
+ * 
+ * TIER 1 (Input): Validates mapData structure
+ * TIER 2 (Compute): Calculates node positions
+ * TIER 3 (Output): Renders SVG visualization
+ * TIER 4 (Verify): Validates rendered output and interactions
  */
 
 function initializeFrameworkMap(mapData) {
+  // TIER 1: Validate input data structure
   if (!mapData || !mapData.nodes || !mapData.edges) {
-    console.error('Invalid map data');
+    console.error('[TIER 1 FAIL] Invalid map data structure');
+    return;
+  }
+  
+  if (!Array.isArray(mapData.nodes) || !Array.isArray(mapData.edges)) {
+    console.error('[TIER 1 FAIL] Nodes and edges must be arrays');
+    return;
+  }
+  
+  for (const node of mapData.nodes) {
+    if (!node.id || !node.label) {
+      console.error('[TIER 1 FAIL] Node missing id or label:', node);
+      return;
+    }
+  }
+  
+  for (const edge of mapData.edges) {
+    if (!edge.source || !edge.target) {
+      console.error('[TIER 1 FAIL] Edge missing source or target:', edge);
+      return;
+    }
+  }
+  
+  console.log('[TIER 1 OK] Input data structure validated');
+
+  // TIER 2: Calculate positions
+  const container = document.getElementById('mapper-canvas');
+  if (!container) {
+    console.error('[TIER 2 FAIL] mapper-canvas container not found');
     return;
   }
 
-  const container = document.getElementById('mapper-canvas');
-  if (!container) return;
-
-  // Set canvas size
   const width = container.offsetWidth || 800;
   const height = 500;
+  
+  const positions = calculatePositions(mapData.nodes, mapData.edges, width, height);
+  console.log('[TIER 2 OK] Positions calculated for ' + mapData.nodes.length + ' nodes');
 
   // Create SVG
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -41,12 +74,12 @@ function initializeFrameworkMap(mapData) {
   defs.appendChild(marker);
   svg.appendChild(defs);
 
-  // Calculate positions using simple force-directed algorithm
-  const positions = calculatePositions(mapData.nodes, mapData.edges, width, height);
+  console.log('[TIER 3] Starting SVG rendering...');
 
   // Draw edges first (so they appear behind nodes)
   const g_edges = document.createElementNS('http://www.w3.org/2000/svg', 'g');
   g_edges.setAttribute('class', 'edges');
+  g_edges.setAttribute('id', 'edges-group');
   
   for (const edge of mapData.edges) {
     const x1 = positions[edge.source].x;
@@ -63,14 +96,34 @@ function initializeFrameworkMap(mapData) {
     line.setAttribute('stroke-width', edge.isUniversal ? '2' : '1');
     line.setAttribute('opacity', '0.6');
     line.setAttribute('marker-end', 'url(#arrowhead)');
+    line.setAttribute('class', 'edge-line');
     
+    // Add hover effect data
     if (edge.label) {
-      line.setAttribute('title', edge.label);
+      line.setAttribute('data-systems', edge.label);
+      line.setAttribute('title', 'Shared: ' + edge.label);
     }
+    
+    // Add hover interactivity
+    line.addEventListener('mouseenter', function() {
+      this.setAttribute('opacity', '1');
+      this.setAttribute('stroke-width', edge.isUniversal ? '3' : '2');
+      if (edge.label) {
+        showEdgeLabel(x1, y1, x2, y2, edge.label);
+      }
+    });
+    
+    line.addEventListener('mouseleave', function() {
+      this.setAttribute('opacity', '0.6');
+      this.setAttribute('stroke-width', edge.isUniversal ? '2' : '1');
+      hideEdgeLabel();
+    });
     
     g_edges.appendChild(line);
   }
   svg.appendChild(g_edges);
+  
+  console.log('[TIER 3] Rendered ' + mapData.edges.length + ' edges');
 
   // Draw nodes
   const g_nodes = document.createElementNS('http://www.w3.org/2000/svg', 'g');
@@ -107,7 +160,7 @@ function initializeFrameworkMap(mapData) {
     text.setAttribute('font-weight', node.isCenter ? 'bold' : 'normal');
     text.setAttribute('fill', 'white');
     text.setAttribute('pointer-events', 'none');
-    text.textContent = node.isCenter ? 'Universal Law' : node.label.split(' ')[0];
+    text.textContent = node.isCenter ? 'Universal Law' : truncateLabel(node.label, 12);
     
     g_nodes.appendChild(text);
 
@@ -173,4 +226,101 @@ if (typeof window !== 'undefined' && window.frameworkMapData) {
   document.addEventListener('DOMContentLoaded', () => {
     initializeFrameworkMap(window.frameworkMapData);
   });
+}
+
+/**
+ * TIER 4: Verify rendered SVG visualization
+ */
+function verifyRenderedVisualization(svg, mapData) {
+  console.log('[TIER 4] Verifying rendered visualization...');
+  let verified = true;
+  
+  // Check SVG exists and has content
+  if (!svg || !mapData) {
+    console.error('[TIER 4 FAIL] SVG or mapData missing');
+    return false;
+  }
+  
+  // Check all nodes are rendered
+  const renderedNodes = svg.querySelectorAll('circle.framework-node');
+  if (renderedNodes.length !== mapData.nodes.length) {
+    console.warn('[TIER 4 WARN] Expected ' + mapData.nodes.length + ' nodes, found ' + renderedNodes.length);
+  }
+  
+  // Check all edges are rendered
+  const renderedEdges = svg.querySelectorAll('line.edge-line');
+  if (renderedEdges.length !== mapData.edges.length) {
+    console.warn('[TIER 4 WARN] Expected ' + mapData.edges.length + ' edges, found ' + renderedEdges.length);
+  }
+  
+  // Check nodes have labels
+  const labels = svg.querySelectorAll('text');
+  if (labels.length < mapData.nodes.length) {
+    console.error('[TIER 4 FAIL] Not all nodes have labels');
+    verified = false;
+  }
+  
+  // Check SVG has reasonable dimensions
+  const width = svg.getAttribute('width');
+  const height = svg.getAttribute('height');
+  if (!width || !height || parseInt(width) < 100 || parseInt(height) < 100) {
+    console.error('[TIER 4 FAIL] SVG has invalid dimensions');
+    verified = false;
+  }
+  
+  if (verified) {
+    console.log('[TIER 4 OK] All rendered elements verified');
+  } else {
+    console.error('[TIER 4 FAIL] Verification found issues');
+  }
+  
+  return verified;
+}
+
+/**
+ * Helper: Show edge label on hover
+ */
+function showEdgeLabel(x1, y1, x2, y2, label) {
+  if (document.getElementById('edge-label-tooltip')) {
+    hideEdgeLabel();
+  }
+  
+  const tooltip = document.createElement('div');
+  tooltip.id = 'edge-label-tooltip';
+  tooltip.style.position = 'fixed';
+  tooltip.style.background = '#333';
+  tooltip.style.color = '#fff';
+  tooltip.style.padding = '4px 8px';
+  tooltip.style.borderRadius = '3px';
+  tooltip.style.fontSize = '0.75rem';
+  tooltip.style.pointerEvents = 'none';
+  tooltip.style.zIndex = '1000';
+  tooltip.style.whiteSpace = 'nowrap';
+  tooltip.textContent = 'Shared systems: ' + label;
+  
+  const midX = (x1 + x2) / 2;
+  const midY = (y1 + y2) / 2;
+  tooltip.style.left = (midX + 10) + 'px';
+  tooltip.style.top = (midY - 20) + 'px';
+  
+  document.body.appendChild(tooltip);
+}
+
+/**
+ * Helper: Hide edge label tooltip
+ */
+function hideEdgeLabel() {
+  const tooltip = document.getElementById('edge-label-tooltip');
+  if (tooltip) {
+    tooltip.remove();
+  }
+}
+
+/**
+ * Helper: Truncate long labels for space
+ */
+function truncateLabel(label, maxLen) {
+  if (!label) return '';
+  if (label.length <= maxLen) return label;
+  return label.substring(0, maxLen - 3) + '...';
 }

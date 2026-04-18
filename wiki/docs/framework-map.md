@@ -17,36 +17,37 @@ This law describes how any coherent system evolves. The frameworks below show di
 
 The visualization below shows:
 - **Red central node**: The universal evolution law itself
-- **Green/Blue nodes**: Individual frameworks
+- **Green/Blue nodes**: Individual frameworks  
 - **Red connections**: Links to the universal law (all frameworks obey it)
-- **Purple connections**: Shared systems between frameworks
+- **Gray connections**: Shared systems between frameworks
 
-<div id="mapper-container" class="framework-mapper-container"></div>
+<div id="mapper-container" class="framework-mapper-container">
+  <div id="mapper-canvas" style="width: 100%; min-height: 500px;"></div>
+</div>
 
-## How to Read the Map
-
-1. **Central Node (Red)**: Represents the universal law `dℹ/dt = -∇Φ` that all frameworks follow
-2. **Framework Nodes**: Each colored circle represents a framework module
-3. **Arrows**: Show relationships and connections between frameworks
-4. **Click Nodes**: Click any framework node to view its detailed documentation
-
-## Framework Connections
-
-The frameworks connect through shared understanding of:
-
-- **Quantum Systems**: Electrons, atoms, and their behavior
-- **Classical Systems**: Molecules, cells, and biological structures  
-- **Gravitational Systems**: Galaxies, binary systems, and cosmology
-- **Temporal Dynamics**: How systems evolve forward and can be reversed in time
-
+<script>
+  // Load framework map data and render
+  fetch('/assets/data/framework-map.json')
+    .then(response => response.json())
+    .then(data => {
+      // Extract visualization nodes and edges
+      const visualization = data.visualization || { nodes: data.nodes || [], edges: data.edges || [] };
+      if (window.initializeFrameworkMap) {
+        window.initializeFrameworkMap(visualization);
+      } else {
+        console.error('Framework mapper not loaded');
+      }
+    })
+    .catch(err => console.error('Failed to load framework map:', err));
+</script>
 ## Universal Systems Covered
 
-{% assign all_systems = site.data.frameworks.frameworks | map: 'systems' | join: ', ' | split: ', ' | uniq %}
+Based on the frameworks in this project, the visualization includes these system categories:
 
 - **Physics**: Photons, electrons, electromagnetic waves
 - **Chemistry**: Atoms, molecules, chemical bonds
 - **Biology**: Cells, organisms, life systems
-- **Cosmology**: Galaxies, gravitational systems, the universe
+- **Cosmology**: Galaxies, gravitational systems, the universe  
 - **Temporal**: Time-reversible systems, origin finding
 
 ## The Frameworks
@@ -59,23 +60,46 @@ The foundational framework that implements the universal law. It can model any c
 2. Computing the gradient ∇Φ
 3. Integrating the evolution equation
 
-**Systems modeled**: Photons, electrons, atoms, molecules, cells, galaxies
+**Systems modeled**: Photons, Electrons, Atoms, Molecules, Cells, Galaxies
 
-**Key insight**: All these vastly different systems obey the same mathematical law.
+**Location**: [framework/universal-physics/](../framework/universal-physics/)
 
 ### Cosmology Reversal Module
 
-Applies time-reversal to the universal law by flipping the sign:
+Uses the universal physics foundation's single evolution law to time-reverse galaxy trajectories and find the origin point where all matter originated.
 
-$$\frac{d\mathbf{i}}{dt} = +\nabla\Phi(\mathbf{x}, t) \text{ (reversed)}$$
+**Systems modeled**: Cosmology, Temporal dynamics, Gravitational systems, Reversal mechanics
 
-This allows us to:
+**Location**: [framework/cosmology-reversal/](../framework/cosmology-reversal/)
 
-1. Start with observed galaxy positions
-2. Reverse-integrate back in time
-3. Find the initial diffusion point (origin)
+## How to Read the Map
 
-**Verification**: Time-reversibility proven through ODE integration
+1. **Central Node (Red)**: Represents the universal law `dℹ/dt = -∇Φ` that all frameworks follow
+2. **Framework Nodes**: Each colored circle represents a framework module
+3. **Arrows**: Show relationships and connections between frameworks
+4. **Click Nodes**: Click any framework node to view its detailed README
+5. **Hover Edges**: Hover over connections to see which systems are shared
+
+## Framework Connections
+
+The frameworks connect through shared understanding of:
+
+- **Quantum Systems**: Electrons, atoms, and their behavior
+- **Classical Systems**: Molecules, cells, and biological structures
+- **Gravitational Systems**: Galaxies, binary systems, and cosmology
+- **Temporal Dynamics**: How systems evolve forward and can be reversed in time
+
+## Scale Coverage
+
+These frameworks model physical systems across an enormous range:
+
+- **Smallest**: Photons (~10⁻¹⁰ meters)
+- **Intermediate**: Atoms (~10⁻⁹ m), Molecules (~10⁻⁹ m), Cells (~10⁻⁵ m)
+- **Largest**: Galaxies (~10¹⁹ m), Universe (~10²⁶ m)
+
+- **Smallest**: Photons (~10⁻¹⁰ meters)
+- **Intermediate**: Atoms (~10⁻⁹ m), Molecules (~10⁻⁹ m), Cells (~10⁻⁵ m)
+- **Largest**: Galaxies (~10¹⁹ m), Universe (~10²⁶ m)
 
 ## The Unification Principle
 
@@ -94,21 +118,6 @@ Yet the same law `dℹ/dt = -∇Φ` applies to all of them.
 ---
 
 <script src="{{ '/assets/js/framework-mapper.js' | relative_url }}"></script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Load frameworks data and initialize mapper
-    fetch('{{ "/assets/data/framework-map.json" | relative_url }}')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.getElementById('mapper-container');
-        if (container && data.visualization) {
-          initializeFrameworkMap(data.visualization);
-        }
-      })
-      .catch(err => console.log('Framework map data not available (static version)', err));
-  });
-</script>
 
 <style>
 .framework-mapper-container {
@@ -130,4 +139,5 @@ Yet the same law `dℹ/dt = -∇Φ` applies to all of them.
   font-size: 0.9rem;
   margin-top: 1rem;
 }
+</style>
 </style>
