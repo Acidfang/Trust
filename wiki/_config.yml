@@ -50,6 +50,20 @@ google_analytics: ""
 source: .
 destination: _site
 exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - DEPLOYMENT.md
+  - .gitignore
+  - .bundle/
+  - vendor/
+
+# GitHub Pages specific settings
+safe: true
+lsi: false
+future: false
+destination: _site
+exclude:
   - .gitignore
   - Gemfile
   - Gemfile.lock

@@ -36,7 +36,7 @@ jobs:
     - name: Build Jekyll site
       working-directory: './wiki'
       run: |
-        bundle exec jekyll build -V
+        bundle exec jekyll build -d _site -V --baseurl '/Trust'
     
     - name: Configure Git
       run: |
@@ -48,5 +48,8 @@ jobs:
       if: success()
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./wiki/_site
+        cname: ""
+        force_orphan: false
         publish_dir: ./wiki/_site
         force_orphan: true
