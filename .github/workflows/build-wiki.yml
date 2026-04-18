@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
@@ -22,15 +22,19 @@ jobs:
         bundler-cache: true
         working-directory: './wiki'
     
+    - name: Install Jekyll
+      working-directory: './wiki'
+      run: |
+        gem install jekyll bundler
+        bundle install
+    
     - name: Build Jekyll site
       working-directory: './wiki'
       run: |
-        bundle install
-        bundle exec jekyll build
+        bundle exec jekyll build -V
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./wiki/_site
-        cname: determined-trust.github.io
