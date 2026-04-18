@@ -1,0 +1,36 @@
+name: Build and Deploy Wiki
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'wiki/**'
+      - '.github/workflows/build-wiki.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
+        bundler-cache: true
+        working-directory: './wiki'
+    
+    - name: Build Jekyll site
+      working-directory: './wiki'
+      run: |
+        bundle install
+        bundle exec jekyll build
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./wiki/_site
+        cname: determined-trust.github.io
