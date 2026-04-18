@@ -17,7 +17,7 @@ plugins:
 collections:
   docs:
     output: true
-    permalink: /:collection/:name/
+    permalink: /:name/
 
 # Defaults
 defaults:
@@ -27,6 +27,13 @@ defaults:
     values:
       layout: "page"
       toc: true
+  - scope:
+      path: "docs"
+    values:
+      layout: "default"
+
+# Post defaults (for pages in docs)
+permalink: /:basename/
 
 # Site URL for GitHub Pages
 url: "https://acidfang.github.io"
