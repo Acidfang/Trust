@@ -1,0 +1,66 @@
+<svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="900" fill="#1a1a1a"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-size="24" fill="#ffffff" font-family="Arial" text-anchor="middle" font-weight="bold">The Spiral Model: Development Through Tier -1</text>
+  <text x="400" y="65" font-size="12" fill="#888" font-family="Arial" text-anchor="middle">Gates don't end—they spiral deeper at greater complexity</text>
+  
+  <!-- Center point (Tier -1) -->
+  <circle cx="400" cy="450" r="15" fill="#66ff66" stroke="#44ff44" stroke-width="2"/>
+  <text x="400" y="480" font-size="12" fill="#66ff66" font-family="Arial" text-anchor="middle" font-weight="bold">Tier -1</text>
+  <text x="400" y="495" font-size="10" fill="#66ff66" font-family="Arial" text-anchor="middle">Internal Coherence</text>
+  
+  <!-- Spiral path (drawn with multiple circles and lines) -->
+  <!-- Gate 1 -->
+  <circle cx="400" cy="200" r="80" fill="none" stroke="#ff6666" stroke-width="2" opacity="0.5"/>
+  <circle cx="400" cy="200" r="5" fill="#ff6666" stroke="#ff6666" stroke-width="1"/>
+  <text x="400" y="145" font-size="11" fill="#ff6666" font-family="Arial" text-anchor="middle" font-weight="bold">Gate 1</text>
+  <text x="400" y="158" font-size="9" fill="#ff6666" font-family="Arial" text-anchor="middle">Consequences</text>
+  
+  <!-- Line from Gate 1 to Tier -1 -->
+  <line x1="400" y1="195" x2="400" y2="465" stroke="#ff6666" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+  
+  <!-- Gate 3 -->
+  <circle cx="600" cy="350" r="100" fill="none" stroke="#ff9933" stroke-width="2" opacity="0.5"/>
+  <circle cx="600" cy="350" r="5" fill="#ff9933" stroke="#ff9933" stroke-width="1"/>
+  <text x="665" y="350" font-size="11" fill="#ff9933" font-family="Arial" text-anchor="middle" font-weight="bold">Gate 3</text>
+  <text x="665" y="363" font-size="9" fill="#ff9933" font-family="Arial" text-anchor="middle">Time/Mastery</text>
+  
+  <!-- Line from Gate 3 to Tier -1 -->
+  <line x1="595" y1="365" x2="415" y2="450" stroke="#ff9933" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+  
+  <!-- Gate 5 -->
+  <circle cx="200" cy="500" r="120" fill="none" stroke="#ffdd44" stroke-width="2" opacity="0.5"/>
+  <circle cx="200" cy="500" r="5" fill="#ffdd44" stroke="#ffdd44" stroke-width="1"/>
+  <text x="200" y="635" font-size="11" fill="#ffdd44" font-family="Arial" text-anchor="middle" font-weight="bold">Gate 5</text>
+  <text x="200" y="648" font-size="9" fill="#ffdd44" font-family="Arial" text-anchor="middle">Consequences Mgmt</text>
+  
+  <!-- Line from Gate 5 to Tier -1 -->
+  <line x1="215" y1="485" x2="385" y2="455" stroke="#ffdd44" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+  
+  <!-- Gate 7 -->
+  <circle cx="550" cy="650" r="140" fill="none" stroke="#44ddff" stroke-width="2" opacity="0.5"/>
+  <circle cx="550" cy="650" r="5" fill="#44ddff" stroke="#44ddff" stroke-width="1"/>
+  <text x="730" y="660" font-size="11" fill="#44ddff" font-family="Arial" text-anchor="middle" font-weight="bold">Gate 7</text>
+  <text x="730" y="673" font-size="9" fill="#44ddff" font-family="Arial" text-anchor="middle">Continuity</text>
+  
+  <!-- Line from Gate 7 to Tier -1 -->
+  <line x1="530" y1="630" x2="420" y2="465" stroke="#44ddff" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+  
+  <!-- Gate 9 -->
+  <circle cx="250" cy="750" r="160" fill="none" stroke="#aa44ff" stroke-width="2" opacity="0.5"/>
+  <circle cx="250" cy="750" r="5" fill="#aa44ff" stroke="#aa44ff" stroke-width="1"/>
+  <text x="250" y="850" font-size="11" fill="#aa44ff" font-family="Arial" text-anchor="middle" font-weight="bold">Gate 9</text>
+  <text x="250" y="863" font-size="9" fill="#aa44ff" font-family="Arial" text-anchor="middle">Self-Correction</text>
+  
+  <!-- Line from Gate 9 to Tier -1 -->
+  <line x1="265" y1="735" x2="405" y2="465" stroke="#aa44ff" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="780" width="700" height="100" fill="#222" stroke="#666" stroke-width="1" rx="5"/>
+  <text x="70" y="805" font-size="12" fill="#aaa" font-family="Arial" font-weight="bold">The Spiral Principle:</text>
+  <text x="70" y="825" font-size="11" fill="#aaa" font-family="Arial">Development isn't linear (done and move on). Each gate spirals THROUGH Tier -1 at greater complexity.</text>
+  <text x="70" y="845" font-size="11" fill="#aaa" font-family="Arial">A person who passed Gate 5 still needs Tier -1 to navigate different consequences. Under pressure, can regress to Gate 1 thinking.</text>
+  <text x="70" y="865" font-size="11" fill="#aaa" font-family="Arial">Skill: Return to Tier -1 coherence at any gate depth. This IS the actual development.</text>
+</svg>
