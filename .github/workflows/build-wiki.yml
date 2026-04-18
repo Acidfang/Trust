@@ -11,9 +11,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
     
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
@@ -33,8 +38,15 @@ jobs:
       run: |
         bundle exec jekyll build -V
     
+    - name: Configure Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+    
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v4
+      if: success()
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./wiki/_site
+        force_orphan: true
