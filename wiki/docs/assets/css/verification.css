@@ -1,0 +1,111 @@
+/* UFM Verification Panel - "Determined to be Correct" */
+
+.verification-panel {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.08) 0%, rgba(76, 175, 80, 0.03) 100%);
+  border-left: 4px solid #4CAF50;
+  border-radius: 6px;
+  padding: 1.2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.1);
+}
+
+body.dark-mode .verification-panel {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(76, 175, 80, 0.08) 100%);
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.2);
+}
+
+.verification-panel h3,
+.verification-panel h4 {
+  color: #2E7D32;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+body.dark-mode .verification-panel h3,
+body.dark-mode .verification-panel h4 {
+  color: #81C784;
+}
+
+.verification-panel p {
+  color: #555;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+body.dark-mode .verification-panel p {
+  color: #aaa;
+}
+
+.verification-item {
+  background: #f5f9f7;
+  border-left: 3px solid #4CAF50;
+  padding: 0.8rem;
+  margin: 0.6rem 0;
+  border-radius: 4px;
+}
+
+body.dark-mode .verification-item {
+  background: #1e3a2f;
+  border-left-color: #81C784;
+}
+
+.verification-item strong {
+  color: #2E7D32;
+  font-weight: 600;
+}
+
+body.dark-mode .verification-item strong {
+  color: #81C784;
+}
+
+.verification-badge {
+  display: inline-block;
+  background: #E8F5E9;
+  color: #2E7D32;
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+body.dark-mode .verification-badge {
+  background: #2E5F4E;
+  color: #81C784;
+}
+
+.verification-tiers {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+body.dark-mode .verification-tiers {
+  color: #999;
+}
+
+.verification-note {
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
+body.dark-mode .verification-note {
+  color: #999;
+}
+
+/* Checkmark styles */
+.verified-checkmark {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+
+body.dark-mode .verified-checkmark {
+  color: #81C784;
+}

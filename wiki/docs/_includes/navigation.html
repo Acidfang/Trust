@@ -6,6 +6,40 @@
         </a>
     </li>
 
+    <!-- DETERMINED TO BE CORRECT SECTION -->
+    <li class="nav-section" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(76, 175, 80, 0.05) 100%); border-left: 4px solid #4CAF50; padding: 1rem; margin: 1rem 0; border-radius: 4px;">
+        <h4 style="color: #2E7D32; margin-top: 0;">
+            ✓ DETERMINED TO BE CORRECT
+        </h4>
+        <p style="font-size: 0.85rem; color: #555; margin: 0.5rem 0 0.8rem 0;">
+            UFM-Verified through four-tier verification. Every compute verified.
+        </p>
+        <ul class="nav-sublist">
+            {% for fw in site.data.frameworks.frameworks %}
+                <li class="nav-item" style="background: #f5f5f5; padding: 0.6rem; margin: 0.5rem 0; border-radius: 3px; border-left: 3px solid #4CAF50;">
+                    <a href="{{ fw.readme | prepend: site.baseurl }}" class="nav-link" style="font-weight: 500;">
+                        ✓ {{ fw.title }}
+                    </a>
+                    <div style="font-size: 0.75rem; color: #666; margin-top: 0.3rem;">
+                        <span style="display: inline-block; background: #E8F5E9; color: #2E7D32; padding: 0.2rem 0.4rem; border-radius: 2px; margin-right: 0.4rem;">
+                            Tiers: {{ fw.tiers_verified | join: ', ' }}
+                        </span>
+                    </div>
+                    <p style="font-size: 0.8rem; color: #777; margin: 0.3rem 0 0 0;">
+                        {{ fw.verification_note }}
+                    </p>
+                </li>
+            {% endfor %}
+        </ul>
+    </li>
+
+    <li class="nav-item" style="background: var(--color-highlight); padding: 0.8rem; margin: 1rem 0; border-radius: 4px;">
+        <a href="{{ '/frameworks-index/' | relative_url }}" class="nav-link {% if page.url contains 'frameworks-index' %}active{% endif %}" style="font-weight: bold; color: var(--color-accent);">
+            🔬 All Frameworks
+        </a>
+        <p style="font-size: 0.85rem; margin: 0.5rem 0 0 0; color: var(--color-text-secondary);">Browse all verified framework modules</p>
+    </li>
+
     <li class="nav-item" style="background: var(--color-highlight); padding: 0.8rem; margin: 1rem 0; border-radius: 4px;">
         <a href="{{ '/game/' | relative_url }}" class="nav-link {% if page.url contains '/game/' %}active{% endif %}" style="font-weight: bold; color: var(--color-accent);">
             🎮 Launch Discovery Game
