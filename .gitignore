@@ -337,6 +337,9 @@ wiki_assets/
 # Exception: Include wiki/docs (needed for GitHub Pages)
 !wiki/docs/
 
+# Exception: Include universal physics engine (core framework)
+!framework/universal-physics/
+
 # Legacy/research files
 00_START_HERE.md
 PHASE_4_COMPLETE.md
