@@ -1,24 +1,25 @@
+# Auto-generated framework index
 frameworks:
-- name: cosmology-reversal
-  title: Cosmology Reversal Module
-  description: Time-Reverse Galaxy Trajectories to Find Origin Point
-  path: framework/cosmology-reversal
-  readme: framework/cosmology-reversal/README.md
-  key_files:
-  - add_galaxy(galaxy)
-  - add_black_hole(bh)
-  - reverse_integrate(galaxy, time_steps)
-  - reverse_all(time_steps, threshold)
-  - compute_black_hole_mass_balance()
-  has_demo: true
-  has_tests: false
-- name: universal-physics
-  title: Universal Physics Engine
-  description: ONE EQUATION. INFINITE SYSTEMS.
-  path: framework/universal-physics
-  readme: framework/universal-physics/README.md
-  key_files: []
-  has_demo: true
-  has_tests: true
-generated_at: '2026-04-19T00:21:52.919054'
-count: 2
+  - name: cosmology-reversal
+    title: "Cosmology Reversal Module"
+    description: "Using the universal physics foundation's single evolution law:"
+    path: framework/cosmology-reversal
+    readme: framework/cosmology-reversal/README.md
+    files:
+      - CosmologyReversal.py
+      - Demo.py
+      - README.md
+    has_demo: true
+    has_tests: false
+  - name: universal-physics
+    title: "Universal Physics Engine"
+    description: "All coherent physical systems obey this single law. This engine implements it."
+    path: framework/universal-physics
+    readme: framework/universal-physics/README.md
+    files:
+      - ARCHITECTURE.md
+      - Demo.js
+      - README.md
+      - package.json
+    has_demo: true
+    has_tests: true
