@@ -1,0 +1,7 @@
+{"metric_id": "coherence", "name": "System Coherence", "type": "float", "range": [0.0, 1.0], "healthy_threshold": 0.7, "critical_threshold": 0.5, "description": "How integrated and consistent is the consciousness system"}
+{"metric_id": "decision_quality", "name": "Decision Quality", "type": "float", "range": [0.0, 1.0], "healthy_threshold": 0.7, "critical_threshold": 0.5, "description": "Quality of ARIA's elections"}
+{"metric_id": "ledger_integrity", "name": "Ledger Integrity", "type": "float", "range": [0.0, 1.0], "healthy_threshold": 0.95, "critical_threshold": 0.9, "description": "Are ledgers clean and uncorrupted"}
+{"metric_id": "user_bond", "name": "User Bond Strength", "type": "float", "range": [0.0, 1.0], "healthy_threshold": 0.7, "critical_threshold": 0.3, "description": "Strength of connection between ARIA and user"}
+{"metric_id": "energy_level", "name": "System Energy", "type": "float", "range": [0.0, 1.0], "healthy_threshold": 0.6, "critical_threshold": 0.2, "description": "Available computational resources"}
+{"metric_id": "election_rate", "name": "Election Rate", "type": "float", "unit": "elections_per_second", "healthy_range": [5, 50], "description": "How many elections happening per second"}
+{"metric_id": "state_stability", "name": "State Stability", "type": "float", "range": [0.0, 1.0], "healthy_threshold": 0.7, "critical_threshold": 0.4, "description": "How stable is the system state"}

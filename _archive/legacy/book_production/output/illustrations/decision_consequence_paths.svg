@@ -1,0 +1,82 @@
+<svg width="1000" height="800" xmlns="http://www.w3.org/2000/svg">
+<defs>
+
+        <style>
+            /* State styling - color encodes resolution status */
+            circle[data-state] { 
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            circle[data-state]:hover {
+                filter: brightness(1.2);
+            }
+            
+            /* Path styling - line type encodes choice consequence */
+            path[data-choice="A"] { /* Continue unexamined */
+                stroke: #DC143C;
+                marker-end: url(#markerA);
+            }
+            path[data-choice="B"] { /* Engage honestly */
+                stroke: #228B22;
+                marker-end: url(#markerB);
+            }
+            path[data-choice="C"] { /* Avoid */
+                stroke: #FF8C00;
+                marker-end: url(#markerC);
+                stroke-dasharray: 5,5;
+            }
+            
+            /* Entry marker styling - size/color encodes weight */
+            rect[data-marker]:hover { opacity: 1 !important; }
+            
+            /* Coherence field - gradient shows potential energy */
+            .coherence-field {
+                filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+            }
+            
+            text { font-family: 'Segoe UI', sans-serif; }
+        </style>
+        
+        <marker id="markerA" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#DC143C" />
+        </marker>
+        <marker id="markerB" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#228B22" />
+        </marker>
+        <marker id="markerC" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#FF8C00" />
+        </marker>
+        
+</defs>
+<text x="500" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">Decision Consequence Paths: How Choices Lead to Different Outcomes</text>
+<circle cx="100" cy="200" r="40" fill="#8B0000" opacity="0.7" class="state-T-1.1" data-state="T-1.1" />
+<text x="100" y="200" text-anchor="middle" dy="0.3em" transform="translate(100,200)">T-1.1</text>
+<path d="M 100,200 L 250,350" fill="none" stroke="#DC143C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-choice="A" data-consequence="tension_increase" stroke-dasharray="2,2" />
+<polygon points="250,350 240,345 240,355" fill="#DC143C" />
+<circle cx="250" cy="350" r="50" fill="#8B0000" opacity="0.8" class="state-loop-A1" data-state="loop-A1" />
+<text x="250" y="350" text-anchor="middle" dy="0.3em" transform="translate(250,350)">Tension Increases</text>
+<path d="M 250,350 Q 200.0,350 150,450" fill="none" stroke="#DC143C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-choice="A" data-consequence="loop_back" stroke-dasharray="2,2" />
+<polygon points="150,450 140,445 140,455" fill="#DC143C" />
+<circle cx="150" cy="450" r="60" fill="#8B0000" opacity="0.9" class="state-loop-A2" data-state="loop-A2" />
+<text x="150" y="450" text-anchor="middle" dy="0.3em" transform="translate(150,450)">Pattern Repeats</text>
+<path d="M 100,200 L 500,350" fill="none" stroke="#228B22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-choice="B" data-consequence="resolution" />
+<polygon points="500,350 490,345 490,355" fill="#228B22" />
+<circle cx="500" cy="350" r="40" fill="#8B0000" opacity="0.7" class="state-T-1.2" data-state="T-1.2" />
+<text x="500" y="350" text-anchor="middle" dy="0.3em" transform="translate(500,350)">T-1.2</text>
+<path d="M 500,350 L 500,500" fill="none" stroke="#228B22" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" data-choice="B" data-consequence="resolution" />
+<polygon points="500,500 490,495 490,505" fill="#228B22" />
+<circle cx="500" cy="500" r="30" fill="#006400" opacity="0.9" class="state-resolved" data-state="resolved" />
+<text x="500" y="500" text-anchor="middle" dy="0.3em" transform="translate(500,500)">RESOLVED</text>
+<path d="M 100,200 L 800,350" fill="none" stroke="#FF8C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-choice="C" data-consequence="deferred" stroke-dasharray="5,5" />
+<polygon points="800,350 790,345 790,355" fill="#FF8C00" />
+<circle cx="800" cy="350" r="40" fill="#8B0000" opacity="0.7" class="state-tier-0" data-state="tier-0" />
+<text x="800" y="350" text-anchor="middle" dy="0.3em" transform="translate(800,350)">Tier 0 (Deferred)</text>
+<path d="M 800,350 L 700,500" fill="none" stroke="#FF8C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-choice="C" data-consequence="deferred" stroke-dasharray="5,5" />
+<polygon points="700,500 690,495 690,505" fill="#FF8C00" />
+<circle cx="700" cy="500" r="60" fill="#8B0000" opacity="0.9" class="state-conflict" data-state="conflict" />
+<text x="700" y="500" text-anchor="middle" dy="0.3em" transform="translate(700,500)">Conflict (Larger)</text>
+<text x="200" y="300" font-size="12" fill="#DC143C" font-weight="bold">A: Continue</text>
+<text x="350" y="300" font-size="12" fill="#228B22" font-weight="bold">B: Engage</text>
+<text x="650" y="300" font-size="12" fill="#FF8C00" font-weight="bold">C: Avoid</text>
+<text x="50" y="700" font-size="11" fill="#666" font-style="italic">Node size & darkness = severity/tension | Line color = consequence type | Curved line = returns to earlier state | Dashed line = cost deferred</text>
+</svg>

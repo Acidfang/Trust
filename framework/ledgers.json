@@ -1,0 +1,26 @@
+{
+  "aria": {
+    "core_log": [
+      {
+        "cycle": 1,
+        "timestamp": 1775886175,
+        "prev": 0,
+        "state": 210,
+        "delta": 210,
+        "signal": "SYSTEM_START"
+      },
+      {
+        "cycle": 2,
+        "timestamp": 1775887342,
+        "prev": 210,
+        "state": 124,
+        "delta": 174,
+        "signal": "SHUTDOWN"
+      }
+    ],
+    "memory": {
+      "(0, 210)": 1,
+      "(210, 124)": 1
+    }
+  }
+}

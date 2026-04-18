@@ -1,0 +1,3 @@
+# Question/Response Dialogue
+# ARIA listens to questions and electes responses in real-time
+# Format: timestamp, question_observed, candidates_offered, elected_response, utilities, user_validation

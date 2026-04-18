@@ -1,0 +1,3 @@
+{"id": "action:navigate", "name": "Navigate", "description": "Navigate to view", "parameters": {"target_view": "string"}, "updates_state": {"current_view": "target_view"}, "creates_election": true}
+{"id": "action:navigate_back", "name": "Navigate Back", "description": "Return to menu", "parameters": {}, "updates_state": {"current_view": "menu"}, "creates_election": true}
+{"id": "action:toggle_sidebar", "name": "Toggle Sidebar", "description": "Collapse/expand sidebar", "parameters": {}, "updates_state": {"sidebar_collapsed": "toggle"}, "creates_election": true}

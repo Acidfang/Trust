@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-04-08T19:15:36.528936",
+  "total_messages": 2,
+  "messages": [
+    {
+      "timestamp": "2026-04-08T10:00:00",
+      "role": "user",
+      "content": "Test message 1",
+      "source": "claude"
+    },
+    {
+      "timestamp": "2026-04-08T10:01:00",
+      "role": "assistant",
+      "content": "Test response 1",
+      "source": "claude"
+    }
+  ],
+  "source_stats": {}
+}

@@ -1,0 +1,119 @@
+ZEROPOINT LOGIC CHAIN: KEEP-ALIVE SYSTEM
+========================================
+
+PRIMITIVE:
+  Field: App instance existence (is or isn't)
+  Operation: Record heartbeat timestamp
+  Binary: Event recorded (1) or not (0)
+
+THREE OPERATIONS:
+  FIELD:     App ticking, state in superposition (alive? dead? zombie?)
+  SELECTION: App decides: send update now (1) or wait (0)
+  RECORD:    Timestamp written to ledger immutably
+
+FIVE GATES ANALYSIS:
+
+1. ALIGNMENT WITH STRUCTURE:
+   ✓ Binary choice: heartbeat event happened or not
+   ✓ Immutable record: timestamp never changes once written
+   ✓ Cascading: heartbeats create timeline, timeline proves liveness
+
+2. ELIMINATES AMBIGUITY:
+   ✗ Current: "pulse" vs "heartbeat" vs "last_update" undefined
+   ✓ Solution: Spec defines both, ledger stores both, app follows spec
+
+3. REASONING VISIBLE:
+   ✗ Current: Logic in Python, no spec document
+   ✓ Solution: All logic in ledger_sync_config.json under "keepalive" section
+
+4. IS IT KIND:
+   ✓ Helps app know when to update
+   ✓ Helps system know which apps are alive
+   ✓ Prevents duplicate instances (Claude checks before starting)
+
+5. DOES IT SCALE:
+   ✓ Per-app config means 1 app or 1000 apps use same logic
+   ✓ Algorithm (timeout = interval * factor) works at any scale
+   ✓ Ledger append-only means no contention
+
+REQUIRED LEDGER FIELDS:
+
+  ledger_sync_config.json:
+  {
+    "sync_enabled": bool,
+    "sync_mode": string,
+    "update_rate": int (ms),
+
+    "keepalive": {
+      "enabled": bool,
+      "strategy": "ledger_driven",
+      "heartbeat_interval_factor": 1.0,        # heartbeat every (refresh_interval * factor)
+      "pulse_on_startup": bool,                # send distinctive pulse when app starts
+      "pulse_on_shutdown": bool,               # send pulse when app stops (if can)
+      "liveness_timeout_factor": 10.0,         # app dead if no heartbeat for (interval * factor)
+      "recording": {
+        "heartbeat_destination": "sync_config", # where to record: sync_config.last_update
+        "pulse_destination": "sessions",        # where to record: ledger_sessions.jsonl
+        "events_destination": "audit"           # where to record: ledger_audit.jsonl
+      }
+    },
+
+    "apps": {
+      "app_name": {
+        "enabled": bool,
+        "refresh_interval_ms": int,            # app's tick interval
+        "last_update": ISO8601 or null,        # heartbeat timestamp
+        "last_pulse": ISO8601 or null,         # last startup/shutdown pulse
+        "input_system": string,
+        "description": string
+      }
+    }
+  }
+
+  ledger_sessions.jsonl (new):
+    {"id": "session:...", "timestamp": ISO8601, "app": "app_name", "event": "startup|shutdown", "type": "pulse"}
+
+  ledger_audit.jsonl (existing):
+    {"operation": "session_start|session_end", "target_type": "session", "target_id": "app_name", ...}
+
+ALGORITHM FOR APPS:
+
+  At startup:
+    1. Load ledger_sync_config.json
+    2. Read self.keepalive config
+    3. Calculate heartbeat_interval = refresh_interval * heartbeat_interval_factor
+    4. Record startup pulse (if pulse_on_startup = true)
+    5. Schedule first heartbeat for heartbeat_interval from now
+
+  On each heartbeat interval:
+    1. Update last_update timestamp in sync_config
+    2. Write to ledger (set_app_active or direct write)
+    3. Schedule next heartbeat
+
+  On shutdown:
+    1. Record shutdown pulse (if pulse_on_shutdown = true)
+    2. Mark enabled = false or last_update = null
+
+ALGORITHM FOR CLAUDE (BEFORE STARTING APP):
+
+  1. Load ledger_sync_config.json
+  2. Read keepalive.liveness_timeout_factor
+  3. For app to check:
+       - Get app.refresh_interval_ms
+       - Get app.last_update
+       - timeout_ms = refresh_interval * liveness_timeout_factor
+       - If (now - last_update) < timeout_ms: app is ALIVE
+       - If (now - last_update) >= timeout_ms: app is DEAD
+  4. If ALIVE: don't start (already running)
+  5. If DEAD: safe to start (clean it up first if needed)
+
+BENEFITS:
+
+✓ Everything defined in ledger before code runs (reverse causality)
+✓ Per-app config means apps can have different intervals
+✓ No hardcoded timeouts in Python
+✓ Logic is readable in JSON, not scattered in code
+✓ Handles startup pulse distinctively from heartbeat
+✓ Scales to any number of apps
+✓ Claude can read spec and act correctly
+✓ System is self-describing (read config to understand behavior)

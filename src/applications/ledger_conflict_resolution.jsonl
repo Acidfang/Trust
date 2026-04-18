@@ -1,0 +1,9 @@
+# ledger_conflict_resolution.jsonl ledger - ARIA Multiuser Capability Library
+# Created: 2026-03-27T04:38:01.846963
+# Append-only: True
+# ZEROPOINT: True
+#
+{"user_id": "user:alice", "resource_id": "resource:doc1", "edit_id": "edit_001", "conflict_count": 1, "resolved_at": "2026-03-27T04:38:01.846709"}
+{"state_id": "state:doc1", "conflicting_versions": 2, "resolution_method": "last-write-wins", "resolved_at": "2026-03-27T04:38:01.848619", "result": "success"}
+{"user_id": "user:alice", "resource_id": "resource:doc1", "edit_id": "edit_alice", "conflict_count": 0, "resolved_at": "2026-03-27T04:38:01.888136"}
+{"state_id": "state:doc1", "conflicting_versions": 2, "resolution_method": "last-write-wins", "resolved_at": "2026-03-27T04:38:01.894035", "result": "success"}

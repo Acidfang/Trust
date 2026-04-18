@@ -1,0 +1,38 @@
+======================================================================
+ENCYCLOPEDIA WEBSITE VERIFICATION REPORT
+======================================================================
+
+Generated: 2026-04-03T21:22:40.543854
+
+API TESTS
+----------------------------------------------------------------------
+✓ PASS | /api/health                    | Quality: 96.3%
+✓ PASS | /api/entities                  | Quality: 96.3%
+✓ PASS | /api/entity/Electron           | Quality: 96.4%
+✓ PASS | /api/entity/Atom               | Quality: 96.5%
+
+
+HTML VALIDATION
+----------------------------------------------------------------------
+✓ PASS | html_structure
+     ✓ has_html_tag
+     ✓ has_head_tag
+     ✓ has_body_tag
+     ✓ has_script_tags
+     ✓ has_style_tags
+     ✓ is_valid_utf8
+✗ FAIL | html_content
+     ✓ has_encyclopedia_title
+     ✓ has_entity_references
+     ✓ has_api_references
+     ✓ has_field_narratives
+     ✗ no_syntax_errors
+
+
+UFM VERIFICATION SUMMARY
+----------------------------------------------------------------------
+Total verifications: 8
+Valid: 7
+Average quality score: 84.4%
+
+======================================================================

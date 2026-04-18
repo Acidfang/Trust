@@ -1,0 +1,20 @@
+{
+  "extracted_at": "2026-04-06T19:03:09.141938",
+  "data": {
+    "indexeddb": {},
+    "local_storage": {},
+    "chrome_path": "C:\\Users\\joera\\AppData\\Local\\Google\\Chrome\\User Data\\Default",
+    "profile_exists": true,
+    "databases": {
+      "heavy_ad_intervention_opt_out.db": {
+        "tables": [
+          "previews_v1",
+          "enabled_previews_v1"
+        ],
+        "path": "C:\\Users\\joera\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\heavy_ad_intervention_opt_out.db"
+      }
+    }
+  },
+  "status": "success",
+  "error": null
+}

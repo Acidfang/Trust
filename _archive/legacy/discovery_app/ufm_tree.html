@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFM Evolutionary Tree - 313 Primitives in Causal Structure</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #0a0a0a;
+      color: #00d9ff;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+    }
+
+    #app {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER */
+    #header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      padding: 1rem 1.5rem;
+      border-bottom: 2px solid #00d9ff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #header h1 {
+      font-size: 1.5rem;
+      text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+    }
+
+    #header p {
+      font-size: 0.85rem;
+      color: #00ff00;
+      opacity: 0.8;
+    }
+
+    .header-group {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .controls {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn-control {
+      background: rgba(0, 217, 255, 0.1);
+      border: 1px solid #00d9ff;
+      color: #00d9ff;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+
+    .btn-control:hover {
+      background: rgba(0, 217, 255, 0.2);
+    }
+
+    /* CANVAS */
+    #tree-canvas {
+      flex: 1;
+      background: radial-gradient(circle at 50% 50%, #0f0f1e 0%, #0a0a0a 100%);
+      cursor: grab;
+    }
+
+    #tree-canvas:active {
+      cursor: grabbing;
+    }
+
+    /* BREADCRUMB */
+    #breadcrumb {
+      background: rgba(0, 217, 255, 0.05);
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+      font-size: 0.85rem;
+      color: #00d9ff;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .breadcrumb-item {
+      background: transparent;
+      border: none;
+      color: #00d9ff;
+      cursor: pointer;
+      text-decoration: underline;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+    }
+
+    .breadcrumb-item:hover {
+      color: #00ff00;
+    }
+
+    /* DETAIL PANEL */
+    #detail-panel {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 350px;
+      background: rgba(26, 26, 26, 0.98);
+      border-top: 2px solid #00d9ff;
+      border-left: 1px solid #00d9ff;
+      padding: 1.5rem;
+      max-height: 50vh;
+      overflow-y: auto;
+      display: none;
+      z-index: 1000;
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+    }
+
+    #detail-panel.visible {
+      display: block;
+      animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    #detail-panel h3 {
+      color: #00ff00;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #00d9ff;
+      padding-bottom: 0.5rem;
+    }
+
+    .detail-card {
+      background: rgba(0, 217, 255, 0.05);
+      border: 1px solid rgba(0, 217, 255, 0.2);
+      padding: 0.75rem;
+      margin-bottom: 0.75rem;
+      border-radius: 4px;
+    }
+
+    .detail-label {
+      color: #00d9ff;
+      font-weight: bold;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 0.3rem;
+    }
+
+    .detail-value {
+      color: #00ff00;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    .detail-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: transparent;
+      border: none;
+      color: #00d9ff;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .detail-close:hover {
+      color: #00ff00;
+    }
+
+    /* FOOTER */
+    #footer {
+      background: #1a1a1a;
+      border-top: 1px solid #00d9ff;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.8rem;
+      color: #00d9ff;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-info {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- HEADER -->
+    <div id="header">
+      <div>
+        <h1>🧬 UFM Evolutionary Tree</h1>
+        <p>313 Primitives • Causal Chains • Universal Coherence</p>
+      </div>
+      <div class="header-group">
+        <div class="controls">
+          <button class="btn-control" onclick="window.app.resetView()" title="Reset View">↺</button>
+          <button class="btn-control" onclick="window.app.togglePhysics()" title="Toggle Physics">▶</button>
+          <button class="btn-control" onclick="window.app.zoomFit()" title="Fit All">⊡</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BREADCRUMB -->
+    <div id="breadcrumb">
+      <button class="breadcrumb-item" onclick="window.app.deselect()">Root</button>
+      <span id="breadcrumb-path"></span>
+    </div>
+
+    <!-- CANVAS -->
+    <canvas id="tree-canvas"></canvas>
+
+    <!-- DETAIL PANEL -->
+    <div id="detail-panel">
+      <button class="detail-close" onclick="document.getElementById('detail-panel').classList.remove('visible')">✕</button>
+      <h3 id="detail-title">Node Info</h3>
+      <div id="detail-content"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <div class="footer-info">Click nodes to explore • Branches show causal relationships</div>
+      <div class="footer-info" id="footer-stats">Loading tree...</div>
+    </div>
+  </div>
+
+  <script>
+    // UFM EVOLUTIONARY TREE - Pure Implementation
+    // Structure: Root primitives (perfect gates) → Composed primitives → Emergent behaviors
+
+    class TreeNode {
+      constructor(primitive, level = 0) {
+        this.primitive = primitive
+        this.level = level
+        this.x = 0
+        this.y = 0
+        this.children = []
+        this.parents = []
+        this.radius = 6 + (level * 0.5)
+      }
+
+      contains(px, py, zoom) {
+        const dist = Math.sqrt((this.x - px) ** 2 + (this.y - py) ** 2)
+        return dist <= this.radius * zoom + 3
+      }
+    }
+
+    class UFMTree {
+      constructor(primitiveData) {
+        this.nodes = []
+        this.rootNodes = []
+        this.nodeMap = new Map()
+        this.primitiveData = primitiveData
+        this.buildTree()
+      }
+
+      buildTree() {
+        // Layer 0: Root primitives (perfect UFM gates)
+        const roots = [
+          { id: 'NOT', name: 'NOT', container: 'boolean', type: 'Gate', desc: 'Universal negation', level: 0 },
+          { id: 'AND', name: 'AND', container: 'boolean', type: 'Gate', desc: 'Universal conjunction', level: 0 },
+          { id: 'OR', name: 'OR', container: 'boolean', type: 'Gate', desc: 'Universal disjunction', level: 0 },
+          { id: 'XOR', name: 'XOR', container: 'boolean', type: 'Gate', desc: 'Universal difference', level: 0 }
+        ]
+
+        roots.forEach(prim => {
+          const node = new TreeNode(prim, 0)
+          this.nodes.push(node)
+          this.rootNodes.push(node)
+          this.nodeMap.set(prim.id, node)
+        })
+
+        // Layer 1-3: Derived primitives (all other base primitives)
+        const derived = [
+          ...this.primitiveData.boolean.filter(p => !roots.find(r => r.id === p.id)),
+          ...this.primitiveData.topological.slice(0, 8),
+          ...this.primitiveData.probability.slice(0, 8),
+          ...this.primitiveData.interaction.slice(0, 8)
+        ]
+
+        derived.forEach((prim, idx) => {
+          const node = new TreeNode(prim, 1 + (idx % 2))
+          this.nodes.push(node)
+          this.nodeMap.set(prim.id, node)
+
+          // Connect to random root as parent (causal link)
+          const parentIdx = idx % roots.length
+          const parentNode = this.rootNodes[parentIdx]
+          node.parents.push(parentNode)
+          parentNode.children.push(node)
+        })
+
+        // Layer 2-3: Compositions (inter-species breeding)
+        this.primitiveData.compositions.forEach((comp, idx) => {
+          const node = new TreeNode(comp, 2 + (idx % 2))
+          this.nodes.push(node)
+          this.nodeMap.set(comp.id, node)
+
+          // Connect to parent primitives
+          if (comp.parents) {
+            comp.parents.forEach(parentId => {
+              const parentNode = this.nodeMap.get(parentId)
+              if (parentNode && !node.parents.includes(parentNode)) {
+                node.parents.push(parentNode)
+                parentNode.children.push(node)
+              }
+            })
+          }
+        })
+
+        this.layoutTree()
+      }
+
+      layoutTree() {
+        // Position root nodes in a circle
+        const centerX = 0, centerY = 0, rootRadius = 150
+        this.rootNodes.forEach((node, idx) => {
+          const angle = (idx / this.rootNodes.length) * Math.PI * 2
+          node.x = centerX + Math.cos(angle) * rootRadius
+          node.y = centerY + Math.sin(angle) * rootRadius
+        })
+
+        // Position children hierarchically
+        this.layoutChildren(this.rootNodes, 1, 280)
+      }
+
+      layoutChildren(parents, level, radius) {
+        const processed = new Set()
+
+        for (const parent of parents) {
+          if (processed.has(parent.primitive.id)) continue
+          processed.add(parent.primitive.id)
+
+          const children = parent.children.filter(c => !processed.has(c.primitive.id))
+          if (children.length === 0) continue
+
+          const angleSpan = Math.PI * 1.2
+          const startAngle = Math.atan2(parent.y, parent.x) - angleSpan / 2
+
+          children.forEach((child, idx) => {
+            const angle = startAngle + (idx / Math.max(1, children.length - 1)) * angleSpan
+            child.x = parent.x + Math.cos(angle) * radius
+            child.y = parent.y + Math.sin(angle) * radius
+          })
+        }
+      }
+    }
+
+    class UFMApp {
+      constructor(canvasId) {
+        this.canvas = document.getElementById(canvasId)
+        this.ctx = this.canvas.getContext('2d')
+        this.cameraX = 0
+        this.cameraY = 0
+        this.zoom = 1
+        this.selectedNode = null
+        this.physicsEnabled = false
+
+        this.canvas.width = this.canvas.offsetWidth
+        this.canvas.height = this.canvas.offsetHeight
+
+        this.primitiveData = this.createPrimitiveDatabase()
+        this.tree = new UFMTree(this.primitiveData)
+
+        this.canvas.addEventListener('click', (e) => this.handleClick(e))
+        this.canvas.addEventListener('mousemove', (e) => this.handleMouseMove(e))
+        this.canvas.addEventListener('wheel', (e) => this.handleZoom(e))
+        this.canvas.addEventListener('mousedown', (e) => this.handlePan(e))
+
+        window.addEventListener('resize', () => {
+          this.canvas.width = this.canvas.offsetWidth
+          this.canvas.height = this.canvas.offsetHeight
+        })
+      }
+
+      handleClick(e) {
+        const rect = this.canvas.getBoundingClientRect()
+        const canvasX = (e.clientX - rect.left - this.canvas.width / 2) / this.zoom - this.cameraX
+        const canvasY = (e.clientY - rect.top - this.canvas.height / 2) / this.zoom - this.cameraY
+
+        for (const node of this.tree.nodes) {
+          if (node.contains(canvasX, canvasY, this.zoom)) {
+            this.selectNode(node)
+            return
+          }
+        }
+
+        this.deselect()
+      }
+
+      selectNode(node) {
+        this.selectedNode = node
+        this.showDetailPanel(node)
+        this.updateBreadcrumb(node)
+      }
+
+      deselect() {
+        this.selectedNode = null
+        document.getElementById('detail-panel').classList.remove('visible')
+        document.getElementById('breadcrumb-path').textContent = ''
+      }
+
+      showDetailPanel(node) {
+        const panel = document.getElementById('detail-panel')
+        const title = document.getElementById('detail-title')
+        const content = document.getElementById('detail-content')
+
+        const prim = node.primitive
+        title.textContent = `🔬 ${prim.name}`
+
+        let html = `
+          <div class="detail-card">
+            <div class="detail-label">Container</div>
+            <div class="detail-value">${prim.container.toUpperCase()}</div>
+          </div>
+          
+          <div class="detail-card">
+            <div class="detail-label">Type</div>
+            <div class="detail-value">${prim.type}</div>
+          </div>
+          
+          <div class="detail-card">
+            <div class="detail-label">Description</div>
+            <div class="detail-value">${prim.desc}</div>
+          </div>
+        `
+
+        if (prim.formula) {
+          html += `
+            <div class="detail-card">
+              <div class="detail-label">Formula</div>
+              <div class="detail-value">${prim.formula}</div>
+            </div>
+          `
+        }
+
+        if (prim.parents && prim.parents.length > 0) {
+          html += `
+            <div class="detail-card">
+              <div class="detail-label">🧬 Parents (Causal)</div>
+              <div class="detail-value">${prim.parents.join(' + ')}</div>
+            </div>
+          `
+        }
+
+        if (node.children.length > 0) {
+          html += `
+            <div class="detail-card">
+              <div class="detail-label">Children (Evolved)</div>
+              <div class="detail-value">${node.children.map(c => c.primitive.name).join(', ')}</div>
+            </div>
+          `
+        }
+
+        content.innerHTML = html
+        panel.classList.add('visible')
+      }
+
+      updateBreadcrumb(node) {
+        let path = node.primitive.name
+        let current = node
+        let depth = 0
+
+        while (current.parents.length > 0 && depth < 3) {
+          current = current.parents[0]
+          path = `${current.primitive.name} → ${path}`
+          depth++
+        }
+
+        document.getElementById('breadcrumb-path').textContent = path.length > 60 ? '...' + path.slice(-57) : path
+      }
+
+      handleMouseMove(e) {
+        const rect = this.canvas.getBoundingClientRect()
+        const canvasX = (e.clientX - rect.left - this.canvas.width / 2) / this.zoom - this.cameraX
+        const canvasY = (e.clientY - rect.top - this.canvas.height / 2) / this.zoom - this.cameraY
+
+        let hovering = false
+        for (const node of this.tree.nodes) {
+          if (node.contains(canvasX, canvasY, this.zoom)) {
+            hovering = true
+            break
+          }
+        }
+
+        this.canvas.style.cursor = hovering ? 'pointer' : 'grab'
+      }
+
+      handleZoom(e) {
+        e.preventDefault()
+        const factor = e.deltaY > 0 ? 0.9 : 1.1
+        this.zoom = Math.max(0.5, Math.min(3, this.zoom * factor))
+      }
+
+      handlePan(e) {
+        if (e.button !== 2) return // right-click only
+        e.preventDefault()
+        let lastX = e.clientX, lastY = e.clientY
+        const onMouseMove = (e) => {
+          this.cameraX -= (e.clientX - lastX) / this.zoom
+          this.cameraY -= (e.clientY - lastY) / this.zoom
+          lastX = e.clientX
+          lastY = e.clientY
+        }
+        const onMouseUp = () => {
+          document.removeEventListener('mousemove', onMouseMove)
+          document.removeEventListener('mouseup', onMouseUp)
+        }
+        document.addEventListener('mousemove', onMouseMove)
+        document.addEventListener('mouseup', onMouseUp)
+      }
+
+      render() {
+        this.ctx.fillStyle = '#0a0a0a'
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height)
+
+        this.ctx.save()
+        this.ctx.translate(this.canvas.width / 2, this.canvas.height / 2)
+        this.ctx.scale(this.zoom, this.zoom)
+        this.ctx.translate(-this.cameraX, -this.cameraY)
+
+        // Draw branches
+        const colors = { boolean: '#FF00FF', topological: '#00D9FF', probability: '#FFFF00', interaction: '#00FF00', compositions: '#00DD88' }
+        
+        for (const node of this.tree.nodes) {
+          for (const child of node.children) {
+            this.ctx.strokeStyle = 'rgba(0, 217, 255, 0.15)'
+            this.ctx.lineWidth = 1
+            this.ctx.beginPath()
+            this.ctx.moveTo(node.x, node.y)
+            this.ctx.bezierCurveTo(
+              (node.x + child.x) / 2, (node.y + child.y) / 2 - 30,
+              (node.x + child.x) / 2, (node.y + child.y) / 2 + 30,
+              child.x, child.y
+            )
+            this.ctx.stroke()
+          }
+        }
+
+        // Draw nodes
+        for (const node of this.tree.nodes) {
+          const color = colors[node.primitive.container] || '#00D9FF'
+          const isSelected = node === this.selectedNode
+
+          // Draw glow
+          if (isSelected) {
+            this.ctx.fillStyle = color + '40'
+            this.ctx.beginPath()
+            this.ctx.arc(node.x, node.y, node.radius * 2.5, 0, Math.PI * 2)
+            this.ctx.fill()
+          }
+
+          // Draw node
+          this.ctx.fillStyle = color
+          this.ctx.beginPath()
+          this.ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2)
+          this.ctx.fill()
+
+          // Draw border
+          this.ctx.strokeStyle = color
+          this.ctx.lineWidth = isSelected ? 2 : 1
+          this.ctx.beginPath()
+          this.ctx.arc(node.x, node.y, node.radius, 0, Math.PI * 2)
+          this.ctx.stroke()
+        }
+
+        this.ctx.restore()
+
+        // Stats
+        document.getElementById('footer-stats').textContent = `Nodes: ${this.tree.nodes.length} | Zoom: ${this.zoom.toFixed(1)}x`
+      }
+
+      start() {
+        const animate = () => {
+          this.render()
+          requestAnimationFrame(animate)
+        }
+        animate()
+      }
+
+      resetView() {
+        this.cameraX = 0
+        this.cameraY = 0
+        this.zoom = 1
+        this.deselect()
+      }
+
+      zoomFit() {
+        // Fit all nodes in view
+        let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity
+        this.tree.nodes.forEach(n => {
+          minX = Math.min(minX, n.x)
+          maxX = Math.max(maxX, n.x)
+          minY = Math.min(minY, n.y)
+          maxY = Math.max(maxY, n.y)
+        })
+
+        const width = maxX - minX + 100
+        const height = maxY - minY + 100
+        const scaleX = this.canvas.width / width
+        const scaleY = this.canvas.height / height
+
+        this.zoom = Math.min(scaleX, scaleY, 1.5)
+        this.cameraX = (minX + maxX) / 2
+        this.cameraY = (minY + maxY) / 2
+      }
+
+      togglePhysics() {
+        this.physicsEnabled = !this.physicsEnabled
+      }
+
+      createPrimitiveDatabase() {
+        return {
+          boolean: [
+            { id: 'NOT', name: 'NOT', desc: 'Logical NOT', container: 'boolean', type: 'Gate', formula: '¬A' },
+            { id: 'AND', name: 'AND', desc: 'Logical AND', container: 'boolean', type: 'Gate', formula: 'A ∧ B' },
+            { id: 'OR', name: 'OR', desc: 'Logical OR', container: 'boolean', type: 'Gate', formula: 'A ∨ B' },
+            { id: 'XOR', name: 'XOR', desc: 'Exclusive OR', container: 'boolean', type: 'Gate', formula: 'A ⊕ B' },
+            { id: 'NAND', name: 'NAND', desc: 'NOT AND', container: 'boolean', type: 'Gate', formula: '¬(A ∧ B)' },
+            { id: 'NOR', name: 'NOR', desc: 'NOT OR', container: 'boolean', type: 'Gate', formula: '¬(A ∨ B)' },
+            { id: 'XNOR', name: 'XNOR', desc: 'NOT XOR', container: 'boolean', type: 'Gate', formula: '¬(A ⊕ B)' },
+            { id: 'IMPLIES', name: 'IMPLIES', desc: 'If then', container: 'boolean', type: 'Gate', formula: 'A → B' },
+            { id: 'EQ', name: 'EQUAL', desc: 'Equality', container: 'boolean', type: 'Comparison', formula: 'A = B' },
+            { id: 'LT', name: 'LESS THAN', desc: 'Less than', container: 'boolean', type: 'Comparison', formula: 'A < B' },
+            { id: 'GT', name: 'GREATER THAN', desc: 'Greater than', container: 'boolean', type: 'Comparison', formula: 'A > B' },
+            { id: 'LE', name: 'LESS EQUAL', desc: 'Less or equal', container: 'boolean', type: 'Comparison', formula: 'A ≤ B' },
+            { id: 'GE', name: 'GREATER EQUAL', desc: 'Greater or equal', container: 'boolean', type: 'Comparison', formula: 'A ≥ B' },
+            { id: 'NE', name: 'NOT EQUAL', desc: 'Inequality', container: 'boolean', type: 'Comparison', formula: 'A ≠ B' },
+            { id: 'TRUE', name: 'TRUE', desc: 'True constant', container: 'boolean', type: 'Constant', formula: '⊤' },
+            { id: 'FALSE', name: 'FALSE', desc: 'False constant', container: 'boolean', type: 'Constant', formula: '⊥' }
+          ],
+          topological: [
+            { id: 'POINT', name: 'Point', desc: 'Zero-D position', container: 'topological', type: 'Basic', formula: '(x, y, z)' },
+            { id: 'VECTOR', name: 'Vector', desc: 'Direction + magnitude', container: 'topological', type: 'Basic', formula: 'v = (dx, dy, dz)' },
+            { id: 'DISTANCE', name: 'Distance', desc: 'Euclidean distance', container: 'topological', type: 'Metric', formula: '√(Δx² + Δy² + Δz²)' },
+            { id: 'CONTAINMENT', name: 'Containment', desc: 'Point in shape', container: 'topological', type: 'Spatial' },
+            { id: 'INTERSECTION', name: 'Intersection', desc: 'Spatial overlap', container: 'topological', type: 'Spatial' },
+            { id: 'ADJACENCY', name: 'Adjacency', desc: 'Neighbor relation', container: 'topological', type: 'Topological' },
+            { id: 'CONNECTIVITY', name: 'Connectivity', desc: 'Path connectivity', container: 'topological', type: 'Topological' },
+            { id: 'ORDERING', name: 'Ordering', desc: 'Spatial sort', container: 'topological', type: 'Ordering' }
+          ],
+          probability: [
+            { id: 'RANDOM', name: 'Random', desc: 'Uniform random [0,1]', container: 'probability', type: 'Distribution' },
+            { id: 'GAUSSIAN', name: 'Gaussian', desc: 'Normal distribution', container: 'probability', type: 'Distribution', formula: 'N(μ, σ²)' },
+            { id: 'CONFIDENCE', name: 'Confidence', desc: 'Certainty measure', container: 'probability', type: 'Measure', formula: 'P(X)' },
+            { id: 'UNCERTAINTY', name: 'Uncertainty', desc: 'Variability', container: 'probability', type: 'Measure', formula: 'σ²' },
+            { id: 'ENTROPY', name: 'Entropy', desc: 'Information order', container: 'probability', type: 'Information', formula: '-Σ p log p' },
+            { id: 'LIKELIHOOD', name: 'Likelihood', desc: 'Prob of observation', container: 'probability', type: 'Bayesian' },
+            { id: 'PRIOR', name: 'Prior', desc: 'Initial belief', container: 'probability', type: 'Bayesian' },
+            { id: 'POSTERIOR', name: 'Posterior', desc: 'Updated belief', container: 'probability', type: 'Bayesian', formula: 'P(A|B)' }
+          ],
+          interaction: [
+            { id: 'FORCE', name: 'Force', desc: 'Physical force', container: 'interaction', type: 'Physics', formula: 'F = m·a' },
+            { id: 'VELOCITY', name: 'Velocity', desc: 'Rate of change', container: 'interaction', type: 'Kinematics', formula: 'v = Δp/Δt' },
+            { id: 'ACCELERATION', name: 'Acceleration', desc: 'Change in velocity', container: 'interaction', type: 'Kinematics', formula: 'a = Δv/Δt' },
+            { id: 'ATTRACT', name: 'Attraction', desc: 'Draw toward', container: 'interaction', type: 'Force' },
+            { id: 'REPEL', name: 'Repulsion', desc: 'Push away', container: 'interaction', type: 'Force' },
+            { id: 'FRICTION', name: 'Friction', desc: 'Motion resistance', container: 'interaction', type: 'Damping', formula: 'f = -μ·v' },
+            { id: 'COLLISION', name: 'Collision', desc: 'Boundary impact', container: 'interaction', type: 'Event' },
+            { id: 'MOMENTUM', name: 'Momentum', desc: 'Motion quantity', container: 'interaction', type: 'Conservation', formula: 'p = m·v' }
+          ],
+          compositions: [
+            { id: 'CONDITIONAL_ATTRACTION', name: 'Conditional Attraction', desc: 'IF bool THEN attract', container: 'compositions', type: 'Control', parents: ['AND', 'ATTRACT'], formula: 'IF(cond) → F' },
+            { id: 'PROXIMITY_GATE', name: 'Proximity Gate', desc: 'Output TRUE if near', container: 'compositions', type: 'Sensor', parents: ['LT', 'DISTANCE'], formula: 'dist < thresh' },
+            { id: 'WEIGHTED_FORCE', name: 'Weighted Force', desc: 'Force scaled by prob', container: 'compositions', type: 'Modulation', parents: ['WEIGHT', 'FORCE'], formula: 'F × w' },
+            { id: 'CONSENSUS', name: 'Consensus', desc: 'Majority vote', container: 'compositions', type: 'Voting', parents: ['OR', 'AND', 'CONTAINMENT'] },
+            { id: 'DECAY_TO_THRESHOLD', name: 'Decay to Threshold', desc: 'Decay until below limit', container: 'compositions', type: 'Convergence', parents: ['DECAY', 'THRESHOLD'] },
+            { id: 'CONDITIONAL_SPRING', name: 'Conditional Spring', desc: 'Spring IF connected', container: 'compositions', type: 'Elastic', parents: ['EQ', 'SPRING'] },
+            { id: 'NOISY_DISTANCE', name: 'Noisy Distance', desc: 'Distance with uncertainty', container: 'compositions', type: 'Measurement', parents: ['NOISE', 'DISTANCE'] },
+            { id: 'SELECTIVE_MOMENTUM', name: 'Selective Momentum', desc: 'Preserve momentum based on condition', container: 'compositions', type: 'Collision', parents: ['XOR', 'MOMENTUM'] },
+            { id: 'ROTATIONAL_GATE', name: 'Rotational Gate', desc: 'Enable rotation based on bool', container: 'compositions', type: 'Joint', parents: ['NOT', 'TORQUE'] },
+            { id: 'FIELD_COHERENCE', name: 'Field Coherence', desc: 'UFM verification measure', container: 'compositions', type: 'Verification', parents: ['ENTROPY', 'CONFIDENCE'] }
+          ]
+        }
+      }
+    }
+
+    window.app = new UFMApp('tree-canvas')
+    window.app.start()
+  </script>
+</body>
+</html>

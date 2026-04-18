@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Fundamental field gradient -->
+        <radialGradient id="fundamentalField" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.75" />
+            <stop offset="50%" style="stop-color:#00ddff;stop-opacity:0.375" />
+            <stop offset="100%" style="stop-color:#1a1a3f;stop-opacity:0.2" />
+        </radialGradient>
+        
+        <!-- Aesthetic field gradient -->
+        <radialGradient id="aestheticField" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:0.3" />
+            <stop offset="50%" style="stop-color:#88ff00;stop-opacity:0.2" />
+            <stop offset="100%" style="stop-color:#ffff00;stop-opacity:0.1" />
+        </radialGradient>
+        
+        <!-- Interaction zone filter -->
+        <filter id="fieldInteraction">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.6"/>
+            </feComponentTransfer>
+        </filter>
+        
+        <!-- Fundamental boundary marker -->
+        <marker id="boundaryMarker" markerWidth="10" markerHeight="10" refX="5" refY="5" markerUnits="strokeWidth">
+            <circle cx="5" cy="5" r="3" fill="#ff8800" opacity="0.7"/>
+        </marker>
+    </defs>
+    
+    <!-- Background: Void/latent field -->
+    <rect width="800" height="800" fill="#0a0a0a"/>
+    
+    <!-- FUNDAMENTAL FIELD LAYERS (bottom) -->
+    <g id="fundamentalField">
+        <text x="10" y="30" fill="#ff8800" font-size="12" font-family="monospace" opacity="0.5">
+            FUNDAMENTAL FIELD (Binary Level)
+        </text>
+        <!-- Layer 3 (radius 230) -->
+        <circle cx="400" cy="400" r="230.0" fill="none" stroke="#00ddff" stroke-width="1" opacity="0.4"/>
+        <!-- Layer 2 (radius 180) -->
+        <circle cx="400" cy="400" r="180.0" fill="none" stroke="#00ddff" stroke-width="1" opacity="0.30000000000000004"/>
+        <!-- Layer 1 (radius 130) -->
+        <circle cx="400" cy="400" r="130.0" fill="none" stroke="#00ddff" stroke-width="1" opacity="0.2"/>
+        
+        <!-- Convergence Centers (2) -->
+        <circle cx="340" cy="400" r="10" fill="#00ff88" opacity="0.8"/>
+        <circle cx="460" cy="400" r="10" fill="#00ff88" opacity="0.8"/>
+        <line x1="340" y1="400" x2="460" y2="400" stroke="#ff8800" stroke-width="2" opacity="0.5"/>
+    </g>
+    
+    <!-- AESTHETIC FIELD (overlay) -->
+    <g id="aestheticField" opacity="0.6">
+        <text x="10" y="770" fill="#ff00ff" font-size="12" font-family="monospace" opacity="0.7">
+            AESTHETIC FIELD (Representational)
+        </text>
+        <!-- Aesthetic Spiral 1 -->
+        <g stroke="#ff00ff" fill="none" opacity="0.4">
+            <path d="M 440.0,400.0 L 442.8,415.6 L 439.2,432.9 L 428.3,449.1 L 410.8,461.3 L 388.2,466.7 L 363.3,463.5 L 339.6,450.7 L 320.6,428.9 L 310.0,400.0 L 310.2,367.3 L 322.5,335.0 L 346.7,307.6 L 380.5,289.5 L 420.5,284.0 L 461.7,293.2 L 498.7,317.2 L 526.3,354.0" stroke-width="1"/>
+        </g>
+        <!-- Aesthetic Spiral 2 -->
+        <g stroke="#ff00ff" fill="none" opacity="0.4">
+            <path d="M 420.0,434.6 L 407.9,444.9 L 391.1,450.3 L 371.7,449.1 L 352.3,440.0 L 336.3,423.2 L 326.7,400.0 L 325.9,373.0 L 335.3,345.7 L 355.0,322.1 L 383.4,305.9 L 417.6,300.4 L 453.3,307.6 L 486.0,327.9 L 510.7,359.7 L 523.3,400.0 L 521.1,444.1 L 503.0,486.4" stroke-width="1"/>
+        </g>
+        <!-- Aesthetic Spiral 3 -->
+        <g stroke="#ff00ff" fill="none" opacity="0.4">
+            <path d="M 380.0,434.6 L 365.1,429.3 L 352.0,417.5 L 343.3,400.0 L 341.5,378.7 L 348.1,356.4 L 363.3,336.5 L 386.3,322.3 L 414.7,316.8 L 445.0,322.1 L 473.2,338.6 L 495.0,365.4 L 506.7,400.0 L 505.5,438.4 L 490.2,475.7 L 461.7,506.8 L 422.4,526.9 L 376.7,532.4" stroke-width="1"/>
+        </g>
+        <!-- Aesthetic Spiral 4 -->
+        <g stroke="#ff00ff" fill="none" opacity="0.4">
+            <path d="M 360.0,400.0 L 357.2,384.4 L 360.8,367.1 L 371.7,350.9 L 389.2,338.7 L 411.8,333.3 L 436.7,336.5 L 460.4,349.3 L 479.4,371.1 L 490.0,400.0 L 489.8,432.7 L 477.5,465.0 L 453.3,492.4 L 419.5,510.5 L 379.5,516.0 L 338.3,506.8 L 301.3,482.8 L 273.7,446.0" stroke-width="1"/>
+        </g>
+        <!-- Aesthetic Spiral 5 -->
+        <g stroke="#ff00ff" fill="none" opacity="0.4">
+            <path d="M 380.0,365.4 L 392.1,355.1 L 408.9,349.7 L 428.3,350.9 L 447.7,360.0 L 463.7,376.8 L 473.3,400.0 L 474.1,427.0 L 464.7,454.3 L 445.0,477.9 L 416.6,494.1 L 382.4,499.6 L 346.7,492.4 L 314.0,472.1 L 289.3,440.3 L 276.7,400.0 L 278.9,355.9 L 297.0,313.6" stroke-width="1"/>
+        </g>
+        <!-- Aesthetic Spiral 6 -->
+        <g stroke="#ff00ff" fill="none" opacity="0.4">
+            <path d="M 420.0,365.4 L 434.9,370.7 L 448.0,382.5 L 456.7,400.0 L 458.5,421.3 L 451.9,443.6 L 436.7,463.5 L 413.7,477.7 L 385.3,483.2 L 355.0,477.9 L 326.8,461.4 L 305.0,434.6 L 293.3,400.0 L 294.5,361.6 L 309.8,324.3 L 338.3,293.2 L 377.6,273.1 L 423.3,267.6" stroke-width="1"/>
+        </g>
+    </g>
+    
+    <!-- INTERACTION ZONE (where fields meet) -->
+    <g id="interaction">
+        <text x="10" y="50" fill="#88ff00" font-size="12" font-family="monospace" opacity="0.5">
+            INTERACTION (Dual-Field Convergence)
+        </text>
+        
+        <!-- Central coherence region -->
+        <circle cx="400" cy="400" r="170.0" fill="url(#fundamentalField)" opacity="0.7"/>
+        <circle cx="400" cy="400" r="170.0" fill="url(#aestheticField)" opacity="0.5"/>
+    </g>
+    
+    <!-- BOUNDARY MARKER - Shows actual field edge -->
+    <circle cx="400" cy="400" r="230.0" fill="none" stroke="#ff8800" stroke-width="2" stroke-dasharray="5,5" opacity="0.6"/>
+    
+    <!-- ENTITY INFORMATION -->
+    <text x="400" y="730" text-anchor="middle" fill="#00ff88" font-size="14" font-family="monospace" font-weight="bold">
+        Atom
+    </text>
+    <text x="400" y="750" text-anchor="middle" fill="#00ddff" font-size="11" font-family="monospace">
+        Dual-center orbital convergence
+    </text>
+    <text x="400" y="765" text-anchor="middle" fill="#88ff00" font-size="10" font-family="monospace">
+        Centers: 2 | Layers: 3 | Coherence: 0.75
+    </text>
+    <text x="400" y="780" text-anchor="middle" fill="#ffff00" font-size="9" font-family="monospace">
+        Boundary: spherical
+    </text>
+</svg>

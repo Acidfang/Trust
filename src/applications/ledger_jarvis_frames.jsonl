@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-27T06:54:26.346822", "frame_id": "f_000000", "output_mode": "web", "destination": "http://localhost:8080/api/frame", "nodes_count": 1, "bytes_sent": 304, "render_time_ms": 0.0}
+{"timestamp": "2026-03-27T07:07:40.790872", "frame_id": "f_000000", "output_mode": "web", "destination": "http://localhost:8080/api/frame", "nodes_count": 1, "bytes_sent": 304, "render_time_ms": 0.0}

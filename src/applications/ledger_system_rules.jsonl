@@ -1,0 +1,7 @@
+{"type": "RULE_DEFINITION", "rule_id": "state_propagation", "name": "State Propagation Rule", "applies_when": "Election A updates state field X, and election B reads field X", "conclusion": "A causally influences B", "weight": 0.8}
+{"type": "RULE_DEFINITION", "rule_id": "parent_reference", "name": "Parent Reference Rule", "applies_when": "Election B explicitly lists A as parent_election", "conclusion": "A causally influences B", "weight": 1.0}
+{"type": "RULE_DEFINITION", "rule_id": "temporal_sequence", "name": "Temporal Sequence Rule", "applies_when": "Elections A and B modify same state domain, A happens before B, close in time", "conclusion": "A likely influences B", "weight": 0.3}
+{"type": "RULE_DEFINITION", "rule_id": "coherence_influence", "name": "Coherence Influence Rule", "applies_when": "A's outcome affects coherence metric that determines B's choice", "conclusion": "A influences B's decision", "weight": 0.6}
+{"type": "DECISION_COMPONENT", "component_id": "utility_maximization", "name": "Utility Maximization", "description": "ARIA tends to choose options with higher utility scores"}
+{"type": "DECISION_COMPONENT", "component_id": "coherence_weighting", "name": "Coherence Weighting", "description": "System coherence influences election choice"}
+{"type": "DECISION_COMPONENT", "component_id": "user_preference_weighting", "name": "User Preference Weighting", "description": "User preferences influence election choice"}

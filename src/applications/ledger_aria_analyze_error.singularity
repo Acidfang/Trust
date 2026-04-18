@@ -1,0 +1,7 @@
+# analyze_error ledger - ARIA Capability Library
+# Created: 2026-03-27T17:17:13.495684
+# Append-only: True
+# ZEROPOINT: True
+#
+{"timestamp": "2026-03-27T17:17:13.496034", "operation": "analyze_error", "elapsed_ms": "0.01", "result": "{'operation': 'analyze_error', 'error_type': 'ValueError', 'error_message': 'test error', 'context':", "success": true}
+{"timestamp": "2026-03-27T17:17:19.328910", "operation": "analyze_error", "elapsed_ms": "0.01", "result": "{'operation': 'analyze_error', 'error_type': 'ValueError', 'error_message': 'test error', 'context':", "success": true}

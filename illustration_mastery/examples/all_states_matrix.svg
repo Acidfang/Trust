@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="2200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+  .tier-header { font-size: 16px; font-weight: bold; }
+  .state-cell { font-size: 12px; font-weight: bold; }
+  .state-name { font-size: 11px; fill: #333; }
+  .decision-bg { fill: #8B0000; }
+  .work-bg { fill: #006400; }
+  .tier-label { font-size: 14px; font-weight: bold; }
+</style>
+</defs>
+<text x="700.0" y="40" text-anchor="middle" font-size="28" font-weight="bold">
+TCHT Complete State Matrix: All 31 States Across 5 Tiers
+</text>
+<rect x="20" y="100" width="1360" height="50" fill="#FFE5E5" stroke="#333" stroke-width="2" />
+<text x="40" y="135" class="tier-label">Tier -1: Self (Coherence)</text>
+<rect x="40" y="170" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="190" r="8" fill="#8B0000" />
+<text x="80" y="195" class="state-cell" fill="#000">T-1.1</text>
+<text x="60" y="220" class="state-name">Awareness</text>
+<text x="60" y="240" font-size="9" fill="#666">DECISION</text>
+<rect x="700" y="170" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="190" r="8" fill="#006400" />
+<text x="740" y="195" class="state-cell" fill="#000">T-1.2</text>
+<text x="720" y="220" class="state-name">Distinction</text>
+<text x="720" y="240" font-size="9" fill="#666">WORK</text>
+<rect x="40" y="260" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="280" r="8" fill="#006400" />
+<text x="80" y="285" class="state-cell" fill="#000">T-1.3</text>
+<text x="60" y="310" class="state-name">Causality</text>
+<text x="60" y="330" font-size="9" fill="#666">WORK</text>
+<rect x="700" y="260" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="280" r="8" fill="#8B0000" />
+<text x="740" y="285" class="state-cell" fill="#000">T-1.4</text>
+<text x="720" y="310" class="state-name">Regulation</text>
+<text x="720" y="330" font-size="9" fill="#666">DECISION</text>
+<rect x="40" y="350" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="370" r="8" fill="#006400" />
+<text x="80" y="375" class="state-cell" fill="#000">T-1.5</text>
+<text x="60" y="400" class="state-name">Consistency</text>
+<text x="60" y="420" font-size="9" fill="#666">WORK</text>
+<rect x="700" y="350" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="370" r="8" fill="#006400" />
+<text x="740" y="375" class="state-cell" fill="#000">T-1.6</text>
+<text x="720" y="400" class="state-name">Correction</text>
+<text x="720" y="420" font-size="9" fill="#666">WORK</text>
+<rect x="40" y="440" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="460" r="8" fill="#006400" />
+<text x="80" y="465" class="state-cell" fill="#000">T-1.7</text>
+<text x="60" y="490" class="state-name">Alignment</text>
+<text x="60" y="510" font-size="9" fill="#666">WORK</text>
+<rect x="700" y="440" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="460" r="8" fill="#8B0000" />
+<text x="740" y="465" class="state-cell" fill="#000">T-1.8</text>
+<text x="720" y="490" class="state-name">Persistence</text>
+<text x="720" y="510" font-size="9" fill="#666">DECISION</text>
+<rect x="40" y="530" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="550" r="8" fill="#8B0000" />
+<text x="80" y="555" class="state-cell" fill="#000">T-1.9</text>
+<text x="60" y="580" class="state-name">Adaptability</text>
+<text x="60" y="600" font-size="9" fill="#666">DECISION</text>
+<rect x="700" y="530" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="550" r="8" fill="#006400" />
+<text x="740" y="555" class="state-cell" fill="#000">T-1.10</text>
+<text x="720" y="580" class="state-name">Integrity</text>
+<text x="720" y="600" font-size="9" fill="#666">WORK</text>
+<rect x="20" y="660" width="1360" height="50" fill="#E5F0FF" stroke="#333" stroke-width="2" />
+<text x="40" y="695" class="tier-label">Tier 0: Formation (Connection)</text>
+<rect x="40" y="730" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="750" r="8" fill="#8B0000" />
+<text x="80" y="755" class="state-cell" fill="#000">T0.1</text>
+<text x="60" y="780" class="state-name">Existence</text>
+<text x="60" y="800" font-size="9" fill="#666">DECISION</text>
+<rect x="700" y="730" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="750" r="8" fill="#006400" />
+<text x="740" y="755" class="state-cell" fill="#000">T0.2</text>
+<text x="720" y="780" class="state-name">Difference</text>
+<text x="720" y="800" font-size="9" fill="#666">WORK</text>
+<rect x="40" y="820" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="840" r="8" fill="#006400" />
+<text x="80" y="845" class="state-cell" fill="#000">T0.3</text>
+<text x="60" y="870" class="state-name">Interaction</text>
+<text x="60" y="890" font-size="9" fill="#666">WORK</text>
+<rect x="700" y="820" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="840" r="8" fill="#8B0000" />
+<text x="740" y="845" class="state-cell" fill="#000">T0.4</text>
+<text x="720" y="870" class="state-name">Recognition</text>
+<text x="720" y="890" font-size="9" fill="#666">DECISION</text>
+<rect x="40" y="910" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="930" r="8" fill="#8B0000" />
+<text x="80" y="935" class="state-cell" fill="#000">T0.5</text>
+<text x="60" y="960" class="state-name">Selection</text>
+<text x="60" y="980" font-size="9" fill="#666">DECISION</text>
+<rect x="700" y="910" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="930" r="8" fill="#006400" />
+<text x="740" y="935" class="state-cell" fill="#000">T0.6</text>
+<text x="720" y="960" class="state-name">Initial Alignment</text>
+<text x="720" y="980" font-size="9" fill="#666">WORK</text>
+<rect x="20" y="1040" width="1360" height="50" fill="#E5FFE5" stroke="#333" stroke-width="2" />
+<text x="40" y="1075" class="tier-label">Tier 1: Competence (Conflict)</text>
+<rect x="40" y="1110" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="1130" r="8" fill="#8B0000" />
+<text x="80" y="1135" class="state-cell" fill="#000">T1.1</text>
+<text x="60" y="1160" class="state-name">Identify Real Conflict</text>
+<text x="60" y="1180" font-size="9" fill="#666">DECISION</text>
+<rect x="700" y="1110" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="1130" r="8" fill="#006400" />
+<text x="740" y="1135" class="state-cell" fill="#000">T1.2</text>
+<text x="720" y="1160" class="state-name">Trace Causality</text>
+<text x="720" y="1180" font-size="9" fill="#666">WORK</text>
+<rect x="40" y="1200" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="1220" r="8" fill="#006400" />
+<text x="80" y="1225" class="state-cell" fill="#000">T1.3</text>
+<text x="60" y="1250" class="state-name">Resolve at Source</text>
+<text x="60" y="1270" font-size="9" fill="#666">WORK</text>
+<rect x="700" y="1200" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="1220" r="8" fill="#8B0000" />
+<text x="740" y="1225" class="state-cell" fill="#000">T1.4</text>
+<text x="720" y="1250" class="state-name">Avoid Repetition</text>
+<text x="720" y="1270" font-size="9" fill="#666">DECISION</text>
+<rect x="20" y="1330" width="1360" height="50" fill="#FFF5E5" stroke="#333" stroke-width="2" />
+<text x="40" y="1365" class="tier-label">Tier 2: Contribution (Consistency)</text>
+<rect x="40" y="1400" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="1420" r="8" fill="#006400" />
+<text x="80" y="1425" class="state-cell" fill="#000">T2.1</text>
+<text x="60" y="1450" class="state-name">Consistency of Patterns</text>
+<text x="60" y="1470" font-size="9" fill="#666">WORK</text>
+<rect x="700" y="1400" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="1420" r="8" fill="#006400" />
+<text x="740" y="1425" class="state-cell" fill="#000">T2.2</text>
+<text x="720" y="1450" class="state-name">Reinforcement</text>
+<text x="720" y="1470" font-size="9" fill="#666">WORK</text>
+<rect x="40" y="1490" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="1510" r="8" fill="#8B0000" />
+<text x="80" y="1515" class="state-cell" fill="#000">T2.3</text>
+<text x="60" y="1540" class="state-name">Prevention</text>
+<text x="60" y="1560" font-size="9" fill="#666">DECISION</text>
+<rect x="700" y="1490" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="1510" r="8" fill="#006400" />
+<text x="740" y="1515" class="state-cell" fill="#000">T2.4</text>
+<text x="720" y="1540" class="state-name">Early Correction</text>
+<text x="720" y="1560" font-size="9" fill="#666">WORK</text>
+<rect x="20" y="1620" width="1360" height="50" fill="#F0E5FF" stroke="#333" stroke-width="2" />
+<text x="40" y="1655" class="tier-label">Tier 3: Transcendence</text>
+<rect x="40" y="1690" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="1710" r="8" fill="#006400" />
+<text x="80" y="1715" class="state-cell" fill="#000">T3.1</text>
+<text x="60" y="1740" class="state-name">Adaptation</text>
+<text x="60" y="1760" font-size="9" fill="#666">WORK</text>
+<rect x="700" y="1690" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="1710" r="8" fill="#006400" />
+<text x="740" y="1715" class="state-cell" fill="#000">T3.2</text>
+<text x="720" y="1740" class="state-name">Resilience</text>
+<text x="720" y="1760" font-size="9" fill="#666">WORK</text>
+<rect x="40" y="1780" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="1800" r="8" fill="#8B0000" />
+<text x="80" y="1805" class="state-cell" fill="#000">T3.3</text>
+<text x="60" y="1830" class="state-name">Expansion</text>
+<text x="60" y="1850" font-size="9" fill="#666">DECISION</text>
+<rect x="700" y="1780" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="1800" r="8" fill="#006400" />
+<text x="740" y="1805" class="state-cell" fill="#000">T3.4</text>
+<text x="720" y="1830" class="state-name">Integration</text>
+<text x="720" y="1850" font-size="9" fill="#666">WORK</text>
+<rect x="40" y="1870" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="1890" r="8" fill="#006400" />
+<text x="80" y="1895" class="state-cell" fill="#000">T3.5</text>
+<text x="60" y="1920" class="state-name">Synchronization</text>
+<text x="60" y="1940" font-size="9" fill="#666">WORK</text>
+<rect x="700" y="1870" width="640" height="80" class="decision-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="720" cy="1890" r="8" fill="#8B0000" />
+<text x="740" y="1895" class="state-cell" fill="#000">T3.6</text>
+<text x="720" y="1920" class="state-name">Refinement</text>
+<text x="720" y="1940" font-size="9" fill="#666">DECISION</text>
+<rect x="40" y="1960" width="640" height="80" class="work-bg" opacity="0.15" stroke="#999" stroke-width="1" rx="5" />
+<circle cx="60" cy="1980" r="8" fill="#006400" />
+<text x="80" y="1985" class="state-cell" fill="#000">T3.7</text>
+<text x="60" y="2010" class="state-name">Scaling</text>
+<text x="60" y="2030" font-size="9" fill="#666">WORK</text>
+<text x="40" y="2130" font-size="14" font-weight="bold">Legend:</text>
+<circle cx="250" cy="2122" r="6" fill="#8B0000" />
+<text x="265" y="2130" font-size="12">Decision Point (choice required)</text>
+<circle cx="600" cy="2122" r="6" fill="#006400" />
+<text x="615" y="2130" font-size="12">Work State (action required)</text>
+</svg>

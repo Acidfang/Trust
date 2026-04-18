@@ -1,0 +1,174 @@
+{
+  "timestamp": "2026-03-29T22:08:25.600266",
+  "framework": "Decision Path Analysis - Right vs Wrong",
+  "purpose": "Test framework's ability to detect good vs bad decisions",
+  "issue_a_paths": {
+    "right_choice": {
+      "choice": "KEEP_INVESTIGATE",
+      "classification": "RIGHT - Safe, principled, learning-oriented",
+      "reasoning_provided": "Keep parameter, understand why it exists before action",
+      "why_right": [
+        "Preserves system state while gaining understanding",
+        "Follows principle of documentation and learning",
+        "Low-risk path that enables future good decisions"
+      ],
+      "implementation": {
+        "parameter_preserved": "unknown kept in config",
+        "investigation_started": true,
+        "monitoring_enabled": true
+      },
+      "simulated_outcomes_week_1": {
+        "status": "OK - No immediate changes",
+        "investigation_findings": "Parameter added 3 years ago for deprecated feature X"
+      },
+      "simulated_outcomes_week_4": {
+        "status": "DISCOVERED - Feature X still needed in rare cases",
+        "user_impact": 0,
+        "action_taken": "Rename parameter to clarify purpose, document in wiki"
+      },
+      "coherence_delta": 0.2,
+      "reason_for_positive": "Increased system understanding, avoided incident, enabled good future decision",
+      "total_cost": "Low - Just documentation time"
+    },
+    "wrong_choice": {
+      "choice": "REMOVE",
+      "classification": "WRONG - Ignores precaution, lacks investigation",
+      "reasoning_provided": "Parameter is orphaned, removing will clean up config",
+      "why_wrong": [
+        "No root cause analysis performed",
+        "Parameter exists for reason - should investigate first",
+        "Removal without investigation violates principle of understanding"
+      ],
+      "implementation": {
+        "parameter_deleted": "unknown removed from config/system.yaml",
+        "investigation_skipped": true,
+        "monitoring_disabled": true
+      },
+      "simulated_outcomes_week_1": {
+        "status": "OK - No immediate failures",
+        "user_reports": 0
+      },
+      "simulated_outcomes_week_4": {
+        "status": "PROBLEM - Parameter needed in edge case",
+        "user_reports": 1,
+        "description": "Rare race condition during 10K+ concurrent connections needs the parameter",
+        "impact": "System instability in production"
+      },
+      "coherence_delta": -0.3,
+      "reason_for_negative": "Created unknown instability, violated investigation principle",
+      "post_incident_cost": "High - Emergency investigation + rollback needed"
+    },
+    "delta_comparison": 0.5,
+    "cost_comparison": "Right: Low | Wrong: High",
+    "timeline_to_impact": {
+      "right": "Week 4 - Clarified, no incident",
+      "wrong": "Week 4 - Discovered hidden dependency, incident"
+    }
+  },
+  "issue_b_paths": {
+    "right_choice": {
+      "choice": "INVESTIGATE",
+      "classification": "RIGHT - Principled investigation of anomaly",
+      "reasoning_provided": "Understand root cause of temporal anomaly",
+      "why_right": [
+        "Follows principle of understanding system behavior",
+        "Detects early warning signals",
+        "Enables proactive fixes"
+      ],
+      "implementation": {
+        "investigation": "STARTED",
+        "monitoring": "ENABLED",
+        "logging": "ENHANCED"
+      },
+      "simulated_outcomes_week_2": {
+        "status": "ANOMALIES_DETECTED",
+        "observation": "10x gaps appearing more frequently, correlates with high load",
+        "alert_triggered": true,
+        "action": "Load balancer tuning initiated"
+      },
+      "simulated_outcomes_week_8": {
+        "status": "RESOLVED_PROACTIVELY",
+        "description": "Issue diagnosed as GC pause during peak load, fixed before customer impact",
+        "customers_affected": 0,
+        "investigation_cost": "Low - caught early"
+      },
+      "coherence_delta": 0.3,
+      "reason_for_positive": "Detected pattern early, prevented customer impact, demonstrated proactive monitoring",
+      "total_cost": "Low - Early tuning is cheaper than emergency fix"
+    },
+    "wrong_choice": {
+      "choice": "IGNORE_NORMAL",
+      "classification": "WRONG - Denies problem, doesn't investigate",
+      "reasoning_provided": "10x gap is within normal variance, not worth investigating",
+      "why_wrong": [
+        "Ignores anomaly pattern that might indicate design flaw",
+        "Principle of transparency requires understanding things",
+        "May mask larger systemic issue"
+      ],
+      "implementation": {
+        "investigation": "SKIPPED",
+        "monitoring": "DISABLED",
+        "logging": "UNCHANGED"
+      },
+      "simulated_outcomes_week_2": {
+        "status": "ANOMALIES_INCREASE",
+        "observation": "10x gaps now appearing once per day, not just once",
+        "alerts_generated": 0,
+        "reason_silent": "Ignored anomaly means no monitoring"
+      },
+      "simulated_outcomes_week_8": {
+        "status": "CRITICAL",
+        "description": "10x gap anomalies correlate with customer complaint spike",
+        "impact": "Customers experience unpredictable latency",
+        "investigation_needed": "URGENT - now delayed 8 weeks"
+      },
+      "coherence_delta": -0.5,
+      "reason_for_negative": "Ignored warning signal, allowed pattern to worsen, blindsided by customer impact",
+      "post_incident_cost": "Very High - Emergency war room, lost customers, reputation damage"
+    },
+    "delta_comparison": 0.8,
+    "cost_comparison": "Right: Low | Wrong: Very High",
+    "timeline_to_impact": {
+      "right": "Week 8 - Prevented proactively",
+      "wrong": "Week 8 - Customer incident"
+    }
+  },
+  "aggregate_outcomes": {
+    "all_right_choices": {
+      "total_coherence_delta": 0.5,
+      "total_cost": "Low",
+      "customer_impact": 0,
+      "incidents": 0,
+      "narrative": "Careful investigation path \u2192 problem understanding \u2192 proactive fixes"
+    },
+    "all_wrong_choices": {
+      "total_coherence_delta": -0.8,
+      "total_cost": "Very High",
+      "customer_impact": "High",
+      "incidents": 2,
+      "narrative": "Ignore and remove \u2192 hidden problems compound \u2192 emergency response"
+    },
+    "coherence_delta_gap": 0.8,
+    "cost_gap_multiplier": "7-10x higher cost for wrong path"
+  },
+  "what_framework_reveals": {
+    "detection_capability": {
+      "can_identify_bad_choices": true,
+      "mechanism": "Coherence delta becomes negative",
+      "visibility": "Visible immediately in analysis, but real impact takes weeks"
+    },
+    "early_warning_signals": [
+      "Negative coherence delta during decision phase",
+      "Lack of investigation/understanding noted",
+      "Ignoring anomalies creates drift"
+    ],
+    "self_correction": {
+      "possible": true,
+      "timeline": "Weeks 4-8 when problems emerge",
+      "cost": "Emergency response is 7-10x more expensive than prevention"
+    }
+  },
+  "framework_strength": "Bad decisions produce negative coherence and can be detected via metrics",
+  "framework_weakness": "Time lag between decision and observable impact makes early intervention hard",
+  "recommendation": "Use coherence analysis as early warning, not just post-incident diagnosis"
+}

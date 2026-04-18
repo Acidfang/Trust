@@ -1,0 +1,4 @@
+# Retrospective Validations
+# Did the new interpretation correctly predict what happened next?
+# Validates whether the reinterpretation was actually a better understanding
+# Format: timestamp (of validation), references_original_timestamp, reinterpretation, prediction_outcome, subsequent_events

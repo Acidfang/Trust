@@ -1,0 +1,43 @@
+{
+  "system": "Healthcare System",
+  "wrong_choice": {
+    "description": "Profit-based model instead of health-based",
+    "year": 1980
+  },
+  "infrastructure_locked_in": [
+    "Insurance bureaucracy",
+    "For-profit hospital networks",
+    "Pharmaceutical pricing systems",
+    "Employer-tied health coverage"
+  ],
+  "early_adopters_benefited": [
+    "Insurance companies",
+    "Pharmaceutical corporations",
+    "Healthcare administrators"
+  ],
+  "wealth_accumulated": "$500+ billion annually",
+  "delay_period": "1980-2000",
+  "crisis_manifesting_now": [
+    "Healthcare most expensive in developed world",
+    "Health outcomes worst in developed world",
+    "Medical debt: $195 billion",
+    "Bankruptcies from medical bills",
+    "50 million uninsured",
+    "Preventable deaths from lack of access"
+  ],
+  "current_costs_paid_by": {
+    "Patients": "Medical debt, unaffordable care",
+    "Workers": "Healthcare tied to employment, wage suppression",
+    "Taxpayers": "Subsidizing profit system",
+    "Society": "Preventable deaths, worse health outcomes"
+  },
+  "cost_multiplier": "9x",
+  "alternative_system": [
+    "Health-based instead of profit-based",
+    "Prevention-focused instead of treatment",
+    "Universal coverage (like other developed countries)",
+    "Community health workers",
+    "Access based on need, not wealth"
+  ],
+  "analysis_timestamp": "2026-03-29T22:34:43.361270"
+}

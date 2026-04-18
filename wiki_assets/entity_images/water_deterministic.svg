@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="800" fill="#0a0a0a"/>
+    
+    <!-- MOLECULE: H₂O -->
+    <!-- DETERMINISTIC from VSEPR theory -->
+    
+    <!-- Central atom: O (Z=8) -->
+    <circle cx="400" cy="400" r="12" fill="#ffff00" opacity="0.9"/>
+    <text x="400" y="408" text-anchor="middle" fill="#ffff00" font-size="9" font-family="monospace">
+        O
+    </text>
+    
+    <!-- Bonding atoms (VSEPR geometry) -->
+    <circle cx="480" cy="400" r="8" fill="#00ff88" opacity="0.8"/>
+    <text x="480" y="404" text-anchor="middle" fill="#00ff88" font-size="8" font-family="monospace">H</text>
+    <line x1="400" y1="400" x2="480" y2="400" stroke="#00ddff" stroke-width="2" opacity="0.7"/>
+    <circle cx="373" cy="475" r="8" fill="#00ff88" opacity="0.8"/>
+    <text x="373" y="479" text-anchor="middle" fill="#00ff88" font-size="8" font-family="monospace">H</text>
+    <line x1="400" y1="400" x2="373" y2="475" stroke="#00ddff" stroke-width="2" opacity="0.7"/>
+    
+    <g opacity="0.6">
+        <text x="50" y="620" fill="#00ff88" font-size="12" font-family="monospace" font-weight="bold">
+            H₂O: VSEPR-Determined Geometry
+        </text>
+        <text x="50" y="640" fill="#ffff00" font-size="10" font-family="monospace">
+            Central atom: O (Z=8)
+        </text>
+        <text x="50" y="655" fill="#00ddff" font-size="10" font-family="monospace">
+            Config: 1s(1) 2s(2) 2p(5)
+        </text>
+        <text x="50" y="670" fill="#ff8800" font-size="9" font-family="monospace">
+            Bonds: 2 | Lone pairs: deterministic from valence e⁻
+        </text>
+        <text x="50" y="685" fill="#ff00ff" font-size="9" font-family="monospace">
+            DETERMINISTIC: VSEPR theory (measured principle)
+        </text>
+    </g>
+    
+    <text x="400" y="750" text-anchor="middle" fill="#00ff88" font-size="11" font-family="monospace" font-weight="bold">
+        H₂O: Geometry deterministically derived from electron repulsion
+    </text>
+</svg>

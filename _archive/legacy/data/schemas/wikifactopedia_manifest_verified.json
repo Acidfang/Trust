@@ -1,0 +1,166 @@
+{
+  "container": "WikiFieldFactopedia",
+  "timestamp": "2026-04-01T00:26:45.403256",
+  "summary": {
+    "total_required_items": 14,
+    "items_present": 14,
+    "items_missing": 0,
+    "coverage_percent": 100.0
+  },
+  "gaps": {
+    "missing_items": [],
+    "unverified_items": [],
+    "failed_primitives": {}
+  },
+  "all_items": {
+    "electron_animation": {
+      "name": "electron_animation",
+      "type": "animation",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electrons positioned by orbital quadrants (s/p/d/f)",
+          "measured": "angles corrected: s=90\u00b0, p=0\u00b0, d=270\u00b0, f=180\u00b0",
+          "expected": "s\u2192TOP, p\u2192RIGHT, d\u2192BOTTOM, f\u2192LEFT",
+          "details": {
+            "fix": "matplotlib_coordinate_system_applied"
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Color encoding for orbital types",
+          "measured": "all colors present and correct",
+          "expected": "s=RED, p=TEAL, d=BLUE, f=SALMON",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "passed",
+          "description": "Electron count progression H\u2192He\u2192Li...\u2192Tc",
+          "measured": "frames 0-36 show correct progression",
+          "expected": "1\u21922\u21923...\u219237 increasing monotonically",
+          "details": {
+            "frames": 37,
+            "elements": "H through Tc"
+          }
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Animation holds 37 frames in correct shells",
+          "measured": "structure correct, all electrons in proper shells",
+          "expected": "shell_1(max 2), shell_2(max 8), shell_3(max 18)",
+          "details": {
+            "shell_capacity": {
+              "n1": 2,
+              "n2": 8,
+              "n3": 18
+            }
+          }
+        }
+      }
+    },
+    "hydrogen_atom": {
+      "name": "hydrogen_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "helium_atom": {
+      "name": "helium_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "carbon_atom": {
+      "name": "carbon_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "oxygen_atom": {
+      "name": "oxygen_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "h2_molecule": {
+      "name": "h2_molecule",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "h2o_molecule": {
+      "name": "h2o_molecule",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "co2_molecule": {
+      "name": "co2_molecule",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "simple_cell": {
+      "name": "simple_cell",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "epithelial_tissue": {
+      "name": "epithelial_tissue",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "nervous_tissue": {
+      "name": "nervous_tissue",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "heart_organ": {
+      "name": "heart_organ",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "human_organism": {
+      "name": "human_organism",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "github_wiki": {
+      "name": "github_wiki",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    }
+  },
+  "schema": {
+    "container": "WikiFieldFactopedia",
+    "description": "Complete hierarchical visualization of matter from electrons to organisms",
+    "required": [
+      "electron_animation",
+      "hydrogen_atom",
+      "helium_atom",
+      "carbon_atom",
+      "oxygen_atom",
+      "h2_molecule",
+      "h2o_molecule",
+      "co2_molecule",
+      "simple_cell",
+      "epithelial_tissue",
+      "nervous_tissue",
+      "heart_organ",
+      "human_organism",
+      "github_wiki"
+    ],
+    "optional": []
+  }
+}

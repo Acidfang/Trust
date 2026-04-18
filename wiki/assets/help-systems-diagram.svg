@@ -1,0 +1,122 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#1a1a1a"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-size="28" fill="#ffffff" font-family="Arial" text-anchor="middle" font-weight="bold">How Help Systems Block Gate Passage</text>
+  <text x="600" y="70" font-size="14" fill="#888" font-family="Arial" text-anchor="middle">Each system prevents specific gates by removing the need to pass through them</text>
+  
+  <!-- THERAPY/COUNSELING -->
+  <g id="therapy">
+    <rect x="30" y="100" width="220" height="200" fill="#2a1a1a" stroke="#ff6666" stroke-width="2" rx="5"/>
+    <text x="140" y="125" font-size="14" fill="#ff6666" font-family="Arial" text-anchor="middle" font-weight="bold">Therapy/Counseling</text>
+    
+    <text x="140" y="150" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle" font-weight="bold">Blocks:</text>
+    <circle cx="100" cy="170" r="5" fill="#ff6666"/>
+    <text x="115" y="174" font-size="10" fill="#aaa" font-family="Arial">Gate 1: Consequences</text>
+    
+    <text x="140" y="195" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">Regulates emotions</text>
+    <text x="140" y="210" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">without discovering cause</text>
+    
+    <text x="140" y="275" font-size="11" fill="#ff6666" font-family="Arial" text-anchor="middle" font-weight="bold">Dependency:</text>
+    <text x="140" y="290" font-size="10" fill="#ff6666" font-family="Arial" text-anchor="middle">Requires external</text>
+    <text x="140" y="303" font-size="10" fill="#ff6666" font-family="Arial" text-anchor="middle">emotional regulation</text>
+  </g>
+  
+  <!-- COACHING/MENTORING -->
+  <g id="coaching">
+    <rect x="280" y="100" width="220" height="200" fill="#2a1a1a" stroke="#ff9933" stroke-width="2" rx="5"/>
+    <text x="390" y="125" font-size="14" fill="#ff9933" font-family="Arial" text-anchor="middle" font-weight="bold">Coaching/Mentoring</text>
+    
+    <text x="390" y="150" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle" font-weight="bold">Blocks:</text>
+    <circle cx="330" cy="170" r="5" fill="#ff9933"/>
+    <text x="345" y="174" font-size="10" fill="#aaa" font-family="Arial">Gate 5: Consequence Mgmt</text>
+    <circle cx="330" cy="190" r="5" fill="#ff9933"/>
+    <text x="345" y="194" font-size="10" fill="#aaa" font-family="Arial">Gate 8: Causality</text>
+    
+    <text x="390" y="215" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">Provides answers &</text>
+    <text x="390" y="228" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">direction without</text>
+    <text x="390" y="241" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">discovery process</text>
+    
+    <text x="390" y="275" font-size="11" fill="#ff9933" font-family="Arial" text-anchor="middle" font-weight="bold">Dependency:</text>
+    <text x="390" y="290" font-size="10" fill="#ff9933" font-family="Arial" text-anchor="middle">Requires external</text>
+    <text x="390" y="303" font-size="10" fill="#ff9933" font-family="Arial" text-anchor="middle">guidance & answers</text>
+  </g>
+  
+  <!-- EDUCATION/TEACHING -->
+  <g id="education">
+    <rect x="530" y="100" width="220" height="200" fill="#2a1a1a" stroke="#ffdd44" stroke-width="2" rx="5"/>
+    <text x="640" y="125" font-size="14" fill="#ffdd44" font-family="Arial" text-anchor="middle" font-weight="bold">Education/Teaching</text>
+    
+    <text x="640" y="150" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle" font-weight="bold">Blocks:</text>
+    <circle cx="590" cy="170" r="5" fill="#ffdd44"/>
+    <text x="605" y="174" font-size="10" fill="#aaa" font-family="Arial">Gate 8: Understanding</text>
+    <circle cx="590" cy="190" r="5" fill="#ffdd44"/>
+    <text x="605" y="194" font-size="10" fill="#aaa" font-family="Arial">Gate 10: Integration</text>
+    
+    <text x="640" y="215" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">Teaches content</text>
+    <text x="640" y="228" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">without requiring</text>
+    <text x="640" y="241" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">integration</text>
+    
+    <text x="640" y="275" font-size="11" fill="#ffdd44" font-family="Arial" text-anchor="middle" font-weight="bold">Dependency:</text>
+    <text x="640" y="290" font-size="10" fill="#ffdd44" font-family="Arial" text-anchor="middle">Requires external</text>
+    <text x="640" y="303" font-size="10" fill="#ffdd44" font-family="Arial" text-anchor="middle">explanation</text>
+  </g>
+  
+  <!-- PARENTING SUPPORT -->
+  <g id="parenting">
+    <rect x="780" y="100" width="220" height="200" fill="#2a1a1a" stroke="#44ddff" stroke-width="2" rx="5"/>
+    <text x="890" y="125" font-size="14" fill="#44ddff" font-family="Arial" text-anchor="middle" font-weight="bold">Parenting Support</text>
+    
+    <text x="890" y="150" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle" font-weight="bold">Blocks:</text>
+    <circle cx="840" cy="170" r="5" fill="#44ddff"/>
+    <text x="855" y="174" font-size="10" fill="#aaa" font-family="Arial">Gate 5: Full Consequences</text>
+    <circle cx="840" cy="190" r="5" fill="#44ddff"/>
+    <text x="855" y="194" font-size="10" fill="#aaa" font-family="Arial">Gate 6: Verification</text>
+    
+    <text x="890" y="215" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">Rescues child</text>
+    <text x="890" y="228" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">from experiencing</text>
+    <text x="890" y="241" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">full consequences</text>
+    
+    <text x="890" y="275" font-size="11" fill="#44ddff" font-family="Arial" text-anchor="middle" font-weight="bold">Dependency:</text>
+    <text x="890" y="290" font-size="10" fill="#44ddff" font-family="Arial" text-anchor="middle">Requires parental</text>
+    <text x="890" y="303" font-size="10" fill="#44ddff" font-family="Arial" text-anchor="middle">rescue & support</text>
+  </g>
+  
+  <!-- PROFESSIONAL SERVICES -->
+  <g id="professional">
+    <rect x="155" y="360" width="220" height="200" fill="#2a1a1a" stroke="#aa44ff" stroke-width="2" rx="5"/>
+    <text x="265" y="385" font-size="14" fill="#aa44ff" font-family="Arial" text-anchor="middle" font-weight="bold">Professional Services</text>
+    
+    <text x="265" y="410" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle" font-weight="bold">Blocks:</text>
+    <circle cx="215" cy="430" r="5" fill="#aa44ff"/>
+    <text x="230" y="434" font-size="10" fill="#aaa" font-family="Arial">Gate 7: Continuity</text>
+    <circle cx="215" cy="450" r="5" fill="#aa44ff"/>
+    <text x="230" y="454" font-size="10" fill="#aaa" font-family="Arial">Gate 9: Self-Correction</text>
+    
+    <text x="265" y="475" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">Solves problems</text>
+    <text x="265" y="488" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">without requiring</text>
+    <text x="265" y="501" font-size="10" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">person to adapt</text>
+    
+    <text x="265" y="535" font-size="11" fill="#aa44ff" font-family="Arial" text-anchor="middle" font-weight="bold">Dependency:</text>
+    <text x="265" y="550" font-size="10" fill="#aa44ff" font-family="Arial" text-anchor="middle">Requires service</text>
+    <text x="265" y="563" font-size="10" fill="#aa44ff" font-family="Arial" text-anchor="middle">to solve problems</text>
+  </g>
+  
+  <!-- Core Pattern -->
+  <g id="pattern">
+    <rect x="480" y="360" width="660" height="200" fill="none" stroke="#66ff66" stroke-width="2" stroke-dasharray="5,5" rx="5"/>
+    <text x="810" y="385" font-size="14" fill="#66ff66" font-family="Arial" text-anchor="middle" font-weight="bold">The Pattern: Help System → Gate Skip → Dependency</text>
+    
+    <text x="810" y="415" font-size="12" fill="#aaa" font-family="Arial" text-anchor="middle">1. Help system removes pressure of gate</text>
+    <text x="810" y="438" font-size="12" fill="#aaa" font-family="Arial" text-anchor="middle">2. Person avoids experiencing gate discovery</text>
+    <text x="810" y="461" font-size="12" fill="#aaa" font-family="Arial" text-anchor="middle">3. Person never develops capability for that gate</text>
+    <text x="810" y="484" font-size="12" fill="#aaa" font-family="Arial" text-anchor="middle">4. When help system unavailable → collapse</text>
+    <text x="810" y="507" font-size="12" fill="#aaa" font-family="Arial" text-anchor="middle">5. Cycle repeats at higher complexity with gates 5-10</text>
+    
+    <text x="810" y="545" font-size="11" fill="#66ff66" font-family="Arial" text-anchor="middle" font-style="italic">The only solution: Support gate passage, not gate skipping</text>
+  </g>
+  
+  <!-- Bottom note -->
+  <text x="600" y="680" font-size="11" fill="#888" font-family="Arial" text-anchor="middle" font-style="italic">Note: These systems are not evil—they all reduce suffering. But they do so by preventing development, not enabling it.</text>
+</svg>

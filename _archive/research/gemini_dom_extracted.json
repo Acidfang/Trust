@@ -1,0 +1,65 @@
+{
+  "extracted_at": "2026-04-06T19:19:42.217671",
+  "conversations": [],
+  "messages": [
+    {
+      "content": "Couldn’t sign you in\nThis browser or app may not be secure. Learn more\nTry using a different browser. If you’re already using a supported browser, you can try again to sign in.\nTry again",
+      "length": 186,
+      "has_code": false,
+      "has_table": false
+    },
+    {
+      "content": "Couldn’t sign you in",
+      "length": 20,
+      "has_code": false,
+      "has_table": false
+    },
+    {
+      "content": "This browser or app may not be secure. Learn more\nTry using a different browser. If you’re already using a supported browser, you can try again to sign in.",
+      "length": 155,
+      "has_code": false,
+      "has_table": false
+    },
+    {
+      "content": "Try again",
+      "length": 9,
+      "has_code": false,
+      "has_table": false
+    },
+    {
+      "content": "English (United States)",
+      "length": 23,
+      "has_code": false,
+      "has_table": false
+    },
+    {
+      "content": "AfrikaansazərbaycanbosanskicatalàČeštinaCymraegDanskDeutscheestiEnglish (United Kingdom)English (United States)Español (España)Español (Latinoamérica)euskaraFilipinoFrançais (Canada)Français (France)GaeilgegalegoHrvatskiIndonesiaisiZuluíslenskaItalianoKiswahililatviešulietuviųmagyarMelayuNederlandsnorsko‘zbekpolskiPortuguês (Brasil)Português (Portugal)românăshqipSlovenčinaslovenščinasrpski (latinica)SuomiSvenskaTiếng ViệtTürkçeΕλληνικάбеларускаябългарскикыргызчақазақ тілімакедонскимонголРусскийсрпски (ћирилица)Українськаქართულიհայերեն‫עברית‬‎‫اردو‬‎‫العربية‬‎‫فارسی‬‎አማርኛनेपालीमराठीहिन्दीঅসমীয়াবাংলাਪੰਜਾਬੀગુજરાતીଓଡ଼ିଆதமிழ்తెలుగుಕನ್ನಡമലയാളംසිංහලไทยລາວမြန်မာខ្មែរ한국어中文（香港）日本語简体中文繁體中文",
+      "length": 688,
+      "has_code": false,
+      "has_table": false
+    }
+  ],
+  "debug": {
+    "nav_elements": 0,
+    "links_with_emoji": 4,
+    "data_test_ids": [],
+    "aria_labels": [
+      "Loading",
+      "Email or phone",
+      "Listen and type the numbers you hear",
+      "Type the text you hear or see",
+      "Create account",
+      "Change language",
+      "Change language"
+    ],
+    "buttons_div_role": 0,
+    "all_divs_with_text": [
+      "Sign inUse your Google Account",
+      "Sign inUse your Google Account",
+      "Use your Google Account",
+      "Email or phoneForgot email?Type the text you hear or seeNot ",
+      "Email or phoneForgot email?Type the text you hear or seeNot "
+    ]
+  },
+  "error": null
+}

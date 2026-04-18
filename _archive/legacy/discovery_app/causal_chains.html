@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Causal Chains Navigation</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; background: #0a0a0a; color: #00d9ff; font-family: 'Courier New', monospace; overflow: hidden; }
+    
+    #app { width: 100%; height: 100%; display: flex; flex-direction: column; }
+    
+    #header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      padding: 1rem 1.5rem;
+      border-bottom: 2px solid #00d9ff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    #header h1 { font-size: 1.3rem; text-shadow: 0 0 20px rgba(0, 217, 255, 0.5); }
+    #breadcrumb { font-size: 0.75rem; color: #00ff00; opacity: 0.8; text-align: right; line-height: 1.2; }
+    
+    #canvas { flex: 1; background: radial-gradient(circle at 50% 50%, #0f0f1e 0%, #0a0a0a 100%); cursor: grab; }
+    #canvas:active { cursor: grabbing; }
+    
+    #footer { background: #1a1a1a; border-top: 1px solid #00d9ff; padding: 0.75rem 1.5rem; font-size: 0.8rem; }
+    
+    #info {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      background: rgba(26, 26, 26, 0.95);
+      border: 1px solid #00d9ff;
+      padding: 1rem;
+      max-width: 350px;
+      max-height: 40vh;
+      overflow-y: auto;
+      border-radius: 4px;
+      display: none;
+      z-index: 100;
+    }
+    
+    #info.visible { display: block; }
+    #info h3 { color: #00ff00; margin-bottom: 0.75rem; border-bottom: 1px solid #00d9ff; padding-bottom: 0.5rem; }
+    #info .line { font-size: 0.85rem; margin-bottom: 0.3rem; color: #00d9ff; }
+    #info .label { color: #00ff00; font-weight: bold; display: inline; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div id="header">
+      <div>
+        <h1>⛓️ Causal Chains</h1>
+      </div>
+      <div id="breadcrumb"></div>
+    </div>
+    
+    <canvas id="canvas"></canvas>
+    
+    <div id="info"></div>
+    
+    <div id="footer">
+      <span>Click node to navigate chain | Scroll to zoom | Drag to pan</span>
+    </div>
+  </div>
+
+  <script>
+    // COMPLETE UFM PRIMITIVE LIBRARY - 313 PRIMITIVES (Representative Discovery)
+    // All primitives with their causal dependencies and domains
+    const Library = {
+      // ════════════════════════════════════════════════════════════════════════════
+      // FOUNDATION: BOOLEAN LOGIC (16 primitives - The Compute Domain)
+      // ════════════════════════════════════════════════════════════════════════════
+      'NOT': { requires: [], domain: 'Boolean', desc: 'Negation/Inversion' },
+      'AND': { requires: [], domain: 'Boolean', desc: 'Logical conjunction' },
+      'OR': { requires: [], domain: 'Boolean', desc: 'Logical disjunction' },
+      'XOR': { requires: [], domain: 'Boolean', desc: 'Exclusive OR' },
+      'NAND': { requires: [], domain: 'Boolean', desc: 'NOT AND' },
+      'NOR': { requires: [], domain: 'Boolean', desc: 'NOT OR' },
+      'XNOR': { requires: [], domain: 'Boolean', desc: 'NOT XOR' },
+      'IMPLICATION': { requires: [], domain: 'Boolean', desc: 'If-then' },
+      'TRUE': { requires: [], domain: 'Boolean', desc: 'Tautology' },
+      'FALSE': { requires: [], domain: 'Boolean', desc: 'Contradiction' },
+      'EQ': { requires: [], domain: 'Boolean', desc: 'Equality' },
+      'NE': { requires: [], domain: 'Boolean', desc: 'Inequality' },
+      'LT': { requires: [], domain: 'Boolean', desc: 'Less than' },
+      'GT': { requires: [], domain: 'Boolean', desc: 'Greater than' },
+      'LE': { requires: [], domain: 'Boolean', desc: 'Less or equal' },
+      'GE': { requires: [], domain: 'Boolean', desc: 'Greater or equal' },
+      
+      // ════════════════════════════════════════════════════════════════════════════
+      // TOPOLOGICAL (142 primitives - Ordering Relations)
+      // ════════════════════════════════════════════════════════════════════════════
+      // Temporal (13)
+      'POINT_INSTANT': { requires: ['NOT'], domain: 'Topological', desc: 'Temporal instant' },
+      'INTERVAL': { requires: ['NOT', 'AND'], domain: 'Topological', desc: 'Time interval' },
+      'BEFORE': { requires: ['POINT_INSTANT'], domain: 'Topological', desc: 'Temporal ordering' },
+      'AFTER': { requires: ['POINT_INSTANT'], domain: 'Topological', desc: 'Reverse temporal' },
+      'DURING': { requires: ['INTERVAL'], domain: 'Topological', desc: 'Containment in time' },
+      'MEETS': { requires: ['INTERVAL'], domain: 'Topological', desc: 'Adjacent intervals' },
+      'OVERLAPS': { requires: ['INTERVAL'], domain: 'Topological', desc: 'Partial overlap' },
+      'STARTS': { requires: ['INTERVAL'], domain: 'Topological', desc: 'Coincident start' },
+      'FINISHES': { requires: ['INTERVAL'], domain: 'Topological', desc: 'Coincident end' },
+      'EQUALS': { requires: ['INTERVAL'], domain: 'Topological', desc: 'Identical intervals' },
+      'FUTURE': { requires: ['AFTER'], domain: 'Topological', desc: 'Forward in time' },
+      'PAST': { requires: ['BEFORE'], domain: 'Topological', desc: 'Backward in time' },
+      'NOW': { requires: ['POINT_INSTANT'], domain: 'Topological', desc: 'Present moment' },
+      
+      // Spatial 2D (19)
+      'POINT_SPATIAL': { requires: ['AND'], domain: 'Topological', desc: 'Location in 2D' },
+      'VECTOR_2D': { requires: ['POINT_SPATIAL'], domain: 'Topological', desc: 'Direction & magnitude' },
+      'LINE_SEGMENT': { requires: ['POINT_SPATIAL', 'VECTOR_2D'], domain: 'Topological', desc: 'Two-point line' },
+      'DISTANCE_2D': { requires: ['POINT_SPATIAL'], domain: 'Topological', desc: 'Euclidean distance' },
+      'CONTAINMENT_2D': { requires: ['POINT_SPATIAL'], domain: 'Topological', desc: 'Point in region' },
+      'INSIDE': { requires: ['CONTAINMENT_2D'], domain: 'Topological', desc: 'Interior' },
+      'BOUNDARY': { requires: ['CONTAINMENT_2D'], domain: 'Topological', desc: 'Border' },
+      'OUTSIDE': { requires: ['CONTAINMENT_2D'], domain: 'Topological', desc: 'Exterior' },
+      'INTERSECTION_2D': { requires: ['CONTAINMENT_2D'], domain: 'Topological', desc: 'Overlap region' },
+      'ADJACENCY_2D': { requires: ['DISTANCE_2D'], domain: 'Topological', desc: 'Proximity threshold' },
+      'PARALLEL': { requires: ['VECTOR_2D'], domain: 'Topological', desc: 'Same direction' },
+      'PERPENDICULAR': { requires: ['VECTOR_2D'], domain: 'Topological', desc: 'Right angle' },
+      'ANGLE': { requires: ['VECTOR_2D'], domain: 'Topological', desc: 'Rotation measure' },
+      'ROTATION_2D': { requires: ['ANGLE', 'POINT_SPATIAL'], domain: 'Topological', desc: 'Circular transform' },
+      'SCALE_2D': { requires: ['DISTANCE_2D'], domain: 'Topological', desc: 'Size scaling' },
+      'REFLECTION': { requires: ['VECTOR_2D'], domain: 'Topological', desc: 'Mirror across axis' },
+      'TRANSLATION': { requires: ['VECTOR_2D'], domain: 'Topological', desc: 'Position shift' },
+      'CENTROID': { requires: ['POINT_SPATIAL'], domain: 'Topological', desc: 'Geometric center' },
+      'CONVEXITY': { requires: ['POINT_SPATIAL', 'LINE_SEGMENT'], domain: 'Topological', desc: 'No concave parts' },
+      
+      // Spatial 3D (26)
+      'POINT_3D': { requires: ['VECTOR_2D'], domain: 'Topological', desc: 'Location in 3D' },
+      'VECTOR_3D': { requires: ['POINT_3D'], domain: 'Topological', desc: '3D direction' },
+      'PLANE': { requires: ['POINT_3D', 'VECTOR_3D'], domain: 'Topological', desc: 'Flat surface' },
+      'SPHERE': { requires: ['POINT_3D', 'DISTANCE_2D'], domain: 'Topological', desc: 'Perfect round' },
+      'CUBE': { requires: ['PLANE'], domain: 'Topological', desc: 'Rectangular box' },
+      'TETRAHEDRON': { requires: ['PLANE'], domain: 'Topological', desc: '4 triangular faces' },
+      'OCTAHEDRON': { requires: ['PLANE'], domain: 'Topological', desc: '8 triangular faces' },
+      'DISTANCE_3D': { requires: ['POINT_3D'], domain: 'Topological', desc: '3D distance' },
+      'VOLUME': { requires: ['CUBE', 'SPHERE'], domain: 'Topological', desc: 'Interior capacity' },
+      'SURFACE_AREA': { requires: ['PLANE'], domain: 'Topological', desc: 'Outer extent' },
+      'CONTAINMENT_3D': { requires: ['POINT_3D', 'VOLUME'], domain: 'Topological', desc: 'Inside 3D volume' },
+      'INTERSECTION_3D': { requires: ['CONTAINMENT_3D'], domain: 'Topological', desc: '3D overlap' },
+      'ADJACENCY_3D': { requires: ['DISTANCE_3D'], domain: 'Topological', desc: '3D proximity' },
+      'ROTATION_3D': { requires: ['VECTOR_3D', 'ANGLE'], domain: 'Topological', desc: '3D rotation' },
+      'SCALE_3D': { requires: ['VOLUME'], domain: 'Topological', desc: '3D scaling' },
+      'PROJECTION_3D': { requires: ['PLANE', 'POINT_3D'], domain: 'Topological', desc: 'Orthographic view' },
+      'NORMAL_VECTOR': { requires: ['PLANE'], domain: 'Topological', desc: 'Perpendicular to surface' },
+      'GRADIENT': { requires: ['VECTOR_3D'], domain: 'Topological', desc: 'Steepest direction' },
+      'CURVATURE': { requires: ['PLANE'], domain: 'Topological', desc: 'Bending measure' },
+      'TOPOLOGY_CLASS': { requires: ['CONTAINMENT_3D'], domain: 'Topological', desc: 'Topological type' },
+      'HOMEOMORPHISM': { requires: ['TOPOLOGY_CLASS'], domain: 'Topological', desc: 'Topological equivalence' },
+      'MANIFOLD': { requires: ['TOPOLOGY_CLASS'], domain: 'Topological', desc: 'Smooth surface' },
+      'CONNECTIVITY': { requires: ['ADJACENCY_3D'], domain: 'Topological', desc: 'Path connectivity' },
+      'GENUS': { requires: ['TOPOLOGY_CLASS'], domain: 'Topological', desc: 'Hole count' },
+      'EULER_CHARACTERISTIC': { requires: ['CONNECTIVITY'], domain: 'Topological', desc: 'Topological invariant' },
+      
+      // Trees & Hierarchies (10)
+      'ROOT': { requires: ['POINT_INSTANT'], domain: 'Topological', desc: 'Tree start' },
+      'PARENT': { requires: ['ROOT'], domain: 'Topological', desc: 'Ancestor node' },
+      'CHILD': { requires: ['PARENT'], domain: 'Topological', desc: 'Descendant node' },
+      'SIBLING': { requires: ['PARENT'], domain: 'Topological', desc: 'Same parent' },
+      'LEAF': { requires: ['ROOT'], domain: 'Topological', desc: 'Terminal node' },
+      'HEIGHT': { requires: ['ROOT', 'LEAF'], domain: 'Topological', desc: 'Tree depth' },
+      'SUBTREE': { requires: ['PARENT'], domain: 'Topological', desc: 'Rooted subgraph' },
+      'ANCESTOR': { requires: ['PARENT'], domain: 'Topological', desc: 'Multiple levels up' },
+      'DESCENDANT': { requires: ['CHILD'], domain: 'Topological', desc: 'Multiple levels down' },
+      'LEVEL': { requires: ['HEIGHT'], domain: 'Topological', desc: 'Tree layer' },
+      
+      // DAGs & Reachability (16)
+      'DIRECTED_EDGE': { requires: ['VECTOR_2D'], domain: 'Topological', desc: 'One-way connection' },
+      'PATH': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'Edge sequence' },
+      'REACHABILITY': { requires: ['PATH'], domain: 'Topological', desc: 'Path existence' },
+      'SOURCE': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'Path origin' },
+      'SINK': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'Path terminus' },
+      'ACYCLIC': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'No cycles' },
+      'CYCLE': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'Circular path' },
+      'STRONGLY_CONNECTED': { requires: ['REACHABILITY'], domain: 'Topological', desc: 'Mutual reachability' },
+      'WEAKLY_CONNECTED': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'Connected if undirected' },
+      'CONDENSATION': { requires: ['STRONGLY_CONNECTED'], domain: 'Topological', desc: 'SCC compression' },
+      'TOPOLOGICAL_SORT': { requires: ['ACYCLIC'], domain: 'Topological', desc: 'DAG ordering' },
+      'TRANSITIVE_REDUCTION': { requires: ['PATH'], domain: 'Topological', desc: 'Minimal edge set' },
+      'TRANSITIVE_CLOSURE': { requires: ['REACHABILITY'], domain: 'Topological', desc: 'All reachable pairs' },
+      'PREDECESSOR': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'Incoming node' },
+      'SUCCESSOR': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'Outgoing node' },
+      'DEPTH_FIRST_SEARCH': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'DFS traversal' },
+      
+      // Directed Graphs (Cyclic) (18)
+      'UNDIRECTED_EDGE': { requires: ['DISTANCE_2D'], domain: 'Topological', desc: 'Two-way connection' },
+      'MULTIGRAPH': { requires: ['UNDIRECTED_EDGE'], domain: 'Topological', desc: 'Multiple edges' },
+      'SIMPLE_GRAPH': { requires: ['UNDIRECTED_EDGE'], domain: 'Topological', desc: 'Single edges' },
+      'DEGREE': { requires: ['UNDIRECTED_EDGE'], domain: 'Topological', desc: 'Edge count' },
+      'IN_DEGREE': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'Incoming count' },
+      'OUT_DEGREE': { requires: ['DIRECTED_EDGE'], domain: 'Topological', desc: 'Outgoing count' },
+      'REGULAR_GRAPH': { requires: ['DEGREE'], domain: 'Topological', desc: 'Equal degrees' },
+      'BIPARTITE': { requires: ['UNDIRECTED_EDGE'], domain: 'Topological', desc: 'Two-colorable' },
+      'PLANAR_GRAPH': { requires: ['UNDIRECTED_EDGE'], domain: 'Topological', desc: 'No crossing edges' },
+      'CLIQUE': { requires: ['SIMPLE_GRAPH'], domain: 'Topological', desc: 'Complete subgraph' },
+      'INDEPENDENT_SET': { requires: ['UNDIRECTED_EDGE'], domain: 'Topological', desc: 'Disconnected vertices' },
+      'MATCHING': { requires: ['UNDIRECTED_EDGE'], domain: 'Topological', desc: 'No shared edges' },
+      'SPANNING_TREE': { requires: ['UNDIRECTED_EDGE', 'ACYCLIC'], domain: 'Topological', desc: 'Tree of all vertices' },
+      'MINIMUM_SPANNING_TREE': { requires: ['SPANNING_TREE'], domain: 'Topological', desc: 'Lowest cost tree' },
+      'CHROMATIC_NUMBER': { requires: ['SIMPLE_GRAPH'], domain: 'Topological', desc: 'Color count' },
+      'COMMUNITY': { requires: ['STRONGLY_CONNECTED'], domain: 'Topological', desc: 'Dense subgraph' },
+      'CENTRALITY': { requires: ['DEGREE', 'DISTANCE_2D'], domain: 'Topological', desc: 'Importance measure' },
+      'BETWEENNESS': { requires: ['PATH', 'CENTRALITY'], domain: 'Topological', desc: 'Path probability' },
+      
+      // Partial Order (12)
+      'PREORDER': { requires: ['AND', 'OR'], domain: 'Topological', desc: 'Reflexive + transitive' },
+      'PARTIAL_ORDER': { requires: ['PREORDER'], domain: 'Topological', desc: 'Also antisymmetric' },
+      'TOTAL_ORDER': { requires: ['PARTIAL_ORDER'], domain: 'Topological', desc: 'All comparable' },
+      'SUPREMUM': { requires: ['PARTIAL_ORDER'], domain: 'Topological', desc: 'Least upper bound' },
+      'INFIMUM': { requires: ['PARTIAL_ORDER'], domain: 'Topological', desc: 'Greatest lower bound' },
+      'LATTICE': { requires: ['SUPREMUM', 'INFIMUM'], domain: 'Topological', desc: 'All pairs join/meet' },
+      'BOOLEAN_LATTICE': { requires: ['LATTICE', 'TRUE', 'FALSE'], domain: 'Topological', desc: 'Power set lattice' },
+      'DISTRIBUTIVE': { requires: ['LATTICE'], domain: 'Topological', desc: 'Join distributes over meet' },
+      'COMPLEMENTED': { requires: ['LATTICE'], domain: 'Topological', desc: 'Complements exist' },
+      'HASSE_DIAGRAM': { requires: ['PARTIAL_ORDER'], domain: 'Topological', desc: 'Transitive reduction viz' },
+      'ANTICHAIN': { requires: ['PARTIAL_ORDER'], domain: 'Topological', desc: 'No comparable elements' },
+      'CHAIN': { requires: ['TOTAL_ORDER'], domain: 'Topological', desc: 'Totally comparable' },
+      
+      // Lattice Structures (12)
+      'MODULAR_LATTICE': { requires: ['LATTICE'], domain: 'Topological', desc: 'Modular law' },
+      'BOOLEAN_ALGEBRA': { requires: ['BOOLEAN_LATTICE', 'COMPLEMENTED'], domain: 'Topological', desc: 'Boolean structure' },
+      'FRAME': { requires: ['LATTICE'], domain: 'Topological', desc: 'Infinite meets' },
+      'LOCALE': { requires: ['FRAME'], domain: 'Topological', desc: 'Pointless topology' },
+      'IDEAL': { requires: ['LATTICE'], domain: 'Topological', desc: 'Downward-closed set' },
+      'FILTER': { requires: ['LATTICE'], domain: 'Topological', desc: 'Upward-closed set' },
+      'PRINCIPAL_IDEAL': { requires: ['IDEAL'], domain: 'Topological', desc: 'Generated by element' },
+      'PRIME_FILTER': { requires: ['FILTER'], domain: 'Topological', desc: 'Complement is ideal' },
+      'ULTRAFILTER': { requires: ['PRIME_FILTER'], domain: 'Topological', desc: 'Maximal filter' },
+      'REGULAR_ELEMENT': { requires: ['LATTICE'], domain: 'Topological', desc: 'Modularity property' },
+      'COMPACT_ELEMENT': { requires: ['FRAME'], domain: 'Topological', desc: 'Finite join covering' },
+      'ALGEBRAIC_LATTICE': { requires: ['FRAME', 'COMPACT_ELEMENT'], domain: 'Topological', desc: 'Generated by compact' },
+      
+      // Spacetime 4D (16)
+      'EVENT': { requires: ['POINT_INSTANT', 'POINT_3D'], domain: 'Topological', desc: '4D spacetime point' },
+      'WORLDLINE': { requires: ['EVENT', 'BEFORE'], domain: 'Topological', desc: 'Particle trajectory' },
+      'LIGHTCONE_FUTURE': { requires: ['EVENT'], domain: 'Topological', desc: 'Causally reachable' },
+      'LIGHTCONE_PAST': { requires: ['EVENT'], domain: 'Topological', desc: 'Causal history' },
+      'TIMELIKE_SEPARATED': { requires: ['EVENT'], domain: 'Topological', desc: 'Time interval > space' },
+      'SPACELIKE_SEPARATED': { requires: ['EVENT'], domain: 'Topological', desc: 'Space interval > time' },
+      'LIGHTLIKE_SEPARATED': { requires: ['EVENT'], domain: 'Topological', desc: 'Null separation' },
+      'MINKOWSKI_METRIC': { requires: ['DISTANCE_3D', 'POINT_INSTANT'], domain: 'Topological', desc: '4D metric' },
+      'CAUSALITY': { requires: ['LIGHTCONE_FUTURE', 'LIGHTCONE_PAST'], domain: 'Topological', desc: 'Causal order' },
+      'SIMULTANEITY': { requires: ['EVENT'], domain: 'Topological', desc: 'Spacelike hypersurface' },
+      'SIMULTANEITY_CLASS': { requires: ['SIMULTANEITY'], domain: 'Topological', desc: 'Light cone class' },
+      'LORENTZ_INVARIANT': { requires: ['MINKOWSKI_METRIC'], domain: 'Topological', desc: 'Frame independence' },
+      'PROPER_TIME': { requires: ['WORLDLINE'], domain: 'Topological', desc: 'Observer time' },
+      'GEODESIC': { requires: ['WORLDLINE'], domain: 'Topological', desc: 'Straightest path' },
+      'CURVATUREOF_SPACETIME': { requires: ['GEODESIC'], domain: 'Topological', desc: 'Riemann tensor' },
+      'EVENT_HORIZON': { requires: ['LIGHTCONE_FUTURE'], domain: 'Topological', desc: 'Boundary of causality' },
+      
+      // ════════════════════════════════════════════════════════════════════════════
+      // PROBABILITY & UNCERTAINTY (68 primitives)
+      // ════════════════════════════════════════════════════════════════════════════
+      // Probability (16)
+      'PROBABILITY_SPACE': { requires: ['TRUE', 'FALSE'], domain: 'Probability', desc: 'Event probabilities' },
+      'EVENT_OUTCOME': { requires: ['PROBABILITY_SPACE'], domain: 'Probability', desc: 'Possible result' },
+      'SAMPLE_SPACE': { requires: ['EVENT_OUTCOME'], domain: 'Probability', desc: 'All outcomes' },
+      'PROBABILITY_MEASURE': { requires: ['SAMPLE_SPACE'], domain: 'Probability', desc: 'P(A) function' },
+      'INDEPENDENT': { requires: ['PROBABILITY_MEASURE'], domain: 'Probability', desc: 'P(A∩B)=P(A)P(B)' },
+      'CONDITIONAL_PROBABILITY': { requires: ['PROBABILITY_MEASURE'], domain: 'Probability', desc: 'P(A|B)' },
+      'BAYES_THEOREM': { requires: ['CONDITIONAL_PROBABILITY'], domain: 'Probability', desc: 'Belief update' },
+      'RANDOM_VARIABLE': { requires: ['PROBABILITY_SPACE'], domain: 'Probability', desc: 'Outcome mapping' },
+      'EXPECTED_VALUE': { requires: ['RANDOM_VARIABLE'], domain: 'Probability', desc: 'Average outcome' },
+      'VARIANCE': { requires: ['EXPECTED_VALUE'], domain: 'Probability', desc: 'Spread measure' },
+      'STANDARD_DEVIATION': { requires: ['VARIANCE'], domain: 'Probability', desc: 'σ dispersion' },
+      'COVARIANCE': { requires: ['VARIANCE'], domain: 'Probability', desc: 'Joint variation' },
+      'CORRELATION': { requires: ['COVARIANCE'], domain: 'Probability', desc: 'ρ linear dependence' },
+      'NORMAL_DISTRIBUTION': { requires: ['EXPECTED_VALUE', 'VARIANCE'], domain: 'Probability', desc: 'Bell curve' },
+      'BINOMIAL_DISTRIBUTION': { requires: ['RANDOM_VARIABLE'], domain: 'Probability', desc: 'n successes' },
+      'POISSON_DISTRIBUTION': { requires: ['EXPECTED_VALUE'], domain: 'Probability', desc: 'Rare events' },
+      
+      // Information/Entropy (18)
+      'INFORMATION': { requires: ['PROBABILITY_MEASURE'], domain: 'Probability', desc: 'Message bits' },
+      'ENTROPY': { requires: ['PROBABILITY_MEASURE'], domain: 'Probability', desc: 'H = -Σp log p' },
+      'MUTUAL_INFORMATION': { requires: ['ENTROPY'], domain: 'Probability', desc: 'Shared information' },
+      'KULLBACK_LEIBLER': { requires: ['ENTROPY'], domain: 'Probability', desc: 'Divergence measure' },
+      'CROSS_ENTROPY': { requires: ['ENTROPY'], domain: 'Probability', desc: 'H(P,Q)' },
+      'SHANNON_ENTROPY': { requires: ['INFORMATION'], domain: 'Probability', desc: 'Classical entropy' },
+      'RENYI_ENTROPY': { requires: ['ENTROPY'], domain: 'Probability', desc: 'Generalized entropy' },
+      'FISHER_INFORMATION': { requires: ['RANDOM_VARIABLE'], domain: 'Probability', desc: 'Parameter sensitivity' },
+      'CRAMER_RAO_BOUND': { requires: ['FISHER_INFORMATION'], domain: 'Probability', desc: 'Estimator lower bound' },
+      'CHANNEL_CAPACITY': { requires: ['MUTUAL_INFORMATION'], domain: 'Probability', desc: 'Shannon capacity' },
+      'ERROR_CORRECTING_CODE': { requires: ['INFORMATION'], domain: 'Probability', desc: 'Corruption recovery' },
+      'HUFFMAN_CODING': { requires: ['ENTROPY'], domain: 'Probability', desc: 'Optimal compression' },
+      'ARITHMETIC_CODING': { requires: ['PROBABILITY_MEASURE'], domain: 'Probability', desc: 'Range coding' },
+      'LOSSLESS_COMPRESSION': { requires: ['ENTROPY'], domain: 'Probability', desc: 'No data loss' },
+      'LOSSY_COMPRESSION': { requires: ['ENTROPY'], domain: 'Probability', desc: 'Acceptable loss' },
+      'RATE_DISTORTION': { requires: ['ENTROPY', 'LOSSY_COMPRESSION'], domain: 'Probability', desc: 'Compression limit' },
+      'SEMANTIC_INFORMATION': { requires: ['INFORMATION'], domain: 'Probability', desc: 'Meaning measure' },
+      'ALGORITHMIC_INFORMATION': { requires: ['INFORMATION'], domain: 'Probability', desc: 'Kolmogorov complexity' },
+      
+      // Quantum States (16)
+      'QUANTUM_STATE': { requires: ['COMPLEX_VECTOR'], domain: 'Probability', desc: '|ψ⟩' },
+      'HILBERT_SPACE': { requires: ['VECTOR_3D'], domain: 'Probability', desc: 'Quantum space' },
+      'BASIS_STATE': { requires: ['HILBERT_SPACE'], domain: 'Probability', desc: '|0⟩, |1⟩' },
+      'SUPERPOSITION': { requires: ['QUANTUM_STATE'], domain: 'Probability', desc: 'α|0⟩+β|1⟩' },
+      'ENTANGLEMENT': { requires: ['QUANTUM_STATE'], domain: 'Probability', desc: 'Correlated qubits' },
+      'MEASUREMENT': { requires: ['QUANTUM_STATE'], domain: 'Probability', desc: 'Wave collapse' },
+      'OBSERVABLE': { requires: ['HILBERT_SPACE'], domain: 'Probability', desc: 'Hermitian operator' },
+      'EIGENVALUE': { requires: ['OBSERVABLE'], domain: 'Probability', desc: 'Measurement outcome' },
+      'EIGENSTATE': { requires: ['OBSERVABLE'], domain: 'Probability', desc: 'Certain state' },
+      'BLOCH_SPHERE': { requires: ['QUANTUM_STATE'], domain: 'Probability', desc: 'Qubit space' },
+      'UNITARY_EVOLUTION': { requires: ['QUANTUM_STATE'], domain: 'Probability', desc: 'Time evolution' },
+      'TENSOR_PRODUCT': { requires: ['QUANTUM_STATE'], domain: 'Probability', desc: 'Multi-qubit' },
+      'BELL_STATE': { requires: ['ENTANGLEMENT'], domain: 'Probability', desc: 'Max entanglement' },
+      'DENSITY_MATRIX': { requires: ['QUANTUM_STATE'], domain: 'Probability', desc: 'Mixed state' },
+      'VON_NEUMANN_ENTROPY': { requires: ['DENSITY_MATRIX'], domain: 'Probability', desc: 'Quantum entropy' },
+      'QUANTUM_MUTUAL_INFORMATION': { requires: ['ENTANGLEMENT'], domain: 'Probability', desc: 'Quantum correlation' },
+      
+      // Semantic Meaning (18)
+      'SYMBOL': { requires: ['INFORMATION'], domain: 'Probability', desc: 'Abstract element' },
+      'REFERENT': { requires: ['SYMBOL'], domain: 'Probability', desc: 'Physical object' },
+      'MEANING': { requires: ['SYMBOL', 'REFERENT'], domain: 'Probability', desc: 'Semantic mapping' },
+      'CONTEXT': { requires: ['SYMBOL'], domain: 'Probability', desc: 'Background knowledge' },
+      'AMBIGUITY': { requires: ['MEANING'], domain: 'Probability', desc: 'Multiple meanings' },
+      'SYNONYMY': { requires: ['MEANING'], domain: 'Probability', desc: 'Same meaning' },
+      'HYPONYMY': { requires: ['MEANING'], domain: 'Probability', desc: 'Category subtype' },
+      'METAPHOR': { requires: ['MEANING', 'CONTEXT'], domain: 'Probability', desc: 'Conceptual mapping' },
+      'PRAGMATICS': { requires: ['MEANING', 'CONTEXT'], domain: 'Probability', desc: 'Context meaning' },
+      'LEXICAL_FIELD': { requires: ['SYNONYMY'], domain: 'Probability', desc: 'Word clusters' },
+      'SEMANTIC_FIELD': { requires: ['MEANING'], domain: 'Probability', desc: 'Concept networks' },
+      'CONCEPTUAL_SPACE': { requires: ['SEMANTIC_FIELD'], domain: 'Probability', desc: 'Quality space' },
+      'PROTOTYPE': { requires: ['CONCEPTUAL_SPACE'], domain: 'Probability', desc: 'Typical member' },
+      'EXEMPLAR': { requires: ['PROTOTYPE'], domain: 'Probability', desc: 'Category example' },
+      'ANALOGY': { requires: ['MEANING'], domain: 'Probability', desc: 'Structure mapping' },
+      'FOLK_PSYCHOLOGY': { requires: ['PRAGMATICS'], domain: 'Probability', desc: 'Mind theory' },
+      'INTENTIONALITY': { requires: ['MEANING'], domain: 'Probability', desc: 'Aboutness' },
+      'QUALIA': { requires: ['INTENTIONALITY'], domain: 'Probability', desc: 'Subjective feeling' },
+      
+      // ════════════════════════════════════════════════════════════════════════════
+      // INTERACTION MECHANISMS (87 primitives)
+      // ════════════════════════════════════════════════════════════════════════════
+      // Causal Relations (16)
+      'CAUSATION': { requires: ['BEFORE', 'IMPLIES'], domain: 'Interaction', desc: 'A causes B' },
+      'DETERMINISTIC_CAUSATION': { requires: ['CAUSATION'], domain: 'Interaction', desc: '100% correlation' },
+      'PROBABILISTIC_CAUSATION': { requires: ['CAUSATION', 'CONDITIONAL_PROBABILITY'], domain: 'Interaction', desc: 'P(B|A)>P(B)' },
+      'COUNTERFACTUAL': { requires: ['CAUSATION'], domain: 'Interaction', desc: 'If-then correlation' },
+      'CAUSAL_GRAPH': { requires: ['DIRECTED_EDGE', 'CAUSATION'], domain: 'Interaction', desc: 'DAG of causes' },
+      'CONFOUNDER': { requires: ['CAUSAL_GRAPH'], domain: 'Interaction', desc: 'Spurious correlation' },
+      'COLLIDER': { requires: ['CAUSAL_GRAPH'], domain: 'Interaction', desc: 'Common effect' },
+      'BACKDOOR_PATH': { requires: ['CAUSAL_GRAPH', 'CONFOUNDER'], domain: 'Interaction', desc: 'Confounding route' },
+      'FRONTDOOR_PATH': { requires: ['CAUSAL_GRAPH'], domain: 'Interaction', desc: 'Mediated effect' },
+      'EFFECT_MODIFIER': { requires: ['CAUSATION'], domain: 'Interaction', desc: 'Conditional effect' },
+      'MEDIATION': { requires: ['FRONTDOOR_PATH'], domain: 'Interaction', desc: 'A→M→B path' },
+      'DIRECT_EFFECT': { requires: ['CAUSATION'], domain: 'Interaction', desc: 'Total minus mediated' },
+      'INDIRECT_EFFECT': { requires: ['MEDIATION'], domain: 'Interaction', desc: 'Through mediator' },
+      'INTERACTION_EFFECT': { requires: ['EFFECT_MODIFIER'], domain: 'Interaction', desc: 'A×B synergy' },
+      'TEMPORAL_PRECEDENCE': { requires: ['BEFORE', 'CAUSATION'], domain: 'Interaction', desc: 'Cause before effect' },
+      'GRANGER_CAUSALITY': { requires: ['TEMPORAL_PRECEDENCE'], domain: 'Interaction', desc: 'Predictive causality' },
+      
+      // Social/Game Theory (16)
+      'AGENT': { requires: ['SYMBOL'], domain: 'Interaction', desc: 'Decision maker' },
+      'PREFERENCE': { requires: ['AGENT'], domain: 'Interaction', desc: 'Agent ordering' },
+      'UTILITY': { requires: ['PREFERENCE'], domain: 'Interaction', desc: 'Preference magnitude' },
+      'STRATEGY': { requires: ['AGENT', 'CAUSATION'], domain: 'Interaction', desc: 'Action plan' },
+      'PAYOFF': { requires: ['UTILITY', 'STRATEGY'], domain: 'Interaction', desc: 'Outcome value' },
+      'GAME': { requires: ['AGENT', 'STRATEGY', 'PAYOFF'], domain: 'Interaction', desc: 'Multi-agent interaction' },
+      'NASH_EQUILIBRIUM': { requires: ['GAME'], domain: 'Interaction', desc: 'No unilateral deviation' },
+      'DOMINANT_STRATEGY': { requires: ['STRATEGY'], domain: 'Interaction', desc: 'Always best' },
+      'MIXED_STRATEGY': { requires: ['STRATEGY', 'PROBABILITY_MEASURE'], domain: 'Interaction', desc: 'Randomized play' },
+      'EXTENSIVE_FORM': { requires: ['GAME'], domain: 'Interaction', desc: 'Game tree' },
+      'NORMAL_FORM': { requires: ['GAME'], domain: 'Interaction', desc: 'Payoff matrix' },
+      'PRISONER_DILEMMA': { requires: ['GAME'], domain: 'Interaction', desc: 'Cooperation trap' },
+      'COORDINATION_GAME': { requires: ['GAME'], domain: 'Interaction', desc: 'Common interest' },
+      'ZERO_SUM_GAME': { requires: ['PAYOFF'], domain: 'Interaction', desc: 'One wins, one loses' },
+      'COOPERATION': { requires: ['AGENT', 'AGENT'], domain: 'Interaction', desc: 'Joint benefit' },
+      'COMPETITION': { requires: ['AGENT', 'AGENT'], domain: 'Interaction', desc: 'Opposing goals' },
+      
+      // Genetic Mechanisms (18)
+      'ALLELE': { requires: ['SYMBOL'], domain: 'Interaction', desc: 'Gene variant' },
+      'GENOTYPE': { requires: ['ALLELE'], domain: 'Interaction', desc: 'Genetic makeup' },
+      'PHENOTYPE': { requires: ['GENOTYPE'], domain: 'Interaction', desc: 'Observable traits' },
+      'DOMINANT': { requires: ['ALLELE'], domain: 'Interaction', desc: 'Masks recessive' },
+      'RECESSIVE': { requires: ['ALLELE'], domain: 'Interaction', desc: 'Masked by dominant' },
+      'MENDELIAN_INHERITANCE': { requires: ['DOMINANT', 'RECESSIVE'], domain: 'Interaction', desc: '3:1 ratio' },
+      'PLEIOTROPY': { requires: ['GENOTYPE'], domain: 'Interaction', desc: 'Gene multiple traits' },
+      'EPISTASIS': { requires: ['GENOTYPE'], domain: 'Interaction', desc: 'Gene masking gene' },
+      'LINKAGE': { requires: ['ALLELE'], domain: 'Interaction', desc: 'Nearby gene inheritance' },
+      'CROSSING_OVER': { requires: ['LINKAGE'], domain: 'Interaction', desc: 'Chromosome recombination' },
+      'RECOMBINATION': { requires: ['CROSSING_OVER'], domain: 'Interaction', desc: 'New gene combinations' },
+      'HETEROZYGOTE': { requires: ['ALLELE'], domain: 'Interaction', desc: 'Two different alleles' },
+      'HOMOZYGOTE': { requires: ['ALLELE'], domain: 'Interaction', desc: 'Two same alleles' },
+      'MUTATION': { requires: ['GENOTYPE'], domain: 'Interaction', desc: 'Gene change' },
+      'SELECTION_PRESSURE': { requires: ['PHENOTYPE', 'AGENT'], domain: 'Interaction', desc: 'Fitness differential' },
+      'NATURAL_SELECTION': { requires: ['SELECTION_PRESSURE', 'MUTATION'], domain: 'Interaction', desc: 'Differential survival' },
+      'GENETIC_DRIFT': { requires: ['ALLELE'], domain: 'Interaction', desc: 'Random frequency' },
+      'GENE_FLOW': { requires: ['POPULATION'], domain: 'Interaction', desc: 'Migration+reproduction' },
+      
+      // Chemical Bonding (19)
+      'ATOM': { requires: ['ELECTRON'], domain: 'Interaction', desc: 'Atomic nucleus+electrons' },
+      'ELECTRON': { requires: [], domain: 'Interaction', desc: 'Negatively charged particle' },
+      'NUCLEUS': { requires: [], domain: 'Interaction', desc: 'Protons+neutrons' },
+      'VALENCE_ELECTRON': { requires: ['ELECTRON'], domain: 'Interaction', desc: 'Outer shell' },
+      'COVALENT_BOND': { requires: ['VALENCE_ELECTRON'], domain: 'Interaction', desc: 'Shared electrons' },
+      'IONIC_BOND': { requires: ['VALENCE_ELECTRON'], domain: 'Interaction', desc: 'Electron transfer' },
+      'METALLIC_BOND': { requires: ['VALENCE_ELECTRON'], domain: 'Interaction', desc: 'Electron sea' },
+      'COORDINATE_BOND': { requires: ['COVALENT_BOND'], domain: 'Interaction', desc: 'One-way donation' },
+      'HYDROGEN_BOND': { requires: ['COVALENT_BOND'], domain: 'Interaction', desc: 'H...O attraction' },
+      'VAN_DER_WAALS': { requires: ['ELECTRON'], domain: 'Interaction', desc: 'Weak attraction' },
+      'ELECTRONEGATIVITY': { requires: ['ATOM'], domain: 'Interaction', desc: 'Electron attraction' },
+      'POLAR_BOND': { requires: ['ELECTRONEGATIVITY'], domain: 'Interaction', desc: 'Unequal sharing' },
+      'NONPOLAR_BOND': { requires: ['ELECTRONEGATIVITY'], domain: 'Interaction', desc: 'Equal sharing' },
+      'RESONANCE': { requires: ['COVALENT_BOND'], domain: 'Interaction', desc: 'Multiple structures' },
+      'AROMATICITY': { requires: ['COVALENT_BOND'], domain: 'Interaction', desc: 'Ring stability' },
+      'HYBRIDIZATION': { requires: ['VALENCE_ELECTRON'], domain: 'Interaction', desc: 'Orbital mixing' },
+      'BOND_ENERGY': { requires: ['COVALENT_BOND'], domain: 'Interaction', desc: 'Breaking cost' },
+      'BOND_LENGTH': { requires: ['COVALENT_BOND'], domain: 'Interaction', desc: 'Distance' },
+      'BOND_ANGLE': { requires: ['COVALENT_BOND'], domain: 'Interaction', desc: 'Orientation' },
+      
+      // Energy Transitions (18)
+      'ENERGY': { requires: ['FORCE'], domain: 'Interaction', desc: 'Capacity to work' },
+      'KINETIC_ENERGY': { requires: ['ENERGY', 'MASS'], domain: 'Interaction', desc: '½mv²' },
+      'POTENTIAL_ENERGY': { requires: ['ENERGY', 'FORCE'], domain: 'Interaction', desc: 'Stored capacity' },
+      'THERMAL_ENERGY': { requires: ['KINETIC_ENERGY'], domain: 'Interaction', desc: 'Heat/temperature' },
+      'PHOTON': { requires: ['ENERGY'], domain: 'Interaction', desc: 'Light quantum' },
+      'RADIATIVE_TRANSITION': { requires: ['PHOTON'], domain: 'Interaction', desc: 'Excited→ground+photon' },
+      'ABSORPTION': { requires: ['PHOTON'], domain: 'Interaction', desc: 'Ground+photon→excited' },
+      'EMISSION': { requires: ['RADIATIVE_TRANSITION'], domain: 'Interaction', desc: 'Stimulated release' },
+      'SPONTANEOUS_EMISSION': { requires: ['RADIATIVE_TRANSITION'], domain: 'Interaction', desc: 'Natural decay' },
+      'STIMULATED_EMISSION': { requires: ['RADIATIVE_TRANSITION'], domain: 'Interaction', desc: 'Trigger release' },
+      'LASER': { requires: ['STIMULATED_EMISSION'], domain: 'Interaction', desc: 'Coherent light' },
+      'ENERGY_LEVEL': { requires: ['ENERGY'], domain: 'Interaction', desc: 'Quantized states' },
+      'EXCITED_STATE': { requires: ['ENERGY_LEVEL'], domain: 'Interaction', desc: 'Higher energy' },
+      'GROUND_STATE': { requires: ['ENERGY_LEVEL'], domain: 'Interaction', desc: 'Lowest energy' },
+      'WORK': { requires: ['ENERGY', 'FORCE'], domain: 'Interaction', desc: 'Force-distance product' },
+      'POWER': { requires: ['WORK'], domain: 'Interaction', desc: 'Work per time' },
+      'EFFICIENCY': { requires: ['WORK'], domain: 'Interaction', desc: 'Useful output ratio' },
+      'EXOTHERMIC': { requires: ['ENERGY', 'THERMAL_ENERGY'], domain: 'Interaction', desc: 'Releases heat' },
+      'ENDOTHERMIC': { requires: ['ENERGY', 'POTENTIAL_ENERGY'], domain: 'Interaction', desc: 'Absorbs heat' },
+      
+      // ════════════════════════════════════════════════════════════════════════════
+      // COMPLEX NUMBER (helper for quantum)
+      'COMPLEX_VECTOR': { requires: ['VECTOR_3D', 'TRUE', 'FALSE'], domain: 'Topological', desc: 'Complex components' },
+      
+      // ════════════════════════════════════════════════════════════════════════════
+      // HIGHER COMPOSITIONS (Bridging domains)
+      // ════════════════════════════════════════════════════════════════════════════
+      'ATOM_STRUCTURE': { requires: ['ATOM', 'ELECTRON', 'NUCLEUS'], domain: 'Interaction', desc: 'Atomic theory' },
+      'MOLECULE': { requires: ['COVALENT_BOND', 'ATOM'], domain: 'Interaction', desc: 'Bonded atoms' },
+      'POLYMER': { requires: ['COVALENT_BOND', 'MOLECULE'], domain: 'Interaction', desc: 'Chained molecules' },
+      
+      'CELL': { requires: ['POLYMER', 'MOLECULE'], domain: 'Biology', desc: 'Basic life unit' },
+      'ORGANELLE': { requires: ['MOLECULE'], domain: 'Biology', desc: 'Cellular component' },
+      'DNA': { requires: ['MOLECULE', 'ALLELE'], domain: 'Biology', desc: 'Genetic material' },
+      'RIBOSOME': { requires: ['ORGANELLE'], domain: 'Biology', desc: 'Protein factory' },
+      'PROTEIN': { requires: ['POLYMER', 'RIBOSOME'], domain: 'Biology', desc: 'Life machinery' },
+      'ENZYME': { requires: ['PROTEIN', 'CATALYSIS'], domain: 'Biology', desc: 'Reaction accelerator' },
+      'METABOLISM': { requires: ['ENZYME', 'ENERGY'], domain: 'Biology', desc: 'Chemical reactions' },
+      'PHOTOSYNTHESIS': { requires: ['METABOLISM', 'PHOTON'], domain: 'Biology', desc: 'Light→chemical' },
+      'RESPIRATION': { requires: ['METABOLISM', 'ENERGY'], domain: 'Biology', desc: 'Chemical→energy' },
+      'HOMEOSTASIS': { requires: ['FEEDBACK', 'THERMODYNAMICS'], domain: 'Biology', desc: 'Stability maintenance' },
+      'REPRODUCTION': { requires: ['DNA', 'CELL_DIVISION'], domain: 'Biology', desc: 'Creating offspring' },
+      'ORGANISM': { requires: ['CELL', 'ORGAN'], domain: 'Biology', desc: 'Living system' },
+      'EVOLUTION': { requires: ['NATURAL_SELECTION', 'ORGANISM'], domain: 'Biology', desc: 'Inherited change' },
+      'ECOLOGY': { requires: ['ORGANISM', 'COMPETITION', 'COOPERATION'], domain: 'Ecology', desc: 'Community dynamics' },
+      'FOOD_CHAIN': { requires: ['ORGANISM', 'ENERGY'], domain: 'Ecology', desc: 'Energy transfer' },
+      'ECOSYSTEM': { requires: ['ECOLOGY', 'FOOD_CHAIN'], domain: 'Ecology', desc: 'Integrated system' },
+      
+      // Supporting primitives
+      'FEEDBACK': { requires: ['CAUSATION', 'MEASUREMENT'], domain: 'Interaction', desc: 'Output→input' },
+      'NEGATIVE_FEEDBACK': { requires: ['FEEDBACK'], domain: 'Interaction', desc: 'Stabilizing' },
+      'POSITIVE_FEEDBACK': { requires: ['FEEDBACK'], domain: 'Interaction', desc: 'Amplifying' },
+      'THERMODYNAMICS': { requires: ['ENERGY', 'ENTROPY'], domain: 'Interaction', desc: 'Heat laws' },
+      'CATALYSIS': { requires: ['ENERGY', 'ACTIVATION_ENERGY'], domain: 'Interaction', desc: 'Reaction lowering' },
+      'ACTIVATION_ENERGY': { requires: ['ENERGY', 'POTENTIAL_ENERGY'], domain: 'Interaction', desc: 'Barrier height' },
+      'POPULATION': { requires: ['ORGANISM'], domain: 'Ecology', desc: 'Species group' },
+      'ORGAN': { requires: ['CELL'], domain: 'Biology', desc: 'Multi-cell structure' },
+      'CELL_DIVISION': { requires: ['DNA', 'CELL'], domain: 'Biology', desc: 'Cell replication' },
+    };
+    
+    class Node {
+      constructor(name) {
+        this.name = name
+        this.data = Library[name]
+        this.x = 0
+        this.y = 0
+        this.r = 6
+      }
+      
+      contains(px, py, zoom) {
+        const dist = Math.sqrt((this.x - px) ** 2 + (this.y - py) ** 2)
+        return dist <= this.r / zoom + 4
+      }
+    }
+    
+    class CausalChain {
+      constructor(rootName, parentName = null) {
+        this.root = rootName
+        this.parent = parentName // The node we came from (the navigation link)
+        this.nodes = []
+        this.hoveredNode = null
+        
+        const rootNode = new Node(rootName)
+        rootNode.x = 0
+        rootNode.y = 0
+        rootNode.level = 0
+        this.nodes.push(rootNode)
+        
+        // Add parent node if we navigated here from somewhere
+        if (parentName) {
+          const parentNode = new Node(parentName)
+          parentNode.x = -150
+          parentNode.y = 0
+          parentNode.level = -1
+          this.nodes.push(parentNode)
+        }
+      }
+      
+      getExpandedChildren(name) {
+        // Calculate positions for children without storing them
+        const requires = Library[name].requires.slice(0, 3) // Limit to 3
+        if (requires.length === 0) return []
+        
+        const parentNode = this.nodes.find(n => n.name === name)
+        if (!parentNode) return []
+        
+        const angleStep = Math.PI * 2 / requires.length
+        const radius = 100
+        
+        return requires.map((req, idx) => {
+          const angle = angleStep * idx
+          const x = parentNode.x + Math.cos(angle) * radius
+          const y = parentNode.y + Math.sin(angle) * radius
+          
+          const node = new Node(req)
+          node.x = x
+          node.y = y
+          node.level = 1
+          return node
+        })
+      }
+      
+      expandHover(name) {
+        this.hoveredNode = name
+      }
+      
+      clearHover() {
+        this.hoveredNode = null
+      }
+    }
+    
+    class App {
+      constructor() {
+        this.canvas = document.getElementById('canvas')
+        this.ctx = this.canvas.getContext('2d')
+        this.chain = null
+        this.root = 'ECOSYSTEM'
+        
+        this.camX = 0
+        this.camY = 0
+        this.zoom = 1
+        this.selected = null
+        this.panning = false
+        this.panStart = { x: 0, y: 0 }
+        
+        this.canvas.width = this.canvas.offsetWidth
+        this.canvas.height = this.canvas.offsetHeight
+        
+        this.canvas.addEventListener('click', e => this.handleClick(e))
+        this.canvas.addEventListener('mousemove', e => {
+          const [wx, wy] = this.screenToWorld(e.clientX, e.clientY)
+          const rootNode = this.chain.nodes.find(n => n.name === this.chain.root)
+          if (!rootNode) return
+          
+          const rootDist = Math.sqrt((wx - rootNode.x) ** 2 + (wy - rootNode.y) ** 2)
+          
+          // Hover persists while within root's field
+          if (rootDist < 150) {
+            this.chain.expandHover(this.chain.root)
+          } else {
+            this.chain.clearHover()
+          }
+        })
+        this.canvas.addEventListener('mouseleave', () => this.chain.clearHover())
+        this.canvas.addEventListener('mousedown', e => {
+          this.panStart = {x: e.clientX, y: e.clientY}
+          this.panning = true
+        })
+        this.canvas.addEventListener('mouseup', () => this.panning = false)
+        this.canvas.addEventListener('mousemove', e => {
+          if (!this.panning) return
+          this.camX -= (e.clientX - this.panStart.x) / this.zoom
+          this.camY -= (e.clientY - this.panStart.y) / this.zoom
+          this.panStart = {x: e.clientX, y: e.clientY}
+        })
+        this.canvas.addEventListener('wheel', e => {
+          e.preventDefault()
+          this.zoom *= e.deltaY > 0 ? 0.9 : 1.1
+          this.zoom = Math.max(0.3, Math.min(3, this.zoom))
+        })
+        
+        window.addEventListener('resize', () => {
+          this.canvas.width = this.canvas.offsetWidth
+          this.canvas.height = this.canvas.offsetHeight
+        })
+        
+        this.navigate(this.root)
+      }
+      
+      handleClick(e) {
+        if (this.panning || !this.chain) return
+        const [wx, wy] = this.screenToWorld(e.clientX, e.clientY)
+        
+        // Always check root first
+        for (const node of this.chain.nodes) {
+          if (node.contains(wx, wy, this.zoom)) {
+            this.navigate(node.name)
+            return
+          }
+        }
+        
+        // Then check expanded children of hovered node
+        if (this.chain.hoveredNode) {
+          const expandedChildren = this.chain.getExpandedChildren(this.chain.hoveredNode)
+          for (const child of expandedChildren) {
+            if (child.contains(wx, wy, this.zoom)) {
+              this.navigate(child.name)
+              return
+            }
+          }
+        }
+      }
+      
+      screenToWorld(ex, ey) {
+        const rect = this.canvas.getBoundingClientRect()
+        const sx = (ex - rect.left - this.canvas.width / 2) / this.zoom - this.camX
+        const sy = (ey - rect.top - this.canvas.height / 2) / this.zoom - this.camY
+        return [sx, sy]
+      }
+      
+      navigate(name) {
+        const previousRoot = this.root
+        this.root = name
+        this.chain = new CausalChain(name, previousRoot)
+        this.selected = name
+        this.camX = 0
+        this.camY = 0
+        this.zoom = 1
+        this.updateBreadcrumb()
+        this.showInfo()
+      }
+      
+      updateBreadcrumb() {
+        const path = this.buildPath(this.root)
+        document.getElementById('breadcrumb').innerHTML = path.join(' ← ')
+      }
+      
+      buildPath(name, depth = 3) {
+        if (depth === 0) return []
+        const requires = Library[name].requires
+        if (requires.length === 0) return [name]
+        
+        const paths = requires.map(r => this.buildPath(r, depth - 1))
+        return [name, ...paths.flat()]
+      }
+      
+      showInfo() {
+        const info = document.getElementById('info')
+        const node = this.chain.nodes.find(n => n.name === this.root)
+        if (!node) return
+        
+        let html = `<h3>${node.name}</h3>`
+        html += `<div class="line"><span class="label">Domain:</span> ${node.data.domain}</div>`
+        html += `<div class="line"><span class="label">Requires:</span> ${node.data.requires.length > 0 ? node.data.requires.join(', ') : 'nothing (primitive)'}</div>`
+        html += `<div class="line" style="margin-top: 0.5rem; color: #00ff00; font-size: 0.75rem;">Click any node to navigate</div>`
+        
+        info.innerHTML = html
+        info.classList.add('visible')
+      }
+      
+      render() {
+        this.ctx.fillStyle = '#0a0a0a'
+        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height)
+        
+        if (!this.chain) return
+        
+        this.ctx.save()
+        this.ctx.translate(this.canvas.width / 2, this.canvas.height / 2)
+        this.ctx.scale(this.zoom, this.zoom)
+        this.ctx.translate(-this.camX, -this.camY)
+        
+        const colors = {
+          'Boolean': '#FF6B6B',
+          'Atomics': '#4ECDC4',
+          'Chemistry': '#FFE66D',
+          'Physics': '#95E1D3',
+          'Biology': '#B19CD9',
+          'Ecology': '#90EE90'
+        }
+        
+        const rootNode = this.chain.nodes.find(n => n.name === this.chain.root)
+        const parentNode = this.chain.nodes.find(n => n.name === this.chain.parent)
+        
+        // Draw field aura if hovering
+        if (this.chain.hoveredNode) {
+          const hovered = this.chain.nodes.find(n => n.name === this.chain.hoveredNode)
+          if (hovered) {
+            const color = colors[Library[this.chain.hoveredNode].domain] || '#00D9FF'
+            this.ctx.fillStyle = color + '15'
+            this.ctx.beginPath()
+            this.ctx.arc(hovered.x, hovered.y, 150, 0, Math.PI * 2)
+            this.ctx.fill()
+          }
+        }
+        
+        // Draw link back to parent if it exists
+        if (parentNode && rootNode) {
+          this.ctx.strokeStyle = 'rgba(255, 105, 180, 0.3)'
+          this.ctx.lineWidth = 2
+          this.ctx.setLineDash([5, 5])
+          this.ctx.beginPath()
+          this.ctx.moveTo(parentNode.x, parentNode.y)
+          this.ctx.lineTo(rootNode.x, rootNode.y)
+          this.ctx.stroke()
+          this.ctx.setLineDash([])
+        }
+        
+        // Get expanded children if hovering
+        let expandedChildren = []
+        if (this.chain.hoveredNode) {
+          expandedChildren = this.chain.getExpandedChildren(this.chain.hoveredNode)
+          
+          // Draw edges to children
+          const hovered = this.chain.nodes.find(n => n.name === this.chain.hoveredNode)
+          if (hovered) {
+            expandedChildren.forEach(child => {
+              const sameD = Library[this.chain.hoveredNode].domain === child.data.domain
+              this.ctx.strokeStyle = sameD ? 'rgba(0, 217, 255, 0.4)' : 'rgba(255, 105, 180, 0.5)'
+              this.ctx.lineWidth = sameD ? 2 : 3
+              if (!sameD) this.ctx.setLineDash([5, 5])
+              
+              this.ctx.beginPath()
+              this.ctx.moveTo(hovered.x, hovered.y)
+              this.ctx.lineTo(child.x, child.y)
+              this.ctx.stroke()
+              this.ctx.setLineDash([])
+            })
+          }
+        }
+        
+        // Draw parent node (always visible if exists, dimmer)
+        if (parentNode) {
+          const color = colors[parentNode.data.domain] || '#00D9FF'
+          
+          // Dimmer node
+          this.ctx.fillStyle = color + '80'
+          this.ctx.beginPath()
+          this.ctx.arc(parentNode.x, parentNode.y, parentNode.r * 0.8, 0, Math.PI * 2)
+          this.ctx.fill()
+          
+          // Border
+          this.ctx.strokeStyle = color
+          this.ctx.lineWidth = 1
+          this.ctx.stroke()
+          
+          // Parent label
+          this.ctx.fillStyle = color
+          this.ctx.font = '10px monospace'
+          this.ctx.textAlign = 'center'
+          this.ctx.fillText(parentNode.name, parentNode.x, parentNode.y - 12)
+        }
+        
+        // Draw root node
+        if (rootNode) {
+          const color = colors[rootNode.data.domain] || '#00D9FF'
+          
+          // Node
+          this.ctx.fillStyle = color
+          this.ctx.beginPath()
+          this.ctx.arc(rootNode.x, rootNode.y, rootNode.r, 0, Math.PI * 2)
+          this.ctx.fill()
+          
+          // Border
+          this.ctx.strokeStyle = color
+          this.ctx.lineWidth = 2
+          this.ctx.stroke()
+          
+          // Glow if hovered
+          if (rootNode.name === this.chain.hoveredNode) {
+            this.ctx.fillStyle = color + '50'
+            this.ctx.beginPath()
+            this.ctx.arc(rootNode.x, rootNode.y, rootNode.r * 2.5, 0, Math.PI * 2)
+            this.ctx.fill()
+          }
+          
+          // Root label
+          this.ctx.fillStyle = color
+          this.ctx.font = 'bold 12px monospace'
+          this.ctx.textAlign = 'center'
+          this.ctx.fillText(rootNode.name, rootNode.x, rootNode.y - 18)
+        }
+        
+        // Draw expanded children
+        expandedChildren.forEach(child => {
+          const color = colors[child.data.domain] || '#00D9FF'
+          const isHovered = child.name === this.chain.hoveredNode
+          
+          // Glow for hovered
+          if (isHovered) {
+            this.ctx.fillStyle = color + '50'
+            this.ctx.beginPath()
+            this.ctx.arc(child.x, child.y, child.r * 2.5, 0, Math.PI * 2)
+            this.ctx.fill()
+          }
+          
+          // Node
+          this.ctx.fillStyle = color
+          this.ctx.beginPath()
+          this.ctx.arc(child.x, child.y, child.r, 0, Math.PI * 2)
+          this.ctx.fill()
+          
+          // Border
+          this.ctx.strokeStyle = color
+          this.ctx.lineWidth = isHovered ? 2 : 1
+          this.ctx.stroke()
+          
+          // Label
+          this.ctx.fillStyle = color
+          this.ctx.font = '11px monospace'
+          this.ctx.textAlign = 'center'
+          this.ctx.fillText(child.name, child.x, child.y - 14)
+        })
+        
+        this.ctx.restore()
+      }
+      
+      animate() {
+        this.render()
+        requestAnimationFrame(() => this.animate())
+      }
+      
+      start() {
+        this.animate()
+      }
+    }
+    
+    window.app = new App()
+    window.app.start()
+  </script>
+</body>
+</html>

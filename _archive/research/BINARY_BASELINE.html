@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Computing Baseline: Layer 1 - Primitive Operations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0e27;
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #64b5f6;
+            font-size: 2em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #90caf9;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            border: 2px solid #424242;
+            border-radius: 8px;
+            padding: 20px;
+            background: #0f1419;
+        }
+        
+        .section-title {
+            font-size: 1.4em;
+            color: #64b5f6;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #424242;
+            padding-bottom: 10px;
+        }
+        
+        .operations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .operation {
+            border: 1px solid #424242;
+            border-radius: 6px;
+            padding: 16px;
+            background: #1a1f2e;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .operation:hover {
+            border-color: #64b5f6;
+            background: #212738;
+            box-shadow: 0 0 10px rgba(100, 181, 246, 0.2);
+        }
+        
+        .op-name {
+            font-weight: bold;
+            color: #64b5f6;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .op-description {
+            color: #90caf9;
+            font-size: 0.9em;
+            margin-bottom: 12px;
+            min-height: 20px;
+        }
+        
+        .truth-table {
+            background: #0a0e27;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 0.9em;
+            margin-bottom: 12px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .truth-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 0;
+            color: #e0e0e0;
+        }
+        
+        .input-controls {
+            margin-bottom: 12px;
+        }
+        
+        .control-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        
+        .control-label {
+            width: 80px;
+            color: #90caf9;
+            font-size: 0.9em;
+        }
+        
+        .bit-toggle {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #424242;
+            border-radius: 4px;
+            background: #0a0e27;
+            color: #e0e0e0;
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .bit-toggle:hover {
+            border-color: #64b5f6;
+            background: #1a1f2e;
+        }
+        
+        .bit-toggle.on {
+            background: #64b5f6;
+            color: #0a0e27;
+            border-color: #64b5f6;
+        }
+        
+        .result-box {
+            background: #0a0e27;
+            border-radius: 4px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: #64b5f6;
+            font-size: 1.2em;
+        }
+        
+        .legend {
+            background: #1a1f2e;
+            border-left: 4px solid #64b5f6;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #90caf9;
+            border-radius: 4px;
+        }
+        
+        .completeness-note {
+            background: #0d3a1a;
+            border-left: 4px solid #4caf50;
+            padding: 12px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #81c784;
+            border-radius: 4px;
+        }
+        
+        .exhaustion-marker {
+            color: #4caf50;
+            font-weight: bold;
+            margin-top: 15px;
+            padding: 10px;
+            background: #0d3a1a;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚙️ BINARY COMPUTING BASELINE</h1>
+        <p class="subtitle">Layer 1: Primitive Unary & Binary Operations (Exhaustive)</p>
+        
+        <!-- UNARY OPERATIONS SECTION -->
+        <div class="section">
+            <div class="section-title">Unary Operations (1 Input)</div>
+            <p style="color: #90caf9; margin-bottom: 15px;">Single-bit functions: 4 total (all possible)</p>
+            <div class="operations-grid" id="unaryOps"></div>
+            <div class="exhaustion-marker">✓ EXHAUSTIVE: 4 unary operations (2^2 = all possibilities)</div>
+        </div>
+        
+        <!-- BINARY OPERATIONS SECTION -->
+        <div class="section">
+            <div class="section-title">Binary Operations (2 Inputs)</div>
+            <p style="color: #90caf9; margin-bottom: 15px;">Two-bit functions: 16 total (all possible)</p>
+            <div class="operations-grid" id="binaryOps"></div>
+            <div class="exhaustion-marker">✓ EXHAUSTIVE: 16 binary operations (2^4 = all possibilities)</div>
+        </div>
+        
+        <!-- EMERGENT PROPERTIES -->
+        <div class="section">
+            <div class="section-title">Bit-Level Field Layers: Emergent Computational Capabilities</div>
+            
+            <div class="legend" style="border-left-color: #ff9800;">
+                <strong>BIT-LEVEL 0 (Constants):</strong><br/>
+                Capability: <strong>Initialize state</strong><br/>
+                • ALWAYS-0: Constant false signal<br/>
+                • ALWAYS-1: Constant true signal<br/>
+                Emergent Pattern: <strong>Boundary conditions</strong> - can set known starting points<br/>
+                <br/>
+                <strong>Field Attributes at This Level:</strong><br/>
+                • Determinism: Output never changes (completely predictable)<br/>
+                • Polarity: Exists in two forms only (true/false)<br/>
+                • Stateless: No input dependency
+            </div>
+            
+            <div class="legend" style="border-left-color: #2196f3;">
+                <strong>BIT-LEVEL 1 (Unary - Single Bit In):</strong><br/>
+                Capability: <strong>Transform individual state</strong><br/>
+                • IDENTITY: Pass signal through unchanged<br/>
+                • NOT: Invert signal<br/>
+                Emergent Pattern: <strong>Signal propagation + inversion</strong> - can flip or preserve truth value<br/>
+                <br/>
+                <strong>Field Attributes at This Level:</strong><br/>
+                • Involution: NOT is self-inverse (NOT NOT = identity)<br/>
+                • Polarity: Can preserve or flip<br/>
+                • Entropy: 4 operations possible (complete set)<br/>
+                • No functional completeness: Cannot build binary operations from unary alone
+            </div>
+            
+            <div class="legend" style="border-left-color: #4caf50;">
+                <strong>BIT-LEVEL 2 (Binary - Two Bits In):</strong><br/>
+                Capability: <strong>Combine and compare information</strong><br/>
+                • AND/NAND: Require both conditions<br/>
+                • OR/NOR: Accept either condition<br/>
+                • XOR/XNOR: Detect sameness/difference<br/>
+                • LEFT/RIGHT: Route one of two signals<br/>
+                • IMPLIES/NOT-IMPLIES: Conditional logic<br/>
+                Emergent Pattern: <strong>Decision making + routing</strong> - can merge two information streams and make choices<br/>
+                <br/>
+                <strong>Field Attributes at This Level:</strong><br/>
+                • Symmetry: Some operations symmetric (AND, OR, XOR), some asymmetric (LEFT, IMPLIES)<br/>
+                • Functional completeness: NAND and NOR can each build all 16 operations<br/>
+                • Duality: Every operation has an inverse (negate inputs+output)<br/>
+                • Polarity: Can be True-dominant or False-dominant
+            </div>
+            
+            <div class="legend" style="border-left-color: #9c27b0;">
+                <strong>BIT-LEVEL 3 (Ternary - Three Bits In):</strong><br/>
+                Capacity: 2^8 = 256 possible functions<br/>
+                Key emergent functions (subset):<br/>
+                • MAJORITY (2-of-3): Voting logic<br/>
+                • MULTIPLEXER: 3-to-1 signal selection<br/>
+                • FULL ADDER: Arithmetic shift<br/>
+                Emergent Pattern: <strong>Multiplexing + voting + majority rules</strong> - can select from multiple options, perform early arithmetic<br/>
+                <br/>
+                <strong>Field Attributes at This Level:</strong><br/>
+                • Voting: Majority rules appear (consensus properties)<br/>
+                • Multiplexing: Can select one input from many (selection becomes primitive)<br/>
+                • Asymmetry dominant: Most operations are asymmetric (unlike level 2)<br/>
+                • Arithmetic: Addition circuits become possible<br/>
+                • Functional completeness CHANGES: Different minimal universal sets
+            </div>
+            
+            <div class="legend" style="border-left-color: #f44336;">
+                <strong>BIT-LEVEL N (N-ary - N Bits In):</strong><br/>
+                Capacity: 2^(2^N) possible functions (combinatorial explosion)<br/>
+                Key emergent capabilities:<br/>
+                • Arbitrary logic functions (any N-input truth table)<br/>
+                • Arithmetic (addition, subtraction, multiplication)<br/>
+                • Memory addressing (N bits select 2^N locations)<br/>
+                • Comparison operators (equal, less-than, greater-than)<br/>
+                Emergent Pattern: <strong>Universal computation</strong> - anything computable becomes buildable<br/>
+                <br/>
+                <strong>Field Attributes at This Level:</strong><br/>
+                • Universality: Can compute any deterministic function<br/>
+                • Complexity explosion: 2^(2^N) operations (unmanageable for large N)<br/>
+                • Hierarchy: Decomposition becomes essential (cannot enumerate all)<br/>
+                • Abstraction necessity: Must use patterns/circuits instead of primitives<br/>
+                • Loss of direct symmetry: Operations too numerous to classify directly
+            </div>
+            
+            <div class="completeness-note">
+                <strong>✓ FIELD LAYER STRUCTURE (Bit Level = Layer):</strong><br/>
+                Layer 0: Constants → Boundary conditions → Field Attributes: {Determinism, Polarity, Stateless}<br/>
+                Layer 1: Unary ops → Signal transformation → Field Attributes: {Involution, Polarity±, No completeness}<br/>
+                Layer 2: Binary ops → Decision + routing → Field Attributes: {Symmetry, Completeness classes, Duality}<br/>
+                Layer 3: Ternary ops → Voting + selection + arithmetic → Field Attributes: {Voting, Multiplexing, Asymmetry, Arithmetic}<br/>
+                Layer N: N-ary ops → Universal computation → Field Attributes: {Universality, Complexity explosion, Abstraction necessity}<br/>
+                <br/>
+                <strong>CRITICAL: Each layer adds ONE dimension AND TRANSFORMS THE FIELD ATTRIBUTES.</strong><br/>
+                The field attributes are NOT cumulative — they CHANGE fundamentally at each level.
+            </div>
+        </div>
+        
+        <div class="legend" style="margin-top: 30px;">
+            <strong>How to Use This Baseline:</strong><br/>
+            • Click bits to toggle 0 ↔ 1<br/>
+            • Watch the result update in real-time<br/>
+            • Verify each operation matches its truth table<br/>
+            • This is the foundation for all computation
+        </div>
+    </div>
+
+    <script>
+        // === LAYER 1: PRIMITIVE OPERATIONS ===
+        
+        // Unary operations
+        const unaryOps = [
+            { name: 'IDENTITY', fn: (a) => a, desc: 'Pass through' },
+            { name: 'NOT', fn: (a) => 1 - a, desc: 'Invert bit' },
+            { name: 'ALWAYS-0', fn: (a) => 0, desc: 'Constant false' },
+            { name: 'ALWAYS-1', fn: (a) => 1, desc: 'Constant true' }
+        ];
+        
+        // Binary operations
+        const binaryOps = [
+            { name: 'AND', fn: (a, b) => a & b, desc: 'Both true', pos: [0, 0, 0, 1] },
+            { name: 'NAND', fn: (a, b) => 1 - (a & b), desc: 'Not both true', pos: [1, 1, 1, 0] },
+            { name: 'OR', fn: (a, b) => a | b, desc: 'At least one true', pos: [0, 1, 1, 1] },
+            { name: 'NOR', fn: (a, b) => 1 - (a | b), desc: 'Neither true', pos: [1, 0, 0, 0] },
+            { name: 'XOR', fn: (a, b) => a ^ b, desc: 'Exactly one true', pos: [0, 1, 1, 0] },
+            { name: 'XNOR', fn: (a, b) => 1 - (a ^ b), desc: 'Same value', pos: [1, 0, 0, 1] },
+            { name: 'LEFT', fn: (a, b) => a, desc: 'Return first input', pos: [0, 0, 1, 1] },
+            { name: 'RIGHT', fn: (a, b) => b, desc: 'Return second input', pos: [0, 1, 0, 1] },
+            { name: 'NOT-LEFT', fn: (a, b) => 1 - a, desc: 'Invert first', pos: [1, 1, 0, 0] },
+            { name: 'NOT-RIGHT', fn: (a, b) => 1 - b, desc: 'Invert second', pos: [1, 0, 1, 0] },
+            { name: 'IMPLIES-LR', fn: (a, b) => (1 - a) | b, desc: 'If left then right', pos: [1, 1, 0, 1] },
+            { name: 'IMPLIES-RL', fn: (a, b) => a | (1 - b), desc: 'If right then left', pos: [1, 0, 1, 1] },
+            { name: 'NOT-IMPLIES-LR', fn: (a, b) => a & (1 - b), desc: 'Left without right', pos: [0, 0, 1, 0] },
+            { name: 'NOT-IMPLIES-RL', fn: (a, b) => (1 - a) & b, desc: 'Right without left', pos: [0, 1, 0, 0] },
+            { name: 'ALWAYS-0', fn: (a, b) => 0, desc: 'Constant false', pos: [0, 0, 0, 0] },
+            { name: 'ALWAYS-1', fn: (a, b) => 1, desc: 'Constant true', pos: [1, 1, 1, 1] }
+        ];
+        
+        // Render unary operations
+        const unaryContainer = document.getElementById('unaryOps');
+        unaryOps.forEach((op, idx) => {
+            const state = { a: 0 };
+            const html = `
+                <div class="operation">
+                    <div class="op-name">${op.name}</div>
+                    <div class="op-description">${op.desc}</div>
+                    <div class="truth-table">
+                        <div class="truth-row"><span>0 → ${op.fn(0)}</span></div>
+                        <div class="truth-row"><span>1 → ${op.fn(1)}</span></div>
+                    </div>
+                    <div class="input-controls">
+                        <div class="control-row">
+                            <span class="control-label">Input:</span>
+                            <div class="bit-toggle ${state.a ? 'on' : ''}" data-op="${idx}" data-type="unary">${state.a}</div>
+                        </div>
+                    </div>
+                    <div style="color: #90caf9; font-size: 0.85em; margin-bottom: 8px;">Result:</div>
+                    <div class="result-box">${op.fn(state.a)}</div>
+                </div>
+            `;
+            const el = document.createElement('div');
+            el.innerHTML = html;
+            unaryContainer.appendChild(el.firstElementChild);
+        });
+        
+        // Render binary operations
+        const binaryContainer = document.getElementById('binaryOps');
+        binaryOps.forEach((op, idx) => {
+            const state = { a: 0, b: 0 };
+            const html = `
+                <div class="operation">
+                    <div class="op-name">${op.name}</div>
+                    <div class="op-description">${op.desc}</div>
+                    <div class="truth-table">
+                        <div class="truth-row"><span>00→${op.pos[0]}</span> <span>01→${op.pos[1]}</span></div>
+                        <div class="truth-row"><span>10→${op.pos[2]}</span> <span>11→${op.pos[3]}</span></div>
+                    </div>
+                    <div class="input-controls">
+                        <div class="control-row">
+                            <span class="control-label">Input A:</span>
+                            <div class="bit-toggle ${state.a ? 'on' : ''}" data-op="${idx}" data-type="binary" data-input="a">${state.a}</div>
+                        </div>
+                        <div class="control-row">
+                            <span class="control-label">Input B:</span>
+                            <div class="bit-toggle ${state.b ? 'on' : ''}" data-op="${idx}" data-type="binary" data-input="b">${state.b}</div>
+                        </div>
+                    </div>
+                    <div style="color: #90caf9; font-size: 0.85em; margin-bottom: 8px;">Result:</div>
+                    <div class="result-box">${op.fn(state.a, state.b)}</div>
+                </div>
+            `;
+            const el = document.createElement('div');
+            el.innerHTML = html;
+            binaryContainer.appendChild(el.firstElementChild);
+        });
+        
+        // Event handling
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('bit-toggle')) {
+                const type = e.target.dataset.type;
+                const opIdx = parseInt(e.target.dataset.op);
+                const input = e.target.dataset.input;
+                
+                const operation = type === 'unary' ? unaryOps[opIdx] : binaryOps[opIdx];
+                const card = e.target.closest('.operation');
+                const resultBox = card.querySelector('.result-box');
+                
+                if (type === 'unary') {
+                    const currentVal = parseInt(e.target.textContent);
+                    const newVal = 1 - currentVal;
+                    e.target.textContent = newVal;
+                    e.target.classList.toggle('on');
+                    resultBox.textContent = operation.fn(newVal);
+                } else {
+                    const aToggle = card.querySelector('[data-input="a"]');
+                    const bToggle = card.querySelector('[data-input="b"]');
+                    const aVal = parseInt(aToggle.textContent);
+                    const bVal = parseInt(bToggle.textContent);
+                    
+                    if (input === 'a') {
+                        const newVal = 1 - aVal;
+                        aToggle.textContent = newVal;
+                        aToggle.classList.toggle('on');
+                        resultBox.textContent = operation.fn(newVal, bVal);
+                    } else {
+                        const newVal = 1 - bVal;
+                        bToggle.textContent = newVal;
+                        bToggle.classList.toggle('on');
+                        resultBox.textContent = operation.fn(aVal, newVal);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

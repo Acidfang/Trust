@@ -1,0 +1,6 @@
+# ledger_sync_audit.jsonl ledger - ARIA Multiuser Capability Library
+# Created: 2026-03-27T04:38:01.840645
+# Append-only: True
+# ZEROPOINT: True
+#
+{"user_id": "user:alice", "device_id": "device_laptop", "local_hash": "hash_abc123", "remote_hash": "hash_def456", "deltas_applied": 1, "resolved_conflicts": 0, "synced_at": "2026-03-27T04:38:01.840418"}

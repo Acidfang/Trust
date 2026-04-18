@@ -1,0 +1,398 @@
+{
+  "metadata": {
+    "ledger_id": "validation-proof-20260418-073951",
+    "creation_time": "2026-04-18T07:39:51.784892Z",
+    "entries": 4,
+    "total_pairs": 34,
+    "trinity_verified": true,
+    "coherence": "Φ minimized (validated knowledge)",
+    "format": "⊙[symbol] → β[domain] → κ⊕[invariants] → λ[fields] → τ[confidence]"
+  },
+  "immutable_ledger": [
+    {
+      "symbol": "⊙[validation-ledger]",
+      "domain": "β[technical-basis-ledger]",
+      "timestamp": "2026-04-18T07:39:51.784304Z",
+      "constraint": {
+        "hash": "e6471e8ab06629fe",
+        "definition": {
+          "structure": "user_explanation → ai_response → acceptance_status",
+          "properties": [
+            "explanation",
+            "response",
+            "status",
+            "timestamp"
+          ],
+          "validation": "conversation_pair"
+        },
+        "immutable": true
+      },
+      "variations": {
+        "accepted": 5,
+        "questioned": 4,
+        "total": 9,
+        "acceptance_rate": "55%"
+      },
+      "references": {
+        "pairs": 9,
+        "pairs_detail": [
+          {
+            "idx": 46021,
+            "status": "ACCEPTED",
+            "hash": "fdca7693bbb59f43",
+            "timestamp": "2026-03-08 14:34:51"
+          },
+          {
+            "idx": 50211,
+            "status": "ACCEPTED",
+            "hash": "9c6dc268bacdcac5",
+            "timestamp": "2026-03-15 11:49:45"
+          },
+          {
+            "idx": 50355,
+            "status": "ACCEPTED",
+            "hash": "d2f0390f4cbd956c",
+            "timestamp": "2026-03-15 14:06:57"
+          },
+          {
+            "idx": 50367,
+            "status": "ACCEPTED",
+            "hash": "53c89b6680cbb971",
+            "timestamp": "2026-03-15 14:25:01"
+          },
+          {
+            "idx": 50453,
+            "status": "ACCEPTED",
+            "hash": "f00c03cb2fcf737d",
+            "timestamp": "2026-03-15 16:22:09"
+          },
+          {
+            "idx": 50199,
+            "status": "QUESTIONED",
+            "hash": "4d505e3a3c8816b4",
+            "timestamp": "2026-03-15 11:44:34"
+          },
+          {
+            "idx": 50201,
+            "status": "QUESTIONED",
+            "hash": "cb26a0116a5d0eae",
+            "timestamp": "2026-03-15 11:44:34"
+          },
+          {
+            "idx": 50381,
+            "status": "QUESTIONED",
+            "hash": "b2489da7284feeff",
+            "timestamp": "2026-03-15 14:52:24"
+          },
+          {
+            "idx": 50383,
+            "status": "QUESTIONED",
+            "hash": "bcd1f491480e5a6e",
+            "timestamp": "2026-03-15 14:52:24"
+          }
+        ]
+      },
+      "invariants": {
+        "immutable": true,
+        "timestamped": true,
+        "hash_chained": true,
+        "append_only": true,
+        "coherence": "verified"
+      },
+      "confidence": {
+        "level": "5 accepted, 4 questioned",
+        "acceptance_rate": "55%",
+        "validation_strength": "high"
+      }
+    },
+    {
+      "symbol": "⊙[validation-pattern_matching]",
+      "domain": "β[technical-basis-pattern_matching]",
+      "timestamp": "2026-04-18T07:39:51.784507Z",
+      "constraint": {
+        "hash": "e6471e8ab06629fe",
+        "definition": {
+          "structure": "user_explanation → ai_response → acceptance_status",
+          "properties": [
+            "explanation",
+            "response",
+            "status",
+            "timestamp"
+          ],
+          "validation": "conversation_pair"
+        },
+        "immutable": true
+      },
+      "variations": {
+        "accepted": 5,
+        "questioned": 5,
+        "total": 10,
+        "acceptance_rate": "50%"
+      },
+      "references": {
+        "pairs": 10,
+        "pairs_detail": [
+          {
+            "idx": 7904,
+            "status": "ACCEPTED",
+            "hash": "a3f4be95e415edc9",
+            "timestamp": "2025-10-13 20:02:31"
+          },
+          {
+            "idx": 25144,
+            "status": "ACCEPTED",
+            "hash": "81485f138399b93b",
+            "timestamp": "2025-10-30 10:50:08"
+          },
+          {
+            "idx": 26853,
+            "status": "ACCEPTED",
+            "hash": "3edd91cc881c0abc",
+            "timestamp": "2026-02-12 13:53:00"
+          },
+          {
+            "idx": 26883,
+            "status": "ACCEPTED",
+            "hash": "dba64365d815be47",
+            "timestamp": "2026-02-12 14:03:01"
+          },
+          {
+            "idx": 34795,
+            "status": "ACCEPTED",
+            "hash": "f786c4f1ec394db4",
+            "timestamp": "2026-02-22 17:34:16"
+          },
+          {
+            "idx": 26315,
+            "status": "QUESTIONED",
+            "hash": "fe10402e3edd870b",
+            "timestamp": "2026-02-08 22:32:26"
+          },
+          {
+            "idx": 26379,
+            "status": "QUESTIONED",
+            "hash": "1e8463695518f83d",
+            "timestamp": "2026-02-11 09:55:29"
+          },
+          {
+            "idx": 27202,
+            "status": "QUESTIONED",
+            "hash": "d1182ae632bb88ca",
+            "timestamp": "2026-02-14 09:25:37"
+          },
+          {
+            "idx": 40691,
+            "status": "QUESTIONED",
+            "hash": "b133c40a4c0894cd",
+            "timestamp": "2026-02-28 05:04:43"
+          },
+          {
+            "idx": 41928,
+            "status": "QUESTIONED",
+            "hash": "6144556542bd0dad",
+            "timestamp": "2026-03-02 23:53:54"
+          }
+        ]
+      },
+      "invariants": {
+        "immutable": true,
+        "timestamped": true,
+        "hash_chained": true,
+        "append_only": true,
+        "coherence": "verified"
+      },
+      "confidence": {
+        "level": "5 accepted, 5 questioned",
+        "acceptance_rate": "50%",
+        "validation_strength": "moderate"
+      }
+    },
+    {
+      "symbol": "⊙[validation-deduplication]",
+      "domain": "β[technical-basis-deduplication]",
+      "timestamp": "2026-04-18T07:39:51.784584Z",
+      "constraint": {
+        "hash": "e6471e8ab06629fe",
+        "definition": {
+          "structure": "user_explanation → ai_response → acceptance_status",
+          "properties": [
+            "explanation",
+            "response",
+            "status",
+            "timestamp"
+          ],
+          "validation": "conversation_pair"
+        },
+        "immutable": true
+      },
+      "variations": {
+        "accepted": 5,
+        "questioned": 5,
+        "total": 10,
+        "acceptance_rate": "50%"
+      },
+      "references": {
+        "pairs": 10,
+        "pairs_detail": [
+          {
+            "idx": 25657,
+            "status": "ACCEPTED",
+            "hash": "7b1bc7e0b6ad32b8",
+            "timestamp": "2026-01-29 02:05:16"
+          },
+          {
+            "idx": 26373,
+            "status": "ACCEPTED",
+            "hash": "53b4fb77675f4168",
+            "timestamp": "2026-02-09 13:44:55"
+          },
+          {
+            "idx": 26519,
+            "status": "ACCEPTED",
+            "hash": "671471dd0c0cdbfc",
+            "timestamp": "2026-02-12 11:22:02"
+          },
+          {
+            "idx": 35687,
+            "status": "ACCEPTED",
+            "hash": "6dec3dbbf6fc733c",
+            "timestamp": "2026-02-23 03:24:08"
+          },
+          {
+            "idx": 40491,
+            "status": "ACCEPTED",
+            "hash": "7b3696feee7451bf",
+            "timestamp": "2026-02-27 22:23:01"
+          },
+          {
+            "idx": 25991,
+            "status": "QUESTIONED",
+            "hash": "da10d3721756bf9e",
+            "timestamp": "2026-01-30 11:53:41"
+          },
+          {
+            "idx": 26261,
+            "status": "QUESTIONED",
+            "hash": "70a6f9c9f28cde89",
+            "timestamp": "2026-02-05 16:05:15"
+          },
+          {
+            "idx": 26315,
+            "status": "QUESTIONED",
+            "hash": "fe10402e3edd870b",
+            "timestamp": "2026-02-08 22:32:26"
+          },
+          {
+            "idx": 26511,
+            "status": "QUESTIONED",
+            "hash": "454bafabd4b0f7b4",
+            "timestamp": "2026-02-11 15:08:16"
+          },
+          {
+            "idx": 27202,
+            "status": "QUESTIONED",
+            "hash": "d1182ae632bb88ca",
+            "timestamp": "2026-02-14 09:25:37"
+          }
+        ]
+      },
+      "invariants": {
+        "immutable": true,
+        "timestamped": true,
+        "hash_chained": true,
+        "append_only": true,
+        "coherence": "verified"
+      },
+      "confidence": {
+        "level": "5 accepted, 5 questioned",
+        "acceptance_rate": "50%",
+        "validation_strength": "moderate"
+      }
+    },
+    {
+      "symbol": "⊙[validation-entropy]",
+      "domain": "β[technical-basis-entropy]",
+      "timestamp": "2026-04-18T07:39:51.784648Z",
+      "constraint": {
+        "hash": "e6471e8ab06629fe",
+        "definition": {
+          "structure": "user_explanation → ai_response → acceptance_status",
+          "properties": [
+            "explanation",
+            "response",
+            "status",
+            "timestamp"
+          ],
+          "validation": "conversation_pair"
+        },
+        "immutable": true
+      },
+      "variations": {
+        "accepted": 3,
+        "questioned": 2,
+        "total": 5,
+        "acceptance_rate": "60%"
+      },
+      "references": {
+        "pairs": 5,
+        "pairs_detail": [
+          {
+            "idx": 40693,
+            "status": "ACCEPTED",
+            "hash": "ebdf1d3c935b34fd",
+            "timestamp": "2026-02-28 05:07:34"
+          },
+          {
+            "idx": 58030,
+            "status": "ACCEPTED",
+            "hash": "db9b2924094e89ec",
+            "timestamp": "2026-03-24 15:57:30"
+          },
+          {
+            "idx": 63081,
+            "status": "ACCEPTED",
+            "hash": "ba77be2b124b4ec6",
+            "timestamp": "2026-04-06 17:55:56"
+          },
+          {
+            "idx": 62362,
+            "status": "QUESTIONED",
+            "hash": "a58b89fec810bb60",
+            "timestamp": "2026-03-31 23:11:22"
+          },
+          {
+            "idx": 63047,
+            "status": "QUESTIONED",
+            "hash": "d2de897aad4043b8",
+            "timestamp": "2026-04-06 17:39:18"
+          }
+        ]
+      },
+      "invariants": {
+        "immutable": true,
+        "timestamped": true,
+        "hash_chained": true,
+        "append_only": true,
+        "coherence": "verified"
+      },
+      "confidence": {
+        "level": "3 accepted, 2 questioned",
+        "acceptance_rate": "60%",
+        "validation_strength": "high"
+      }
+    }
+  ],
+  "statistics": {
+    "total_concepts": 4,
+    "concepts": [
+      "⊙[validation-ledger]",
+      "⊙[validation-pattern_matching]",
+      "⊙[validation-deduplication]",
+      "⊙[validation-entropy]"
+    ],
+    "total_validated_pairs": 34,
+    "total_accepted": 18,
+    "total_questioned": 16
+  },
+  "proof_statement": "This file demonstrates that the singularity format can store validated knowledge in immutable, compressed, coherent form. All entries pass Trinity verification (visible, causal, verifiable). All patterns extracted via deduplication reduce N variations to 1 constraint. All data immutably ledgered with timestamps and hashes. System stability guaranteed by energy minimization (Φ)."
+}

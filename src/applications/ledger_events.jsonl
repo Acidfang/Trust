@@ -1,0 +1,10 @@
+# ledger_events.jsonl ledger - ARIA Multiuser Capability Library
+# Created: 2026-03-27T04:38:01.839798
+# Append-only: True
+# ZEROPOINT: True
+#
+{"sender_id": "user:alice", "event_type": "document_shared", "event_data": {"doc_id": "doc1"}, "target_users": ["user:bob"], "sent_at": "2026-03-27T04:38:01.839517"}
+{"sender_id": "user:alice", "event_type": "collaboration_invited", "event_data": {"invitee_id": "user:bob", "resource_id": "resource:doc1", "permission_level": "edit"}, "target_users": ["user:bob"], "sent_at": "2026-03-27T04:38:01.841720"}
+{"sender_id": "user:bob", "event_type": "collaboration_accepted", "event_data": {"invitation_id": "inv_001"}, "target_users": ["user:system", "user:test-user", "user:test-alice", "user:test-bob", "user:test-charlie", "user:emul-alice", "user:emul-bob", "user:emul-charlie", "user:emul-diana", "user:emul-eve", "user:alice", "user:bob"], "sent_at": "2026-03-27T04:38:01.842176"}
+{"sender_id": "user:alice", "event_type": "collaboration_invited", "event_data": {"invitee_id": "user:bob", "resource_id": "resource:doc1", "permission_level": "edit"}, "target_users": ["user:bob"], "sent_at": "2026-03-27T04:38:01.882058"}
+{"sender_id": "user:bob", "event_type": "collaboration_accepted", "event_data": {"invitation_id": "inv_001"}, "target_users": ["user:system", "user:test-user", "user:test-alice", "user:test-bob", "user:test-charlie", "user:emul-alice", "user:emul-bob", "user:emul-charlie", "user:emul-diana", "user:emul-eve", "user:alice", "user:bob"], "sent_at": "2026-03-27T04:38:01.882637"}

@@ -1,0 +1,131 @@
+{
+  "evolution": {
+    "error": "No intents found"
+  },
+  "meaning": {
+    "error": "No meanings found"
+  },
+  "drift": {
+    "error": "Cannot analyze drift"
+  },
+  "improvements": {
+    "total_improvements": 0,
+    "improvement_events": [],
+    "improvement_areas": [],
+    "average_improvements_per_statement": 0,
+    "assessment": "Improvements detected: 0. Areas: "
+  },
+  "mapping": {
+    "intent_coverage_map": {},
+    "total_intents_found": 0,
+    "intents_satisfied": 0,
+    "alignment_score": 0,
+    "gaps_identified": [],
+    "feature_domains": [
+      "raw_cache_storage",
+      "fact_storage",
+      "semantic_analysis",
+      "action_logging",
+      "temporal_ordering",
+      "conversation_handling",
+      "intent_tracking",
+      "improvement_detection",
+      "verification_integrity",
+      "mappings"
+    ],
+    "assessment": "Intent coverage: 0%. 0/0 intents satisfied. 0 gaps found."
+  },
+  "verification": {
+    "verification_timestamp": "2026-04-18T19:11:04.368281",
+    "total_intents_found": 0,
+    "integrity_checks": {
+      "intents_extracted": false,
+      "meanings_preserved": false,
+      "actions_logged": true,
+      "temporal_coherence": true,
+      "intent_stability": false,
+      "improvements_detected": false,
+      "alignment_good": false
+    },
+    "checks_passed": 2,
+    "checks_total": 7,
+    "completeness_score": 0.2857142857142857,
+    "unmapped_intents": [],
+    "temporal_status": "COHERENT",
+    "stability": "0%",
+    "primary_intent": null,
+    "meaning_persistence": 0,
+    "improvement_count": 0,
+    "final_assessment": "\u2717 INCOMPLETE",
+    "summary": "Completeness: 29%. Nothing missed: False. All meanings preserved: False. Temporal coherence: True."
+  },
+  "accountability": {
+    "report_type": "MASTER_ACCOUNTABILITY",
+    "generated_at": "2026-04-18T19:11:04.372321",
+    "data_overview": {
+      "total_statements_analyzed": 0,
+      "unique_intents": 0,
+      "all_intents": [],
+      "time_span": {
+        "from": "unknown",
+        "to": "unknown"
+      },
+      "primary_intent": null,
+      "primary_frequency": 0
+    },
+    "project_alignment": {
+      "intent_coverage": 0,
+      "features_implemented": [
+        "raw_cache_storage",
+        "fact_storage",
+        "semantic_analysis",
+        "action_logging",
+        "temporal_ordering",
+        "conversation_handling",
+        "intent_tracking",
+        "improvement_detection",
+        "verification_integrity",
+        "mappings"
+      ],
+      "intents_satisfied": 0,
+      "total_intents": 0,
+      "gaps": []
+    },
+    "quality_metrics": {
+      "stability_score": 0,
+      "meaning_persistence": 0,
+      "improvements_made": 0,
+      "drift_detected": false,
+      "temporal_coherence": true,
+      "completeness": 0.2857142857142857
+    },
+    "evolution_summary": {
+      "started_with": "data storage correctness focus",
+      "evolved_through": [
+        "semantic analysis capability",
+        "action logging",
+        "temporal ordering",
+        "intent verification",
+        "project alignment mapping"
+      ],
+      "ended_with": "comprehensive intent tracking and accountability"
+    },
+    "verification_status": {
+      "all_intents_captured": false,
+      "all_meanings_preserved": false,
+      "all_actions_logged": true,
+      "temporal_integrity": "COHERENT",
+      "nothing_missed": "\u2717 INCOMPLETE"
+    },
+    "recommendations": {
+      "next_steps": [
+        "No gaps found",
+        "Intent stable",
+        "Start improvement tracking",
+        "Maintain temporal coherence"
+      ],
+      "system_health": "\u2717 CRITICAL"
+    },
+    "executive_summary": "System captures 0 statements with 0 unique intents. Primary: None (0%). Coverage: 0%. Stability: 0%. Status: \u2717 INCOMPLETE."
+  }
+}

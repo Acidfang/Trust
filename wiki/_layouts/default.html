@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+    <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.1/dest/simple-jekyll-search.min.js"></script>
+</head>
+<body class="light-mode">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="site-title">{{ site.title }}</h1>
+            <p class="site-subtitle">{{ site.description }}</p>
+        </div>
+
+        <div class="theme-toggle">
+            <button id="dark-mode-toggle" class="theme-btn" title="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search..." class="search-input">
+            <ul id="search-results" class="search-results"></ul>
+        </div>
+
+        <nav class="sidebar-nav">
+            {% include navigation.html %}
+        </nav>
+
+        <div class="sidebar-footer">
+            <p class="updated">Last updated: {{ 'now' | date: '%Y-%m-%d' }}</p>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="content-header">
+            {% if page.title %}
+            <h1 class="page-title">{{ page.title }}</h1>
+            {% endif %}
+        </div>
+
+        {% if page.toc %}
+        <nav class="table-of-contents">
+            <h3>On this page</h3>
+            <ul id="toc-list" class="toc-list"></ul>
+        </nav>
+        {% endif %}
+
+        <div class="content-body">
+            {{ content }}
+        </div>
+
+        <div class="content-footer">
+            <div class="next-prev-nav">
+                {% if page.next_page %}
+                <a href="{{ page.next_page.url }}" class="nav-link next-link">
+                    Next: {{ page.next_page.title }} →
+                </a>
+                {% endif %}
+            </div>
+            <p class="print-note">💡 Tip: Use your browser's print function (Ctrl+P) or "Print to PDF" for static copies</p>
+        </div>
+    </main>
+
+    {% include search-index.html %}
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+</body>
+</html>

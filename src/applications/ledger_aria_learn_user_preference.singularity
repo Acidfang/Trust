@@ -1,0 +1,8 @@
+# learn_user_preference ledger - ARIA Capability Library
+# Created: 2026-03-27T17:17:13.496178
+# Append-only: True
+# ZEROPOINT: True
+#
+{"timestamp": "2026-03-27T17:17:13.496500", "operation": "learn_user_preference", "elapsed_ms": "0.00", "result": "{'operation': 'learn_user_preference', 'observation': {'theme': 'dark'}, 'context': {'time': 'evenin", "success": true}
+{"timestamp": "2026-03-27T17:17:19.329137", "operation": "learn_user_preference", "elapsed_ms": "0.01", "result": "{'operation': 'learn_user_preference', 'observation': {'theme': 'dark'}, 'context': {'time': 'evenin", "success": true}
+{"timestamp": "2026-03-27T17:17:19.333075", "operation": "learn_user_preference", "elapsed_ms": "0.00", "result": "{'operation': 'learn_user_preference', 'observation': {'user_likes_elections': True}, 'context': {'a", "success": true}

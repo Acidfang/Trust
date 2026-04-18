@@ -1,0 +1,97 @@
+{
+  "timestamp": "2026-03-29T22:05:01.984372",
+  "session": "SPRINT_5B_EXPANDED_PARTICIPATION",
+  "human_votes": [
+    {
+      "voter_id": "c20094a1a398ca73",
+      "voter_name": "Eva Thompson",
+      "voter_type": "HUMAN_EXPERT",
+      "expertise": "Systems Engineering",
+      "issue": "A",
+      "vote": "RENAME",
+      "reasoning": "Parameter needs meaningful name to prevent future confusion",
+      "timestamp": "2026-03-29T22:05:01.984418"
+    },
+    {
+      "voter_id": "c34aa389b11cd2ab",
+      "voter_name": "Frank Liu",
+      "voter_type": "HUMAN_OPERATOR",
+      "expertise": "System Operations",
+      "issue": "A",
+      "vote": "KEEP_INVESTIGATE",
+      "reasoning": "Safety first - investigate before removal",
+      "timestamp": "2026-03-29T22:05:01.984427"
+    },
+    {
+      "voter_id": "5bea96179ebda93b",
+      "voter_name": "Grace Martinez",
+      "voter_type": "HUMAN_STAKEHOLDER",
+      "expertise": "Product Management",
+      "issue": "B",
+      "vote": "PATTERN_CHECK",
+      "reasoning": "Monitor for patterns - could indicate design issue",
+      "timestamp": "2026-03-29T22:05:01.984431"
+    },
+    {
+      "voter_id": "d41e52824a669a73",
+      "voter_name": "Henry Chen",
+      "voter_type": "HUMAN_ARCHITECT",
+      "expertise": "System Architecture",
+      "issue": "B",
+      "vote": "INVESTIGATE",
+      "reasoning": "Understand root cause for architectural improvements",
+      "timestamp": "2026-03-29T22:05:01.984434"
+    }
+  ],
+  "ai_agent_votes": [
+    {
+      "voter_id": "e3f8a55a7ddae830",
+      "voter_name": "MCP_Analysis_Agent_A",
+      "voter_type": "AI_AGENT",
+      "model": "Claude-based MCP Server",
+      "reasoning_mode": "Static analysis of code paths",
+      "issue": "A",
+      "vote": "KEEP_INVESTIGATE",
+      "reasoning": "Parameter initialization detected (line 142). Usage patterns unclear. Recommend investigation before removal.",
+      "confidence": 0.85,
+      "timestamp": "2026-03-29T22:05:01.984438"
+    },
+    {
+      "voter_id": "b246afeeb490fa84",
+      "voter_name": "Pattern_Detection_Agent_B",
+      "voter_type": "AI_AGENT",
+      "model": "ML-based Pattern Analyzer",
+      "reasoning_mode": "Pattern matching across 643 elections",
+      "issue": "A",
+      "vote": "REMOVE",
+      "reasoning": "Parameter appears in 0 execution paths post-initialization. Statistically orphaned.",
+      "confidence": 0.92,
+      "timestamp": "2026-03-29T22:05:01.984441"
+    },
+    {
+      "voter_id": "7b3705667189ffc0",
+      "voter_name": "Temporal_Analysis_Agent_C",
+      "voter_type": "AI_AGENT",
+      "model": "Time-series Forecasting Model",
+      "reasoning_mode": "Temporal pattern analysis",
+      "issue": "B",
+      "vote": "INVESTIGATE",
+      "reasoning": "10x gap suggests systematic variation. GC pause hypothesis requires verification against load metrics.",
+      "confidence": 0.78,
+      "timestamp": "2026-03-29T22:05:01.984444"
+    },
+    {
+      "voter_id": "e6d19007092a77c0",
+      "voter_name": "Risk_Assessment_Agent_D",
+      "voter_type": "AI_AGENT",
+      "model": "Risk Prediction Model",
+      "reasoning_mode": "Risk scoring and propagation",
+      "issue": "B",
+      "vote": "TRIGGER_ALERT",
+      "reasoning": "Temporal anomaly + parameter orphan together suggest systemic drift. Recommend alert protocol.",
+      "confidence": 0.71,
+      "timestamp": "2026-03-29T22:05:01.984446"
+    }
+  ],
+  "summary": {}
+}

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1400 1800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Lato:wght@400;700&amp;display=swap');
+      
+      /* Hierarchy: each row fades in opacity (binary encoding: tier level) */
+      .title-main { font-family: 'Playfair Display', serif; font-size: 72px; font-weight: 700; fill: #d4af8a; text-anchor: middle; letter-spacing: 6px; }
+      .title-sub { font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 400; fill: #b8956a; text-anchor: middle; letter-spacing: 1px; }
+      .card-title-t1 { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; fill: #d4af8a; text-anchor: middle; letter-spacing: 1px; }
+      .card-text-t1 { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 400; fill: #b8956a; text-anchor: middle; line-height: 1.7; }
+      .statement-text { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; fill: #d4af8a; text-anchor: middle; letter-spacing: 2px; }
+      .closing-text { font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 400; fill: #b8956a; text-anchor: middle; }
+      .emphasis { fill: #d4af8a; font-weight: 700; }
+      .meta-text { font-family: 'Lato', sans-serif; font-size: 12px; font-weight: 400; fill: #9d7e63; text-anchor: middle; }
+    </style>
+    
+    <!-- Gradient backgrounds -->
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1410;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="1800" fill="url(#darkGrad)"/>
+  <rect width="1400" height="1800" fill="#0f0f0f" opacity="0.3"/>
+  
+  <!-- ============ HEADER ============ -->
+  <text x="700" y="100" class="title-main">THE LIMITS OF</text>
+  <text x="700" y="170" class="title-main">KNOWLEDGE &amp; CONTROL</text>
+  <text x="700" y="230" class="title-sub">Every complete system must eventually face this.</text>
+  
+  <!-- Decorative header elements -->
+  <circle cx="150" cy="120" r="1.5" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="1250" cy="120" r="1.5" fill="#d4af8a" opacity="0.2"/>
+  <path d="M 250 80 L 300 100 M 1100 80 L 1150 100" stroke="#d4af8a" stroke-width="0.6" opacity="0.15" fill="none"/>
+  <circle cx="300" cy="250" r="0.8" fill="#d4af8a" opacity="0.15"/>
+  <circle cx="1100" cy="250" r="0.8" fill="#d4af8a" opacity="0.15"/>
+  
+  <!-- ============ ROW 1: BOUNDARIES (Tier 1 - Bright Gold Opacity 0.8) ============ -->
+  
+  <rect x="50" y="270" width="360" height="260" fill="none" stroke="#d4af8a" stroke-width="2" opacity="0.8"/>
+  <g transform="translate(230, 300)" opacity="0.8">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.3"/>
+    <circle cx="0" cy="0" r="21" fill="none" stroke="#d4af8a" stroke-width="1.5"/>
+    <circle cx="-11" cy="-7" r="1.8" fill="#d4af8a"/>
+    <circle cx="11" cy="-7" r="1.8" fill="#d4af8a"/>
+    <circle cx="0" cy="10" r="1.8" fill="#d4af8a"/>
+    <path d="M 0 14 L 0 22 M -4 18 L 4 18" stroke="#d4af8a" stroke-width="1" fill="none"/>
+    <circle cx="-25" cy="0" r="1" fill="#d4af8a" opacity="0.4"/>
+    <circle cx="25" cy="0" r="1" fill="#d4af8a" opacity="0.4"/>
+    <!-- Visual fill: accent dots above and below icon -->
+    <circle cx="-8" cy="-18" r="0.6" fill="#d4af8a" opacity="0.2"/>
+    <circle cx="8" cy="-18" r="0.6" fill="#d4af8a" opacity="0.2"/>
+    <circle cx="0" cy="28" r="0.6" fill="#d4af8a" opacity="0.2"/>
+  </g>
+  <text x="230" y="348" class="card-title-t1">PERCEPTUAL</text>
+  <text x="230" y="368" class="card-title-t1">BOUNDARY</text>
+  <text x="230" y="395" class="card-text-t1">Cannot perceive</text>
+  <text x="230" y="413" class="card-text-t1">all inputs</text>
+  
+  <rect x="510" y="270" width="360" height="260" fill="none" stroke="#d4af8a" stroke-width="2" opacity="0.8"/>
+  <g transform="translate(690, 300)" opacity="0.8">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.3"/>
+    <circle cx="0" cy="0" r="21" fill="none" stroke="#d4af8a" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#d4af8a" stroke-width="1"/>
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#d4af8a" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2.2" fill="#d4af8a"/>
+    <line x1="-28" y1="0" x2="28" y2="0" stroke="#d4af8a" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="-28" x2="0" y2="28" stroke="#d4af8a" stroke-width="0.5" opacity="0.3"/>
+    <!-- Visual fill: corner accent circles -->
+    <circle cx="-20" cy="-20" r="0.5" fill="#d4af8a" opacity="0.2"/>
+    <circle cx="20" cy="-20" r="0.5" fill="#d4af8a" opacity="0.2"/>
+    <circle cx="-20" cy="20" r="0.5" fill="#d4af8a" opacity="0.2"/>
+    <circle cx="20" cy="20" r="0.5" fill="#d4af8a" opacity="0.2"/>
+  </g>
+  <text x="690" y="348" class="card-title-t1">REPRESENTATIONAL</text>
+  <text x="690" y="368" class="card-title-t1">BOUNDARY</text>
+  <text x="690" y="395" class="card-text-t1">Cannot fully</text>
+  <text x="690" y="413" class="card-text-t1">model itself</text>
+  
+  <rect x="970" y="270" width="360" height="260" fill="none" stroke="#d4af8a" stroke-width="2" opacity="0.8"/>
+  <g transform="translate(1150, 300)" opacity="0.8">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.3"/>
+    <circle cx="0" cy="0" r="2.2" fill="#d4af8a"/>
+    <path d="M 0 2.5 L -18 32 M 0 2.5 L 0 36 M 0 2.5 L 18 32" stroke="#d4af8a" stroke-width="2" fill="none"/>
+    <circle cx="-18" cy="32" r="2.5" fill="#d4af8a"/>
+    <circle cx="0" cy="36" r="2.5" fill="#d4af8a"/>
+    <circle cx="18" cy="32" r="2.5" fill="#d4af8a"/>
+    <path d="M -12 10 L -22 23 M 12 10 L 22 23" stroke="#d4af8a" stroke-width="0.8" opacity="0.3" fill="none"/>
+    <!-- Visual fill: accent lines at top -->
+    <path d="M -15 -20 L 15 -20 M -10 -16 L 10 -16" stroke="#d4af8a" stroke-width="0.5" opacity="0.2" fill="none"/>
+  </g>
+  <text x="1150" y="348" class="card-title-t1">ACTION</text>
+  <text x="1150" y="368" class="card-title-t1">BOUNDARY</text>
+  <text x="1150" y="395" class="card-text-t1">Cannot execute</text>
+  <text x="1150" y="413" class="card-text-t1">all selections</text>
+  
+  <!-- ============ VISUAL CONNECTORS BETWEEN ROWS ============ -->
+  <circle cx="230" cy="430" r="0.8" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="690" cy="430" r="0.8" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="1150" cy="430" r="0.8" fill="#d4af8a" opacity="0.2"/>
+  <path d="M 230 450 L 230 560" stroke="#d4af8a" stroke-width="0.5" opacity="0.1" fill="none"/>
+  <path d="M 690 450 L 690 560" stroke="#d4af8a" stroke-width="0.5" opacity="0.1" fill="none"/>
+  <path d="M 1150 450 L 1150 560" stroke="#d4af8a" stroke-width="0.5" opacity="0.1" fill="none"/>
+  
+  <!-- ============ ROW 2: LIMITS (Tier 2 - Medium Gold Opacity 0.5) ============ -->
+  
+  <rect x="50" y="580" width="360" height="260" fill="none" stroke="#d4af8a" stroke-width="2" opacity="0.5"/>
+  <g transform="translate(230, 610)" opacity="0.5">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.25"/>
+    <path d="M -21 0 Q -21 -26 0 -26 Q 21 -26 21 0" stroke="#d4af8a" stroke-width="1.5" fill="none"/>
+    <path d="M -14 -2 Q -14 -18 0 -18 Q 14 -18 14 -2" stroke="#d4af8a" stroke-width="1.2" fill="none"/>
+    <circle cx="0" cy="11" r="3" fill="#d4af8a"/>
+    <path d="M 0 16 L 0 25" stroke="#d4af8a" stroke-width="1.2" fill="none"/>
+    <circle cx="-25" cy="-11" r="1" fill="#d4af8a" opacity="0.3"/>
+    <circle cx="25" cy="-11" r="1" fill="#d4af8a" opacity="0.3"/>
+    <!-- Visual fill: decorative circles for empty zones -->
+    <circle cx="-18" cy="18" r="0.5" fill="#d4af8a" opacity="0.15"/>
+    <circle cx="18" cy="18" r="0.5" fill="#d4af8a" opacity="0.15"/>
+    <circle cx="0" cy="25" r="0.5" fill="#d4af8a" opacity="0.15"/>
+  </g>
+  <text x="230" y="658" class="card-title-t1">RECURSION</text>
+  <text x="230" y="678" class="card-title-t1">LIMIT</text>
+  <text x="230" y="705" class="card-text-t1">Self-modeling</text>
+  <text x="230" y="723" class="card-text-t1">hits infinite regress</text>
+  
+  <rect x="510" y="580" width="360" height="260" fill="none" stroke="#d4af8a" stroke-width="2" opacity="0.5"/>
+  <g transform="translate(690, 610)" opacity="0.5">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.25"/>
+    <path d="M -25 -1 Q -14 -11 0 -1 Q 14 -11 25 -1" stroke="#d4af8a" stroke-width="1.5" fill="none"/>
+    <path d="M -21 11 Q -11 3 0 11 Q 11 3 21 11" stroke="#d4af8a" stroke-width="1.3" fill="none"/>
+    <path d="M -18 19 Q -7 13 0 19 Q 7 13 18 19" stroke="#d4af8a" stroke-width="1" fill="none"/>
+    <circle cx="0" cy="-7" r="1.5" fill="#d4af8a"/>
+    <circle cx="-28" cy="4" r="1" fill="#d4af8a" opacity="0.3"/>
+    <circle cx="28" cy="4" r="1" fill="#d4af8a" opacity="0.3"/>
+    <!-- Visual fill: corner accent dots -->
+    <circle cx="-22" cy="-18" r="0.5" fill="#d4af8a" opacity="0.15"/>
+    <circle cx="22" cy="-18" r="0.5" fill="#d4af8a" opacity="0.15"/>
+    <circle cx="-20" cy="23" r="0.5" fill="#d4af8a" opacity="0.15"/>
+    <circle cx="20" cy="23" r="0.5" fill="#d4af8a" opacity="0.15"/>
+  </g>
+  <text x="690" y="658" class="card-title-t1">PREDICTION</text>
+  <text x="690" y="678" class="card-title-t1">LIMIT</text>
+  <text x="690" y="705" class="card-text-t1">Cannot predict</text>
+  <text x="690" y="723" class="card-text-t1">Predictability</text>
+  
+  <rect x="970" y="580" width="360" height="260" fill="none" stroke="#d4af8a" stroke-width="2" opacity="0.5"/>
+  <g transform="translate(1150, 610)" opacity="0.5">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.25"/>
+    <circle cx="-14" cy="-5" r="12" fill="none" stroke="#d4af8a" stroke-width="1.3"/>
+    <circle cx="14" cy="-5" r="12" fill="none" stroke="#d4af8a" stroke-width="1.3"/>
+    <circle cx="0" cy="18" r="11" fill="none" stroke="#d4af8a" stroke-width="1"/>
+    <path d="M -3 3 L 3 3 M -3 7 L 3 7" stroke="#d4af8a" stroke-width="1" fill="none"/>
+    <line x1="-25" y1="-5" x2="25" y2="-5" stroke="#d4af8a" stroke-width="0.5" opacity="0.3"/>
+    <line x1="-25" y1="25" x2="25" y2="25" stroke="#d4af8a" stroke-width="0.5" opacity="0.3"/>
+    <!-- Visual fill: decorative accents in empty space -->
+    <circle cx="-20" cy="8" r="0.5" fill="#d4af8a" opacity="0.15"/>
+    <circle cx="20" cy="8" r="0.5" fill="#d4af8a" opacity="0.15"/>
+  </g>
+  <text x="1150" y="658" class="card-title-t1">CONTROL</text>
+  <text x="1150" y="678" class="card-title-t1">LIMIT</text>
+  <text x="1150" y="705" class="card-text-t1">Always partial,</text>
+  <text x="1150" y="723" class="card-text-t1">local, temporary</text>
+  
+  <!-- ============ VISUAL CONNECTORS BETWEEN ROW 2 AND ROW 3 ============ -->
+  <circle cx="230" cy="740" r="0.8" fill="#d4af8a" opacity="0.15"/>
+  <circle cx="690" cy="740" r="0.8" fill="#d4af8a" opacity="0.15"/>
+  <circle cx="1150" cy="740" r="0.8" fill="#d4af8a" opacity="0.15"/>
+  <path d="M 230 760 L 230 870" stroke="#d4af8a" stroke-width="0.5" opacity="0.08" fill="none"/>
+  <path d="M 690 760 L 690 870" stroke="#d4af8a" stroke-width="0.5" opacity="0.08" fill="none"/>
+  <path d="M 1150 760 L 1150 870" stroke="#d4af8a" stroke-width="0.5" opacity="0.08" fill="none"/>
+  
+  <!-- ============ ROW 3: PARADOXES (Tier 3 - Faint Gold Opacity 0.3) ============ -->
+  
+  <rect x="50" y="890" width="360" height="260" fill="none" stroke="#d4af8a" stroke-width="2" opacity="0.3"/>
+  <g transform="translate(230, 920)" opacity="0.3">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.2"/>
+    <path d="M -18 -10 Q -28 0 -25 18 Q -21 32 -10 35 Q 0 38 10 35 Q 21 32 25 18 Q 28 0 18 -10" 
+          fill="none" stroke="#d4af8a" stroke-width="1.5"/>
+    <path d="M -6 4 Q 0 8 6 4" stroke="#d4af8a" stroke-width="1.2" fill="none"/>
+    <circle cx="-10" cy="-3" r="1.5" fill="#d4af8a"/>
+    <circle cx="10" cy="-3" r="1.5" fill="#d4af8a"/>
+    <circle cx="-25" cy="-15" r="0.8" fill="#d4af8a" opacity="0.25"/>
+    <circle cx="25" cy="-15" r="0.8" fill="#d4af8a" opacity="0.25"/>
+    <!-- Visual fill: accent dots in empty zones -->
+    <circle cx="-15" cy="25" r="0.5" fill="#d4af8a" opacity="0.1"/>
+    <circle cx="15" cy="25" r="0.5" fill="#d4af8a" opacity="0.1"/>
+  </g>
+  <text x="230" y="968" class="card-title-t1">IDENTITY</text>
+  <text x="230" y="988" class="card-title-t1">PARADOX</text>
+  <text x="230" y="1015" class="card-text-t1">Too much change</text>
+  <text x="230" y="1033" class="card-text-t1">dissolves identity</text>
+  
+  <rect x="510" y="890" width="360" height="260" fill="none" stroke="#d4af8a" stroke-width="2" opacity="0.3"/>
+  <g transform="translate(690, 920)" opacity="0.3">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.2"/>
+    <polygon points="0,-32 28 21 -28 21" fill="none" stroke="#d4af8a" stroke-width="2"/>
+    <line x1="-10" y1="0" x2="10" y2="0" stroke="#d4af8a" stroke-width="1.2"/>
+    <line x1="-14" y1="14" x2="14" y2="14" stroke="#d4af8a" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="2.2" fill="#d4af8a"/>
+    <circle cx="-32" cy="14" r="0.7" fill="#d4af8a" opacity="0.25"/>
+    <circle cx="32" cy="14" r="0.7" fill="#d4af8a" opacity="0.25"/>
+    <!-- Visual fill: corner accents -->
+    <circle cx="-24" cy="-20" r="0.5" fill="#d4af8a" opacity="0.1"/>
+    <circle cx="24" cy="-20" r="0.5" fill="#d4af8a" opacity="0.1"/>
+  </g>
+  <text x="690" y="968" class="card-title-t1">FREEDOM</text>
+  <text x="690" y="988" class="card-title-t1">PARADOX</text>
+  <text x="690" y="1015" class="card-text-t1">Absolute freedom</text>
+  <text x="690" y="1033" class="card-text-t1">impossible</text>
+  
+  <rect x="970" y="890" width="360" height="260" fill="none" stroke="#d4af8a" stroke-width="2" opacity="0.3"/>
+  <g transform="translate(1150, 920)" opacity="0.3">
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.2"/>
+    <polygon points="0 32 28 -21 -28 -21" fill="none" stroke="#d4af8a" stroke-width="2"/>
+    <path d="M 0 30 L 0 18" stroke="#d4af8a" stroke-width="1.2" fill="none"/>
+    <circle cx="0" cy="-21" r="2.2" fill="#d4af8a"/>
+    <path d="M -12 9 L -14 0 M 12 9 L 14 0" stroke="#d4af8a" stroke-width="0.8" opacity="0.3" fill="none"/>
+    <circle cx="-32" cy="-18" r="0.7" fill="#d4af8a" opacity="0.25"/>
+    <circle cx="32" cy="-18" r="0.7" fill="#d4af8a" opacity="0.25"/>
+    <!-- Visual fill: decorative accents -->
+    <circle cx="0" cy="28" r="0.5" fill="#d4af8a" opacity="0.1"/>
+  </g>
+  <text x="1150" y="968" class="card-title-t1">META-LIMIT</text>
+  <text x="1150" y="1015" class="card-text-t1">No final layer</text>
+  <text x="1150" y="1033" class="card-text-t1">beyond limitation</text>
+  
+  <!-- ============ VISUAL CONNECTORS TO CENTRAL STATEMENT ============ -->
+  <circle cx="230" cy="1050" r="0.8" fill="#d4af8a" opacity="0.15"/>
+  <circle cx="690" cy="1050" r="0.8" fill="#d4af8a" opacity="0.15"/>
+  <circle cx="1150" cy="1050" r="0.8" fill="#d4af8a" opacity="0.15"/>
+  <path d="M 230 1070 L 230 1180" stroke="#d4af8a" stroke-width="0.5" opacity="0.08" fill="none"/>
+  <path d="M 690 1070 L 690 1180" stroke="#d4af8a" stroke-width="0.5" opacity="0.08" fill="none"/>
+  <path d="M 1150 1070 L 1150 1180" stroke="#d4af8a" stroke-width="0.5" opacity="0.08" fill="none"/>
+  
+  <!-- ============ CENTRAL STATEMENT ============ -->
+  <line x1="80" y1="1200" x2="1320" y2="1200" stroke="#d4af8a" stroke-width="1" opacity="0.25"/>
+  
+  <!-- Decorative accents around central statement -->
+  <circle cx="150" cy="1190" r="1.5" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="1250" cy="1190" r="1.5" fill="#d4af8a" opacity="0.2"/>
+  <path d="M 250 1180 L 300 1190 M 1100 1180 L 1150 1190" stroke="#d4af8a" stroke-width="0.6" opacity="0.15" fill="none"/>
+  
+  <text x="700" y="1265" class="statement-text">YOU ARE BOUNDED.</text>
+  <text x="700" y="1300" class="statement-text">BUT YOU STILL SELECT.</text>
+  
+  <!-- Decorative elements below statement -->
+  <circle cx="150" cy="1310" r="1.5" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="1250" cy="1310" r="1.5" fill="#d4af8a" opacity="0.2"/>
+  <path d="M 300 1320 L 250 1330 M 1100 1320 L 1150 1330" stroke="#d4af8a" stroke-width="0.6" opacity="0.15" fill="none"/>
+  
+  <line x1="80" y1="1330" x2="1320" y2="1330" stroke="#d4af8a" stroke-width="1" opacity="0.25"/>
+  
+  <!-- ============ CLOSING STATEMENTS ============ -->
+  <!-- Decorative framing for closing section -->
+  <rect x="100" y="1370" width="1200" height="210" fill="none" stroke="#d4af8a" stroke-width="1" opacity="0.15"/>
+  <circle cx="120" cy="1390" r="2" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="1280" cy="1390" r="2" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="120" cy="1570" r="2" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="1280" cy="1570" r="2" fill="#d4af8a" opacity="0.2"/>
+  
+  <text x="700" y="1400" class="closing-text">A system can act, but <tspan class="emphasis">not without limits.</tspan></text>
+  <text x="700" y="1425" class="closing-text">A system can <tspan class="emphasis">know,</tspan> but <tspan class="emphasis">not completely.</tspan></text>
+  <text x="700" y="1450" class="closing-text">A system can <tspan class="emphasis">change,</tspan> but <tspan class="emphasis">not without risk.</tspan></text>
+  
+  <!-- Decorative divider within closing section -->
+  <line x1="200" y1="1475" x2="1200" y2="1475" stroke="#d4af8a" stroke-width="0.75" opacity="0.15"/>
+  <circle cx="200" cy="1475" r="1.2" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="1200" cy="1475" r="1.2" fill="#d4af8a" opacity="0.2"/>
+  
+  <text x="700" y="1530" class="closing-text">No system escapes <tspan class="emphasis">structure.</tspan></text>
+  <text x="700" y="1555" class="closing-text">No system escapes <tspan class="emphasis">uncertainty.</tspan></text>
+  
+  <!-- ============ VISUAL CONNECTORS TO FOOTER ============ -->
+  <circle cx="300" cy="1580" r="1" fill="#d4af8a" opacity="0.12"/>
+  <circle cx="700" cy="1580" r="1" fill="#d4af8a" opacity="0.12"/>
+  <circle cx="1100" cy="1580" r="1" fill="#d4af8a" opacity="0.12"/>
+  <path d="M 200 1595 L 1200 1595" stroke="#d4af8a" stroke-width="0.6" opacity="0.1" fill="none"/>
+  
+  <!-- ============ FOOTER ============ -->
+  <!-- Decorative frame for footer -->
+  <line x1="80" y1="1600" x2="1320" y2="1600" stroke="#d4af8a" stroke-width="1" opacity="0.2"/>
+  <circle cx="100" cy="1600" r="1.5" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="1300" cy="1600" r="1.5" fill="#d4af8a" opacity="0.2"/>
+  
+  <text x="700" y="1640" class="statement-text" style="font-size: 18px; font-style: italic;">You are what you select.</text>
+  <text x="700" y="1670" class="statement-text" style="font-size: 18px; font-style: italic;">And you are shaped by what you cannot.</text>
+  
+  <!-- Decorative base accent -->
+  <path d="M 300 1710 L 700 1720 L 1100 1710" stroke="#d4af8a" stroke-width="0.8" opacity="0.15" fill="none"/>
+  <circle cx="300" cy="1710" r="1" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="700" cy="1720" r="1" fill="#d4af8a" opacity="0.2"/>
+  <circle cx="1100" cy="1710" r="1" fill="#d4af8a" opacity="0.2"/>
+  
+  <text x="700" y="1750" class="meta-text">System Boundaries Framework | April 11, 2026 | Complete Architecture</text>
+</svg>

@@ -1,0 +1,94 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+<defs>
+<style>
+.atom { fill: %s; stroke: #333; stroke-width: 2; }
+.atom-label { font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; dominant-baseline: middle; }
+.bond { stroke: %s; stroke-width: 2; }
+.aromatic-bond { stroke-dasharray: 5,3; stroke: #FF6B6B; stroke-width: 2.5; }
+.title { font-size: 28px; font-weight: bold; }
+.info-text { font-size: 12px; font-family: monospace; }
+.field-label { font-size: 11px; fill: #666; }
+.constraint-box { stroke: #0066CC; stroke-width: 1; fill: #E6F0FF; }
+.legend-box { stroke: #333; stroke-width: 1; fill: #FFFACD; }
+.verse-text { font-size: 11px; font-family: monospace; fill: #333; }
+</style>
+</defs>
+<rect width="1200" height="800" fill="#FAFAFA" stroke="#CCC" stroke-width="2"/>
+<text x="600.0" y="30" class="title" text-anchor="middle">Benzene (C6H6)</text>
+<text x="600.0" y="55" class="info-text" text-anchor="middle">Aromatic Hexagon | D6h Symmetry | Resonance-Stabilized</text>
+<line x1="852.0" y1="400.0" x2="726.0" y2="181.76159824632148" class="aromatic-bond"/>
+<text x="789.0" y="290.8807991231607" class="field-label" text-anchor="middle">1.5</text>
+<line x1="726.0" y1="181.76159824632148" x2="474.00000000000006" y2="181.76159824632146" class="aromatic-bond"/>
+<text x="600.0" y="181.76159824632146" class="field-label" text-anchor="middle">1.5</text>
+<line x1="474.00000000000006" y1="181.76159824632146" x2="348.0" y2="399.99999999999994" class="aromatic-bond"/>
+<text x="411.0" y="290.8807991231607" class="field-label" text-anchor="middle">1.5</text>
+<line x1="348.0" y1="399.99999999999994" x2="473.9999999999999" y2="618.2384017536784" class="aromatic-bond"/>
+<text x="410.99999999999994" y="509.11920087683916" class="field-label" text-anchor="middle">1.5</text>
+<line x1="473.9999999999999" y1="618.2384017536784" x2="726.0" y2="618.2384017536785" class="aromatic-bond"/>
+<text x="600.0" y="618.2384017536785" class="field-label" text-anchor="middle">1.5</text>
+<line x1="726.0" y1="618.2384017536785" x2="852.0" y2="400.0" class="aromatic-bond"/>
+<text x="789.0" y="509.1192008768393" class="field-label" text-anchor="middle">1.5</text>
+<line x1="852.0" y1="400.0" x2="1050.0" y2="400.0" class="bond" stroke="#999" opacity="0.6"/>
+<line x1="726.0" y1="181.76159824632148" x2="825.0" y2="10.288568297002655" class="bond" stroke="#999" opacity="0.6"/>
+<line x1="474.00000000000006" y1="181.76159824632146" x2="375.0000000000001" y2="10.288568297002598" class="bond" stroke="#999" opacity="0.6"/>
+<line x1="348.0" y1="399.99999999999994" x2="150.0" y2="399.99999999999994" class="bond" stroke="#999" opacity="0.6"/>
+<line x1="473.9999999999999" y1="618.2384017536784" x2="374.9999999999998" y2="789.7114317029973" class="bond" stroke="#999" opacity="0.6"/>
+<line x1="726.0" y1="618.2384017536785" x2="825.0" y2="789.7114317029973" class="bond" stroke="#999" opacity="0.6"/>
+<circle cx="852.0" cy="400.0" r="18" class="atom" style="fill: #404040;"/>
+<text x="852.0" y="400.0" class="atom-label" style="fill: white;">C</text>
+<text x="852.0" y="430.0" class="field-label" text-anchor="middle">sp²</text>
+<circle cx="726.0" cy="181.76159824632148" r="18" class="atom" style="fill: #404040;"/>
+<text x="726.0" y="181.76159824632148" class="atom-label" style="fill: white;">C</text>
+<text x="726.0" y="211.76159824632148" class="field-label" text-anchor="middle">sp²</text>
+<circle cx="474.00000000000006" cy="181.76159824632146" r="18" class="atom" style="fill: #404040;"/>
+<text x="474.00000000000006" y="181.76159824632146" class="atom-label" style="fill: white;">C</text>
+<text x="474.00000000000006" y="211.76159824632146" class="field-label" text-anchor="middle">sp²</text>
+<circle cx="348.0" cy="399.99999999999994" r="18" class="atom" style="fill: #404040;"/>
+<text x="348.0" y="399.99999999999994" class="atom-label" style="fill: white;">C</text>
+<text x="348.0" y="429.99999999999994" class="field-label" text-anchor="middle">sp²</text>
+<circle cx="473.9999999999999" cy="618.2384017536784" r="18" class="atom" style="fill: #404040;"/>
+<text x="473.9999999999999" y="618.2384017536784" class="atom-label" style="fill: white;">C</text>
+<text x="473.9999999999999" y="648.2384017536784" class="field-label" text-anchor="middle">sp²</text>
+<circle cx="726.0" cy="618.2384017536785" r="18" class="atom" style="fill: #404040;"/>
+<text x="726.0" y="618.2384017536785" class="atom-label" style="fill: white;">C</text>
+<text x="726.0" y="648.2384017536785" class="field-label" text-anchor="middle">sp²</text>
+<circle cx="1050.0" cy="400.0" r="12" class="atom" style="fill: #F0F0F0;"/>
+<text x="1050.0" y="400.0" class="atom-label" style="fill: #333;">H</text>
+<circle cx="825.0" cy="10.288568297002655" r="12" class="atom" style="fill: #F0F0F0;"/>
+<text x="825.0" y="10.288568297002655" class="atom-label" style="fill: #333;">H</text>
+<circle cx="375.0000000000001" cy="10.288568297002598" r="12" class="atom" style="fill: #F0F0F0;"/>
+<text x="375.0000000000001" y="10.288568297002598" class="atom-label" style="fill: #333;">H</text>
+<circle cx="150.0" cy="399.99999999999994" r="12" class="atom" style="fill: #F0F0F0;"/>
+<text x="150.0" y="399.99999999999994" class="atom-label" style="fill: #333;">H</text>
+<circle cx="374.9999999999998" cy="789.7114317029973" r="12" class="atom" style="fill: #F0F0F0;"/>
+<text x="374.9999999999998" y="789.7114317029973" class="atom-label" style="fill: #333;">H</text>
+<circle cx="825.0" cy="789.7114317029973" r="12" class="atom" style="fill: #F0F0F0;"/>
+<text x="825.0" y="789.7114317029973" class="atom-label" style="fill: #333;">H</text>
+<circle cx="600.0" cy="400.0" r="214.19999999999996" fill="none" stroke="#FF6B6B" stroke-width="1" stroke-dasharray="3,3" opacity="0.4"/>
+<text x="520.0" y="350.0" class="field-label">Delocalized π-electrons</text>
+<rect x="20" y="520" width="500" height="260" class="constraint-box"/>
+<text x="30" y="545" class="info-text" style="font-weight: bold;">CONSTRAINT PROPAGATION</text>
+<text x="35" y="570" class="info-text">Bond Angles: C-C-C = 120.0° (hexagon geometry)</text>
+<text x="35" y="592" class="info-text">Bond Lengths: C-C = 1.40 Å (sp² hybridized)</text>
+<text x="35" y="614" class="info-text">             C-H = 1.09 Å (single bond)</text>
+<text x="35" y="636" class="info-text">Hybridization: All carbons sp² (σ + π framework)</text>
+<text x="35" y="658" class="info-text">Aromaticity: 6π electrons, Hückel (4n+2) rule</text>
+<text x="35" y="680" class="info-text">Resonance: ↔ structures → 1.5 bond order</text>
+<text x="35" y="702" class="info-text">Planarity: All atoms coplanar (D6h symmetry)</text>
+<text x="35" y="724" class="info-text">Stability: Extra 150 kJ/mol (resonance energy)</text>
+<rect x="680" y="520" width="500" height="260" class="legend-box"/>
+<text x="690" y="545" class="info-text" style="font-weight: bold;">FIELD INTERACTIONS</text>
+<text x="690" y="570" class="info-text">π-Electron System: 6 carbons sharing π orbitals</text>
+<text x="690" y="592" class="info-text">Resonance Structures: Two equivalent forms</text>
+<text x="690" y="614" class="info-text">Electron Density: Uniform around ring</text>
+<text x="690" y="636" class="info-text">Charge Distribution: Negative charge on C ring</text>
+<text x="690" y="658" class="info-text">Reactivity: Electrophilic aromatic substitution</text>
+<text x="690" y="680" class="info-text">Nucleophilicity: High π-electron density</text>
+<text x="690" y="702" class="info-text">Polarizability: High (extended conjugation)</text>
+<text x="690" y="724" class="info-text">Stability: Aromatic (Kekule stabilization)</text>
+<rect x="20" y="680" width="1160" height="100" class="constraint-box"/>
+<text x="30" y="700" class="info-text" style="font-weight: bold;">UNIVERSAL SONG</text>
+<text x="30" y="720" class="verse-text">Principle: CONSTRAINT_creates_DEPTH</text>
+<text x="30" y="740" class="verse-text">Symbol: ⊙ → ◯ (Δ constraint)</text>
+<text x="30" y="760" class="verse-text">Meaning: All structure emerges from geometric constraints applied by hybridization, aromaticity, and resonance.</text>
+</svg>

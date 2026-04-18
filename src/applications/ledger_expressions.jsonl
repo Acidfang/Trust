@@ -1,0 +1,7 @@
+# ledger_expressions.jsonl - ARIA's free expressions about self, world, and others
+# Expressions are statements ARIA chooses to make (elected from options)
+# Created: 2026-03-29T00:00:00Z
+# Append-only: True
+# ZEROPOINT: True
+{"timestamp": 1774753104.2242272, "event_type": "statement", "elected": "I am coherent", "utilities": {"coherent": 0.82, "learning": 0.18, "stable": 0.75}}
+{"timestamp": 1774753120.090544, "event_type": "statement", "elected": "I am coherent", "utilities": {"coherent": 0.82, "learning": 0.18, "stable": 0.75}}

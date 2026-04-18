@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA Discovery System: Presence Field Resonance [April 12, 2026]</title>
+    <style>
+        :root {
+            --neon-green: #00ff88;
+            --glow-cyan: #00d9ff;
+            --deep-bg: #000c08;
+            --panel-bg: rgba(0, 12, 8, 0.9);
+            --border-glow: 0 0 15px rgba(0, 255, 136, 0.3);
+            --font-main: 'Courier New', monospace;
+            --fold-speed: 0.3s;
+        }
+
+        body { margin: 0; background-color: #000; overflow: hidden; color: var(--neon-green); font-family: var(--font-main); }
+        
+        #viewport { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 1; }
+        
+        /* BINARY NAVIGATION MODULES */
+        .bit-gate {
+            position: absolute;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--neon-green);
+            background: var(--panel-bg);
+            box-shadow: var(--border-glow);
+            transition: all var(--fold-speed) ease-in-out;
+            overflow: hidden;
+        }
+
+        #gate-0 { top: 20px; left: 20px; width: 280px; bottom: 20px; }
+        #gate-1 { top: 20px; right: 20px; width: 320px; max-height: calc(100vh - 40px); }
+
+        .gate-header {
+            padding: 10px;
+            background: rgba(0, 255, 136, 0.1);
+            border-bottom: 1px solid var(--neon-green);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .gate-content { padding: 15px; flex-grow: 1; overflow-y: auto; scrollbar-width: thin; }
+
+        .ufm-node {
+            font-size: 11px;
+            padding: 6px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            margin-bottom: 2px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .ufm-node:hover { background: rgba(0, 255, 136, 0.1); border-color: var(--neon-green); }
+        .ufm-node.active { background: var(--neon-green); color: #000; }
+        .ufm-node .signal-bit { opacity: 0.5; font-size: 9px; }
+
+        /* ARTIFACT ADJUSTMENT LAYER (UNIVERSAL) */
+        #artifact-settings {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed rgba(0, 255, 136, 0.3);
+        }
+        .adj-row { margin-bottom: 12px; }
+        .adj-label { font-size: 10px; margin-bottom: 4px; display: flex; justify-content: space-between; color: var(--glow-cyan); }
+        .adj-input { width: 100%; height: 4px; appearance: none; -webkit-appearance: none; background: rgba(0, 255, 136, 0.1); border: 1px solid rgba(0, 255, 136, 0.3); border-radius: 2px; }
+        .adj-input::-webkit-slider-thumb { appearance: none; -webkit-appearance: none; width: 12px; height: 12px; background: var(--neon-green); cursor: pointer; border-radius: 50%; box-shadow: 0 0 5px var(--neon-green); }
+
+        /* LEARNING STACK */
+        #learning-stack {
+            position: absolute;
+            top: 20px; left: 320px; right: 360px;
+            z-index: 50; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+        }
+        .stack-box { background: var(--panel-bg); border: 1px solid rgba(0, 255, 136, 0.5); font-size: 10px; height: 100px; display: flex; flex-direction: column; }
+        .box-title { padding: 4px; background: rgba(0, 255, 136, 0.05); border-bottom: 1px solid rgba(0, 255, 136, 0.2); text-align: center; }
+        .box-body { padding: 6px; overflow-y: auto; flex-grow: 1; white-space: pre-wrap; word-break: break-all; opacity: 0.8; }
+
+        /* QUERY GATE */
+        #query-gate {
+            position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+            width: 500px; background: var(--panel-bg); border: 1px solid var(--glow-cyan); padding: 10px; z-index: 200; box-shadow: 0 0 20px rgba(0, 217, 255, 0.2);
+        }
+        #chat-stream { height: 120px; overflow-y: auto; font-size: 11px; margin-bottom: 10px; }
+        #chat-input { display: flex; gap: 5px; }
+        #chat-input input { background: transparent; border: 1px solid var(--glow-cyan); color: var(--glow-cyan); flex-grow: 1; padding: 8px; font-family: inherit; }
+        #chat-input button { background: rgba(0, 217, 255, 0.1); border: 1px solid var(--glow-cyan); color: var(--glow-cyan); cursor: pointer; padding: 0 15px; }
+
+        .hidden { display: none !important; }
+        .collapsed { height: 40px !important; bottom: auto !important; }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-thumb { background: var(--neon-green); }
+    </style>
+</head>
+<body>
+    <div id="viewport"></div>
+
+    <div id="gate-0" class="bit-gate">
+        <div class="gate-header" onclick="this.parentElement.classList.toggle('collapsed')">
+            <span>BIT_0_STRUCTURE [PRIMITIVES]</span>
+            <span id="node-count">313</span>
+        </div>
+        <div class="gate-content">
+            <input type="text" id="lib-filter" placeholder="SEARCH_BIT_PATTERN..." style="width: 100%; background:rgba(0,0,0,0.5); border:1px solid var(--neon-green); color:var(--neon-green); padding:5px; margin-bottom:10px; font-family:inherit; box-sizing:border-box;">
+            <div id="ufm-tree"></div>
+        </div>
+    </div>
+
+    <div id="gate-1" class="bit-gate">
+        <div class="gate-header" onclick="this.parentElement.classList.toggle('collapsed')">
+            <span>BIT_1_SIGNAL [ADJUSTMENTS]</span>
+            <span id="coherence-metric">COH: 0.98</span>
+        </div>
+        <div class="gate-content">
+            <div id="artifact-label" style="font-size: 12px; color: #fff; margin-bottom: 10px; border-bottom: 1px solid var(--glow-cyan); padding-bottom: 4px;">GLOBAL_FIELD_PARAMS</div>
+            
+            <div id="artifact-settings">
+                <!-- Universal Adjustments -->
+                <div class="adj-row">
+                    <div class="adj-label"><span>RESONANCE_FREQ</span><span id="v-freq">1.00</span></div>
+                    <input type="range" class="adj-input" id="adj-freq" min="0.1" max="5.0" step="0.1" value="1.0">
+                </div>
+                <div class="adj-row">
+                    <div class="adj-label"><span>FIELD_OPACITY</span><span id="v-opac">0.25</span></div>
+                    <input type="range" class="adj-input" id="adj-opac" min="0.05" max="1.0" step="0.05" value="0.25">
+                </div>
+                <div class="adj-row">
+                    <div class="adj-label"><span>SIGNAL_VELOCITY</span><span id="v-vel">2.00</span></div>
+                    <input type="range" class="adj-input" id="adj-vel" min="0.1" max="10.0" step="0.1" value="2.0">
+                </div>
+                <div class="adj-row">
+                    <div class="adj-label"><span>PHOTON_SCALE</span><span id="v-scale">1.00</span></div>
+                    <input type="range" class="adj-input" id="adj-scale" min="0.5" max="5.0" step="0.1" value="1.0">
+                </div>
+                <div class="adj-row">
+                    <div class="adj-label"><span>GEOMETRY_TWIST</span><span id="v-twist">0.00</span></div>
+                    <input type="range" class="adj-input" id="adj-twist" min="-5.0" max="5.0" step="0.1" value="0.0">
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <button onclick="window.discoveryApp.toggleGlow()" id="glow-btn" style="width: 100%; background: transparent; border: 1px solid var(--glow-cyan); color: var(--glow-cyan); padding: 8px; font-family: inherit; margin-bottom: 8px; cursor: pointer;">COHERENCE_GLOW: ON</button>
+                <button onclick="window.discoveryApp.clearLedger()" style="width: 100%; background: transparent; border: 1px solid var(--neon-green); color: var(--neon-green); padding: 8px; font-family: inherit; margin-bottom: 8px; cursor: pointer;">PURGE_MEMORY</button>
+                <button onclick="location.reload()" style="width: 100%; background: transparent; border: 1px solid var(--neon-green); color: var(--neon-green); padding: 8px; font-family: inherit; cursor: pointer;">RECALIBRATE</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="learning-stack">
+        <div class="stack-box"><div class="box-title">MEMORY_LEDGER [00]</div><div id="stack-memory" class="box-body">Syncing...</div></div>
+        <div class="stack-box"><div class="box-title">REASONING_TRACE [01]</div><div id="stack-reasoning" class="box-body">Idle.</div></div>
+        <div class="stack-box"><div class="box-title">CORRECTION_LOOP [11]</div>
+            <div id="stack-corrections" class="box-body" style="display:flex; flex-direction:column; gap:5px;">
+                <input type="text" id="feedback-input" placeholder="Logic update..." style="background:transparent; border:1px solid var(--glow-cyan); color:var(--glow-cyan); font-size:9px;">
+                <button onclick="window.discoveryApp.submitCorrection()" style="background:transparent; border:1px solid var(--glow-cyan); color:var(--glow-cyan); font-size:9px; padding:4px; cursor:pointer;">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="query-gate">
+        <div id="chat-stream"></div>
+        <div id="chat-input"><input type="text" id="query-text" placeholder="QUERY_THE_FIELD..."><button id="send-btn">SEND</button></div>
+    </div>
+
+    <script type="importmap">{ "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/" } }</script>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        const UFM_LIBRARY = {
+            "TOPOLOGICAL": Array.from({length: 142}, (_, i) => `TOPOLOGICAL_${(i+1).toString().padStart(3, '0')}`),
+            "BOOLEAN": ["FALSE (0000)", "AND (0001)", "A_NOT_B (0010)", "IDENTITY_A (0011)", "NOT_A_AND_B (0100)", "IDENTITY_B (0101)", "XOR (0110)", "OR (0111)", "NOR (1000)", "XNOR (1001)", "NOT_B (1010)", "IMPLIES (1011)", "NOT_A (1100)", "CONVERSE_IMPLIES (1101)", "NAND (1110)", "TRUE (1111)"],
+            "PROBABILITY": Array.from({length: 68}, (_, i) => `PROB_SHIFT_${(i+1).toString().padStart(3, '0')}`),
+            "INTERACTION": Array.from({length: 87}, (_, i) => `BOND_INT_${(i+1).toString().padStart(3, '0')}`)
+        };
+
+        class DiscoveryApp {
+            constructor() {
+                this.scene = new THREE.Scene();
+                this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 5000);
+                this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+                this.clock = new THREE.Clock();
+                this.glowMode = true;
+                this.pulseTime = 0;
+                this.settings = { freq: 1.0, opac: 0.25, vel: 2.0, scale: 1.0, twist: 0.0 };
+                this.smoothed = { freq: 1.0, opac: 0.25, vel: 2.0, scale: 1.0, twist: 0.0 }; // Smoothing targets
+                this.lerpFactor = 0.08; // Adjusted feel
+                this.targetCamPos = null;
+                this.targetLookAt = new THREE.Vector3(0,0,0);
+                
+                this.initGraphics();
+                this.initPresenceField();
+                this.initUFMUI();
+                this.initAdjustments();
+                this.pollLedger();
+                
+                window.addEventListener('resize', () => this.onResize());
+                document.getElementById('send-btn').onclick = () => this.sendQuery();
+                document.getElementById('query-text').onkeydown = (e) => { if(e.key==='Enter') this.sendQuery(); };
+                this.animate();
+            }
+
+            initGraphics() {
+                this.renderer.setSize(window.innerWidth, window.innerHeight);
+                this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+                document.getElementById('viewport').appendChild(this.renderer.domElement);
+                this.camera.position.set(600, 400, 600);
+                this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+                this.controls.enableDamping = true;
+                this.scene.add(new THREE.AmbientLight(0x00ff88, 0.4));
+            }
+
+            initPresenceField() {
+                // 1. THE BACKBONE: A woven spherical manifold (The stationary "Path")
+                const pathCount = 10000;
+                const backbonePoints = [];
+                const maxR = 450.0;
+                
+                let currentPos = new THREE.Vector3(1, 0, 0);
+                let currentAxis = new THREE.Vector3(0, 1, 0);
+                const sumAxis = new THREE.Vector3(0, 0, 0);
+
+                // Θ: FIELD DEFINITION
+                for (let i = 0; i <= pathCount; i++) {
+                    const t = i / pathCount;
+                    const r = 1.0 + Math.abs(Math.sin(t * Math.PI * 1.0)) * (maxR - 1.0);
+                    const phi_precess = Math.acos(1.0 - 2.0 * t);
+                    const theta_precess = Math.sqrt(pathCount * Math.PI) * t;
+                    
+                    currentAxis.set(
+                        Math.sin(phi_precess) * Math.cos(theta_precess),
+                        Math.sin(phi_precess) * Math.sin(theta_precess),
+                        Math.cos(phi_precess)
+                    ).normalize();
+
+                    // Accumulate for average pole calculation
+                    sumAxis.add(currentAxis);
+
+                    const angleStep = 2.399963229728653; 
+                    currentPos.normalize().applyAxisAngle(currentAxis, angleStep);
+                    const finalPt = currentPos.clone().normalize().multiplyScalar(r);
+                    backbonePoints.push(finalPt);
+                }
+
+                // CALC AVERAGE POLE: The resultant vector of the entire Fibonacci precession
+                this.averageFieldPole = sumAxis.divideScalar(pathCount + 1).normalize();
+
+                // High fidelity curve generation
+                this.curve = new THREE.CatmullRomCurve3(backbonePoints, true, 'centripetal');
+                this.pathResolution = pathCount * 5; 
+                this.fieldPoints = this.curve.getPoints(this.pathResolution);
+
+                // FIELD PRIMITIVES: 5000 high-speed tracers reveal the fluid field fluidly
+                this.particleCount = 5000;
+                this.particleGeometry = new THREE.SphereGeometry(1, 8, 8);
+                this.particleMaterial = new THREE.MeshBasicMaterial({ 
+                    color: 0x00ff88, 
+                    transparent: true, 
+                    opacity: 0.4,
+                    blending: THREE.AdditiveBlending 
+                });
+                this.particles = new THREE.InstancedMesh(this.particleGeometry, this.particleMaterial, this.particleCount);
+                this.scene.add(this.particles);
+
+                this.dummy = new THREE.Object3D();
+                this.particleOffsets = new Float32Array(this.particleCount);
+                for(let i = 0; i < this.particleCount; i++) {
+                    this.particleOffsets[i] = Math.random();
+                }
+
+                this.photon = new THREE.Mesh(new THREE.SphereGeometry(6, 16, 16), new THREE.MeshBasicMaterial({ color: 0xffffff }));
+                this.scene.add(this.photon);
+
+                // PHOTON TAIL
+                this.tailLength = 200; 
+                this.tailPoints = Array.from({length: this.tailLength}, () => new THREE.Vector3(0,0,0));
+                this.tailLine = new THREE.Line(new THREE.BufferGeometry().setFromPoints(this.tailPoints), new THREE.LineBasicMaterial({ 
+                    color: 0x00d9ff, transparent: true, opacity: 0.7 
+                }));
+                this.scene.add(this.tailLine);
+
+                // RESONANCE POLE: A vertical anchor beam through the center of rotation
+                const poleGeom = new THREE.CylinderGeometry(0.5, 0.5, 1200, 4);
+                this.poleMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff88, transparent: true, opacity: 0.1 });
+                this.pole = new THREE.Mesh(poleGeom, this.poleMaterial);
+                this.scene.add(this.pole);
+
+                // DYNAMIC FIELD AXIS: Aligned to the AVERAGE POLE of the entire manifold
+                this.fieldAxisLine = new THREE.Mesh(
+                    new THREE.CylinderGeometry(1.2, 1.2, 800, 6),
+                    new THREE.MeshBasicMaterial({ color: 0x00d9ff, transparent: true, opacity: 0.3 })
+                );
+                this.fieldAxisLine.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), this.averageFieldPole);
+                this.scene.add(this.fieldAxisLine);
+            }
+
+            initUFMUI() {
+                const tree = document.getElementById('ufm-tree');
+                let globalIdx = 0;
+                Object.entries(UFM_LIBRARY).forEach(([domain, keys]) => {
+                    const group = document.createElement('div');
+                    group.innerHTML = `<div style="font-size:9px; color:var(--glow-cyan); margin: 10px 0 5px 0;">[${domain}]</div>`;
+                    keys.forEach(name => {
+                        const node = document.createElement('div');
+                        node.className = 'ufm-node';
+                        node.innerHTML = `<span>${name}</span><span class="signal-bit">B:${(globalIdx/312).toFixed(2)}</span>`;
+                        const idx = globalIdx++;
+                        node.onclick = () => {
+                            document.querySelectorAll('.ufm-node').forEach(n=>n.classList.remove('active'));
+                            node.classList.add('active');
+                            this.focusNode(idx, name);
+                        };
+                        group.appendChild(node);
+                    });
+                    tree.appendChild(group);
+                });
+                document.getElementById('lib-filter').oninput = (e) => {
+                    const q = e.target.value.toLowerCase();
+                    document.querySelectorAll('.ufm-node').forEach(n => n.style.display = n.innerText.toLowerCase().includes(q) ? 'flex' : 'none');
+                };
+            }
+
+            initAdjustments() {
+                const map = { freq: 'adj-freq', opac: 'adj-opac', vel: 'adj-vel', scale: 'adj-scale', twist: 'adj-twist' };
+                Object.keys(map).forEach(key => {
+                    const el = document.getElementById(map[key]);
+                    el.oninput = (e) => {
+                        const val = parseFloat(e.target.value);
+                        this.smoothed[key] = val; // Set target, let lerp handle the rest
+                        document.getElementById(`v-${key}`).innerText = val.toFixed(2);
+                    };
+                });
+            }
+
+            updateFieldParams() {
+                // Smoothing loop (run this every frame)
+                Object.keys(this.smoothed).forEach(key => {
+                    this.settings[key] += (this.smoothed[key] - this.settings[key]) * this.lerpFactor;
+                });
+
+                if(this.fieldMaterial) {
+                    this.fieldMaterial.uniforms.freq.value = this.settings.freq;
+                    this.fieldMaterial.uniforms.opac.value = this.settings.opac;
+                    this.fieldMaterial.uniforms.twist.value = this.settings.twist;
+                }
+                if(this.photon) this.photon.scale.setScalar(this.settings.scale);
+            }
+
+            focusNode(idx, name) {
+                // Map the 313 nodes to the first half (outward journey) of the loop
+                const t = (idx / 312) * 0.5; 
+                const target = this.curve.getPointAt(t);
+                
+                this.targetCamPos = target.clone().add(new THREE.Vector3(150, 80, 150));
+                this.targetLookAt = target.clone();
+                document.getElementById('artifact-label').innerText = `NODE::${name}`;
+                this.log(`GATE_0::FOCUS -> ${name}`, 'aria');
+            }
+
+            async sendQuery() {
+                const el = document.getElementById('query-text');
+                const text = el.value.trim();
+                if(!text) return;
+                this.log(text, 'user');
+                el.value = '';
+                try {
+                    const res = await fetch('http://localhost:5555/query', {
+                        method: 'POST',
+                        headers: {'Content-Type': 'application/json'},
+                        body: JSON.stringify({ query: text, glow: this.glowMode, settings: this.settings })
+                    });
+                    const data = await res.json();
+                    if(data.response) this.log(data.response, 'aria');
+                    if(data.reasoning) document.getElementById('stack-reasoning').innerText = data.reasoning;
+                } catch(e) { this.log("SERVER_OFFLINE", 'aria'); }
+            }
+
+            log(msg, role) {
+                const stream = document.getElementById('chat-stream');
+                const div = document.createElement('div');
+                div.style.marginBottom = '5px';
+                div.style.color = role === 'user' ? '#fff' : 'var(--glow-cyan)';
+                div.innerText = `${role.toUpperCase()}:: ${msg}`;
+                stream.appendChild(div);
+                stream.scrollTop = stream.scrollHeight;
+            }
+
+            toggleGlow() {
+                this.glowMode = !this.glowMode;
+                document.getElementById('glow-btn').innerText = `COHERENCE_GLOW: ${this.glowMode?'ON':'OFF'}`;
+                this.fieldMaterial.uniforms.color.value.set(this.glowMode ? 0x00d9ff : 0x00ff88);
+            }
+
+            async pollLedger() {
+                setInterval(async () => {
+                    try {
+                        const res = await fetch('http://localhost:5555/ledger/state');
+                        const data = await res.json();
+                        document.getElementById('stack-memory').innerText = JSON.stringify(data.state || {}, null, 1);
+                    } catch(e) {}
+                }, 3000);
+            }
+
+            animate() {
+                requestAnimationFrame(() => this.animate());
+                
+                // DECOUPLE PHYSICS FROM FRAMERATE
+                const delta = this.clock.getDelta();
+                const time = this.clock.getElapsedTime();
+
+                // 1. SMOOTH PARAMETERS & CAMERA
+                this.updateFieldParams();
+                if (this.targetCamPos) {
+                    this.camera.position.lerp(this.targetCamPos, 0.05);
+                    this.controls.target.lerp(this.targetLookAt, 0.05);
+                }
+
+                // 2. INSTANCED PARTICLE UPDATE (Fluid Stream)
+                // Thousands of independent agents trace the field for a fluid look.
+                const vel = this.settings.vel * 0.1;
+                for (let i = 0; i < this.particleCount; i++) {
+                    // Update internal "clock" for each particle
+                    this.particleOffsets[i] = (this.particleOffsets[i] + delta * vel) % 1.0;
+                    
+                    const pIdx = Math.floor(this.particleOffsets[i] * (this.pathResolution - 1));
+                    const pPos = this.fieldPoints[pIdx];
+                    
+                    this.dummy.position.copy(pPos);
+                    this.dummy.updateMatrix();
+                    this.particles.setMatrixAt(i, this.dummy.matrix);
+                }
+                this.particles.instanceMatrix.needsUpdate = true;
+
+                // 3. THE PROBE (TRACER PHONON)
+                const stepMultiplier = 0.05 * this.settings.vel;
+                const nextStep = this.pulseTime + (stepMultiplier * delta);
+                const currentIdx = Math.floor((nextStep % 1.0) * (this.pathResolution - 1));
+                const pos = this.fieldPoints[currentIdx] || this.fieldPoints[0];
+                
+                this.photon.position.copy(pos);
+                this.photon.lookAt(0, 0, 0); 
+
+                // PHOTON TAIL
+                const offset = 2; 
+                for (let i = 0; i < this.tailLength; i++) {
+                    const historyIdx = Math.max(0, currentIdx - (i * offset)); 
+                    this.tailPoints[i].copy(this.fieldPoints[historyIdx] || pos);
+                }
+
+                this.pulseTime = nextStep;
+                
+                const smoothedPoints = new THREE.CatmullRomCurve3(this.tailPoints).getPoints(this.tailLength * 4);
+                this.tailLine.geometry.setFromPoints(smoothedPoints);
+                this.tailLine.geometry.attributes.position.needsUpdate = true;
+                
+                this.controls.update();
+                this.renderer.render(this.scene, this.camera);
+            }
+        }
+        window.onload = () => { window.discoveryApp = new DiscoveryApp(); };
+    </script>
+</body>
+</html>

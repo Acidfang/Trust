@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Field Navigation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+            overflow: hidden;
+            font-family: monospace;
+        }
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+        }
+        #binary-info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 20, 40, 0.9);
+            color: #0f0;
+            padding: 15px;
+            border: 1px solid #0f0;
+            font-size: 12px;
+            max-width: 400px;
+            line-height: 1.6;
+        }
+        #chain-path {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 20, 40, 0.9);
+            color: #0f0;
+            padding: 15px;
+            border: 1px solid #0f0;
+            font-size: 11px;
+            max-width: 600px;
+        }
+        .byte {
+            display: inline-block;
+            background: rgba(0, 255, 0, 0.2);
+            padding: 2px 6px;
+            margin: 2px;
+            border: 1px solid #0f0;
+        }
+        .controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 20, 40, 0.9);
+            color: #0f0;
+            padding: 15px;
+            border: 1px solid #0f0;
+            font-size: 12px;
+        }
+        .control-item {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div id="binary-info">
+        <div id="current-byte">Byte: [loading...]</div>
+        <div id="current-chain">Chain: [loading...]</div>
+        <div id="signal-strength">Signal: 0%</div>
+    </div>
+    <div id="chain-path"></div>
+    <div class="controls">
+        <div class="control-item">LMB: Rotate</div>
+        <div class="control-item">RMB: Pan</div>
+        <div class="control-item">Scroll: Zoom</div>
+        <div class="control-item">Click node: Navigate</div>
+        <div class="control-item">Space: Reset view</div>
+    </div>
+
+    <script>
+        // ======================
+        // BINARY FIELD 3D ENGINE
+        // ======================
+
+        class BinaryByte {
+            constructor(bits, label, semantic_role, position = null) {
+                this.bits = Array.isArray(bits) ? bits : this._parseBits(bits);
+                this.label = label;
+                this.semantic_role = semantic_role; // question, processing, answer, constraint, flow
+                this.position = position || new THREE.Vector3();
+                this.mesh = null;
+                this.glow_mesh = null;
+                this.id = Math.random().toString(36).substr(2, 9);
+                this.program = null;  // Link to executable program (if this is an answer node)
+            }
+
+            _parseBits(str) {
+                return str.split('').map(c => parseInt(c));
+            }
+
+            signal_strength() {
+                return this.bits.filter(b => b === 1).length / this.bits.length;
+            }
+
+            binary_string() {
+                return this.bits.join('');
+            }
+
+            to_color() {
+                const strength = this.signal_strength();
+                // Red (0) → Yellow (0.5) → Green (1)
+                if (strength < 0.5) {
+                    const r = 255;
+                    const g = Math.floor(strength * 2 * 255);
+                    return new THREE.Color(r / 255, g / 255, 0);
+                } else {
+                    const r = Math.floor((1 - strength) * 2 * 255);
+                    const g = 255;
+                    return new THREE.Color(r / 255, g / 255, 0);
+                }
+            }
+        }
+
+        class CausalChain {
+            constructor(label) {
+                this.label = label;
+                this.bytes = [];
+                this.causality = []; // array of [from_idx, to_idx]
+                this.id = Math.random().toString(36).substr(2, 9);
+                this.mesh_group = new THREE.Group();
+            }
+
+            add_byte(byte) {
+                this.bytes.push(byte);
+                return this.bytes.length - 1;
+            }
+
+            add_causality(from_idx, to_idx) {
+                this.causality.push([from_idx, to_idx]);
+            }
+
+            chain_signal_strength() {
+                if (this.bytes.length === 0) return 0;
+                return this.bytes.reduce((sum, b) => sum + b.signal_strength(), 0) / this.bytes.length;
+            }
+
+            layout_radially(origin, radius_start = 10, angle_spread = Math.PI * 2) {
+                const count = this.bytes.length;
+                for (let i = 0; i < count; i++) {
+                    const angle = (i / count) * angle_spread;
+                    const radius = radius_start + (i * 2);
+                    this.bytes[i].position.copy(origin);
+                    this.bytes[i].position.x += radius * Math.cos(angle);
+                    this.bytes[i].position.z += radius * Math.sin(angle);
+                    this.bytes[i].position.y += i * 1.5;
+                }
+            }
+        }
+
+        class BinaryFieldNavigator {
+            constructor() {
+                this.scene = new THREE.Scene();
+                this.scene.background = new THREE.Color(0x001a33);
+                this.scene.fog = new THREE.Fog(0x001a33, 500, 1000);
+
+                this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 5000);
+                this.camera.position.set(0, 15, 50);
+                this.camera.lookAt(0, 5, 0);
+
+                this.renderer = new THREE.WebGLRenderer({ antialias: true });
+                this.renderer.setSize(window.innerWidth, window.innerHeight);
+                this.renderer.shadowMap.enabled = true;
+                document.getElementById('canvas-container').appendChild(this.renderer.domElement);
+
+                this.setup_lighting();
+                this.setup_mouse_controls();
+                
+                this.chains = {};
+                this.current_chain = null;
+                this.current_byte_idx = 0;
+                this.raycaster = new THREE.Raycaster();
+                this.mouse = new THREE.Vector2();
+
+                this.create_sample_field();
+                this.animate();
+            }
+
+            setup_lighting() {
+                const ambient = new THREE.AmbientLight(0xffffff, 0.7);
+                this.scene.add(ambient);
+
+                const directional = new THREE.DirectionalLight(0xffffff, 1.2);
+                directional.position.set(50, 50, 50);
+                directional.castShadow = true;
+                this.scene.add(directional);
+
+                const point1 = new THREE.PointLight(0xcce0ff, 1.0);
+                point1.position.set(0, 15, 50);
+                this.scene.add(point1);
+
+                const point2 = new THREE.PointLight(0xffd0aa, 0.8);
+                point2.position.set(-50, 10, -50);
+                this.scene.add(point2);
+            }
+
+            setup_mouse_controls() {
+                let isDragging = false;
+                let previousMousePosition = { x: 0, y: 0 };
+
+                this.renderer.domElement.addEventListener('mousedown', (e) => {
+                    isDragging = true;
+                    previousMousePosition = { x: e.clientX, y: e.clientY };
+                });
+
+                this.renderer.domElement.addEventListener('mousemove', (e) => {
+                    if (isDragging) {
+                        let deltaX = e.clientX - previousMousePosition.x;
+                        let deltaY = e.clientY - previousMousePosition.y;
+
+                        if (e.buttons === 1) { // Left click
+                            this.camera.position.applyAxisAngle(
+                                new THREE.Vector3(0, 1, 0),
+                                deltaX * 0.01
+                            );
+                        } else if (e.buttons === 2) { // Right click
+                            this.camera.position.x -= deltaX * 0.1;
+                            this.camera.position.y += deltaY * 0.1;
+                        }
+                        this.camera.lookAt(0, 5, 0);
+                    }
+                    previousMousePosition = { x: e.clientX, y: e.clientY };
+                });
+
+                this.renderer.domElement.addEventListener('mouseup', () => {
+                    isDragging = false;
+                });
+
+                this.renderer.domElement.addEventListener('wheel', (e) => {
+                    e.preventDefault();
+                    const direction = this.camera.position.clone().normalize();
+                    const distance = this.camera.position.length();
+                    const newDistance = distance + (e.deltaY > 0 ? 2 : -2);
+                    this.camera.position.copy(direction.multiplyScalar(Math.max(5, newDistance)));
+                    this.camera.lookAt(0, 5, 0);
+                });
+
+                this.renderer.domElement.addEventListener('click', (e) => {
+                    this.mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+                    this.mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+                    this.check_byte_intersection();
+                });
+
+                window.addEventListener('keydown', (e) => {
+                    if (e.code === 'Space') {
+                        this.camera.position.set(0, 15, 50);
+                        this.camera.lookAt(0, 5, 0);
+                    }
+                });
+
+                this.renderer.domElement.addEventListener('contextmenu', (e) => e.preventDefault());
+            }
+
+            create_sample_field() {
+                // Chain 1: → ENCYCLOPEDIA API SERVER (11110000)
+                const chain1 = new CausalChain("→ ENCYCLOPEDIA");
+                
+                const q1 = new BinaryByte("00000000", "?", "question");
+                const p1 = new BinaryByte("00110011", "load entities", "processing");
+                const p2 = new BinaryByte("10101010", "build chains", "processing");
+                const a1 = new BinaryByte("11110000", "ENCYCLOPEDIA_API_SERVER:5000", "answer");
+                a1.program = "ENCYCLOPEDIA_API_SERVER";
+
+                const q1_idx = chain1.add_byte(q1);
+                const p1_idx = chain1.add_byte(p1);
+                const p2_idx = chain1.add_byte(p2);
+                const a1_idx = chain1.add_byte(a1);
+
+                chain1.add_causality(q1_idx, p1_idx);
+                chain1.add_causality(p1_idx, p2_idx);
+                chain1.add_causality(p2_idx, a1_idx);
+                chain1.layout_radially(new THREE.Vector3(-25, 0, 0), 5);
+
+                this.chains[chain1.id] = chain1;
+
+                // Chain 2: → UNIVERSAL RENDERER API (11111111)
+                const chain2 = new CausalChain("→ RENDERER");
+                
+                const dev0 = new BinaryByte("00000000", "??", "question");
+                const dev1 = new BinaryByte("01010101", "detect", "processing");
+                const dev2 = new BinaryByte("10101010", "pipeline", "processing");
+                const dev3 = new BinaryByte("11111111", "UNIVERSAL_RENDERER_API:8000", "answer");
+                dev3.program = "UNIVERSAL_RENDERER_API";
+
+                const dev0_idx = chain2.add_byte(dev0);
+                const dev1_idx = chain2.add_byte(dev1);
+                const dev2_idx = chain2.add_byte(dev2);
+                const dev3_idx = chain2.add_byte(dev3);
+
+                chain2.add_causality(dev0_idx, dev1_idx);
+                chain2.add_causality(dev1_idx, dev2_idx);
+                chain2.add_causality(dev2_idx, dev3_idx);
+                chain2.layout_radially(new THREE.Vector3(25, 0, 0), 5);
+
+                this.chains[chain2.id] = chain2;
+
+                // Chain 3: → LEDGER SYSTEMS
+                const chain3 = new CausalChain("→ LEDGER");
+                
+                const l1 = new BinaryByte("00001111", "what?", "question");
+                const l2 = new BinaryByte("10101010", "LEDGER_SHELL:3001", "answer");
+                l2.program = "LEDGER_SHELL";
+                const l3 = new BinaryByte("11001100", "LEDGER_SYSTEM:3002", "answer");
+                l3.program = "LEDGER_SYSTEM";
+
+                const l1_idx = chain3.add_byte(l1);
+                const l2_idx = chain3.add_byte(l2);
+                const l3_idx = chain3.add_byte(l3);
+
+                chain3.add_causality(l1_idx, l2_idx);
+                chain3.add_causality(l2_idx, l3_idx);
+                chain3.layout_radially(new THREE.Vector3(0, 0, 25), 5);
+
+                this.chains[chain3.id] = chain3;
+
+                // Set current chain
+                this.current_chain = chain1;
+                this.render_all_bytes();
+            }
+
+            render_all_bytes() {
+                for (let chain_id in this.chains) {
+                    const chain = this.chains[chain_id];
+                    for (let i = 0; i < chain.bytes.length; i++) {
+                        const byte = chain.bytes[i];
+                        this.render_byte(byte);
+                    }
+
+                    // Draw causality lines
+                    for (let [from_idx, to_idx] of chain.causality) {
+                        this.draw_causality_line(chain.bytes[from_idx], chain.bytes[to_idx]);
+                    }
+                }
+            }
+
+            render_byte(byte) {
+                const size = byte.signal_strength() * 3 + 1.5;  // Bigger nodes
+                const geometry = new THREE.IcosahedronGeometry(size, 4);  // Higher detail
+                const material = new THREE.MeshStandardMaterial({
+                    color: byte.to_color(),
+                    emissive: byte.to_color(),
+                    emissiveIntensity: 1.0,  // Very bright emission
+                    metalness: 0.6,
+                    roughness: 0.3,
+                    transparent: false,
+                    side: THREE.FrontSide
+                });
+
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.position.copy(byte.position);
+                mesh.castShadow = true;
+                mesh.receiveShadow = true;
+                mesh.userData = { byte: byte };
+
+                this.scene.add(mesh);
+                byte.mesh = mesh;
+
+                // Strong glow effect
+                const glow_geometry = new THREE.IcosahedronGeometry(size * 1.8, 2);
+                const glow_material = new THREE.MeshBasicMaterial({
+                    color: byte.to_color(),
+                    transparent: true,
+                    opacity: 0.25,
+                    side: THREE.BackSide
+                });
+                const glow_mesh = new THREE.Mesh(glow_geometry, glow_material);
+                glow_mesh.position.copy(byte.position);
+                this.scene.add(glow_mesh);
+                byte.glow_mesh = glow_mesh;
+            }
+
+            draw_causality_line(from_byte, to_byte) {
+                const geometry = new THREE.BufferGeometry();
+                geometry.setAttribute('position', new THREE.BufferAttribute(
+                    new Float32Array([
+                        from_byte.position.x, from_byte.position.y, from_byte.position.z,
+                        to_byte.position.x, to_byte.position.y, to_byte.position.z
+                    ]),
+                    3
+                ));
+
+                const material = new THREE.LineBasicMaterial({ color: 0x00ff00, linewidth: 2 });
+                const line = new THREE.Line(geometry, material);
+                this.scene.add(line);
+            }
+
+            check_byte_intersection() {
+                this.raycaster.setFromCamera(this.mouse, this.camera);
+                const all_meshes = [];
+                for (let chain_id in this.chains) {
+                    for (let byte of this.chains[chain_id].bytes) {
+                        if (byte.mesh) all_meshes.push(byte.mesh);
+                    }
+                }
+
+                const intersects = this.raycaster.intersectObjects(all_meshes);
+                if (intersects.length > 0) {
+                    const byte = intersects[0].object.userData.byte;
+                    this.navigate_to_byte(byte);
+                }
+            }
+
+            navigate_to_byte(byte) {
+                // Find which chain this byte belongs to
+                for (let chain_id in this.chains) {
+                    const chain = this.chains[chain_id];
+                    const idx = chain.bytes.indexOf(byte);
+                    if (idx !== -1) {
+                        this.current_chain = chain;
+                        this.current_byte_idx = idx;
+                        this.update_info_display();
+                        
+                        // If this byte is linked to a program, highlight and suggest opening
+                        if (byte.program) {
+                            this.highlight_program_link(byte);
+                        }
+                        break;
+                    }
+                }
+            }
+            
+            highlight_program_link(byte) {
+                // Highlight when a byte links to a program
+                const info_el = document.getElementById('chain-path');
+                const program_info = document.createElement('div');
+                program_info.style.marginTop = '10px';
+                program_info.style.padding = '10px';
+                program_info.style.background = 'rgba(0, 255, 0, 0.2)';
+                program_info.style.border = '1px solid #0f0';
+                program_info.innerHTML = `<strong>→ PROGRAM LINK DETECTED</strong><br><code>${byte.program}</code><br><small>Double-click to navigate or see</small>`;
+                
+                // Clear previous program info
+                const old_info = info_el.querySelector('[style*="rgba(0, 255, 0"]');
+                if (old_info) old_info.remove();
+                info_el.appendChild(program_info);
+            }
+
+            update_info_display() {
+                const byte = this.current_chain.bytes[this.current_byte_idx];
+                document.getElementById('current-byte').innerHTML = 
+                    `Byte: ${byte.binary_string()} (${byte.label})`;
+                document.getElementById('current-chain').innerHTML = 
+                    `Chain: ${this.current_chain.label}`;
+                document.getElementById('signal-strength').innerHTML = 
+                    `Signal: ${Math.round(byte.signal_strength() * 100)}%`;
+
+                // Update chain path
+                let path_html = '<strong>Causal Path:</strong> ';
+                for (let i = 0; i < this.current_chain.bytes.length; i++) {
+                    const b = this.current_chain.bytes[i];
+                    const active = i === this.current_byte_idx ? ' style="background: #0f0; color: #000;"' : '';
+                    path_html += `<span class="byte"${active}>${b.binary_string()}</span>`;
+                    if (i < this.current_chain.bytes.length - 1) path_html += ' → ';
+                }
+                document.getElementById('chain-path').innerHTML = path_html;
+            }
+
+            animate() {
+                requestAnimationFrame(() => this.animate());
+
+                // Rotate and pulse all bytes
+                const time = Date.now() * 0.001;
+                for (let chain_id in this.chains) {
+                    for (let byte of this.chains[chain_id].bytes) {
+                        if (byte.mesh) {
+                            byte.mesh.rotation.x += 0.005;
+                            byte.mesh.rotation.y += 0.007;
+                            const pulse = Math.sin(time + byte.id.charCodeAt(0)) * 0.2 + 1;
+                            byte.mesh.scale.setScalar(pulse);
+                        }
+                        if (byte.glow_mesh) {
+                            byte.glow_mesh.rotation.x -= 0.003;
+                            byte.glow_mesh.rotation.z += 0.005;
+                            byte.glow_mesh.scale.setScalar(pulse * 1.1);
+                        }
+                    }
+                }
+
+                this.renderer.render(this.scene, this.camera);
+            }
+        }
+
+        // Initialize
+        const navigator = new BinaryFieldNavigator();
+        navigator.update_info_display();
+        
+        // Debug: Log scene info
+        let total_bytes = 0;
+        let total_chains = 0;
+        for (let chain_id in navigator.chains) {
+            total_chains++;
+            total_bytes += navigator.chains[chain_id].bytes.length;
+            const chain = navigator.chains[chain_id];
+            console.log(`Chain "${chain.label}": ${chain.bytes.length} bytes at origin`, chain.bytes[0].position);
+        }
+        console.log(`Scene initialized: ${total_chains} chains, ${total_bytes} total bytes`);
+        console.log(`Camera position: (${navigator.camera.position.x}, ${navigator.camera.position.y}, ${navigator.camera.position.z})`);
+        console.log(`Camera looking at: (0, 5, 0)`);
+        
+        // Add debug info to panel
+        const debug_info = document.getElementById('binary-info');
+        const debug_div = document.createElement('div');
+        debug_div.style.marginTop = '10px';
+        debug_div.style.fontSize = '10px';
+        debug_div.style.opacity = '0.7';
+        debug_div.innerHTML = `<div>Chains: ${total_chains} | Nodes: ${total_bytes}</div>`;
+        debug_info.appendChild(debug_div);
+
+        // Handle resize
+        window.addEventListener('resize', () => {
+            navigator.camera.aspect = window.innerWidth / window.innerHeight;
+            navigator.camera.updateProjectionMatrix();
+            navigator.renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>

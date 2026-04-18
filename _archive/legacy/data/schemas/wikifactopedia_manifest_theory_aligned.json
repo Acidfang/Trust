@@ -1,0 +1,434 @@
+{
+  "container": "WikiFieldFactopedia",
+  "timestamp": "2026-04-01T00:39:00.601508",
+  "summary": {
+    "total_required_items": 14,
+    "items_present": 14,
+    "items_missing": 0,
+    "coverage_percent": 100.0
+  },
+  "gaps": {
+    "missing_items": [],
+    "unverified_items": [],
+    "failed_primitives": {}
+  },
+  "all_items": {
+    "electron_animation": {
+      "name": "electron_animation",
+      "type": "animation",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electron field manifestation in orbital quadrants",
+          "measured": "37 frames from H to Tc showing orbital quadrants",
+          "expected": "s\u2192TOP, p\u2192RIGHT, d\u2192BOTTOM, f\u2192LEFT (where field manifests)",
+          "details": {
+            "theory": "electrons_manifest_where_field_exists"
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Orbital type encoding (measured field characteristics)",
+          "measured": "correct",
+          "expected": "s=RED, p=TEAL, d=BLUE, f=SALMON",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "passed",
+          "description": "Electron count progression (instant field accumulation)",
+          "measured": "verified progression",
+          "expected": "1\u21922\u21923...\u219237 (instant, not time-based)",
+          "details": {
+            "theory": "light_is_instant"
+          }
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Electrons manifest in shell (n=1,2,3) patterns",
+          "measured": "shells filled correctly",
+          "expected": "Aufbau order: 1s, 2s, 2p, 3s, 3p... electrons manifest where fields overlap",
+          "details": {
+            "theory": "no_nucleus_only_electron_fields"
+          }
+        }
+      }
+    },
+    "hydrogen_atom": {
+      "name": "hydrogen_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electron fields manifest in concentric shells",
+          "measured": "verified",
+          "expected": "Z=1 electron fields, manifesting in shells (n=1,2,3...)",
+          "details": {
+            "theory": "electron_fields_localized_not_universal"
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Orbital type field characteristics",
+          "measured": "correct",
+          "expected": "s/p/d/f field types encoded",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static manifestation (instant interaction)",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {
+            "theory": "light_is_instant"
+          }
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Atom = Z=(1) electron field superposition",
+          "measured": "Configuration 1s1",
+          "expected": "1 electron field, manifests at n=1",
+          "details": {
+            "theory": "no_nucleus_atom_is_electron_fields_only"
+          }
+        }
+      }
+    },
+    "helium_atom": {
+      "name": "helium_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electron fields manifest in concentric shells",
+          "measured": "verified",
+          "expected": "Z=2 electron fields, manifesting in shells (n=1,2,3...)",
+          "details": {
+            "theory": "electron_fields_localized_not_universal"
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Orbital type field characteristics",
+          "measured": "correct",
+          "expected": "s/p/d/f field types encoded",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static manifestation (instant interaction)",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {
+            "theory": "light_is_instant"
+          }
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Atom = Z=(2) electron field superposition",
+          "measured": "Configuration 1s2",
+          "expected": "2 overlapping electron fields, manifests at n=1 (stable)",
+          "details": {
+            "theory": "no_nucleus_atom_is_electron_fields_only"
+          }
+        }
+      }
+    },
+    "carbon_atom": {
+      "name": "carbon_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electron fields manifest in concentric shells",
+          "measured": "verified",
+          "expected": "Z=6 electron fields, manifesting in shells (n=1,2,3...)",
+          "details": {
+            "theory": "electron_fields_localized_not_universal"
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Orbital type field characteristics",
+          "measured": "correct",
+          "expected": "s/p/d/f field types encoded",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static manifestation (instant interaction)",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {
+            "theory": "light_is_instant"
+          }
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Atom = Z=(6) electron field superposition",
+          "measured": "Configuration 1s2 2s2 2p2",
+          "expected": "6 electron fields overlapping, manifests in 2 shells",
+          "details": {
+            "theory": "no_nucleus_atom_is_electron_fields_only"
+          }
+        }
+      }
+    },
+    "oxygen_atom": {
+      "name": "oxygen_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electron fields manifest in concentric shells",
+          "measured": "verified",
+          "expected": "Z=8 electron fields, manifesting in shells (n=1,2,3...)",
+          "details": {
+            "theory": "electron_fields_localized_not_universal"
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Orbital type field characteristics",
+          "measured": "correct",
+          "expected": "s/p/d/f field types encoded",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static manifestation (instant interaction)",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {
+            "theory": "light_is_instant"
+          }
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Atom = Z=(8) electron field superposition",
+          "measured": "Configuration 1s2 2s2 2p4",
+          "expected": "8 electron fields overlapping, manifests in 2 shells",
+          "details": {
+            "theory": "no_nucleus_atom_is_electron_fields_only"
+          }
+        }
+      }
+    },
+    "h2_molecule": {
+      "name": "h2_molecule",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electrons manifest in bonding geometry",
+          "measured": "verified linear",
+          "expected": "linear (where overlapped fields stabilize)",
+          "details": {
+            "theory": "bonding_is_field_overlap_manifestation"
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Electron field type encoding per atom",
+          "measured": "correct",
+          "expected": "Element colors (H=white, C=gray, O=red)",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static manifestation (instant bonding)",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {
+            "theory": "light_is_instant_bonding_instant"
+          }
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Molecule = 2 electron fields overlapping",
+          "measured": "Formula H\u2082",
+          "expected": "2 electron fields overlapping",
+          "details": {
+            "theory": "molecule_is_overlapping_electron_fields_manifesting"
+          }
+        }
+      }
+    },
+    "h2o_molecule": {
+      "name": "h2o_molecule",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electrons manifest in bonding geometry",
+          "measured": "verified bent 104.5\u00b0",
+          "expected": "bent 104.5\u00b0 (where overlapped fields stabilize)",
+          "details": {
+            "theory": "bonding_is_field_overlap_manifestation"
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Electron field type encoding per atom",
+          "measured": "correct",
+          "expected": "Element colors (H=white, C=gray, O=red)",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static manifestation (instant bonding)",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {
+            "theory": "light_is_instant_bonding_instant"
+          }
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Molecule = 10 electron fields overlapping",
+          "measured": "Formula H\u2082O",
+          "expected": "10 electron fields overlapping (2H + 8O)",
+          "details": {
+            "theory": "molecule_is_overlapping_electron_fields_manifesting"
+          }
+        }
+      }
+    },
+    "co2_molecule": {
+      "name": "co2_molecule",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electrons manifest in bonding geometry",
+          "measured": "verified linear 180\u00b0",
+          "expected": "linear 180\u00b0 (where overlapped fields stabilize)",
+          "details": {
+            "theory": "bonding_is_field_overlap_manifestation"
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Electron field type encoding per atom",
+          "measured": "correct",
+          "expected": "Element colors (H=white, C=gray, O=red)",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static manifestation (instant bonding)",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {
+            "theory": "light_is_instant_bonding_instant"
+          }
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Molecule = 22 electron fields overlapping",
+          "measured": "Formula CO\u2082",
+          "expected": "22 electron fields overlapping (6C + 8+8O)",
+          "details": {
+            "theory": "molecule_is_overlapping_electron_fields_manifesting"
+          }
+        }
+      }
+    },
+    "simple_cell": {
+      "name": "simple_cell",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "epithelial_tissue": {
+      "name": "epithelial_tissue",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "nervous_tissue": {
+      "name": "nervous_tissue",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "heart_organ": {
+      "name": "heart_organ",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "human_organism": {
+      "name": "human_organism",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "github_wiki": {
+      "name": "github_wiki",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    }
+  },
+  "schema": {
+    "container": "WikiFieldFactopedia",
+    "description": "Electron field manifestation hierarchy: electrons \u2192 atoms \u2192 molecules \u2192 biology",
+    "required": [
+      "electron_animation",
+      "hydrogen_atom",
+      "helium_atom",
+      "carbon_atom",
+      "oxygen_atom",
+      "h2_molecule",
+      "h2o_molecule",
+      "co2_molecule",
+      "simple_cell",
+      "epithelial_tissue",
+      "nervous_tissue",
+      "heart_organ",
+      "human_organism",
+      "github_wiki"
+    ],
+    "optional": []
+  }
+}

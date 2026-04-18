@@ -1,0 +1,79 @@
+{
+  "role": {
+    "name": "UNIFIED_API",
+    "version": "1.0",
+    "description": "Unified API server: Encyclopedia data + Renderer visualization + Field generation",
+    "endpoints": [
+      {
+        "path": "/health",
+        "method": "GET",
+        "handler_module": "health_handlers",
+        "handler_function": "health_check",
+        "description": "Server health and framework status",
+        "requires_auth": false,
+        "experimental": false,
+        "deprecated": false
+      },
+      {
+        "path": "/api/entity",
+        "method": "GET",
+        "handler_module": "encyclopedia_handlers",
+        "handler_function": "get_entity",
+        "description": "Get entity data (encyclopedia)",
+        "requires_auth": false,
+        "experimental": false,
+        "deprecated": false
+      },
+      {
+        "path": "/api/entities",
+        "method": "GET",
+        "handler_module": "encyclopedia_handlers",
+        "handler_function": "list_entities",
+        "description": "List all available entities",
+        "requires_auth": false,
+        "experimental": false,
+        "deprecated": false
+      },
+      {
+        "path": "/api/image",
+        "method": "GET",
+        "handler_module": "render_handlers",
+        "handler_function": "generate_image",
+        "description": "Generate field image for entity",
+        "requires_auth": false,
+        "experimental": false,
+        "deprecated": false
+      },
+      {
+        "path": "/api/render",
+        "method": "GET",
+        "handler_module": "render_handlers",
+        "handler_function": "render_narrative",
+        "description": "Render complete narrative for entity",
+        "requires_auth": false,
+        "experimental": false,
+        "deprecated": false
+      }
+    ],
+    "config": {
+      "image_cache_dir": "c:\\Determined\\wiki_assets\\entity_images",
+      "data_dir": "c:\\Determined\\data",
+      "ledger_path": "universe_ledger.jsonl",
+      "poll_interval": 2.0
+    },
+    "metadata": {
+      "created": "2026-04-05T00:00:00.000000Z",
+      "system": "UNIFIED_API_SERVER",
+      "consolidation": "Merged ENCYCLOPEDIA_API_SERVER + UNIVERSAL_RENDERER_API",
+      "framework_version": "1.0",
+      "features": [
+        "Encyclopedia entity lookup",
+        "Field visualization generation",
+        "Narrative rendering",
+        "Hot-reload framework support",
+        "UFM verification",
+        "Field consciousness ledger recording"
+      ]
+    }
+  }
+}

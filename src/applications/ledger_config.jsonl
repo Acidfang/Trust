@@ -1,0 +1,37 @@
+{"type": "FONT_DEFINITION", "id": "title", "family": "Arial", "size": 16, "weight": "bold", "comment": "Main title font"}
+{"type": "FONT_DEFINITION", "id": "header", "family": "Arial", "size": 12, "weight": "bold", "comment": "Header/section font"}
+{"type": "FONT_DEFINITION", "id": "normal", "family": "Arial", "size": 10, "weight": "normal", "comment": "Body text font"}
+{"type": "FONT_DEFINITION", "id": "small", "family": "Arial", "size": 8, "weight": "normal", "comment": "Small/detail font"}
+{"type": "FONT_DEFINITION", "id": "mono", "family": "Courier", "size": 9, "weight": "normal", "comment": "Monospace font"}
+{"type": "COLOR_DEFINITION", "id": "bg", "hex": "#1a1a1a", "comment": "Main background"}
+{"type": "COLOR_DEFINITION", "id": "sidebar", "hex": "#2a2a2a", "comment": "Sidebar background"}
+{"type": "COLOR_DEFINITION", "id": "header", "hex": "#0d47a1", "comment": "Header background"}
+{"type": "COLOR_DEFINITION", "id": "text", "hex": "#ffffff", "comment": "Primary text color"}
+{"type": "COLOR_DEFINITION", "id": "text_dim", "hex": "#cccccc", "comment": "Dimmed text color"}
+{"type": "COLOR_DEFINITION", "id": "button_bg", "hex": "#1565c0", "comment": "Button background"}
+{"type": "COLOR_DEFINITION", "id": "button_hover", "hex": "#1976d2", "comment": "Button hover state"}
+{"type": "COLOR_DEFINITION", "id": "button_text", "hex": "#ffffff", "comment": "Button text color"}
+{"type": "COLOR_DEFINITION", "id": "accent", "hex": "#64b5f6", "comment": "Accent color"}
+{"type": "COLOR_DEFINITION", "id": "error", "hex": "#d32f2f", "comment": "Error color"}
+{"type": "LAYOUT_DEFINITION", "id": "grid_main", "columns": 12, "rows": 8, "gutter": 5, "comment": "Main grid for frame layout"}
+{"type": "LAYOUT_DEFINITION", "id": "header_height", "pixels": 50, "comment": "Height of header area"}
+{"type": "LAYOUT_DEFINITION", "id": "sidebar_width", "pixels": 200, "comment": "Width of sidebar"}
+{"type": "VIEW_CONFIG", "view_id": "menu", "enable_sidebar": true, "enable_header": true, "background": "bg", "comment": "Menu view configuration"}
+{"type": "VIEW_CONFIG", "view_id": "dashboard", "enable_sidebar": true, "enable_header": true, "background": "bg", "comment": "Dashboard view configuration"}
+{"type": "VIEW_CONFIG", "view_id": "settings", "enable_sidebar": true, "enable_header": true, "background": "bg", "comment": "Settings view configuration"}
+{"type": "PRIMITIVE_DIMENSION", "id": "canvas_width", "value": 1200, "comment": "Canvas viewport width"}
+{"type": "PRIMITIVE_DIMENSION", "id": "canvas_height", "value": 800, "comment": "Canvas viewport height"}
+{"type": "PRIMITIVE_DIMENSION", "id": "header_height", "value": 60, "comment": "Top header area height"}
+{"type": "PRIMITIVE_DIMENSION", "id": "sidebar_width", "value": 200, "comment": "Left sidebar width"}
+{"type": "PRIMITIVE_DIMENSION", "id": "footer_height", "value": 40, "comment": "Bottom footer area height"}
+{"type": "PRIMITIVE_DIMENSION", "id": "button_height", "value": 45, "comment": "Individual button height"}
+{"type": "PRIMITIVE_DIMENSION", "id": "button_padding", "value": 5, "comment": "Padding between buttons"}
+{"type": "PRIMITIVE_DIMENSION", "id": "canvas_outline_width", "value": 2, "comment": "Canvas element outline stroke width"}
+{"type": "PRIMITIVE_DIMENSION", "id": "image_outline_width", "value": 1, "comment": "Image element outline stroke width"}
+{"type": "PRIMITIVE_COLOR", "id": "canvas_3d_bg", "hex": "#000000", "comment": "3D canvas background color"}
+{"type": "PRIMITIVE_COLOR", "id": "image_container_bg", "hex": "#333333", "comment": "Image container background color"}
+{"type": "PRIMITIVE_COLOR", "id": "header_text", "hex": "#00ff88", "comment": "Header title text color"}
+{"type": "PRIMITIVE_COLOR", "id": "content_text", "hex": "#00ff88", "comment": "Main content text color"}
+{"type": "COLOR_DEFINITION", "id": "header_text", "hex": "#00ff88", "comment": "Header title text color (from primitives)"}
+{"type": "COLOR_DEFINITION", "id": "content_text", "hex": "#00ff88", "comment": "Main content text color (from primitives)"}
+{"type": "COLOR_DEFINITION", "id": "button_bg", "hex": "#ff0000"}

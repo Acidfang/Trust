@@ -1,0 +1,55 @@
+{
+  "role": {
+    "name": "Universal Query Server",
+    "version": "1.0.0",
+    "description": "Demonstrator server using framework-driven hot-reload architecture. Update this file and the server adapts instantly without restart.",
+    
+    "endpoints": [
+      {
+        "path": "/api/query",
+        "method": "POST",
+        "handler_module": "FRAMEWORK_HOT_RELOAD_INTEGRATION_EXAMPLE",
+        "handler_function": "example_query_handler",
+        "description": "Execute a query and get results",
+        "requires_auth": false,
+        "experimental": false,
+        "deprecated": false
+      },
+      {
+        "path": "/api/compute",
+        "method": "POST",
+        "handler_module": "FRAMEWORK_HOT_RELOAD_INTEGRATION_EXAMPLE",
+        "handler_function": "example_compute_handler",
+        "description": "Perform computation on input value",
+        "requires_auth": false,
+        "experimental": false,
+        "deprecated": false
+      },
+      {
+        "path": "/api/status",
+        "method": "GET",
+        "handler_module": "FRAMEWORK_HOT_RELOAD_INTEGRATION_EXAMPLE",
+        "handler_function": "example_status_handler",
+        "description": "Get operational status",
+        "requires_auth": false,
+        "experimental": true,
+        "deprecated": false
+      }
+    ],
+    
+    "config": {
+      "watch_interval": 2.0,
+      "auto_reload": true,
+      "validation_mode": "strict",
+      "error_handling": "rollback_on_error"
+    },
+    
+    "metadata": {
+      "created": "2026-04-05T00:00:00Z",
+      "source": "framework_definition_system",
+      "hot_reload_capable": true,
+      "restart_required": false,
+      "notes": "This is a working example. Edit endpoints array to add/remove routes. Server adapts automatically."
+    }
+  }
+}

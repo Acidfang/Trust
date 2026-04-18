@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="900" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+  .decision-point { fill: #8B0000; }
+  .work-state { fill: #006400; }
+  .primary-path { stroke: #333; stroke-width: 2; fill: none; }
+  text { font-family: Arial, sans-serif; }
+</style>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+  <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+</marker>
+</defs>
+<text x="500.0" y="30" text-anchor="middle" font-size="22" font-weight="bold">
+TIER 2 — Contribution (Consistency)
+</text>
+<g transform="translate(500.0, 100)">
+  <circle r="31" class="work-state" />
+  <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="white" font-weight="bold">T2.1</text>
+  <text x="0" y="51" text-anchor="middle" font-size="10">Consistency of Patterns</text>
+</g>
+<g transform="translate(500.0, 250)">
+  <circle r="32" class="work-state" />
+  <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="white" font-weight="bold">T2.2</text>
+  <text x="0" y="52" text-anchor="middle" font-size="10">Reinforcement</text>
+</g>
+<g transform="translate(500.0, 430)">
+  <circle r="33" class="decision-point" />
+  <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="white" font-weight="bold">T2.3</text>
+  <text x="0" y="53" text-anchor="middle" font-size="10">Prevention</text>
+</g>
+<g transform="translate(500.0, 610)">
+  <circle r="32" class="work-state" />
+  <text x="0" y="0" text-anchor="middle" dy="0.3em" fill="white" font-weight="bold">T2.4</text>
+  <text x="0" y="52" text-anchor="middle" font-size="10">Early Correction</text>
+</g>
+<path d="M 500.0,136 L 500.0,213" class="primary-path" marker-end="url(#arrow)" />
+<path d="M 500.0,287 L 500.0,392" class="primary-path" marker-end="url(#arrow)" />
+<path d="M 500.0,468 L 500.0,573" class="primary-path" marker-end="url(#arrow)" />
+</svg>

@@ -1,0 +1,9 @@
+{"sensor_id": "system:time", "name": "System Time", "type": "timestamp", "unit": "ISO8601", "description": "Current time on system"}
+{"sensor_id": "kernel:election_count", "name": "Election Count", "type": "integer", "unit": "elections", "description": "Total elections executed"}
+{"sensor_id": "kernel:coherence_level", "name": "Coherence Level", "type": "float", "range": [0.0, 1.0], "expected_normal_range": [0.6, 1.0], "anomaly_threshold": 0.2, "description": "Real-time coherence measurement"}
+{"sensor_id": "ledger:election_ledger_size", "name": "Election Ledger Size", "type": "integer", "unit": "bytes", "description": "Size of election ledger file"}
+{"sensor_id": "ledger:app_state_changes", "name": "App State Changes", "type": "integer", "unit": "count", "description": "Count of app state modifications"}
+{"sensor_id": "system:app_instances", "name": "Running App Instances", "type": "integer", "range": [0, 10], "expected_normal_range": [0, 2], "anomaly_threshold": 3, "description": "Number of app instances currently running"}
+{"sensor_id": "system:heartbeat_status", "name": "Heartbeat Status", "type": "string", "possible_values": ["healthy", "degraded", "missing"], "description": "Overall health of app heartbeat signals"}
+{"sensor_id": "user:last_interaction", "name": "Last User Interaction", "type": "timestamp", "unit": "ISO8601", "description": "When user last interacted with system"}
+{"sensor_id": "system:sync_status", "name": "Sync Status", "type": "string", "possible_values": ["enabled", "disabled", "error"], "description": "Is ledger sync enabled and working"}

@@ -1,0 +1,71 @@
+{
+  "molecule_name": "Ammonia (NH3)",
+  "timestamp": "2026-04-01 11:49:59",
+  "standards_compliance": {
+    "framework": "HUMAN_STANDARDS_FOR_UNIVERSAL_CONTAINERS",
+    "quaternion_convention": "Hamilton",
+    "dipole_format": "arrow_vector",
+    "unit_constraint": "|q| = 1.0 \u00b1 0.001"
+  },
+  "quaternion": {
+    "w": 0.7660444431189781,
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.6427876096865394,
+    "magnitude": 1.0,
+    "axis_angle": {
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle_rad": 1.3962634015954634,
+      "angle_deg": 79.99999999999999
+    }
+  },
+  "dipole": {
+    "source_negative": [
+      -1.9975,
+      0.0,
+      0.0
+    ],
+    "target_positive": [
+      2.0025,
+      0.0,
+      0.0
+    ],
+    "magnitude_atomic_units": 4.0,
+    "magnitude_debye": 10.16,
+    "direction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "color_rgb": [
+      194,
+      194,
+      0
+    ]
+  },
+  "molecular_metrics": {
+    "num_atoms": 4,
+    "complexity_score": 0.5679246712516406,
+    "has_polarity": true,
+    "polarity_magnitude": 0.25
+  },
+  "rendering": {
+    "strategy": "medium_rotation",
+    "num_frames": 90,
+    "glow_intensity": 0.500992775142162,
+    "color_saturation": 0.9135849342503282
+  },
+  "verification": {
+    "valid": true,
+    "errors": [],
+    "quaternion_magnitudes_sample": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

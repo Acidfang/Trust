@@ -1,0 +1,4 @@
+# Retrospective Reinterpretations
+# ARIA can rewrite HOW past events are understood, but not WHAT happened
+# Original timestamp is immutable, but elected meaning/utility can be revisited
+# Format: timestamp (of reinterpretation), references_original_timestamp, event_type_original, new_elected_meaning, old_utility, new_utility, prediction_validated

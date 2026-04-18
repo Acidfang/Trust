@@ -1,0 +1,71 @@
+{
+  "molecule_name": "CO2",
+  "timestamp": "2026-04-01 11:49:59",
+  "standards_compliance": {
+    "framework": "HUMAN_STANDARDS_FOR_UNIVERSAL_CONTAINERS",
+    "quaternion_convention": "Hamilton",
+    "dipole_format": "arrow_vector",
+    "unit_constraint": "|q| = 1.0 \u00b1 0.001"
+  },
+  "quaternion": {
+    "w": 0.5000000000000001,
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.8660254037844386,
+    "magnitude": 1.0,
+    "axis_angle": {
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle_rad": 2.0943951023931953,
+      "angle_deg": 119.99999999999999
+    }
+  },
+  "dipole": {
+    "source_negative": [
+      -2.0,
+      0.0,
+      0.0
+    ],
+    "target_positive": [
+      2.0,
+      0.0,
+      0.0
+    ],
+    "magnitude_atomic_units": 4.0,
+    "magnitude_debye": 10.16,
+    "direction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "color_rgb": [
+      194,
+      194,
+      0
+    ]
+  },
+  "molecular_metrics": {
+    "num_atoms": 3,
+    "complexity_score": 0.46779401145198807,
+    "has_polarity": true,
+    "polarity_magnitude": 0.6666666666666666
+  },
+  "rendering": {
+    "strategy": "large_rotation",
+    "num_frames": 180,
+    "glow_intensity": 0.46354166666666663,
+    "color_saturation": 0.8935588022903976
+  },
+  "verification": {
+    "valid": true,
+    "errors": [],
+    "quaternion_magnitudes_sample": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

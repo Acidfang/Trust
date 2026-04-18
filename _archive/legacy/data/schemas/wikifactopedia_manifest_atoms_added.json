@@ -1,0 +1,314 @@
+{
+  "container": "WikiFieldFactopedia",
+  "timestamp": "2026-04-01T00:28:46.658026",
+  "summary": {
+    "total_required_items": 14,
+    "items_present": 14,
+    "items_missing": 0,
+    "coverage_percent": 100.0
+  },
+  "gaps": {
+    "missing_items": [],
+    "unverified_items": [],
+    "failed_primitives": {}
+  },
+  "all_items": {
+    "electron_animation": {
+      "name": "electron_animation",
+      "type": "animation",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electrons positioned by orbital quadrants (s/p/d/f)",
+          "measured": "angles corrected: s=90\u00b0, p=0\u00b0, d=270\u00b0, f=180\u00b0",
+          "expected": "s\u2192TOP, p\u2192RIGHT, d\u2192BOTTOM, f\u2192LEFT",
+          "details": {
+            "elements": "H through Tc",
+            "frames": 37
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Color encoding for orbital types",
+          "measured": "all colors correct",
+          "expected": "s=RED, p=TEAL, d=BLUE, f=SALMON",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "passed",
+          "description": "Electron count progression monotonically",
+          "measured": "confirmed progression",
+          "expected": "1\u21922\u21923...\u219237",
+          "details": {}
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "Electrons in proper shells",
+          "measured": "all correct",
+          "expected": "shell_1(2), shell_2(8), shell_3(18)",
+          "details": {}
+        }
+      }
+    },
+    "hydrogen_atom": {
+      "name": "hydrogen_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "Electron positioned in n=1 shell",
+          "measured": "positioned correctly",
+          "expected": "1 electron, n=1 at radius ~1.2",
+          "details": {
+            "electrons": 1,
+            "shells": 1
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "1s orbital color RED",
+          "measured": "correct",
+          "expected": "Red (#FF6B6B)",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static visualization",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {}
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "H atom contains 1 electron in 1s",
+          "measured": "correct",
+          "expected": "1s1",
+          "details": {
+            "z": 1,
+            "electrons": 1
+          }
+        }
+      }
+    },
+    "helium_atom": {
+      "name": "helium_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "2 electrons in n=1 shell",
+          "measured": "positioned correctly",
+          "expected": "both at n=1 radius",
+          "details": {
+            "electrons": 2,
+            "shells": 1
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Both RED (1s orbital)",
+          "measured": "correct",
+          "expected": "Red",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {}
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "He atom: 1s2",
+          "measured": "correct",
+          "expected": "1s2",
+          "details": {
+            "z": 2,
+            "electrons": 2
+          }
+        }
+      }
+    },
+    "carbon_atom": {
+      "name": "carbon_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "6 electrons in 2 shells",
+          "measured": "positioned correctly",
+          "expected": "n=1: 2e, n=2: 4e",
+          "details": {
+            "electrons": 6,
+            "shells": 2
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Color-coded by orbital type",
+          "measured": "correct",
+          "expected": "RED (2x 1s), RED (2x 2s), TEAL (2x 2p)",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {}
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "C atom: 1s2 2s2 2p2",
+          "measured": "correct",
+          "expected": "1s2 2s2 2p2",
+          "details": {
+            "z": 6,
+            "electrons": 6
+          }
+        }
+      }
+    },
+    "oxygen_atom": {
+      "name": "oxygen_atom",
+      "type": "visualization",
+      "count": null,
+      "primitives": {
+        "spatial": {
+          "type": "spatial",
+          "status": "passed",
+          "description": "8 electrons in 2 shells",
+          "measured": "positioned correctly",
+          "expected": "n=1: 2e, n=2: 6e",
+          "details": {
+            "electrons": 8,
+            "shells": 2
+          }
+        },
+        "color": {
+          "type": "color",
+          "status": "passed",
+          "description": "Color-coded by orbital",
+          "measured": "correct",
+          "expected": "RED (1s, 2s), TEAL (2p)",
+          "details": {}
+        },
+        "temporal": {
+          "type": "temporal",
+          "status": "not_applicable",
+          "description": "Static",
+          "measured": "N/A",
+          "expected": "N/A",
+          "details": {}
+        },
+        "structure": {
+          "type": "structure",
+          "status": "passed",
+          "description": "O atom: 1s2 2s2 2p4",
+          "measured": "correct",
+          "expected": "1s2 2s2 2p4",
+          "details": {
+            "z": 8,
+            "electrons": 8
+          }
+        }
+      }
+    },
+    "h2_molecule": {
+      "name": "h2_molecule",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "h2o_molecule": {
+      "name": "h2o_molecule",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "co2_molecule": {
+      "name": "co2_molecule",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "simple_cell": {
+      "name": "simple_cell",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "epithelial_tissue": {
+      "name": "epithelial_tissue",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "nervous_tissue": {
+      "name": "nervous_tissue",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "heart_organ": {
+      "name": "heart_organ",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "human_organism": {
+      "name": "human_organism",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    },
+    "github_wiki": {
+      "name": "github_wiki",
+      "type": "visualization",
+      "count": null,
+      "primitives": {}
+    }
+  },
+  "schema": {
+    "container": "WikiFieldFactopedia",
+    "description": "Complete hierarchical visualization of matter from electrons to organisms",
+    "required": [
+      "electron_animation",
+      "hydrogen_atom",
+      "helium_atom",
+      "carbon_atom",
+      "oxygen_atom",
+      "h2_molecule",
+      "h2o_molecule",
+      "co2_molecule",
+      "simple_cell",
+      "epithelial_tissue",
+      "nervous_tissue",
+      "heart_organ",
+      "human_organism",
+      "github_wiki"
+    ],
+    "optional": []
+  }
+}

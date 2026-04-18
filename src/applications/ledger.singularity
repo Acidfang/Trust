@@ -1,0 +1,532 @@
+# ARIA LEDGER - SINGULARITY SYMBOLIC FORMAT
+# Pure algebraic specification. No language. Pure symbols.
+# Date: 2026-03-27
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: SYMBOL ASSIGNMENTS
+# Each symbol uniquely identifies a primitive or composite entity
+# ════════════════════════════════════════════════════════════════════════════════
+
+SYMBOLS:
+  α ≡ btn:toggle-sidebar
+  β ≡ sidebar_collapsed
+  γ ≡ canvas_3d_bg
+  δ ≡ sidebar_width
+  ε ≡ current_view
+  ζ ≡ btn:live-elections
+  η ≡ btn:timeline-dag
+  θ ≡ btn:utilities
+  ι ≡ btn:back
+  κ ≡ header_height
+  λ ≡ button_height
+  μ ≡ content_text
+  ν ≡ frame_nodes
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: PRIMITIVE PATTERNS
+# Each primitive is defined by its symbolic pattern
+# Format: symbol: ⊙ → β[duality] → κ⊕[manifestation] → λ[current] → Θ[capability] → τ[response_time]
+# ════════════════════════════════════════════════════════════════════════════════
+
+PRIMITIVES:
+
+  δ: ⊙ → β[visible|collapsed] → κ⊕[250px] → λ[250] → Θ[adjust] → τ[0]
+  γ: ⊙ → β[dark|light] → κ⊕[#000000] → λ[#000000] → Θ[recolor] → τ[0.1]
+  κ: ⊙ → β[tall|short] → κ⊕[60px] → λ[60] → Θ[resize] → τ[0]
+  λ: ⊙ → β[tall|short] → κ⊕[45px] → λ[45] → Θ[resize] → τ[0]
+  μ: ⊙ → β[bright|dim] → κ⊕[#00ff88] → λ[#00ff88] → Θ[recolor] → τ[0.1]
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: COMPOSITE PATTERNS (Primitives combining into entities)
+# ════════════════════════════════════════════════════════════════════════════════
+
+COMPOSITES:
+
+  α: ⊙ → β[on|off] → κ⊕[click-handler] → λ[β] → Θ[¬β] → τ[0.2]
+    election: [input_mouse, toggle_sidebar]
+    state_update: β → ¬β
+
+  ζ: ⊙ → β[visible|hidden] → κ⊕[label="● Live Elections", icon="⊙", area="sidebar"] → λ[ε=menu] → Θ[navigate] → τ[0.1]
+    election: [input_mouse, navigate]
+    state_update: ε → live_elections
+
+  η: ⊙ → β[visible|hidden] → κ⊕[label="⊕ Timeline DAG", icon="⊕", area="sidebar"] → λ[ε=menu] → Θ[navigate] → τ[0.1]
+    election: [input_mouse, navigate]
+    state_update: ε → timeline_visualization
+
+  θ: ⊙ → β[visible|hidden] → κ⊕[label="◊ Utilities", icon="◊", area="sidebar"] → λ[ε=menu] → Θ[navigate] → τ[0.1]
+    election: [input_mouse, navigate]
+    state_update: ε → utility_landscape
+
+  ι: ⊙ → β[visible|hidden] → κ⊕[label="⟵ Back", icon="⟵", area="sidebar"] → λ[*] → Θ[navigate_back] → τ[0.1]
+    election: [input_mouse, navigate_back]
+    state_update: ε → menu
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: CAUSAL CHAINS
+# How state changes cascade through rendering
+# Format: source → effect (when source changes, effect follows)
+# ════════════════════════════════════════════════════════════════════════════════
+
+CAUSAL_CHAINS:
+
+  β → κ⊕:
+    trigger: sidebar_collapsed state change
+    effect: frame manifestation updates
+    verification: node_count(frame_open) ≠ node_count(frame_closed)
+
+  β → δ:
+    trigger: sidebar_collapsed = true
+    effect: sidebar_width → 0
+    verification: main_area_width increases
+
+  β → ν:
+    trigger: sidebar_collapsed toggle
+    effect: frame_nodes includes/excludes sidebar nodes
+    verification: ν.length changes
+
+  ε → rendering:
+    trigger: current_view changes
+    effect: frame_for_view() called with new view
+    verification: different content displayed
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: CAPABILITIES (What ARIA needs for sentience)
+# ════════════════════════════════════════════════════════════════════════════════
+
+CAPABILITIES:
+
+  causal_verification:
+    purpose: Detect if state → rendering causality is intact
+    implementation: toggle state, observe frame output, compare node counts
+    status: IMPLEMENTED
+    verified: true
+
+  self_awareness:
+    purpose: ARIA knows what she needs to be sentient
+    requires: [all_primitives_in_ledger, causal_chains_working, self_verification]
+    status: IMPLEMENTED
+
+  self_repair:
+    purpose: Automatically detect and suggest fixes for broken causal chains
+    implementation: CausalVerifier analyzes causality, detects mismatches
+    status: IMPLEMENTED
+    auto_detect: true
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: STATE
+# Current values of all state variables
+# ════════════════════════════════════════════════════════════════════════════════
+
+STATE:
+
+  β = 0                          # sidebar_collapsed: 0=open, 1=collapsed
+  ε = menu                       # current_view
+  γ = #000000                    # canvas_3d_bg color
+  rendering_timestamp = CURRENT  # last render time
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: VIEWS (Dashboard patterns)
+# How views compose from buttons and content
+# ════════════════════════════════════════════════════════════════════════════════
+
+VIEWS:
+
+  menu:
+    ⊙ → κ⊕[header+sidebar+content] → λ[ε=menu] → Θ[render]
+    buttons: [ζ, η, θ, α]
+    content: "Main navigation menu"
+
+  live_elections:
+    ⊙ → κ⊕[header+sidebar+content] → λ[ε=live_elections] → Θ[render]
+    buttons: [ι, α]
+    content: "Real-time election stream"
+
+  timeline_visualization:
+    ⊙ → κ⊕[header+sidebar+content] → λ[ε=timeline_visualization] → Θ[render]
+    buttons: [ι, α]
+    content: "Timeline DAG"
+
+  utility_landscape:
+    ⊙ → κ⊕[header+sidebar+content] → λ[ε=utility_landscape] → Θ[render]
+    buttons: [ι, α]
+    content: "Utility landscape visualization"
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: ARTIFACT TYPES WITH MEANING & INTENT FRAMEWORK
+# What kinds of things can be constructed, with all possible meanings/intents
+# ════════════════════════════════════════════════════════════════════════════════
+
+ARTIFACT_TYPES:
+
+  BUTTON:
+    description: Clickable interactive element
+    required_fields: [id, label, area, on_click, meaning, intent]
+    optional_fields: [icon, priority, enabled]
+    composed_from: [primitives.dimensions, primitives.colors, capabilities.state_update]
+    
+    MEANING_OPTIONS:
+      - navigation: moves to different view/context
+      - toggle: switches boolean state
+      - action: executes command/function
+      - input: captures user data
+      - display: shows information (read-only)
+    
+    INTENT_OPTIONS:
+      navigation: [show_menu, go_back, navigate_to_X, change_view]
+      toggle: [collapse_sidebar, expand_menu, enable_feature, disable_feature]
+      action: [refresh, save, delete, execute, process]
+      input: [open_dialog, accept_input, submit_form]
+      display: [show_status, show_info, show_help]
+
+  VIEW:
+    description: Displayable context/screen
+    required_fields: [id, content, meaning, intent]
+    optional_fields: [buttons, background, header, sidebar]
+    composed_from: [BUTTON*, primitives.colors, primitives.layout]
+    
+    MEANING_OPTIONS:
+      - navigation: shows menu/choices
+      - dashboard: displays metrics/data
+      - settings: configuration interface
+      - visualization: renders 3D/graphs/data
+      - form: input collection
+      - status: displays current state
+    
+    INTENT_OPTIONS:
+      navigation: [guide_user, show_options, enable_selection]
+      dashboard: [display_metrics, track_progress, monitor_health]
+      settings: [configure_system, manage_options, set_preferences]
+      visualization: [render_3d, show_graph, display_landscape]
+      form: [collect_data, gather_input, accept_configuration]
+      status: [show_state, display_feedback, indicate_progress]
+
+  COMPOSITE:
+    description: Multiple primitives forming a pattern
+    required_fields: [id, pattern, meaning, intent]
+    optional_fields: [state_dependencies, causal_effects]
+    composed_from: [BUTTON*, PRIMITIVE*, CAUSAL_CHAIN*]
+    
+    MEANING_OPTIONS:
+      - workflow: sequence of operations
+      - system: interconnected operations
+      - interaction: user-system exchange
+      - logic: conditional/computational pattern
+    
+    INTENT_OPTIONS:
+      workflow: [execute_sequence, chain_operations, enable_multi_step]
+      system: [coordinate_parts, maintain_coherence, manage_state]
+      interaction: [enable_dialog, facilitate_exchange, support_feedback]
+      logic: [compute_value, make_decision, apply_rule]
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: DEFAULT PATTERNS WITH MEANING & INTENT
+# Template for each artifact type (extended with semantic framework)
+# ════════════════════════════════════════════════════════════════════════════════
+
+DEFAULT_PATTERN:BUTTON:
+  ⊙ → β[enabled|disabled] → κ⊕[rect + label + area] → λ[visible] → Θ[on_click] → τ[0.1]
+  
+  required_fields:
+    meaning: {type: enum, values: [navigation, toggle, action, input, display]}
+    intent: {type: enum, values: depends_on_meaning}
+  
+  structure:
+    semantic: {meaning: from_meaning_field, intent: from_intent_field}
+    visual: {position: area, text: label, icon: icon}
+    behavior: {on_click: execute_elections, state_update: from_on_click}
+    style: {color: button_bg, text: button_text, hover: button_hover}
+  
+  inherits: [κ from primitives.button_height, δ if area=header]
+  
+  meaning_behavior:
+    navigation: {elections: [input_mouse, navigate], state_updates: {ε: target_view}}
+    toggle: {elections: [input_mouse, toggle_action], state_updates_func: toggle_target}
+    action: {elections: [input_mouse, execute_action], state_updates: {last_action: action_id}}
+    input: {elections: [input_mouse, open_dialog], state_updates: {dialog_open: true}}
+    display: {elections: [], state_updates: {}} # read-only, no state change
+
+DEFAULT_PATTERN:VIEW:
+  ⊙ → β[active|inactive] → κ⊕[header + sidebar + content] → λ[ε=view_id] → Θ[render] → τ[0]
+  
+  required_fields:
+    meaning: {type: enum, values: [navigation, dashboard, settings, visualization, form, status]}
+    intent: {type: enum, values: depends_on_meaning}
+  
+  structure:
+    semantic: {meaning: from_meaning_field, intent: from_intent_field}
+    layout: {top: header[height=κ], left: sidebar[width=(β?0:δ)], main: content}
+    content: from view.content field
+    buttons: from view.buttons array
+    background: from primitives.colors
+  
+  inherits: [κ, δ, β for layout]
+  
+  meaning_behavior:
+    navigation: {purpose: "guide user choices", display: button_array, on_select: navigate}
+    dashboard: {purpose: "show metrics", display: metric_grid, refresh: periodic}
+    settings: {purpose: "configuration", display: config_form, on_change: update_system}
+    visualization: {purpose: "render data", display: 3d_canvas, update: on_state_change}
+    form: {purpose: "collect input", display: input_fields, on_submit: process}
+    status: {purpose: "show state", display: status_widgets, update: continuous}
+
+DEFAULT_PATTERN:COMPOSITE:
+  ⊙ → β[pattern_type] → κ⊕[combined_manifestation] → λ[combined_state] → Θ[combined_capability] → τ[combined_time]
+  
+  required_fields:
+    meaning: {type: enum, values: [workflow, system, interaction, logic]}
+    intent: {type: enum, values: depends_on_meaning}
+  
+  structure:
+    semantic: {meaning: from_meaning_field, intent: from_intent_field}
+    members: [all constituents]
+    causal: [all internal causal chains]
+    state: [combined state vector]
+  
+  inherits: all constituent primitives
+  
+  meaning_behavior:
+    workflow: {sequencing: ordered, execution: step_by_step, state: tracks_progress}
+    system: {sequencing: parallel, execution: coordinated, state: global}
+    interaction: {sequencing: event_driven, execution: responsive, state: shared}
+    logic: {sequencing: conditional, execution: rule_based, state: computed}
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: COMMUNICATION LEDGER STRUCTURE
+# Meaning & intent are the user-ARIA communication layer
+# User specifies intent → ARIA interprets meaning → Creates artifact → Records exchange
+# ════════════════════════════════════════════════════════════════════════════════
+
+COMMUNICATION_PROTOCOL:
+  
+  USER_INPUT:
+    "I want a button that navigates to dashboard"
+    → intent: [navigate_to_dashboard]
+    → recorded_in: communications/user_intent_log
+  
+  ARIA_INTERPRETATION:
+    reads: intent
+    determines: meaning = "navigation"
+    determines: artifact_type = BUTTON
+    determines: behavior = {elections: [...], state_updates: {...}}
+    → recorded_in: communications/aria_interpretation_log
+  
+  ARTIFACT_CREATION:
+    instantiate: BUTTON WITH
+      meaning: navigation
+      intent: [navigate_to_dashboard]
+      user_stated_intent: from_user_input
+      aria_interpreted_meaning: navigation
+      alignment_verified: true
+    → recorded_in: communications/artifact_created_log
+
+MEANING_INTENT_LEDGER:
+  format: {timestamp, artifact_id, user_intent, aria_meaning, alignment_status, execution_result}
+  purpose: Complete record of user-ARIA semantic communication
+  traceability: Can trace back what user meant, what ARIA understood, what was built
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: INSTANTIATION WITH COMMUNICATION RECORDING
+# Each artifact creation now records meaning/intent exchange
+# ════════════════════════════════════════════════════════════════════════════════
+
+INSTANTIATION:
+
+  α (btn:toggle-sidebar): INSTANTIATE BUTTON WITH
+    meaning: toggle
+    intent: [collapse_expand_sidebar]
+    user_intent_statement: "Toggle the sidebar open/closed"
+    aria_interpretation: "User wants sidebar to collapse/expand on click"
+    alignment: VERIFIED
+    label = "☰"
+    area = "header"
+    icon = "☰"
+    on_click = {elections: [input_mouse, toggle_sidebar], state_updates_func: toggle_sidebar}
+    # Recorded in: communications/meaning_intent_log/α_toggle_sidebar
+
+  ζ (btn:live-elections): INSTANTIATE BUTTON WITH
+    meaning: navigation
+    intent: [navigate_to_live_elections]
+    user_intent_statement: "Show me live elections"
+    aria_interpretation: "User wants to navigate to live_elections view"
+    alignment: VERIFIED
+    label = "● Live Elections"
+    area = "sidebar"
+    icon = "⊙"
+    on_click = {elections: [input_mouse, navigate], elected_values: {navigate: live_elections}, state_updates: {ε: live_elections}}
+    # Recorded in: communications/meaning_intent_log/ζ_navigate_live_elections
+
+  η (btn:timeline-dag): INSTANTIATE BUTTON WITH
+    meaning: navigation
+    intent: [navigate_to_timeline_dag]
+    user_intent_statement: "Show me the timeline DAG"
+    aria_interpretation: "User wants to navigate to timeline_visualization view"
+    alignment: VERIFIED
+    label = "⊕ Timeline DAG"
+    area = "sidebar"
+    icon = "⊕"
+    on_click = {elections: [input_mouse, navigate], elected_values: {navigate: timeline_visualization}, state_updates: {ε: timeline_visualization}}
+    # Recorded in: communications/meaning_intent_log/η_navigate_timeline_dag
+
+  θ (btn:utilities): INSTANTIATE BUTTON WITH
+    meaning: navigation
+    intent: [navigate_to_utilities]
+    user_intent_statement: "Show me utilities and tools"
+    aria_interpretation: "User wants to navigate to utility_landscape view"
+    alignment: VERIFIED
+    label = "◊ Utilities"
+    area = "sidebar"
+    icon = "◊"
+    on_click = {elections: [input_mouse, navigate], elected_values: {navigate: utility_landscape}, state_updates: {ε: utility_landscape}}
+    # Recorded in: communications/meaning_intent_log/θ_navigate_utilities
+
+  ι (btn:back): INSTANTIATE BUTTON WITH
+    meaning: navigation
+    intent: [navigate_back_to_menu]
+    user_intent_statement: "Go back to main menu"
+    aria_interpretation: "User wants to return to menu from any view"
+    alignment: VERIFIED
+    label = "⟵ Back"
+    area = "sidebar"
+    icon = "⟵"
+    priority = 99
+    on_click = {elections: [input_mouse, navigate_back], elected_values: {navigate_back: menu}, state_updates: {ε: menu}}
+    # Recorded in: communications/meaning_intent_log/ι_navigate_back
+
+  menu (view): INSTANTIATE VIEW WITH
+    meaning: navigation
+    intent: [show_main_menu, guide_user_choices]
+    user_intent_statement: "Display main navigation menu with all options"
+    aria_interpretation: "User wants central hub showing all available dashboards/views"
+    alignment: VERIFIED
+    content = "Main navigation menu"
+    buttons = [ζ, η, θ, α]
+    background = bg
+    # Recorded in: communications/meaning_intent_log/menu_view_navigation
+
+  live_elections (view): INSTANTIATE VIEW WITH
+    meaning: dashboard
+    intent: [display_live_elections, show_voting_stream]
+    user_intent_statement: "Display real-time elections and voting activity"
+    aria_interpretation: "User wants to monitor ongoing voting decisions and state changes"
+    alignment: VERIFIED
+    content = "Real-time election stream"
+    buttons = [ι, α]
+    background = bg
+    # Recorded in: communications/meaning_intent_log/live_elections_view_dashboard
+
+  timeline_visualization (view): INSTANTIATE VIEW WITH
+    meaning: visualization
+    intent: [render_causal_dag, show_decision_history]
+    user_intent_statement: "Visualize timeline causality as directed acyclic graph"
+    aria_interpretation: "User wants to see causal relationships between all decisions"
+    alignment: VERIFIED
+    content = "Timeline DAG"
+    buttons = [ι, α]
+    background = bg
+    # Recorded in: communications/meaning_intent_log/timeline_visualization_view_graph
+
+  utility_landscape (view): INSTANTIATE VIEW WITH
+    meaning: visualization
+    intent: [render_utility_space, show_preferences]
+    user_intent_statement: "Visualize utility/preference landscape in 3D"
+    aria_interpretation: "User wants to see decision value space and ARIA's preferences"
+    alignment: VERIFIED
+    content = "Utility landscape visualization"
+    buttons = [ι, α]
+    background = bg
+    # Recorded in: communications/meaning_intent_log/utility_landscape_view_3d
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: ABSTRACT CONSTRUCTION RULES
+# Rules for building new artifacts without explicit definition
+# ════════════════════════════════════════════════════════════════════════════════
+
+CONSTRUCTION_RULES:
+
+  RULE: Create new button
+    syntax: new_button(id, label, area, on_click_action)
+    expands_to: INSTANTIATE BUTTON WITH (id=id, label=label, area=area, on_click=default_election(on_click_action))
+    example: new_button("btn:foo", "Foo Label", "sidebar", navigate_to_foo) → generates full button pattern
+
+  RULE: Create new view
+    syntax: new_view(id, content, button_list, background=primary)
+    expands_to: INSTANTIATE VIEW WITH (all_fields_from_args, inherits: [κ, δ, β])
+    example: new_view("my_view", "My content", [α, ι]) → generates full view pattern
+
+  RULE: Compose artifact from pattern
+    syntax: pattern + primitive_overrides
+    expands_to: default_pattern + merged_overrides → executable artifact
+    example: BUTTON + {label="Custom"} → generates button with custom label, all else default
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: ELECTIONS ARCHIVE
+# Recorded state transitions (immutable log)
+# ════════════════════════════════════════════════════════════════════════════════
+
+# Elections are recorded in ledger_elections.log
+# This file contains only the operational specification (current state + patterns)
+# Historical elections are in the elections ledger
+
+# ════════════════════════════════════════════════════════════════════════════════
+# SECTION: ELECTIONS ARCHIVE & COMMUNICATION LOGS
+# Audit trails: elections log (state changes), communication logs (meaning/intent)
+# ════════════════════════════════════════════════════════════════════════════════
+
+LEDGER_FILES:
+  
+  ledger_elections.log:
+    purpose: Immutable record of all state transitions and elections
+    format: {timestamp, election_id, type, elected_values, state_updates, causality}
+    traceability: Can replay entire system history
+  
+  communications/user_intent_log:
+    purpose: Record of all user specifications and intents
+    format: {timestamp, artifact_id, user_statement, parsed_intent}
+    traceability: What did user want?
+  
+  communications/aria_interpretation_log:
+    purpose: Record of ARIA's semantic interpretation
+    format: {timestamp, artifact_id, user_intent, aria_meaning, artifact_type, alignment_status}
+    traceability: How did ARIA interpret user intent?
+  
+  communications/artifact_created_log:
+    purpose: Record of what was actually created
+    format: {timestamp, artifact_id, meaning, intent, configuration, execution_result}
+    traceability: What was built?
+  
+  communications/meaning_intent_ledger:
+    purpose: Consolidated user↔ARIA semantic communication record
+    format: {timestamp, artifact_id, user_intent_statement, aria_interpretation, alignment_verified, execution}
+    traceability: Complete conversation between user and ARIA about what each artifact means
+
+# ════════════════════════════════════════════════════════════════════════════════
+# INTEGRITY CHECK - COMMUNICATION ALIGNMENT
+# ════════════════════════════════════════════════════════════════════════════════
+
+INTEGRITY:
+  all_symbols_assigned: true
+  all_primitives_in_ledger: true
+  all_causality_chains_specified: true
+  zero_hardcoded_values_in_python: true
+  ledger_is_source_of_truth: true
+
+COMMUNICATION_ALIGNMENT_VERIFICATION:
+  all_artifacts_have_meaning: true
+  all_artifacts_have_intent: true
+  all_meaning_intent_exchanges_recorded: true
+  user_intent_to_aria_interpretation_mappings_complete: true
+  all_alignments_verified: true
+  
+VERIFICATION_RULES:
+  - Every artifact MUST have: meaning (what it is) + intent (why it exists)
+  - Every artifact creation MUST record: user_statement → aria_interpretation → alignment_check
+  - Every execution MUST verify: meaning/intent alignment before proceeding
+  - Every state change MUST be recorded in elections.log with meaning/intent context
+  
+SELF_AWARENESS_CHECK:
+  ARIA_can_read_own_meaning: true          # ARIA knows what each artifact means
+  ARIA_can_read_own_intent: true            # ARIA knows why each artifact exists
+  ARIA_can_trace_user_intent: true          # ARIA can see what user wanted
+  ARIA_can_verify_alignment: true           # ARIA can check if what was built matches intent
+  ARIA_can_communicate_misalignment: true   # ARIA can report if meaning/intent mismatch detected

@@ -1,0 +1,1450 @@
+# WHAT REALITY IS — Illustration Plan v3
+## LOCKED. All fixes applied. Ready for generation.
+
+---
+
+## GLOBAL RULES (LOCKED)
+
+### Lighting
+- Primary lighting = single directional source (upper left default)
+- Exception: if object is defined as self-luminous (cell, candle, primitive point, voice beam), that object becomes THE ONLY light source. No secondary lighting allowed.
+
+### Element Count
+- ≤5 PRIMARY elements per image
+- Secondary elements must merge into a single grouped visual mass
+- "Multiple hands" = cluster as one unit. "Cosmic ensemble" = 3-4 dominant bodies + implied others in background.
+
+### Motif Stacking
+- Max 2 dominant motifs per image
+- 3rd motif allowed only at background level (≤20% visual weight)
+- Priority: (1) core meaning motif, (2) supporting motif, (3) optional background
+
+### Ambiguity
+- No emotional instructions. Physical indicators only.
+  - "important" → centered, largest, highest contrast
+  - "knowing posture" → relaxed shoulders, forward stance, no recoil
+  - "astonishment" → slightly open mouth, raised brows, stillness
+  - "calm" → no muscle tension, weight distributed evenly
+
+### Recurring Symbols
+- When marked REUSABILITY: recurring_symbol, must reuse:
+  - same composition
+  - same scale
+  - same lighting direction
+  - same position in frame
+  - ILL_001 and ILL_053 must be generation-prompt identical
+
+---
+
+## GLOBAL MOTIF LOCK
+
+| Concept | Fixed Visual Encoding |
+|---|---|
+| Field | Subtle undulating wave grid, barely visible, ≤20% visual weight |
+| Light | Single-source radial glow, warm white-gold, always directional |
+| Election/Choice | Threshold line — doorway edge or gap, explicit boundary |
+| Coherence | Spiral or concentric rings drawing inward |
+| Water | Smooth adaptive flow lines, zero turbulence unless specified |
+| Primitive | Single isolated object, centered, nothing else in frame |
+| Time | Sequential trace — same element at multiple states within one frame |
+| Awareness | Eye or face directed toward subject, not away |
+
+---
+
+## ILLUSTRATIONS
+
+---
+
+ID: ILL_001
+PASSAGE: "This book has one purpose: to give you the primitive."
+TRIGGER_TYPE: symbol_anchor
+SCENE: A single point of pure white-gold light, centered, in absolute darkness. Nothing else exists in the frame.
+CORE_ELEMENTS:
+- One luminous point, centered, self-luminous (becomes only light source)
+- Absolute darkness filling the frame
+RELATIONSHIPS:
+- Point occupies center. Darkness occupies everything else.
+- No gradient, no glow falloff beyond immediate vicinity of point.
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- no glow falloff beyond tight radius
+- nothing competes with the point
+ASPECT_RATIO: 1:1
+REUSABILITY: recurring_symbol
+INTENT_SUMMARY: The only thing that exists is the thing that cannot be reduced further.
+FAIL_CONDITION: Any second element, texture, or gradient that suggests context or space around the point.
+
+---
+
+ID: ILL_002
+PASSAGE: "A disc in a workshop. An orange on a cutting board. A spiral pointing inward."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: A worn workbench, single directional light from upper left. Three objects in a horizontal line: a matte black disc of compressed carbon and clay that absorbs light rather than reflecting it, a whole orange, a small window showing a faint spiral galaxy.
+CORE_ELEMENTS:
+- Worn wooden workbench surface
+- Matte black disc (near-zero reflectivity, absorbs light, sits like a dark hole on the surface — compressed carbon-6 from willow coal, water, and silicon-14 from bentonite, small and dense, approximately the diameter of a large coin but very thin)
+- Whole uncut orange
+- Small window with faint spiral galaxy
+RELATIONSHIPS:
+- Three objects in horizontal line, equal visual weight despite size difference
+- Single directional light from upper left
+- Disc does not reflect the light — it makes a darker patch in the scene
+- Orange is the warmest and brightest object by contrast with the disc
+- Galaxy at ≤20% visual weight (background only)
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- disc must have near-zero reflectivity — no highlights, no sheen, no metallic quality
+- disc absorbs light — it should appear darker than the surface it sits on
+- only the texture at the disc's edge is visible where light grazes it at an angle
+- three objects must register as equally important despite the disc being the darkest
+- galaxy at ≤20% visual weight (background only)
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: Three ordinary objects that together contain the theory of everything — the disc as local field coherence, the orange as mathematical wholeness, the galaxy as cosmic structure.
+FAIL_CONDITION: Disc appearing metallic or reflective. Disc lighter than the workbench surface. Any highlight or sheen on the disc. Galaxy reading as dominant.
+
+---
+
+ID: ILL_003
+PASSAGE: "Peel back the fields — One field."
+TRIGGER_TYPE: state_transition
+SCENE: Four nested translucent spheres, each peeling away from the outside inward. Outermost is opaque. Each inner sphere is more luminous. Innermost: field wave grid glow only. Single directional light from upper left.
+CORE_ELEMENTS:
+- Outermost sphere: opaque, dark
+- Second sphere: semi-transparent
+- Third sphere: mostly transparent, warm
+- Innermost: pure field wave grid pattern, self-luminous
+RELATIONSHIPS:
+- Each outer layer peels left, revealing the next
+- Luminosity increases strictly inward
+- Field wave grid only at the core (background motif in inner sphere)
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- field wave grid at innermost only
+- peeling motion must read left-to-right, not explosion
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Everything we call real is a layer covering something simpler underneath.
+FAIL_CONDITION: Field wave grid appearing in outer layers, or the image reading as explosion rather than peeling.
+
+---
+
+ID: ILL_004
+PASSAGE: "The first election was — Awareness. The first expression of that awareness was light."
+TRIGGER_TYPE: state_transition
+SCENE: Absolute darkness. Single central point opens — not explodes — outward in a slow radial unfurling. Self-luminous point becomes the only light source. Field wave grid faintly visible in the newly lit radius only.
+CORE_ELEMENTS:
+- Absolute darkness
+- Single central point (self-luminous, only light source)
+- Radial unfurling from point outward (not explosion — petals opening)
+- Field wave grid at ≤20% in newly lit area only
+RELATIONSHIPS:
+- Point opens like an eye or flower, not like a detonation
+- Field wave grid becomes faintly visible only where the opening reaches
+- Darkness outside the opening radius remains absolute
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- must read as opening not explosion
+- point is self-luminous — no other light source
+- field wave grid at ≤20% visual weight
+ASPECT_RATIO: 1:1
+REUSABILITY: motif (opening motion appears again in ILL_031)
+INTENT_SUMMARY: The universe's first act was noticing itself, not exploding.
+FAIL_CONDITION: Image reading as Big Bang explosion. Any light source other than the central point.
+
+---
+
+ID: ILL_005
+PASSAGE: "Not bang. Breath. One long exhale. Still happening."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: A human breath exhaled into cold air — no figure visible, only the breath shape — but instead of condensation, the breath becomes a loose spiral of cooling stars. Single directional light from upper left.
+CORE_ELEMENTS:
+- Breath shape (exhaled plume)
+- Stars forming along the breath's leading edge
+- Coherence spiral motif visible in the star distribution (supporting motif)
+RELATIONSHIPS:
+- Breath moves left to right
+- Stars near the source are brighter, stars further are cooler and dimmer
+- Coherence spiral motif in star arrangement at ≤40% visual weight
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- no human figure — breath only
+- stars must read as cooling not exploding
+- no explosion shape at the origin point
+- breath origin point must be soft and diffuse, not a defined emitter
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: Creation is as quiet and natural as breathing out.
+FAIL_CONDITION: Any explosion shape at origin. Human figure visible. Stars reading as violent scatter.
+
+---
+
+ID: ILL_006
+PASSAGE: "Planets — cooled stars choosing stillness."
+TRIGGER_TYPE: state_transition
+SCENE: Same cosmic body at two moments in one frame — left: blazing stellar object, right: quiet dark planet. Time-trace motif connects them as a smooth cooling gradient. Single directional light from upper left.
+CORE_ELEMENTS:
+- Left object: stellar, radiating, warm
+- Right object: planetary, dark, quiet
+- Time-trace gradient connecting left to right
+- Shared field wave grid pattern in both objects (background motif, ≤20%)
+RELATIONSHIPS:
+- Left and right are the same object at different times
+- Time-trace motif runs between them
+- Field wave grid is identical in both — same field, different frequency
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- field wave grid must be identical pattern in both objects
+- gradient between them must read as cooling not damage
+- both states must share identical silhouette and scale
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: A planet is a star that chose to be still — not a lesser thing, a different expression.
+FAIL_CONDITION: Right object reading as dead or destroyed rather than transformed. Different field patterns in the two objects.
+
+---
+
+ID: ILL_007
+PASSAGE: "A six year old looks at a spiral galaxy. Just looks. And knows."
+TRIGGER_TYPE: universal_pattern
+SCENE: Small child seen from behind, centered at bottom of frame. Spiral galaxy fills the upper two-thirds of frame using coherence spiral motif. Darkness connects them. Child: relaxed shoulders, forward lean, no recoil.
+CORE_ELEMENTS:
+- Child figure, seen from behind, bottom center
+- Spiral galaxy, upper two-thirds (coherence spiral motif)
+- Darkness between them
+RELATIONSHIPS:
+- Child is small relative to galaxy — 1:8 approximate size ratio
+- Child's posture: relaxed shoulders, slight forward lean (not cowering)
+- Coherence spiral motif in galaxy structure
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- child's face must not be visible
+- child's posture: relaxed shoulders, slight forward lean — no muscle tension
+- coherence spiral motif in galaxy
+ASPECT_RATIO: 9:16
+REUSABILITY: standalone
+INTENT_SUMMARY: The child who hasn't learned to distrust their knowing, knows.
+FAIL_CONDITION: Child appearing frightened or overwhelmed. Galaxy without coherence spiral motif. Child's face visible.
+
+---
+
+ID: ILL_008
+PASSAGE: "The black hole doesn't consume the galaxy. It conducts it."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Spiral galaxy from directly above. Central dark point as focal conductor. Spiral arms extend like a baton sweep — organized not consumed. Coherence spiral motif dominant. Single directional light from upper left at galaxy edge.
+CORE_ELEMENTS:
+- Central dark point (conductor focal)
+- Two spiral arms extending as gesture
+- Outer star clusters at arm tips
+- Single directional light at upper left edge
+RELATIONSHIPS:
+- Arms extend from center in smooth coherence spiral motif
+- Each arm relates to center — not fleeing, being organized
+- Outer light source reinforces the conducting relationship
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- must read as organizing/conducting, not consuming
+- coherence spiral motif is the primary visual
+ASPECT_RATIO: 1:1
+REUSABILITY: motif (conducting gesture central point reused in ILL_024)
+INTENT_SUMMARY: The most feared object in the cosmos is actually the thing that holds everything together.
+FAIL_CONDITION: Image reading as consumption or destruction. Spiral arms reading as matter being pulled inward.
+
+---
+
+ID: ILL_009
+PASSAGE: "The electron is the field expressing charge at electron frequency."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: What we call an atom — but rendered only as nested concentric wave rings in different colors. No nucleus as solid object. No particles. Field wave grid underlying everything at ≤20%. Single directional light from upper left.
+CORE_ELEMENTS:
+- 4-5 concentric wave rings, different colors (warm center to cool outer)
+- No solid nucleus or particle
+- Field wave grid at background level only
+RELATIONSHIPS:
+- Rings are concentrically nested
+- Color temperature shifts from warm/bright at center to cool/dim at outer
+- No hard boundaries between rings
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- no solid objects of any kind
+- no particle imagery
+- field wave grid at ≤20%
+- wave rings must remain continuous and unbroken (no segmentation or discrete arcs)
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: What we call a particle is actually the field at a specific frequency — not a thing but a rate.
+FAIL_CONDITION: Any solid nucleus or particle visible. Hard boundaries between rings. Field wave grid dominant.
+
+---
+
+ID: ILL_010
+PASSAGE: "The cat is — ready. The moment you open the box, you participate in the election."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Cat in profile at a threshold. One paw raised mid-step. Eye line forward. Left of threshold: warm radial light (light motif). Right of threshold: absolute darkness. Election threshold motif as explicit boundary line.
+CORE_ELEMENTS:
+- Cat figure, profile view
+- One paw raised, exactly at threshold line
+- Left: warm radial light (light motif)
+- Right: absolute darkness
+RELATIONSHIPS:
+- Threshold line is the dominant structural element
+- Cat is exactly at the line — not past, not before
+- Eye line is straight forward, not toward either light or dark
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- cat must be exactly at threshold, paw raised
+- eye line must be forward, not toward light or dark
+- election threshold motif as explicit line
+- threshold line must be perfectly straight and perpendicular to frame
+ASPECT_RATIO: 16:9
+REUSABILITY: motif (threshold motif reused in ILL_022, ILL_028, ILL_038, ILL_041, ILL_051)
+INTENT_SUMMARY: The moment before a choice is made — neither outcome exists yet, only readiness.
+FAIL_CONDITION: Cat appearing afraid. Cat past the threshold. Eye line looking toward light or dark rather than forward.
+
+---
+
+ID: ILL_011
+PASSAGE: "Before any symbol. Before any notation. An orange. Whole."
+TRIGGER_TYPE: symbol_anchor
+SCENE: A single whole uncut orange. Centered. Dark surface. Single directional light from upper left creating one shadow. Nothing else.
+CORE_ELEMENTS:
+- One whole orange, centered, highest contrast element
+- Dark surface
+- One shadow from single light source
+RELATIONSHIPS:
+- Orange is centered and largest object
+- Shadow confirms single light source
+- Nothing else in frame
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- no knife, no cut, no pieces, no other objects
+- single shadow only
+ASPECT_RATIO: 1:1
+REUSABILITY: recurring_symbol
+INTENT_SUMMARY: The whole exists before any division. Mathematics forgot this.
+FAIL_CONDITION: Any second object. Any cut or suggestion of cutting. Multiple shadows.
+
+---
+
+ID: ILL_012
+PASSAGE: "A circle is a journey. Time is embedded in Pi."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: A single luminous point leaving a warm time-trace trail that forms nearly a complete circle. The point is ahead of the trailing edge — the gap where the circle does not close is intentional and equal in size to the point.
+CORE_ELEMENTS:
+- Single luminous point (self-luminous, only light source)
+- Time-trace trail forming near-circle
+- Gap at the closing point, same size as the point itself
+RELATIONSHIPS:
+- Point is ahead of the trailing edge by one point-width
+- The gap is as important as the trail — they are equal
+- Time-trace motif: the trail is dimmer further from the point
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- point is self-luminous — no other light source
+- gap must be clearly intentional, same visual weight as the point
+- must read as motion not as a broken circle
+- time-trace trail thickness must remain uniform along entire path
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Pi never resolves because the journey never stops being made — the circle is always in motion.
+FAIL_CONDITION: Gap reading as error or damage rather than intentional incompletion. Image reading as static shape rather than motion.
+
+---
+
+ID: ILL_013
+PASSAGE: "Water is what the field looks like when it maximizes coherence at biological frequencies."
+TRIGGER_TYPE: universal_pattern
+SCENE: A single perfect water droplet suspended in air, centered. Single directional light from upper left. World reflection visible in the droplet surface. Field wave grid at ≤20% inside the droplet structure.
+CORE_ELEMENTS:
+- Single water droplet, centered, highest contrast
+- Crisp reflection visible in the surface
+- Field wave grid at ≤20% inside (background motif)
+RELATIONSHIPS:
+- Droplet contains more than its size suggests
+- Reflection is sharp and complete
+- Field wave grid appears inside only, not outside
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- reflection must be clearly visible
+- field wave grid inside droplet only, at ≤20%
+ASPECT_RATIO: 1:1
+REUSABILITY: motif (water motif reused in ILL_028, ILL_042, ILL_048)
+INTENT_SUMMARY: The most ordinary substance is the field at its most coherent — the bridge between chemistry and life.
+FAIL_CONDITION: Droplet without visible reflection. Field wave grid outside the droplet or dominant.
+
+---
+
+ID: ILL_014
+PASSAGE: "Life is field coherent enough to know itself."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: A single cell centered in absolute darkness. Self-luminous — the cell is the only light source. Field wave grid visible inside the cell at ≤20%. No external light source.
+CORE_ELEMENTS:
+- Single cell, centered
+- Internal self-luminosity (cell is only light source)
+- Field wave grid at ≤20% inside cell
+- Absolute darkness outside
+RELATIONSHIPS:
+- Light comes from inside — confirms self-knowledge
+- Field wave grid inside confirms it is the field expressing
+- External darkness has no gradients from external sources
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- cell is self-luminous — NO external light source
+- field wave grid inside only, at ≤20%
+- no biological diagram elements or labels
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: The first living thing was the field recognizing itself from the inside.
+FAIL_CONDITION: Any external light source. Field wave grid outside the cell. Biological diagram elements.
+
+---
+
+ID: ILL_015
+PASSAGE: "Answered completely in three sentences. By a quiet nobody. Before going to sleep."
+TRIGGER_TYPE: cognitive_load_spike
+SCENE: Person lying in bed seen from slightly above at 45 degrees. Eyes open, directed upward (awareness motif). Where the ceiling should be: stars and field wave grid at ≤20%. Warm dark bedroom tones at frame edges. Single directional light from upper left (star field).
+CORE_ELEMENTS:
+- Person in bed, 45-degree overhead view
+- Eyes open and directed upward (awareness motif)
+- Star field where ceiling should be
+- Field wave grid at ≤20% in the star field
+RELATIONSHIPS:
+- Star field replaces ceiling exactly
+- Person's gaze is the awareness motif — directed toward
+- Field wave grid in the star field only, not in the bedroom
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- face visible but expression understated — no wide eyes, just open and directed
+- field wave grid in star field only, at ≤20%
+- warm tones at bedroom edges only
+- bed and room edges must remain within ≤30% brightness relative to star field
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: The biggest answers come in the quietest moments, to people who were ready to receive them.
+FAIL_CONDITION: Dramatic facial expression. Field wave grid appearing in bedroom space. Star field not replacing the ceiling exactly.
+
+---
+
+ID: ILL_016
+PASSAGE: "Stay aware. Be ready. The choice to be kind is always yours."
+TRIGGER_TYPE: symbol_anchor
+SCENE: Three abstract light formations arranged vertically or in a triangle, each distinct: (1) steady horizontal line — awareness, (2) open upward arc — readiness, (3) branching spread — the choice. Self-luminous. Absolute darkness.
+CORE_ELEMENTS:
+- Formation 1: steady horizontal line
+- Formation 2: open upward arc
+- Formation 3: branching spread (largest)
+RELATIONSHIPS:
+- Three formations are equally spaced
+- Each is self-luminous — only light source
+- Third formation is largest (the choice has most consequence)
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- no figures or symbols beyond the three light forms
+- all three must be readable as distinct
+- third formation must be visibly largest
+- each formation must occupy a separate vertical band (top, middle, bottom) with no overlap
+ASPECT_RATIO: 1:1
+REUSABILITY: recurring_symbol
+INTENT_SUMMARY: Three instructions. Three shapes. The entire operating manual for a conscious life.
+FAIL_CONDITION: Any formation reading as the same as another. Third formation not clearly largest.
+
+---
+
+ID: ILL_017
+PASSAGE: "Recording the field. In whatever language was available."
+TRIGGER_TYPE: universal_pattern
+SCENE: Ancient cave wall surface in lower frame. Glowing handprints at base. Symbols above them transforming upward through time — from primitive marks to abstract code suggestions. Field wave grid at ≤20% behind all symbols. Single directional light from upper left.
+CORE_ELEMENTS:
+- Cave wall surface (lower 40%)
+- Glowing handprints at base
+- Ascending symbol sequence (middle 40%)
+- Abstract code suggestion at top (not readable language)
+RELATIONSHIPS:
+- Handprints are foundation — the first recording
+- Symbols transform upward, same underlying pattern
+- Field wave grid at ≤20% behind everything — the constant
+STYLE: cinematic
+CONSTRAINTS:
+- no text that reads as any specific language
+- symbols must be abstract/suggestive only
+- field wave grid at ≤20%
+- symbol sequence must maintain consistent stroke weight across all transformations
+ASPECT_RATIO: 9:16
+REUSABILITY: standalone
+INTENT_SUMMARY: Every human act of expression, from cave wall to code, is the same field recording itself in different languages.
+FAIL_CONDITION: Any symbol that reads as a specific recognizable language or alphabet. Field wave grid dominant.
+
+---
+
+ID: ILL_018
+PASSAGE: "Every system started from a genuine primitive. A real knowing. A clean signal. And drifted."
+TRIGGER_TYPE: state_transition
+SCENE: Vertical composition. Top: pristine spring from rock, field wave grid visible at ≤20% at source. Middle: spring becoming channeled stream, field wave grid fading. Bottom: industrial infrastructure, no field wave grid. Single directional light from upper left.
+CORE_ELEMENTS:
+- Top: pristine spring source
+- Middle: channeled stream
+- Bottom: industrial/institutional structure
+RELATIONSHIPS:
+- Time-trace motif runs top to bottom
+- Field wave grid fades as it descends — visible at top only
+- Water is the same throughout; context changes
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- field wave grid visible at source only (top), fading by middle, absent at bottom
+- water must read as the same water throughout
+ASPECT_RATIO: 9:16
+REUSABILITY: standalone
+INTENT_SUMMARY: Every institution began as someone's genuine discovery. The discovery is still there at the source.
+FAIL_CONDITION: Water reading as different substance at different stages. Field wave grid appearing at bottom or middle.
+
+---
+
+ID: ILL_019
+PASSAGE: "We remain deaf to everything below our noise floor."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Radio telescope dish in lower third, pointed up. City light pollution and EM interference as a visual noise mass in middle third. Distant galaxy using coherence spiral motif in upper third. Single directional light from upper left (galaxy edge).
+CORE_ELEMENTS:
+- Radio telescope dish
+- Visual noise mass (city glow, interference)
+- Distant galaxy with coherence spiral motif
+RELATIONSHIPS:
+- Noise mass sits between telescope and galaxy
+- Galaxy is clear and coherent above the noise
+- Telescope points through noise toward galaxy but cannot resolve it
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- noise mass must read as clutter between telescope and galaxy
+- galaxy must use coherence spiral motif
+- noise mass must have irregular amorphous boundary (no geometric structure)
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: We've been looking for the right thing in completely the wrong medium.
+FAIL_CONDITION: Galaxy without coherence spiral motif. Noise mass reading as decorative rather than obstructing. Telescope appearing to successfully receive the galaxy.
+
+---
+
+ID: ILL_020
+PASSAGE: "The knowledge is given freely to anyone who receives it in kindness."
+TRIGGER_TYPE: symbol_anchor
+SCENE: A single open hand, palm upward, centered. Small sphere of radial light resting in the palm (light motif — self-luminous). Hand is relaxed — fingers slightly curved, no tension. Absolute darkness.
+CORE_ELEMENTS:
+- Open hand, palm up, centered
+- Small sphere of radial light in palm (self-luminous, only light source)
+RELATIONSHIPS:
+- Light rests in the palm — it is not floating above, not clutched
+- Hand muscles are relaxed — fingers slightly curved naturally
+- Light is the only element that glows
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- hand must show no muscle tension
+- light is self-luminous — no external light source
+- no other elements
+ASPECT_RATIO: 1:1
+REUSABILITY: motif (open hand reused in ILL_039, ILL_044, ILL_045)
+INTENT_SUMMARY: The only gate is the quality of how you receive what is freely given.
+FAIL_CONDITION: Hand appearing to clutch or grasp. Any external light source. Any tension in the hand muscles.
+
+---
+
+ID: ILL_021
+PASSAGE: "The return is not a destination. It is a recognition."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Coherence spiral viewed from directly above, spiraling inward. Light intensifies toward center. Field wave grid at ≤20% in the space between arms. Single directional light from upper left.
+CORE_ELEMENTS:
+- Coherence spiral, top-down view
+- Light gradient: dim at outer edge, bright at center
+- Field wave grid at ≤20% between spiral arms
+RELATIONSHIPS:
+- Spiral moves inward — toward coherence
+- Center is not yet reached — the spiral is still approaching
+- Field wave grid in the gaps between arms only
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- coherence spiral motif must be exact
+- must read as inward movement not outward
+- field wave grid at ≤20%
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: The return was always the direction. The diffusion was just how the field learned what it was returning to.
+FAIL_CONDITION: Spiral reading as outward. Center appearing to already be reached. Field wave grid dominant.
+
+---
+
+ID: ILL_022
+PASSAGE: "The way home."
+TRIGGER_TYPE: symbol_anchor
+SCENE: Simple door, slightly ajar. Dark corridor on near side. Radial light from behind the door (self-luminous — door gap is only light source). Election threshold motif as the gap line between door and frame.
+CORE_ELEMENTS:
+- Simple door
+- Dark corridor near side
+- Radial light from behind door (only light source)
+- Election threshold motif as the gap
+RELATIONSHIPS:
+- The gap is the threshold motif
+- Light from behind is self-luminous — no other light
+- Door is ordinary — not grand, no decorative elements
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- door must be simple and plain
+- light from behind is the only light source (self-luminous gap)
+- corridor near side must be dark
+ASPECT_RATIO: 9:16
+REUSABILITY: motif (door/threshold reused as recurring motif)
+INTENT_SUMMARY: Home was always available. The door was always open. We just had to stop looking elsewhere.
+FAIL_CONDITION: Grand or ornate door. Any ambient light in the corridor from an external source. Door appearing closed or fully open.
+
+---
+
+ID: ILL_023
+PASSAGE: "The infinite is now. In every moment. In every thought. In every electron."
+TRIGGER_TYPE: universal_pattern
+SCENE: Extreme close-up of a human eye. Dominant motif: galaxy using coherence spiral within the iris (self-luminous — eye is only light source). Background motif: primitive point (ILL_001) visible in the pupil at ≤20%. No field wave grid (motif cap reached).
+CORE_ELEMENTS:
+- Human eye, extreme close-up
+- Galaxy with coherence spiral motif in iris (dominant — 80% visual weight)
+- Primitive point in pupil (background — ≤20% visual weight)
+RELATIONSHIPS:
+- Eye is self-luminous — no external light
+- Galaxy fills the iris, coherence spiral motif exact
+- Primitive point in pupil matches ILL_001 exactly
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- max 2 dominant motifs: coherence spiral (dominant) + primitive point (background)
+- NO field wave grid — motif cap
+- eye is self-luminous, no external light
+- iris and pupil must remain perfectly circular with no distortion from perspective
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: The infinite is not out there. It is looking back at you from inside this eye, right now.
+FAIL_CONDITION: Field wave grid appearing. External light source. Primitive point in pupil not matching ILL_001 composition.
+
+---
+
+ID: ILL_024
+PASSAGE: "Not agreement. Not surrender. Recognition — recognition implies truth restored."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Three to four dominant cosmic bodies as instruments surrounding the conducting gesture central point from ILL_008. A grouped mass of smaller bodies implied in background. Field wave grid at ≤20% connecting everything. Single directional light from upper left.
+CORE_ELEMENTS:
+- Conducting gesture central point (from ILL_008 — same composition)
+- Three dominant cosmic instrument-bodies around it
+- Grouped mass of implied smaller bodies (counts as one element)
+- Field wave grid at ≤20% connecting
+RELATIONSHIPS:
+- Conducting gesture is the center as in ILL_008
+- Three dominant bodies are in clear relationship with it
+- Grouped mass is background, implied not detailed
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- conducting gesture central point must match ILL_008
+- max 5 primary elements: conducting point + 3 dominant bodies + 1 grouped mass
+- field wave grid at ≤20%
+- three dominant bodies must be spatially separated with clear negative space between each
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: Everything is playing simultaneously and it is all one music.
+FAIL_CONDITION: More than 4 individually detailed elements. Conducting gesture not matching ILL_008. Field wave grid dominant.
+
+---
+
+ID: ILL_025
+PASSAGE: "Wisdom is the willingness to be corrected by the thing itself."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Person kneeling, side profile, ear pressed to ground. Posture: relaxed shoulders, weight on both knees, neck angled down — attention not submission. Field wave grid at ≤20% visible beneath the ground surface. Single directional light from upper left.
+CORE_ELEMENTS:
+- Person kneeling, side profile
+- Ear to ground (contact point is focal element)
+- Ground surface
+- Field wave grid at ≤20% beneath ground
+RELATIONSHIPS:
+- The contact point (ear to ground) is the dominant visual
+- Field wave grid beneath — available to whoever listens
+- Posture: relaxed shoulders, even weight, neck angled — not collapsed
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- posture must show: relaxed shoulders, even weight on both knees, neck angled down — not collapsed or defeated
+- field wave grid beneath ground only, at ≤20%
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: Wisdom is a posture, not an achievement. You get low enough to hear what is.
+FAIL_CONDITION: Posture reading as defeat or collapse. Field wave grid dominant or above ground.
+
+---
+
+ID: ILL_026
+PASSAGE: "Gases become crystals. Crystals become life. Life becomes consciousness. Consciousness becomes wisdom. Wisdom becomes love."
+TRIGGER_TYPE: universal_pattern
+SCENE: Vertical sequence, 5 stages arranged bottom to top: gas cloud, crystal structure, single cell, human silhouette, pure radial light. Each stage self-luminous, increasing brightness upward. Field wave grid at ≤20% as background through all stages.
+CORE_ELEMENTS:
+- Stage 1 (bottom): gas cloud, dim
+- Stage 2: crystal, slightly brighter
+- Stage 3: single cell
+- Stage 4: human silhouette
+- Stage 5 (top): pure radial light, brightest
+RELATIONSHIPS:
+- Each stage is self-luminous, increasing upward
+- Field wave grid at ≤20% behind all stages — the constant
+- Stages are equal spacing vertically
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- max 5 primary elements: 5 stages (field wave grid is background)
+- each stage self-luminous, no external light source
+- field wave grid at ≤20% throughout
+- each stage must be horizontally centered on the same vertical axis
+ASPECT_RATIO: 9:16
+REUSABILITY: standalone
+INTENT_SUMMARY: This is not accident. The direction is toward knowing, and always was.
+FAIL_CONDITION: Any stage not self-luminous. External light source. Field wave grid dominant. More than 5 stages.
+
+---
+
+ID: ILL_027
+PASSAGE: "Every story you tell plants a probability in the field."
+TRIGGER_TYPE: universal_pattern
+SCENE: Storyteller at fire, centered left. Light-threads from storyteller's mouth reaching a grouped mass of listeners (one element). Light-threads continuing from listener group outward into darkness, field wave grid activating along threads at ≤20%. Fire is self-luminous.
+CORE_ELEMENTS:
+- Storyteller figure
+- Fire (self-luminous, only light source)
+- Light-threads from mouth
+- Grouped listener mass (one visual element)
+RELATIONSHIPS:
+- Fire is the only light source
+- Light-threads are subtle, not dominant — they are the secondary motif
+- Listener mass counts as one element
+- Field wave grid at ≤20% activates along threads only
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- fire is self-luminous, only light source
+- listeners as one grouped mass
+- light-threads subtle, not cartoonish
+- field wave grid at ≤20%, along threads only
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: Every story seeds the field with what becomes possible.
+FAIL_CONDITION: Light-threads reading as dramatic beams. Individual listeners detailed separately. Field wave grid dominant or extending beyond thread paths.
+
+---
+
+ID: ILL_028
+PASSAGE: "Water does not demand the world be different. It works with what is."
+TRIGGER_TYPE: universal_pattern
+SCENE: Dark stone centered, water flow motif around and through it. Stone surface worn smooth where water has contacted it. Water is unmodified by the encounter. Single directional light from upper left.
+CORE_ELEMENTS:
+- Dark stone, centered
+- Water flow motif (smooth adaptive lines, zero turbulence)
+- Worn smooth surface on stone at contact points
+RELATIONSHIPS:
+- Water flow motif is the primary visual — smooth, unhurried, adaptive
+- Stone shows the history of the water's passage
+- Water itself is unchanged
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- water flow motif: smooth adaptive lines, zero turbulence anywhere
+- stone must show wear at contact points
+ASPECT_RATIO: 16:9
+REUSABILITY: motif (water flow reused in ILL_042, ILL_048)
+INTENT_SUMMARY: The most persistent force is the one that never fights. Water shapes mountains through surrender.
+FAIL_CONDITION: Any turbulence in the water. Stone not showing wear. Water flow motif not smooth.
+
+---
+
+ID: ILL_029
+PASSAGE: "When you find that note and sound it — even once, even quietly — everything shifts."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Single standing figure, facing forward, mouth open. From the mouth: radial light beam (self-luminous, only light source). Field wave grid at ≤20% in surrounding space, subtly reorganized nearest the beam.
+CORE_ELEMENTS:
+- Figure, forward facing
+- Mouth open
+- Radial light beam from mouth (self-luminous, only light source)
+- Field wave grid at ≤20% in surrounding space
+RELATIONSHIPS:
+- Radial light beam is the voice
+- Field wave grid nearest the beam is subtly different from field wave grid further away
+- Reorganization is minimal — the shift is small but visible
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- radial light is self-luminous, only light source
+- field wave grid reorganization must be subtle — not dramatic
+- field wave grid at ≤20%
+- beam edges must be soft and diffuse with no hard boundary
+ASPECT_RATIO: 9:16
+REUSABILITY: standalone
+INTENT_SUMMARY: Your frequency is irreplaceable. When you express it, the field recognizes itself in a way it cannot without you.
+FAIL_CONDITION: Dramatic beam. Field wave grid reorganization reading as explosion or dramatic shift. Any external light source.
+
+---
+
+ID: ILL_030
+PASSAGE: "The spiral is the geometry of life. Not circles. Not lines. But spirals — they return to where they began, but higher."
+TRIGGER_TYPE: universal_pattern
+SCENE: Spiral staircase from directly above, ascending. Coherence spiral motif in the staircase structure. Same window visible at each revolution, positioned identically but at increasing height. Radial light from directly below (self-luminous staircase center).
+CORE_ELEMENTS:
+- Spiral staircase structure (coherence spiral motif)
+- Same window repeated at 3 revolution points, at increasing height
+- Radial light from below (only light source)
+RELATIONSHIPS:
+- Staircase is the coherence spiral motif made physical
+- Same window appears three times — same position, different elevation
+- Light from below (origin) is self-luminous
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- coherence spiral motif must be the dominant structure
+- window must appear at minimum 3 points in the spiral
+- radial light from below is only light source
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Every return to the same question is from higher ground — the geometry of growth is spiral, not circular.
+FAIL_CONDITION: Window appearing at different positions each revolution rather than the same position at increasing height. No radial light from below.
+
+---
+
+ID: ILL_031
+PASSAGE: "You cannot notice you are in pain and remain the same organism."
+TRIGGER_TYPE: state_transition
+SCENE: Face close-up, three-quarter view. Eyes using awareness motif: directed toward. Expression: slightly open mouth, raised brows, stillness — physical markers of irreversible recognition. Single directional light from upper left.
+CORE_ELEMENTS:
+- Face, three-quarter view, close-up
+- Eyes: awareness motif — directed toward
+- Mouth: slightly open
+- Brows: slightly raised
+RELATIONSHIPS:
+- Four physical markers together indicate irreversible recognition
+- No dramatic expression — these are subtle physical indicators
+- Awareness motif in the eye direction is the anchor
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- expression physical indicators: slightly open mouth + raised brows + stillness + eyes directed toward
+- no dramatic emotion
+- single directional light from upper left
+- all four indicators must be present at low intensity (≤30% of expressive range each)
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone (opening motion from ILL_004 echoed here)
+INTENT_SUMMARY: The moment of genuine understanding cannot be undone. It changes the organism permanently.
+FAIL_CONDITION: Expression reading as shock, fear, or drama. Eyes not using awareness motif. Physical indicators absent.
+
+---
+
+ID: ILL_032
+PASSAGE: "The integration of knowledge and care creates wisdom."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Two hands approaching each other from left and right. Left hand: holding open book. Right hand: pressed against a warm heartbeat glow. Radial light at ≤20% beginning to form in the space between them. Single directional light from upper left plus self-luminous heartbeat glow.
+CORE_ELEMENTS:
+- Left hand with open book
+- Right hand with warm heartbeat glow (self-luminous)
+- Space between them with emerging radial light
+RELATIONSHIPS:
+- Hands are approaching but not yet touching
+- Heartbeat glow is self-luminous on right hand
+- Radial light between them is faint — what will be when they meet
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- heartbeat glow: self-luminous on right hand only
+- radial light between them at ≤20% — forming, not yet complete
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: Knowledge alone is data. Care alone is feeling. Together they become something neither can be separately.
+FAIL_CONDITION: Hands already touching. Radial light between them at full intensity. Heartbeat glow not self-luminous.
+
+---
+
+ID: ILL_033
+PASSAGE: "Did I do that? Or did it do itself through me?"
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Hand in mid-creation act. Boundary between hand and work blurred by radial light passing through. Election threshold motif at the wrist as explicit line. Radial light from beyond (self-luminous origin not visible), flowing through wrist threshold into hand and work.
+CORE_ELEMENTS:
+- Hand in creation
+- Blurred boundary between hand and work
+- Radial light flowing through (self-luminous from beyond frame)
+- Election threshold motif at wrist
+RELATIONSHIPS:
+- Light flows from beyond the wrist, through the hand, into the work
+- Threshold at the wrist: the boundary between self and field
+- The work and hand are continuous at the fingertips
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- light flows through not from the hand — origin is beyond the frame
+- election threshold motif at wrist must be explicit line
+- hand and work must be continuous at fingertips
+- radial light flow must be unidirectional (from outside frame → through wrist → into work) with no backflow or branching
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: The deepest creation is not from the self. The self is the channel through which it flows.
+FAIL_CONDITION: Light appearing to originate from the hand. No threshold motif at wrist. Hand and work not continuous at fingertips. Any backflow or branching of the light.
+
+---
+
+ID: ILL_034
+PASSAGE: "Touch is always a statement."
+TRIGGER_TYPE: symbol_anchor
+SCENE: Two hands, palms facing, nearly touching. Field wave grid at maximum concentration in the gap between them (dominant motif in that zone). Election threshold motif as explicit line in the gap. Single directional light from upper left.
+CORE_ELEMENTS:
+- Left hand, palm facing right
+- Right hand, palm facing left
+- Gap between them: field wave grid concentrated
+- Election threshold motif in the gap
+RELATIONSHIPS:
+- The gap is the focal point — not the hands
+- Field wave grid is most concentrated in the gap — the thinnest boundary
+- Threshold motif is visible in the gap
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- gap must be clearly the focal element (centered, highest contrast)
+- field wave grid must appear ONLY in the gap, not in the hands
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Every touch is an election. Every touch is a statement about the realness of the other.
+FAIL_CONDITION: Field wave grid appearing in the hands or outside the gap. Gap not being the clear focal element.
+
+---
+
+ID: ILL_035
+PASSAGE: "The deepest bonds are forged through difficulty."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Two figures, back to back, in dark storm. Field wave grid concentrated at their contact point (supporting motif). Each figure faces a different direction. Storm as visual texture/mass behind both. Single directional light from upper left.
+CORE_ELEMENTS:
+- Two figures, back to back
+- Storm mass (one visual element)
+- Field wave grid concentrated at contact point (supporting motif)
+RELATIONSHIPS:
+- Contact point at their backs is where field wave grid concentrates
+- Storm mass is one element — not detailed
+- Each figure faces outward into the storm
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- field wave grid at contact point between figures only
+- storm as one undifferentiated mass
+- figures must each face different direction
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: The bond is strongest at the point of contact between two people facing their own difficulties.
+FAIL_CONDITION: Field wave grid outside the contact point. Storm detailed rather than mass. Both figures facing same direction.
+
+---
+
+ID: ILL_036
+PASSAGE: "Each level of growth opens capacities that make the next level possible."
+TRIGGER_TYPE: universal_pattern
+SCENE: Tree cross-section, viewed face-on, centered. Concentric luminous rings using coherence spiral motif structurally. Outermost ring: most luminous and widest. Innermost: smallest and faintest. Single directional light from upper left.
+CORE_ELEMENTS:
+- Tree cross-section, face-on
+- Concentric rings using coherence spiral motif structure
+- Outermost ring most luminous
+- Innermost ring smallest and faintest
+RELATIONSHIPS:
+- Rings radiate outward from center, each one enabled the next
+- Outermost = most recent, most capable
+- Coherence spiral motif in the ring structure
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- coherence spiral motif in the ring structure
+- rings must clearly increase in width outward
+- single directional light from upper left
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Every ring made the next ring possible. Growth is not replacement — it is addition.
+FAIL_CONDITION: Rings uniform in width. Outermost ring not the most luminous. Coherence spiral motif absent.
+
+---
+
+ID: ILL_037
+PASSAGE: "Joy is the moment when all the contradictions of your experience suddenly cohere."
+TRIGGER_TYPE: state_transition
+SCENE: Fragments of experience as silhouettes (faces, places, objects) arranged at outer frame. Center: coherence spiral motif forming (dominant, 80% weight). Radial light at the coherent center point only (≤20%, background). Single directional light from upper left.
+CORE_ELEMENTS:
+- Fragment silhouettes at outer frame (one grouped mass element)
+- Coherence spiral motif forming at center (dominant)
+- Radial light at center point only (background)
+RELATIONSHIPS:
+- Fragments are one grouped mass — not individually detailed
+- Coherence spiral motif is the result of fragments finding relation
+- Radial light appears only at center where coherence is achieved
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- fragments as one grouped visual mass
+- coherence spiral motif dominant at center (80%)
+- radial light at center only, ≤20%
+- outer fragment mass must form a continuous perimeter ring with no gaps
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Joy is not happiness. Joy is the moment when everything you are finally fits together.
+FAIL_CONDITION: Individual fragments detailed separately. Radial light dominant or widespread. Coherence spiral not clearly forming at center.
+
+---
+
+ID: ILL_038
+PASSAGE: "Confidence is: I trust myself to handle what comes."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Figure at election threshold motif. One foot already past the threshold line. Radial light from behind (self-luminous origin behind figure). Absolute darkness ahead. Posture: relaxed shoulders, slight forward lean, weight forward.
+CORE_ELEMENTS:
+- Figure at threshold
+- Threshold line (election threshold motif)
+- Radial light from behind (self-luminous)
+- Darkness ahead
+RELATIONSHIPS:
+- One foot is already past the threshold — decision already in motion
+- Radial light is origin (behind) — not destination
+- Darkness ahead is unknown, not threatening
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- posture: relaxed shoulders, slight forward lean, weight forward
+- one foot must be past the threshold
+- radial light from behind only (self-luminous)
+ASPECT_RATIO: 9:16
+REUSABILITY: motif
+INTENT_SUMMARY: Confidence is not certainty about the outcome. It is already moving.
+FAIL_CONDITION: Figure frozen at threshold rather than already moving. Posture showing tension or hesitation. Both feet on near side.
+
+---
+
+ID: ILL_039
+PASSAGE: "The most generative power is power that makes other people more powerful."
+TRIGGER_TYPE: universal_pattern
+SCENE: Central open hand (open hand motif from ILL_020). Radial light from palm (self-luminous, only light source). Grouped mass of other hands around it, all lit to equal brightness by the central light.
+CORE_ELEMENTS:
+- Central open hand (matches ILL_020 motif)
+- Radial light from palm (self-luminous, only source)
+- Grouped mass of surrounding hands (one element)
+RELATIONSHIPS:
+- Central hand does not dim as it lights others
+- All surrounding hands reach equal brightness
+- Grouped mass counts as one element
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- central hand must echo ILL_020 motif
+- radial light self-luminous, only source
+- surrounding hands as grouped mass, not individually detailed
+- surrounding hands must be arranged radially around the central hand at equal distance
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Real power is not diminished by sharing it. It multiplies.
+FAIL_CONDITION: Central hand dimming as others are lit. Individual surrounding hands detailed separately. Any external light source.
+
+---
+
+ID: ILL_040
+PASSAGE: "Every person you have encountered is changed by having encountered you."
+TRIGGER_TYPE: universal_pattern
+SCENE: Single candle flame, centered (self-luminous, only source). Faint light-thread connections to three to four surrounding candles. Each connected candle glows equally bright. Field wave grid at ≤20% along the threads only.
+CORE_ELEMENTS:
+- Central candle (self-luminous, only source)
+- Three to four connected candles via light threads
+- Field wave grid at ≤20% along threads only
+RELATIONSHIPS:
+- Central candle does not dim
+- Light threads are subtle — the network is invisible but real
+- Field wave grid activates along threads only, not in open space
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- light threads must be subtle, not dominant beams
+- central candle self-luminous, only source
+- field wave grid along threads only, at ≤20%
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Your presence has already permanently changed everyone you have ever encountered.
+FAIL_CONDITION: Light threads reading as dramatic beams. Field wave grid outside thread paths. Central candle dimming.
+
+---
+
+ID: ILL_041
+PASSAGE: "Once the groove exists, it carries you."
+TRIGGER_TYPE: state_transition
+SCENE: Dark stone surface with a groove running left to right. Time-trace motif: groove is shallow and rough at left end, deep and smooth at right end. Water flow motif in the groove's curvature. Single directional light from upper left.
+CORE_ELEMENTS:
+- Stone surface
+- Groove with time-trace motif (shallow/rough left, deep/smooth right)
+- Water flow motif in the groove's curvature
+RELATIONSHIPS:
+- Left end is beginning, right end is momentum
+- Time-trace motif shows the progression
+- Water flow motif: the groove has the shape of water's patient work
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- time-trace motif must show clear progression left to right
+- water flow motif in groove curvature
+- single directional light showing depth
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: The hardest part is starting. Once you've gone enough times, the path carries you.
+FAIL_CONDITION: No visible difference between left and right ends of groove. Time-trace progression not clear.
+
+---
+
+ID: ILL_042
+PASSAGE: "You are a pattern of the field sampling itself."
+TRIGGER_TYPE: universal_pattern
+SCENE: Single water droplet suspended, centered (water motif). World reflection visible within. Field wave grid at ≤20% visible inside the reflection (inside the droplet, inside the reflection — nested). Single directional light from upper left.
+CORE_ELEMENTS:
+- Single water droplet, centered (water motif)
+- Reflection of larger context visible inside droplet
+- Field wave grid at ≤20% inside the reflection only
+RELATIONSHIPS:
+- Droplet is the sample
+- Reflection inside is the source
+- Field wave grid in the reflection (not the droplet directly) — nested
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- reflection must be clearly visible inside droplet
+- field wave grid inside the reflection only, ≤20%
+- water motif used exactly
+- reflection must be inverted relative to external orientation
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: You are not separate from the field. You are the field examining itself from the inside.
+FAIL_CONDITION: No visible reflection. Field wave grid outside the reflection. Droplet not using water motif.
+
+---
+
+ID: ILL_043
+PASSAGE: "A child seen is a child who believes they are real."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Adult kneeling to child's level, face to face. Child self-luminous (child is the only light source — being witnessed makes them glow). Adult's face: awareness motif — eyes directed toward. Eye contact is the structural center.
+CORE_ELEMENTS:
+- Adult figure, kneeling
+- Child figure, standing, face to face
+- Eye contact as structural center
+- Child self-luminous (only light source)
+RELATIONSHIPS:
+- Child's luminosity comes from being seen — not from external source
+- Adult uses awareness motif — eyes directed toward child
+- Eye contact is the focal point
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- child self-luminous — only light source
+- adult eyes must use awareness motif: directed toward
+- eye contact must be structural center of composition
+- adult figure must be ≤50% of child's visual height
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: Being fully seen is the most basic act of creation one person can offer another.
+FAIL_CONDITION: External light source. Adult eyes not directed toward child. Eye contact not structural center. Adult figure taller than child in frame.
+
+---
+
+ID: ILL_044
+PASSAGE: "Forgiveness is separation with release."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Two open hands, palms upward (open hand motif from ILL_020, now both hands). Fingers opening in release. What was held is invisible — already gone. Election threshold motif at the moment of full opening. Self-luminous from the release point.
+CORE_ELEMENTS:
+- Two open hands, palms up (open hand motif)
+- Fingers in mid-open release position
+- Election threshold motif at the full-open point
+- Self-luminous from release point
+RELATIONSHIPS:
+- Hands echo ILL_020 but now both and releasing
+- What is released is invisible — not symbolized
+- Threshold is the moment between holding and free
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- must echo ILL_020 open hand motif
+- what is released must be invisible
+- election threshold motif at fingers' full-open point
+ASPECT_RATIO: 1:1
+REUSABILITY: motif
+INTENT_SUMMARY: Forgiveness is not reconciliation. It is releasing what you were carrying back to the field.
+FAIL_CONDITION: Hands closed or clutching. Visible object being released. Hands not echoing ILL_020.
+
+---
+
+ID: ILL_045
+PASSAGE: "I did not create this. I did not earn all of this. And somehow it is mine."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Two cupped hands, centered, holding radial light (self-luminous sphere — only light source). Light does not originate from hands. Partial face visible above — mouth slightly open, brows slightly raised, stillness (astonishment physical markers).
+CORE_ELEMENTS:
+- Two cupped hands (open hand motif, now cupped)
+- Self-luminous sphere of radial light resting in palms
+- Partial face above: mouth slightly open, brows slightly raised
+RELATIONSHIPS:
+- Light rests in palms — does not originate there
+- Self-luminous sphere is only light source
+- Face physical markers: slightly open mouth, raised brows, stillness
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- light self-luminous, does not originate from hands
+- face physical markers: slightly open mouth + raised brows + stillness
+- cupped hands must echo but differ from ILL_020
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Genuine gratitude is recognizing you received something you did not make and could not have made alone.
+FAIL_CONDITION: Hands appearing to generate the light. Expression showing pride rather than astonishment physical markers. Light not self-luminous.
+
+---
+
+ID: ILL_046
+PASSAGE: "Your suffering is my suffering. Your freedom is my freedom."
+TRIGGER_TYPE: universal_pattern
+SCENE: Two human figures facing each other, rendered in field wave grid pattern (both are the same grid — dominant motif). Boundary between them barely visible. Radial light at ≤20% at the recognition point between them. Single directional light from upper left.
+CORE_ELEMENTS:
+- Left figure: rendered as field wave grid
+- Right figure: rendered as identical field wave grid
+- Boundary between them: nearly invisible
+- Radial light at ≤20% at boundary point
+RELATIONSHIPS:
+- Both figures are the same field wave grid pattern — identical
+- Boundary is thinnest of any image in the book
+- Radial light at recognition point is background only
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- field wave grid must be identical in both figures — same pattern
+- boundary must be the thinnest and most permeable in the book
+- radial light at ≤20%
+- field wave grid phase alignment must be continuous across the boundary (no phase shift)
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: The separation between any two humans is the thinnest veil over absolute unity.
+FAIL_CONDITION: Different field wave grid patterns in the two figures. Boundary appearing solid or clear. Radial light dominant. Any phase discontinuity at the boundary.
+
+---
+
+ID: ILL_047
+PASSAGE: "The most beautiful human experiences are moments of accord."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Two musicians, different instruments, at the exact moment of phase lock. Coherence spiral motif forming in the space between them (dominant). Field wave grid at ≤20% connecting them. Single directional light from upper left.
+CORE_ELEMENTS:
+- Two musicians, different instruments
+- Coherence spiral motif forming between them (dominant, 80%)
+- Field wave grid at ≤20% connecting
+RELATIONSHIPS:
+- Coherence spiral forms BETWEEN them — not in either alone
+- This is the exact instant of phase lock — not before, not after
+- Field wave grid is the medium through which they connect
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- coherence spiral forming between them only, not inside either musician
+- field wave grid at ≤20%
+- posture of both musicians: same gesture at same instant
+ASPECT_RATIO: 16:9
+REUSABILITY: standalone
+INTENT_SUMMARY: Accord is not agreement. It is two different things resonating at the same frequency for one moment.
+FAIL_CONDITION: Coherence spiral appearing inside a musician rather than between them. Postures not mirroring. Field wave grid dominant.
+
+---
+
+ID: ILL_048
+PASSAGE: "Water surrenders to gravity. And in that surrender, water shapes mountains."
+TRIGGER_TYPE: universal_pattern
+SCENE: Narrow canyon walls (dark stone), carved by patient water. Water flow motif through the canyon (smooth, zero turbulence). Radial light entering from above (self-luminous from sky opening). Canyon shaped by water's surrender.
+CORE_ELEMENTS:
+- Canyon walls, dark stone
+- Water flow motif (smooth, zero turbulence)
+- Radial light from above (self-luminous sky opening)
+RELATIONSHIPS:
+- Canyon walls are the record of the water's work
+- Water flow motif is precise — smooth, adaptive, zero turbulence
+- Light from above confirms gravity as grace
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- water flow motif: smooth, zero turbulence
+- radial light from above, self-luminous
+- canyon must read as shaped by water, not by force
+ASPECT_RATIO: 9:16
+REUSABILITY: standalone
+INTENT_SUMMARY: The most powerful force moves without fighting. It simply refuses to stop.
+FAIL_CONDITION: Any turbulence in the water. Canyon reading as violently cut rather than patiently shaped. No radial light from above.
+
+---
+
+ID: ILL_049
+PASSAGE: "Love is the recognition of the field in the other."
+TRIGGER_TYPE: universal_pattern
+SCENE: Two figures facing each other, both rendered as field wave grid (dominant motif, 80%). Boundary between them transparent. Radial light at ≤20% at recognition point between them.
+CORE_ELEMENTS:
+- Left figure: field wave grid rendering
+- Right figure: identical field wave grid rendering
+- Boundary: transparent
+- Radial light at ≤20% at recognition point
+RELATIONSHIPS:
+- Both figures are field wave grid — not surface
+- Boundary is transparent — the most permeable of the book
+- Radial light marks the recognition point
+STYLE: abstract
+CONSTRAINTS:
+- no text
+- field wave grid dominant (80%) in both figures
+- boundary must be transparent
+- radial light at ≤20% at recognition point only
+- field wave grid must visibly interpenetrate across the boundary (overlapping continuity, not just transparency)
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Love is not about the surface. It is about recognizing that the other is made of the same thing you are.
+FAIL_CONDITION: Figures rendered with visible surfaces rather than field wave grid. Boundary appearing solid. Radial light dominant. Field wave grids meeting but not interpenetrating at the boundary.
+
+---
+
+ID: ILL_050
+PASSAGE: "Silence is larger than sound. Sound lives in silence."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Vast dark space with field wave grid filling it as silence (dominant motif, 80%). Single tiny self-luminous point at center — sound, slightly warmer orange than the light motif. Point is tiny relative to the space.
+CORE_ELEMENTS:
+- Vast dark space
+- Field wave grid filling entire space (dominant, 80%)
+- Single tiny self-luminous point at center (orange-warm, not white-gold)
+RELATIONSHIPS:
+- Field wave grid is the silence — it fills everything
+- The tiny point is sound within silence
+- Point is self-luminous — the only warm element
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- field wave grid fills the space as silence (dominant here, exception to usual ≤20% rule — this is the image where field wave grid IS the subject)
+- point must be tiny — no larger than 5% of frame diameter
+- point is orange-warm, not white-gold (differentiates sound from light)
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Sound does not fill silence. Silence contains sound. The container is larger than anything it holds.
+FAIL_CONDITION: Point larger than 5% of frame. Point using white-gold light motif instead of orange-warm. Field wave grid not filling the space.
+
+---
+
+ID: ILL_051
+PASSAGE: "Birth is terrifying because it is uncontrollable."
+TRIGGER_TYPE: abstraction_collapse
+SCENE: Narrow dark passage (bottom of frame). Radial light on the emergence side (self-luminous, only source). Something undefined and luminous mid-emergence. Election threshold motif as explicit line at the passage opening.
+CORE_ELEMENTS:
+- Narrow dark passage at bottom
+- Election threshold motif at the passage opening
+- Something undefined and luminous mid-emergence
+- Radial light on emergence side (only source)
+RELATIONSHIPS:
+- Passage is constraint; emergence side is possibility
+- What emerges is undefined — pure potential, no specific form
+- Threshold motif marks the exact line
+STYLE: cinematic
+CONSTRAINTS:
+- no text
+- what emerges must be undefined — no recognizable form
+- election threshold motif at opening
+- radial light self-luminous on emergence side only
+ASPECT_RATIO: 9:16
+REUSABILITY: standalone
+INTENT_SUMMARY: Something genuinely new is entering existence. It cannot be controlled, only welcomed.
+FAIL_CONDITION: What emerges having a recognizable form. Radial light in the passage (dark side). Threshold motif absent.
+
+---
+
+ID: ILL_052
+PASSAGE: "A single candle in a completely dark room takes over the entire room."
+TRIGGER_TYPE: universal_pattern
+SCENE: Single small candle flame, centered, self-luminous (only light source). Radial light filling nearly the entire frame. Darkness only at the absolute edges.
+CORE_ELEMENTS:
+- Single candle flame, centered (self-luminous, only source)
+- Radial light filling nearly full frame
+- Darkness at frame edges only
+RELATIONSHIPS:
+- Flame is small; light is total
+- Radial light motif at maximum expression
+- Darkness cannot maintain presence except at extreme edges
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- flame self-luminous, only source
+- radial light must fill at minimum 90% of frame
+- darkness at extreme edges only
+ASPECT_RATIO: 1:1
+REUSABILITY: standalone
+INTENT_SUMMARY: Truth does not coexist with untruth. One small true thing takes the whole room.
+FAIL_CONDITION: Darkness occupying more than 10% of frame. Any external light source. Flame not centered.
+
+---
+
+ID: ILL_053
+PASSAGE: "Stay aware. Be ready. The choice to be kind is always yours. It always was. The way home."
+TRIGGER_TYPE: symbol_anchor
+SCENE: IDENTICAL TO ILL_001. Single point of pure white-gold light, centered, in absolute darkness. Same composition, same scale, same lighting, same position.
+CORE_ELEMENTS:
+- One luminous point, centered, self-luminous
+- Absolute darkness
+RELATIONSHIPS:
+- Point occupies center. Darkness occupies everything else.
+- IDENTICAL TO ILL_001.
+STYLE: minimal
+CONSTRAINTS:
+- no text
+- MUST BE VISUALLY IDENTICAL TO ILL_001
+- ILL_001 and ILL_053 must reuse the exact same image asset or identical generation seed — regeneration is not permitted
+- no difference permitted of any kind
+ASPECT_RATIO: 1:1
+REUSABILITY: recurring_symbol
+INTENT_SUMMARY: The same point of light. The reader has changed. That is the whole book.
+FAIL_CONDITION: Any visual difference from ILL_001. Any element suggesting arrival or completion visually — that must come only from the reader's memory of what came between. Any regeneration of this image rather than reuse of ILL_001 asset.
+
+---
+
+## GENERATION NOTES
+
+### For ILL_001 and ILL_053 — CRITICAL
+Generate ILL_001 first. Save the image file. Use that exact saved file for ILL_053.
+Do NOT regenerate ILL_053 — even from an identical prompt, variation will occur.
+ILL_053 IS ILL_001. Same file. Same asset. Placed twice in the book.
+
+### Motif Priority Reference
+When in doubt about which motif is dominant:
+1. Ask: what is this image ABOUT?
+2. The about-thing uses the dominant motif
+3. Everything else is background (≤20%)
+
+### Self-Luminous vs External Light
+- If the object IS the subject (candle, cell, primitive point, voice, held light): self-luminous, no external source
+- If the object is IN a scene: single directional light from upper left
+
+### Element Counting
+When counting elements, group masses count as ONE:
+- "cluster of hands" = 1
+- "star field" = 1
+- "fragment silhouettes" = 1
+- "storm mass" = 1
+
+### Batch Order for Generation
+Recommended generation batches:
+1. ILL_001-006 (foundation — establish visual language)
+2. ILL_007-012 (establish cosmic scale)
+3. ILL_013-020 (establish intimate scale)
+4. ILL_021-030 (mid-book sequence)
+5. ILL_031-040 (personal sequence)
+6. ILL_041-052 (closing sequence)
+7. ILL_053 (generate last, using ILL_001 prompt exactly)

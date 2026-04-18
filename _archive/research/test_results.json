@@ -1,0 +1,259 @@
+{
+  "timestamp": "2026-04-03T21:22:40.543854",
+  "api_tests": [
+    {
+      "endpoint": "/api/health",
+      "success": true,
+      "data": {
+        "entities_loaded": 4,
+        "service": "Encyclopedia API Server",
+        "status": "running",
+        "ufm_verification": {
+          "average_quality": 0.9401878805774319,
+          "total_verifications": 34,
+          "valid": 33
+        },
+        "version": "2.0-UFM-Verified"
+      },
+      "verification": {
+        "label": "api_health_test",
+        "quality_score": 0.9630396541443054,
+        "is_valid": true,
+        "timestamp": "2026-04-03T21:22:20.437534"
+      }
+    },
+    {
+      "endpoint": "/api/entities",
+      "success": true,
+      "data": {
+        "count": 4,
+        "entities": [
+          "Electron",
+          "Atom",
+          "Water Molecule",
+          "Cell"
+        ],
+        "verification": {
+          "is_valid": true,
+          "quality_score": 0.9631636121785399,
+          "timestamp": "2026-04-03T21:22:23.159819"
+        }
+      },
+      "verification": {
+        "label": "api_entities_test",
+        "quality_score": 0.9632510099155345,
+        "is_valid": true,
+        "timestamp": "2026-04-03T21:22:24.040035"
+      }
+    },
+    {
+      "endpoint": "/api/entity/Electron",
+      "success": true,
+      "data": {
+        "entity": {
+          "attributes": {
+            "charge": "-1.602 \u00d7 10\u207b\u00b9\u2079 C",
+            "coherence_measure": "\u03c4 \u2248 0.99",
+            "mass": "9.109 \u00d7 10\u207b\u00b3\u00b9 kg",
+            "spin": "\u00bd"
+          },
+          "description": "Fundamental particle of matter",
+          "field_narratives": {
+            "composition": "Fundamental fermions - no internal structure",
+            "environment": "Quantum fields everywhere, manifesting through electromagnetic force",
+            "evolution": "Electrons emerged from the primordial field when universe cooled",
+            "purpose": "Enable chemistry and consciousness through electron shells and spin",
+            "unique": "First boundary between mathematics and matter"
+          },
+          "name": "Electron",
+          "scale_badge": "Sub-atomic scale",
+          "scale_meters": "10^-10 (Angstrom)"
+        },
+        "verification": {
+          "combined": 0.9713097762561671,
+          "data_quality": 0.9642667121418826,
+          "request_quality": 0.9783528403704514,
+          "timestamp": "2026-04-03T21:22:27.291583"
+        }
+      },
+      "verification": {
+        "label": "api_entity_test:Electron",
+        "quality_score": 0.964413113869401,
+        "is_valid": true,
+        "timestamp": "2026-04-03T21:22:27.920430"
+      }
+    },
+    {
+      "endpoint": "/api/entity/Atom",
+      "success": true,
+      "data": {
+        "entity": {
+          "attributes": {
+            "binding_force": "Electromagnetic",
+            "coherence_measure": "\u03c4 \u2248 0.75",
+            "structure": "Nucleus + electron shells"
+          },
+          "description": "Nucleus plus electron cloud",
+          "field_narratives": {
+            "composition": "Nuclei (protons + neutrons) + electron shells",
+            "environment": "Collections forming molecules, crystals, gases",
+            "evolution": "Formed when universe cooled enough for electron binding",
+            "purpose": "Building blocks of chemistry and all complexity",
+            "unique": "First scale where matter becomes visible to human intuition"
+          },
+          "name": "Atom",
+          "scale_badge": "Atomic scale",
+          "scale_meters": "10^-10 m"
+        },
+        "verification": {
+          "combined": 0.9723318345294927,
+          "data_quality": 0.9651715810879513,
+          "request_quality": 0.9794920879710339,
+          "timestamp": "2026-04-03T21:22:30.939406"
+        }
+      },
+      "verification": {
+        "label": "api_entity_test:Atom",
+        "quality_score": 0.9652478842996084,
+        "is_valid": true,
+        "timestamp": "2026-04-03T21:22:31.513263"
+      }
+    }
+  ],
+  "html_validation": [
+    {
+      "validation": "html_structure",
+      "checks": {
+        "has_html_tag": true,
+        "has_head_tag": true,
+        "has_body_tag": true,
+        "has_script_tags": true,
+        "has_style_tags": true,
+        "is_valid_utf8": true,
+        "file_size_kb": 18.56640625
+      },
+      "all_passed": true,
+      "verification": {
+        "label": "html_structure_validation",
+        "quality_score": 0.9651723489596391,
+        "is_valid": true,
+        "timestamp": "2026-04-03T21:22:32.092563"
+      }
+    },
+    {
+      "validation": "html_content",
+      "checks": {
+        "has_encyclopedia_title": true,
+        "has_entity_references": true,
+        "has_api_references": true,
+        "has_field_narratives": true,
+        "no_syntax_errors": false
+      },
+      "all_passed": false,
+      "verification": {
+        "label": "html_content_validation",
+        "quality_score": 0.9653953243209723,
+        "is_valid": true,
+        "timestamp": "2026-04-03T21:22:32.713061"
+      }
+    }
+  ],
+  "visual_tests": [
+    {
+      "test": "visual_regression_expectations",
+      "expectations": {
+        "url": "http://localhost:5000",
+        "title": "ENCYCLOPEDIA",
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "expected_elements": [
+          "canvas or svg visualization",
+          "entity list",
+          "field narratives",
+          "coherence metrics"
+        ],
+        "expected_colors": {
+          "background": "dark (rgb 10-30)",
+          "text": "light (rgb 200-255)",
+          "accent": "orange or cyan"
+        }
+      },
+      "timestamp": "2026-04-03T21:22:33.715797",
+      "verification": {
+        "label": "visual_expectations",
+        "quality_score": 0.0,
+        "is_valid": false,
+        "timestamp": "2026-04-03T21:22:33.715056"
+      }
+    },
+    {
+      "test": "api_visualization_capture",
+      "entity": "Electron",
+      "file": "c:\\Determined\\test_screenshots\\Electron_rendered.svg",
+      "hash": "d9cfed4ad0938a1c578186a2681d37030672e6842bb5f564d3e17a337937e132",
+      "verification": {
+        "label": "visual_api_image:Electron",
+        "quality_score": 0.9663099059848659,
+        "is_valid": true,
+        "timestamp": "2026-04-03T21:22:40.542320"
+      }
+    }
+  ],
+  "ufm_summary": {
+    "total_verifications": 8,
+    "valid": 7,
+    "average_quality": 0.8441036551867909
+  },
+  "ufm_verifications": [
+    {
+      "label": "api_health_test",
+      "quality_score": 0.9630396541443054,
+      "is_valid": true,
+      "timestamp": "2026-04-03T21:22:20.437534"
+    },
+    {
+      "label": "api_entities_test",
+      "quality_score": 0.9632510099155345,
+      "is_valid": true,
+      "timestamp": "2026-04-03T21:22:24.040035"
+    },
+    {
+      "label": "api_entity_test:Electron",
+      "quality_score": 0.964413113869401,
+      "is_valid": true,
+      "timestamp": "2026-04-03T21:22:27.920430"
+    },
+    {
+      "label": "api_entity_test:Atom",
+      "quality_score": 0.9652478842996084,
+      "is_valid": true,
+      "timestamp": "2026-04-03T21:22:31.513263"
+    },
+    {
+      "label": "html_structure_validation",
+      "quality_score": 0.9651723489596391,
+      "is_valid": true,
+      "timestamp": "2026-04-03T21:22:32.092563"
+    },
+    {
+      "label": "html_content_validation",
+      "quality_score": 0.9653953243209723,
+      "is_valid": true,
+      "timestamp": "2026-04-03T21:22:32.713061"
+    },
+    {
+      "label": "visual_expectations",
+      "quality_score": 0.0,
+      "is_valid": false,
+      "timestamp": "2026-04-03T21:22:33.715056"
+    },
+    {
+      "label": "visual_api_image:Electron",
+      "quality_score": 0.9663099059848659,
+      "is_valid": true,
+      "timestamp": "2026-04-03T21:22:40.542320"
+    }
+  ]
+}

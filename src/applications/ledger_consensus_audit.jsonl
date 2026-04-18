@@ -1,0 +1,7 @@
+# ledger_consensus_audit.jsonl ledger - ARIA Network Capability Library
+# Created: 2026-03-27T04:38:01.849049
+# Append-only: True
+# ZEROPOINT: True
+#
+{"state_id": "state:doc1", "resolved_version_hash": "hash_resolved_123", "peers_acked": 1, "quorum_reached": false, "consensus_at": "2026-03-27T04:38:01.848882"}
+{"state_id": "state:doc1", "resolved_version_hash": "hash_resolved", "peers_acked": 2, "quorum_reached": true, "consensus_at": "2026-03-27T04:38:01.894474"}
