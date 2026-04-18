@@ -6,6 +6,62 @@ frameworks:
   # FOUNDATION FRAMEWORKS
   # ====================
   
+  - name: goal-blindness
+    title: "Goal-Blindness: The Universal Root Cause"
+    short_description: "Why you can't think past your own goals and see consequences to others"
+    full_description: "Humans optimize for their own goals. This creates structural cognitive blindness to consequences for others. This root cause explains help systems preventing development, institutions blocking advancement, and why external measurement is the only solution."
+    path: framework/goal-blindness
+    readme: framework/goal-blindness/README.md
+    difficulty: beginner
+    time_estimate: "1-2 hours"
+    
+    real_examples:
+      - name: "Therapy Creating Dependency"
+        domain: psychology
+        description: "Therapist's goal='help' blinds to 'preventing gate-passage'"
+        baseline: "Helper cannot see dependency being created"
+        improvement: "Recognize how helping prevents necessary developmental gates"
+        
+      - name: "FDA Blocking Life-Saving Drugs"
+        domain: medicine
+        description: "Regulator's goal='approval safety' blinds to 'delay mortality'"
+        baseline: "System cannot see death toll from waiting for perfect safety"
+        improvement: "Measure both approval deaths AND delay deaths to see true cost"
+        
+      - name: "Companies Blocking Innovation"
+        domain: business
+        description: "Company's goal='market share' blinds to 'progress-blocking'"
+        baseline: "Organization cannot see opportunity cost of protecting status quo"
+        improvement: "External measurement of lost innovation opportunities"
+        
+      - name: "Universities Teaching Obsolescence"
+        domain: education
+        description: "Institution's goal='curriculum prestige' blinds to 'teaching outdated methods'"
+        baseline: "Department cannot see teaching methods that are 20 years old"
+        improvement: "Force external measurement of how current teaching is in field"
+    
+    interactive_tools:
+      - tool: goal-blindness-detector
+        type: diagnostic checklist
+        description: "Identify where you're goal-blind in your own work"
+        
+      - tool: consequence-mapper
+        type: visualization
+        description: "Map what you're structurally blind to in your role"
+        
+      - tool: measurement-designer
+        type: interactive builder
+        description: "Design external measurement to expose your blindness"
+    
+    domains: [psychology, medicine, business, education, organizations, parenting, relationships]
+    files:
+      - the-root-cause-goal-blindness.md
+      - evidence-why-undeniables-are-real.md
+      - the-undeniable-pattern.md
+    has_interactive: true
+    systems: [human-limitation, all-domains]
+    is_root_cause: true
+    
   - name: universal-foundation
     title: "Universal Foundation: dℹ/dt = -∇Φ"
     short_description: "The single law governing all coherent systems"

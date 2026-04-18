@@ -338,8 +338,35 @@ description: Choose your own adventure through the wiki
 <!-- Intro Section -->
 <div class="intro-box">
   <h2>🧭 Find Your Path</h2>
-  <p>The wiki has many entry points. We've mapped them all out.</p>
-  <p>Pick the learning style that matches how YOUR brain works best.</p>
+  <p><strong>CRITICAL FIRST STEP:</strong> Understand Goal-Blindness (the root cause of everything in this wiki)</p>
+  <p>Then pick the learning style that matches how YOUR brain works best.</p>
+</div>
+
+<!-- GOAL-BLINDNESS FOUNDATION (START HERE) -->
+<div class="pathways-grid">
+<div class="pathway-card" style="border-top-color: #e91e63; background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);">
+  <div class="pathway-icon">⚡</div>
+  <div class="pathway-title">⭐ START HERE: Goal-Blindness</div>
+  <div class="pathway-description"><strong>The root cause of all patterns in this wiki.</strong> You can't think past your own goals and see consequences to others. This foundational insight explains help systems preventing development, institutions blocking advancement, and why external measurement is the only solution.</div>
+  
+  <div class="pathway-steps">
+    <h4>5-10 Min Orientation</h4>
+    <ul class="step-list">
+      <li>Read: Goal-Blindness (the root cause)</li>
+      <li>Understand: Why you're structurally blind to some consequences</li>
+      <li>Recognize: This pattern everywhere (therapy, regulation, parenting)</li>
+    </ul>
+  </div>
+  
+  <div class="pathway-links">
+    <a href="/the-root-cause-goal-blindness/" class="pathway-link">📌 The Root Cause: Goal-Blindness</a>
+    <a href="/evidence-why-undeniables-are-real/" class="pathway-link">📊 Evidence It's Real (quantified)</a>
+    <a href="/the-undeniable-pattern/" class="pathway-link">🔄 Same Pattern Everywhere</a>
+    <a href="/the-mirror-not-the-same/" class="pathway-link">⚖️ Why This Wiki Is Different</a>
+  </div>
+  
+  <div class="time-estimate">⏱️ 5-10 minutes (MUST READ FIRST)</div>
+</div>
 </div>
 
 <!-- Main Pathways -->
@@ -481,7 +508,7 @@ description: Choose your own adventure through the wiki
 <div class="flow-container">
   <div class="flow-title">The Wiki's Internal Flow (How pages connect)</div>
   <div class="flow-diagram">
-    <div class="flow-box">📍 Start Here</div>
+    <div class="flow-box">� Goal-Blindness (Root)</div>
     <div class="flow-arrow">→</div>
     <div class="flow-box">Pick Learning Mode</div>
     <div class="flow-arrow">→</div>

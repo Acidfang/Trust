@@ -264,6 +264,16 @@ description: See which frameworks apply to which domains, and which one to use f
 
 <h2>Which Framework for Which Domain?</h2>
 
+<div style="background: #fff3e0; border: 2px solid #ff9800; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+  <strong style="color: #e65100; font-size: 1.1rem;">⚠️ CRITICAL: Goal-Blindness is the Root Cause</strong>
+  <p style="margin: 0.75rem 0 0 0; color: #333;">
+    All other frameworks attempt to solve problems created by goal-blindness. Goal-Blindness is the structural limitation that prevents humans from seeing consequences beyond their own goals.
+  </p>
+  <p style="margin: 0.5rem 0 0 0; color: #555; font-size: 0.95rem;">
+    <strong>Every domain with human decision-makers has this problem.</strong> The column on the left shows the root cause. Other columns show how various systems try (usually ineffectively) to operate despite this blindness.
+  </p>
+</div>
+
 <div class="legend">
   <div class="legend-item">
     <div class="legend-dot fit-excellent">★</div>
@@ -288,6 +298,7 @@ description: See which frameworks apply to which domains, and which one to use f
     <thead>
       <tr>
         <th>Domain</th>
+        <th title="Root cause: structural cognitive blindness to consequences for others">🔴 Goal-Blindness<br/><small>Root Cause</small></th>
         <th title="Energy minimization, potential gradients, evolution">Universal Foundation<br/><small>dℹ/dt = -∇Φ</small></th>
         <th title="Learning, growth, autonomy, support">Help Systems<br/><small>Scaffolding</small></th>
         <th title="History, emergence, cosmic evolution">Cosmic Eras<br/><small>Evolution</small></th>
@@ -298,6 +309,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Physics -->
       <tr>
         <td><strong>Physics</strong><br/><small>(Particles, atoms, fields)</small></td>
+        <td><div class="fit-indicator fit-poor" title="Not human decision-making"><span>✗</span><div class="fit-tooltip">Particles don't have goals</div></div></td>
         <td><div class="fit-indicator fit-excellent" title="Fundamental law of physics"><span>★</span><div class="fit-tooltip">Describes all motion and interactions</div></div></td>
         <td><div class="fit-indicator fit-poor" title="Not applicable"><span>✗</span><div class="fit-tooltip">Help systems don't apply to particles</div></div></td>
         <td><div class="fit-indicator fit-moderate" title="Somewhat relevant"><span>◐</span><div class="fit-tooltip">History of universe interesting context</div></div></td>
@@ -307,6 +319,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Chemistry -->
       <tr>
         <td><strong>Chemistry</strong><br/><small>(Reactions, bonding, kinetics)</small></td>
+        <td><div class="fit-indicator fit-poor"><span>✗</span><div class="fit-tooltip">Molecular reactions lack intent</div></div></td>
         <td><div class="fit-indicator fit-excellent" title="Central principle"><span>★</span><div class="fit-tooltip">Explains molecule formation, reactions</div></div></td>
         <td><div class="fit-indicator fit-poor"><span>✗</span><div class="fit-tooltip">Not applicable</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Chemical evolution interesting</div></div></td>
@@ -316,6 +329,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Biology (Molecular) -->
       <tr>
         <td><strong>Biology: Molecular</strong><br/><small>(Protein folding, genetics)</small></td>
+        <td><div class="fit-indicator fit-poor"><span>✗</span><div class="fit-tooltip">Molecular mechanisms lack agency</div></div></td>
         <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Protein folding, RNA structure</div></div></td>
         <td><div class="fit-indicator fit-moderate"><span>◐</span><div class="fit-tooltip">Relevant to development</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Evolution of life mechanisms</div></div></td>
@@ -325,6 +339,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Biology (Organismal) -->
       <tr>
         <td><strong>Biology: Organismal</strong><br/><small>(Anatomy, physiology, homeostasis)</small></td>
+        <td><div class="fit-indicator fit-poor"><span>✗</span><div class="fit-tooltip">Organisms follow instinct, not goals</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Homeostasis as equilibrium</div></div></td>
         <td><div class="fit-indicator fit-moderate"><span>◐</span><div class="fit-tooltip">Development uses scaffolding</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Evolution shaped current forms</div></div></td>
@@ -334,6 +349,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Ecology -->
       <tr>
         <td><strong>Ecology</strong><br/><small>(Ecosystems, succession, evolution)</small></td>
+        <td><div class="fit-indicator fit-moderate"><span>◐</span><div class="fit-tooltip">Species pursue survival, but no institutions</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Ecosystem stability, energy flow</div></div></td>
         <td><div class="fit-indicator fit-poor"><span>✗</span><div class="fit-tooltip">Not applicable</div></div></td>
         <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Succession as evolutionary process</div></div></td>
@@ -343,6 +359,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Neuroscience -->
       <tr>
         <td><strong>Neuroscience</strong><br/><small>(Brain, learning, consciousness)</small></td>
+        <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Brain limitations cause cognitive blindness</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Synaptic plasticity follows gradients</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Scaffolding in skill learning</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Evolution of brain</div></div></td>
@@ -352,6 +369,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Psychology -->
       <tr>
         <td><strong>Psychology</strong><br/><small>(Behavior, learning, emotion)</small></td>
+        <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Core mechanism: cannot see beyond own goals/feelings</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Motivation as gradient, habit formation</div></div></td>
         <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Central to learning and behavioral change</div></div></td>
         <td><div class="fit-indicator fit-moderate"><span>◐</span><div class="fit-tooltip">Psychological development stages</div></div></td>
@@ -361,6 +379,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Education -->
       <tr>
         <td><strong>Education</strong><br/><small>(Teaching, learning, instruction)</small></td>
+        <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Teachers' helping-goal blinds to gate-prevention</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Learning curves as energy minimization</div></div></td>
         <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Scaffolding, gradual release of responsibility</div></div></td>
         <td><div class="fit-indicator fit-moderate"><span>◐</span><div class="fit-tooltip">Historical context of knowledge</div></div></td>
@@ -370,6 +389,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Economics -->
       <tr>
         <td><strong>Economics</strong><br/><small>(Markets, pricing, incentives)</small></td>
+        <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Actors blind to externalities outside their goals</div></div></td>
         <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Price discovery, equilibrium, optimization</div></div></td>
         <td><div class="fit-indicator fit-moderate"><span>◐</span><div class="fit-tooltip">Human development relevant</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Economic history, institutional evolution</div></div></td>
@@ -379,6 +399,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Sociology -->
       <tr>
         <td><strong>Sociology</strong><br/><small>(Culture, institutions, social dynamics)</small></td>
+        <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Goal-blind institutions perpetuate blockage mechanisms</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Social equilibrium, polarization dynamics</div></div></td>
         <td><div class="fit-indicator fit-moderate"><span>◐</span><div class="fit-tooltip">Cultural transmission has scaffolding</div></div></td>
         <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Evolution of institutions and culture</div></div></td>
@@ -388,6 +409,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Technology / AI -->
       <tr>
         <td><strong>Technology & AI</strong><br/><small>(Algorithms, neural networks, software)</small></td>
+        <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Tech companies blind to society-scale consequences</div></div></td>
         <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Gradient descent in all ML, optimization</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Curriculum learning, Socratic methods</div></div></td>
         <td><div class="fit-indicator fit-moderate"><span>◐</span><div class="fit-tooltip">Evolution of technology, novelty</div></div></td>
@@ -397,6 +419,7 @@ description: See which frameworks apply to which domains, and which one to use f
       <!-- Medicine -->
       <tr>
         <td><strong>Medicine</strong><br/><small>(Disease, treatment, health)</small></td>
+        <td><div class="fit-indicator fit-excellent"><span>★</span><div class="fit-tooltip">Regulators' safety-goal blinds to delay-deaths</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Physiological equilibrium, disease as dysregulation</div></div></td>
         <td><div class="fit-indicator fit-good"><span>✓</span><div class="fit-tooltip">Patient education, behavior change</div></div></td>
         <td><div class="fit-indicator fit-moderate"><span>◐</span><div class="fit-tooltip">Evolution of disease resistance</div></div></td>
@@ -411,6 +434,7 @@ description: See which frameworks apply to which domains, and which one to use f
 <div class="framework-selector">
   <strong>Select a framework for detailed analysis:</strong>
   <div class="framework-buttons">
+    <button class="framework-btn" onclick="showFrameworkDetail('goalblindness')">Goal-Blindness (Root)</button>
     <button class="framework-btn" onclick="showFrameworkDetail('universal')">Universal Foundation</button>
     <button class="framework-btn" onclick="showFrameworkDetail('help')">Help Systems</button>
     <button class="framework-btn" onclick="showFrameworkDetail('eras')">Cosmic Eras</button>
@@ -422,6 +446,16 @@ description: See which frameworks apply to which domains, and which one to use f
 
 <script>
 const frameworkDetails = {
+  goalblindness: {
+    title: 'Goal-Blindness: The Root Cause',
+    bestFor: ['Psychology', 'Education', 'Medicine', 'Sociology', 'Economics', 'Parenting', 'Management'],
+    whenToUse: 'When you need to understand WHY help systems prevent development, WHY institutions block advancement, WHY people perpetuate harm they don\'t see. When you need to design systems that measure what people are blind to.',
+    whenNotToUse: 'Goal-blindness applies to all human decision-making, so it ALWAYS applies when humans are involved.',
+    prerequisites: 'No technical background. Just the ability to recognize: "I can\'t think past my own goals and see consequences to others."',
+    relatedFrameworks: ['Help Systems (manifestation of goal-blindness at individual scale)', 'Institutional blockage mechanisms (manifestation of goal-blindness at institutional scale)', 'Universal Foundation (what happens when blindness prevents optimization)'],
+    keywords: ['blindness', 'goals', 'consequences', 'measurement', 'externalities', 'feedback', 'accountability']
+  },
+  
   universal: {
     title: 'Universal Foundation: dℹ/dt = -∇Φ',
     bestFor: ['Physics', 'Chemistry', 'AI & Machine Learning', 'Economics', 'Neuroscience'],
