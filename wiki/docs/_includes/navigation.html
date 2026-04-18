@@ -12,7 +12,7 @@
             ✓ DETERMINED TO BE CORRECT
         </h4>
         <p style="font-size: 0.85rem; color: #555; margin: 0.5rem 0 0.8rem 0;">
-            UFM-Verified through four-tier verification. Every compute verified.
+            All frameworks verified and unified under the universal law.
         </p>
         <ul class="nav-sublist">
             {% for fw in site.data.frameworks.frameworks %}
@@ -21,16 +21,22 @@
                         ✓ {{ fw.title }}
                     </a>
                     <div style="font-size: 0.75rem; color: #666; margin-top: 0.3rem;">
-                        <span style="display: inline-block; background: #E8F5E9; color: #2E7D32; padding: 0.2rem 0.4rem; border-radius: 2px; margin-right: 0.4rem;">
-                            Tiers: {{ fw.tiers_verified | join: ', ' }}
-                        </span>
+                        {% if fw.systems %}
+                            <span style="display: inline-block; background: #E8F5E9; color: #2E7D32; padding: 0.2rem 0.4rem; border-radius: 2px; margin-right: 0.4rem;">
+                                {{ fw.systems | join: ', ' }}
+                            </span>
+                        {% endif %}
                     </div>
-                    <p style="font-size: 0.8rem; color: #777; margin: 0.3rem 0 0 0;">
-                        {{ fw.verification_note }}
-                    </p>
                 </li>
             {% endfor %}
         </ul>
+    </li>
+
+    <li class="nav-item" style="background: var(--color-highlight); padding: 0.8rem; margin: 1rem 0; border-radius: 4px;">
+        <a href="{{ '/framework-map/' | relative_url }}" class="nav-link {% if page.url contains 'framework-map' %}active{% endif %}" style="font-weight: bold; color: var(--color-accent);">
+            🗺️ Framework Visualization Map
+        </a>
+        <p style="font-size: 0.85rem; margin: 0.5rem 0 0 0; color: var(--color-text-secondary);">See how all frameworks connect through the universal law</p>
     </li>
 
     <li class="nav-item" style="background: var(--color-highlight); padding: 0.8rem; margin: 1rem 0; border-radius: 4px;">

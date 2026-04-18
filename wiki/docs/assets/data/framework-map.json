@@ -1,0 +1,65 @@
+{
+  "frameworks": [
+    {
+      "name": "universal-physics",
+      "title": "Universal Physics Engine",
+      "description": "All coherent physical systems obey this single law. This engine implements it.",
+      "path": "framework/universal-physics",
+      "systems": ["photon", "electron", "atom", "molecule", "cell", "galaxy"],
+      "readme": "framework/universal-physics/README.md"
+    },
+    {
+      "name": "cosmology-reversal",
+      "title": "Cosmology Reversal Module",
+      "description": "Using the universal physics foundation's single evolution law:",
+      "path": "framework/cosmology-reversal",
+      "systems": ["cosmology", "temporal", "gravitational", "reversal"],
+      "readme": "framework/cosmology-reversal/README.md"
+    }
+  ],
+  "visualization": {
+    "nodes": [
+      {
+        "id": "universal-law",
+        "label": "Universal Law: dℹ/dt = -∇Φ",
+        "systems": ["all"],
+        "color": "#ff6b6b",
+        "isCenter": true
+      },
+      {
+        "id": "universal-physics",
+        "label": "Universal Physics Engine",
+        "systems": ["photon", "electron", "atom", "molecule", "cell", "galaxy"],
+        "color": "#4CAF50",
+        "url": "framework/universal-physics/README.md"
+      },
+      {
+        "id": "cosmology-reversal",
+        "label": "Cosmology Reversal Module",
+        "systems": ["cosmology", "temporal", "gravitational", "reversal"],
+        "color": "#2196F3",
+        "url": "framework/cosmology-reversal/README.md"
+      }
+    ],
+    "edges": [
+      {
+        "source": "universal-law",
+        "target": "universal-physics",
+        "isUniversal": true,
+        "strength": 1
+      },
+      {
+        "source": "universal-law",
+        "target": "cosmology-reversal",
+        "isUniversal": true,
+        "strength": 1
+      },
+      {
+        "source": "universal-physics",
+        "target": "cosmology-reversal",
+        "label": "cosmology, gravitational",
+        "strength": 2
+      }
+    ]
+  }
+}
