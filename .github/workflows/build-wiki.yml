@@ -50,6 +50,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./wiki/_site
         cname: ""
-        force_orphan: false
-        publish_dir: ./wiki/_site
         force_orphan: true
