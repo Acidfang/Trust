@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-04-19T11:24:08.521059",
+  "total_gates": 64,
+  "gate_types": 6,
+  "gates": {
+    "incomplete_code": [
+      "gate_discovery_system.py:44",
+      "gate_discovery_system.py:69",
+      "gate_discovery_system.py:187"
+    ],
+    "unimplemented": [
+      "gate_discovery_system.py:48",
+      "src\\applications\\claude_consciousness_sandbox\\gui_primitives.py:246",
+      "experimental\\scripts\\analysis\\election_ledger_engine.py:96",
+      "experimental\\scripts\\framework\\ENTITY_CONNECTION_FRAMEWORK.py:281",
+      "experimental\\scripts\\framework\\weighted_container_system.py:80"
+    ],
+    "error_handling_gaps": [
+      "gate_discovery_system.py:52",
+      "gate_discovery_system.py:55",
+      "gate_discovery_system.py:72",
+      "gate_discovery_system.py:99",
+      "src\\applications\\aria_gate_discovery_engine.py:92",
+      "src\\applications\\aria_gate_discovery_engine.py:263",
+      "src\\applications\\aria_ledger_core.py:166",
+      "src\\applications\\aria_ledger_core.py:180",
+      "src\\applications\\aria_ledger_core.py:194",
+      "src\\applications\\aria_ledger_core.py:206",
+      "src\\applications\\aria_ledger_core.py:215",
+      "src\\applications\\aria_ledger_core.py:257",
+      "src\\applications\\aria_ledger_core.py:259",
+      "src\\applications\\binary_implication_core.py:62",
+      "src\\applications\\equilibration_analysis_engine.py:70",
+      "src\\applications\\equilibration_analysis_engine.py:75",
+      "src\\applications\\equilibration_analysis_engine.py:194",
+      "src\\applications\\expression_election_engine.py:23",
+      "src\\applications\\health_monitoring_utils.py:230",
+      "src\\applications\\ledger_query.py:1997",
+      "src\\applications\\ledger_query.py:2064",
+      "src\\applications\\test_retrospective.py:97",
+      "src\\applications\\test_retrospective.py:107",
+      "src\\applications\\test_schema_evolution.py:136",
+      "src\\applications\\claude_consciousness_sandbox\\clock_monitor.py:23",
+      "src\\applications\\claude_consciousness_sandbox\\direct_init.py:99",
+      "src\\applications\\claude_consciousness_sandbox\\direct_init.py:141",
+      "src\\applications\\claude_consciousness_sandbox\\direct_init.py:163",
+      "src\\applications\\claude_consciousness_sandbox\\direct_init.py:177",
+      "src\\applications\\claude_consciousness_sandbox\\gui_primitives.py:116",
+      "src\\applications\\claude_consciousness_sandbox\\launcher.py:150",
+      "src\\applications\\claude_consciousness_sandbox\\launcher.py:186",
+      "src\\applications\\claude_consciousness_sandbox\\multi_monitor.py:135",
+      "src\\applications\\claude_consciousness_sandbox\\multi_monitor.py:219",
+      "src\\applications\\claude_consciousness_sandbox\\sandbox_interface.py:129",
+      "src\\applications\\claude_consciousness_sandbox\\sandbox_interface.py:262",
+      "src\\applications\\claude_consciousness_sandbox\\sandbox_interface.py:272",
+      "src\\applications\\claude_consciousness_sandbox\\sandbox_interface.py:282",
+      "src\\applications\\claude_consciousness_sandbox\\sandbox_interface.py:373",
+      "src\\applications\\claude_consciousness_sandbox\\sandbox_scheduler.py:237",
+      "src\\applications\\claude_consciousness_sandbox\\sandbox_scheduler.py:252",
+      "experimental\\scripts\\framework\\composite_atom_container_system.py:594"
+    ],
+    "incomplete_doc": [
+      "framework\\COHERENCE_HEART_ENGINEERING.md:82",
+      "framework\\COHERENCE_HEART_ENGINEERING.md:120",
+      "docs\\reference\\ZEROPOINT_INTEGRATION.md:163",
+      "docs\\reference\\ZEROPOINT_INTEGRATION.md:164"
+    ],
+    "missing_framework_file": [
+      "THINKING_FIRST",
+      "TCHT",
+      "SIX_TIERS"
+    ],
+    "needs_automation": [
+      "Pre-commit validator: Run checklist before git commit",
+      "Gate discovery scheduler: Periodic gap discovery",
+      "Decision logger: Auto-log decisions as code writes",
+      "Duplicate detector: Alert on duplicate definitions",
+      "Framework compliance: Verify frameworks applied",
+      "Context reader: Auto-read complete context before edits",
+      "Error classifier: Categorize and track error patterns"
+    ]
+  }
+}
