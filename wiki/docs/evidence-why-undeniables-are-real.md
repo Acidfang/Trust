@@ -1,3 +1,11 @@
+---
+layout: page
+title: Evidence - Why This Is Real
+permalink: /evidence-why-undeniables-are-real/
+description: Quantifiable proof of goal-blindness at individual and institutional scales
+toc: true
+---
+
 # Evidence: Why This Is Real, Not Theory
 
 **Measurable, observable proof that the same pattern (profit/belief/ignorance blocking progress) operates at both personal and institutional scales.**

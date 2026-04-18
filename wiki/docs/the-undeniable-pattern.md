@@ -1,3 +1,11 @@
+---
+layout: page
+title: The Undeniable Pattern
+permalink: /the-undeniable-pattern/
+description: How goal-blindness operates identically at individual and institutional scales
+toc: true
+---
+
 # The Undeniable Pattern: Individual to Institutional
 
 **How the same forces (profit, belief, ignorance) prevent gate-passage in people AND block advancement in systems.**

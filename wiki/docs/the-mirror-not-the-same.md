@@ -1,3 +1,11 @@
+---
+layout: page
+title: The Mirror - Why This Wiki Is Not the Same
+permalink: /the-mirror-not-the-same/
+description: Why visibility of harm is fundamentally different from invisibility of harm
+toc: true
+---
+
 # The Mirror: Why This Wiki Is Not the Same
 
 **"Isn't this wiki just doing the same thing? Being goal-blind to its own effects? Blocking in a different way?"**

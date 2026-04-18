@@ -1,3 +1,11 @@
+---
+layout: page
+title: How Reality Works - Quick Reference
+permalink: /how-reality-works-quick-ref/
+description: One-page reference for each of the 5 blocking mechanisms
+toc: true
+---
+
 # How Reality Actually Works: Quick Reference
 
 **Why advancement gets blocked and what to do about it.**

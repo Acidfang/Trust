@@ -1,3 +1,11 @@
+---
+layout: page
+title: How Reality Works - Applied Analysis
+permalink: /how-reality-works-applied-analysis/
+description: 3-step framework for analyzing blockage mechanisms in any domain
+toc: true
+---
+
 # How to Find Blocked Advancement: Applied Analysis
 
 **Practical guide to identifying where systems are preventing progress and why.**

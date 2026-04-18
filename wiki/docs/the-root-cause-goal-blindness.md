@@ -1,3 +1,11 @@
+---
+layout: page
+title: The Root Cause - Goal-Blindness
+permalink: /the-root-cause-goal-blindness/
+description: You can't think past your own goals and see consequences to others
+toc: true
+---
+
 # The Root Cause: You Can't Think Past Your Own Goals
 
 **The fundamental limitation that perpetuates all blocking mechanisms at every scale.**

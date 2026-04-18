@@ -1,3 +1,11 @@
+---
+layout: page
+title: How Reality Works - Blocking Mechanisms
+permalink: /how-reality-works-blocking-mechanisms/
+description: The 5 institutional blockage mechanisms and how they prevent advancement
+toc: true
+---
+
 # How Reality Actually Works: Why Systems Block Advancement
 
 **Core principle**: Systems don't block advancement because the blocking works. They block advancement because **profit, belief, or ignorance** makes blocking more stable than changing.
