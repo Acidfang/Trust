@@ -334,6 +334,9 @@ ledger-shell/
 reference/
 wiki_assets/
 
+# Exception: Include wiki/docs (needed for GitHub Pages)
+!wiki/docs/
+
 # Legacy/research files
 00_START_HERE.md
 PHASE_4_COMPLETE.md
