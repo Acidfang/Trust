@@ -1,0 +1,71 @@
+<!-- Main Navigation Sidebar -->
+<ul class="nav-list">
+    <li class="nav-item">
+        <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+            📖 Introduction
+        </a>
+    </li>
+
+    <li class="nav-section">
+        <h4>THE COLD HARD TRUTH</h4>
+        <ul class="nav-sublist">
+            <li class="nav-item">
+                <a href="{{ '/internal-coherence/' | relative_url }}" class="nav-link {% if page.url contains 'internal-coherence' %}active{% endif %}">
+                    🎯 Internal Coherence Failure
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/help-systems/' | relative_url }}" class="nav-link {% if page.url contains 'help-systems' %}active{% endif %}">
+                    ⚙️ Help Systems as Gate-Skippers
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/help-systems-cards/' | relative_url }}" class="nav-link {% if page.url contains 'help-systems-cards' %}active{% endif %}">
+                    🎴 Help Systems Cards
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/diagnostic-method/' | relative_url }}" class="nav-link {% if page.url contains 'diagnostic-method' %}active{% endif %}">
+                    🔍 Diagnostic Framework
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="nav-section">
+        <h4>THE PATH TO PERFECTION</h4>
+        <ul class="nav-sublist">
+            <li class="nav-item">
+                <a href="{{ '/universal-foundation/' | relative_url }}" class="nav-link {% if page.url contains 'universal-foundation' %}active{% endif %}">
+                    🏗️ Universal Foundation
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/gate-discovery/' | relative_url }}" class="nav-link {% if page.url contains 'gate-discovery' %}active{% endif %}">
+                    🚪 How Gates Are Discovered
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/domain-examples/' | relative_url }}" class="nav-link {% if page.url contains 'domain-examples' %}active{% endif %}">
+                    🌍 Domain Examples
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/implementation/' | relative_url }}" class="nav-link {% if page.url contains 'implementation' %}active{% endif %}">
+                    🛠️ Implementation & Application
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ '/future/' | relative_url }}" class="nav-link {% if page.url contains 'future' %}active{% endif %}">
+                    🔮 Future Implications
+                </a>
+            </li>
+        </ul>
+    </li>
+
+    <li class="nav-item">
+        <a href="{{ '/complete-document/' | relative_url }}" class="nav-link {% if page.url contains 'complete-document' %}active{% endif %}">
+            📄 Complete Document
+        </a>
+    </li>
+</ul>
