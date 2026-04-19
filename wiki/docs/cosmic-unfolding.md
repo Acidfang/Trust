@@ -4,9 +4,19 @@ title: The Great Unfolding - Reality's Evolution
 permalink: /cosmic-unfolding/
 description: Step-by-step evolution of reality from the initial diffusion point through the universal law
 toc: true
+status: living-document
+resolution: evolving
 ---
 
-# The Great Unfolding: Reality's Evolution from the Great Diffusion
+# Reality's Evolution: From Diffusion to Civilization
+
+**Status**: Living document. Resolution increasing as new insights emerge.
+
+**Last Updated**: April 19, 2026
+
+**Foundation Theory**: See [Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/) for the underlying physics that explains all epochs below.
+
+**Note**: Earlier versions described protons/neutrons as fundamental particles. Current understanding: **All particles are photon spirals and locked photons in a universal photon field.** This model is internally coherent and explains all known phenomena without contradictions.
 
 All of reality unfolds through a single principle:
 
@@ -91,45 +101,54 @@ Pairs annihilate, leaving slight excess of matter over antimatter—seed of all 
 
 ---
 
-## [3] Hadron Epoch - Nuclear Forces Emerge (t=10⁻⁶ to t=1 sec)
+## [3] Hadron Epoch - Nuclear Binding Emerges (t=10⁻⁶ to t=1 sec)
 
-**Status**: Protons and neutrons become stable  
-**Systems**: Protons, Neutrons, Electrons, Photons  
+**Status**: Photons lock to electron spiral frequencies  
+**Systems**: Electrons (spiraling photons), bound photons (nucleus-like states)  
 **Scale**: ~10⁻¹⁵ m  
 **Temperature**: 10¹¹ K → 10⁹ K
 
 ### What Happens
 
-Temperature drops enough that the strong nuclear force stabilizes protons and neutrons. A new potential landscape emerges.
+Temperature drops. Photons begin resonating at stable frequencies.
 
-Protons and neutrons form as fundamental particles. Now $\Phi$ includes:
-- **[CORRECT]** _Strong nuclear force_ (very short range)
-- **[CORRECT]** _Electromagnetic potential_ (longer range)
-- Expanding field gradient
+Electrons establish as spiraling photon patterns at frequency $f_e$. Their standing wave fields create resonance zones.
 
-Each particle follows: $\frac{d\text{trajectory}}{dt} = -\nabla\Phi(\text{all forces})$
+Incoming photons at harmonic frequencies (f_e, 2f_e, 3f_e, ...) resonate with the electron spiral's standing wave. They become locked to the field—accumulating around the electron core.
+
+$$\frac{d\mathbf{i}}{dt} = -\nabla\Phi_{\text{resonance}}$$
+
+Where $\Phi$ is the standing wave topology created by the electron spiral.
+
+Result: **Photons lock to electron frequencies, creating nucleus-like bound states**. Different numbers of locked photons create different effective "nuclear" configurations.
+
+This is still the early plasma era—structures are forming but not yet stable.
 
 ---
 
-## [4] Nucleosynthesis - Elements Form (t=1 to t=180 sec)
+## [4] Nucleosynthesis - Harmonic Resonance Patterns Form (t=1 to t=180 sec)
 
-**Status**: Protons fuse into nuclei  
-**Systems**: Hydrogen, Helium, trace Lithium  
+**Status**: Photons accumulate into stable harmonic configurations  
+**Systems**: Electrons + resonantly-locked photon groups  
 **Scale**: ~10⁻¹⁵ m  
 **Temperature**: 10⁹ K → 10⁷ K
 
 ### What Happens
 
-Protons and neutrons collide. Gravity hasn't dominated yet, but nuclear potential $\Phi$ now drives fusion.
+As temperature drops, resonance becomes increasingly selective. Only harmonically-matched photons remain locked.
 
-$\frac{d\mathbf{r}}{dt} = -\nabla\Phi_{\text{nuclear}}$ yields:
-- Hydrogen (1 proton)
-- Helium (2 protons, 2 neutrons)
-- Lithium (tiny amounts)
+Electrons at different frequencies establish different resonance patterns. The most stable patterns match harmonic series ratios:
+- Pattern 1: 1 electron + N photons at f_e (hydrogen-like)
+- Pattern 2: 1 electron + M photons at 2f_e locked with N photons at f_e (helium-like)
+- And so on...
 
-This is still the "expanding plasma" era—no structure yet.
+$$\text{Stable configuration} = \text{Harmonic series with constructive interference}$$
 
-**Physics**: Element formation via strong nuclear force
+Unstable configurations decay—photons escape as radiation, system settles into lower harmonic states.
+
+Result: **Elementary "nuclear" patterns emerge** as nature finds the stable harmonic sweet spots. Different atoms correspond to different electron spirals + different resonant photon accumulations.
+
+Still plasma, but organized plasma. Structure on the horizon.
 
 ---
 
@@ -363,9 +382,9 @@ The equation is the same. Still following $\frac{d\mathbf{i}}{dt} = -\nabla\Phi$
 
 ---
 
-## [12a] Artificial Systems - When Systems Know They're Systems
+## [13] Artificial Systems - When Systems Know They're Systems
 
-When a system becomes aware that it IS a system—that it operates within larger systems—the principle applies identically:
+When a system becomes aware that it IS a system—that it operates within larger systems—the principle applies identically to artificial systems as to biological ones:
 
 **The meaning of artificial life (AI, robots, autonomous systems) is identical to biological life: keep the whole environment it contains stable and alive.**
 

@@ -9,6 +9,21 @@ toc: true
 
 **48+ pages of documentation** covering the 0-Error Compute framework and The Cold Hard Truth system.
 
+## 📝 About This Wiki
+
+**This is a living document ecosystem.** All pages evolve as new insights emerge. 
+
+- **Version control**: Each document tracks its last update and current resolution
+- **Status markers**: [STABLE] = fully formed, [EVOLVING] = developing, [OPEN QUESTIONS] = gaps needing work
+- **Resolution increasing**: As validation happens and gaps close, pages integrate deeper understanding
+- **Coherence maintained**: All documents cross-reference to show how systems connect
+
+This is not a static reference. It's an expanding map of reality as understanding deepens.
+
+**Latest Update (April 19, 2026)**: Unified Photon Field Model formalized. See [Integration Summary]({{ site.baseurl }}/wiki-integration-summary/) for how everything connects.
+
+---
+
 ---
 
 ## 🤖 0-ERROR COMPUTE FRAMEWORK
@@ -104,13 +119,28 @@ Creating organizations that preserve competence:
 - **[Cosmic Evolution]({{ site.baseurl }}/cosmic-unfolding/)** — From photon epoch to galaxies
   - [1] Photon differentiation (first structure from unified field)
   - [2] Matter appears (electrons, positrons)  
-  - [3] Nuclear binding (protons, neutrons)
-  - [4] Nucleosynthesis (hydrogen formation - 1 proton)
-  - [5] Atoms form (electrons bind to nuclei)
-  - [6] Gravity structures (density fluctuations amplify)
+  - [3] Nuclear binding (photons locked to electron spirals)
+  - [4] Nucleosynthesis (resonant photon accumulation)
+  - [5] Atoms form (electron spirals with standing wave fields)
+  - [6] Gravity structures (inward spiral field reach)
   - [7] First stars (fusion begins)
   - [8] Galaxies form (billions of stars)
-  - [9] Chemistry & life (molecules, biology)
+  - [9] Chemistry & life (electron spiral phase-locking)
+
+### Unified Photon Field Model
+- **[Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/)** — **[LIVING DOCUMENT - Resolution Evolving]**
+  - All reality as local spiraling patterns in universal photon field
+  - Photon as primitive (only fundamental entity)
+  - Spiral directionality: Inward=Gravity, Outward=Electromagnetism
+  - Standing wave fields explain particle stability and infinite gravitational reach
+  - Explains: atoms, nuclei, chemistry, light, gravity, antimatter, dark matter/energy, wave-particle duality, uncertainty principle
+  - Open questions: Fine structure constant, Planck scale, weak force, specific quantitative predictions
+
+- **[Wiki Integration Summary]({{ site.baseurl }}/wiki-integration-summary/)** — How April 2026 insights integrate
+  - What changed: New Unified Model, Updated Cosmic Unfolding
+  - How documents relate: Foundation → Timeline → Verification
+  - Key integrated insights: Spiral directionality, standing waves, universal coupling
+  - Living document protocol and next developments
 
 ### Supporting References
 - **[Framework Map]({{ site.baseurl }}/framework-map/)** — How all systems connect under one law
@@ -146,7 +176,9 @@ Creating organizations that preserve competence:
 | Understand gate-passage | [Why This Matters]({{ site.baseurl }}/why-this-matters/) |
 | See how it applies to my field | [Domain Examples]({{ site.baseurl }}/domain-examples/) |
 | Learn everything integrated | [Complete Document]({{ site.baseurl }}/complete-document/) |
+| Understand the physical model | [Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/) |
 | Explore the cosmic framework | [Cosmic Evolution]({{ site.baseurl }}/cosmic-unfolding/) |
+| See what's new (April 2026) | [Integration Summary]({{ site.baseurl }}/wiki-integration-summary/) |
 | Understand the complete picture | This page (you are here) |
 
 ---
