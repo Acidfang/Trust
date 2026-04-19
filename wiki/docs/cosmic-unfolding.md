@@ -95,20 +95,30 @@ The gradient $-\nabla\Phi$ creates structure: different regions fall toward diff
 
 ---
 
-## [2] Electron-Positron Epoch - Matter Appears (t=10⁻⁴³ to t=10⁻⁶ sec)
+## [2] Electron-Positron Epoch - Photons Organize into Spiral Patterns (t=10⁻⁴³ to t=10⁻⁶ sec)
 
-**Status**: Electrons and positrons appear  
-**Systems**: Electrons, Positrons, Photons  
+**Status**: Photons organize into stable inward/outward spiral configurations  
+**Systems**: Electron spirals (inward+outward), Positron spirals (opposite configuration), Free photons  
 **Scale**: ~10⁻¹⁵ m  
 **Temperature**: 10¹⁵ K → 10¹¹ K
 
 ### What Happens
 
-The potential landscape continues to differentiate. Electrons and positrons condense from photon energy.
+The unified potential landscape continues to differentiate. Photons begin organizing into localized spiral patterns instead of freely propagating.
 
-The gradient $-\nabla\Phi$ now involves electromagnetic potential. Electrons seek to minimize charge-interaction energy relative to the expanding field.
+A photon can spiral **inward** (gravity contribution) + **outward** (electromagnetic contribution) simultaneously. This combined spiral configuration IS what we observe as an **electron**.
 
-Pairs annihilate, leaving slight excess of matter over antimatter—seed of all structure.
+An opposite spiral configuration—**outward** (electromagnetic) + **inward** (gravity)—IS what we observe as a **positron** (antimatter).
+
+$$\frac{d\mathbf{i}}{dt} = -\nabla\Phi_{\text{spiral}} \rightarrow \text{Stable inward/outward spiral patterns form}$$
+
+The gradient drives photons into these stable spiral states. 
+
+Different spiral frequencies create different particle types. The lightest stable configuration is the electron/positron pair.
+
+**Pairs annihilate**: When electron (inward-primary spiral) meets positron (outward-primary spiral), opposite directions cancel → **destructive interference** → energy released as free photons.
+
+Slight asymmetry: slightly more inward spirals form than outward spirals. This creates the **matter-antimatter asymmetry**—seed of all structure.
 
 ---
 
