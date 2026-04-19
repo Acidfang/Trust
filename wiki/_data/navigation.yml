@@ -34,7 +34,7 @@ navigation:
     icon: "🎯"
     children:
       - name: "Why This Matters"
-        url: "/why-matters/"
+        url: "/why-this-matters/"
       - name: "Core Concepts"
         children:
           - name: "Internal Coherence Failure"
@@ -71,9 +71,3 @@ navigation:
     children:
       - name: "Complete Index"
         url: "/full-index/"
-      - name: "Search"
-        url: "/search/"
-      - name: "FAQ"
-        url: "/faq/"
-      - name: "Glossary"
-        url: "/glossary/"
