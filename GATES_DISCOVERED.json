@@ -1,15 +1,18 @@
 {
-  "timestamp": "2026-04-19T11:24:08.521059",
-  "total_gates": 64,
+  "timestamp": "2026-04-19T15:03:55.474053",
+  "total_gates": 69,
   "gate_types": 6,
   "gates": {
     "incomplete_code": [
       "gate_discovery_system.py:44",
       "gate_discovery_system.py:69",
-      "gate_discovery_system.py:187"
+      "gate_discovery_system.py:187",
+      "pre_commit_validator.py:174"
     ],
     "unimplemented": [
       "gate_discovery_system.py:48",
+      "pre_commit_validator.py:102",
+      "pre_commit_validator.py:104",
       "src\\applications\\claude_consciousness_sandbox\\gui_primitives.py:246",
       "experimental\\scripts\\analysis\\election_ledger_engine.py:96",
       "experimental\\scripts\\framework\\ENTITY_CONNECTION_FRAMEWORK.py:281",
@@ -20,6 +23,8 @@
       "gate_discovery_system.py:55",
       "gate_discovery_system.py:72",
       "gate_discovery_system.py:99",
+      "pre_commit_validator.py:95",
+      "pre_commit_validator.py:98",
       "src\\applications\\aria_gate_discovery_engine.py:92",
       "src\\applications\\aria_gate_discovery_engine.py:263",
       "src\\applications\\aria_ledger_core.py:166",
