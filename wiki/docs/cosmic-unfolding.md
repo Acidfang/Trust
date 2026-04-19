@@ -95,30 +95,41 @@ The gradient $-\nabla\Phi$ creates structure: different regions fall toward diff
 
 ---
 
-## [2] Electron-Positron Epoch - Photons Organize into Spiral Patterns (t=10⁻⁴³ to t=10⁻⁶ sec)
+## [2] Electron-Positron Epoch - Spiral Direction Determines Particle Type (t=10⁻⁴³ to t=10⁻⁶ sec)
 
-**Status**: Photons organize into stable inward/outward spiral configurations  
-**Systems**: Electron spirals (inward+outward), Positron spirals (opposite configuration), Free photons  
+**Status**: Photons organize into directional spiral cycles  
+**Systems**: Electron spirals (outward→inward cycle), Positron spirals (inward→outward cycle), Free photons  
 **Scale**: ~10⁻¹⁵ m  
 **Temperature**: 10¹⁵ K → 10¹¹ K
 
 ### What Happens
 
-The unified potential landscape continues to differentiate. Photons begin organizing into localized spiral patterns instead of freely propagating.
+The unified potential landscape continues to differentiate. Photons begin organizing into **cyclical spiral patterns** instead of freely propagating.
 
-A photon can spiral **inward** (gravity contribution) + **outward** (electromagnetic contribution) simultaneously. This combined spiral configuration IS what we observe as an **electron**.
+A photon can spiral in a **cycle**:
+- **OUTWARD then BACK INWARD** = Electron (matter particle)
+- **INWARD then BACK OUTWARD** = Positron (antimatter particle)
 
-An opposite spiral configuration—**outward** (electromagnetic) + **inward** (gravity)—IS what we observe as a **positron** (antimatter).
+The direction of the spiral cycle is what distinguishes them:
 
-$$\frac{d\mathbf{i}}{dt} = -\nabla\Phi_{\text{spiral}} \rightarrow \text{Stable inward/outward spiral patterns form}$$
+$$\text{Electron: Cycle OUT→IN} \quad \text{vs} \quad \text{Positron: Cycle IN→OUT}$$
 
-The gradient drives photons into these stable spiral states. 
+The same photon energy, same frequency, but **opposite spiral direction/cycle**.
 
-Different spiral frequencies create different particle types. The lightest stable configuration is the electron/positron pair.
+### Why This Matters
 
-**Pairs annihilate**: When electron (inward-primary spiral) meets positron (outward-primary spiral), opposite directions cancel → **destructive interference** → energy released as free photons.
+**Annihilation**: When electron (OUT→IN cycle) meets positron (IN→OUT cycle):
+- Opposite cycles approach each other
+- Cycles cancel: OUT→IN + IN→OUT = destructive interference
+- Energy released as free photons
 
-Slight asymmetry: slightly more inward spirals form than outward spirals. This creates the **matter-antimatter asymmetry**—seed of all structure.
+**Why it's "opposite"**: The photon doesn't flip between states. Rather, at this energy, photons naturally organize into two spiral directions:
+- One favors outward-first motion (becomes electron as it establishes)
+- One favors inward-first motion (becomes positron as it establishes)
+
+**Matter-antimatter asymmetry**: At 10¹⁵ K, the energy landscape slightly favors the outward-first cycle (electron). More electrons form than positrons. This tiny excess—one electron per billion electron-positron pairs—seeds all matter in the universe.
+
+$$\frac{d\mathbf{i}}{dt} = -\nabla\Phi \rightarrow \text{Spiral cycles form in energetically stable directions}$$
 
 ---
 

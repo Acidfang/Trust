@@ -43,11 +43,16 @@ No separate fundamental particles. No separate forces. One unified mechanism.
 
 ### 2. Spiraling Creates Particles
 
-**Spiraling**: Photon energy organized into rotating/spiral pattern instead of linear propagation.
+**Spiraling**: Photon energy organized into **cyclical spiral pattern** instead of linear propagation.
 
-$$\text{Free photon (propagating)} \rightarrow \text{Spiral photon (localized)} = \text{Particle}$$
+$$\text{Free photon (propagating)} \rightarrow \text{Spiral photon (cyclical)} = \text{Particle}$$
 
-**Electron**: Single photon in spiral configuration at frequency $f_e$
+**Spiral direction matters**: The direction the photon cycles determines particle type:
+- **Outward→Inward cycle** = Electron (matter)
+- **Inward→Outward cycle** = Positron (antimatter)
+- **Other frequencies/cycles** = Other particles (muons, tau, etc.)
+
+**Electron**: Single photon in outward→inward spiral cycle at frequency $f_e$
 
 **Nucleus**: Many photons locked harmonically to electron spiral frequency
 
@@ -77,24 +82,23 @@ $$\text{Incoming photon} + \text{Spiral field} \rightarrow \text{Constructive in
 - Binding strength determined by frequency match quality
 - Some configurations more stable than others (magic numbers)
 
-### 5. Spiral Directionality Determines Force Type
+### 5. Spiral Cycle Direction Determines Particle Identity
 
-**Inward spiral** (energy concentrating toward center):
-- Creates density at core
-- Manifests as gravitational attraction
-- Reach determined by standing wave extent
-- Inverse square law emerges from spherical spreading
+**Spiral cycle**: Each spiral photon executes a complete cycle: outward phase + inward phase (or vice versa).
 
-**Outward spiral** (energy radiating from center):
-- Creates field expansion
-- Manifests as electromagnetic effects
-- Asymmetry in spiral → charge properties
-- Field interactions → repulsion/attraction between particles
+**Direction of cycle** determines particle type:
+- **Outward→Inward cycle** = Electron (primary matter particle)
+- **Inward→Outward cycle** = Positron (primary antimatter particle)
+- **Net electromagnetic effect** from the outward-phase of the cycle
+- **Net gravitational effect** from the inward-phase of the cycle
 
-**Combined/mixed spirals**:
-- Bound states
-- Atomic configurations
-- Stable matter
+**Why both spirals contribute to each particle**:
+- Electron (outward→inward): Outward phase dominates electromagnetic behavior, inward phase contributes to gravitational "mass"
+- Positron (inward→outward): Inward phase dominates electromagnetic behavior (reversed charge), outward phase still contributes to gravitational mass
+
+**Standing waves** created by the cycle frequency reach out with 1/r amplitude decay, creating the field presence.
+
+**Asymmetry**: The direction the cycle flows—whether it naturally starts outward or inward—is what distinguishes matter from antimatter. This is encoded in the photon's fundamental spiral orientation.
 
 ---
 
@@ -149,23 +153,30 @@ The universal field is everywhere:
 
 ### Electrons and Positrons
 
-**Electron**: Photon spiraling inward + outward
+**Electron**: Photon in **outward→inward spiral cycle**
 
-- Inward spiral → gravitational component (negligible at atomic scale)
-- Outward spiral → electromagnetic field (dominant)
-- Standing wave at frequency $f_e$ → electron size and properties
-- Spin 1/2 → helical nature of spiral (needs 2 rotations to return)
+- Spiral direction: Outward first, then cycles back inward
+- Creates standing wave at frequency $f_e$
+- Gravitational component (from inward component of cycle)
+- Electromagnetic field (from outward component of cycle)
+- Spin 1/2 → helical nature of spiral cycle (needs 2 rotations to return to same phase)
 
-**Positron**: Opposite spiral configuration to electron
+**Positron**: Photon in **inward→outward spiral cycle** (opposite direction)
 
-- Outward spiral primary (electromagnetic)
-- Inward spiral secondary
-- Opposite phase to electron field
+- Spiral direction: Inward first, then cycles back outward
+- Opposite cycle phase to electron
+- Same frequency $f_e$, but reversed cycle direction
+- Identical mass, opposite charge sign
+
+**Why the distinction matters**: The direction the photon spirals (which component cycles first) determines whether it's matter or antimatter.
 
 **Annihilation**: Electron + Positron collision
-- Opposite spirals meet
-- Destructive interference (inward + outward cancel)
-- Energy released as free photons
+- Outward→inward cycle meets inward→outward cycle
+- Opposite cycle directions meet and cancel (destructive interference)
+- Standing wave pattern collapses
+- Energy released as free photons: $e^- + e^+ \rightarrow \gamma + \gamma$
+
+**Matter-antimatter asymmetry**: At early universe temperatures, outward→inward cycles (electrons) are slightly more stable than inward→outward cycles (positrons). Result: tiny excess of electrons over positrons, seeding all matter.
 
 ### Nuclei
 
