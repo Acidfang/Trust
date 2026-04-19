@@ -234,7 +234,7 @@ Click on any stage to explore that era of cosmic evolution.
     <!-- Stage 3 -->
     <div class="timeline-stage early" onclick="showStage(3)">
       <div class="timeline-dot">⚛️</div>
-      <div class="timeline-label">Quarks</div>
+      <div class="timeline-label">Nuclear Forces</div>
       <div class="timeline-time">1 s</div>
     </div>
 
@@ -358,14 +358,14 @@ const stages = [
     title: "Hadron Epoch",
     emoji: "⚛️",
     timescale: "1 second",
-    description: "Quarks bind into protons and neutrons as temperature drops.",
+    description: "Protons and neutrons become stable as strong nuclear force emerges.",
     stats: [
       { label: "Scale", value: "10⁻¹⁵ m" },
       { label: "Temperature", value: "10¹¹ → 10⁹ K" },
-      { label: "Key process", value: "Quark confinement" }
+      { label: "Key process", value: "Strong nuclear force" }
     ],
     physics: "dℹ/dt = -∇Φ(strong nuclear)",
-    keyInsight: "Strong force becomes relevant. First composite particles.",
+    keyInsight: "Strong force stabilizes fundamental nuclear particles.",
     explore: "/cosmic-unfolding/#3-hadron-epoch"
   },
   {

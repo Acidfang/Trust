@@ -63,18 +63,18 @@ Pairs annihilate, leaving slight excess of matter over antimatter—seed of all 
 
 ---
 
-## [3] Hadron Epoch - Quarks Bind (t=10⁻⁶ to t=1 sec)
+## [3] Hadron Epoch - Nuclear Forces Emerge (t=10⁻⁶ to t=1 sec)
 
-**Status**: Quarks combine into protons and neutrons  
+**Status**: Protons and neutrons become stable  
 **Systems**: Protons, Neutrons, Electrons, Photons  
 **Scale**: ~10⁻¹⁵ m  
 **Temperature**: 10¹¹ K → 10⁹ K
 
 ### What Happens
 
-Temperature drops enough that quarks can bind. Strong nuclear force comes into play—a new potential landscape.
+Temperature drops enough that the strong nuclear force stabilizes protons and neutrons. A new potential landscape emerges.
 
-Protons and neutrons form. Now $\Phi$ includes:
+Protons and neutrons form as fundamental particles. Now $\Phi$ includes:
 - Strong nuclear potential (very short range)
 - Electromagnetic potential (longer range)
 - Expanding field gradient
