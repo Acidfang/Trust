@@ -29,12 +29,6 @@ All matter, energy, space, and time are unified. The potential landscape $\Phi$ 
 
 The universal law immediately begins driving differentiation: particles want to move down the gradient of the unified potential.
 
-### Verification by Reversal
-
-Time-reverse any observable galaxy backward 13.8 billion years with the cosmology reversal module. All trajectories converge to a single point—proving this is where all galaxies came from.
-
-**→ [Cosmology Reversal Module]({{ site.baseurl }}/framework/cosmology-reversal/)**
-
 ---
 
 ## [1] Photon Epoch - First Differentiation (t=0 to t=10⁻⁴³ sec)
@@ -49,8 +43,6 @@ Time-reverse any observable galaxy backward 13.8 billion years with the cosmolog
 Space expands. The unified potential separates. Very high-energy photons separate from the field.
 
 The gradient $-\nabla\Phi$ creates structure: different regions fall toward different potential minima. This IS differentiation—the beginning of complexity.
-
-**Physics**: [Photon model]({{ site.baseurl }}/framework/universal-physics/#photon-system)
 
 ---
 
@@ -68,8 +60,6 @@ The potential landscape continues to differentiate. Electrons and positrons cond
 The gradient $-\nabla\Phi$ now involves electromagnetic potential. Electrons seek to minimize Coulomb energy relative to the expanding field.
 
 Pairs annihilate, leaving slight excess of matter over antimatter—seed of all structure.
-
-**Physics**: [Electron model]({{ site.baseurl }}/framework/universal-physics/#electron-system)
 
 ---
 
@@ -130,8 +120,6 @@ $\Phi_{\text{Coulomb}}$ (electron-nucleus potential) has its minimum at the Bohr
 
 **Ancient atoms form**—but completely uniform, spread throughout space.
 
-**Physics**: [Hydrogen atom model]({{ site.baseurl }}/framework/universal-physics/#hydrogen-atom-system)
-
 ---
 
 ## [6] Structure Formation - Gravity Emerges (t=380,000 yrs to t=100 million yrs)
@@ -152,8 +140,6 @@ Where $M$ is local mass. The gradient $-\nabla\Phi_{\text{grav}}$ points INWARD 
 Result: **Gravity amplifies tiny fluctuations into massive structures**.
 
 Matter flows downhill in the gravitational potential landscape.
-
-**Physics**: [Galaxy formation via gravity]({{ site.baseurl }}/framework/universal-physics/#galaxy-system)
 
 ---
 
@@ -176,7 +162,7 @@ Protons fuse into Helium. This releases energy—stops further collapse, creates
 
 $\frac{d\mathbf{r}}{dt} = -\nabla\Phi_{\text{total}}$ now includes both gravity and nuclear forces—star achieves equilibrium.
 
-**Verification**: All stars in the universe follow one law—the universal evolution equation.
+All stars in the universe follow one law—the universal evolution equation.
 
 ---
 
@@ -196,8 +182,6 @@ $$\Phi_{\text{grav}}(\vec{r}) = -\frac{GM_{\text{total}}(\vec{r})}{|\vec{r}|}$$
 Individual stars orbit the galactic center following $\frac{d\vec{v}}{dt} = -\nabla\Phi$.
 
 Galaxy is self-gravitating system where millions of trajectories all follow one law.
-
-**Verification**: [Cosmology Reversal Module reverses galaxy trajectories back to origin]({{ site.baseurl }}/framework/cosmology-reversal/)
 
 ---
 
@@ -314,8 +298,6 @@ But now we can choose $\Phi$.
 **Want to explore further?**
 
 - **Interactive Timeline**: [Explore each era interactively]({{ site.baseurl }}/timeline-navigator/) with clickable stages
-- **Framework Details**: [Universal Physics Engine]({{ site.baseurl }}/framework/universal-physics/) models each stage
-- **Verify the Origin**: [Cosmology Reversal]({{ site.baseurl }}/framework/cosmology-reversal/) traces galaxies back to the diffusion point
 - **See Connections**: [Framework Map]({{ site.baseurl }}/framework-map/) shows how all systems unify under one law
 - **Understand Structure**: [Universal Foundation]({{ site.baseurl }}/universal-foundation/) explains the mathematical basis
 

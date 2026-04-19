@@ -357,7 +357,7 @@ Best for: Retention and practical skill
 - [Universal Foundation]({{ site.baseurl }}/universal-foundation/) - Full mathematical basis
 - Framework code and documentation
 - Verification proofs and implementations
-- [Cosmology Reversal]({{ site.baseurl }}/framework/cosmology-reversal/) - Working implementation
+
 
 **Toggle technical view:**
 

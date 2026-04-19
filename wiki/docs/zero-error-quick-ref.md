@@ -125,7 +125,7 @@ TIMESTAMP: [When decided]
 - [Universal Mandate]({{ site.baseurl }}/zero-error/mandate/) — Complete requirements
 - [Task Template]({{ site.baseurl }}/zero-error/task-template/) — Full 8-phase details
 - [Pre-Action Checklist]({{ site.baseurl }}/zero-error/pre-action/) — 6-step gate details
-- [Master Index]({{ site.baseurl }}/zero-error/master-index/) — Navigate all frameworks
+
 
 ---
 

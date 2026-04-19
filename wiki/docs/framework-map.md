@@ -62,7 +62,7 @@ The foundational framework that implements the universal law. It can model any c
 
 **Systems modeled**: Photons, Electrons, Atoms, Molecules, Cells, Galaxies
 
-**Location**: [framework/universal-physics/](../framework/universal-physics/)
+All physics models are available in the GitHub repository under `/framework/universal-physics/`.
 
 ### Cosmology Reversal Module
 
@@ -70,7 +70,7 @@ Uses the universal physics foundation's single evolution law to time-reverse gal
 
 **Systems modeled**: Cosmology, Temporal dynamics, Gravitational systems, Reversal mechanics
 
-**Location**: [framework/cosmology-reversal/](../framework/cosmology-reversal/)
+Time-reversal verification tool is available in the GitHub repository under `/framework/cosmology-reversal/`.
 
 ## How to Read the Map
 

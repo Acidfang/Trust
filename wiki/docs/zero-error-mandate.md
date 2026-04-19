@@ -100,8 +100,7 @@ All 6 must answer YES before code is written.
 
 - [Task Template]({{ site.baseurl }}/zero-error/task-template/) — 8-phase execution with thinking + verification
 - [Pre-Action Checklist]({{ site.baseurl }}/zero-error/pre-action/) — 6-step gate before every edit
-- [Master Index]({{ site.baseurl }}/zero-error/master-index/) — Navigate frameworks while thinking
-- [Environment Knowledge]({{ site.baseurl }}/zero-error/environment/) — Know your tools and error patterns
+
 
 ---
 
