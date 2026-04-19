@@ -1,0 +1,321 @@
+<!-- Unified Navigation based on navigation.yml data -->
+<div class="unified-nav">
+    <!-- Main Navigation List -->
+    <ul class="nav-list primary-nav">
+        
+        <!-- Home Link -->
+        <li class="nav-item nav-home">
+            <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+                🏠 Home
+            </a>
+        </li>
+
+        <!-- 0-ERROR COMPUTE SECTION -->
+        <li class="nav-section">
+            <h4 class="nav-section-title">🤖 0-ERROR COMPUTE</h4>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="{{ '/zero-error/intro/' | relative_url }}" class="nav-link {% if page.url contains 'zero-error/intro' %}active{% endif %}">
+                        📖 Introduction
+                    </a>
+                    <small class="nav-desc">What is 0-error compute</small>
+                </li>
+                
+                <li class="nav-item nav-expandable">
+                    <span class="nav-label">🎯 Core Frameworks</span>
+                    <ul class="nav-sublist-nested">
+                        <li><a href="{{ '/zero-error/mandate/' | relative_url }}" class="nav-link">Universal Mandate</a></li>
+                        <li><a href="{{ '/zero-error/task-template/' | relative_url }}" class="nav-link">Task Template</a></li>
+                        <li><a href="{{ '/zero-error/quick-ref/' | relative_url }}" class="nav-link">Quick Reference</a></li>
+                        <li><a href="{{ '/zero-error/master-index/' | relative_url }}" class="nav-link">Master Index</a></li>
+                        <li><a href="{{ '/zero-error/environment/' | relative_url }}" class="nav-link">Environment Knowledge</a></li>
+                        <li><a href="{{ '/zero-error/pre-action/' | relative_url }}" class="nav-link">Pre-Action Checklist</a></li>
+                        <li><a href="{{ '/zero-error/operating-system/' | relative_url }}" class="nav-link">Unified Operating System</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item nav-expandable">
+                    <span class="nav-label">⚙️ Automation Tools</span>
+                    <ul class="nav-sublist-nested">
+                        <li><a href="{{ '/zero-error/validator/' | relative_url }}" class="nav-link">Pre-commit Validator</a></li>
+                        <li><a href="{{ '/zero-error/logger/' | relative_url }}" class="nav-link">Decision Logger</a></li>
+                        <li><a href="{{ '/zero-error/detector/' | relative_url }}" class="nav-link">Duplicate Detector</a></li>
+                        <li><a href="{{ '/zero-error/compliance/' | relative_url }}" class="nav-link">Framework Compliance</a></li>
+                        <li><a href="{{ '/zero-error/gates/' | relative_url }}" class="nav-link">Gate Discovery System</a></li>
+                        <li><a href="{{ '/zero-error/runner/' | relative_url }}" class="nav-link">Automation Runner</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item nav-expandable">
+                    <span class="nav-label">🔐 Verification & Entry</span>
+                    <ul class="nav-sublist-nested">
+                        <li><a href="{{ '/zero-error/entry/' | relative_url }}" class="nav-link">Entry Gate</a></li>
+                        <li><a href="{{ '/zero-error/orientation/' | relative_url }}" class="nav-link">Project Orientation</a></li>
+                        <li><a href="{{ '/zero-error/pre-edit/' | relative_url }}" class="nav-link">Pre-Edit Verification</a></li>
+                        <li><a href="{{ '/zero-error/integration/' | relative_url }}" class="nav-link">Integration Guide</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="{{ '/zero-error/wiki/' | relative_url }}" class="nav-link {% if page.url contains 'zero-error/wiki' %}active{% endif %}">
+                        📚 Complete Wiki
+                    </a>
+                    <small class="nav-desc">All documentation indexed</small>
+                </li>
+            </ul>
+        </li>
+
+        <!-- THE COLD HARD TRUTH SECTION -->
+        <li class="nav-section">
+            <h4 class="nav-section-title">🎯 THE COLD HARD TRUTH</h4>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="{{ '/why-matters/' | relative_url }}" class="nav-link {% if page.url contains 'why-matters' %}active{% endif %}">
+                        ⚠️ Why This Matters
+                    </a>
+                    <small class="nav-desc">The problem this solves</small>
+                </li>
+                
+                <li class="nav-item nav-expandable">
+                    <span class="nav-label">🏗️ Core Concepts</span>
+                    <ul class="nav-sublist-nested">
+                        <li><a href="{{ '/internal-coherence/' | relative_url }}" class="nav-link">Internal Coherence Failure</a></li>
+                        <li><a href="{{ '/goal-blindness/' | relative_url }}" class="nav-link">Goal-Blindness</a></li>
+                        <li><a href="{{ '/universal-foundation/' | relative_url }}" class="nav-link">Universal Foundation</a></li>
+                        <li><a href="{{ '/ten-gates/' | relative_url }}" class="nav-link">The 10 Gates</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item nav-expandable">
+                    <span class="nav-label">🎯 Help Systems Analysis</span>
+                    <ul class="nav-sublist-nested">
+                        <li><a href="{{ '/help-systems/overview/' | relative_url }}" class="nav-link">Overview</a></li>
+                        <li><a href="{{ '/help-systems/gate-skippers/' | relative_url }}" class="nav-link">As Gate-Skippers</a></li>
+                        <li><a href="{{ '/help-systems-cards/' | relative_url }}" class="nav-link">Visual Cards</a></li>
+                        <li><a href="{{ '/help-systems/examples/' | relative_url }}" class="nav-link">Real Examples</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item nav-expandable">
+                    <span class="nav-label">🔧 Application</span>
+                    <ul class="nav-sublist-nested">
+                        <li><a href="{{ '/diagnostic-method/' | relative_url }}" class="nav-link">Diagnostic Framework</a></li>
+                        <li><a href="{{ '/domain-examples/' | relative_url }}" class="nav-link">Domain Examples</a></li>
+                        <li><a href="{{ '/implementation/' | relative_url }}" class="nav-link">Implementation</a></li>
+                        <li><a href="{{ '/across-domains/' | relative_url }}" class="nav-link">Across Domains</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="{{ '/complete-document/' | relative_url }}" class="nav-link {% if page.url contains 'complete-document' %}active{% endif %}">
+                        📄 Complete Document
+                    </a>
+                    <small class="nav-desc">Full reference material</small>
+                </li>
+            </ul>
+        </li>
+
+        <!-- BY ROLE SECTION -->
+        <li class="nav-section">
+            <h4 class="nav-section-title">👥 BY ROLE</h4>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="{{ '/for-ai/' | relative_url }}" class="nav-link {% if page.url contains 'for-ai' %}active{% endif %}">
+                        🤖 I'm an AI Instance
+                    </a>
+                    <small class="nav-desc">Start with entry gates</small>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/for-developers/' | relative_url }}" class="nav-link {% if page.url contains 'for-developers' %}active{% endif %}">
+                        👨‍💻 I'm a Developer
+                    </a>
+                    <small class="nav-desc">Implementation guide</small>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/for-humans/' | relative_url }}" class="nav-link {% if page.url contains 'for-humans' %}active{% endif %}">
+                        👤 I'm a Human User
+                    </a>
+                    <small class="nav-desc">Human development path</small>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/for-researchers/' | relative_url }}" class="nav-link {% if page.url contains 'for-researchers' %}active{% endif %}">
+                        🔬 I'm a Researcher
+                    </a>
+                    <small class="nav-desc">Scientific foundations</small>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/for-builders/' | relative_url }}" class="nav-link {% if page.url contains 'for-builders' %}active{% endif %}">
+                        🏗️ I'm Creating Systems
+                    </a>
+                    <small class="nav-desc">Building better institutions</small>
+                </li>
+            </ul>
+        </li>
+
+        <!-- REFERENCE SECTION -->
+        <li class="nav-section">
+            <h4 class="nav-section-title">📚 REFERENCE</h4>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="{{ '/full-index/' | relative_url }}" class="nav-link {% if page.url contains 'full-index' %}active{% endif %}">
+                        📖 Complete Index
+                    </a>
+                    <small class="nav-desc">All documents cataloged</small>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/search/' | relative_url }}" class="nav-link {% if page.url contains 'search' %}active{% endif %}">
+                        🔍 Search
+                    </a>
+                    <small class="nav-desc">Full-text search</small>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/reference-card/' | relative_url }}" class="nav-link {% if page.url contains 'reference-card' %}active{% endif %}">
+                        🎴 Reference Card
+                    </a>
+                    <small class="nav-desc">One-page reference</small>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/faq/' | relative_url }}" class="nav-link {% if page.url contains 'faq' %}active{% endif %}">
+                        ❓ FAQ
+                    </a>
+                    <small class="nav-desc">Common questions</small>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ '/glossary/' | relative_url }}" class="nav-link {% if page.url contains 'glossary' %}active{% endif %}">
+                        📕 Glossary
+                    </a>
+                    <small class="nav-desc">Terms and definitions</small>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+</div>
+
+<!-- Navigation Styles (embedded) -->
+<style>
+.unified-nav {
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-section {
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.nav-section-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-secondary);
+    margin: 0.75rem 0 0.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.nav-sublist {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.5rem 0;
+}
+
+.nav-sublist-nested {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin: 0.25rem 0;
+}
+
+.nav-item {
+    margin: 0.25rem 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-text-highlight);
+}
+
+.nav-link.active {
+    background-color: var(--color-highlight);
+    color: white;
+    font-weight: 600;
+}
+
+.nav-label {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    font-weight: 500;
+    color: var(--color-text);
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-expandable .nav-label:before {
+    content: "▸ ";
+    display: inline-block;
+    margin-right: 0.25rem;
+}
+
+.nav-expandable.expanded .nav-label:before {
+    content: "▾ ";
+}
+
+.nav-desc {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-text-tertiary);
+    padding: 0 0.75rem 0.25rem 0.75rem;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .nav-sublist-nested {
+        padding-left: 1rem;
+    }
+    
+    .nav-section-title {
+        font-size: 0.8rem;
+    }
+}
+</style>
+
+<!-- Navigation Interactivity (embedded) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle expandable menu items (mobile/responsive)
+    const expandables = document.querySelectorAll('.nav-expandable .nav-label');
+    
+    expandables.forEach(function(label) {
+        label.addEventListener('click', function() {
+            const parent = this.closest('.nav-expandable');
+            parent.classList.toggle('expanded');
+        });
+    });
+    
+    // Set active state based on current URL
+    const currentUrl = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(function(link) {
+        if (link.getAttribute('href') === currentUrl) {
+            link.classList.add('active');
+        }
+    });
+});
+</script>

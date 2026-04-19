@@ -17,6 +17,17 @@ toc: false
 
 ---
 
+## 📚 COMPLETE DOCUMENTATION HUB
+**→ [View ALL Documentation]({{ site.baseurl }}/full-index/)**
+
+This site contains two major knowledge systems:
+- **🎯 The Cold Hard Truth** — Universal framework for human development (below)
+- **🤖 0-Error Compute Project** — Complete AI thinking frameworks (in navigation)
+
+**New here?** [Browse all documentation by topic]({{ site.baseurl }}/full-index/) or use the navigation sidebar.
+
+---
+
 ## Three Questions
 
 Before you start: ask yourself these.

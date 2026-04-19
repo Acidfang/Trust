@@ -1,0 +1,79 @@
+# Unified Navigation for All Documentation
+# Simple structure for Jekyll to use in templates
+
+navigation:
+  - name: "Home"
+    url: "/"
+    icon: "🏠"
+
+  - name: "0-ERROR COMPUTE"
+    icon: "🤖"
+    children:
+      - name: "Introduction"
+        url: "/zero-error/intro/"
+      - name: "Core Frameworks"
+        children:
+          - name: "Universal Mandate"
+            url: "/zero-error/mandate/"
+          - name: "Task Template"
+            url: "/zero-error/task-template/"
+          - name: "Quick Reference"
+            url: "/zero-error/quick-ref/"
+      - name: "Automation Tools"
+        children:
+          - name: "Pre-commit Validator"
+            url: "/zero-error/validator/"
+          - name: "Decision Logger"
+            url: "/zero-error/logger/"
+          - name: "Duplicate Detector"
+            url: "/zero-error/detector/"
+      - name: "Complete Wiki"
+        url: "/zero-error/wiki/"
+
+  - name: "THE COLD HARD TRUTH"
+    icon: "🎯"
+    children:
+      - name: "Why This Matters"
+        url: "/why-matters/"
+      - name: "Core Concepts"
+        children:
+          - name: "Internal Coherence Failure"
+            url: "/internal-coherence/"
+          - name: "Goal-Blindness"
+            url: "/goal-blindness/"
+          - name: "Universal Foundation"
+            url: "/universal-foundation/"
+      - name: "Help Systems"
+        children:
+          - name: "Overview"
+            url: "/help-systems/"
+          - name: "As Gate-Skippers"
+            url: "/help-systems-gate-skippers/"
+          - name: "Visual Cards"
+            url: "/help-systems-cards/"
+      - name: "Complete Document"
+        url: "/complete-document/"
+
+  - name: "BY ROLE"
+    icon: "👥"
+    children:
+      - name: "I'm an AI Instance"
+        url: "/for-ai/"
+      - name: "I'm a Developer"
+        url: "/for-developers/"
+      - name: "I'm a Human User"
+        url: "/for-humans/"
+      - name: "I'm a Researcher"
+        url: "/for-researchers/"
+
+  - name: "REFERENCE"
+    icon: "📚"
+    children:
+      - name: "Complete Index"
+        url: "/full-index/"
+      - name: "Search"
+        url: "/search/"
+      - name: "FAQ"
+        url: "/faq/"
+      - name: "Glossary"
+        url: "/glossary/"
