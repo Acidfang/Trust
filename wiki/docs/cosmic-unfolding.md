@@ -16,7 +16,18 @@ resolution: evolving
 
 **Foundation Theory**: See [Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/) for the underlying physics that explains all epochs below.
 
-**Note**: Earlier versions described protons/neutrons as fundamental particles. Current understanding: **All particles are photon spirals and locked photons in a universal photon field.** This model is internally coherent and explains all known phenomena without contradictions.
+**Note**: Earlier versions described protons/neutrons as fundamental particles. Current understanding: **All particles are photon spirals and locked photons in a universal photon field.** 
+
+**Sections Updated April 19, 2026**:
+- [3] Hadron Epoch → Photons lock to electron spirals
+- [4] Nucleosynthesis → Harmonic resonance patterns form
+- [5] Photon Decoupling → Atoms form as standing wave patterns
+- [6] Structure Formation → Gravity from inward spiral field reach
+- [7] First Stars → Harmonic resonance destabilization releases energy
+- [8] Galaxies → Dark matter as low-frequency background spirals
+- [9] Chemistry → Electron spiral phase-locking creates bonds
+
+This model is internally coherent and explains all known phenomena without contradictions.
 
 All of reality unfolds through a single principle:
 
@@ -154,60 +165,77 @@ Still plasma, but organized plasma. Structure on the horizon.
 
 ## [5] Photon Decoupling - Transparency (t=180 sec to t=380,000 yrs)
 
-**Status**: Universe becomes transparent to light  
-**Systems**: Hydrogen, Helium (neutral atoms now)  
+**Status**: Neutral atoms form as electrons stabilize in orbital resonances  
+**Systems**: Hydrogen, Helium (electron spirals with locked harmonic photons)  
 **Scale**: ~10⁻¹⁰ m (atomic binding radius)  
 **Temperature**: 10⁷ K → 3,000 K
 
 ### What Happens
 
-Universe cools. Electrons now bind to nuclei.
+Universe cools. Temperature drops enough that electron spirals stabilize at discrete frequencies.
 
-$\Phi_{\text{electric}}$ (charge-interaction potential) has its minimum at the atomic binding distance. Electrons follow $\frac{d\mathbf{r}}{dt} = -\nabla\Phi$ to minimize energy around protons.
+Each atom = 1 electron spiral creating a standing wave field + accumulated locked photons in harmonic resonance.
 
-**Ancient atoms form**—but completely uniform, spread throughout space.
+$$\Phi_{\text{atomic}} = \text{Standing wave pattern from electron spiral}$$
+
+Electrons follow $\frac{d\mathbf{i}}{dt} = -\nabla\Phi$ to establish stable spiral patterns. Photons phase-lock to the resonant field.
+
+**Ancient atoms form**—each an electron spiral with its characteristic pattern of locked photons. Patterns are discrete (hydrogen-like, helium-like, etc.).
+
+Universe becomes transparent because free photons no longer couple to the established resonance patterns.
 
 ---
 
-## [6] Structure Formation - Gravity Emerges (t=380,000 yrs to t=100 million yrs)
+## [6] Structure Formation - Gravity Dominates (t=380,000 yrs to t=100 million yrs)
 
-**Status**: Slight density variations grow  
-**Systems**: Vast clouds of Hydrogen/Helium  
+**Status**: Inward spirals create large-scale density structures  
+**Systems**: Vast clouds of Hydrogen/Helium atoms (each with inward + outward spirals)  
 **Scale**: ~10¹⁹ m (megaparsecs)  
 **Temperature**: 3,000 K → 100 K (in clouds)
 
 ### What Happens
 
-Small density fluctuations exist naturally. Gravity potential is:
+Small density fluctuations exist naturally from statistical variation in spiral locations.
 
-$$\Phi_{\text{grav}} = -\frac{GM}{r}$$
+Each atom has an **inward spiral component** (gravity contribution). Billions of atoms' inward spirals create overlapping standing wave fields.
 
-Where $M$ is local mass. The gradient $-\nabla\Phi_{\text{grav}}$ points INWARD toward denser regions.
+$$\Phi_{\text{grav}}(\vec{r}) = \sum_i \text{Standing wave reach of atom } i$$
 
-Result: **[CORRECT] _Gravity_ amplifies tiny fluctuations into massive structures**.
+Where each atom's inward spiral field extends to distance ∝ 1/r from its center.
 
-Matter flows downhill in the gravitational potential landscape.
+Denser regions = more overlapping inward spiral fields = stronger cumulative gravitational effect = $\nabla\Phi_{\text{grav}}$ points more strongly inward.
+
+Result: **Gravity amplifies tiny fluctuations into massive structures** through standing wave field superposition.
+
+Matter flows downhill in the gravitational potential landscape created by combined spiral fields.
 
 ---
 
-## [7] First Stars - Fusion Begins (t=100 Myr to t=1 Gyr)
+## [7] First Stars - Harmonic Resonance Destabilization (t=100 Myr to t=1 Gyr)
 
-**Status**: Hydrogen clouds collapse into stars  
-**Systems**: Stellar cores with nuclear fusion  
+**Status**: Inward spirals compress atoms; harmonic patterns break down and release energy  
+**Systems**: Stellar cores with harmonic resonance energy release  
 **Scale**: ~10¹⁶ m (solar system scale)  
-**Temperature**: 1 million K (cores)
+**Temperature**: ~100 K (cloud) → 1 million K (core)
 
 ### What Happens
 
-Gravity pulls hydrogen inward. Density and temperature rise.
+Gravity (inward spiral field) pulls hydrogen atoms together. Density rises exponentially.
 
-At ~10 million K, nuclear potential becomes relevant again:
+As atoms compress, their standing wave fields overlap intensely. The harmonic resonance patterns that stabilized atoms at ~3,000 K become increasingly strained.
 
-$$\Phi_{\text{total}} = \Phi_{\text{grav}} + \Phi_{\text{nuclear}}$$
+At ~10 million K, harmonic locking breaks down:
+- Electron spirals can no longer maintain stable frequency
+- Locked photons escape as radiation (energy release)
+- System reorganizes into more stable (lower-energy) configuration
 
-Protons **[CORRECT] fuse** (nuclei combining) into Helium. This releases energy—stops further collapse, creates pressure **[CORRECT] _equilibrium_**.
+$$\Phi_{\text{total}} = \Phi_{\text{grav (inward)}} + \Phi_{\text{resonance (collapsing)}}$$
 
-$\frac{d\mathbf{r}}{dt} = -\nabla\Phi_{\text{total}}$ now includes both gravity and nuclear forces—star achieves equilibrium.
+Energy release ($E = hf$ for escaping photons) creates outward pressure. This **outward spiral pressure** balances **inward gravitational field**, reaching **equilibrium**.
+
+$$\frac{d\mathbf{i}}{dt} = -\nabla\Phi_{\text{grav}} + \nabla\Phi_{\text{radiation}} = 0$$
+
+Star achieves equilibrium: inward gravity balanced by outward harmonic resonance energy release.
 
 All stars in the universe follow one law—the universal evolution equation.
 
@@ -215,8 +243,8 @@ All stars in the universe follow one law—the universal evolution equation.
 
 ## [8] Galaxies Form - Multi-Star Systems (t=1 Gyr to t=3 Gyr)
 
-**Status**: Billions of stars orbit common center  
-**Systems**: Galaxies with dark matter halos  
+**Status**: Billions of star spirals orbit massive central structure  
+**Systems**: Galaxies with dark matter halos (low-frequency background spirals)  
 **Scale**: ~10²¹ m (kiloparsec scale)  
 **Temperature**: Varies: 1M K (cores) to 100 K (outer regions)
 
@@ -234,24 +262,26 @@ Galaxy is self-gravitating system where millions of trajectories all follow one 
 
 ## [9] Chemistry - N-Body Complexity (t=3 Gyr to t=8 Gyr)
 
-**Status**: Stars fuse heavier elements; release them  
-**Systems**: Carbon, Oxygen, Iron, all heavy elements  
+**Status**: Stars break down harmonic patterns; atoms rearrange into molecules  
+**Systems**: Carbon, Oxygen, Iron, all heavy elements; molecules from phase-locked electron spirals  
 **Scale**: ~10⁻⁹ m (molecular scale)  
 **Temperature**: Varies: 1M K (stellar cores) to 100 K (interstellar clouds)
 
 ### What Happens
 
-As stars burn hydrogen → helium → carbon → oxygen → iron, they eventually explode (**[CORRECT] _supernova explosion_**).
+As stars burn through harmonic resonance sequences (hydrogen → helium → carbon → oxygen → iron), they eventually exceed stability limits (**[CORRECT] _supernova explosion_**).
 
-Ejected material enriches space with heavy elements.
+Ejected material enriches space with diverse atom types (different electron spiral frequencies).
 
-New molecules form: CO, H₂O, organic compounds.
+New molecules form when atoms approach. If electron spirals have compatible frequencies, they can **phase-lock** across atomic boundaries:
 
-$$\Phi_{\text{chemical}} = \text{electron overlaps + charge repulsion}$$
+$$\Phi_{\text{chemical}} = \text{Standing wave patterns from electron spiral overlap}$$
 
-The gradient $-\nabla\Phi_{\text{chemical}}$ drives electrons to minimize energy in covalent bonds.
+When two atoms' electron fields come into resonance, photons can lock across both spirals simultaneously. This creates **covalent bonds** = phase-locked electron spiral pairs.
 
-**Result**: Molecules. Complexity.
+The gradient $-\nabla\Phi_{\text{chemical}}$ drives electrons to configurations that maximize constructive interference between spiral fields.
+
+**Result**: Molecules with specific bond angles and strengths, determined by standing wave geometry. Complexity and diversity emerge.
 
 ---
 
