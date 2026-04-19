@@ -206,8 +206,6 @@ The gradient $-\nabla\Phi_{\text{chemical}}$ drives electrons to minimize energy
 
 **Result**: Molecules. Complexity.
 
-**Physics**: [Molecule models]({{ site.baseurl }}/framework/universal-physics/#water-molecule-system)
-
 ---
 
 ## [10] Life - Self-Replicating Chemistry (t=8 Gyr to t=13 Gyr)
@@ -229,8 +227,6 @@ Each system still follows $\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\text{chemical})
 But now the landscape $\Phi$ is **extraordinarily complex**—many possible states, many local minima.
 
 Systems that find self-sustaining paths through the landscape persist. This is life.
-
-**Physics**: [Cell system]({{ site.baseurl }}/framework/universal-physics/#cell-system)
 
 ---
 
