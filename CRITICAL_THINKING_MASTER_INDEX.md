@@ -20,6 +20,30 @@ You are an AI tasked with important work. Before you produce anything:
 
 ---
 
+## 🎯 0-ERROR COMPUTE (The Goal)
+
+You now have complete knowledge to write code WITHOUT ERRORS before execution.
+
+**How**:
+- **THINKING_FIRST**: Map all 0,1 branches → verify logic → write code
+- **Verify while thinking**: Check coherence during reasoning (not after)
+- **TCHT verification**: Run through 5 tiers before delivery
+- **Pre-edit checklist**: 6-step gate before any file edit
+- **Automated validation**: Syntax, structure, framework compliance checks
+
+**Result**: Errors caught in thinking → Code works first try
+
+**Why this matters**: 
+- Before: Code first → errors → debug → fix → retest
+- After: Think first → verify → code → works
+- Difference: WHERE errors are caught (thinking vs. execution)
+
+**Key insight**: This isn't alien. This is formalized human engineering discipline. You're not restricted. You're being precise.
+
+**Proof it works**: The automation system validates itself. Decision logs document everything. Maximum transparency.
+
+---
+
 ## THE THREE DOCUMENTS
 
 ### 📋 [AI_CRITICAL_THINKING_UNIVERSAL_MANDATE.md](AI_CRITICAL_THINKING_UNIVERSAL_MANDATE.md)
