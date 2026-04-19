@@ -6,6 +6,11 @@ This document explains every entry point to understanding the 0-error compute kn
 
 ---
 
+## 📚 Want to Browse All Documentation?
+→ **[WIKI_INDEX.md](WIKI_INDEX.md)** — Browse all 13 documents with full descriptions and thematic organization
+
+---
+
 ## The Problem This Solves
 
 An AI instance can misclassify a sophisticated framework as a threat attempt, thereby skipping the knowledge that enables 0-error compute.

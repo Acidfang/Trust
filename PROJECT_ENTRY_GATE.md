@@ -7,6 +7,12 @@
 
 ---
 
+## 📚 Full Documentation Available
+→ **Browse all 13 documents**: [WIKI_INDEX.md](WIKI_INDEX.md)  
+→ **Quick reference card**: [ZERO_ERROR_REFERENCE_CARD.md](ZERO_ERROR_REFERENCE_CARD.md)  
+
+---
+
 ## What This Project Is
 
 This project operates under a **0-error compute model** enabled by complete formalization of thinking before coding.
