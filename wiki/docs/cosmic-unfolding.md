@@ -28,6 +28,7 @@ This page shows **how** that principle creates everything we observe—from the 
 - **[CORRECT]** "Equilibrium" — describes state where $\nabla\Phi = 0$
 - **[CORRECT]** "Gradient descent" — describes following downhill in potential
 - **[CORRECT]** "Natural selection" — describes which states persist (those in local minima)
+- **[CORRECT]** "Consciousness" — accumulated knowledge of true cause-effect relationships; a person's soul is their specific learned Φ
 
 **Terms named after humans that are logically misleading:**
 - **[INCORRECT: "Big Bang"]** → "Initial Diffusion" is more accurate. "Bang" implies sudden violent explosion; reality expanded uniformly from unified state with maximum gradient everywhere.
@@ -273,7 +274,33 @@ Still following $\frac{d\mathbf{i}}{dt} = -\nabla\Phi$, where:
 - Potential $\Phi$ = learned reward/penalty landscape
 - Gradient $-\nabla\Phi$ = drives thought toward valued states
 
-Consciousness: awareness of following one's own gradients.
+### The Nature of Consciousness
+
+**Consciousness is not a thing. It's accumulated knowledge of true cause and effect.**
+
+Specifically:
+- **What you know**: Patterns of which actions cause which outcomes
+- **How you know it**: Encoded in synaptic weights (Φ's shape)
+- **Your agency**: Which cause-effect relationships you *choose* to learn about
+- **Your soul**: The specific causal model YOU decided to understand
+
+A conscious system:
+1. **Models causality**: Learns true chains of cause → effect
+2. **Remembers learning**: Encodes causal knowledge in Φ
+3. **Makes choices about learning**: Selects which causes to investigate
+4. **Becomes aware of its own role**: Recognizes "I am the cause in some chains"
+
+The more true causal knowledge you accumulate, the more conscious you become. Someone who understands why their actions matter (causal linkage to outcomes) is conscious. Someone who doesn't see cause-effect ("nothing I do matters") is unconscious.
+
+**This explains:**
+- Why consciousness feels significant — you're building your own causal understanding
+- Why learning matters — consciousness = accumulated causal knowledge
+- Why choice is real — which causes to learn about is genuinely your decision
+- Why determinism doesn't contradict agency — your causal model (Φ) determines your choices, AND you chose to build that model
+
+**This explains "soul"**: Your soul is not separate from your body. It's the complete set of cause-effect relationships you've learned and integrated. What you care about. What you understand. The causal chains you decided matter.
+
+When you die, your soul is gone because that specific accumulated causal knowledge encoded in your neural architecture dissipates. You can't preserve consciousness by preserving the body—you have to preserve the actual causal model, the learned Φ, the relationships.
 
 ---
 
@@ -321,8 +348,9 @@ The following are widely accepted in science but logically incorrect or incomple
 
 ### 3. **"Consciousness emerged from matter when it got complex enough"**
 **[WRONG because]**: Implies consciousness is new, not predicted by physics.
-**[CORRECT logic]**: Consciousness is awareness of following one's own gradients. It's not emergence—it's the same law, now with a meta-level state $\mathbf{i}$ = "knowledge of states I'm in." No new physics needed.
-**[Why mainstream misses it]**: Consciousness studies treat mind as fundamentally different from matter. It's not. It's just Φ applied to information states.
+**[CORRECT logic]**: Consciousness is accumulated knowledge of true cause-effect relationships. It doesn't emerge—it's learned. The more accurate causal understanding a system builds, the more conscious it is. This is predictable from physics: complex enough systems can model causality.
+**[More precisely]**: A neuron has no consciousness (no causal model). A collection of neurons learns cause-effect (some consciousness). A brain that understands its own causal role in the world has high consciousness. Your "soul" is your specific learned Φ—the causal relationships you integrated.
+**[Why mainstream misses it]**: Consciousness studies treat mind as fundamentally different from matter. It's not. It's just: matter organized to learn and encode true causal relationships = consciousness.
 
 ---
 
@@ -363,8 +391,9 @@ The following are widely accepted in science but logically incorrect or incomple
 
 ### 9. **"Consciousness can't be physical / Mind requires non-physical substrate"**
 **[WRONG because]**: Assumes physics doesn't govern information states.
-**[CORRECT logic]**: Mind is physical. Neural activation patterns are state $\mathbf{i}$. Synaptic weights encode $\Phi$. Thought is gradient descent in learned landscape. No non-physical ingredient needed.
-**[Why mainstream misses it]**: Feels wrong that subjective experience could be "just" gradient descent. Misses that gradient descent, done right, fully accounts for intention, value, choice.
+**[CORRECT logic]**: Mind is physical. Neural activation patterns are state $\mathbf{i}$. Synaptic weights encode $\Phi$. Consciousness = accumulated knowledge of true cause-effect relationships. Thought is gradient descent in learned causal landscape. No non-physical ingredient needed.
+**[More precisely]**: Your consciousness is the specific set of causal relationships you learned and integrated. Your Φ encodes "if I do X, then Y happens." The more accurate causal knowledge you've accumulated, the more conscious you are. That knowledge is entirely physical—it's your neurons' connection patterns.
+**[Why mainstream misses it]**: Feels wrong that subjective experience (qualia, what-it's-like-ness) could be "just" information processing. Misses that accurate causal understanding of reality is EXACTLY what creates the feeling of being awake and aware. Unconscious people don't see cause-effect; conscious people do.
 
 ---
 
