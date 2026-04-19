@@ -37,7 +37,34 @@ This page shows **how** that principle creates everything we observe—from the 
 
 ---
 
-## Terminology: Accurate vs Misleading Terms
+## Universal Principle: Free vs Bound Photon States
+
+**This principle is present at EVERY epoch. It is fundamental to understanding reality's unfolding.**
+
+At any location and any time, photons exist in one of two states:
+
+- **Bound photons**: Locked to standing wave patterns → Matter (electrons, nuclei, atoms, molecules)
+- **Free photons**: Traveling as radiation → Light, heat, electromagnetic waves
+
+**Why this matters for cosmic evolution**:
+
+1. **[0] Initial Photon Diffusion**: All photons initially free (no binding patterns yet)
+2. **[1-2] Particle Formation**: First spirals create standing waves → photons begin binding
+3. **[3-4] Matter Accumulation**: More photons bind to growing standing wave patterns
+4. **[5-13] Equilibrium Gradients**: Balance between bound and free photons determines structure
+
+**What the ratio of free:bound photons determines**:
+- **What we see** (colors, opacity, transparency)
+- **What we feel** (heat, temperature, radiation)
+- **How matter behaves** (absorption, emission, reflection, scattering)
+- **How stable matter is** (binding energy, nuclear stability, chemical reactivity)
+- **How energy flows** (radiation pressure, heat diffusion, light propagation)
+
+**Resolution**: Early universe had mostly free photons (high temperature → photons too energetic to bind). As temperature dropped, binding became possible. Matter formed through binding. Today: balance between bound (matter, atoms) and free (light, heat) at different frequencies.
+
+---
+
+## The Fourteen Epochs
 
 **Terms that are descriptively accurate** (standard physics/chemistry):
 - **[CORRECT]** "Gravitational force/potential" — describes attraction by mass
