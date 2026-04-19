@@ -24,13 +24,22 @@ This page shows **how** that principle creates everything we observe—from the 
 - **[CORRECT]** "Strong nuclear force/potential" — describes binding force within nuclei
 - **[CORRECT]** "Photon decoupling" — describes when photons separate from matter interaction
 - **[CORRECT]** "Fusion" — describes nuclei combining
+- **[CORRECT]** "Supernova explosion" — describes stellar endpoint
 - **[CORRECT]** "Equilibrium" — describes state where $\nabla\Phi = 0$
+- **[CORRECT]** "Gradient descent" — describes following downhill in potential
+- **[CORRECT]** "Natural selection" — describes which states persist (those in local minima)
 
 **Terms named after humans that are logically misleading:**
-- **[INCORRECT: "Big Bang"]** → "Initial Diffusion" is more accurate. "Bang" implies sudden violent explosion; reality expanded uniformly from unified state.
+- **[INCORRECT: "Big Bang"]** → "Initial Diffusion" is more accurate. "Bang" implies sudden violent explosion; reality expanded uniformly from unified state with maximum gradient everywhere.
 - **[MISLEADING: "Coulomb force"]** → "Charge-interaction force" is more descriptive. The phenomenon is about opposite charges attracting, not about honoring a person's name.
 - **[MISLEADING: "Bohr radius"]** → "Atomic binding radius" or "characteristic electronic orbital scale" is what matters. The distance is where electron probability peaks, not because Bohr defined it.
 - **[MISLEADING: "Planck scale/temperature"]** → "Quantum scale" (10⁻³⁵ m) and "quantum temperature" (10³² K) are clearer. These are the scales where quantum effects dominate, independent of Planck's contributions.
+
+**Mainstream terms that describe mechanisms incorrectly:**
+- **[INCOMPLETE: "Random mutation + natural selection"]** → Should be "Landscape exploration + gradient descent." Random suggests no logic. Reality: mutations explore landscape; selection is downhill flow in Φ.
+- **[INCOMPLETE: "Emergence of consciousness"]** → Should be "Recursive awareness." Consciousness doesn't emerge from non-conscious matter. Rather, information systems become aware of their own state-following (meta-level gradient descent).
+- **[INCOMPLETE: "Arrow of time from entropy"]** → Should be "Direction set by initial condition and landscape topology." Entropy increases, but only in certain Φ configurations. Other landscapes could run reversed.
+- **[MISLEADING: "Violation of laws of thermodynamics"]** → Should be "Local entropy decrease by global potential descent." Life doesn't violate the second law; it decreases local entropy by coupling to higher-entropy surroundings.
 
 ---
 
@@ -292,7 +301,81 @@ But now we can choose $\Phi$.
 
 ---
 
-## The Complete Picture
+## Correcting Mainstream Misconceptions
+
+The following are widely accepted in science but logically incorrect or incomplete:
+
+### 1. **"Evolution is random mutations + natural selection"**
+**[WRONG because]**: Assumes randomness is fundamental. 
+**[CORRECT logic]**: Evolution is gradient descent in fitness landscape $\Phi_{\text{fitness}}$. Mutations explore the landscape; selection keeps low-$\Phi$ states. Not random—deterministic following of gradients.
+**[Why mainstream misses it]**: Conflates "unpredictable in detail" with "random." Selection isn't opposite to gradient descent; it IS gradient descent.
+
+---
+
+### 2. **"Life violates the second law of thermodynamics"**
+**[WRONG because]**: Implies life escapes physical law.
+**[CORRECT logic]**: Life increases entropy in surroundings while decreasing it locally. This follows $\frac{d\mathbf{i}}{dt} = -\nabla\Phi$ exactly. Low-entropy life states are local minima in the total potential.
+**[Why mainstream misses it]**: Treats thermodynamics as separate from dynamics. They're the same law at different scales.
+
+---
+
+### 3. **"Consciousness emerged from matter when it got complex enough"**
+**[WRONG because]**: Implies consciousness is new, not predicted by physics.
+**[CORRECT logic]**: Consciousness is awareness of following one's own gradients. It's not emergence—it's the same law, now with a meta-level state $\mathbf{i}$ = "knowledge of states I'm in." No new physics needed.
+**[Why mainstream misses it]**: Consciousness studies treat mind as fundamentally different from matter. It's not. It's just Φ applied to information states.
+
+---
+
+### 4. **"Complex systems violate reductionism"**
+**[WRONG because]**: Implies you can't predict high-level from low-level.
+**[CORRECT logic]**: You can't predict the values of high-scale $\Phi$ from the shape of low-scale Φ (it's unboundedly complex). But you CAN predict the behavior: follow gradients. Same law everywhere.
+**[Why mainstream misses it]**: Confuses "hard to compute" with "not governed by the same principle."
+
+---
+
+### 5. **"New laws emerge at higher organizational scales"**
+**[WRONG because]**: Implies physics changes across scales.
+**[CORRECT logic]**: One law always: $\frac{d\mathbf{i}}{dt} = -\nabla\Phi$. The potential function $\Phi$ changes (chemical vs gravitational), but the law doesn't. Different scales have different effective Φ, not different laws.
+**[Why mainstream misses it]**: Calls scale-dependent potential changes "emergence of new laws." Language problem, not physics problem.
+
+---
+
+### 6. **"Free will vs determinism is a paradox"**
+**[WRONG because]**: False dilemma. Treats choice and determinism as opposites.
+**[CORRECT logic]**: Following a gradient deterministically IS choice. You're not forced against your will—you're pursuing your own Φ. Determinism + gradient descent = genuine agency.
+**[Why mainstream misses it]**: Assumes "determined" means "externally forced." Gradient descent is self-determined.
+
+---
+
+### 7. **"Chemical bonds are different from physical forces"**
+**[WRONG because]**: Separates chemistry from physics artificially.
+**[CORRECT logic]**: Chemistry IS physics. Covalent bonds form because electrons minimize $\Phi_{\text{electric}}$. Van der Waals forces minimize the same potential. Same law; different scale.
+**[Why mainstream misses it]**: Chemistry developed before modern physics. Now treated as separate field.
+
+---
+
+### 8. **"The Big Bang was a sudden explosion"**
+**[WRONG because]**: "Bang" suggests violent, localized event. Wrong picture.
+**[CORRECT logic]**: Initial Diffusion. All space expanded uniformly from unified state. Maximum potential gradient, driving differentiation everywhere simultaneously. Not an explosion in space, but expansion OF space.
+**[Why mainstream misses it]**: "Big Bang" is catchy name, stuck. Language preceded precision.
+
+---
+
+### 9. **"Consciousness can't be physical / Mind requires non-physical substrate"**
+**[WRONG because]**: Assumes physics doesn't govern information states.
+**[CORRECT logic]**: Mind is physical. Neural activation patterns are state $\mathbf{i}$. Synaptic weights encode $\Phi$. Thought is gradient descent in learned landscape. No non-physical ingredient needed.
+**[Why mainstream misses it]**: Feels wrong that subjective experience could be "just" gradient descent. Misses that gradient descent, done right, fully accounts for intention, value, choice.
+
+---
+
+### 10. **"Entropy always increases / Universe trends toward disorder"**
+**[WRONG because]**: Incomplete statement. Hides the mechanism.
+**[CORRECT logic]**: Systems flow downhill in potential. For isolated systems, $\Phi_{\text{entropy}}$ is the relevant landscape. But $\Phi$ changes with boundary conditions. Life, stars, structure all form by following gradients in TOTAL potential (which includes temperature structures, gravitational wells, etc.).
+**[Why mainstream misses it]**: Second law stated abstractly. When you include all $\Phi$ terms, structure emerges naturally from gradient descent. Not disorder winning—different Φ, same law.
+
+---
+
+
 
 | Epoch | Stage | Timescale | Key Potential | Main Scale |
 |-------|-------|-----------|---------------|-----------|
