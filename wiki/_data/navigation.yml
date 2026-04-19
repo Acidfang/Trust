@@ -47,8 +47,6 @@ navigation:
         children:
           - name: "Overview"
             url: "/help-systems/"
-          - name: "As Gate-Skippers"
-            url: "/help-systems-gate-skippers/"
           - name: "Visual Cards"
             url: "/help-systems-cards/"
       - name: "Complete Document"
@@ -65,6 +63,8 @@ navigation:
         url: "/for-humans/"
       - name: "I'm a Researcher"
         url: "/for-researchers/"
+      - name: "I'm a System Builder"
+        url: "/for-builders/"
 
   - name: "REFERENCE"
     icon: "📚"
