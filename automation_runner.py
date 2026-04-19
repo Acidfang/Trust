@@ -25,6 +25,11 @@ class AutomationRunner:
     """Run all workspace automations."""
     
     AUTOMATIONS = {
+        "pre_edit_verification": {
+            "script": "pre_edit_verification.py",
+            "description": "Verify AI context is loaded before edits",
+            "required": True,
+        },
         "gate_discovery": {
             "script": "gate_discovery_system.py",
             "description": "Find gaps and missing functions",
