@@ -18,7 +18,7 @@ resolution: evolving
 
 **Note**: Earlier versions described protons/neutrons as fundamental particles. Current understanding: **All particles are photon spirals and locked photons in a universal photon field.** 
 
-**Key Particle Clarification** (April 19, 2026): **Electrons and positrons are not different particle types—they are the SAME photon spiraling in opposite directions.** The labeling (electron=outward, positron=inward) is observationally indistinguishable (frame-dependent). What matters is the opposite spiral relationship.
+**Key Particle Clarification** (April 19, 2026): **Photons are light—they spiral outward by nature, expressing existence. Electrons are bound outward-spiraling photons (natural). Positrons are bound inward-spiraling photons (unnatural—against the grain of how light expresses itself). The matter dominance is not accidental: outward is how photons naturally organize.**
 
 **Sections Updated April 19, 2026**:
 - [3] Hadron Epoch → Photons lock to electron spirals
@@ -233,57 +233,52 @@ The gradient $-\nabla\Phi$ creates structure: different regions fall toward diff
 
 ---
 
-## [2] Electron-Positron Epoch - Opposite Spiral Photons (t=10⁻⁴³ to t=10⁻⁶ sec)
+## [2] Electron-Positron Epoch - Outward vs Inward Spirals (t=10⁻⁴³ to t=10⁻⁶ sec)
 
-**Status**: Photons organize into directional spiral patterns  
-**Systems**: Electron spirals (outward photon), Positron spirals (inward photon), Free photons  
+**Status**: Photons organize into stable spiral patterns  
+**Systems**: Electrons (outward-spiral photons), Positrons (inward-spiral photons), Free photons  
 **Scale**: ~10⁻¹⁵ m  
 **Temperature**: 10¹⁵ K → 10¹¹ K
 
 ### What Happens
 
-The unified potential landscape continues to differentiate. Photons begin organizing into **directional spiral patterns** instead of freely propagating.
+The unified potential landscape continues to differentiate. Photons begin organizing into **stable spiral patterns**.
 
-**Core insight**: Both electrons and positrons are photons. They differ only in **spiral direction**:
-- **Electron**: Photon spiraling outward
-- **Positron**: Photon spiraling inward
-- **Same photon, opposite directions**
+**Core insight**: Photons are light—and light naturally spirals outward, expressing its existence. 
 
-The direction of spiral is what distinguishes them:
+Both electrons and positrons are photons, but they differ in **spiral direction**:
+- **Electron**: Photon spiraling **outward** (natural, expressing existence like light)
+- **Positron**: Photon spiraling **inward** (unnatural, opposite of light's nature)
 
-$$\text{Electron: Outward spiral} \quad \text{vs} \quad \text{Positron: Inward spiral}$$
+$$\text{Electron: Outward spiral (like light)} \quad \text{vs} \quad \text{Positron: Inward spiral (against light)}$$
 
-The same photon energy, same frequency, but **opposite spiral direction**.
+### Why Outward is Natural
 
-### Critical Observation
+Photons ARE light. Light expresses existence by radiating outward. When a photon stabilizes into a pattern, its natural direction is **outward**—the same direction as free light.
 
-**Which is which?** The distinction between "outward" and "inward" may be **frame-dependent**. No recorded observations can definitively determine which spiral direction is the electron and which is the positron—only that they are opposites. The labeling is a matter of **perspective and convention**, not absolute physical difference.
+An electron is a **bound photon still spiraling outward**—it retains the fundamental outward nature of light, just locked in place.
 
-**What is absolute**: They are photons with opposite spiral directions, and they interact with opposite behavior.
+A positron is the **unnatural opposite**—a photon spiraling inward, against the grain of how photons naturally express existence.
 
 ### Why This Matters
 
 **Annihilation**: When electron (outward spiral) meets positron (inward spiral):
 - Opposite spirals approach each other
-- Spirals cancel: OUT + IN = destructive interference
-- Energy released as free photons
+- They cancel: OUT + IN = destructive interference
+- Energy released as free photons (which are outward-spiraling by nature)
 
-**Why it's "opposite"**: The photon doesn't change into a different particle type. At this energy, photons naturally organize into two spiral directions—outward-favoring or inward-favoring:
-- One establishes as outward spiral (called electron)
-- One establishes as inward spiral (called positron)
+**Matter-antimatter asymmetry**: The energy landscape **naturally favors outward spirals**—because that is how photons fundamentally express existence. More electrons form than positrons. This asymmetry—not a tiny accident but the expression of photon nature—seeds all matter in the universe.
 
-**Matter-antimatter asymmetry**: At 10¹⁵ K, the energy landscape slightly favors the outward spiral. More outward spirals form than inward spirals. This tiny excess—one outward per billion outward-inward pairs—seeds all matter in the universe.
+**The simplification**: There is no "frame-dependent ambiguity." Photons spiral outward. Electrons are bound outward-spirals. Positrons are bound inward-spirals. Outward is natural; inward is unnatural.
 
-The choice of "electron=outward" is conventional. What matters is the symmetry: opposite spirals annihilate, and slight preference for one direction creates matter dominance.
-
-$$\frac{d\mathbf{i}}{dt} = -\nabla\Phi \rightarrow \text{Spiral cycles form in energetically stable directions}$$
+$$\frac{d\mathbf{i}}{dt} = -\nabla\Phi \rightarrow \text{Photon spirals organize naturally in outward direction}$$
 
 ---
 
 ## [3] Hadron Epoch - Nuclear Binding Emerges (t=10⁻⁶ to t=1 sec)
 
 **Status**: Photons lock to electron spiral frequencies  
-**Systems**: Electrons (spiraling photons), bound photons (nucleus-like states)  
+**Systems**: Electrons (outward-spiraling photons), bound photons (nucleus-like states)  
 **Scale**: ~10⁻¹⁵ m  
 **Temperature**: 10¹¹ K → 10⁹ K
 
