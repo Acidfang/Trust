@@ -349,7 +349,7 @@ const stages = [
       { label: "Temperature", value: "10¹⁵ → 10¹¹ K" },
       { label: "Key process", value: "Pair production" }
     ],
-    physics: "dℹ/dt = -∇Φ(Coulomb + gravity)",
+    physics: "dℹ/dt = -∇Φ(charge interaction + gravity)",
     keyInsight: "Matter-antimatter asymmetry seeds all future complexity.",
     explore: "/cosmic-unfolding/#2-electron-positron-epoch"
   },
@@ -390,11 +390,11 @@ const stages = [
     timescale: "380,000 years",
     description: "Universe becomes transparent. Electrons bind to nuclei.",
     stats: [
-      { label: "Scale", value: "10⁻¹⁰ m (Bohr radius)" },
+      { label: "Scale", value: "10⁻¹⁰ m (atomic binding radius)" },
       { label: "Temperature", value: "10⁷ → 3,000 K" },
       { label: "Key event", value: "Atoms form" }
     ],
-    physics: "dℹ/dt = -∇Φ(Coulomb)",
+    physics: "dℹ/dt = -∇Φ(charge interaction)",
     keyInsight: "First atoms. Universe becomes transparent to light.",
     explore: "/cosmic-unfolding/#5-photon-decoupling"
   },

@@ -276,7 +276,7 @@ description: Printable one-page guides for key concepts - laminate and carry the
   <div class="card-section">
     <div class="card-section-title">The Eight Eras</div>
     <ol style="margin: 0.5rem 0; padding-left: 1.2rem; color: #555; font-size: 0.85rem;">
-      <li style="margin: 0.3rem 0;">Quantum Genesis (Big Bang)</li>
+      <li style="margin: 0.3rem 0;">Initial Diffusion (origin point)</li>
       <li style="margin: 0.3rem 0;">Atomic Formation (electrons+nuclei)</li>
       <li style="margin: 0.3rem 0;">Molecular Complexity (atoms→molecules)</li>
       <li style="margin: 0.3rem 0;">Protobiotic (chemistry→biology transition)</li>

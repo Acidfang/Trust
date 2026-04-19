@@ -16,12 +16,30 @@ This page shows **how** that principle creates everything we observe—from the 
 
 ---
 
+## Terminology: Accurate vs Misleading Terms
+
+**Terms that are descriptively accurate** (standard physics/chemistry):
+- **[CORRECT]** "Gravitational force/potential" — describes attraction by mass
+- **[CORRECT]** "Electromagnetic force/potential" — describes charge interaction
+- **[CORRECT]** "Strong nuclear force/potential" — describes binding force within nuclei
+- **[CORRECT]** "Photon decoupling" — describes when photons separate from matter interaction
+- **[CORRECT]** "Fusion" — describes nuclei combining
+- **[CORRECT]** "Equilibrium" — describes state where $\nabla\Phi = 0$
+
+**Terms named after humans that are logically misleading:**
+- **[INCORRECT: "Big Bang"]** → "Initial Diffusion" is more accurate. "Bang" implies sudden violent explosion; reality expanded uniformly from unified state.
+- **[MISLEADING: "Coulomb force"]** → "Charge-interaction force" is more descriptive. The phenomenon is about opposite charges attracting, not about honoring a person's name.
+- **[MISLEADING: "Bohr radius"]** → "Atomic binding radius" or "characteristic electronic orbital scale" is what matters. The distance is where electron probability peaks, not because Bohr defined it.
+- **[MISLEADING: "Planck scale/temperature"]** → "Quantum scale" (10⁻³⁵ m) and "quantum temperature" (10³² K) are clearer. These are the scales where quantum effects dominate, independent of Planck's contributions.
+
+---
+
 ## [0] The Great Diffusion - The Origin Point
 
 **Status**: Infinitely compressed, infinitely hot  
 **Equation state**: $\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\text{all energies unified})$  
-**Scale**: ~Planck scale (10⁻³⁵ m)  
-**Temperature**: ~Planck temperature (10³² K)
+**Scale**: ~10⁻³⁵ m (initial quantum scale)  
+**Temperature**: ~10³² K (maximum temperature before differentiation)
 
 ### What Happens
 
@@ -57,7 +75,7 @@ The gradient $-\nabla\Phi$ creates structure: different regions fall toward diff
 
 The potential landscape continues to differentiate. Electrons and positrons condense from photon energy.
 
-The gradient $-\nabla\Phi$ now involves electromagnetic potential. Electrons seek to minimize Coulomb energy relative to the expanding field.
+The gradient $-\nabla\Phi$ now involves electromagnetic potential. Electrons seek to minimize charge-interaction energy relative to the expanding field.
 
 Pairs annihilate, leaving slight excess of matter over antimatter—seed of all structure.
 
@@ -75,8 +93,8 @@ Pairs annihilate, leaving slight excess of matter over antimatter—seed of all 
 Temperature drops enough that the strong nuclear force stabilizes protons and neutrons. A new potential landscape emerges.
 
 Protons and neutrons form as fundamental particles. Now $\Phi$ includes:
-- Strong nuclear potential (very short range)
-- Electromagnetic potential (longer range)
+- **[CORRECT]** _Strong nuclear force_ (very short range)
+- **[CORRECT]** _Electromagnetic potential_ (longer range)
 - Expanding field gradient
 
 Each particle follows: $\frac{d\text{trajectory}}{dt} = -\nabla\Phi(\text{all forces})$
@@ -101,7 +119,7 @@ $\frac{d\mathbf{r}}{dt} = -\nabla\Phi_{\text{nuclear}}$ yields:
 
 This is still the "expanding plasma" era—no structure yet.
 
-**Physics**: BBN (Big Bang Nucleosynthesis) via strong force
+**Physics**: Element formation via strong nuclear force
 
 ---
 
@@ -109,14 +127,14 @@ This is still the "expanding plasma" era—no structure yet.
 
 **Status**: Universe becomes transparent to light  
 **Systems**: Hydrogen, Helium (neutral atoms now)  
-**Scale**: ~10⁻¹⁰ m (Bohr radius for atoms)  
+**Scale**: ~10⁻¹⁰ m (atomic binding radius)  
 **Temperature**: 10⁷ K → 3,000 K
 
 ### What Happens
 
 Universe cools. Electrons now bind to nuclei.
 
-$\Phi_{\text{Coulomb}}$ (electron-nucleus potential) has its minimum at the Bohr radius. Electrons follow $\frac{d\mathbf{r}}{dt} = -\nabla\Phi$ to minimize energy around protons.
+$\Phi_{\text{electric}}$ (charge-interaction potential) has its minimum at the atomic binding distance. Electrons follow $\frac{d\mathbf{r}}{dt} = -\nabla\Phi$ to minimize energy around protons.
 
 **Ancient atoms form**—but completely uniform, spread throughout space.
 
@@ -131,13 +149,13 @@ $\Phi_{\text{Coulomb}}$ (electron-nucleus potential) has its minimum at the Bohr
 
 ### What Happens
 
-Small density fluctuations exist from quantum noise. Gravity potential is:
+Small density fluctuations exist naturally. Gravity potential is:
 
 $$\Phi_{\text{grav}} = -\frac{GM}{r}$$
 
 Where $M$ is local mass. The gradient $-\nabla\Phi_{\text{grav}}$ points INWARD toward denser regions.
 
-Result: **Gravity amplifies tiny fluctuations into massive structures**.
+Result: **[CORRECT] _Gravity_ amplifies tiny fluctuations into massive structures**.
 
 Matter flows downhill in the gravitational potential landscape.
 
@@ -158,7 +176,7 @@ At ~10 million K, nuclear potential becomes relevant again:
 
 $$\Phi_{\text{total}} = \Phi_{\text{grav}} + \Phi_{\text{nuclear}}$$
 
-Protons fuse into Helium. This releases energy—stops further collapse, creates pressure balance.
+Protons **[CORRECT] fuse** (nuclei combining) into Helium. This releases energy—stops further collapse, creates pressure **[CORRECT] _equilibrium_**.
 
 $\frac{d\mathbf{r}}{dt} = -\nabla\Phi_{\text{total}}$ now includes both gravity and nuclear forces—star achieves equilibrium.
 
@@ -194,13 +212,13 @@ Galaxy is self-gravitating system where millions of trajectories all follow one 
 
 ### What Happens
 
-As stars burn hydrogen → helium → carbon → oxygen → iron, they eventually explode (supernovae).
+As stars burn hydrogen → helium → carbon → oxygen → iron, they eventually explode (**[CORRECT] _supernova explosion_**).
 
 Ejected material enriches space with heavy elements.
 
 New molecules form: CO, H₂O, organic compounds.
 
-$$\Phi_{\text{chemical}} = \text{electron overlaps + Coulomb repulsion}$$
+$$\Phi_{\text{chemical}} = \text{electron overlaps + charge repulsion}$$
 
 The gradient $-\nabla\Phi_{\text{chemical}}$ drives electrons to minimize energy in covalent bonds.
 
@@ -278,10 +296,10 @@ But now we can choose $\Phi$.
 
 | Epoch | Stage | Timescale | Key Potential | Main Scale |
 |-------|-------|-----------|---------------|-----------|
-| Before time | [0] Diffusion | t=0 | Unified (all forces) | Planck |
+| Before time | [0] Diffusion | t=0 | Unified (all forces) | 10⁻³⁵ m |
 | First microsecond | [1-3] Particles | 10⁻⁴³ to 10⁻⁶ s | Strong, EM, Weak | Subatomic |
-| First second | [4] Nucleosynthesis | 1-180 s | Nuclear + Coulomb | Nuclear |
-| 380,000 yrs | [5] Decoupling | 10⁵ yrs | Coulomb (atoms form) | Atomic |
+| First second | [4] Nucleosynthesis | 1-180 s | Nuclear + Electric | Nuclear |
+| 380,000 yrs | [5] Decoupling | 10⁵ yrs | Electric (atoms form) | Atomic |
 | 100 Myr | [6] Structure | 10⁸ yrs | Gravity (linear perturbations) | Galactic |
 | 1-10 Gyr | [7-9] Stars & Chemistry | 10⁹-10¹⁰ yrs | Gravity + Nuclear | Stellar |
 | 8-13 Gyr | [10] Life | 10¹⁰ yrs | Chemical/Biological | Molecular |

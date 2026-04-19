@@ -303,7 +303,7 @@ const caseStudies = [
     icon: '⚛️',
     short: 'Why electrons orbit at specific distances',
     framework: 'Universal Foundation',
-    baseline: `Electrons orbit nucleus at quantized distances. Classical physics (Coulomb attraction) predicts they should spiral into nucleus in microseconds—but they don't.`,
+    baseline: `Electrons orbit nucleus at specific distances. Simple force-attraction analysis predicts they should spiral inward in microseconds—but they don't.`,
     principle: `dℹ/dt = -∇Φ: Electron position flows to minimize potential energy. Quantum mechanical orbitals are stable energy minima.`,
     mechanics: `Orbital energy: E_n = -13.6 eV / n². Electron naturally occupies lowest available orbital. Ground state (n=1) is stable minimum. Excited states (n>1) are metastable.`,
     improvement: `Understanding this as gradient descent in quantum potential energy landscape explains:

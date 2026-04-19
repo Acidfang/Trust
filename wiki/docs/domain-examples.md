@@ -72,7 +72,7 @@ const domains = {
     },
     realExamples: [
       "Ariane 5 rocket (1996): 64-bit velocity converted to 16-bit without overflow check. One bit changed. $370 million destroyed 37 seconds after launch.",
-      "Mars Climate Orbiter (1999): NASA used metric units (newtons), contractor used imperial (pounds-force). Single type mismatch. $327 million lost.",
+      "Mars Climate Orbiter (1999): NASA used metric units (force in newtons), contractor used imperial (pounds-force). Single unit type mismatch. $327 million lost.",
       "AT&T telephone switch (1990): Software update had single-character bug. Cascade failure crashed entire network for 9 hours. 50 million calls dropped."
     ],
     benefits: "Deterministic behavior, perfect repeatability, zero ambiguity, precise error localization, composable modules",

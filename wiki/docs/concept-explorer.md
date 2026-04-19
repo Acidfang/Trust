@@ -354,9 +354,9 @@ This tool lets you select a concept and instantly view it through all five learn
       "cosmic-eras": {
         title: "The Cosmic Eras Framework",
         quick: "History of universe viewed as progressive sophistication of consciousness and agency.",
-        visual: "Timeline from Big Bang through 21st century: each era shows new forms of organizations appearing.",
+        visual: "Timeline from initial diffusion through 21st century: each era shows new forms of organizations appearing.",
         narrative: "From hot plasma to atoms to molecules to cells to multicellular life to societies to technologies. Each stage: systems organized with new complexity, new relationships, new capacities. It's not random chaos - there's a direction toward greater coherence.",
-        technical: "8 eras mapped: Quantum Genesis → Atomic Formation → Molecular Complexity → Protobiotic → Biological → Multicellular → Societal → Digital-Conscious. Each adds organizational layers building on previous ones.",
+        technical: "8 eras mapped: Initial Diffusion → Atomic Formation → Molecular Complexity → Protobiotic → Biological → Multicellular → Societal → Digital-Conscious. Each adds organizational layers building on previous ones.",
         domains: ["Cosmology", "History", "Biology", "Anthropology", "Technology"],
         relatedConcepts: ["emergence", "hierarchy-of-organization", "complexity-growth"],
         example: "Atoms brought stability to universe - electrons in stable orbits (low potential). Molecules brought new organization type. Life brought self-replication. Consciousness brought reflection. Digital systems brought external memory. Each stage: new organizational principle, new capacities."
