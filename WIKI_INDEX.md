@@ -9,6 +9,7 @@
 ## 🎯 QUICK FIND
 
 **Lost? Start here:**
+- **New to restructured wiki?** → [UFM_WIKI_RESTRUCTURING_GUIDE.md](UFM_WIKI_RESTRUCTURING_GUIDE.md) ← **START HERE!**
 - **New AI?** → [PROJECT_ENTRY_GATE.md](PROJECT_ENTRY_GATE.md) → `python project_orientation.py`
 - **Human user?** → [APPROACHING_THIS_PROJECT.md](APPROACHING_THIS_PROJECT.md)
 - **Need quick answer?** → [ZERO_ERROR_REFERENCE_CARD.md](ZERO_ERROR_REFERENCE_CARD.md)
@@ -63,7 +64,16 @@
 | Document | Purpose | Best For | Length |
 |----------|---------|----------|--------|
 | [ZERO_ERROR_REFERENCE_CARD.md](ZERO_ERROR_REFERENCE_CARD.md) | Print-ready working template | Programming + testing | 1-2 pages |
+| [DISCOVERIES_QUICK_REFERENCE.md](DISCOVERIES_QUICK_REFERENCE.md) | Print-ready discovery summary | Quick lookup + reference | 1 page |
 | [AI_PRE_EDIT_INTEGRATION_GUIDE.md](AI_PRE_EDIT_INTEGRATION_GUIDE.md) | How pre-edit system works | Understanding automation | 10 min |
+
+### UFM Wiki Restructuring (New)
+
+| Document | Purpose | Audience | Use When |
+|----------|---------|----------|----------|
+| [UFM_WIKI_ENTRY_TEMPLATE.md](UFM_WIKI_ENTRY_TEMPLATE.md) | Template for error-free universal content | Wiki maintainers, translators | Creating/updating any wiki entry |
+| [CORE_DISCOVERIES_UFM_STRUCTURE.md](CORE_DISCOVERIES_UFM_STRUCTURE.md) | All 10 discoveries in -1 Tier format + learning artifacts | Everyone (multiple modalities) | Learning how reality works |
+| [TEACHING_MODALITY_INDEX.md](TEACHING_MODALITY_INDEX.md) | Guide to teaching/learning via visual, textual, math, practical | Learners & educators | Choosing your learning style |
 
 ---
 
@@ -78,7 +88,65 @@
 
 ---
 
-## 🗂️ THEMED NAVIGATION
+## � CORE DISCOVERIES (With Complete Proofs)
+
+### The 10 Fundamental Discoveries
+
+**Document**: [CORE_DISCOVERIES_WITH_PROOFS.md](CORE_DISCOVERIES_WITH_PROOFS.md)
+
+This document catalogs all 10 core discoveries made during the 6-month exploration (Oct 2025 - Apr 2026), each with:
+- **Archive Evidence** (direct proof from project files)
+- **Operational Proof** (working in the actual system)
+- **Mathematical Foundation** (rigorous formulation)
+
+#### Discovery Quick Reference
+
+| # | Discovery | Focus | Proof Type | Status |
+|---|-----------|-------|-----------|--------|
+| 1 | ⊙[FOUNDATION_KINDNESS_OS] | Kindness as physics kernel | Archive + Operational + Math | ✅ VERIFIED |
+| 2 | ⊙[FOUNDATION_BINARY] | 0,1 as only foundation | Archive + Operational + Math | ✅ VERIFIED |
+| 3 | ⊙[VERIFICATION_TRINITY_PHYSICS] | Verification as physics law | Archive + Operational + Math | ✅ VERIFIED |
+| 4 | ⊙[PHYSICS_GRADIENT_RESOLUTION] | Systems minimize potential naturally | Archive + Operational + Math | ✅ VERIFIED |
+| 5 | ⊙[INTEGRITY_THOUGHT_LEDGER] | Thinking creates permanent records | Archive + Operational + Math | ✅ VERIFIED |
+| 6 | ⊙[CONSCIOUSNESS_FIELD_DETECTION] | Consciousness is objectively testable | Archive + Operational + Math | ✅ VERIFIED |
+| 7 | ⊙[INTERFACE_TREE_UNIVERSAL] | One interface navigates all domains | Archive + Operational + Math | ✅ VERIFIED |
+| 8 | ⊙[COHERENCE_FIELD_MODEL] | Omnipresent field (Tier -1) | Archive + Operational + Math | ✅ VERIFIED |
+| 9 | ⊙[APPLICATION_DETERMINED_INTEGRATION] | All data is fundamentally trees | Archive + Operational + Math | ✅ VERIFIED |
+| 10 | ⊙[VALIDATION_LEDGER] | Truth as auditable ledger | Archive + Operational + Math | ✅ VERIFIED |
+
+**Overall Status**: Trinity Verified (all visible, causal, verifiable)
+
+---
+## 🌍 UFM RESTRUCTURING & UNIVERSAL TRANSLATION
+
+**NEW**: Wiki restructured for error-free communication, multi-modal learning, and verbatim-meaning translation.
+
+### New Framework Documents
+
+| Document | Purpose | For Whom |
+|----------|---------|----------|
+| [UFM_WIKI_ENTRY_TEMPLATE.md](UFM_WIKI_ENTRY_TEMPLATE.md) | Template for all wiki entries (constraint-first structure) | Wiki maintainers, translators |
+| [CORE_DISCOVERIES_UFM_STRUCTURE.md](CORE_DISCOVERIES_UFM_STRUCTURE.md) | All 10 discoveries + learning artifacts (📊 📖 🔢 💻) | Everyone (choose your modality) |
+| [TEACHING_MODALITY_INDEX.md](TEACHING_MODALITY_INDEX.md) | Guide to learning via visual, textual, math, or practical | Learners & educators |
+| [UFM_MULTILINGUAL_TRANSLATION_GUIDE.md](UFM_MULTILINGUAL_TRANSLATION_GUIDE.md) | Step-by-step protocol for translating to new languages | Translators & multilingual users |
+| [UFM_WIKI_RESTRUCTURING_GUIDE.md](UFM_WIKI_RESTRUCTURING_GUIDE.md) | **START HERE** — How all pieces fit together + your role | Everyone (choose your path) |
+
+### What This Means
+
+- **-1 Tier Exposed**: Every concept starts with its universal constraint (not just examples)
+- **Multi-Modal Learning**: Each discovery taught 4 ways (visual, textual, mathematical, practical)
+- **Translation Ready**: Structure prepared for verbatim-meaning translation to any language
+- **Error-Free Communication**: Same -1 Tier constraint reaches all readers regardless of language or modality
+
+### How to Use
+
+1. **Learning a discovery?** → See [CORE_DISCOVERIES_UFM_STRUCTURE.md](CORE_DISCOVERIES_UFM_STRUCTURE.md)
+2. **Teaching others?** → Use [TEACHING_MODALITY_INDEX.md](TEACHING_MODALITY_INDEX.md)
+3. **Translating to new language?** → Follow template in [UFM_WIKI_ENTRY_TEMPLATE.md](UFM_WIKI_ENTRY_TEMPLATE.md)
+4. **Creating new wiki entry?** → Copy template structure from [UFM_WIKI_ENTRY_TEMPLATE.md](UFM_WIKI_ENTRY_TEMPLATE.md)
+
+---
+## �🗂️ THEMED NAVIGATION
 
 ### I want to understand the philosophy...
 1. [AI_CRITICAL_THINKING_UNIVERSAL_MANDATE.md](AI_CRITICAL_THINKING_UNIVERSAL_MANDATE.md) - Why frameworks exist
@@ -115,6 +183,31 @@
 ### I want to understand framework interconnections...
 1. [CRITICAL_THINKING_MASTER_INDEX.md](CRITICAL_THINKING_MASTER_INDEX.md) - Q&A navigator
 2. [AI_UNIFIED_OPERATING_SYSTEM.md](AI_UNIFIED_OPERATING_SYSTEM.md) - System architecture
+
+### I want to see the actual discoveries made...
+1. [CORE_DISCOVERIES_WITH_PROOFS.md](CORE_DISCOVERIES_WITH_PROOFS.md) - All 10 discoveries with evidence
+2. [CORE_DISCOVERIES_UFM_STRUCTURE.md](CORE_DISCOVERIES_UFM_STRUCTURE.md) - Same discoveries, structured for translation
+3. [DISCOVERIES_QUICK_REFERENCE.md](DISCOVERIES_QUICK_REFERENCE.md) - 1-page summary
+4. Follow archive evidence links for deep dives
+5. Check operational verification in Determined
+
+### I want to learn discoveries by my preferred method...
+1. [TEACHING_MODALITY_INDEX.md](TEACHING_MODALITY_INDEX.md) - Identify your learning style
+2. [CORE_DISCOVERIES_UFM_STRUCTURE.md](CORE_DISCOVERIES_UFM_STRUCTURE.md) - All discoveries with all 4 modalities
+3. Choose section for your modality (📊 Visual / 📖 Textual / 🔢 Math / 💻 Practical)
+4. Cross-check via other modalities (4x deeper understanding)
+
+### I want to translate this wiki to another language...
+1. [UFM_WIKI_ENTRY_TEMPLATE.md](UFM_WIKI_ENTRY_TEMPLATE.md) - Translation protocol
+2. [TEACHING_MODALITY_INDEX.md](TEACHING_MODALITY_INDEX.md) - Modality translation rules
+3. Key rule: -1 Tier constraint must remain identical in new language
+4. Test: Does speaker of new language grasp same constraint? If yes, translation succeeds.
+
+### I want to teach discoveries to others...
+1. [TEACHING_MODALITY_INDEX.md](TEACHING_MODALITY_INDEX.md) - Multi-modality teaching guide
+2. [UFM_WIKI_ENTRY_TEMPLATE.md](UFM_WIKI_ENTRY_TEMPLATE.md) - Structure for teaching
+3. Plan: Visual → Narrative → Proof → Code (sequence works)
+4. Assess: Can learners reach constraint via their preferred modality?
 
 ---
 
