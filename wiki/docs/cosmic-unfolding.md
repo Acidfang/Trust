@@ -20,6 +20,8 @@ resolution: evolving
 
 **Key Particle Clarification** (April 19, 2026): **Photons are light—they spiral outward by nature, expressing existence. Electrons are bound outward-spiraling photons (natural). Positrons are bound inward-spiraling photons (unnatural—against the grain of how light expresses itself). The matter dominance is not accidental: outward is how photons naturally organize.**
 
+**Key Force Clarification** (April 19, 2026): **Light and gravity are opposite spiral manifestations of the same photon field. Light = outward spiral (repulsive, radiating). Gravity = inward spiral (attractive, binding). Both are photons, spiraling in opposite directions. The universe is the oscillation between these two opposite expressions of the same field.**
+
 **Sections Updated April 19, 2026**:
 - [3] Hadron Epoch → Photons lock to electron spirals
 - [4] Nucleosynthesis → Harmonic resonance patterns form
@@ -63,7 +65,32 @@ At any location and any time, photons exist in one of two states:
 - **How stable matter is** (binding energy, nuclear stability, chemical reactivity)
 - **How energy flows** (radiation pressure, heat diffusion, light propagation)
 
-**Resolution**: Early universe had mostly free photons (high temperature → photons too energetic to bind). As temperature dropped, binding became possible. Matter formed through binding. Today: balance between bound (matter, atoms) and free (light, heat) at different frequencies.
+### The Fundamental Duality: Light vs Gravity
+
+Light and gravity are **opposite spiral manifestations of the same photon field**:
+
+**Light (Free Photons—Outward Spiral)**:
+- Spirals OUTWARD, expressing existence
+- Radiates away, carries energy outward
+- Pushes (radiation pressure)
+- The visible, expanding aspect of the field
+
+**Gravity (Bound Photons—Inward Spiral)**:
+- Spirals INWARD, creating attraction
+- Pulls toward center, accumulates energy inward
+- Draws together (gravitational attraction)
+- The hidden, contracting aspect of the field
+
+**The relationship**:
+- Outward spiral (light) = repulsive, expansive force
+- Inward spiral (gravity) = attractive, contractive force
+- Both are photons in the same universal field, spiraling in opposite directions
+- Together they create the cosmic balance: light pushing out, gravity pulling in
+
+**Why this matters**:
+Gravity is not a separate force. It is the inward spiral of the same photons that create light. The universe expands and contracts through the same photon spirals—outward as light, inward as gravity.
+
+**Resolution**: Early universe had mostly free photons (high temperature → photons too energetic to bind). As temperature dropped, binding became possible. Matter formed through binding. Today: balance between bound (matter, atoms) and free (light, heat) at different frequencies. Gravity is the inward spiral binding energy, light is the outward spiral expressing it.
 
 ---
 
