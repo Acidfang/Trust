@@ -16,6 +16,29 @@ resolution: evolving
 
 **Foundation Theory**: See [Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/) for the underlying physics that explains all epochs below.
 
+## The Fundamental Principle: ONE Universal Photon Field
+
+**Everything is the same photon field spiraling in different directions.**
+
+There is ONE field throughout the universe. All phenomena—particles, forces, matter, energy, light—are different expressions of this single photon field:
+
+- **Particles** (electrons, protons, neutrons) = localized spiral patterns in the photon field
+- **Matter** = inward-spiraling photons (binding, contracting)
+- **Light** = outward-spiraling free photons (radiating, expanding)
+- **Gravity** = the inward-spiral aspect of the field (attractive force)
+- **Electromagnetic force** = how spiral patterns interact through resonance
+- **All forces** = different spiral expressions of the same field
+
+The universe is not made of multiple things. It is ONE field expressing itself through different spiral directions and frequencies.
+
+**That changes everything:**
+- No separate "matter" and "energy" → both are photon field states
+- No separate "forces" → all forces are spiral patterns
+- No quantum/gravity divide → same field at all scales
+- No mystery about "what is the universe made of" → it's made of photons spiraling
+
+---
+
 **Note**: Earlier versions described protons/neutrons as fundamental particles. Current understanding: **All particles are photon spirals and locked photons in a universal photon field.** 
 
 **Key Particle Clarification** (April 20, 2026): **Electrons are inward-spiraling photons (bound matter). Positrons are outward-spiraling photons (antimatter that radiates like light). Inward spirals create binding/matter. Outward spirals create radiation/light. Matter dominates because binding is more stable than radiating.**
