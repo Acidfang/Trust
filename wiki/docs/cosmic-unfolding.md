@@ -18,32 +18,43 @@ resolution: evolving
 
 ## The Fundamental Principle: ONE Universal Photon Field
 
-**Everything is the same photon field spiraling in different directions.**
+**Everything is the same photon field spiraling in different directions at different frequencies.**
 
-There is ONE field throughout the universe. All phenomena—particles, forces, matter, energy, light—are different expressions of this single photon field:
+There is ONE field throughout the universe. All phenomena—particles, forces, matter, energy, radiation—are different expressions of this single photon field:
 
-- **Particles** (electrons, protons, neutrons) = localized spiral patterns in the photon field
-- **Matter** = inward-spiraling photons (binding, contracting)
-- **Light** = outward-spiraling free photons (radiating, expanding)
-- **Gravity** = the inward-spiral aspect of the field (attractive force)
+- **Particles** (electrons, protons, neutrons) = localized spiral patterns in the photon field at specific frequencies
+- **Matter** = inward-spiraling photons (binding, contracting) at various frequencies
+- **Radiation** = outward-spiraling photons (radiating, expanding) at various frequencies
+  - *Visible light* = outward photons at visible frequencies (what we see)
+  - *Radio waves* = outward photons at radio frequencies
+  - *X-rays* = outward photons at X-ray frequencies
+  - *Dark matter* = unbound photons at non-observable frequencies
+  - All are photons, just different frequencies
+- **Gravity** = the inward-spiral aspect of the field at all frequencies (attractive force)
 - **Electromagnetic force** = how spiral patterns interact through resonance
 - **All forces** = different spiral expressions of the same field
 
-The universe is not made of multiple things. It is ONE field expressing itself through different spiral directions and frequencies.
+**CRITICAL**: Photons are NOT "light" by default. Photons are characterized by their FREQUENCY. Light is just the visible-frequency subset of photons. The universe contains photons at all frequencies across the entire spectrum.
+
+The universe is not made of "light." It is ONE photon field at ALL frequencies, expressing itself through different spiral directions and frequencies.
 
 **That changes everything:**
 - No separate "matter" and "energy" → both are photon field states
+- No separate "light" and "other radiation" → all are photons, frequency determines properties
 - No separate "forces" → all forces are spiral patterns
 - No quantum/gravity divide → same field at all scales
-- No mystery about "what is the universe made of" → it's made of photons spiraling
+- No mystery about "dark matter" → it's photons at non-observable frequencies
+- No mystery about "what is the universe made of" → photons at all frequencies, spiraling inward and outward
 
 ---
 
 **Note**: Earlier versions described protons/neutrons as fundamental particles. Current understanding: **All particles are photon spirals and locked photons in a universal photon field.** 
 
-**Key Particle Clarification** (April 20, 2026): **Electrons are inward-spiraling photons (bound matter). Positrons are outward-spiraling photons (antimatter that radiates like light). Inward spirals create binding/matter. Outward spirals create radiation/light. Matter dominates because binding is more stable than radiating.**
+**Key Photon Clarification** (April 20, 2026): **Photons are NOT "light" by default. Photons are defined by their frequency. Visible light is just one frequency range. Dark matter = unbound photons at non-observable frequencies. Black holes eject photons across the entire spectrum. One photon field, infinite frequencies, two spiral directions (inward/outward).**
 
-**Key Force Clarification** (April 19, 2026): **Light and gravity are opposite spiral manifestations of the same photon field. Light = outward spiral (repulsive, radiating). Gravity = inward spiral (attractive, binding). Both are photons, spiraling in opposite directions. The universe is the oscillation between these two opposite expressions of the same field.**
+**Key Particle Clarification** (April 20, 2026): **Electrons are inward-spiraling photons (bound matter). Positrons are outward-spiraling photons (antimatter that radiates). Inward spirals create binding/matter. Outward spirals create radiation. Matter dominates because binding is more stable than radiating.**
+
+**Key Force Clarification** (April 19, 2026): **Gravity and radiation are opposite spiral manifestations of the same photon field at all frequencies. Gravity = inward spiral (attractive, binding). Radiation = outward spiral (repulsive, radiating). Both exist at all frequencies. The universe is the oscillation between these two opposite expressions of the same field.**
 
 **Sections Updated April 19, 2026**:
 - [3] Hadron Epoch → Photons lock to electron spirals
