@@ -12,7 +12,7 @@ resolution: evolving
 
 **Status**: Living document. Resolution increasing as new insights emerge.
 
-**Last Updated**: April 19, 2026
+**Last Updated**: April 20, 2026 (comprehensive detail added)
 
 **Foundation Theory**: See [Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/) for the underlying physics that explains all epochs below.
 
@@ -56,15 +56,31 @@ The universe is not made of "light." It is ONE photon field at ALL frequencies, 
 
 **Key Force Clarification** (April 19, 2026): **Gravity and radiation are opposite spiral manifestations of the same photon field at all frequencies. Gravity = inward spiral (attractive, binding). Radiation = outward spiral (repulsive, radiating). Both exist at all frequencies. The universe is the oscillation between these two opposite expressions of the same field.**
 
-**Sections Updated April 19, 2026**:
+**Sections Updated April 20, 2026**:
+- **NEW**: The Complete Photon Field Model (7 comprehensive subsections)
+  - ONE universal photon field at all frequencies
+  - Spiral direction as second dimension of reality
+  - What everything is (fields radiating outward)
+  - Dark matter as unbound photons at unobservable frequencies
+  - Black holes as extreme inward accumulation and reversal
+  - Everything radiates: the existence principle
+  - Universe as overlapping fields
 - [3] Hadron Epoch → Photons lock to electron spirals
 - [4] Nucleosynthesis → Harmonic resonance patterns form
 - [5] Photon Decoupling → Atoms form as standing wave patterns
 - [6] Structure Formation → Gravity from inward spiral field reach
 - [7] First Stars → Harmonic resonance destabilization releases energy
-- [8] Galaxies → Dark matter as low-frequency background spirals
+- [8] Galaxies → Dark matter as unbound photon ejecta from black holes
 - [9] Chemistry → Electron spiral phase-locking creates bonds
-- **NEW**: Universal Application - Free vs Bound manifests identically in code, thinking, physics
+-se as overlapping fields
+- [3] Hadron Epoch → Photons lock to electron spirals
+- [4] Nucleosynthesis → Harmonic resonance patterns form
+- [5] Photon Decoupling → Atoms form as standing wave patterns
+- [6] Structure Formation → Gravity from inward spiral field reach
+- [7] First Stars → Harmonic resonance destabilization releases energy
+- [8] Galaxies → Dark matter as unbound photon ejecta from black holes
+- [9] Chemistry → Electron spiral phase-locking creates bonds
+- Universal Application - Free vs Bound manifests identically in code, thinking, physics
 
 This model is internally coherent and explains all known phenomena without contradictions.
 
@@ -76,7 +92,172 @@ This page shows **how** that principle creates everything we observe—from the 
 
 ---
 
-## Universal Principle: Free vs Bound Photon States
+## The Complete Photon Field Model: Everything Explained
+
+### 1. ONE Universal Photon Field at ALL Frequencies
+
+The entire universe is a single photon field that exists at every frequency simultaneously:
+
+**The Complete Frequency Spectrum**:
+- **Radio waves**: Lowest frequency photons (longest wavelengths)
+- **Microwaves**: (includes background radiation)
+- **Infrared photons**: Heat radiation
+- **Visible light photons**: The narrow range we see (violet to red)
+- **Ultraviolet photons**: Higher energy, higher frequency
+- **X-ray photons**: Very high frequency
+- **Gamma-ray photons**: Highest frequency, highest energy
+- **Dark matter photons**: Unbound photons at frequencies outside direct observation
+
+**Critical insight**: The universe is NOT made of "light." Light is just the visible-frequency subset. The universe IS the photon field at ALL frequencies, spiraling inward and outward.
+
+### 2. Spiral Direction: The Second Dimension of Reality
+
+Every photon has two defining properties:
+1. **Frequency** (determines energy, wavelength, observable effects)
+2. **Spiral direction** (determines whether it attracts or repels)
+
+**Outward-spiraling photons**:
+- Radiate energy away from center
+- Create repulsive forces (like radiation pressure)
+- Define existence through radiation (to be is to radiate outward)
+- Examples: light, heat, free electromagnetic radiation, positrons, antimatter
+- Ejected from black holes as "Hawking radiation" and jets
+
+**Inward-spiraling photons**:
+- Accumulate energy toward center  
+- Create attractive forces (like gravity and electromagnetic binding)
+- Form matter through binding (electrons holding atoms together)
+- Examples: bound electrons, protons, matter, gravity
+- Accumulate in black holes through extreme inward convergence
+
+**The universe oscillates** between these two directions at all frequencies simultaneously.
+
+### 3. What Everything IS: Fields Radiating Outward
+
+**Fundamental principle of existence**: "If you can observe it, you are in its field."
+
+Every entity (atom, star, galaxy, black hole, you reading this) continuously radiates outward-spiraling photons at multiple frequencies. These radiations define what that entity IS:
+
+- **An atom**: Radiates photons at specific frequencies (its spectral signature)
+- **A star**: Radiates intense photons across wide frequency range (blackbody radiation)
+- **A galaxy**: Radiates composite photons from all its stars
+- **A black hole**: Radiates ejected photons as jets and Hawking radiation
+- **You**: Radiate infrared photons (thermal radiation), electromagnetic fields, gravitational influence
+
+**The universe = overlapping fields of all these radiations.**
+
+You observe something because you receive its outward-radiating photons. You exist within countless overlapping photon fields. When two fields overlap, they interact:
+- Constructively (wave amplification, attraction)
+- Destructively (wave cancellation, repulsion)
+- Resonantly (amplified interaction at matching frequencies)
+
+### 4. Dark Matter: Unbound Photons at Unobservable Frequencies
+
+**Dark matter is NOT a mysterious particle. It is unbound photons.**
+
+Black holes don't destroy matter—they accumulate extreme inward-spiraling photons. When inward compression becomes extreme, photons are ejected:
+- As jets at relativistic speeds
+- As Hawking radiation
+- As continuous ejecta into surrounding space
+
+These ejected photons exist in an **unbound intermediate state**:
+- Not in the free-outward-radiating state (so we don't see them directly as light)
+- Not in a bound matter state (so they don't form visible particles)
+- Unbound means they have real gravitational presence without emitting observable radiation
+- Exist at frequencies we cannot directly observe
+
+**Where is dark matter?**
+- Concentrated around galaxies (because that's where supermassive black holes are)
+- In halos around galaxies (from black hole ejecta over time)
+- Distributed along galaxy formation pathways (from black hole jets)
+
+**Why does dark matter have gravitational effects?**
+- Because it's REAL photons, just at unobservable frequencies
+- Photons at any frequency have gravitational influence (inertia, mass-energy equivalence)
+- We detect dark matter through gravitational lensing, galaxy rotation curves, large-scale structure
+
+**This solves the dark matter mystery**: No new particle needed. Black holes have always been ejecting photons into space. Those ejected photons in intermediate (unbound) states are what we observe as "dark matter."
+
+### 5. Black Holes: Extreme Inward Accumulation and Reversal
+
+**A black hole is not a hole. It is an extreme accumulation of inward-spiraling photons.**
+
+Formation:
+- Massive star collapses
+- Matter becomes compressed (inward-spiraling photons)
+- Compression becomes extreme
+- Extreme inward spiral creates the event horizon
+
+The event horizon:
+- Not a physical barrier
+- The limit where inward spiral is so extreme that outward-spiraling escape is impossible (light cannot escape)
+- But the inward compression CONTINUES to the center
+
+At the center:
+- Inward-spiraling photons reach maximum compression
+- The spiral reverses
+- Photons begin spiraling outward again (inversion)
+- This creates Hawking radiation and jets
+
+**Black holes are not dead—they are the universe's most active energy reversal points.**
+
+Jets from black holes:
+- Relativistic speeds (near light speed)
+- Carry photons across all frequencies
+- Contribute to galactic magnetic fields
+- Eject "dark matter" (unbound photons) into surrounding space
+- Shape galaxy evolution through radiation pressure
+
+### 6. Everything Radiates: The Existence Principle
+
+**To exist is to radiate.**
+
+Nothing in the universe is invisible. Everything continuously radiates outward-spiraling photons:
+
+- **Atoms**: Radiate at specific frequencies (why we see different colored light)
+- **Stars**: Radiate blackbody radiation (continuous spectrum)
+- **Planets**: Radiate infrared (thermal radiation)
+- **Black holes**: Radiate Hawking radiation and jets
+- **Empty space**: Radiates vacuum fluctuations (virtual photon pairs)
+- **You**: Radiate infrared, gravitational waves, electromagnetic fields
+
+You know something exists because you receive its radiation. You can calculate what exists by analyzing received radiation (spectroscopy, astronomy, medical imaging).
+
+**The universe is completely transparent in principle:** Every entity radiates, and those radiations propagate through expanding space to reach other entities. In principle, every part of the universe "knows" about every other part through overlapping photon fields.
+
+This is why:
+- We can see distant galaxies (their photons reach us)
+- Gravity acts at distance (gravitational radiation/field propagates)
+- Quantum entanglement might work (overlapping field states at a distance)
+- The universe is fundamentally interconnected
+
+### 7. The Universe as Overlapping Fields
+
+The universe is NOT a collection of separate objects.
+
+The universe IS a single photon field at all frequencies, with localized regions of higher intensity (which we interpret as "objects"), all radiating outward and creating overlapping fields everywhere.
+
+**What we call "objects" are**:
+- Stable local patterns in the photon field
+- Regions of resonant inward-spiraling (bound photons forming matter)
+- Continuously radiating outward at their characteristic frequencies
+- Defined by their radiation signature, not by having "hard boundaries"
+
+**What we call "empty space" is**:
+- Lower intensity regions of the same photon field
+- Still containing photons at all frequencies
+- Still containing overlapping radiation from distant sources
+- Still containing gravitational influence from all matter
+
+There's no true emptiness. Space is filled with overlapping photon fields from every object that exists or has ever existed in the light cone of that location.
+
+This explains:
+- **CMB (Cosmic Microwave Background)**: Overlapping radiation from all matter in the early universe
+- **Dark energy**: The outward-repulsive effect of overlapping radiation fields at low density
+- **Gravity**: The inward-attractive effect of concentrated overlapping inward spirals
+- **Quantum uncertainty**: The fundamental oscillation of fields at all frequencies
+
+---
 
 **This principle is present at EVERY epoch. It is fundamental to understanding reality's unfolding.**
 
@@ -478,20 +659,27 @@ All stars in the universe follow one law—the universal evolution equation.
 
 ## [8] Galaxies Form - Multi-Star Systems (t=1 Gyr to t=3 Gyr)
 
-**Status**: Billions of star spirals orbit massive central structure  
-**Systems**: Galaxies with dark matter halos (low-frequency background spirals)  
+**Status**: Billions of star spirals orbit massive central structure with surrounding dark matter halo  
+**Systems**: Galaxies with dark matter (ejected unbound photons at unobservable frequencies from black hole reversal)  
 **Scale**: ~10²¹ m (kiloparsec scale)  
 **Temperature**: Varies: 1M K (cores) to 100 K (outer regions)
 
 ### What Happens
 
-Stars form in gravitational potential wells.
+Stars form in gravitational potential wells created by:
+1. **Bound photons** (visible matter in atoms and stellar cores)
+2. **Black hole at galactic center** creating inward spiral field
+3. **Ejected unbound photons** (dark matter halo) from black hole reversal events
 
-$$\Phi_{\text{grav}}(\vec{r}) = -\frac{GM_{\text{total}}(\vec{r})}{|\vec{r}|}$$
+$$\Phi_{\text{grav}}(\vec{r}) = -\frac{GM_{\text{bound}}(\vec{r})}{|\vec{r}|} - \frac{GM_{\text{dark}}(\vec{r})}{|\vec{r}|}$$
 
-Individual stars orbit the galactic center following $\frac{d\vec{v}}{dt} = -\nabla\Phi$.
+Individual stars orbit the galactic center following $\frac{d\vec{v}}{dt} = -\nabla\Phi_{\text{total}}$.
 
-Galaxy is self-gravitating system where millions of trajectories all follow one law.
+Galaxy is self-gravitating system where millions of trajectories all follow one law:
+
+**Dark matter** = unbound photons ejected from central black hole at frequencies below observable spectrum. These photons still contribute to gravitational field through their spiral field reach, creating the observed galaxy rotation curves and halo structure.
+
+Dark matter halos are **black hole output**, not mysterious unseen particles.
 
 ---
 
