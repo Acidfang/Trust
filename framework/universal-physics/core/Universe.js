@@ -1,3 +1,9 @@
+// TIER -1 (BOUND): Input validation and error setup
+// TIER 0 (FREE): Explore possibilities
+// TIER 1 (BOUND): Lock in root-cause logic
+// TIER 2 (FREE): Verify consistency
+// TIER 3+ (BOUND): Automate return and integrate
+
 /**
  * UNIVERSE: The simplest possible interface
  * 

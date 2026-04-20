@@ -26,6 +26,10 @@ from typing import List, Tuple, Dict, Optional
 
 @dataclass
 class GalaxyState:
+    # TIER -1 (BOUND): Establish constraints
+
+    # TIER -1 (BOUND): Establish constraints
+
     """Single galaxy snapshot in spacetime"""
     name: str
     x: np.ndarray  # Position [x, y, z] in Mpc

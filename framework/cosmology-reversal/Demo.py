@@ -19,6 +19,10 @@ from CosmologyReversal import (
 
 
 def demo_basic_reversal():
+    # TIER -1 (BOUND): Establish constraints
+
+    # TIER -1 (BOUND): Establish constraints
+
     """
     Simplest case: Local group of 5 galaxies reversed to origin
     """

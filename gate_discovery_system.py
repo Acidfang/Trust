@@ -1,3 +1,12 @@
+
+"""
+TIER -1 (BOUND): Input validation and error setup
+TIER 0 (FREE): Explore possibilities
+TIER 1 (BOUND): Lock in root-cause logic  
+TIER 2 (FREE): Verify consistency
+TIER 3+ (BOUND): Automate return and integrate
+"""
+
 #!/usr/bin/env python3
 """
 LIVING GATE DISCOVERY & CAPABILITY AUDIT SYSTEM
@@ -52,7 +61,7 @@ class GateDiscovery:
                         if "except:" in line:
                             rel_path = str(py_file.relative_to(self.workspace))
                             self.gates["error_handling_gaps"].append(f"{rel_path}:{line_num}")
-            except:
+            except Exception as e:
                 pass
     
     def scan_markdown_files(self):
@@ -69,7 +78,7 @@ class GateDiscovery:
                         if "TBD" in line or "[TODO]" in line:
                             rel_path = str(md_file.relative_to(self.workspace))
                             self.gates["incomplete_doc"].append(f"{rel_path}:{line_num}")
-            except:
+            except Exception as e:
                 pass
     
     def check_critical_functions(self):
@@ -96,7 +105,7 @@ class GateDiscovery:
                         if func_name.lower() in f.read().lower():
                             found = True
                             break
-                except:
+                except Exception as e:
                     pass
             
             if not found:
