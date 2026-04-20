@@ -18,7 +18,7 @@ resolution: evolving
 
 **Note**: Earlier versions described protons/neutrons as fundamental particles. Current understanding: **All particles are photon spirals and locked photons in a universal photon field.** 
 
-**Key Particle Clarification** (April 19, 2026): **Photons are light—they spiral outward by nature, expressing existence. Electrons are bound outward-spiraling photons (natural). Positrons are bound inward-spiraling photons (unnatural—against the grain of how light expresses itself). The matter dominance is not accidental: outward is how photons naturally organize.**
+**Key Particle Clarification** (April 20, 2026): **Electrons are inward-spiraling photons (bound matter). Positrons are outward-spiraling photons (antimatter that radiates like light). Inward spirals create binding/matter. Outward spirals create radiation/light. Matter dominates because binding is more stable than radiating.**
 
 **Key Force Clarification** (April 19, 2026): **Light and gravity are opposite spiral manifestations of the same photon field. Light = outward spiral (repulsive, radiating). Gravity = inward spiral (attractive, binding). Both are photons, spiraling in opposite directions. The universe is the oscillation between these two opposite expressions of the same field.**
 
@@ -70,25 +70,34 @@ At any location and any time, photons exist in one of two states:
 Light and gravity are **opposite spiral manifestations of the same photon field**:
 
 **Light (Free Photons—Outward Spiral)**:
-- Spirals OUTWARD, expressing existence
-- Radiates away, carries energy outward
+- Spirals OUTWARD, radiating away
+- Carries energy away from center
 - Pushes (radiation pressure)
 - The visible, expanding aspect of the field
 
-**Gravity (Bound Photons—Inward Spiral)**:
+**Gravity (Inward Spiral)**:
 - Spirals INWARD, creating attraction
 - Pulls toward center, accumulates energy inward
 - Draws together (gravitational attraction)
-- The hidden, contracting aspect of the field
+- The hidden, contracting aspect of the field; creates BINDING
 
 **The relationship**:
-- Outward spiral (light) = repulsive, expansive force
-- Inward spiral (gravity) = attractive, contractive force
+- Outward spiral (light) = repulsive, expansive force, radiates away
+- Inward spiral (gravity) = attractive, contractive force, binds together
 - Both are photons in the same universal field, spiraling in opposite directions
 - Together they create the cosmic balance: light pushing out, gravity pulling in
 
+**Connection to matter and binding**:
+Electrons are inward-spiraling photons—they create the binding force in atoms.
+Gravity is also inward spiral—it binds the universe at cosmic scales.
+Both are the same inward-binding principle at different scales.
+
+Light is outward spiral—it radiates away.
+Positrons are outward-spiraling—they annihilate and radiate.
+Both are the same outward-radiating principle.
+
 **Why this matters**:
-Gravity is not a separate force. It is the inward spiral of the same photons that create light. The universe expands and contracts through the same photon spirals—outward as light, inward as gravity.
+Gravity is not mysterious. It is the inward spiral of the same photons that create light. Matter (electrons, protons) and gravity are both inward spirals—binding forces. Light and positrons are both outward spirals—radiating forces.
 
 **Resolution**: Early universe had mostly free photons (high temperature → photons too energetic to bind). As temperature dropped, binding became possible. Matter formed through binding. Today: balance between bound (matter, atoms) and free (light, heat) at different frequencies. Gravity is the inward spiral binding energy, light is the outward spiral expressing it.
 
@@ -271,41 +280,43 @@ The gradient $-\nabla\Phi$ creates structure: different regions fall toward diff
 
 The unified potential landscape continues to differentiate. Photons begin organizing into **stable spiral patterns**.
 
-**Core insight**: Photons are light—and light naturally spirals outward, expressing its existence. 
+**Core insight**: Photons can spiral in two opposite directions, creating two opposite effects:
 
 Both electrons and positrons are photons, but they differ in **spiral direction**:
-- **Electron**: Photon spiraling **outward** (natural, expressing existence like light)
-- **Positron**: Photon spiraling **inward** (unnatural, opposite of light's nature)
+- **Electron**: Photon spiraling **inward** (bound matter—this is what locks particles together)
+- **Positron**: Photon spiraling **outward** (antimatter—radiates away like light)
 
-$$\text{Electron: Outward spiral (like light)} \quad \text{vs} \quad \text{Positron: Inward spiral (against light)}$$
+$$\text{Electron: Inward spiral (binds matter)} \quad \text{vs} \quad \text{Positron: Outward spiral (radiates like light)}$$
 
-### Why Outward is Natural
+### Why Inward Binds Matter
 
-Photons ARE light. Light expresses existence by radiating outward. When a photon stabilizes into a pattern, its natural direction is **outward**—the same direction as free light.
+Free photons spiral OUTWARD—they're light, radiating away. 
 
-An electron is a **bound photon still spiraling outward**—it retains the fundamental outward nature of light, just locked in place.
+When a photon becomes BOUND (confined, locked), it must spiral INWARD—creating the attractive force that binds particles together.
 
-A positron is the **unnatural opposite**—a photon spiraling inward, against the grain of how photons naturally express existence.
+An electron is an **inward-spiraling photon**—it creates the binding field that holds matter together in atoms.
+
+A positron is the **opposite**—an outward-spiraling bound photon that radiates away and annihilates with matter.
 
 ### Why This Matters
 
-**Annihilation**: When electron (outward spiral) meets positron (inward spiral):
+**Annihilation**: When electron (inward spiral) meets positron (outward spiral):
 - Opposite spirals approach each other
-- They cancel: OUT + IN = destructive interference
-- Energy released as free photons (which are outward-spiraling by nature)
+- They cancel: IN + OUT = destructive interference
+- Energy released as free photons (outward-radiating)
 
-**Matter-antimatter asymmetry**: The energy landscape **naturally favors outward spirals**—because that is how photons fundamentally express existence. More electrons form than positrons. This asymmetry—not a tiny accident but the expression of photon nature—seeds all matter in the universe.
+**Matter-antimatter asymmetry**: The energy landscape **naturally favors inward spirals**—because binding (matter) is more stable than radiating (antimatter). More electrons form than positrons. This asymmetry—the natural preference for binding over radiating—seeds all matter in the universe.
 
-**The simplification**: There is no "frame-dependent ambiguity." Photons spiral outward. Electrons are bound outward-spirals. Positrons are bound inward-spirals. Outward is natural; inward is unnatural.
+**The simplification**: Electrons are inward-spiraling photons (bound, matter-forming). Positrons are outward-spiraling photons (radiating, antimatter-like). Inward creates stability; outward creates radiation.
 
 $$\frac{d\mathbf{i}}{dt} = -\nabla\Phi \rightarrow \text{Photon spirals organize naturally in outward direction}$$
 
 ---
 
-## [3] Hadron Epoch - Nuclear Binding Emerges (t=10⁻⁶ to t=1 sec)
+## [3] Hadron Epoch - Protons and Neutrons Form (t=10⁻⁶ to t=1 sec)
 
-**Status**: Photons lock to electron spiral frequencies  
-**Systems**: Electrons (outward-spiraling photons), bound photons (nucleus-like states)  
+**Status**: Photons lock to create stable nuclear particles  
+**Systems**: Electrons (inward-spiraling photons), Protons (complex bound states), Neutrons (bound photon clusters), free photons  
 **Scale**: ~10⁻¹⁵ m  
 **Temperature**: 10¹¹ K → 10⁹ K
 
