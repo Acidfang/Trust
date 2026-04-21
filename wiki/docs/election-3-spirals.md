@@ -205,7 +205,7 @@ function drawFormationView() {
             ctx.strokeStyle = `rgba(100, 120, 180, ${0.3 - orbit * 0.05})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
-            ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+            ctx.arc(centerX, centerY, radius, 0, progress);
             ctx.stroke();
         }
         
@@ -269,39 +269,45 @@ function drawCenterPerspective() {
     const height = canvas.height;
     const centerX = width / 2;
     const centerY = height / 2;
+    const maxRadius = 150;
     
     ctx.fillStyle = '#0a0e27';
     ctx.fillRect(0, 0, width, height);
     
-    const t = election3State.time * 1.5;
-    
-    // Draw particles from center perspective (radial outward)
-    for (let i = 0; i < 5; i++) {
-        const angle = (i / 5) * Math.PI * 2 + t;
+    // Draw spiral trails from center perspective
+    for (let spiral of election3State.spirals) {
+        ctx.strokeStyle = spiral.color;
+        ctx.lineWidth = 2;
+        ctx.globalAlpha = 0.8;
+        ctx.beginPath();
         
-        // Draw particles at various distances (from close to far)
-        for (let dist = 20; dist < 160; dist += 30) {
-            const progress = (t * 2 + (dist / 160) * Math.PI * 2) % (Math.PI * 2);
-            const x = centerX + dist * Math.cos(angle);
-            const y = centerY + dist * Math.sin(angle);
+        let isFirstPoint = true;
+        for (let tval = 0; tval < Math.PI * 2 * 4; tval += 0.1) {
+            const radiusDecay = Math.exp(-spiral.decay * tval);
+            const radius = maxRadius * radiusDecay;
+            const angle = tval * spiral.frequency + spiral.startAngle;
             
-            // Show orbit circles
-            if (dist % 40 === 20) {
-                ctx.strokeStyle = `rgba(100, 120, 180, 0.2)`;
-                ctx.lineWidth = 1;
-                ctx.beginPath();
-                ctx.arc(centerX, centerY, dist, 0, Math.PI * 2);
-                ctx.stroke();
+            const x = centerX + radius * Math.cos(angle);
+            const y = centerY + radius * Math.sin(angle);
+            
+            if (isFirstPoint) {
+                ctx.moveTo(x, y);
+                isFirstPoint = false;
+            } else {
+                ctx.lineTo(x, y);
             }
-            
-            const size = 2 + (1 - dist / 160);
-            ctx.fillStyle = `hsl(${(i * 60 + progress * 180) % 360}, 100%, 60%)`;
-            ctx.globalAlpha = 0.8 - (dist / 160) * 0.3;
-            ctx.beginPath();
-            ctx.arc(x, y, size, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.globalAlpha = 1.0;
         }
+        ctx.stroke();
+        ctx.globalAlpha = 1.0;
+    }
+    
+    // Draw orbit reference arcs (not full circles)
+    ctx.strokeStyle = 'rgba(100, 120, 180, 0.25)';
+    ctx.lineWidth = 1;
+    for (let r = 50; r <= maxRadius; r += 40) {
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, r, 0, Math.PI * 2);
+        ctx.stroke();
     }
     
     // Draw center point (THE OBSERVER)
@@ -310,14 +316,29 @@ function drawCenterPerspective() {
     ctx.arc(centerX, centerY, 6, 0, Math.PI * 2);
     ctx.fill();
     
-    // Draw rays from center
-    for (let angle = 0; angle < Math.PI * 2; angle += Math.PI / 8) {
-        ctx.strokeStyle = 'rgba(255, 107, 107, 0.2)';
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(centerX, centerY);
-        ctx.lineTo(centerX + 160 * Math.cos(angle), centerY + 160 * Math.sin(angle));
-        ctx.stroke();
+    // Draw animated particles on the spirals
+    const t = election3State.time;
+    for (let i = 0; i < election3State.spirals.length; i++) {
+        const spiral = election3State.spirals[i];
+        for (let step = 0; step < 8; step++) {
+            const particleT = t * 3 + step * (Math.PI * 2 / 8);
+            const radiusDecay = Math.exp(-spiral.decay * particleT);
+            const radius = maxRadius * radiusDecay;
+            
+            if (radius > 3) {
+                const angle = particleT * spiral.frequency + spiral.startAngle;
+                const x = centerX + radius * Math.cos(angle);
+                const y = centerY + radius * Math.sin(angle);
+                const size = 3 * radiusDecay;
+                
+                ctx.fillStyle = spiral.color;
+                ctx.globalAlpha = 0.7;
+                ctx.beginPath();
+                ctx.arc(x, y, size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.globalAlpha = 1.0;
+            }
+        }
     }
     
     ctx.fillStyle = '#64b5f6';
