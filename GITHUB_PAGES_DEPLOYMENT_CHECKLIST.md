@@ -52,6 +52,47 @@ All systems are configured for automatic GitHub Pages deployment. **The wiki wil
 
 ---
 
+---
+
+## ⚠️ CRITICAL: Workflow Authority Rules
+
+**The GitHub Actions workflow (.github/workflows/build-wiki.yml) is the SOLE authority for gh-pages branch.**
+
+### Never Do This:
+- ❌ Manually push to gh-pages: `git push origin gh-pages`
+- ❌ Manually merge master into gh-pages: `git merge master`
+- ❌ Edit root-level `github_wiki_*.md` files expecting them to deploy
+- ❌ Directly edit gh-pages branch
+
+### Always Do This:
+- ✅ Edit files in `wiki/` folder only
+- ✅ Commit and push to `master` branch
+- ✅ Workflow automatically triggers on wiki/ changes
+- ✅ Workflow builds and deploys to gh-pages
+- ✅ Site updates automatically
+
+### The Correct Flow:
+```
+1. Edit wiki/docs/*.md or wiki/_config.yml
+2. git add wiki/*
+3. git commit -m "message"
+4. git push origin master
+5. GitHub Actions workflow triggers automatically
+6. Checks `.github/workflows/build-wiki.yml` triggers:
+   - on: push to master
+   - paths: ['wiki/**', '.github/workflows/build-wiki.yml']
+7. Builds Jekyll site from /wiki
+8. Deploys built site to gh-pages using force_orphan: true
+9. Site updates at https://acidfang.github.io/Trust
+```
+
+### What Breaks the System:
+- Manual gh-pages pushes conflict with workflow deployments
+- `force_orphan: true` in the workflow means gh-pages is always auto-generated
+- Never edit gh-pages directly—it will be overwritten on next workflow run
+
+---
+
 ## What to do Now
 
 ### Step 1: Enable GitHub Pages
