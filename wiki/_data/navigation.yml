@@ -37,6 +37,8 @@ navigation:
         url: "/whitepaper/"
       - name: "The Five Elections"
         children:
+          - name: "Elections Roadmap"
+            url: "/elections-roadmap/"
           - name: "Election 1: Distinction"
             url: "/election-1/"
           - name: "Election 2: Movement"
