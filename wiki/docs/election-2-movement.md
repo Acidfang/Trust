@@ -45,8 +45,21 @@ This is why:
 
 ## The Visualization: Energy Finding Balance
 
+### Choose Your Perspective
+
+<div style="text-align: center; margin: 20px 0;">
+<button id="view-flow" style="padding: 10px 15px; margin: 5px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">→ Particle Flow</button>
+<button id="view-potential" style="padding: 10px 15px; margin: 5px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">⛰ Potential Landscape</button>
+<button id="view-distribution" style="padding: 10px 15px; margin: 5px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">⬌ Distribution Over Time</button>
+<button id="view-entropy" style="padding: 10px 15px; margin: 5px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">⚡ Entropy Increase</button>
+</div>
+
 <div id="election2-container" style="margin: 30px 0; text-align: center;">
     <canvas id="election2-canvas" width="700" height="400" style="border: 1px solid rgba(100,150,255,0.3); border-radius: 4px; background: #0a0e27; display: inline-block;"></canvas>
+</div>
+
+<div id="perspective-explanation" style="margin-top: 20px; padding: 15px; background: rgba(102, 126, 234, 0.1); border-left: 3px solid #667eea; border-radius: 4px;">
+<p id="explanation-text" style="margin: 0; color: #a0aec0; font-size: 0.95em;"></p>
 </div>
 
 <script>
