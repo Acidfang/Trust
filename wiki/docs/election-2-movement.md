@@ -63,128 +63,93 @@ This is why:
 </div>
 
 <script>
-// Animation state
 let election2State = {
     time: 0,
     particles: [],
     animationId: null,
-    isRunning: true
+    isRunning: true,
+    perspective: 'flow',
+    particleCount: [0, 0, 0], // Track particles in left/center/right regions
+    maxEntropy: 0
 };
 
-// Initialize particles
 function initElection2Particles() {
     election2State.particles = [];
-    // Particles start at high potential (left side)
     for (let i = 0; i < 60; i++) {
         election2State.particles.push({
             x: 100 + Math.random() * 80,
             y: 50 + Math.random() * 300,
             vx: 0,
             vy: 0,
-            mass: 1
+            mass: 1,
+            age: 0
         });
     }
 }
 
 function getEnergyPotential(x, y, width) {
-    // Energy gradient: high on left (vacuum), low on right (equilibrium)
-    // Gradient follows: Φ(x) = -x / width (negative so gradient points right)
     const normalizedX = x / width;
-    return 1 - normalizedX; // 1 at left (high), 0 at right (low)
+    return 1 - normalizedX;
 }
 
 function getGradient(x, y, width) {
-    // Numerical gradient: dΦ/dx
     const dx = 5;
     const left = getEnergyPotential(x - dx, y, width);
     const right = getEnergyPotential(x + dx, y, width);
-    const gradMag = (right - left) / (2 * dx);
-    
-    return -gradMag; // Force points opposite to gradient
+    return -(right - left) / (2 * dx);
 }
 
 function updateElection2Particles(width, height, dt) {
     for (let particle of election2State.particles) {
-        // Calculate gradient at particle position
         const gradient = getGradient(particle.x, particle.y, width);
-        
-        // Force opposes gradient (flows downhill)
-        const fx = gradient * 50; // Scale for visibility
-        
-        // Very slight vertical random walk to show diffusion
+        const fx = gradient * 50;
         const fy = (Math.random() - 0.5) * 10;
-        
-        // Update velocity (with drag)
         const drag = 0.85;
         particle.vx = (particle.vx + fx * 0.02) * drag;
         particle.vy = (particle.vy + fy * 0.02) * drag;
-        
-        // Update position
         particle.x += particle.vx * dt;
         particle.y += particle.vy * dt;
+        particle.age += dt;
         
-        // Bounce off boundaries
-        if (particle.x < 10) {
-            particle.x = 10;
-            particle.vx *= -0.5;
-        }
-        if (particle.x > width - 10) {
-            particle.x = width - 10;
-            particle.vx *= -0.5;
-        }
-        if (particle.y < 10) {
-            particle.y = 10;
-            particle.vy *= -0.5;
-        }
-        if (particle.y > height - 10) {
-            particle.y = height - 10;
-            particle.vy *= -0.5;
-        }
+        if (particle.x < 10) { particle.x = 10; particle.vx *= -0.5; }
+        if (particle.x > width - 10) { particle.x = width - 10; particle.vx *= -0.5; }
+        if (particle.y < 10) { particle.y = 10; particle.vy *= -0.5; }
+        if (particle.y > height - 10) { particle.y = height - 10; particle.vy *= -0.5; }
     }
+    
+    // Count particles in regions
+    const leftCount = election2State.particles.filter(p => p.x < width / 3).length;
+    const rightCount = election2State.particles.filter(p => p.x > 2 * width / 3).length;
+    election2State.particleCount = [leftCount, election2State.particles.length - leftCount - rightCount, rightCount];
+    election2State.maxEntropy = Math.max(election2State.maxEntropy, rightCount);
 }
 
-function drawElection2Visualization() {
-    const canvas = document.getElementById('election2-canvas');
-    if (!canvas) return;
-    
-    const ctx = canvas.getContext('2d');
-    const width = canvas.width;
-    const height = canvas.height;
-    
-    // Clear canvas
+function drawFlowPerspective(ctx, width, height) {
     ctx.fillStyle = '#0a0e27';
     ctx.fillRect(0, 0, width, height);
     
-    // Draw energy gradient field background
     const gridSpacing = 20;
     for (let x = 0; x < width; x += gridSpacing) {
         for (let y = 0; y < height; y += gridSpacing) {
             const potential = getEnergyPotential(x, y, width);
-            // Color from blue (high potential) to red (low potential)
-            const hue = Math.round(240 - potential * 120); // 240° (blue) to 120° (green)
+            const hue = Math.round(240 - potential * 120);
             const lightness = Math.round(20 + potential * 30);
             ctx.fillStyle = `hsl(${hue}, 70%, ${lightness}%)`;
             ctx.fillRect(x - gridSpacing/2, y - gridSpacing/2, gridSpacing, gridSpacing);
         }
     }
     
-    // Draw vector field (gradient arrows)
     const arrowSpacing = 50;
     for (let x = arrowSpacing; x < width; x += arrowSpacing) {
         for (let y = arrowSpacing; y < height; y += arrowSpacing) {
             const gradient = getGradient(x, y, width);
-            const arrowSize = 15;
             const arrowLength = Math.abs(gradient) * 20;
-            
-            // Draw arrow pointing downhill (right = low potential)
             ctx.strokeStyle = `rgba(255, 150, 100, ${0.3 + Math.abs(gradient) * 0.3})`;
             ctx.lineWidth = 1.5;
             ctx.beginPath();
             ctx.moveTo(x, y);
             ctx.lineTo(x + arrowLength, y);
             ctx.stroke();
-            
-            // Arrow head
             ctx.beginPath();
             ctx.moveTo(x + arrowLength, y);
             ctx.lineTo(x + arrowLength - 5, y - 4);
@@ -195,57 +160,223 @@ function drawElection2Visualization() {
         }
     }
     
-    // Draw particles
     for (let particle of election2State.particles) {
         const potential = getEnergyPotential(particle.x, particle.y, width);
-        
-        // Color based on potential
         const hue = Math.round(240 - potential * 120);
         ctx.fillStyle = `hsl(${hue}, 100%, 60%)`;
-        
-        // Size based on potential (more concentrated when low)
         const size = 2 + (1 - potential) * 2;
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, size, 0, Math.PI * 2);
         ctx.fill();
     }
     
-    // Draw energy scale labels
-    ctx.fillStyle = '#888';
-    ctx.font = '10px monospace';
-    ctx.textAlign = 'left';
-    ctx.fillText('HIGH ENERGY', 10, 20);
-    ctx.fillStyle = '#888';
-    ctx.textAlign = 'right';
-    ctx.fillText('LOW ENERGY', width - 10, 20);
-    
-    // Draw flow direction label
     ctx.fillStyle = '#ffb74d';
     ctx.font = 'bold 12px monospace';
     ctx.textAlign = 'center';
-    ctx.fillText('→ Flow Direction (Downhill)', width / 2, 40);
+    ctx.fillText('→ Particles flow downhill from high to low potential', width / 2, 40);
     
-    // Draw title
-    ctx.fillStyle = '#64b5f6';
-    ctx.font = 'bold 16px monospace';
+    document.getElementById('explanation-text').textContent = 'Particles move in response to the energy gradient. Orange arrows show the direction of steepest descent. Colors show potential energy: blue = high, red = low. Watch how particles accumulate in low-energy regions (right side).';
+}
+
+function drawLandscapePerspective(ctx, width, height) {
+    ctx.fillStyle = '#0a0e27';
+    ctx.fillRect(0, 0, width, height);
+    
+    // Draw 3D-ish landscape
+    const peaks = 4;
+    const wavelength = width / peaks;
+    
+    // Draw landscape surface
+    ctx.fillStyle = 'rgba(100, 150, 255, 0.3)';
+    ctx.beginPath();
+    ctx.moveTo(0, height);
+    for (let x = 0; x <= width; x += 5) {
+        const potential = getEnergyPotential(x, height / 2, width);
+        const y = height - 50 - potential * 200;
+        ctx.lineTo(x, y);
+    }
+    ctx.lineTo(width, height);
+    ctx.closePath();
+    ctx.fill();
+    
+    // Draw contour lines
+    for (let p = 0.1; p <= 1; p += 0.1) {
+        ctx.strokeStyle = `rgba(100, 150, 255, ${0.2 + (1 - p) * 0.3})`;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        let isFirst = true;
+        for (let x = 0; x <= width; x += 5) {
+            const potential = getEnergyPotential(x, height / 2, width);
+            if (Math.abs(potential - p) < 0.05) {
+                const y = height - 50 - p * 200;
+                if (isFirst) { ctx.moveTo(x, y); isFirst = false; }
+                else { ctx.lineTo(x, y); }
+            }
+        }
+        ctx.stroke();
+    }
+    
+    // Draw particles on landscape
+    for (let particle of election2State.particles) {
+        const potential = getEnergyPotential(particle.x, particle.y, width);
+        const dispY = height - 50 - potential * 200;
+        const hue = Math.round(240 - potential * 120);
+        ctx.fillStyle = `hsl(${hue}, 100%, 60%)`;
+        ctx.beginPath();
+        ctx.arc(particle.x, dispY - 5, 3, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    
+    ctx.fillStyle = '#ffb74d';
+    ctx.font = 'bold 12px monospace';
+    ctx.textAlign = 'left';
+    ctx.fillText('HIGH POTENTIAL →', 10, 30);
+    ctx.textAlign = 'right';
+    ctx.fillText('← LOW POTENTIAL', width - 10, 30);
+    
+    document.getElementById('explanation-text').textContent = 'This view shows the energy landscape as a 3D surface. Particles naturally roll downhill. The contour lines show regions of equal energy potential. Real example: this is how electrons behave in atomic orbitals—they occupy lower energy states.';
+}
+
+function drawDistributionPerspective(ctx, width, height) {
+    ctx.fillStyle = '#0a0e27';
+    ctx.fillRect(0, 0, width, height);
+    
+    // Draw axes
+    ctx.strokeStyle = '#666';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(60, 50);
+    ctx.lineTo(60, height - 40);
+    ctx.lineTo(width - 20, height - 40);
+    ctx.stroke();
+    
+    // Labels
+    ctx.fillStyle = '#888';
+    ctx.font = '10px monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText('Count', 50, 50);
     ctx.textAlign = 'center';
-    ctx.fillText('Election 2: Systems Flow Toward Equilibrium', width / 2, height - 15);
+    ctx.fillText('Position (Low → High Energy)', width / 2, height - 10);
+    
+    // Draw histogram of current distribution
+    const binCount = 5;
+    const binWidth = (width - 80) / binCount;
+    const maxCount = 20;
+    
+    for (let i = 0; i < binCount; i++) {
+        const binStart = i * binWidth / (width - 80) * width;
+        const binEnd = (i + 1) * binWidth / (width - 80) * width;
+        const count = election2State.particles.filter(p => p.x >= 60 + binStart && p.x < 60 + (binEnd)).length;
+        const barHeight = (count / maxCount) * (height - 90);
+        
+        ctx.fillStyle = `hsl(${240 - (i / binCount) * 120}, 100%, 60%)`;
+        ctx.fillRect(60 + binStart, height - 40 - barHeight, binWidth - 5, barHeight);
+        
+        ctx.fillStyle = '#999';
+        ctx.font = '9px monospace';
+        ctx.textAlign = 'center';
+        ctx.fillText(count, 60 + binStart + binWidth / 2, height - 20);
+    }
+    
+    ctx.fillStyle = '#ffb74d';
+    ctx.font = 'bold 12px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('Particle Distribution Over Space (Time →)', width / 2, 40);
+    
+    document.getElementById('explanation-text').textContent = 'This histogram shows WHERE particles are located. Over time, particles accumulate more and more in the low-energy regions (right side). The distribution shifts from uniform to concentrated—this is Maxwell-Boltzmann distribution in action.';
+}
+
+function drawEntropyPerspective(ctx, width, height) {
+    ctx.fillStyle = '#0a0e27';
+    ctx.fillRect(0, 0, width, height);
+    
+    // Draw axes
+    ctx.strokeStyle = '#666';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(60, 50);
+    ctx.lineTo(60, height - 40);
+    ctx.lineTo(width - 20, height - 40);
+    ctx.stroke();
+    
+    // Labels
+    ctx.fillStyle = '#888';
+    ctx.font = '10px monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText('Particles in Low-E Region', 50, 50);
+    ctx.textAlign = 'center';
+    ctx.fillText('Time →', width / 2, height - 10);
+    
+    // Draw entropy curve
+    ctx.strokeStyle = '#ff6464';
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    let isFirst = true;
+    for (let x = 60; x < width - 20; x += 5) {
+        const t = (x - 60) / (width - 80) * election2State.time;
+        const entropy = election2State.maxEntropy * (1 - Math.exp(-t / 100));
+        const y = height - 40 - (entropy / election2State.maxEntropy || 0) * (height - 90);
+        if (isFirst) { ctx.moveTo(x, y); isFirst = false; }
+        else { ctx.lineTo(x, y); }
+    }
+    ctx.stroke();
+    
+    // Draw current point
+    const rightCount = election2State.particleCount[2];
+    const pointX = 60 + (election2State.time / 500) * (width - 80);
+    const pointY = height - 40 - (rightCount / (election2State.maxEntropy || 1)) * (height - 90);
+    ctx.fillStyle = '#ffb74d';
+    ctx.beginPath();
+    ctx.arc(pointX, pointY, 4, 0, Math.PI * 2);
+    ctx.fill();
+    
+    ctx.fillStyle = '#ffb74d';
+    ctx.font = 'bold 12px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('Entropy Increase (Order → Disorder)', width / 2, 40);
+    
+    document.getElementById('explanation-text').textContent = 'Entropy measures disorder. As particles spread from ordered high-energy region to diffuse low-energy region, disorder increases. This curve never goes down—entropy always increases or stays the same. This is the Second Law of Thermodynamics in action.';
+}
+
+function drawElection2Visualization() {
+    const canvas = document.getElementById('election2-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    
+    switch(election2State.perspective) {
+        case 'flow': drawFlowPerspective(ctx, width, height); break;
+        case 'potential': drawLandscapePerspective(ctx, width, height); break;
+        case 'distribution': drawDistributionPerspective(ctx, width, height); break;
+        case 'entropy': drawEntropyPerspective(ctx, width, height); break;
+    }
 }
 
 function animateElection2() {
-    const canvas = document.getElementById('election2-canvas');
-    if (!canvas) return;
-    
     if (election2State.isRunning) {
-        updateElection2Particles(canvas.width, canvas.height, 1);
-        drawElection2Visualization();
+        const canvas = document.getElementById('election2-canvas');
+        if (canvas) {
+            updateElection2Particles(canvas.width, canvas.height, 1);
+            drawElection2Visualization();
+        }
         election2State.animationId = requestAnimationFrame(animateElection2);
     }
 }
 
-// Initialize and start
+['view-flow', 'view-potential', 'view-distribution', 'view-entropy'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+        btn.addEventListener('click', () => {
+            election2State.perspective = id.replace('view-', '');
+            document.querySelectorAll('button[id^="view-"]').forEach(b => b.style.opacity = '0.5');
+            btn.style.opacity = '1';
+        });
+    }
+});
+
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', () => {
         initElection2Particles();
         animateElection2();
     });
@@ -254,12 +385,9 @@ if (document.readyState === 'loading') {
     animateElection2();
 }
 
-// Redraw on resize
-window.addEventListener('resize', function() {
+window.addEventListener('resize', () => {
     const canvas = document.getElementById('election2-canvas');
-    if (canvas) {
-        drawElection2Visualization();
-    }
+    if (canvas) drawElection2Visualization();
 });
 </script>
 
