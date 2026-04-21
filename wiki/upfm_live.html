@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPFM Live Visualization</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #0a0e27;
+      color: #e0e0e0;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    
+    .image-box {
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #1a1f3a;
+      padding: 10px;
+    }
+    
+    canvas {
+      width: 100%;
+      height: auto;
+      image-rendering: pixelated;
+    }
+    
+    .label {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+    }
+    
+    .status {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+    h1 {
+      margin: 0 0 10px 0;
+      color: #fff;
+    }
+    
+    .subtitle {
+      color: #999;
+      margin-bottom: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Unified Photon Field Model - Spiral Potentials</h1>
+  <p class="subtitle">Every potential is a spiral. Watch them encode the First Elections through spiral geometry.</p>
+  <div style="background: rgba(186, 104, 200, 0.1); border: 2px solid rgba(186, 104, 200, 0.3); padding: 15px; margin: 20px 0; border-radius: 4px;">
+    <strong style="color: #e0b0ff;">SPIRALS ARE FUNDAMENTAL</strong>
+    <p style="margin-top: 10px; color: #d0b0e0; font-size: 0.95em;">
+      These potential fields aren't decorated with spirals. The spirals ARE the potentials.
+      Spirals encode how the First Elections manifest in mathematical form.
+    </p>
+  </div>
+  
+  <div class="container">
+    <div class="image-box">
+      <canvas id="electron-canvas" width="256" height="256"></canvas>
+      <div class="label">Electron Spiral (Elections 2+3+4)</div>
+      <div class="status" id="electron-status">Rendering...</div>
+    </div>
+    
+    <div class="image-box">
+      <canvas id="photon-canvas" width="256" height="256"></canvas>
+      <div class="label">Photon Propagating (Elections 2+3)</div>
+      <div class="status" id="photon-status">Rendering...</div>
+    </div>
+    
+    <div class="image-box">
+      <canvas id="galaxy-canvas" width="256" height="256"></canvas>
+      <div class="label">Galaxy Spiral (Elections 3+4)</div>
+      <div class="status" id="galaxy-status">Rendering...</div>
+    </div>
+    
+    <div class="image-box">
+      <canvas id="consciousness-canvas" width="256" height="256"></canvas>
+      <div class="label">Consciousness Network (Elections 2+3+4)</div>
+      <div class="status" id="consciousness-status">Rendering...</div>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * Direct potential rendering - The First Elections Framework
+     * 
+     * Election 1: Being (Is/Is Not) - creates the field itself
+     * Election 2: Movement (Gradient resolution) - determines system evolution: dx/dt = -∇Φ
+     * Election 3: Rotation (Radial + Rotational) - creates spiral structure in potentials
+     * Election 4: Direction (Diffusion asymmetry) - creates inward/outward orientation
+     * 
+     * Every Φ(x,y) potential visualized here encodes these elections simultaneously.
+     * Not as sequence, but as irreducible constraints that generate the field structure.
+     */
+    
+    class PotentialRenderer {
+      constructor(gridSize = 256, domain = [-2, 2]) {
+        this.gridSize = gridSize;
+        this.domain = domain;
+        this.dx = (domain[1] - domain[0]) / gridSize;
+      }
+
+      render(potentialFunc, params = {}) {
+        const canvas = document.createElement('canvas');
+        canvas.width = this.gridSize;
+        canvas.height = this.gridSize;
+        const ctx = canvas.getContext('2d');
+        const imageData = ctx.createImageData(this.gridSize, this.gridSize);
+        const data = imageData.data;
+        
+        const domainMin = this.domain[0];
+        let potMin = Infinity, potMax = -Infinity;
+        const potentials = [];
+        
+        // Compute potential at all points
+        for (let i = 0; i < this.gridSize * this.gridSize; i++) {
+          const y = Math.floor(i / this.gridSize);
+          const x = i % this.gridSize;
+          const px = domainMin + x * this.dx;
+          const py = domainMin + y * this.dx;
+          
+          const pot = potentialFunc(px, py, params);
+          potentials.push(pot);
+          potMin = Math.min(potMin, pot);
+          potMax = Math.max(potMax, pot);
+        }
+        
+        // Normalize and render
+        const potRange = potMax - potMin + 1e-6;
+        
+        for (let i = 0; i < potentials.length; i++) {
+          // Hue from potential phase
+          const hue = ((potentials[i] % (2 * Math.PI)) / (2 * Math.PI)) * 360;
+          
+          // Value from normalized magnitude
+          const value = (potentials[i] - potMin) / potRange;
+          
+          // HSV to RGB
+          const rgb = this.hsv2rgb(hue, 1.0, value);
+          
+          const idx = i * 4;
+          data[idx + 0] = rgb.r;
+          data[idx + 1] = rgb.g;
+          data[idx + 2] = rgb.b;
+          data[idx + 3] = 255;
+        }
+        
+        ctx.putImageData(imageData, 0, 0);
+        return canvas;
+      }
+
+      hsv2rgb(h, s, v) {
+        h = h % 360;
+        const c = v * s;
+        const x = c * (1 - Math.abs(((h / 60) % 2) - 1));
+        const m = v - c;
+        
+        let r, g, b;
+        if (h < 60) { r = c; g = x; b = 0; }
+        else if (h < 120) { r = x; g = c; b = 0; }
+        else if (h < 180) { r = 0; g = c; b = x; }
+        else if (h < 240) { r = 0; g = x; b = c; }
+        else if (h < 300) { r = x; g = 0; b = c; }
+        else { r = c; g = 0; b = x; }
+        
+        return {
+          r: Math.round((r + m) * 255),
+          g: Math.round((g + m) * 255),
+          b: Math.round((b + m) * 255)
+        };
+      }
+
+      renderToCanvas(potentialFunc, params, canvasId) {
+        const canvas = document.getElementById(canvasId);
+        const sourceCanvas = this.render(potentialFunc, params);
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(sourceCanvas, 0, 0);
+      }
+    }
+
+    // Potential functions - Each encodes The First Elections
+    // Using proper domain-specific visualization techniques from online research
+    const Potentials = {
+      electronSpiral: (x, y, params = {}) => {
+        // Elections 2+3+4: Electron emerges from gradient resolution (2),
+        // radial+rotational composition (3), and inward bias toward nucleus (4)
+        const r = Math.sqrt(x * x + y * y) + 1e-10;
+        const theta = Math.atan2(y, x);
+        
+        // Radial decay: election 4 (direction toward center)
+        const radialEnvelope = Math.exp(-1.5 * r);
+        
+        // Angular structure: election 3 (rotation creating orbital shapes)
+        const sOrbital = 1.0;  // spherically symmetric (no rotation)
+        const pOrbital = Math.cos(theta);  // dumbbell shape (1x rotation)
+        const dOrbital = Math.cos(2 * theta);  // cloverleaf pattern (2x rotation)
+        
+        const angularStructure = 0.4 * sOrbital + 0.3 * pOrbital + 0.3 * dOrbital;
+        const phi = radialEnvelope * angularStructure;
+        return phi;
+      },
+
+      photonPropagating: (x, y, params = {}) => {
+        // Elections 2+3: Photon emerges from gradient resolution (2) 
+        // and radial+rotational composition (3)
+        // The sinusoidal oscillation IS election 3 (rotation manifesting as wave)
+        // The Gaussian envelope IS the photon's confined identity
+        const kMagnitude = 8.0;
+        const propagationAngle = 0.5;
+        const kx = kMagnitude * Math.cos(propagationAngle);
+        const ky = kMagnitude * Math.sin(propagationAngle);
+        
+        // Plane wave: election 3 (rotational oscillation)
+        const oscillation = Math.sin(kx * x + ky * y);
+        
+        // Gaussian envelope: election 4 (inward bias creating localization)
+        const envelopeWidth = 0.1;
+        const amplitudeEnvelope = Math.exp(-envelopeWidth * (x * x + y * y));
+        
+        const phi = oscillation * amplitudeEnvelope;
+        return phi;
+      },
+
+      galaxySpiral: (x, y, params = {}) => {
+        // Elections 3+4: Galaxy emerges from spiral structure (3) 
+        // and inward diffusion bias (4)
+        // The logarithmic spiral IS election 3 (radial+rotational composition)
+        // The density wave IS election 4 (matter concentrating inward)
+        const r = Math.sqrt(x * x + y * y) + 0.1;
+        const theta = Math.atan2(y, x);
+        
+        // Logarithmic spiral: election 3 geometry
+        const pitchCoefficient = 2.0;
+        const spiralPhase = pitchCoefficient * (theta - Math.log(r + 1));
+        
+        // Star formation intensity: election 4 (inward concentration)
+        const diskProfile = Math.exp(-(r * r) / (2 * 1.0 * 1.0));
+        
+        const phi = spiralPhase * diskProfile;
+        return phi;
+      },
+
+      consciousnessNetwork: (x, y, params = {}) => {
+        // Elections 2+3+4: Consciousness emerges as integrated neural field
+        // Election 2: gradient resolution (neural activity)
+        // Election 3: rotational oscillations (synchronization)
+        // Election 4: inward integration (unified awareness)
+        let field = 0;
+        const numNodes = 7;
+        const nodeRadius = 0.6;
+        
+        for (let nodeIdx = 0; nodeIdx < numNodes; nodeIdx++) {
+          const angle = (2 * Math.PI * nodeIdx) / numNodes;
+          const nodeX = nodeRadius * Math.cos(angle);
+          const nodeY = nodeRadius * Math.sin(angle);
+          
+          // Distance from node
+          const dx = x - nodeX;
+          const dy = y - nodeY;
+          const distanceFromNode = Math.sqrt(dx * dx + dy * dy);
+          
+          // Local neural field: election 2 (gradient resolution in neural potential)
+          const localActivation = 2.0 * Math.exp(-(distanceFromNode * distanceFromNode) / 0.3);
+          
+          // Phase coupling: election 3 (rotational oscillations)
+          const localPhase = 0.3 * Math.sin(nodeIdx * Math.atan2(dy, dx));
+          
+          field += localActivation + localPhase;
+        }
+        
+        return field;
+      }
+    };
+
+    // Render on page load
+    window.addEventListener('load', () => {
+      const renderer = new PotentialRenderer(256, [-2, 2]);
+      
+      const concepts = [
+        { id: 'electron-canvas', func: Potentials.electronSpiral, status: 'electron-status', name: 'Electron' },
+        { id: 'photon-canvas', func: Potentials.photonPropagating, status: 'photon-status', name: 'Photon' },
+        { id: 'galaxy-canvas', func: Potentials.galaxySpiral, status: 'galaxy-status', name: 'Galaxy' },
+        { id: 'consciousness-canvas', func: Potentials.consciousnessNetwork, status: 'consciousness-status', name: 'Consciousness' }
+      ];
+      
+      const start = performance.now();
+      
+      concepts.forEach(concept => {
+        renderer.renderToCanvas(concept.func, {}, concept.id);
+        const elapsed = ((performance.now() - start) / 1000).toFixed(3);
+        document.getElementById(concept.status).textContent = `✓ Rendered in ${elapsed}s`;
+        document.getElementById(concept.status).style.color = '#4ade80';
+      });
+    });
+  </script>
+</body>
+</html>

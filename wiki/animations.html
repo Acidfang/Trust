@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFM Wiki - Animated Visualizations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #14141f url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="%23191925"/><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            color: #e0e0f0;
+            font-family: 'Segoe UI', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, rgba(33, 150, 243, 0.1) 0%, rgba(103, 58, 183, 0.1) 100%);
+            border-bottom: 1px solid rgba(100, 150, 255, 0.2);
+            padding: 40px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #64b5f6 0%, #ba68c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        header p {
+            color: #aaa;
+            font-size: 1.1em;
+        }
+        
+        .principle {
+            background: rgba(100, 150, 255, 0.1);
+            border-left: 4px solid #2196F3;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 4px;
+        }
+        
+        .principle h2 {
+            color: #64b5f6;
+            margin-bottom: 10px;
+        }
+        
+        .animations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .animation-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .animation-card:hover {
+            border-color: rgba(100, 150, 255, 0.6);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px rgba(100, 150, 255, 0.1);
+        }
+        
+        .animation-header {
+            background: linear-gradient(135deg, rgba(33, 150, 243, 0.2) 0%, rgba(103, 58, 183, 0.2) 100%);
+            padding: 20px;
+            border-bottom: 1px solid rgba(100, 150, 255, 0.2);
+        }
+        
+        .animation-header h3 {
+            color: #64b5f6;
+            margin-bottom: 5px;
+            font-size: 1.4em;
+        }
+        
+        .animation-header p {
+            color: #aaa;
+            font-size: 0.95em;
+        }
+        
+        .animation-content {
+            padding: 20px;
+        }
+        
+        .gif-container {
+            background: #0a0a0f;
+            border: 1px solid rgba(100, 150, 255, 0.2);
+            border-radius: 4px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 2px;
+        }
+        
+        .description {
+            color: #b0b0c0;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        
+        .explanation {
+            background: rgba(103, 58, 183, 0.1);
+            border-left: 3px solid #ba68c8;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #c9b0e0;
+        }
+        
+        .phase-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(100, 150, 255, 0.05);
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .phase-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #64b5f6;
+        }
+        
+        .key-insight {
+            background: rgba(255, 193, 7, 0.1);
+            border-left: 3px solid #ffc107;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #ffe082;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            background: rgba(33, 150, 243, 0.2);
+            color: #64b5f6;
+            border: 1px solid rgba(33, 150, 243, 0.4);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.2s ease;
+        }
+        
+        .btn:hover {
+            background: rgba(33, 150, 243, 0.3);
+            border-color: rgba(33, 150, 243, 0.6);
+        }
+        
+        .footer {
+            background: rgba(0, 0, 0, 0.3);
+            border-top: 1px solid rgba(100, 150, 255, 0.2);
+            padding: 30px 20px;
+            text-align: center;
+            color: #888;
+            margin-top: 50px;
+        }
+        
+        .footer h3 {
+            color: #64b5f6;
+            margin-bottom: 15px;
+        }
+        
+        .footer ul {
+            list-style: none;
+            margin: 15px 0;
+        }
+        
+        .footer li {
+            margin: 8px 0;
+        }
+        
+        .footer a {
+            color: #64b5f6;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(100, 150, 255, 0.3);
+        }
+        
+        .footer a:hover {
+            border-bottom-color: rgba(100, 150, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>� UFM Wiki - Spirals Through Time</h1>
+        <p>Everything unfolds as spirals. These animations show how spirals manifest the First Elections at every scale.</p>
+    </header>
+    
+    <div class="principle">
+        <h2>🌀 Core Principle: Everything is a Spiral</h2>
+        <p>
+            Every animation here shows <strong>spirals</strong> as the fundamental geometry of reality.
+            Spirals aren't decorations—they're how the First Elections manifest in spacetime.
+        </p>
+        <ul style="margin-left: 20px; margin-top: 10px;">
+            <li><strong>Election 1 (Being):</strong> Distinction spirals outward from the void</li>
+            <li><strong>Election 2 (Movement):</strong> Systems spiral downhill along gradients</li>
+            <li><strong>Election 3 (Rotation):</strong> Radial + Rotational motion composes into spirals</li>
+            <li><strong>Election 4 (Direction):</strong> Spirals can be inward (particles) or outward (fields)</li>
+        </ul>
+        <p style="margin-top: 15px; color: #aaa;">
+            <strong>A spiral isn't a shape that happens to contain motion.</strong> 
+            A spiral IS the motion. When radial and rotational components compose, spirals are the inevitable geometry.
+        </p>
+        <p style="margin-top: 10px; color: #aaa;">
+            <strong>Watch these animations.</strong> Notice how every domain—electrons, photons, galaxies, minds—
+            uses spirals to express the same irreducible sequence.
+        </p>
+    </div>
+    
+    <div class="animations-grid">
+        
+        <!-- ELECTIONS FOUNDATION -->
+        <div class="animation-card">
+            <div class="animation-header">
+                <h3>✨ The First Elections</h3>
+                <p>How reality generates from nothing—the irreducible foundation</p>
+            </div>
+            <div class="animation-content">
+                <div class="description">
+                    <strong>Four Elections, One Sequence:</strong> These aren't descriptions of things happening in pre-existing space. 
+                    They ARE how 3D space itself emerges from nothing.
+                </div>
+                <div class="explanation">
+                    <ul style="margin-left: 15px; margin-top: 8px;">
+                        <li><strong>Election 1 (Being):</strong> Is/Is Not distinction creates DIFFERENCE</li>
+                        <li><strong>Election 2 (Movement):</strong> Gradient resolution generates CHANGE</li>
+                        <li><strong>Election 3 (Rotation):</strong> Radial + Rotational composition generates SPIRALS</li>
+                        <li><strong>Election 4 (Direction):</strong> Inward/Outward bias generates STRUCTURE</li>
+                    </ul>
+                    <p style="margin-top: 10px;">
+                        <strong>Elections ≠ Causality.</strong> Elections are simultaneous, irreducible constraints. 
+                        A photon's spiral and its rotation aren't cause-and-effect—they're one identity viewed two ways.
+                    </p>
+                </div>
+                <div class="key-insight">
+                    <strong>⚡ Meta-Reality:</strong> Time itself is the sequence of elections unfolding. 
+                    Universe doesn't move through time—elections unfolding IS time. 
+                    When elections stop, time stops.
+                </div>
+            </div>
+        </div>
+        
+        <!-- ELECTRON ORBITAL -->
+        <div class="animation-card">
+            <div class="animation-header">
+                <h3>⚛️ Electron Orbital</h3>
+                <p>Quantum mechanical evolution from Elections 2+3+4</p>
+            </div>
+            <div class="animation-content">
+                <div class="gif-container">
+                    <img src="wiki_animated_electron_orbital.gif" alt="Electron Orbital Animation">
+                </div>
+                
+                <div class="description">
+                    Hydrogen-like electron showing how orbital shapes transition from s → p → d type. 
+                    Each shape represents a different quantum state.
+                </div>
+                
+                <div class="explanation">
+                    <strong>What's happening:</strong>
+                    <ul style="margin-left: 15px; margin-top: 8px;">
+                        <li><strong>s-orbital:</strong> Spherically symmetric, electrons dense at center</li>
+                        <li><strong>p-orbital:</strong> Dumbbell-shaped, nodal plane at center</li>
+                        <li><strong>d-orbital:</strong> Cloverleaf pattern, four lobes</li>
+                    </ul>
+                    <p style="margin-top: 10px;">
+                        Each moment, the electron "probability cloud" has a different shape. 
+                        Radial decay $e^{-\alpha r}$ always present.
+                    </p>
+                </div>
+                
+                <div class="key-insight">
+                    <strong>⚡ Emerges from Elections:</strong> 
+                    Election 2 (Movement) drives the electron toward lower potential. 
+                    Election 3 (Rotation) creates angular momentum. 
+                    Election 4 (Direction) creates the inward bias toward nucleus. 
+                    Together: orbital shapes and cycling.
+                </div>
+            </div>
+        </div>
+        
+        <!-- PHOTON WAVE -->
+        <div class="animation-card">
+            <div class="animation-header">
+                <h3>📡 Photon Wave Propagation</h3>
+                <p>Electromagnetic wave from Elections 2+3</p>
+            </div>
+            <div class="animation-content">
+                <div class="gif-container">
+                    <img src="wiki_animated_photon_wave.gif" alt="Photon Wave Animation">
+                </div>
+                
+                <div class="description">
+                    Plane wave oscillating in space, modulated by a Gaussian envelope showing wave packet 
+                    localization and energy concentration.
+                </div>
+                
+                <div class="explanation">
+                    <strong>What's happening:</strong>
+                    <ul style="margin-left: 15px; margin-top: 8px;">
+                        <li><strong>Oscillation:</strong> Sinusoidal spatial pattern (wavelength ~50 units)</li>
+                        <li><strong>Envelope:</strong> Gaussian amplitude localization</li>
+                        <li><strong>Propagation:</strong> Wave packet travels left to right</li>
+                    </ul>
+                    <p style="margin-top: 10px;">
+                        Color gradient shows phase progression. The confined amplitude (wave packet) 
+                        is what localizes the photon in space.
+                    </p>
+                </div>
+                
+                <div class="key-insight">
+                    <strong>⚡ Emerges from Elections:</strong> 
+                    Election 2 (Movement) propagates the wave outward. 
+                    Election 3 (Rotation) creates the sinusoidal oscillation. 
+                    The radial envelope (confined amplitude) is the photon's identity—a packet of cycling confined motion.
+                </div>
+            </div>
+        </div>
+        
+        <!-- GALAXY ROTATION -->
+        <div class="animation-card">
+            <div class="animation-header">
+                <h3>🌀 Galaxy Spiral Rotation</h3>
+                <p>Inward matter flow from Elections 3+4</p>
+            </div>
+            <div class="animation-content">
+                <div class="gif-container">
+                    <img src="wiki_animated_galaxy_rotation.gif" alt="Galaxy Rotation Animation">
+                </div>
+                
+                <div class="description">
+                    Matter flows inward along logarithmic spiral arms. This convergent flow—matter moving along the 
+                    spiral geometry—generates the rotational spin we observe. The spiral direction determines the flow direction.
+                </div>
+                
+                <div class="explanation">
+                    <strong>The Causal Chain:</strong>
+                    <ul style="margin-left: 15px; margin-top: 8px;">
+                        <li><strong>Spiral direction:</strong> $r = a \cdot e^{k\theta}$ encodes the flow path</li>
+                        <li><strong>Matter flow:</strong> Particles move inward along this spiral geometry</li>
+                        <li><strong>Flow creates spin:</strong> Converging inward motion generates angular momentum</li>
+                        <li><strong>Observable rotation:</strong> The galaxy's spin direction IS the spiral's flow direction</li>
+                        <li><strong>Density enhancement:</strong> Converging matter compresses in spiral arms</li>
+                    </ul>
+                </div>
+                
+                <div class="key-insight">
+                    <strong>⚡ Emerges from Elections:</strong> 
+                    Election 3 (Rotation) creates the spiral geometry itself. 
+                    Election 4 (Direction) creates the inward bias (diffusion toward center). 
+                    Matter flowing along the spiral's geometry (Election 3) generates the observable spin. 
+                    This is geometry-as-identity, not geometry-causing-dynamics.
+                </div>
+            </div>
+        </div>
+        
+        <!-- CONSCIOUSNESS NETWORK -->
+        <div class="animation-card">
+            <div class="animation-header">
+                <h3>🧠 Consciousness Network</h3>
+                <p>Neural activation from Elections 2+3+4</p>
+            </div>
+            <div class="animation-content">
+                <div class="gif-container">
+                    <img src="wiki_animated_consciousness_network.gif" alt="Consciousness Network Animation">
+                </div>
+                
+                <div class="description">
+                    Seven brain regions (heptagonal arrangement) show synchronized neural activation. 
+                    Synaptic connections light up as information flows between regions.
+                </div>
+                
+                <div class="explanation">
+                    <strong>What's happening:</strong>
+                    <ul style="margin-left: 15px; margin-top: 8px;">
+                        <li><strong>Nodes:</strong> Brain regions (visual, auditory, motor, language, memory, emotion, integration)</li>
+                        <li><strong>Local activation:</strong> Each region pulses with neural firing</li>
+                        <li><strong>Connections:</strong> Synapses transmit signals between regions</li>
+                        <li><strong>Synchronization:</strong> Information integration across the brain</li>
+                    </ul>
+                </div>
+                
+                <div class="key-insight">
+                    <strong>⚡ Emerges from Elections:</strong> 
+                    Election 2 (Movement) creates the gradient resolution that is neural activity. 
+                    Election 3 (Rotation) creates the oscillations and synchronization. 
+                    Election 4 (Direction) creates the inward integration of information toward unified awareness. 
+                    Consciousness IS the elections unfolding in neural substrate.
+                </div>
+            </div>
+        </div>
+        
+        <!-- TIMELINE -->
+        <div class="animation-card">
+            <div class="animation-header">
+                <h3>⏳ Reality Timeline</h3>
+                <p>All Elections 1-4 unfolding in sequence</p>
+            </div>
+            <div class="animation-content">
+                <div class="gif-container">
+                    <img src="wiki_animated_timeline.gif" alt="Timeline Animation">
+                </div>
+                
+                <div class="description">
+                    Universe evolution from initial diffusion point through distinct stages: 
+                    photon field → spirals → matter crystallization → life emergence.
+                </div>
+                
+                <div class="explanation">
+                    <strong>What's happening:</strong>
+                    <ul style="margin-left: 15px; margin-top: 8px;">
+                        <li><strong>Initial Diffusion:</strong> Gradient resolution begins</li>
+                        <li><strong>Photon Field:</strong> Energy organized into oscillations</li>
+                        <li><strong>Spiral Formation:</strong> Confined cycling creates particles</li>
+                        <li><strong>Matter Crystallization:</strong> Atoms form and bind</li>
+                        <li><strong>Life Emergence:</strong> Information processing begins</li>
+                    </ul>
+                    <p style="margin-top: 10px;">
+                        Each stage flows into the next—there are no separate "events," 
+                        just continuous gradient resolution manifesting at different scales.
+                    </p>
+                </div>
+                
+                <div class="key-insight">
+                    <strong>⚡ The Complete Sequence:</strong> 
+                    Election 1 generates distinction. 
+                    Election 2 resolves it into movement. 
+                    Election 3 composes the movement into spirals. 
+                    Election 4 creates direction, making spirals inward or outward. 
+                    This complete sequence repeats at every scale: photons, atoms, galaxies, minds, universes.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <h3>📊 Why Animation Matters</h3>
+        <p>
+            Static wiki pages describe concepts. Animated wiki pages show how concepts <strong>actually work</strong>.
+        </p>
+        <ul>
+            <li>✓ Static: "Electron has orbital shapes s, p, d"</li>
+            <li>✓ Animated: Shows the actual evolution and cycling between shapes</li>
+        </ul>
+        <ul>
+            <li>✓ Static: "Photon is a wave packet"</li>
+            <li>✓ Animated: Shows the wave oscillating inside the envelope in real time</li>
+        </ul>
+        <ul>
+            <li>✓ Static: "Galaxy has spiral arms"</li>
+            <li>✓ Animated: Shows the arms rotating, compressing matter, forming stars</li>
+        </ul>
+        <h3 style="margin-top: 30px;">🎬 Next Steps</h3>
+        <ul>
+            <li>Replace all static wiki images with animated GIFs</li>
+            <li>Add HTML5 canvas versions with time scrubbing control</li>
+            <li>Create phase indicators showing position in cycle</li>
+            <li>Add state descriptors for each animation frame</li>
+            <li>Link animations to relevant wiki pages</li>
+        </ul>
+        <p style="margin-top: 30px; color: #666;">
+            <em>The wiki should show reality as it is: a continuous process through moments, not a collection of frozen snapshots.</em>
+        </p>
+    </div>
+</body>
+</html>

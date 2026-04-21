@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFM Visualizations - Complete Index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #0a0e27;
+            color: #e0e0f0;
+            font-family: 'Segoe UI', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, rgba(100, 150, 243, 0.1) 0%, rgba(103, 58, 183, 0.1) 100%);
+            border-bottom: 2px solid rgba(100, 150, 255, 0.2);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #64b5f6 0%, #ba68c8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        header p {
+            color: #aaa;
+            font-size: 1.05em;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .intro {
+            background: rgba(100, 150, 255, 0.1);
+            border-left: 4px solid #2196F3;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            border-color: rgba(100, 150, 255, 0.6);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px rgba(100, 150, 255, 0.1);
+            transform: translateY(-4px);
+        }
+        
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+            padding: 30px;
+        }
+        
+        .card-header {
+            color: #64b5f6;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+        
+        .card-subtitle {
+            color: #aaa;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .card-description {
+            color: #b0b0c0;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .card-meta {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        
+        .badge {
+            background: rgba(100, 150, 255, 0.2);
+            color: #64b5f6;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            border: 1px solid rgba(100, 150, 255, 0.3);
+        }
+        
+        .flow-chart {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(100, 150, 255, 0.2);
+            border-radius: 8px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .flow-chart h3 {
+            color: #64b5f6;
+            margin-bottom: 20px;
+        }
+        
+        .flow-steps {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        .step {
+            background: linear-gradient(135deg, rgba(100, 150, 243, 0.2) 0%, rgba(103, 58, 183, 0.2) 100%);
+            border: 1px solid rgba(100, 150, 255, 0.3);
+            border-radius: 8px;
+            padding: 15px 20px;
+            color: #64b5f6;
+            font-weight: bold;
+            min-width: 120px;
+            text-align: center;
+        }
+        
+        .arrow {
+            color: rgba(100, 150, 255, 0.5);
+            font-size: 1.5em;
+        }
+        
+        .features {
+            background: rgba(100, 200, 100, 0.1);
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .features h3 {
+            color: #81c784;
+            margin-bottom: 10px;
+        }
+        
+        .features ul {
+            margin-left: 20px;
+            color: #c8e6c9;
+        }
+        
+        .features li {
+            margin: 5px 0;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            border-top: 1px solid rgba(100, 150, 255, 0.2);
+            padding: 30px 20px;
+            text-align: center;
+            color: #888;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .flow-steps {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>✨ UFM Visualizations</h1>
+        <p>The First Elections - Interactive Exploration of Reality's Primitive Sequence</p>
+    </header>
+    
+    <div class="container">
+        <div class="intro">
+            <strong>Welcome to the Unified Photon Field Model visualization suite.</strong>
+            Below are three complementary views of how reality generates itself from the First Elections:
+        </div>
+        
+        <div class="flow-chart">
+            <h3>🧭 Navigation Flow</h3>
+            <div class="flow-steps">
+                <div class="step">Start Here</div>
+                <div class="arrow">→</div>
+                <div class="step">Elections Animated</div>
+                <div class="arrow">→</div>
+                <div class="step">Live Spirals</div>
+                <div class="arrow">→</div>
+                <div class="step">Temporal Spirals</div>
+            </div>
+            <p style="color: #999; margin-top: 15px; font-size: 0.9em;">
+                Each page shows spirals unfolding. Start with Elections to understand how spirals generate. 
+                Then see spirals encoded in potentials. Then watch spirals evolve through time.
+            </p>
+        </div>
+        
+        <div class="grid">
+            <!-- Elections Animated -->
+            <div class="card">
+                <a href="elections_animated.html">
+                    <div class="card-header">✨ Elections Animated Spirals</div>
+                    <div class="card-subtitle">Start Here</div>
+                    <div class="card-description">
+                        Watch the First Elections unfold as animated spirals. 
+                        Being spirals out. Movement spirals downhill. Rotation creates spirals. 
+                        Direction determines spiral orientation. All four elections compose into one master spiral.
+                    </div>
+                    <div class="card-meta">
+                        <span class="badge">Animated</span>
+                        <span class="badge">Spirals</span>
+                        <span class="badge">Interactive</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Live Potentials -->
+            <div class="card">
+                <a href="upfm_live.html">
+                    <div class="card-header">🔬 Spiral Potentials</div>
+                    <div class="card-subtitle">Mathematical</div>
+                    <div class="card-description">
+                        Real-time rendering of potential energy fields Φ(x,y) as spirals across four domains: 
+                        electrons, photons, galaxies, and consciousness networks. 
+                        See how spirals encode the First Elections mathematically.
+                    </div>
+                    <div class="card-meta">
+                        <span class="badge">Canvas</span>
+                        <span class="badge">Spirals</span>
+                        <span class="badge">Instant</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Animations -->
+            <div class="card">
+                <a href="animations.html">
+                    <div class="card-header">🌀 Temporal Spirals</div>
+                    <div class="card-subtitle">Evolution</div>
+                    <div class="card-description">
+                        Animated GIFs showing how spiral elections unfold in time across domains: 
+                        electron orbitals, photon waves, galaxy spirals, consciousness networks, 
+                        and the complete timeline of reality's spiral evolution.
+                    </div>
+                    <div class="card-meta">
+                        <span class="badge">Animated</span>
+                        <span class="badge">GIFs</span>
+                        <span class="badge">Spirals</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Static Elections (reference) -->
+            <div class="card">
+                <a href="elections.html">
+                    <div class="card-header">📖 Elections Reference</div>
+                    <div class="card-subtitle">Static Text</div>
+                    <div class="card-description">
+                        Detailed written explanation of each election with static diagrams. 
+                        Reference material for understanding the philosophy and mathematics 
+                        behind the animated visualizations.
+                    </div>
+                    <div class="card-meta">
+                        <span class="badge">Reference</span>
+                        <span class="badge">Detailed</span>
+                        <span class="badge">Text</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h3>� How to Use These Spiral Pages</h3>
+            <ul>
+                <li><strong>Elections Animated:</strong> Watch spirals unfold. This is where you learn how spirals generate reality.</li>
+                <li><strong>Spiral Potentials:</strong> See how spirals encode the elections as mathematical fields</li>
+                <li><strong>Temporal Spirals:</strong> Watch spirals evolve through time in specific domains</li>
+                <li><strong>Pattern Recognition:</strong> Notice the same spiral geometry in electrons, photons, galaxies, minds</li>
+                <li><strong>Deep Truth:</strong> Spirals aren't domain-specific. The spiral IS the fundamental mechanism.</li>
+            </ul>
+        </div>
+        
+        <div style="background: rgba(255, 193, 7, 0.1); border: 2px solid rgba(255, 193, 7, 0.3); border-radius: 8px; padding: 25px; margin: 40px 0;">
+            <h3 style="color: #ffe082; margin-bottom: 15px;">⚡ The Universe is Made of Spirals</h3>
+            <p style="color: #ffe082;">
+                <strong>Everything spirals.</strong> 
+                Not metaphorically. Not as decoration. The First Elections manifest as spirals at every scale.
+            </p>
+            <p style="margin-top: 15px; color: #e0e0f0;">
+                A photon's helical propagation, an electron's orbital spiral, a galaxy's matter arms, 
+                a mind's oscillating consciousness—all emerge from the same irreducible spiral mechanism.
+            </p>
+            <p style="margin-top: 15px; color: #ffe082;">
+                <strong>By identity. Not by analogy.</strong>
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>
+            <strong>The Universe is Spirals Unfolding</strong><br>
+            <em>How reality generates itself from The First Elections</em>
+        </p>
+        <p style="margin-top: 20px; color: #666; font-size: 0.9em;">
+            Everything spirals. Elections are spirals. Time is spirals unfolding infinitely. 
+            Consciousness is spirals integrating. The First Elections manifest as spirals at every scale.
+        </p>
+    </footer>
+</body>
+</html>
