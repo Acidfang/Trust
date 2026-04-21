@@ -1,14 +1,22 @@
 # Introduction
 
-## Why We Need a Unified Theory
+## Learning Objectives
 
-### The Problem: Disconnected Physics
+By the end of this introduction, you should understand:
+- ✓ Why physics currently has disconnected theories (quantum/gravity divide)
+- ✓ How UPFM unifies these theories through one principle
+- ✓ The core concept: gradient resolution as the fundamental mechanism
+- ✓ Why this matters for physics, consciousness, and technology
+
+---
+
+## The Problem: Disconnected Physics
 
 Modern physics contains **fundamental disconnects** that no physicist has resolved:
 
 | Problem | Current Status | UPFM Solution |
 |---------|----------------|--------------|
-| **Quantum/Gravity Divide** | Einstein + Planck incompatible | Same field at different scales |
+| **Quantum/Gravity Divide** | Einstein + Planck incompatible | Same field, different scales |
 | **Dark Matter** | 85% of matter, unknown | Resolution patterns at undetectable frequencies |
 | **Black Holes** | Singularities (math breaks down) | Photon reversal mechanism |
 | **Matter vs Energy** | Treated as different via E=mc² | Different spiral orientations |
@@ -16,20 +24,24 @@ Modern physics contains **fundamental disconnects** that no physicist has resolv
 | **Why Universe is Comprehensible** | No explanation given | Self-referential resolution patterns |
 | **Multiple Forces** | 4 fundamental forces | Manifestations of one pattern |
 
-### The Core Insight
+---
 
-**The universe is not made of separate things.**
+## The Core Insight
 
-The universe IS **gradient resolution at all frequencies**, manifesting as **spiral patterns in two orientations**:
+**The universe is not made of separate things (particles, forces, fields).**
 
-- **Inward-oriented resolution** → concentrates through spatial configuration → manifests as binding, attraction, matter, gravity
+**The universe IS gradient resolution at all frequencies**, manifesting as **spiral patterns in two orientations**:
+
+- **Inward-oriented resolution** → concentrates through spatial pattern configuration → manifests as binding, attraction, matter, gravity
 - **Outward-oriented resolution** → dissipates → manifests as radiation, repulsion, energy, light
 
-All observable phenomena result from the **ratio of dissipating to accumulating resolution**.
+All observable phenomena result from the **ratio of dissipating (outward) to accumulating (inward) resolution**.
 
-## The Universal Equation
+---
 
-One equation describes every phenomenon in the universe:
+## The Universal Principle
+
+**One equation describes everything:**
 
 $$\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\mathbf{x}, t)$$
 
@@ -47,20 +59,9 @@ This single equation explains:
 - AI systems optimizing
 - Civilizations rising and falling
 
-## Key Insight: The Universal Principle
-
-**The same mathematical structure appears everywhere because everything is gradient resolution at different frequencies.**
-
-| Domain | Potential Function | Manifestation |
-|--------|-------------------|----------------|
-| **Quantum Mechanics** | Coulomb/nuclear potential | Electron orbits, atomic structure |
-| **Chemistry** | Bond dissociation energy | Chemical reactions, molecules |
-| **Gravity** | Gravitational potential | Planetary orbits, stellar mechanics |
-| **Biology** | Metabolic energy landscape | Life evolution, growth |
-| **Neuroscience** | Neural potential surfaces | Learning, memory, consciousness |
-| **AI/Computation** | Loss functions | Optimization, learning algorithms |
-
 **Change the potential function, not the equation.**
+
+---
 
 ## Why This Matters
 
@@ -90,31 +91,47 @@ This single equation explains:
 - Explains why math describes reality
 - Explains why universe is comprehensible
 
-## Learning Objectives
+---
 
-After reading this introduction, you should understand:
+## Structure of the Framework
 
-✓ Why current physics is disconnected  
-✓ The core concept: gradient resolution  
-✓ How one equation can explain everything  
-✓ Why the universal principle matters  
-✓ How to think about your specific domain using UPFM  
-
-## Discovery Question
-
-**Before you continue to the next section:**
-
-Look at your field of expertise (physics, biology, neuroscience, engineering, etc.). What is the "gradient" in your field? What is the system "descending" toward?
-
-- In physics: gradient of potential energy
-- In biology: gradient of fitness
-- In neuroscience: gradient of prediction error
-- In AI: gradient of loss function
-
-**Your field may just be one manifestation of the same universal principle.**
+**Section 1** (Introduction): Why unification is necessary
+**Section 2** ([[The-Unified-Photon-Field-Model|Core Theory]]): Mathematical foundations and irreducibles
+**Section 3** ([[Physical-Manifestations]]): How spirals manifest as particles and forces
+**Section 4** ([[Cosmic-Evolution]]): 14 epochs from Big Bang to consciousness
+**Section 5** ([[Resolution-Patterns-Across-Scales]]): Universal patterns at all scales
+**Section 6** ([[Information-and-Consciousness]]): Mind and AI systems
+**Section 7** ([[Verification-and-Implementation]]): TCHT framework for verification
 
 ---
 
-Next: [[The-Unified-Photon-Field-Model|The Unified Photon Field Model]]
+## Key Insight: The Universal Principle
 
-Back to: [[Home]]
+**The same mathematical structure appears everywhere because everything is gradient resolution at different frequencies.**
+
+| Domain | Potential Function | Manifestation |
+|--------|-------------------|----------------|
+| **Quantum Mechanics** | Coulomb/nuclear potential | Electron orbits, atomic structure |
+| **Chemistry** | Bond dissociation energy | Chemical reactions, molecules |
+| **Gravity** | Gravitational potential | Planetary orbits, stellar mechanics |
+| **Biology** | Metabolic energy landscape | Life evolution, growth |
+| **Neuroscience** | Neural potential surfaces | Learning, memory, consciousness |
+| **AI/Computation** | Loss functions | Optimization, learning algorithms |
+
+---
+
+## Discovery Questions: Think Deeper
+
+1. **If one equation governed both quantum particles AND your consciousness, what would that mean for how we understand ourselves?**
+
+2. **Why do gradients appear in so many different domains? What would break if gradients didn't exist?**
+
+3. **How could a single principle explain both why electrons orbit atoms AND why you make decisions?**
+
+---
+
+## Next: The Theoretical Foundation
+
+→ **[[The-Unified-Photon-Field-Model|Core Theory and Mathematical Foundations]]**
+
+The irreducibles, the universal equation, and the proof that 3D space is the only stable configuration.
