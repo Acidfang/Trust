@@ -59,7 +59,7 @@ An atom is multiple **nested resonance patterns**:
 - First shell: Can hold 2 electrons (s orbital)
 - Second shell: Can hold 8 electrons (s + p orbitals)
 - Third shell: Can hold 18 electrons (s + p + d orbitals)
-- ...
+- Higher shells follow similar patterns (nth shell = 2n² total capacity)
 
 Why this pattern? **Standing wave geometry.** Only certain wavelengths fit in the potential well.
 

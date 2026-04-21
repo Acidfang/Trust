@@ -316,7 +316,7 @@ $endif$
             import shutil
             if self.temp_dir.exists():
                 shutil.rmtree(self.temp_dir)
-        except:
+        except (OSError, AttributeError):
             pass
 
 

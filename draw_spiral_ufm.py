@@ -136,7 +136,7 @@ def draw_spiral_field(width=512, height=512,
                 try:
                     color = hsv_to_rgb_tuple(hue, saturation, value)
                     pixels[px, py] = color
-                except:
+                except (ValueError, IndexError):
                     pass
     
     return img

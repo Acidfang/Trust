@@ -182,8 +182,8 @@ def galaxy_spiral(x, y):
     """Galaxy spiral using logarithmic spiral pattern.
     
     Represents density waves in galactic disks:
-    - Logarithmic spiral: r = a × e^(k×θ) (self-similar property)
-    - Pitch angle: ~12° for Milky Way-like galaxies
+    - Logarithmic spiral: r = a * e^(k*theta) (self-similar property)
+    - Pitch angle: ~12 degrees for Milky Way-like galaxies
     - Star formation in density wave compression regions
     - Constant pitch maintains spiral arm shape as galaxy rotates
     """
