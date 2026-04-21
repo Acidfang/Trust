@@ -4,7 +4,7 @@
 
 **The same resolution equation applies at all scales.**
 
-From the tiniest quantum to the largest cosmic structure, the mathematics is identical. Only the frequencies change.
+From the tiniest quantum to the largest cosmic structure, the mathematics is identical. Only the state configurations change as systems resolve gradients across different scales.
 
 $$\frac{d\psi}{dt} = -\nabla V(\psi)$$
 
@@ -14,7 +14,7 @@ $$\frac{d\psi}{dt} = -\nabla V(\psi)$$
 - At galactic scale: ψ = galaxy trajectory, V = dark matter potential
 - At cosmic scale: ψ = large-scale structure, V = dark energy
 
-**Same equation. Different frequencies.**
+**Same equation. State resolving gradients across different scales.**
 
 ## Quantum Mechanics as Low-Frequency Resolution
 

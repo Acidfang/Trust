@@ -8,9 +8,19 @@
 
 ## What Exists (Complete Encoding)
 
+### The Foundation: What is State?
+
+**STATE** is the irreducible primitive. A state is any configuration that can:
+- **Exist** (is something rather than nothing)
+- **Differ** (one state differs from another state)
+- **Persist** (a state can remain stable across time)
+- **Change** (a state can transition to a different state)
+
+These four properties define what is meant by state in this framework.
+
 ### The Three Irreducibles (Primitives - Cannot be Reduced Further)
 
-These three logical states are the foundation. Everything else is derived from their recursion.
+These three logical operations on states are the foundation. Everything else is derived from their recursion.
 
 **Irreducible 1: Is / Is Not**
 - **Definition**: The capacity for distinction exists. Some states differ from others.
@@ -90,7 +100,7 @@ The following are NOT primitives in UPFM (they are derived from the three irredu
 - Four fundamental forces (all are gradient manifestations at different scales)
 - Separate "matter" and "energy" (different spiral orientations)
 - Wave-particle duality as a mystery (same object, different observation modes)
-- Dark matter as exotic particles (undetectable resolution frequencies propagated from black holes)
+- Dark matter as exotic particles (undetectable state configurations propagated from black holes via gradient resolution)
 - Consciousness as magic (information entropy reduction in neural systems)
 - Time as a dimension (sequence of state transitions)
 - Anything without a clear causal mechanism (every phenomenon traces to resolution patterns)
