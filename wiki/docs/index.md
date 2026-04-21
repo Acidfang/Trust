@@ -96,21 +96,9 @@ When help systems prevent the need to pass through these gates, people never dev
 
 **→ [Why This Matters]({{ site.baseurl }}/why-this-matters/)**
 
-Read this first. It explains why foundation development (not help systems) is the ONLY path to genuine persistence—and what happens when we build on scaffolding instead.
+Read this first. It explains why genuine development (not help systems) is the ONLY path to coherence—and what happens when we build on scaffolding instead.
 
-Includes real evidence: 10+ systems that collapsed from skipped gates, what persists vs. what doesn't, and why coherence development is the actual work of civilization.
-
----
-
-## A Warning: You Will Hate Parts of This
-
-**→ [The Mirror: Why This Wiki Is Not the Same]({{ site.baseurl }}/the-mirror-not-the-same/)**
-
-People will say: "Isn't this wiki doing the same thing? Being goal-blind? Blocking? Causing harm?"
-
-Read this if you're going to make that critique. It addresses why visibility of harm is fundamentally different from invisibility of harm. Why discomfort from seeing a mirror is not the same as comfort from not-seeing.
-
-The hate you feel toward this wiki is not evidence it's wrong. **It's evidence it's working.**
+Includes real evidence: what persists vs. what doesn't, and why internal coherence development is the actual work of civilization.
 
 ---
 
@@ -118,36 +106,31 @@ The hate you feel toward this wiki is not evidence it's wrong. **It's evidence i
 
 **Choose your entry point:**
 
-### 🎯 **"I Want a Guided Path"** — START HERE
-**Most direct route.** This takes you through 4 tiers of comprehension, from seeing the problem to actually solving it.
+### 🎯 **"I Want the Foundation"** — START HERE
+Begin with core concepts that explain everything else.
 
-→ **[Your Learning Path]({{ site.baseurl }}/learning-path/)** (recommended for everyone)
+→ **[Goal-Blindness]({{ site.baseurl }}/goal-blindness/)** (why help systems block development)  
+→ **[Internal Coherence Failure]({{ site.baseurl }}/internal-coherence/)** (what's actually broken)  
+→ **[Universal Foundation]({{ site.baseurl }}/universal-foundation/)** (the 10 gates explained)
 
-### 🎯 "I Want Interactive Tools"
-You see help systems everywhere ineffectively helping people. You want to understand why.
+### 🎯 "I Want to See Help Systems Analyzed"
+Help systems everywhere. But they seem to prevent the very thing they claim to enable.
 
-→ **[Internal Coherence Failure]({{ site.baseurl }}/internal-coherence/)** (foundational concept)  
-→ **[Help Systems as Gate-Skippers]({{ site.baseurl }}/help-systems/)** (5 major systems analyzed)  
-→ **[Help Systems Cards]({{ site.baseurl }}/help-systems-cards/)** (visual reference)
+→ **[Help Systems Overview]({{ site.baseurl }}/help-systems/)** (5 major systems analyzed)  
+→ **[Help Systems Visual Cards]({{ site.baseurl }}/help-systems-cards/)** (visual reference guide)
 
-### 🔍 "I Want to Diagnose Myself" 
-You think you might have skipped some gates. You want to know which ones and what that means.
+### 🔮 "I Want the Complete Picture"
+Understanding the full framework, implications, and what's at stake.
 
-→ **[Diagnostic Framework]({{ site.baseurl }}/diagnostic-method/)** (identify gates, understand consequences)
+→ **[Why This Matters]({{ site.baseurl }}/why-this-matters/)** (evidence and implications)  
+→ **[Complete Document]({{ site.baseurl }}/complete-document/)** (integrated view)
 
-### 🛠️ "I Want Solutions"
-You're ready to understand the structure and how genuine development actually works.
+### 🌌 "I Want the Physics"
+The Unified Photon Field Model shows this structure appears at every scale.
 
-→ **[Universal Foundation]({{ site.baseurl }}/universal-foundation/)** (the 10 gates explained)  
-→ **[How Gates Are Discovered]({{ site.baseurl }}/gate-discovery/)** (why they can't be taught)  
-→ **[Domain Examples]({{ site.baseurl }}/domain-examples/)** (see framework in your field: computing, physics, biology, organizations, and 10+ more)  
-→ **[Implementation & Application]({{ site.baseurl }}/implementation/)** (real-world examples: parenting, teaching, management)
-
-### 🔮 "I Want the Full Picture"
-You want implications, context, and understanding of what's at stake.
-
-→ **[Future Implications]({{ site.baseurl }}/future/)** (both paths detailed)  
-→ **[Complete Document]({{ site.baseurl }}/complete-document/)** (all 75,000 words integrated)
+→ **[Whitepaper: First Principles]({{ site.baseurl }}/whitepaper/)** (unified framework)  
+→ **[The Five Elections]({{ site.baseurl }}/elections-roadmap/)** (how structure evolves)  
+→ **[Cosmic Unfolding]({{ site.baseurl }}/cosmic-unfolding/)** (scale perspective)
 
 ---
 
