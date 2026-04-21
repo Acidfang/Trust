@@ -176,7 +176,7 @@ Creating organizations that preserve competence:
 | Understand gate-passage | [Why This Matters]({{ site.baseurl }}/why-this-matters/) |
 | See how it applies to my field | [Domain Examples]({{ site.baseurl }}/domain-examples/) |
 | Learn everything integrated | [Complete Document]({{ site.baseurl }}/complete-document/) |
-| Understand the physical model | [Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/) |
+| Understand the physical model | [Unified Photon Field Model]({{ site.baseurl }}/whitepaper/) |
 | Explore the cosmic framework | [Cosmic Evolution]({{ site.baseurl }}/cosmic-unfolding/) |
 | See what's new (April 2026) | [Integration Summary]({{ site.baseurl }}/wiki-integration-summary/) |
 | Understand the complete picture | This page (you are here) |
