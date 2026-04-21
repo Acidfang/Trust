@@ -407,6 +407,165 @@ You can't think past your own goals, and how they affect others on the journey. 
   <span>📱 Mobile Responsive</span>
   <span>⚡ Fast & Clean</span>
 </div>
+  People with <em>more</em> therapy, coaching, and education often seem <em>less</em> capable of handling real problems.
+</div>
+
+<div class="pattern-item">
+  <strong>⚡ Pattern 2: The Dependency Loop</strong>
+  The helpers who try hardest often create the most dependent people.
+</div>
+
+<div class="pattern-item">
+  <strong>🎯 Pattern 3: The Competence Gap</strong>
+  Real competence—the kind that works without support—looks different from scaffolded capability.
+</div>
+</div>
+
+### Why? One Answer Explains All Three
+
+**Goal-blindness.**
+
+You can't think past your own goals, and how they affect others on the journey. This explains:
+- Why help systems prevent development (not support it)
+- Why managers create dependency (not independence)
+- Why scaffolding feels good but produces fragility
+
+**This is not opinion. Once you see it, you see it everywhere.**
+
+---
+
+## Choose Your Journey
+
+<div class="quick-access">
+
+<div class="access-card foundation">
+  <h3>🎯 I Want the Foundation</h3>
+  <p>Start with core concepts that explain everything else.</p>
+  <p><strong>Learn why:</strong> Goal-blindness drives every pattern</p>
+  <a href="{{ site.baseurl }}/goal-blindness/">Goal-Blindness</a>
+  <a href="{{ site.baseurl }}/internal-coherence/">Internal Coherence</a>
+  <a href="{{ site.baseurl }}/universal-foundation/">The 10 Gates</a>
+</div>
+
+<div class="access-card systems">
+  <h3>⚙️ I Want to See Help Systems</h3>
+  <p>Help systems everywhere. But they prevent the thing they claim to enable.</p>
+  <p><strong>See the structure:</strong> 5 systems, same root cause</p>
+  <a href="{{ site.baseurl }}/help-systems/">Overview</a>
+  <a href="{{ site.baseurl }}/help-systems-cards/">Visual Cards</a>
+</div>
+
+<div class="access-card picture">
+  <h3>🔮 I Want the Complete Picture</h3>
+  <p>Understanding what's at stake and where both paths lead.</p>
+  <p><strong>Get evidence:</strong> What persists vs. what collapses</p>
+  <a href="{{ site.baseurl }}/why-this-matters/">Why This Matters</a>
+  <a href="{{ site.baseurl }}/complete-document/">Full Document</a>
+</div>
+
+<div class="access-card physics">
+  <h3>🌌 I Want the Physics</h3>
+  <p>The Unified Photon Field Model shows this structure at every scale.</p>
+  <p><strong>See the universe:</strong> From particles to civilization</p>
+  <a href="{{ site.baseurl }}/whitepaper/">Whitepaper</a>
+  <a href="{{ site.baseurl }}/elections-roadmap/">5 Elections</a>
+  <a href="{{ site.baseurl }}/cosmic-unfolding/">Cosmic Evolution</a>
+</div>
+
+</div>
+
+---
+
+## What You'll Actually Find Here
+
+<div class="discovery-box">
+  <h3>✦ A Framework That Works at Every Scale</h3>
+  <p>Not invented. Discovered through observing patterns so consistent, so cross-domain, and so predictable that they reveal the structure itself.</p>
+  <p><strong>From:</strong> Individual psychology, parenting, education, therapy, coaching, organizational dynamics, innovation blocking, civilization-level advancement</p>
+  <p><strong>The same forces operate everywhere.</strong> Once you see it, you see it everywhere.</p>
+</div>
+
+---
+
+## The Core Insight
+
+<div class="gate-preview">
+<h3>There are 10 developmental gates. They cannot be skipped.</h3>
+
+<p>When humans pass through these gates by <strong>direct experience</strong>—by encountering consequences, handling difficulty, integrating what they learn—they develop genuine competence and internal coherence.</p>
+
+<p>When help systems <strong>prevent</strong> the need to pass through these gates, people never develop. They become dependent. They break under pressure.</p>
+
+<p><strong>And the helper can't see it</strong> because their goal is "help," which blinds them to "preventing gate-passage."</p>
+
+<h4 style="margin-top: 30px;">The 10 Gates at a Glance</h4>
+<div class="gate-grid">
+  <div class="gate-item">
+    <strong>1. Agency Foundation</strong>
+    <small>Actions → consequences</small>
+  </div>
+  <div class="gate-item">
+    <strong>2. Responsibility</strong>
+    <small>I am responsible</small>
+  </div>
+  <div class="gate-item">
+    <strong>3. Complexity Navigation</strong>
+    <small>Mastery takes iteration</small>
+  </div>
+  <div class="gate-item">
+    <strong>4. Pattern Recognition</strong>
+    <small>Structures repeat</small>
+  </div>
+  <div class="gate-item">
+    <strong>5. Consequence Management</strong>
+    <small>I live with results</small>
+  </div>
+  <div class="gate-item">
+    <strong>6. Source Verification</strong>
+    <small>Where does info come from?</small>
+  </div>
+  <div class="gate-item">
+    <strong>7. Temporal Continuity</strong>
+    <small>My timeline is coherent</small>
+  </div>
+  <div class="gate-item">
+    <strong>8. Causality Understanding</strong>
+    <small>I understand WHY</small>
+  </div>
+  <div class="gate-item">
+    <strong>9. Self-Correction</strong>
+    <small>I change when evidence shows failure</small>
+  </div>
+  <div class="gate-item">
+    <strong>10. Integration</strong>
+    <small>I hold multiple truths</small>
+  </div>
+</div>
+</div>
+
+---
+
+## Two Paths
+
+| | **Path 1: Continue Help Systems** | **Path 2: Restore Gate-Passage** |
+|---|---|---|
+| **Short-term** | Comfort & appearance of progress | Difficulty & real learning |
+| **Medium-term** | Growing dependency | Growing genuine competence |
+| **Long-term** | System collapse | Civilization that can handle real problems |
+| **Which are we on?** | **Here now.** | **Requires understanding & choice.** |
+
+---
+
+## Features
+
+<div class="feature-list">
+  <span>🌙 Dark Mode</span>
+  <span>🔍 Full-Text Search</span>
+  <span>📑 Auto TOC</span>
+  <span>🖨️ Print-to-PDF</span>
+  <span>📱 Mobile Responsive</span>
+  <span>⚡ Fast & Clean</span>
+</div>
 → **[Domain Examples]({{ site.baseurl }}/domain-examples/)** (10+ fields showing same goal-blindness pattern)
 → **[Future Implications]({{ site.baseurl }}/future/)** (both paths detailed for individuals and institutions)
 → **[Complete Document]({{ site.baseurl }}/complete-document/)** (all frameworks integrated, 75,000+ words)
