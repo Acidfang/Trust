@@ -11,7 +11,26 @@
 ### 👉 **[WIKI_INDEX.md](WIKI_INDEX.md)** — Complete navigation hub with all 13 documents, thematic organization, and search guide
 
 ---
+## 🌊 **UNIFIED PHOTON FIELD MODEL WIKI**
 
+**Complete 9-page wiki on UPFM theory extracted from the whitepaper:**
+
+- **[Home](github_wiki_Home.md)** — Overview and quick navigation
+- **[Introduction](github_wiki_Introduction.md)** — Why unified field theory is necessary
+- **[Core Theory](github_wiki_The-Unified-Photon-Field-Model.md)** — Mathematical foundations
+- **[Physical Manifestations](github_wiki_Physical-Manifestations.md)** — Particles and forces
+- **[Resolution Patterns](github_wiki_Resolution-Patterns-Across-Scales.md)** — Quantum to cosmic scales
+- **[Cosmic Evolution](github_wiki_Cosmic-Evolution.md)** — The 14 epochs
+- **[Consciousness](github_wiki_Information-and-Consciousness.md)** — Mind and AI
+- **[Verification](github_wiki_Verification-and-Implementation.md)** — TCHT framework
+- **[Conclusion](github_wiki_Conclusion.md)** — Implications and next steps
+
+**Related Files:**
+- 📄 **[Complete Whitepaper (PDF - 1.7 MB)](WHITEPAPER_UNIFIED_PHOTON_FIELD_COMPLETE.pdf)** — Full 157-section document
+- 📄 **[Whitepaper Source (Markdown - 177 KB)](WHITEPAPER_UNIFIED_PHOTON_FIELD_COMPLETE.md)** — Editable version
+- 📄 **[UPFM v3.0 (PDF - 422 KB)](UPFM_Whitepaper_v3.0_Built.pdf)** — Compressed version
+
+---
 ## �🚀 START HERE
 
 **Choose your entry point:**
