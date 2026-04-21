@@ -11,6 +11,20 @@ Like a bowling ball with offset weight distribution: you design the internal str
 
 <div id="constraintControls" style="background: #0a0e27; border: 2px solid #00d9ff; border-radius: 8px; padding: 20px; margin: 20px 0; color: #00ff88; font-family: monospace;">
   <div style="margin-bottom: 20px; padding: 10px; background: #1a1e37; border-left: 3px solid #ff6600;">
+    <h3 style="color: #ff6600; margin-top: 0;">🎯 View Modes</h3>
+    <div style="margin-bottom: 10px;">
+      <button id="topDownView" style="padding: 6px 12px; margin-right: 8px; background: #00d9ff; color: #000; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">↓ Top-Down (External)</button>
+      <button id="fromCenterView" style="padding: 6px 12px; margin-right: 8px; background: #444; color: #00ff88; border: 2px solid #00ff88; cursor: pointer; border-radius: 4px;">⊙ From Center (Internal)</button>
+    </div>
+    <div id="centerSelector" style="display: none; margin-top: 8px;">
+      <label style="color: #888;">Look from center:</label><br>
+      <button id="centerSelect0" style="padding: 4px 8px; margin: 4px 4px 4px 0; background: #00d9ff; color: #000; border: none; cursor: pointer; border-radius: 3px;">Object 1 (Cyan)</button>
+      <button id="centerSelect1" style="padding: 4px 8px; margin: 4px 4px 4px 0; background: #ff00ff; color: #000; border: none; cursor: pointer; border-radius: 3px;">Object 2 (Magenta)</button>
+      <button id="centerSelect2" style="padding: 4px 8px; margin: 4px 4px 4px 0; background: #00ffff; color: #000; border: none; cursor: pointer; border-radius: 3px;">Object 3 (Cyan)</button>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 20px; padding: 10px; background: #1a1e37; border-left: 3px solid #ff6600;">
     <h3 style="color: #ff6600; margin-top: 0;">🎯 Design Mode</h3>
     <label><input type="checkbox" id="designMode"> Enable Design Mode (click 3D view to set desired centers)</label>
     <p style="margin: 10px 0; color: #888;">In design mode: choose where you want centers → solver derives required constraints</p>
@@ -283,6 +297,9 @@ class BidirectionalConstraintApp {
         this.designTargets = [null, null, null]; // Desired centers in design mode
         this.designIndicators = [null, null, null]; // Visual indicators for desired centers
         
+        this.viewMode = 'topdown'; // 'topdown' or 'fromCenter'
+        this.internalViewCenterIndex = 0; // Which center to look from in internal view
+        
         this.spiralMeshes = [];
         this.coherenceParticles = null;
         this.coherenceDetector = new CoherenceDetector();
@@ -508,6 +525,41 @@ class BidirectionalConstraintApp {
             });
         }
         
+        // View mode buttons
+        document.getElementById('topDownView').addEventListener('click', () => {
+            this.viewMode = 'topdown';
+            document.getElementById('topDownView').style.background = '#00d9ff';
+            document.getElementById('topDownView').style.color = '#000';
+            document.getElementById('fromCenterView').style.background = '#444';
+            document.getElementById('fromCenterView').style.color = '#00ff88';
+            document.getElementById('centerSelector').style.display = 'none';
+        });
+        
+        document.getElementById('fromCenterView').addEventListener('click', () => {
+            this.viewMode = 'fromCenter';
+            document.getElementById('topDownView').style.background = '#444';
+            document.getElementById('topDownView').style.color = '#00ff88';
+            document.getElementById('fromCenterView').style.background = '#00d9ff';
+            document.getElementById('fromCenterView').style.color = '#000';
+            document.getElementById('centerSelector').style.display = 'block';
+        });
+        
+        // Center selector buttons for internal view
+        for (let i = 0; i < 3; i++) {
+            document.getElementById(`centerSelect${i}`).addEventListener('click', () => {
+                this.internalViewCenterIndex = i;
+                for (let j = 0; j < 3; j++) {
+                    if (j === i) {
+                        document.getElementById(`centerSelect${j}`).style.opacity = '1';
+                        document.getElementById(`centerSelect${j}`).style.fontWeight = 'bold';
+                    } else {
+                        document.getElementById(`centerSelect${j}`).style.opacity = '0.6';
+                        document.getElementById(`centerSelect${j}`).style.fontWeight = 'normal';
+                    }
+                }
+            });
+        }
+        
         // Design mode toggle
         document.getElementById('designMode').addEventListener('change', (e) => {
             this.designMode = e.target.checked;
@@ -551,8 +603,38 @@ class BidirectionalConstraintApp {
     animate() {
         requestAnimationFrame(() => this.animate());
         
-        this.camera.position.applyAxisAngle(new THREE.Vector3(0, 1, 0), 0.0003);
-        this.camera.lookAt(0, 0, 0);
+        if (this.viewMode === 'topdown') {
+            // External top-down view: bird's eye perspective
+            const angle = Date.now() * 0.0001;
+            const radius = 450;
+            this.camera.position.set(
+                Math.cos(angle) * radius * 0.7,
+                350,
+                Math.sin(angle) * radius * 0.7
+            );
+            this.camera.lookAt(0, 0, 0);
+        } else {
+            // Internal from-center view: observer at one of the centers looking outward
+            const centerPos = ConstraintSolver.solveCenter(
+                this.objects[this.internalViewCenterIndex].constraints
+            );
+            
+            // Position camera at the center
+            this.camera.position.copy(centerPos);
+            
+            // Look toward the other centers (or just rotate around)
+            const angle = Date.now() * 0.0001;
+            const lookDirection = new THREE.Vector3(
+                Math.cos(angle) * 200,
+                Math.sin(angle) * 150,
+                Math.sin(angle * 0.7) * 200
+            );
+            this.camera.lookAt(
+                centerPos.x + lookDirection.x,
+                centerPos.y + lookDirection.y,
+                centerPos.z + lookDirection.z
+            );
+        }
         
         this.renderer.render(this.scene, this.camera);
     }
