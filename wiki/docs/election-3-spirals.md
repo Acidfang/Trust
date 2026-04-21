@@ -188,64 +188,76 @@ function drawFormationView() {
     const height = canvas.height;
     const centerX = width / 2;
     const centerY = height / 2;
+    const maxRadius = 150;
     
     ctx.fillStyle = '#0a0e27';
     ctx.fillRect(0, 0, width, height);
     
-    const t = election3State.time * 2;
-    const numOrbits = 5;
+    const t = election3State.time;
+    const spiralColor = '#64b5f6';
     
-    // Draw particles at each orbital stage
-    for (let orbit = 0; orbit < numOrbits; orbit++) {
-        const progress = (t + orbit * (Math.PI * 2 / numOrbits)) % (Math.PI * 2);
-        const radiusRatio = 1 - (orbit / numOrbits);
-        const radius = 150 * radiusRatio;
+    // Draw the complete spiral that forms from step-by-step inward motion
+    ctx.strokeStyle = spiralColor;
+    ctx.lineWidth = 2;
+    ctx.globalAlpha = 0.7;
+    ctx.beginPath();
+    
+    let isFirstPoint = true;
+    for (let tval = 0; tval < Math.PI * 2 * 4; tval += 0.15) {
+        const radiusDecay = Math.exp(-0.003 * tval);
+        const radius = maxRadius * radiusDecay;
+        const angle = tval * 1.5; // Fixed frequency
         
-        if (orbit === 0) {
-            ctx.strokeStyle = `rgba(100, 120, 180, ${0.3 - orbit * 0.05})`;
-            ctx.lineWidth = 1;
+        const x = centerX + radius * Math.cos(angle);
+        const y = centerY + radius * Math.sin(angle);
+        
+        if (isFirstPoint) {
+            ctx.moveTo(x, y);
+            isFirstPoint = false;
+        } else {
+            ctx.lineTo(x, y);
+        }
+    }
+    ctx.stroke();
+    ctx.globalAlpha = 1.0;
+    
+    // Show ghost particles at each "step" (discrete orbit)
+    const numSteps = 6;
+    const stepSize = Math.PI * 2 / numSteps;
+    
+    for (let step = 0; step < numSteps; step++) {
+        const stepT = t * 3 + step * stepSize;
+        const radiusDecay = Math.exp(-0.003 * stepT);
+        const radius = maxRadius * radiusDecay;
+        const angle = stepT * 1.5;
+        
+        const x = centerX + radius * Math.cos(angle);
+        const y = centerY + radius * Math.sin(angle);
+        
+        if (radius > 3) {
+            // Draw ghost particle (fading)
+            ctx.fillStyle = `hsl(${step * 60}, 100%, ${60 - step * 8}%)`;
+            ctx.globalAlpha = 0.6 - (step / numSteps) * 0.3;
             ctx.beginPath();
-            ctx.arc(centerX, centerY, radius, 0, progress);
-            ctx.stroke();
+            ctx.arc(x, y, 3, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.globalAlpha = 1.0;
         }
         
-        const x = centerX + radius * Math.cos(progress);
-        const y = centerY + radius * Math.sin(progress);
-        
-        // Draw trail
-        ctx.strokeStyle = `rgba(100, 150, 255, ${0.3 - orbit * 0.05})`;
-        ctx.lineWidth = 1;
-        ctx.globalAlpha = 0.5;
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, radius, 0, progress);
-        ctx.stroke();
-        ctx.globalAlpha = 1.0;
-        
-        // Draw particle
-        const size = 4 - orbit * 0.5;
-        ctx.fillStyle = `hsl(${orbit * 60}, 100%, 60%)`;
-        ctx.beginPath();
-        ctx.arc(x, y, size, 0, Math.PI * 2);
-        ctx.fill();
-        
-        // Draw inward arrow
-        if (orbit < numOrbits - 1) {
-            const nextRadius = 150 * (1 - ((orbit + 1) / numOrbits));
-            const nextX = centerX + nextRadius * Math.cos(progress);
-            const nextY = centerY + nextRadius * Math.sin(progress);
-            
-            ctx.strokeStyle = `rgba(255, 200, 100, 0.4)`;
+        // Draw radial line from center to particle (showing "step")
+        if (step < numSteps - 1) {
+            ctx.strokeStyle = `rgba(255, 150, 100, ${0.3 - step * 0.04})`;
             ctx.lineWidth = 1;
             ctx.setLineDash([2, 2]);
             ctx.beginPath();
-            ctx.moveTo(x, y);
-            ctx.lineTo(nextX, nextY);
+            ctx.moveTo(centerX, centerY);
+            ctx.lineTo(x, y);
             ctx.stroke();
             ctx.setLineDash([]);
         }
     }
     
-    // Center
+    // Draw center point
     ctx.fillStyle = '#ffb74d';
     ctx.beginPath();
     ctx.arc(centerX, centerY, 4, 0, Math.PI * 2);
