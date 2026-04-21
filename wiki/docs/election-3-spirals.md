@@ -51,23 +51,35 @@ Where:
 
 ## The Visualization: How Spirals Form
 
+### Choose Your Perspective
+
+<div style="text-align: center; margin: 20px 0;">
+<button id="view-top-down" style="padding: 10px 15px; margin: 5px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">↓ Top-Down</button>
+<button id="view-formation" style="padding: 10px 15px; margin: 5px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">◈ Formation (Orbit-by-Orbit)</button>
+<button id="view-3d" style="padding: 10px 15px; margin: 5px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">⟳ 3D Perspective</button>
+<button id="view-unwind" style="padding: 10px 15px; margin: 5px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">⟿ Unwound Time-Radius</button>
+</div>
+
 <div id="election3-container" style="margin: 30px 0; text-align: center;">
     <canvas id="election3-canvas" width="700" height="450" style="border: 1px solid rgba(100,150,255,0.3); border-radius: 4px; background: #0a0e27; display: inline-block;"></canvas>
 </div>
 
+<div id="perspective-explanation" style="margin-top: 20px; padding: 15px; background: rgba(102, 126, 234, 0.1); border-left: 3px solid #667eea; border-radius: 4px;">
+<p id="explanation-text" style="margin: 0; color: #a0aec0; font-size: 0.95em;"></p>
+</div>
+
 <script>
-// Animation state
+// Multi-perspective election 3 viewer
 let election3State = {
     time: 0,
     spirals: [],
     animationId: null,
-    isRunning: true
+    isRunning: true,
+    perspective: 'topDown'
 };
 
 function initElection3Spirals() {
     election3State.spirals = [];
-    
-    // Multiple spirals starting from different angles
     for (let i = 0; i < 5; i++) {
         election3State.spirals.push({
             startAngle: (i / 5) * Math.PI * 2,
@@ -78,7 +90,7 @@ function initElection3Spirals() {
     }
 }
 
-function drawElection3Visualization() {
+function drawTopDownView() {
     const canvas = document.getElementById('election3-canvas');
     if (!canvas) return;
     
@@ -89,11 +101,10 @@ function drawElection3Visualization() {
     const centerY = height / 2;
     const maxRadius = 150;
     
-    // Clear canvas
     ctx.fillStyle = '#0a0e27';
     ctx.fillRect(0, 0, width, height);
     
-    // Draw reference circles (potential wells)
+    // Reference circles
     for (let r = 50; r <= maxRadius; r += 30) {
         ctx.strokeStyle = `rgba(100, 120, 180, ${0.1 - (r / maxRadius) * 0.08})`;
         ctx.lineWidth = 1;
@@ -102,7 +113,7 @@ function drawElection3Visualization() {
         ctx.stroke();
     }
     
-    // Draw spirals
+    // Draw complete spirals
     for (let spiral of election3State.spirals) {
         ctx.strokeStyle = spiral.color;
         ctx.lineWidth = 2;
@@ -110,17 +121,11 @@ function drawElection3Visualization() {
         ctx.beginPath();
         
         let isFirstPoint = true;
-        
-        // Draw spiral from outer to inner
         for (let t = 0; t < Math.PI * 2 * 4; t += 0.1) {
-            // Logarithmic spiral: radius decreases as we spiral
             const radiusDecay = Math.exp(-spiral.decay * t);
             const radius = maxRadius * radiusDecay;
-            
-            // Angle increases linearly (rotation)
             const angle = t * spiral.frequency + spiral.startAngle;
             
-            // Convert to Cartesian
             const x = centerX + radius * Math.cos(angle);
             const y = centerY + radius * Math.sin(angle);
             
@@ -131,17 +136,14 @@ function drawElection3Visualization() {
                 ctx.lineTo(x, y);
             }
         }
-        
         ctx.stroke();
         ctx.globalAlpha = 1.0;
     }
     
-    // Draw animated particles following spirals
+    // Animated particles
     const t = election3State.time;
-    
     for (let i = 0; i < election3State.spirals.length; i++) {
         const spiral = election3State.spirals[i];
-        
         for (let step = 0; step < 8; step++) {
             const particleT = t * 3 + step * (Math.PI * 2 / 8);
             const radiusDecay = Math.exp(-spiral.decay * particleT);
@@ -151,8 +153,6 @@ function drawElection3Visualization() {
                 const angle = particleT * spiral.frequency + spiral.startAngle;
                 const x = centerX + radius * Math.cos(angle);
                 const y = centerY + radius * Math.sin(angle);
-                
-                // Particle size decreases as it spirals inward
                 const size = 3 * radiusDecay;
                 
                 ctx.fillStyle = spiral.color;
@@ -160,73 +160,359 @@ function drawElection3Visualization() {
                 ctx.beginPath();
                 ctx.arc(x, y, size, 0, Math.PI * 2);
                 ctx.fill();
-                
                 ctx.globalAlpha = 1.0;
             }
         }
     }
     
-    // Draw angular momentum arrows (showing rotation)
-    for (let angle = 0; angle < Math.PI * 2; angle += Math.PI / 4) {
-        const radius = 80;
-        const x = centerX + radius * Math.cos(angle);
-        const y = centerY + radius * Math.sin(angle);
-        
-        // Tangent direction (perpendicular to radius)
-        const tangentX = -Math.sin(angle) * 20;
-        const tangentY = Math.cos(angle) * 20;
-        
-        // Draw curved arrow
-        ctx.strokeStyle = 'rgba(200, 150, 255, 0.4)';
-        ctx.lineWidth = 1.5;
-        ctx.beginPath();
-        ctx.moveTo(x, y);
-        ctx.lineTo(x + tangentX, y + tangentY);
-        ctx.stroke();
-        
-        // Arrow head
-        ctx.fillStyle = 'rgba(200, 150, 255, 0.4)';
-        ctx.beginPath();
-        ctx.moveTo(x + tangentX, y + tangentY);
-        ctx.lineTo(x + tangentX - 4, y + tangentY - 4);
-        ctx.lineTo(x + tangentX - 2, y + tangentY + 4);
-        ctx.closePath();
-        ctx.fill();
-    }
-    
-    // Draw center point
     ctx.fillStyle = '#ffb74d';
     ctx.beginPath();
     ctx.arc(centerX, centerY, 4, 0, Math.PI * 2);
     ctx.fill();
     
-    // Labels
-    ctx.fillStyle = '#999';
-    ctx.font = '11px monospace';
-    ctx.textAlign = 'center';
-    ctx.fillText('Angular momentum conserved', centerX, 25);
-    ctx.fillText('↓ Inward motion + ↻ Rotation = Spiral', centerX, 40);
-    
-    ctx.fillStyle = '#888';
-    ctx.font = '10px monospace';
-    ctx.textAlign = 'left';
-    ctx.fillText('Particles fall inward while rotating', 20, height - 20);
-    
-    // Title
     ctx.fillStyle = '#64b5f6';
-    ctx.font = 'bold 16px monospace';
+    ctx.font = 'bold 14px monospace';
     ctx.textAlign = 'center';
-    ctx.fillText('Election 3: Spirals Prevent Collapse', centerX, height - 10);
+    ctx.fillText('↓ TOP-DOWN VIEW: Bird\'s Eye Perspective', centerX, 25);
+    ctx.font = '10px monospace';
+    ctx.fillStyle = '#aaa';
+    ctx.fillText('Particles orbit inward around center', centerX, 415);
 }
 
-function animateElection3() {
+function drawFormationView() {
     const canvas = document.getElementById('election3-canvas');
     if (!canvas) return;
     
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    const centerX = width / 2;
+    const centerY = height / 2;
+    
+    ctx.fillStyle = '#0a0e27';
+    ctx.fillRect(0, 0, width, height);
+    
+    const t = election3State.time * 2;
+    const numOrbits = 5;
+    
+    // Draw particles at each orbital stage
+    for (let orbit = 0; orbit < numOrbits; orbit++) {
+        const progress = (t + orbit * (Math.PI * 2 / numOrbits)) % (Math.PI * 2);
+        const radiusRatio = 1 - (orbit / numOrbits);
+        const radius = 150 * radiusRatio;
+        
+        if (orbit === 0) {
+            ctx.strokeStyle = `rgba(100, 120, 180, ${0.3 - orbit * 0.05})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+            ctx.stroke();
+        }
+        
+        const x = centerX + radius * Math.cos(progress);
+        const y = centerY + radius * Math.sin(progress);
+        
+        // Draw trail
+        ctx.strokeStyle = `rgba(100, 150, 255, ${0.3 - orbit * 0.05})`;
+        ctx.lineWidth = 1;
+        ctx.globalAlpha = 0.5;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, progress);
+        ctx.stroke();
+        ctx.globalAlpha = 1.0;
+        
+        // Draw particle
+        const size = 4 - orbit * 0.5;
+        ctx.fillStyle = `hsl(${orbit * 60}, 100%, 60%)`;
+        ctx.beginPath();
+        ctx.arc(x, y, size, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Draw inward arrow
+        if (orbit < numOrbits - 1) {
+            const nextRadius = 150 * (1 - ((orbit + 1) / numOrbits));
+            const nextX = centerX + nextRadius * Math.cos(progress);
+            const nextY = centerY + nextRadius * Math.sin(progress);
+            
+            ctx.strokeStyle = `rgba(255, 200, 100, 0.4)`;
+            ctx.lineWidth = 1;
+            ctx.setLineDash([2, 2]);
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            ctx.lineTo(nextX, nextY);
+            ctx.stroke();
+            ctx.setLineDash([]);
+        }
+    }
+    
+    // Center
+    ctx.fillStyle = '#ffb74d';
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, 4, 0, Math.PI * 2);
+    ctx.fill();
+    
+    ctx.fillStyle = '#64b5f6';
+    ctx.font = 'bold 14px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('◈ ORBIT-BY-ORBIT: How Spirals Form Step by Step', centerX, 25);
+    ctx.font = '10px monospace';
+    ctx.fillStyle = '#aaa';
+    ctx.fillText('Each orbit: same angle + smaller radius = spiral inward', centerX, 415);
+}
+
+function drawCenterPerspective() {
+    const canvas = document.getElementById('election3-canvas');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    const centerX = width / 2;
+    const centerY = height / 2;
+    
+    ctx.fillStyle = '#0a0e27';
+    ctx.fillRect(0, 0, width, height);
+    
+    const t = election3State.time * 1.5;
+    
+    // Draw particles from center perspective (radial outward)
+    for (let i = 0; i < 5; i++) {
+        const angle = (i / 5) * Math.PI * 2 + t;
+        
+        // Draw particles at various distances (from close to far)
+        for (let dist = 20; dist < 160; dist += 30) {
+            const progress = (t * 2 + (dist / 160) * Math.PI * 2) % (Math.PI * 2);
+            const x = centerX + dist * Math.cos(angle);
+            const y = centerY + dist * Math.sin(angle);
+            
+            // Show orbit circles
+            if (dist % 40 === 20) {
+                ctx.strokeStyle = `rgba(100, 120, 180, 0.2)`;
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, dist, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+            
+            const size = 2 + (1 - dist / 160);
+            ctx.fillStyle = `hsl(${(i * 60 + progress * 180) % 360}, 100%, 60%)`;
+            ctx.globalAlpha = 0.8 - (dist / 160) * 0.3;
+            ctx.beginPath();
+            ctx.arc(x, y, size, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.globalAlpha = 1.0;
+        }
+    }
+    
+    // Draw center point (THE OBSERVER)
+    ctx.fillStyle = '#ff6b6b';
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, 6, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Draw rays from center
+    for (let angle = 0; angle < Math.PI * 2; angle += Math.PI / 8) {
+        ctx.strokeStyle = 'rgba(255, 107, 107, 0.2)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.lineTo(centerX + 160 * Math.cos(angle), centerY + 160 * Math.sin(angle));
+        ctx.stroke();
+    }
+    
+    ctx.fillStyle = '#64b5f6';
+    ctx.font = 'bold 14px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('⟳ FROM THE CENTER: What a binary star sees', centerX, 25);
+    ctx.font = '10px monospace';
+    ctx.fillStyle = '#aaa';
+    ctx.fillText('You\'re at the center (red dot). Particles spiral around you at all distances.', centerX, 415);
+}
+
+function draw3DPerspective() {
+    const canvas = document.getElementById('election3-canvas');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    const centerX = width / 2;
+    const centerY = height / 2;
+    
+    ctx.fillStyle = '#0a0e27';
+    ctx.fillRect(0, 0, width, height);
+    
+    const t = election3State.time;
+    
+    // Draw spiral in 3D isometric view
+    for (let spiral of election3State.spirals) {
+        // Draw spiral trail
+        ctx.strokeStyle = spiral.color;
+        ctx.lineWidth = 1.5;
+        ctx.globalAlpha = 0.6;
+        ctx.beginPath();
+        
+        let isFirstPoint = true;
+        for (let tval = 0; tval < Math.PI * 2 * 3; tval += 0.15) {
+            const radiusDecay = Math.exp(-spiral.decay * tval);
+            const radius = 150 * radiusDecay;
+            const angle = tval * spiral.frequency + spiral.startAngle;
+            
+            // Height increases as we go inward (3D perspective)
+            const height3d = 200 * (1 - radiusDecay);
+            
+            // Isometric projection
+            const x2d = centerX + (radius * Math.cos(angle)) * 0.8;
+            const y2d = centerY + (radius * Math.sin(angle)) * 0.6 + height3d * 0.3;
+            
+            if (isFirstPoint) {
+                ctx.moveTo(x2d, y2d);
+                isFirstPoint = false;
+            } else {
+                ctx.lineTo(x2d, y2d);
+            }
+        }
+        ctx.stroke();
+        ctx.globalAlpha = 1.0;
+    }
+    
+    // Draw reference planes
+    ctx.strokeStyle = 'rgba(100, 120, 180, 0.2)';
+    ctx.lineWidth = 1;
+    
+    // Draw base circle
+    ctx.beginPath();
+    for (let angle = 0; angle < Math.PI * 2; angle += 0.1) {
+        const x = centerX + 150 * Math.cos(angle);
+        const y = centerY + 150 * Math.sin(angle) * 0.6;
+        if (angle === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.stroke();
+    
+    ctx.fillStyle = '#64b5f6';
+    ctx.font = 'bold 14px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('⟳ 3D PERSPECTIVE: Depth and Height', centerX, 25);
+    ctx.font = '10px monospace';
+    ctx.fillStyle = '#aaa';
+    ctx.fillText('Spiral lifts up as it spirals inward (3D isometric view)', centerX, 415);
+}
+
+function drawUnwoundView() {
+    const canvas = document.getElementById('election3-canvas');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    
+    ctx.fillStyle = '#0a0e27';
+    ctx.fillRect(0, 0, width, height);
+    
+    // Draw axes
+    ctx.strokeStyle = 'rgba(100, 120, 180, 0.5)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(80, 350);
+    ctx.lineTo(width - 40, 350);
+    ctx.stroke();
+    
+    ctx.beginPath();
+    ctx.moveTo(80, 350);
+    ctx.lineTo(80, 50);
+    ctx.stroke();
+    
+    // Labels
+    ctx.fillStyle = '#888';
+    ctx.font = '11px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('Time / Angle', width - 40, 370);
+    ctx.textAlign = 'right';
+    ctx.fillText('Radius', 50, 200);
+    
+    // Draw unwound spirals as curves
+    for (let spiral of election3State.spirals) {
+        ctx.strokeStyle = spiral.color;
+        ctx.lineWidth = 2.5;
+        ctx.globalAlpha = 0.8;
+        ctx.beginPath();
+        
+        let isFirstPoint = true;
+        for (let t = 0; t < Math.PI * 2 * 3; t += 0.1) {
+            const radiusDecay = Math.exp(-spiral.decay * t);
+            const radius = 150 * radiusDecay;
+            
+            // X = unwound time/angle
+            const x = 80 + (t / (Math.PI * 2 * 3)) * (width - 120);
+            // Y = radius (inverted so top = large radius)
+            const y = 350 - (radius / 150) * 250;
+            
+            if (isFirstPoint) {
+                ctx.moveTo(x, y);
+                isFirstPoint = false;
+            } else {
+                ctx.lineTo(x, y);
+            }
+        }
+        ctx.stroke();
+        ctx.globalAlpha = 1.0;
+    }
+    
+    // Draw animated point
+    const t = election3State.time * 2;
+    for (let spiral of election3State.spirals) {
+        const radiusDecay = Math.exp(-spiral.decay * t);
+        const radius = 150 * radiusDecay;
+        
+        const x = 80 + (t / (Math.PI * 2 * 3)) * (width - 120);
+        const y = 350 - (radius / 150) * 250;
+        
+        ctx.fillStyle = spiral.color;
+        ctx.beginPath();
+        ctx.arc(x, y, 4, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    
+    ctx.fillStyle = '#64b5f6';
+    ctx.font = 'bold 14px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('⟿ UNWOUND: Time vs Radius Graph', width / 2, 25);
+    ctx.font = '10px monospace';
+    ctx.fillStyle = '#aaa';
+    ctx.fillText('If you unwound the spiral: exponential decay from large radius to center', width / 2, 415);
+}
+
+function drawElection3Visualization() {
+    switch (election3State.perspective) {
+        case 'topDown':
+            drawTopDownView();
+            document.getElementById('explanation-text').textContent = 'TOP-DOWN VIEW: Looking straight down at the spiral from above. You can see all 5 spirals curving inward simultaneously. Particles (colored dots) follow these paths, each orbit completing at the same angle but a smaller radius.';
+            break;
+        case 'formation':
+            drawFormationView();
+            document.getElementById('explanation-text').textContent = 'ORBIT-BY-ORBIT FORMATION: Same particle shown at successive orbital stages. Each time it completes an orbit, it\'s moved closer to center (due to energy loss). Repeat this billions of times = spiral structure emerges naturally.';
+            break;
+        case 'center':
+            drawCenterPerspective();
+            document.getElementById('explanation-text').textContent = 'FROM THE CENTER: Imagine you\'re a binary star at the center (red dot). You see everything orbiting around you at different distances. This is what a star or black hole experiences—particles spiraling inward from all angles.';
+            break;
+        case '3d':
+            draw3DPerspective();
+            document.getElementById('explanation-text').textContent = '3D PERSPECTIVE: The spiral doesn\'t just flatten—it has depth! As particles spiral inward, they rise vertically (in this view). This creates a cone shape. Real galaxies and accretion disks show this exact structure.';
+            break;
+        case 'unwound':
+            drawUnwoundView();
+            document.getElementById('explanation-text').textContent = 'UNWOUND TIME-RADIUS GRAPH: If you "unwound" the spiral like a scroll, you\'d see a simple exponential decay: radius shrinks exponentially as time progresses. The spiral IS this decay, but it happens in circular motion.';
+            break;
+    }
+}
+
+function animateElection3() {
     if (election3State.isRunning) {
         election3State.time += 0.02;
         
-        // Reset time when it gets too large
         if (election3State.time > Math.PI * 2 * 5) {
             election3State.time = 0;
         }
@@ -236,10 +522,39 @@ function animateElection3() {
     }
 }
 
-// Initialize and start
+// Button handlers
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
         initElection3Spirals();
+        
+        document.getElementById('view-top-down').addEventListener('click', () => {
+            election3State.perspective = 'topDown';
+            drawElection3Visualization();
+        });
+        document.getElementById('view-formation').addEventListener('click', () => {
+            election3State.perspective = 'formation';
+            drawElection3Visualization();
+        });
+        document.getElementById('view-3d').addEventListener('click', () => {
+            election3State.perspective = '3d';
+            drawElection3Visualization();
+        });
+        document.getElementById('view-unwind').addEventListener('click', () => {
+            election3State.perspective = 'unwound';
+            drawElection3Visualization();
+        });
+        
+        const centerBtn = document.createElement('button');
+        centerBtn.id = 'view-center';
+        centerBtn.textContent = '○ From Center';
+        centerBtn.style = 'padding: 10px 15px; margin: 5px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;';
+        document.querySelector('[id="view-unwind"]').parentElement.appendChild(centerBtn);
+        
+        centerBtn.addEventListener('click', () => {
+            election3State.perspective = 'center';
+            drawElection3Visualization();
+        });
+        
         animateElection3();
     });
 } else {
@@ -247,7 +562,6 @@ if (document.readyState === 'loading') {
     animateElection3();
 }
 
-// Redraw on resize
 window.addEventListener('resize', function() {
     const canvas = document.getElementById('election3-canvas');
     if (canvas) {
