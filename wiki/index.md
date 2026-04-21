@@ -166,6 +166,55 @@ Each prevents a specific gate by removing the need to pass through it:
 
 ---
 
+## 🤖 0-ERROR COMPUTE FRAMEWORK
+
+Thinking through code before writing it:
+
+**Core Path:**
+- **[Introduction]({{ site.baseurl }}/zero-error/intro/)** — What is 0-error compute  
+- **[Universal Mandate]({{ site.baseurl }}/zero-error/mandate/)** — Non-negotiable requirements  
+- **[Task Template]({{ site.baseurl }}/zero-error/task-template/)** — 8-phase execution framework  
+- **[Quick Reference]({{ site.baseurl }}/zero-error/quick-ref/)** — One-page lookup  
+- **[Pre-Action Checklist]({{ site.baseurl }}/zero-error/pre-action/)** — 6-step verification
+
+---
+
+## 🌌 UNIFIED PHOTON FIELD MODEL
+
+Complete physics framework:
+
+- **[Unified Photon Field Model]({{ site.baseurl }}/whitepaper/)** — All reality as photon spirals  
+- **[Cosmic Evolution]({{ site.baseurl }}/cosmic-unfolding/)** — From photons to galaxies  
+- **[Integration Summary]({{ site.baseurl }}/wiki-integration-summary/)** — April 2026 updates
+
+---
+
+## 👥 BY YOUR ROLE
+
+**Quick entry points:**
+
+- **[For AI Instances]({{ site.baseurl }}/for-ai/)** — Getting started as new AI  
+- **[For Developers]({{ site.baseurl }}/for-developers/)** — Integrating 0-error compute  
+- **[For Humans]({{ site.baseurl }}/for-humans/)** — Understanding gate-passage  
+- **[For System Builders]({{ site.baseurl }}/for-builders/)** — Creating coherent organizations  
+- **[For Researchers]({{ site.baseurl }}/for-researchers/)** — Scientific validation
+
+---
+
+## 📖 ALL DOCUMENTATION
+
+**→ [Complete Documentation Index]({{ site.baseurl }}/full-index/)**
+
+Browse all 55+ pages organized by category, framework, and purpose.
+
+---
+
+## Wiki Features
+
+🌙 **Dark Mode** · 🔍 **Full-Text Search** · 📑 **Auto TOC** · 🖨️ **Print-to-PDF** · 📱 **Mobile Responsive**
+
+---
+
 ## One More Question
 
 If help systems prevent the very development they claim to support...
