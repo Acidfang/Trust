@@ -31,6 +31,13 @@
             {% include navigation-unified.html %}
         </nav>
 
+        {% if page.toc %}
+        <nav class="sidebar-toc">
+            <h3>On this page</h3>
+            <ul id="toc-list" class="toc-list"></ul>
+        </nav>
+        {% endif %}
+
         <div class="sidebar-footer">
             <p class="updated">Last updated: {{ 'now' | date: '%Y-%m-%d' }}</p>
         </div>
@@ -42,13 +49,6 @@
             <h1 class="page-title">{{ page.title }}</h1>
             {% endif %}
         </div>
-
-        {% if page.toc %}
-        <nav class="table-of-contents">
-            <h3>On this page</h3>
-            <ul id="toc-list" class="toc-list"></ul>
-        </nav>
-        {% endif %}
 
         <div class="content-body">
             {{ content }}

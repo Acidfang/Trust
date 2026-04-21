@@ -306,6 +306,21 @@ main.content {
   padding-left: 1rem;
 }
 
+/* Sidebar Table of Contents */
+.sidebar-toc {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.sidebar-toc h3 {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* Content Body */
 .content-body {
   line-height: 1.8;
