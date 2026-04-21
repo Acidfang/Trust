@@ -13,8 +13,47 @@ featured: true
 
 <div class="alert alert-info" role="alert">
 <strong>📄 Whitepaper Status</strong><br>
-<strong>Version:</strong> 1.0 | <strong>Date:</strong> April 20, 2026 | <strong>Status:</strong> ✅ Complete & Validated for Open Science
+<strong>Version:</strong> 2.0 | <strong>Date:</strong> April 22, 2026 | <strong>Status:</strong> ✅ Reframed with First Principles
 </div>
+
+---
+
+## 🔬 FIRST PRINCIPLES — The Foundation
+
+> **Before anything else, understand the origin.**
+
+### **Axiom #0: The Beginning**
+
+1. **Vacuum = Pure Energy Potential**
+   - Not "empty space" but undifferentiated energy field
+   - Quantum potential waiting to organize
+   - The "to be" before being
+
+2. **Concentration → Singularity**
+   - All energy collapses into one point
+   - Maximum density, maximum coherence
+   - All frequency locked into phase
+
+3. **Photons as Coherent Organization**
+   - Energy takes form as squeezed photons
+   - Phase-locked (all peaks/troughs aligned)
+   - This is the only "thing" that exists
+   - **Photons ARE the only substance**
+
+4. **Space Emerges FROM Photon Organization**
+   - 3D space is NOT a container where photons exist
+   - **3D space emerges AS the photon field organizes itself**
+   - Space and photons are not separate
+   - Space exists because photons exist and spread
+
+5. **The Great Diffusion**
+   - Phase-locked photons begin spreading/diffusing
+   - Coherence gradually breaks down into distributed frequencies
+   - **Timeline:**
+     - **Primordial Black Holes** = Incomplete diffusions (still phase-locked, incomplete)
+     - **Stars** = Created BY the diffusion energy release
+     - **Dust** = Final residue (complete diffusion products)
+   - The universe is still diffusing
 
 ---
 
