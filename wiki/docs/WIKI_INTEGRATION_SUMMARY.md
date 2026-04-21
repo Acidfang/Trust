@@ -1,17 +1,35 @@
 ---
 layout: page
-title: Wiki Integration Summary - April 19, 2026
+title: Wiki Integration Summary - April 22, 2026
 permalink: /wiki-integration-summary/
 description: How new insights integrate into the unified framework
 toc: true
 status: living-document
 ---
 
-# Wiki Integration Summary - April 19, 2026
+# Wiki Integration Summary - April 22, 2026
 
-**Date**: April 19, 2026  
+**Date**: April 22, 2026 (Updated)  
 **Status**: All documents updated and cross-referenced  
 **Living Document Protocol**: Active
+
+---
+
+## Latest Updates (April 22)
+
+### New Visualization System
+✅ **[Bidirectional Constraint Systems]({{ site.baseurl }}/bidirectional-constraints/)** (NEW)
+
+Interactive 3D renderer demonstrating constraint-determined reality:
+- **Forward analysis**: Given constraints → system computes required center position
+- **Backward analysis**: Given desired center → system solves for required constraints
+- **Design mode**: Interactive center placement with real-time constraint solving
+- **Visual feedback**: 3D spirals, coherence detection, multi-object interaction
+- **Physical principle**: The bowling ball principle—engineer constraints to achieve external behavior
+
+Live interactive experience at: [Spiral Field Renderer]({{ site.baseurl }}/spiral-field-renderer/)
+
+**Key insight**: Both directions (forward and backward) are equally real and equally constrained by physics. This demonstrates the fundamental principle that **reality is constraint-determined**.
 
 ---
 
@@ -62,21 +80,31 @@ Comprehensive coherence testing showing:
 ## How They Relate
 
 ```
-┌─────────────────────────────────────────────────┐
-│   Unified Photon Field Model (Foundation)       │
-│   - Photon as primitive                         │
-│   - Spiral directionality                       │
-│   - Standing wave fields                        │
-│   - Explains all forces, particles, phenomena   │
-└────────────────────┬────────────────────────────┘
-                     │
-         ┌───────────┴───────────┐
-         ▼                       ▼
-    ┌─────────────┐      ┌─────────────────┐
-    │   Cosmic    │      │  Test Document  │
-    │ Unfolding   │      │   (coherence    │
-    │  (timeline) │      │   verification) │
-    └─────────────┘      └─────────────────┘
+┌────────────────────────────────────────────────────────────────┐
+│          Unified Framework: Constraint-Determined Reality       │
+│                                                                │
+│  ┌──────────────────────────────────────────────────────────┐ │
+│  │   Unified Photon Field Model (Physical Foundation)      │ │
+│  │   - Photon as primitive                                 │ │
+│  │   - Spiral directionality determines forces             │ │
+│  │   - Standing wave fields at all scales                  │ │
+│  │   - Explains all forces, particles, phenomena           │ │
+│  └──────────────────────┬─────────────────────────────────┘ │
+│                         │                                    │
+│         ┌───────────────┼───────────────┬──────────────┐    │
+│         ▼               ▼               ▼              ▼    │
+│  ┌─────────────┐ ┌──────────────┐ ┌───────────┐ ┌──────────┐
+│  │  Cosmic     │ │   Constraint │ │   Test    │ │ 10 Gates │
+│  │  Unfolding  │ │   Systems    │ │ Document  │ │Development
+│  │(timeline)   │ │(bidirectional│ │(coherence)│ │ (human)
+│  │             │ │visualization)│ │           │ │
+│  └─────────────┘ └──────────────┘ └───────────┘ └──────────┘
+└────────────────────────────────────────────────────────────────┘
+
+Cross-Domain Application:
+  Physics (constraints → geometry) ←→ Engineering (geometry → constraints)
+  Systems (state → behavior) ←→ Design (goal → required state)
+  Development (constraints → capability) ←→ Teaching (desired outcome → required constraint-removal)
 ```
 
 - **Unified Model** = Physical mechanism for all reality
