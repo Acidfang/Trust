@@ -414,3 +414,36 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Generated constraint cartography files
+CONSTRAINT_*.md
+BINARY_*.md
+*_CONSTRAINTS.md
+CONSTRAINT_*.pdf
+
+# Whitepaper files (TRACKED - these are main deliverables, not generated)
+# WHITEPAPER_*.docx
+# WHITEPAPER_*.html
+# WHITEPAPER_*.rtf
+# WHITEPAPER_*.pdf
+
+# Utility scripts (generated/temporary)
+convert_*.py
+domain_constraints_*.py
+constraint_cartography_*.py
+generate_github_wiki*.py
+update_status.py
+
+# Other generated files to ignore
+DOMAIN_CONSTRAINTS_INDEX.md
+PROJECT_SUMMARY_APRIL_*.md
+
+# Session/cache files
+*.db
+*.cache
+.tracker_cache.db
+reddit_cache.db
+# Generated constraint cartography files
+CONSTRAINT_*.md
+BINARY_*.md
+*.py.cache
