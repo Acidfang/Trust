@@ -60,7 +60,7 @@ $$\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\mathbf{x}, t)$$
 
 This wiki is extracted from the complete **Unified Photon Field Model Whitepaper** (177 KB, 157 sections).
 
-📄 **[Download the full whitepaper (Markdown)](../../raw/main/WHITEPAPER_UNIFIED_PHOTON_FIELD_COMPLETE.md)** — Complete source document
+📄 **[Download the full whitepaper (Markdown - 177 KB)](https://github.com/Acidfang/Trust/blob/main/WHITEPAPER_UNIFIED_PHOTON_FIELD_COMPLETE.md)** — Complete source document with all 157 sections
 
 ---
 
