@@ -26,9 +26,7 @@
 - **[Conclusion](github_wiki_Conclusion.md)** — Implications and next steps
 
 **Related Files:**
-- 📄 **[Complete Whitepaper (PDF - 1.7 MB)](WHITEPAPER_UNIFIED_PHOTON_FIELD_COMPLETE.pdf)** — Full 157-section document
-- 📄 **[Whitepaper Source (Markdown - 177 KB)](WHITEPAPER_UNIFIED_PHOTON_FIELD_COMPLETE.md)** — Editable version
-- 📄 **[UPFM v3.0 (PDF - 422 KB)](UPFM_Whitepaper_v3.0_Built.pdf)** — Compressed version
+- 📄 **[Complete Whitepaper (Markdown - 177 KB)](WHITEPAPER_UNIFIED_PHOTON_FIELD_COMPLETE.md)** — Full 157-section document
 
 ---
 ## �🚀 START HERE
