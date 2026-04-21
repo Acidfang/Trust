@@ -1,253 +1,360 @@
-# The Unified Photon Field Model
+# The Unified Photon Field Model - TIER 1: Root Cause Analysis
 
-## Learning Objectives
+## Gate Prerequisites
 
-After reading this section, you should:
-- ✓ Understand the three irreducible logical primitives
-- ✓ See how all structure emerges from difference, resolution, and persistence
-- ✓ Grasp why these three are sufficient and necessary
-- ✓ Understand why 3D space and time are inevitable consequences
-- ✓ Recognize the universal gradient descent equation as the inevitable mathematical form
+**Before reading this page, you must have:**
+- ✓ Verified complete encoding (Tier -1)
+- ✓ Verified self-consistency (Tier 0)
+- ✓ Checked that no contradictions exist
 
----
-
-## The Three Irreducibles: Primitive Logical Foundation
-
-**Core principle**: There are exactly three irreducible logical states. All structure emerges from their recursion. Nothing simpler suffices; nothing more is needed.
-
-### Irreducible 1: Is / Is Not
-
-$$\text{Difference exists}$$
-
-The universe contains the capacity for distinction. Some states differ from others. Without this capacity, nothing can be identified, nothing can change.
-
-**Why it is irreducible**: You cannot construct "difference" from something simpler. It is the first distinction.
-
-**Consequence**: Difference creates asymmetry in state space. This asymmetry is what we mathematically encode as a potential function $\Phi$.
-
-### Irreducible 2: Was / Was Not
-
-$$\text{Difference resolves}$$
-
-A state containing difference is unstable. Difference tends to resolve toward sameness. When difference exists, change occurs. This resolution is not imposed—it is the spontaneous behavior of any system containing unresolved difference.
-
-**Why it is irreducible**: You cannot construct "resolution" from simpler primitives. Resolution is how difference behaves when it exists.
-
-**Consequence**: This resolution is mathematically the gradient descent principle:
-$$\frac{d\mathbf{i}}{dt} = -\nabla\Phi$$
-
-Movement toward lower potential is not a law imposed on the universe. It is the inevitable dynamic of difference resolving itself.
-
-### Irreducible 3: Persisted / Not Persisted
-
-$$\text{Resolution remains}$$
-
-When difference resolves into a new state, that state may continue (persist) or dissolve. If resolution persists, it does so through repetition—the same pattern reoccurs. No persistence means no continuity, no memory, no structure.
-
-**Why it is irreducible**: You cannot construct "persistence" from difference and resolution alone. You need a third primitive: the capacity for patterns to repeat and remain.
-
-**Consequence**: Persistence creates stability. Stable patterns are what we observe as particles, atoms, organisms, and all named structures.
+**If you haven't passed Tier 0, return to [[Introduction|Tier 0: Self-Consistency]]**
 
 ---
 
-## The Complete Picture: Difference → Resolution → Persistence
+## Purpose of Tier 1
 
-| Irreducible | Logical State | Physical Consequence | Mathematical Form |
-|---|---|---|---|
-| **Is / Is Not** | Difference exists | Asymmetry in state space | Potential function $\Phi$ |
-| **Was / Was Not** | Difference resolves | Spontaneous change | Gradient $\nabla\Phi$ and rate $\frac{d\mathbf{i}}{dt}$ |
-| **Persisted / Not Persisted** | Resolution remains | Stable pattern formation | Eigenstates and conserved quantities |
+Tier 1 answers: **Does every phenomenon have a root cause traced back to fundamental principles?**
 
-**From these three, everything else follows**:
+We must verify:
+- Every phenomenon has a MECHANISM, not just a name
+- Every mechanism traces back to the three irreducibles
+- No "it just happens that way" answers
+- Causality is clear and complete
 
-1. **Recursion**: When difference persists, the resolved state can contain new differences
-2. **Iteration**: Resolution of persisted state creates next round of difference-resolution-persistence
-3. **Structure**: Layered recursion of this cycle creates all organized complexity
-
----
-
-## How the Three Irreducibles Generate Space and Time
-
-**On Dimensionality**:
-
-The three irreducibles naturally generate 3D space through compositional constraints:
-- **Difference** (Is/Is not) establishes asymmetry (dimensionality axis 1)
-- **Resolution** (Was/Was not) creates directed change (dimensionality axis 2)
-- **Persistence** (Persisted/Not persisted) stabilizes orthogonal configurations (dimensionality axis 3)
-
-Combined with rotational symmetry in resolution, these generate exactly 3 spatial dimensions.
-
-**On Time**:
-
-Time is not a dimension. Time is the sequence of irreducible states unfolding.
-
-- Each moment = one cycle of the three irreducibles
-- Flow of time = continuous unfolding of new configurations
-- Direction of time = from unresolved to resolved states (entropy direction)
-- Rate of time = frequency of irreducible cycles
-
-**The universe does not move through time. The universe IS the sequence of irreducible state transitions.**
+If mechanisms are unclear → we don't understand the phenomenon yet.
+If all mechanisms trace to irreducibles → we have foundational understanding.
 
 ---
 
-## The Universal Equation: Deriving Gradient Descent from the Irreducibles
+## The Three Irreducibles as Root Causes
 
-The universal equation is not assumed—it emerges inevitably from the irreducibles.
+**All causality traces to exactly three primitives:**
 
-**The derivation chain**:
+### Root Cause 1: Is / Is Not (Difference)
 
-**Step 1: Irreducible 1 → Asymmetry**
+Every phenomenon that exists does so because SOME STATE DIFFERS FROM ANOTHER STATE.
 
-The first irreducible establishes that some states differ from others. This creates asymmetry in state space.
+- **Without Irreducible 1**: Everything would be identical. No particles, no forces, no you.
+- **Root causality**: All structure emerges from asymmetry (captured mathematically as $\Phi$)
+- **Examples**:
+  - Electron exists because: electron state differs from nucleus state (Coulomb potential)
+  - Chemical bond exists because: bonded state is different from separated atoms
+  - Life exists because: living system differs from non-living environment
 
-**Step 2: Asymmetry → Potential**
+### Root Cause 2: Was / Was Not (Resolution)
 
-When two states are different, one configuration contains more "unresolved difference" than another. This asymmetry is mathematically expressed as a potential function.
+Every change happens because DIFFERENCE SPONTANEOUSLY RESOLVES.
 
-**Step 3: Potential → Gradient**
+- **Without Irreducible 2**: Systems would never move or change. Everything would freeze.
+- **Root causality**: All dynamics emerge from gradient descent ($\frac{d\mathbf{i}}{dt} = -\nabla\Phi$)
+- **Examples**:
+  - Electron falls toward nucleus because: negative-charge-nucleus difference resolves (attraction)
+  - Chemical reaction proceeds because: high-energy reactants resolve to low-energy products
+  - Evolution occurs because: populations with unfit traits "resolve" via selection pressure
 
-Once a potential exists (difference measured as scalar field), the gradient of that potential is automatically defined.
+### Root Cause 3: Persisted / Not Persisted (Stability)
 
-**Step 4: Gradient → Movement (Irreducible 2)**
+Every structure that exists does so because PATTERNS REPEAT AND REMAIN STABLE.
 
-The second irreducible establishes that difference must resolve. Mathematically, resolution toward sameness means: *move in the direction that reduces difference*. Movement that reduces difference is movement toward lower potential.
-
-**Step 5: Movement → Rate of Change**
-
-The rate at which the system's state changes is proportional to the gradient.
-
-**Normalized form** (unit dissipation):
-
-$$\boxed{\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\mathbf{x}, t)}$$
-
-**This is not an assumption. This is the inevitable mathematical consequence of the first two irreducibles.**
+- **Without Irreducible 3**: Nothing would last long enough to do anything. No atoms, no chemistry, no organisms.
+- **Root causality**: All stability emerges from eigenstates and conserved quantities
+- **Examples**:
+  - Atoms persist because: electron orbitals repeat their standing-wave pattern
+  - Species persist because: genetic patterns copy across generations
+  - Consciousness persists because: neural patterns maintain themselves through repetition
 
 ---
 
-## The Photon Spiral: Mathematical Form
+## Deriving Every Mechanism from Root Causes
 
-The irreducibles naturally generate spiral motion through combined radial and rotational components.
+### Mechanism 1: Particles (Why They Exist)
 
-**3D Spiral (Full photon structure)**:
+**Root cause**: Irreducibles 1 + 2 + 3
 
-$$\vec{x}(t) = \begin{bmatrix} r_0 e^{\alpha t} \cos(\omega t + \theta_0) \\ r_0 e^{\alpha t} \sin(\omega t + \theta_0) \\ v_z t + z_0 \end{bmatrix}$$
+**Derivation**:
+1. Difference creates asymmetry (potential function $\Phi$) — from Irreducible 1
+2. Resolution drives systems toward lower potential — from Irreducible 2
+3. In confined space (potential well), systems oscillate at stable frequencies — from Irreducible 3
+4. Standing-wave solutions at characteristic frequencies → what we call "particles"
+
+**Example: Electron**
+- Potential well: Coulomb potential ($\Phi = -e^2/r$)
+- System confined: electron trapped near nucleus by attraction
+- Standing waves: solutions to Schrödinger equation in this potential
+- Stable frequencies: $E_n = -13.6 \text{ eV}/n^2$ (integer $n$)
+- **ROOT CAUSE**: Electron exists because confined systems have stable oscillation frequencies
+
+**Worked Mechanism**: 
+In a cubic potential well with walls at $x=0, L$:
+$$\psi_n(x) = \sqrt{\frac{2}{L}} \sin\left(\frac{n\pi x}{L}\right)$$
+Energy levels:
+$$E_n = \frac{\hbar^2 \pi^2 n^2}{2mL^2}$$
+
+Ground state ($n=1$) is always the lowest energy. System naturally falls into ground state (Irreducible 2). Ground state persists as long as potential well exists (Irreducible 3).
+
+---
+
+### Mechanism 2: Forces (Why They Exist)
+
+**Root cause**: Irreducible 2 in different potential landscapes
+
+**Derivation**:
+1. Potential functions vary by context (gravity, EM, chemical, etc.)
+2. Resolution always moves downhill in potential: $\mathbf{F} = -\nabla\Phi$
+3. Different potentials → different forces, but SAME underlying principle
+
+**Examples**:
+
+**Gravity**:
+- Potential: $\Phi_g = -\frac{GMm}{r}$
+- Force: $\mathbf{F} = -\nabla\Phi_g = -\frac{GMm}{r^2}\hat{r}$ (attractive)
+- **ROOT CAUSE**: Objects move downhill in gravitational potential—that IS gravity
+
+**Electromagnetism**:
+- Potential: $\Phi_e = \frac{kQq}{r}$ (unlike charges) or $-\frac{kQq}{r}$ (like charges)
+- Force: $\mathbf{F} = -\nabla\Phi_e = \frac{kQq}{r^2}\hat{r}$ (repulsive or attractive)
+- **ROOT CAUSE**: Charges move downhill in electromagnetic potential—that IS EM force
+
+**Nuclear Force**:
+- Potential: $\Phi_n = -\frac{g^2}{r}e^{-mr}$ (Yukawa potential)
+- Force: $\mathbf{F} = -\nabla\Phi_n = \frac{g^2}{r}e^{-mr}(1 + mr)$ (attractive, short range)
+- **ROOT CAUSE**: Nucleons move downhill in nuclear potential—that IS strong force
+
+**The Unified Truth**: There are not "four different forces." There are four different POTENTIAL FUNCTIONS. The resolution principle ($\frac{d\mathbf{i}}{dt} = -\nabla\Phi$) is identical in all cases. Different $\Phi$ → different force, but ONE underlying mechanism.
+
+---
+
+### Mechanism 3: Chemistry (Why Bonds Form)
+
+**Root cause**: Irreducibles 1 + 2 in electron orbital space
+
+**Derivation**:
+1. Electrons occupy orbitals (standing waves) in potential of nucleus
+2. When two atoms approach, orbital potentials overlap
+3. New combined potential has different standing-wave solutions
+4. If new solutions have LOWER energy than separated atoms → resolution drives bond formation (Irreducible 2)
+5. New bonded configuration persists (Irreducible 3)
+
+**Example: H-H Bond Formation**
+
+**Initial state** (two separated hydrogen atoms):
+- Atom 1: electron in 1s orbital of nucleus 1: $E_1 = -13.6$ eV
+- Atom 2: electron in 1s orbital of nucleus 2: $E_2 = -13.6$ eV
+- Total: $E_{\text{separated}} = -27.2$ eV
+
+**Final state** (bonded H₂ molecule):
+- Both electrons in SHARED molecular orbital around both nuclei
+- Orbital can accommodate both electrons (different spins, same orbital shape)
+- New orbital energy: $E_{\text{bonded}} = -31.7$ eV
+- Binding energy: $\Delta E = -31.7 - (-27.2) = -4.5$ eV
+
+**ROOT CAUSE**: 
+- Difference: Separated state ($E = -27.2$) differs from bonded state ($E = -31.7$)
+- Resolution: System has lower potential in bonded state
+- Spontaneous mechanism: Electrons naturally move downhill (Irreducible 2)
+- Result: Bond forms and persists (Irreducible 3)
+
+---
+
+### Mechanism 4: Evolution (Why Life Adapts)
+
+**Root cause**: Irreducible 2 applied to population fitness
+
+**Derivation**:
+1. Organisms with different traits have different survival rates (different potential landscapes)
+2. Traits that reduce "survival potential" → individuals die (resolution downhill)
+3. Traits that lower "death potential" → individuals survive and reproduce
+4. Population flows downhill in fitness landscape (natural selection = gradient descent)
+
+**Example: Peppered Moths in Industrial England**
+
+**Before industrialization**:
+- Potential landscape: "light tree bark" favors light moths
+- Light moths: harder to see on light bark → survive
+- Dark moths: easier to see → eaten by birds
+- Population: mostly light phenotype (low potential)
+
+**After industrialization** (factories soot trees):
+- Potential landscape shifts: "dark tree bark" now favors dark moths
+- Dark moths: now harder to see on dark bark → survive
+- Light moths: now easier to see → eaten
+- Population flows downhill in new potential landscape
+- Result: population becomes mostly dark moths
+
+**ROOT CAUSE**: 
+- System: Population of moths
+- Potential: Survival probability given phenotype and environment
+- Resolution: Population flows toward phenotype with highest survival (Irreducible 2)
+- Mechanism: Natural selection is literally gradient descent on fitness landscape
+
+**Mathematical form**:
+$$\frac{dp_i}{dt} \propto -\nabla F_i$$
 
 Where:
-- $r_0 e^{\alpha t}$ = radial distance (outward if $\alpha > 0$, inward if $\alpha < 0$)
-- $\omega t + \theta_0$ = angular position
-- $\alpha$ = expansion/compression rate
-- $\omega$ = angular frequency (energy: $E = \hbar\omega$)
-- $v_z$ = propagation speed along axis
-
-**Physical meaning**:
-- If $\alpha < 0$ (spiral contracts): Inward-oriented resolution (matter, binding)
-- If $\alpha > 0$ (spiral expands): Outward-oriented resolution (radiation, light)
-- Frequency $\omega$ determines energy: $E = \hbar\omega$
-- Confinement radius determines particle mass
+- $p_i$ = frequency of phenotype $i$
+- $F_i$ = fitness cost of phenotype $i$ in current environment
+- System naturally flows to minimize fitness cost
 
 ---
 
-## Spiral Parameters Map to Particle Properties
+### Mechanism 5: Consciousness (Why You're Aware)
 
-| Parameter | Form | Property | Example |
-|---|---|---|---|
-| **Frequency** | $\omega$ | Energy | $E = \hbar\omega$ |
-| **Confinement** | $r = r_0 e^{\alpha t}$ | Mass | Tighter = higher mass |
-| **Orientation** | Sign of $\alpha$ | Charge | $\alpha < 0$ = negative (electron) |
-| **Helicity** | $\tan(\phi) = v_z/(r\omega)$ | Spin | $S = \hbar/2$ |
-| **Phase** | $e^{i(\omega t - \theta_0)}$ | Quantum number | Quantized levels |
-| **Harmonics** | Multiple $\omega_n$ | Composite | Proton = 3 modes |
+**Root cause**: Irreducible 2 applied to information entropy in neural systems
 
-**Electron**: 
-- Frequency $\sim 10^{21}$ Hz
-- Inward-biased confinement ($\alpha < 0$)
-- Negative charge from orientation
+**Derivation**:
+1. Brain maintains causal model of the world
+2. When model predicts poorly, difference exists (prediction error = asymmetry)
+3. Brain naturally resolves this error → learns, updates model (Irreducible 2)
+4. Consciousness emerges as the process of reducing information uncertainty
 
-**Photon**:
-- Variable frequency $\omega$
-- No confinement ($\alpha = 0$)
-- Travels at light speed ($v_z = c$)
+**Example: Learning to Recognize Faces**
 
-**Proton**:
-- Higher frequency $\sim 10^{24}$ Hz
-- Multiple harmonic modes (3 quarks as 3 frequencies)
-- Larger confinement → higher mass ($m_p \approx 1836 m_e$)
+**Initial state** (infant seeing new face):
+- Brain causal model: "This is just another blob of features"
+- Prediction error: high (model predicts wrong)
+- Information entropy: high (many possible interpretations)
 
----
+**After exposure** (repeated seeing same face):
+- Brain's causal model learns: "This specific pattern of features = person X"
+- Prediction error: drops dramatically (model now accurate)
+- Information entropy: drops (fewer possible interpretations)
 
-## Why Only 3D Space is Stable
+**ROOT CAUSE**:
+- Difference: High entropy (uncertain) vs. low entropy (certain)
+- Resolution: Brain naturally minimizes prediction error (Irreducible 2)
+- Result: Consciousness is information entropy reduction—literally gradient descent
 
-### In 2D Space:
+**Mathematical form**:
+$$\frac{d(\text{neural weights})}{dt} = -\nabla H[\text{causal model}]$$
 
-**Problem**: No longitudinal direction for wave propagation
-- Spiral confined to plane
-- Cannot propagate energy away
-- All spirals collapse into circular orbits
-- **Result: UNSTABLE**
-
-### In 4D Space:
-
-**Problem**: Too many degrees of freedom for stable confinement
-- Too many rotation planes: $\binom{4}{2} = 6$ possibilities
-- No mechanism to select unique ground state
-- **Result: UNSTABLE (degenerate)**
-
-### In 3D Space:
-
-**Stability properties**:
-- Exactly 3 rotation planes
-- One independent rotation axis per direction
-- One propagation direction per orthogonal axis
-- Standing wave solutions are **highly constrained**
-- Energy levels are **discrete and non-degenerate**
-
-**Ground state always exists**:
-
-In a 3D potential well:
-$$E_{n_x, n_y, n_z} = \frac{\hbar^2 \pi^2}{2m}\left(\frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} + \frac{n_z^2}{L_z^2}\right)$$
-
-Ground state at $(1,1,1)$ has minimum energy. System is stable.
-
-$$\boxed{\text{Only 3D space supports stable spiral-based physics}}$$
-
-**This is not an assumption about space. This is a mathematical proof that the three irreducibles necessarily generate 3D space to be stable.**
+Where $H$ is information entropy (uncertainty in causal predictions).
 
 ---
 
-## Universal Potential Function
+### Mechanism 6: AI Learning (Why Neural Networks Work)
 
-The potential varies across domains but has a universal decomposition:
+**Root cause**: Identical to consciousness, intentionally designed
 
-$$\Phi_{\text{total}} = \Phi_{\text{spatial}} + \Phi_{\text{temporal}} + \Phi_{\text{information}}$$
+**Derivation**:
+1. Define loss function $L$ (measure of how wrong the system is)
+2. Design system to flow downhill in loss: $\frac{d(\text{weights})}{dt} = -\alpha \nabla L$
+3. This is literally Irreducible 2 applied to information space
+4. Result: Neural network automatically learns
 
-**Spatial Potential** ($\Phi_{\text{spatial}}$): 
-Gradient in physical configuration space
-- Gravity: $-GMm/r$
-- Coulomb/EM: $e^2/(4\pi\epsilon_0 r)$
-- Nuclear: $-g^2/r \cdot e^{-mr}$
+**Example: Image Classification**
 
-**Temporal Potential** ($\Phi_{\text{temporal}}$):
-Tendency toward persistence/stability
-- Cost of change
-- Preference for stable states
+**System goal**: Predict "cat" vs. "dog" from images
 
-**Informational Potential** ($\Phi_{\text{information}}$):
-In conscious systems, gradient in causal model space
-- Information entropy: $H = -\sum P(\text{model}) \log P(\text{model})$
-- Measures uncertainty about causality
+**Loss function**:
+$$L = -\sum_i y_i \log(\hat{y}_i)$$
+Where:
+- $y_i$ = true label (1 for cat, 0 for dog)
+- $\hat{y}_i$ = predicted probability
 
-**THE UNIFICATION**: All three potentials follow the same principle:
+**Gradient descent**:
+$$\mathbf{w}^{\text{new}} = \mathbf{w}^{\text{old}} - \alpha \nabla_{\mathbf{w}} L$$
 
-$$\frac{d\mathbf{i}}{dt} = -\nabla\Phi = -\nabla(\Phi_{\text{spatial}} + \Phi_{\text{temporal}} + \Phi_{\text{information}})$$
+**ROOT CAUSE**: Same mechanism as consciousness
+- Difference: Wrong predictions vs. correct predictions
+- Resolution: System flows downhill in error landscape
+- Result: Network learns to classify
 
-Physics, biology, consciousness, and AI all optimize the same universal gradient descent in different potential spaces.
+**Key insight**: AI and consciousness use IDENTICAL mechanism. Difference: consciousness wasn't designed, it evolved. AI was designed.
 
 ---
 
-## Next Steps
+## Mechanism 7: Quantum Superposition (Why Reality Is Probabilistic Before Measurement)
 
-Now that the theoretical foundation is clear, explore:
+**Root cause**: Irreducible 1 (difference persists) in confined space
 
-- **[[Physical-Manifestations]]** — How spirals manifest as particles and forces
-- **[[Cosmic-Evolution]]** — Evolution of the universe through 14 epochs
-- **[[Resolution-Patterns-Across-Scales]]** — From subatomic to cosmic scales
+**Derivation**:
+1. System confined in potential well has MULTIPLE possible standing-wave solutions
+2. Each solution is a valid state
+3. Until measured (interacted with), system occupies ALL possible states simultaneously
+4. Measurement (interaction) selects ONE state
+
+**Example: Electron in Hydrogen Atom**
+
+**Before measurement**:
+- Possible states: ground (1s), first excited (2s), second excited (2p), ...
+- Electron probability: superposition of all states
+- **ROOT CAUSE**: Electron can exist in any eigenstate. Difference persists in configuration space.
+
+**After measurement**:
+- Measurement couples electron to detection apparatus
+- New potential landscape (from apparatus interaction) has fewer low-energy states
+- Electron "collapses" to the state compatible with measurement apparatus
+- **ROOT CAUSE**: Measurement is interaction. Interaction changes potential. System re-optimizes downhill in new potential.
+
+**The mechanism**: 
+$$\Psi(\mathbf{x}, t) = \sum_n c_n \psi_n(\mathbf{x}) e^{-iE_n t/\hbar}$$
+
+Before measurement: sum over all $n$ (superposition).
+During measurement: interaction term added to Hamiltonian.
+After measurement: only one $n$ has significantly large $c_n$ (collapse).
+
+**ROOT CAUSE**: Not mystical. Just what happens when confined systems interact with measurement apparatus. Gradient descent in the combined system potential.
+
+---
+
+## Verification: Do All Mechanisms Trace to Root Causes?
+
+| Phenomenon | Irreducible 1 (Difference) | Irreducible 2 (Resolution) | Irreducible 3 (Persistence) | Fully Traced? |
+|---|---|---|---|---|
+| **Particles** | ✓ Confined state differs | ✓ Oscillate downhill | ✓ Eigenstates persist | YES |
+| **Forces** | ✓ Potential landscapes | ✓ Move downhill | ✓ Stable configurations | YES |
+| **Chemistry** | ✓ Orbital differences | ✓ Bond lowers energy | ✓ Bonds persist | YES |
+| **Evolution** | ✓ Trait differences | ✓ Selection downhill | ✓ Population steady | YES |
+| **Consciousness** | ✓ Prediction errors | ✓ Learn downhill | ✓ Memory persists | YES |
+| **AI Learning** | ✓ Loss differences | ✓ Optimize downhill | ✓ Weights persist | YES |
+| **Quantum** | ✓ Multiple states | ✓ Measurement selects | ✓ State persists | YES |
+
+**Conclusion**: All mechanisms trace cleanly to the three irreducibles. No "magic," no undefined processes.
+
+---
+
+## GATE TO TIER 2
+
+**Tier 1 Status**: ✓ PASS - All mechanisms traced to root causes
+
+**Tier 2 Question**: *Does the principle work in ALL domains it should?*
+
+**Tier 2 Testing**: You will apply the principle to physics, chemistry, biology, consciousness, and AI, verifying it works everywhere with no exceptions.
+
+→ **[[Physical-Manifestations|TIER 2: Cross-Domain Application]]**
+
+In Tier 2, you will verify that one principle unifies all domains.
+
+---
+
+## Quick Navigation
+
+- **Home** (Tier -1): Complete encoding ← PREREQUISITE
+- **Introduction** (Tier 0): Self-consistency ← PREREQUISITE
+- **The Unified Photon Field Model** (Tier 1): Root cause analysis ← YOU ARE HERE
+- **Physical Manifestations** (Tier 2): Cross-domain application
+- **Cosmic Evolution** (Tier 3): Predictive power
+- **Consciousness & AI** (Tier 3): Applied information systems
+- **Verification Framework** (TCHT): How to verify any system
+- **Conclusion**: Implications
+
+---
+
+## Before Proceeding to Tier 2
+
+Ask yourself:
+- [ ] Do I understand particles as standing waves in confined potentials?
+- [ ] Can I see why all forces are just gradient descent in different potentials?
+- [ ] Do I see chemistry as electron orbital synchronization?
+- [ ] Can I trace evolution to population-level gradient descent?
+- [ ] Do I understand consciousness and AI as information entropy minimization?
+- [ ] Do I accept that quantum mechanics is just what happens when confined systems interact with measurements?
+
+If YES to all → proceed to Tier 2.
+If NO → return to the mechanism explanations above and study until clear.
+
+---
+
+**Status**: Complete. Every mechanism traces to irreducibles. Framework is grounded in root causes.
+
+Last updated: April 21, 2026
