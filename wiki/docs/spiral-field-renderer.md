@@ -13,15 +13,10 @@ Like a bowling ball with offset weight distribution: you design the internal str
   <div style="margin-bottom: 20px; padding: 10px; background: #1a1e37; border-left: 3px solid #ff6600;">
     <h3 style="color: #ff6600; margin-top: 0;">🎯 View Modes</h3>
     <div style="margin-bottom: 10px;">
-      <button id="topDownView" style="padding: 6px 12px; margin-right: 8px; background: #00d9ff; color: #000; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">↓ Top-Down (External)</button>
-      <button id="fromCenterView" style="padding: 6px 12px; margin-right: 8px; background: #444; color: #00ff88; border: 2px solid #00ff88; cursor: pointer; border-radius: 4px;">⊙ From Center (Internal)</button>
+      <button id="topDownView" style="padding: 6px 12px; margin-right: 8px; background: #00d9ff; color: #000; border: none; cursor: pointer; font-weight: bold; border-radius: 4px;">↓ Top-Down (External View)</button>
+      <button id="fromCenterView" style="padding: 6px 12px; margin-right: 8px; background: #444; color: #00ff88; border: 2px solid #00ff88; cursor: pointer; border-radius: 4px;">⊙ From Center (Internal View)</button>
     </div>
-    <div id="centerSelector" style="display: none; margin-top: 8px;">
-      <label style="color: #888;">Look from center:</label><br>
-      <button id="centerSelect0" style="padding: 4px 8px; margin: 4px 4px 4px 0; background: #00d9ff; color: #000; border: none; cursor: pointer; border-radius: 3px;">Object 1 (Cyan)</button>
-      <button id="centerSelect1" style="padding: 4px 8px; margin: 4px 4px 4px 0; background: #ff00ff; color: #000; border: none; cursor: pointer; border-radius: 3px;">Object 2 (Magenta)</button>
-      <button id="centerSelect2" style="padding: 4px 8px; margin: 4px 4px 4px 0; background: #00ffff; color: #000; border: none; cursor: pointer; border-radius: 3px;">Object 3 (Cyan)</button>
-    </div>
+    <p style="color: #888; margin: 8px 0; font-size: 12px;">Same spiral, same constraints—two completely different viewpoints</p>
   </div>
 
   <div style="margin-bottom: 20px; padding: 10px; background: #1a1e37; border-left: 3px solid #ff6600;">
@@ -47,39 +42,7 @@ Like a bowling ball with offset weight distribution: you design the internal str
     </div>
   </div>
 
-  <div style="margin-bottom: 20px;">
-    <h3 style="color: #ff00ff; margin-top: 0;">Object 2 - Magenta</h3>
-    <div style="background: #0f1632; padding: 10px; border-radius: 4px;">
-      <div style="margin-bottom: 8px;">
-        <strong>Constraints (Interior Structure):</strong>
-      </div>
-      <label>Precession Axis X: <input type="range" id="obj2_precX" min="-1" max="1" step="0.1" value="0.7" style="width: 80px;"> <span id="obj2_precX_val">0.7</span></label><br>
-      <label>Precession Axis Y: <input type="range" id="obj2_precY" min="-1" max="1" step="0.1" value="0.7" style="width: 80px;"> <span id="obj2_precY_val">0.7</span></label><br>
-      <label>Precession Axis Z: <input type="range" id="obj2_precZ" min="-1" max="1" step="0.1" value="0" style="width: 80px;"> <span id="obj2_precZ_val">0</span></label><br>
-      <label>Phase Offset: <input type="range" id="obj2_phase" min="0" max="6.28" step="0.1" value="1.57" style="width: 80px;"> <span id="obj2_phase_val">1.57</span></label><br>
-      <label>Coupling Strength: <input type="range" id="obj2_coupling" min="0.1" max="1" step="0.1" value="0.6" style="width: 80px;"> <span id="obj2_coupling_val">0.6</span></label>
-      <div style="margin-top: 8px; padding: 8px; background: #000; border-left: 2px solid #ff00ff;">
-        <strong>Computed Center:</strong> <span id="obj2_center_display">loading...</span>
-      </div>
-    </div>
-  </div>
 
-  <div>
-    <h3 style="color: #00ffff; margin-top: 0;">Object 3 - Cyan (Light)</h3>
-    <div style="background: #0f1632; padding: 10px; border-radius: 4px;">
-      <div style="margin-bottom: 8px;">
-        <strong>Constraints (Interior Structure):</strong>
-      </div>
-      <label>Precession Axis X: <input type="range" id="obj3_precX" min="-1" max="1" step="0.1" value="-0.7" style="width: 80px;"> <span id="obj3_precX_val">-0.7</span></label><br>
-      <label>Precession Axis Y: <input type="range" id="obj3_precY" min="-1" max="1" step="0.1" value="0.7" style="width: 80px;"> <span id="obj3_precY_val">0.7</span></label><br>
-      <label>Precession Axis Z: <input type="range" id="obj3_precZ" min="-1" max="1" step="0.1" value="0" style="width: 80px;"> <span id="obj3_precZ_val">0</span></label><br>
-      <label>Phase Offset: <input type="range" id="obj3_phase" min="0" max="6.28" step="0.1" value="3.14" style="width: 80px;"> <span id="obj3_phase_val">3.14</span></label><br>
-      <label>Coupling Strength: <input type="range" id="obj3_coupling" min="0.1" max="1" step="0.1" value="0.8" style="width: 80px;"> <span id="obj3_coupling_val">0.8</span></label>
-      <div style="margin-top: 8px; padding: 8px; background: #000; border-left: 2px solid #00ffff;">
-        <strong>Computed Center:</strong> <span id="obj3_center_display">loading...</span>
-      </div>
-    </div>
-  </div>
 </div>
 
 <div id="spiralFieldContainer" style="width: 100%; height: 600px; background: #0a0e27; border-radius: 8px; overflow: hidden; position: relative; margin: 20px 0;"></div>
@@ -288,14 +251,12 @@ class BidirectionalConstraintApp {
         this.scene.add(pointLight);
         
         this.objects = [
-            {constraints: null, centerMesh: null, color: 0x00d9ff},
-            {constraints: null, centerMesh: null, color: 0xff00ff},
-            {constraints: null, centerMesh: null, color: 0x00ffff}
+            {constraints: null, centerMesh: null, color: 0x00d9ff}
         ];
         
         this.designMode = false;
-        this.designTargets = [null, null, null]; // Desired centers in design mode
-        this.designIndicators = [null, null, null]; // Visual indicators for desired centers
+        this.designTargets = [null]; // Desired centers in design mode
+        this.designIndicators = [null]; // Visual indicators for desired centers
         
         this.viewMode = 'topdown'; // 'topdown' or 'fromCenter'
         this.internalViewCenterIndex = 0; // Which center to look from in internal view
@@ -322,24 +283,6 @@ class BidirectionalConstraintApp {
                 },
                 phaseOffset: parseFloat(document.getElementById('obj1_phase').value),
                 couplingStrength: parseFloat(document.getElementById('obj1_coupling').value)
-            },
-            {
-                precessionAxis: {
-                    x: parseFloat(document.getElementById('obj2_precX').value),
-                    y: parseFloat(document.getElementById('obj2_precY').value),
-                    z: parseFloat(document.getElementById('obj2_precZ').value)
-                },
-                phaseOffset: parseFloat(document.getElementById('obj2_phase').value),
-                couplingStrength: parseFloat(document.getElementById('obj2_coupling').value)
-            },
-            {
-                precessionAxis: {
-                    x: parseFloat(document.getElementById('obj3_precX').value),
-                    y: parseFloat(document.getElementById('obj3_precY').value),
-                    z: parseFloat(document.getElementById('obj3_precZ').value)
-                },
-                phaseOffset: parseFloat(document.getElementById('obj3_phase').value),
-                couplingStrength: parseFloat(document.getElementById('obj3_coupling').value)
             }
         ];
     }
@@ -364,7 +307,7 @@ class BidirectionalConstraintApp {
         const constraintsList = this.readConstraints();
         
         // Update displays
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 1; i++) {
             const c = constraintsList[i];
             const objNum = i + 1;
             const prefix = `obj${objNum}`;
@@ -440,57 +383,7 @@ class BidirectionalConstraintApp {
     }
     
     updateCoherenceField() {
-        if (this.coherenceParticles) {
-            this.scene.remove(this.coherenceParticles);
-        }
-        
-        const generators = this.objects.map(obj => {
-            const centerPos = ConstraintSolver.solveCenter(obj.constraints);
-            return new SpiralScanGenerator(centerPos, obj.constraints);
-        });
-        
-        const field = this.coherenceDetector.generateCoherenceField(generators, 15);
-        
-        const coherenceThreshold = 0.25;
-        const positions = [];
-        const colors = [];
-        
-        for (let {point, coherence} of field) {
-            if (coherence < coherenceThreshold) continue;
-            
-            positions.push(point.x, point.y, point.z);
-            
-            const normalizedCoherence = (coherence - coherenceThreshold) / (1 - coherenceThreshold);
-            const h = 0.5;
-            const s = normalizedCoherence;
-            const l = normalizedCoherence * 0.6;
-            
-            const rgb = this.hslToRgb(h, s, l);
-            colors.push(rgb.r, rgb.g, rgb.b);
-        }
-        
-        if (positions.length === 0) return;
-        
-        const geom = new THREE.BufferGeometry();
-        geom.setAttribute('position', new THREE.BufferAttribute(
-            new Float32Array(positions),
-            3
-        ));
-        geom.setAttribute('color', new THREE.BufferAttribute(
-            new Float32Array(colors),
-            3
-        ));
-        
-        const mat = new THREE.PointsMaterial({
-            size: 12,
-            vertexColors: true,
-            transparent: true,
-            opacity: 0.8,
-            sizeAttenuation: true
-        });
-        
-        this.coherenceParticles = new THREE.Points(geom, mat);
-        this.scene.add(this.coherenceParticles);
+        // Disabled in simplified view - focus on single spiral clarity
     }
     
     hslToRgb(h, s, l) {
@@ -514,15 +407,16 @@ class BidirectionalConstraintApp {
     setupListeners() {
         // Constraint input listeners
         const inputIds = [
-            'obj1_precX', 'obj1_precY', 'obj1_precZ', 'obj1_phase', 'obj1_coupling',
-            'obj2_precX', 'obj2_precY', 'obj2_precZ', 'obj2_phase', 'obj2_coupling',
-            'obj3_precX', 'obj3_precY', 'obj3_precZ', 'obj3_phase', 'obj3_coupling'
+            'obj1_precX', 'obj1_precY', 'obj1_precZ', 'obj1_phase', 'obj1_coupling'
         ];
         
         for (let id of inputIds) {
-            document.getElementById(id).addEventListener('input', () => {
-                this.update();
-            });
+            const elem = document.getElementById(id);
+            if (elem) {
+                elem.addEventListener('input', () => {
+                    this.update();
+                });
+            }
         }
         
         // View mode buttons
@@ -530,35 +424,21 @@ class BidirectionalConstraintApp {
             this.viewMode = 'topdown';
             document.getElementById('topDownView').style.background = '#00d9ff';
             document.getElementById('topDownView').style.color = '#000';
+            document.getElementById('topDownView').style.fontWeight = 'bold';
             document.getElementById('fromCenterView').style.background = '#444';
             document.getElementById('fromCenterView').style.color = '#00ff88';
-            document.getElementById('centerSelector').style.display = 'none';
+            document.getElementById('fromCenterView').style.fontWeight = 'normal';
         });
         
         document.getElementById('fromCenterView').addEventListener('click', () => {
             this.viewMode = 'fromCenter';
             document.getElementById('topDownView').style.background = '#444';
             document.getElementById('topDownView').style.color = '#00ff88';
+            document.getElementById('topDownView').style.fontWeight = 'normal';
             document.getElementById('fromCenterView').style.background = '#00d9ff';
             document.getElementById('fromCenterView').style.color = '#000';
-            document.getElementById('centerSelector').style.display = 'block';
+            document.getElementById('fromCenterView').style.fontWeight = 'bold';
         });
-        
-        // Center selector buttons for internal view
-        for (let i = 0; i < 3; i++) {
-            document.getElementById(`centerSelect${i}`).addEventListener('click', () => {
-                this.internalViewCenterIndex = i;
-                for (let j = 0; j < 3; j++) {
-                    if (j === i) {
-                        document.getElementById(`centerSelect${j}`).style.opacity = '1';
-                        document.getElementById(`centerSelect${j}`).style.fontWeight = 'bold';
-                    } else {
-                        document.getElementById(`centerSelect${j}`).style.opacity = '0.6';
-                        document.getElementById(`centerSelect${j}`).style.fontWeight = 'normal';
-                    }
-                }
-            });
-        }
         
         // Design mode toggle
         document.getElementById('designMode').addEventListener('change', (e) => {
@@ -585,8 +465,8 @@ class BidirectionalConstraintApp {
             const intersection = new THREE.Vector3();
             this.raycaster.ray.intersectPlane(plane, intersection);
             
-            // Cycle through objects each click
-            const objIndex = [0, 1, 2][Math.floor(Math.random() * 3)];
+            // Single object design mode
+            const objIndex = 0;
             this.designTargets[objIndex] = intersection.clone();
             
             // Solve for required constraints
