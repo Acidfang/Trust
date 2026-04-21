@@ -128,7 +128,7 @@ Creating organizations that preserve competence:
   - [9] Chemistry & life (electron spiral phase-locking)
 
 ### Unified Photon Field Model
-- **[Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/)** — **[LIVING DOCUMENT - Resolution Evolving]**
+- **[Unified Photon Field Model]({{ site.baseurl }}/whitepaper/)** — **[LIVING DOCUMENT - Resolution Evolving]**
   - All reality as local spiraling patterns in universal photon field
   - Photon as primitive (only fundamental entity)
   - Spiral directionality: Inward=Gravity, Outward=Electromagnetism
