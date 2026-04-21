@@ -30,6 +30,16 @@ navigation:
       - name: "Complete Wiki"
         url: "/zero-error/wiki/"
 
+  - name: "UNIFIED PHOTON FIELD MODEL"
+    icon: "🌌"
+    children:
+      - name: "Theory & Model"
+        url: "/whitepaper/"
+      - name: "Cosmic Evolution"
+        url: "/cosmic-unfolding/"
+      - name: "Integration Summary"
+        url: "/wiki-integration-summary/"
+
   - name: "THE COLD HARD TRUTH"
     icon: "🎯"
     children:
