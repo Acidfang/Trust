@@ -444,26 +444,33 @@ function drawUnwoundView() {
     ctx.fillStyle = '#0a0e27';
     ctx.fillRect(0, 0, width, height);
     
+    // Adjusted positioning to fit content in frame
+    const axisBottom = height - 60;  // 60px margin for labels at bottom
+    const axisTop = 50;              // 50px margin for title
+    const axisHeight = axisBottom - axisTop;
+    const axisLeft = 80;
+    const axisRight = width - 40;
+    
     // Draw axes
     ctx.strokeStyle = 'rgba(100, 120, 180, 0.5)';
     ctx.lineWidth = 1;
     ctx.beginPath();
-    ctx.moveTo(80, 350);
-    ctx.lineTo(width - 40, 350);
+    ctx.moveTo(axisLeft, axisBottom);
+    ctx.lineTo(axisRight, axisBottom);
     ctx.stroke();
     
     ctx.beginPath();
-    ctx.moveTo(80, 350);
-    ctx.lineTo(80, 50);
+    ctx.moveTo(axisLeft, axisBottom);
+    ctx.lineTo(axisLeft, axisTop);
     ctx.stroke();
     
     // Labels
     ctx.fillStyle = '#888';
     ctx.font = '11px monospace';
     ctx.textAlign = 'center';
-    ctx.fillText('Time / Angle', width - 40, 370);
+    ctx.fillText('Time / Angle', axisRight, axisBottom + 20);
     ctx.textAlign = 'right';
-    ctx.fillText('Radius', 50, 200);
+    ctx.fillText('Radius', 50, height / 2);
     
     // Draw unwound spirals as curves
     for (let spiral of election3State.spirals) {
@@ -478,9 +485,10 @@ function drawUnwoundView() {
             const radius = 150 * radiusDecay;
             
             // X = unwound time/angle
-            const x = 80 + (t / (Math.PI * 2 * 3)) * (width - 120);
+            const x = axisLeft + (t / (Math.PI * 2 * 3)) * (axisRight - axisLeft);
             // Y = radius (inverted so top = large radius)
-            const y = 350 - (radius / 150) * 250;
+            // Scale to fit within axis height, leaving padding
+            const y = axisBottom - (radius / 150) * (axisHeight - 20);
             
             if (isFirstPoint) {
                 ctx.moveTo(x, y);
@@ -499,8 +507,8 @@ function drawUnwoundView() {
         const radiusDecay = Math.exp(-spiral.decay * t);
         const radius = 150 * radiusDecay;
         
-        const x = 80 + (t / (Math.PI * 2 * 3)) * (width - 120);
-        const y = 350 - (radius / 150) * 250;
+        const x = axisLeft + (t / (Math.PI * 2 * 3)) * (axisRight - axisLeft);
+        const y = axisBottom - (radius / 150) * (axisHeight - 20);
         
         ctx.fillStyle = spiral.color;
         ctx.beginPath();
@@ -514,7 +522,7 @@ function drawUnwoundView() {
     ctx.fillText('⟿ UNWOUND: Time vs Radius Graph', width / 2, 25);
     ctx.font = '10px monospace';
     ctx.fillStyle = '#aaa';
-    ctx.fillText('If you unwound the spiral: exponential decay from large radius to center', width / 2, 415);
+    ctx.fillText('If you unwound the spiral: exponential decay from large radius to center', width / 2, height - 15);
 }
 
 function drawElection3Visualization() {
