@@ -7,7 +7,6 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
-    <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.1/dest/simple-jekyll-search.min.js"></script>
 </head>
 <body class="light-mode">
     <div class="sidebar">
@@ -22,11 +21,6 @@
             </button>
         </div>
 
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search..." class="search-input">
-            <ul id="search-results" class="search-results"></ul>
-        </div>
-
         <nav class="sidebar-nav">
             {% include navigation-unified.html %}
         </nav>
@@ -39,7 +33,7 @@
         {% endif %}
 
         <div class="sidebar-footer">
-            <p class="updated">Last updated: {{ 'now' | date: '%Y-%m-%d' }}</p>
+            <p class="updated">Last updated: <span id="last-update"></span></p>
         </div>
     </div>
 
@@ -66,9 +60,11 @@
         </div>
     </main>
 
-    {% include search-index.html %}
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/toc.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+    <script>
+        // Set last update timestamp
+        document.getElementById('last-update').textContent = new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'});
+    </script>
 </body>
 </html>

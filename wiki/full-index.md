@@ -26,6 +26,26 @@ This is not a static reference. It's an expanding map of reality as understandin
 
 ---
 
+## 🛠️ WIKI MAINTENANCE & QUALITY
+
+### Wiki Verification
+- **[Wiki Mandate Verification Report]({{ site.baseurl }}/wiki-verification/)** — Complete audit using Universal Mandate framework
+  - All 4 major domains verified
+  - Binary completeness confirmed
+  - All state transitions mapped
+  - Mandate compliance: ✅ 100%
+  
+### Issue Reporting & Feedback
+- **[Bug Report Template]({{ site.baseurl }}/wiki-bug-report/)** — Structured format for reporting issues
+  - Complete classification system
+  - Mandate compliance verification
+  - Triage criteria
+  - Submission options
+  - Example reports
+  - Response timeline
+
+---
+
 ## 🤖 0-ERROR COMPUTE FRAMEWORK
 
 Complete system for thinking through code before writing it.
@@ -179,6 +199,8 @@ Creating organizations that preserve competence:
 | Understand the physical model | [Unified Photon Field Model]({{ site.baseurl }}/whitepaper/) |
 | Explore the cosmic framework | [Cosmic Evolution]({{ site.baseurl }}/cosmic-unfolding/) |
 | See what's new (April 2026) | [Integration Summary]({{ site.baseurl }}/wiki-integration-summary/) |
+| Report a bug or issue | [Bug Report Template]({{ site.baseurl }}/wiki-bug-report/) |
+| Check wiki quality status | [Verification Report]({{ site.baseurl }}/wiki-verification/) |
 | Understand the complete picture | This page (you are here) |
 
 ---
