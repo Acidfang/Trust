@@ -5,6 +5,11 @@ permalink: /implementation-roadmap/
 description: "Step-by-step weekly plan to build a proper help system"
 toc: true
 status: published
+category: Reference
+tier: Architecture
+difficulty: Intermediate
+reading_time: 40
+entry_point: Site admins
 ---
 
 # Implementation Roadmap: 8-Week Blueprint Execution

@@ -3,6 +3,12 @@ layout: default
 title: 0-Error Compute - Task Template
 permalink: /zero-error/task-template/
 toc: true
+category: 0-Error Computing
+tier: Application
+difficulty: Intermediate
+reading_time: 15
+entry_point: Implementers
+status: published
 ---
 
 # 0-Error Task Template: 8-Phase Execution Framework

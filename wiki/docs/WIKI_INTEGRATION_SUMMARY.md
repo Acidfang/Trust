@@ -5,6 +5,11 @@ permalink: /wiki-integration-summary/
 description: How new insights integrate into the unified framework
 toc: true
 status: living-document
+category: Reference
+tier: Architecture
+difficulty: Intermediate
+reading_time: 20
+entry_point: Site admins
 ---
 
 # Wiki Integration Summary - April 22, 2026

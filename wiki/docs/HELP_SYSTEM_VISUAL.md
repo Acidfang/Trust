@@ -5,6 +5,11 @@ permalink: /help-system-visual/
 description: "Deterministic information architecture visualized"
 toc: true
 status: published
+category: Reference
+tier: Architecture
+difficulty: Beginner
+reading_time: 20
+entry_point: Visual learners, site admins
 ---
 
 # Help System Structure: Visual Reference

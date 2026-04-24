@@ -3,6 +3,12 @@ layout: default
 title: For Researchers - Scientific Framework
 permalink: /for-researchers/
 toc: true
+category: Human Development
+tier: Application
+difficulty: Advanced
+reading_time: 25
+entry_point: Researchers
+status: published
 ---
 
 # For Researchers: Scientific Foundations of Gate-Passage

@@ -3,6 +3,12 @@ layout: default
 title: Why This Matters
 nav_order: 9
 permalink: why-this-matters/
+category: Human Development
+tier: Context
+difficulty: Beginner
+reading_time: 10
+entry_point: Strategic thinkers
+status: published
 ---
 
 # Why This Matters: Foundation vs. Scaffolding

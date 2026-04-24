@@ -5,6 +5,11 @@ permalink: /elections-roadmap/
 description: "How to model each election through animation, learning visualization techniques progressively"
 toc: true
 status: published
+category: Physics & Elections
+tier: Foundation
+difficulty: Beginner
+reading_time: 15
+entry_point: Visual learners
 ---
 
 # 🗺️ Elections Roadmap

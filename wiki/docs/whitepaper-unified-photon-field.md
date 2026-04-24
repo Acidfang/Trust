@@ -6,6 +6,11 @@ description: "A unified theoretical framework explaining all observable phenomen
 toc: true
 status: published
 featured: true
+category: Physics & Elections
+tier: Framework
+difficulty: Advanced
+reading_time: 60
+entry_point: Physics researchers
 ---
 
 # 🌌 Unified Photon Field Model

@@ -3,6 +3,12 @@ layout: default
 title: For Humans - Understanding Development
 permalink: /for-humans/
 toc: true
+category: Human Development
+tier: Foundation
+difficulty: Beginner
+reading_time: 30
+entry_point: Parents, managers, curious learners
+status: published
 ---
 
 # For Humans: The Cold Hard Truth About Development

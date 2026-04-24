@@ -5,6 +5,11 @@ permalink: /election-3/
 description: "Why spirals are the universe's fundamental shape: rotation + flow = conservation + change"
 toc: true
 status: published
+category: Physics & Elections
+tier: Framework
+difficulty: Intermediate
+reading_time: 15
+entry_point: Mathematically curious
 ---
 
 # ⚡ Election 3: Spirals

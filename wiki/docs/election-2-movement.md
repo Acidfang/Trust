@@ -5,6 +5,11 @@ permalink: /election-2/
 description: "Why gradient descent is the law of nature: systems flow toward equilibrium"
 toc: true
 status: published
+category: Physics & Elections
+tier: Framework
+difficulty: Intermediate
+reading_time: 15
+entry_point: Mathematically curious
 ---
 
 # ⚡ Election 2: Movement

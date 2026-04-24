@@ -3,6 +3,12 @@ layout: default
 title: For System Builders - Creating Institutions That Work
 permalink: /for-builders/
 toc: true
+category: Human Development
+tier: Application
+difficulty: Intermediate
+reading_time: 20
+entry_point: Builders, entrepreneurs
+status: published
 ---
 
 # For System Builders: Creating Institutions That Preserve Competence

@@ -3,6 +3,12 @@ layout: default
 title: 0-Error Compute - Decision Logger
 permalink: /zero-error/logger/
 toc: true
+category: 0-Error Computing
+tier: Tool
+difficulty: Intermediate
+reading_time: 10
+entry_point: Tool users
+status: published
 ---
 
 # Decision Logger: Complete Audit Trail for All Decisions

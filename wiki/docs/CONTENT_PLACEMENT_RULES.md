@@ -5,6 +5,11 @@ permalink: /content-placement-rules/
 description: "How to classify and place any new content in the proper help system"
 toc: true
 status: published
+category: Reference
+tier: Architecture
+difficulty: Intermediate
+reading_time: 30
+entry_point: Content creators
 ---
 
 # Content Placement Rules: Deterministic Classification System

@@ -4,6 +4,11 @@ title: Wiki Bug Report Template
 permalink: /wiki-bug-report/
 toc: true
 status: published
+category: Reference
+tier: Support
+difficulty: Beginner
+reading_time: 5
+entry_point: Site users
 ---
 
 # Wiki Bug Report Template

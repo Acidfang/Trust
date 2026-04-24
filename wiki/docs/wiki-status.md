@@ -4,6 +4,11 @@ title: Wiki Status Dashboard
 permalink: /wiki-status/
 toc: false
 status: published
+category: Reference
+tier: Support
+difficulty: Beginner
+reading_time: 5
+entry_point: Site admins
 ---
 
 # Wiki Status Dashboard

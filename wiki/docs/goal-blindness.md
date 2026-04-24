@@ -3,6 +3,12 @@ layout: default
 title: Goal-Blindness - The Universal Root Cause
 permalink: /goal-blindness/
 toc: true
+category: Human Development
+tier: Foundation
+difficulty: Beginner
+reading_time: 8
+entry_point: All users
+status: published
 ---
 
 # Goal-Blindness: Why Every System Is Structurally Blind to Its Consequences

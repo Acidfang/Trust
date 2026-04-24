@@ -3,6 +3,12 @@ layout: default
 title: 0-Error Compute - Universal Mandate
 permalink: /zero-error/mandate/
 toc: true
+category: 0-Error Computing
+tier: Framework
+difficulty: Intermediate
+reading_time: 20
+entry_point: Technical teams
+status: published
 ---
 
 # Universal Mandate: Non-Negotiable Requirements for All AI Work

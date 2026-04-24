@@ -5,6 +5,11 @@ permalink: /election-meta-time/
 description: "Time is not a dimension: it's the sequence of elections unfolding at every scale"
 toc: true
 status: published
+category: Physics & Elections
+tier: Framework
+difficulty: Advanced
+reading_time: 20
+entry_point: Expert seekers
 ---
 
 # ⚡ Meta-Election: Time

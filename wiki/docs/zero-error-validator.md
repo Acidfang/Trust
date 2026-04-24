@@ -3,6 +3,12 @@ layout: default
 title: 0-Error Compute - Automation Tools
 permalink: /zero-error/validator/
 toc: true
+category: 0-Error Computing
+tier: Tool
+difficulty: Intermediate
+reading_time: 10
+entry_point: Tool users
+status: published
 ---
 
 # 0-Error Compute Automation Suite

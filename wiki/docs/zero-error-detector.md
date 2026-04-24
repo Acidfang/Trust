@@ -3,6 +3,12 @@ layout: default
 title: 0-Error Compute - Duplicate Detector
 permalink: /zero-error/detector/
 toc: true
+category: 0-Error Computing
+tier: Tool
+difficulty: Intermediate
+reading_time: 10
+entry_point: Tool users
+status: published
 ---
 
 # Duplicate Detector: Find and Eliminate Code Redundancy

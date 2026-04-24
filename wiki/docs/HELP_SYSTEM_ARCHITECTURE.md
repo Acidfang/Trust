@@ -5,6 +5,11 @@ permalink: /help-architecture/
 description: "Deterministic information architecture for the complete wiki"
 toc: true
 status: published
+category: Reference
+tier: Architecture
+difficulty: Intermediate
+reading_time: 45
+entry_point: Site admins
 ---
 
 # Help System Architecture: Deterministic Site Organization

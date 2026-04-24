@@ -2,6 +2,12 @@
 layout: default
 title: Help Systems as Gate-Skippers
 permalink: help-systems/
+category: Human Development
+tier: Application
+difficulty: Intermediate
+reading_time: 20
+entry_point: Managers, educators, therapists
+status: published
 ---
 
 # Part 2: Help Systems as Gate-Skipping Enablers

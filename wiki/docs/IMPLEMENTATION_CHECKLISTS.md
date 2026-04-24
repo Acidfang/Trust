@@ -5,6 +5,11 @@ permalink: /implementation-checklists/
 description: "Printable daily and weekly checklists for roadmap execution"
 toc: true
 status: published
+category: Reference
+tier: Tool
+difficulty: Beginner
+reading_time: 30
+entry_point: Content creators
 ---
 
 # Implementation Checklists: Quick Reference

@@ -5,6 +5,11 @@ permalink: /election-1/
 description: "How the first mass emerges from quantum vacuum: the universe's foundational choice"
 toc: true
 status: published
+category: Physics & Elections
+tier: Framework
+difficulty: Beginner
+reading_time: 12
+entry_point: All users
 ---
 
 # ⚡ Election 1: The Universe's First Mass

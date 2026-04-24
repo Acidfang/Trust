@@ -3,6 +3,12 @@ layout: default
 title: Help Systems Cards
 permalink: help-systems-cards/
 toc: false
+category: Human Development
+tier: Reference
+difficulty: Beginner
+reading_time: 10
+entry_point: Visual learners
+status: published
 ---
 
 # Help Systems Overview

@@ -2,6 +2,12 @@
 layout: default
 title: Universal Foundation
 permalink: universal-foundation/
+category: Human Development
+tier: Framework
+difficulty: Intermediate
+reading_time: 25
+entry_point: All users wanting deep understanding
+status: published
 ---
 
 # Part 4: The Universal Foundation

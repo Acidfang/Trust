@@ -3,6 +3,12 @@ layout: default
 title: 0-Error Compute - Introduction
 permalink: /zero-error/intro/
 toc: true
+category: 0-Error Computing
+tier: Foundation
+difficulty: Beginner
+reading_time: 10
+entry_point: Newcomers
+status: published
 ---
 
 # 0-Error Compute: Complete Formalization of Thinking Before Coding

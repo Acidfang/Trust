@@ -5,6 +5,11 @@ permalink: /bidirectional-constraints/
 description: Forward and backward analysis of constraint-determined systems
 toc: true
 status: interactive-visualization
+category: Human Development
+tier: Framework
+difficulty: Advanced
+reading_time: 20
+entry_point: Systems thinkers
 ---
 
 # Bidirectional Constraint Systems: The Bowling Ball Principle

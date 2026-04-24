@@ -2,6 +2,12 @@
 layout: default
 title: Internal Coherence Failure
 permalink: internal-coherence/
+category: Human Development
+tier: Foundation
+difficulty: Intermediate
+reading_time: 15
+entry_point: Developers, therapists, educators
+status: published
 ---
 
 # Part 1: Internal Coherence Failure — The Root Diagnosis

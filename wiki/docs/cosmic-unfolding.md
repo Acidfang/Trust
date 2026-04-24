@@ -6,6 +6,11 @@ description: Step-by-step evolution of reality from the initial diffusion point 
 toc: true
 status: living-document
 resolution: evolving
+category: Physics & Elections
+tier: Integration
+difficulty: Advanced
+reading_time: 30
+entry_point: Systems thinkers
 ---
 
 # Reality's Evolution: From Diffusion to Civilization

@@ -5,6 +5,11 @@ permalink: /roadmap-quick-start/
 description: "Start here to understand and begin the 8-week implementation"
 toc: true
 status: published
+category: Reference
+tier: Architecture
+difficulty: Beginner
+reading_time: 15
+entry_point: Site admins
 ---
 
 # Quick Start: How to Use the Roadmap

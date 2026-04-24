@@ -3,6 +3,12 @@ layout: default
 title: For Developers - Implementation Guide
 permalink: /for-developers/
 toc: true
+category: Human Development
+tier: Application
+difficulty: Intermediate
+reading_time: 15
+entry_point: Software developers
+status: published
 ---
 
 # For Developers: Implementing 0-Error Compute

@@ -3,6 +3,12 @@ layout: default
 title: For AI Instances - Getting Started
 permalink: /for-ai/
 toc: true
+category: Human Development
+tier: Application
+difficulty: Advanced
+reading_time: 20
+entry_point: AI researchers
+status: published
 ---
 
 # For AI Instances: 0-Error Compute Entry Point

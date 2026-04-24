@@ -5,6 +5,11 @@ permalink: /wiki-verification/
 toc: true
 status: verified
 last_updated: April 23, 2026
+category: Reference
+tier: Support
+difficulty: Advanced
+reading_time: 40
+entry_point: Site admins
 ---
 
 # Wiki Mandate Verification Report

@@ -3,6 +3,12 @@ layout: default
 title: 0-Error Compute - Complete Framework
 permalink: /zero-error/wiki/
 toc: true
+category: 0-Error Computing
+tier: Foundation
+difficulty: Beginner
+reading_time: 15
+entry_point: Developers
+status: published
 ---
 
 # 0-Error Compute: Complete Framework Reference

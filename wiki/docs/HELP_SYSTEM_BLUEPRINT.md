@@ -5,6 +5,11 @@ permalink: /help-system-blueprint/
 description: "How to organize the wiki as a professional help system - complete blueprint"
 toc: true
 status: published
+category: Reference
+tier: Architecture
+difficulty: Beginner
+reading_time: 15
+entry_point: Site admins
 ---
 
 # PROPER HELP SYSTEM: Complete Blueprint & Action Plan

@@ -5,6 +5,11 @@ permalink: /election-4/
 description: "Asymmetry is fundamental: inward spirals converge, outward spirals diverge, and entropy always wins"
 toc: true
 status: published
+category: Physics & Elections
+tier: Framework
+difficulty: Intermediate
+reading_time: 15
+entry_point: Mathematically curious
 ---
 
 # ⚡ Election 4: Direction

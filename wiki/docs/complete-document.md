@@ -3,6 +3,12 @@ layout: default
 title: Complete Document
 permalink: complete-document/
 toc: false
+category: Human Development
+tier: Reference
+difficulty: Advanced
+reading_time: 120
+entry_point: Expert seekers
+status: published
 ---
 
 # Complete Integrated Document

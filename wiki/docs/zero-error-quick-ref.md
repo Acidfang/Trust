@@ -3,6 +3,12 @@ layout: default
 title: 0-Error Compute - Quick Reference
 permalink: /zero-error/quick-ref/
 toc: false
+category: 0-Error Computing
+tier: Reference
+difficulty: Beginner
+reading_time: 5
+entry_point: All users
+status: published
 ---
 
 # 0-Error Compute - Quick Reference Card
