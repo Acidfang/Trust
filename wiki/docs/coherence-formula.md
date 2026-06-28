@@ -243,9 +243,9 @@ The E = k·ρ·r² formula explains why:
 
 ## Next Steps
 
-- **[Variables Deep Dive]({{ site.baseurl }}/coherence-variables/)** — Detailed explanations of E, k, ρ, r²
-- **[Domains]({{ site.baseurl }}/domains/)** — See framework applied to 17 real-world domains
-- **[Complete Analysis]({{ site.baseurl }}/coherence-complete/)** — Full documentation with extended proofs
+- **[Variables Deep Dive](/Trust/coherence-variables/)** — Detailed explanations of E, k, ρ, r²
+- **[Domains](/Trust/domains/)** — See framework applied to 17 real-world domains
+- **[Complete Analysis](/Trust/coherence-complete/)** — Full documentation with extended proofs
 
 ---
 
@@ -671,8 +671,8 @@ This framework makes testable predictions that can be proven wrong. If any major
 
 ## Next Steps
 
-- **[Variables Deep Dive]({{ site.baseurl }}/coherence-variables/)** — Understand each variable in detail
-- **[Evolution Domain]({{ site.baseurl }}/coherence-evolution/)** — See predictions verified in biological data
-- **[Economics Domain]({{ site.baseurl }}/coherence-economics/)** — See predictions verified in market data
-- **[Complete Analysis]({{ site.baseurl }}/coherence-complete/)** — Full documentation with all proofs
+- **[Variables Deep Dive](/Trust/coherence-variables/)** — Understand each variable in detail
+- **[Evolution Domain](/Trust/coherence-evolution/)** — See predictions verified in biological data
+- **[Economics Domain](/Trust/coherence-economics/)** — See predictions verified in market data
+- **[Complete Analysis](/Trust/coherence-complete/)** — Full documentation with all proofs
 
