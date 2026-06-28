@@ -24,7 +24,7 @@ E = k · ρ · r²
 **ρ** = Environmental density (complexity and pressure)  
 **r²** = Reach squared (coordination distance, quadratic cost)
 
-All four variables are **scale-invariant**—they have identical meaning whether applied to atoms, organisms, brains, markets, governments, or ecosystems.[1](#ref-1)
+All four variables are **scale-invariant**—they have identical meaning whether applied to atoms, organisms, brains, markets, governments, or ecosystems.{#cite-1}[1](#ref-1)
 
 ---
 
@@ -32,7 +32,7 @@ All four variables are **scale-invariant**—they have identical meaning whether
 
 ### The Universal Principle
 
-Every coherent system minimizes potential energy, following the general principle:[2](#ref-2)
+Every coherent system minimizes potential energy, following the general principle:{#cite-2}[2](#ref-2)
 
 **dℹ/dt = -∇Φ**
 
@@ -44,7 +44,7 @@ Systems flow "downhill" toward lower-energy configurations. Learning is the proc
 
 ### Why r² Matters
 
-The quadratic term is critical to the framework's predictive power. When reach doubles, coordination cost quadruples. This explains:[3](#ref-3)
+The quadratic term is critical to the framework's predictive power. When reach doubles, coordination cost quadruples. This explains:{#cite-3}[3](#ref-3)
 - Why empires collapse (administrative costs grow as r²)
 - Why global systems are fragile (tiny perturbations cascade through entire networks)
 - Why organizations become dysfunctional as they scale
@@ -57,25 +57,25 @@ The quadratic term is critical to the framework's predictive power. When reach d
 
 **Claim:** Atomic energy transitions follow E = k·ρ·r² scaling.[1](#ref-1)
 
-**Evidence:** Spectroscopic data from the NIST Atomic Spectra Database shows exact energy transitions matching quantum mechanical predictions through the Planck-Einstein relation (E = hν).[4](#ref-4) This validation occurs across the entire electromagnetic spectrum, from radio waves to gamma rays.
+**Evidence:** Spectroscopic data from the NIST Atomic Spectra Database shows exact energy transitions matching quantum mechanical predictions through the Planck-Einstein relation (E = hν).{#cite-4}[4](#ref-4) This validation occurs across the entire electromagnetic spectrum, from radio waves to gamma rays.
 
-**Quantum Coherence:** Zurek's decoherence theory demonstrates that the energy cost of maintaining quantum coherence in noisy environments follows predicted scaling laws, with decoherence time inversely proportional to environmental density (ρ).[5](#ref-5)
+**Quantum Coherence:** Zurek's decoherence theory demonstrates that the energy cost of maintaining quantum coherence in noisy environments follows predicted scaling laws, with decoherence time inversely proportional to environmental density (ρ).{#cite-5}[5](#ref-5)
 
 ### Economics & Growth Patterns
 
-**Claim:** Economic growth follows logistic (S-curve) patterns, not exponential growth.[6](#ref-6)
+**Claim:** Economic growth follows logistic (S-curve) patterns, not exponential growth.{#cite-6}[6](#ref-6)
 
-**Evidence:** World Bank Open Data (1960-2024) for 195 countries shows:[7](#ref-7)
+**Evidence:** World Bank Open Data (1960-2024) for 195 countries shows:{#cite-7}[7](#ref-7)
 - Global GDP growth rate: 3.5% annually (1960s) → 2.1% (2020s)
 - Correlation with Verhulst logistic model: 0.94 (r² = 0.88)
 - Pattern consistent across all major economies studied
 
-**Wealth Concentration:** Piketty's World Inequality Database shows capital concentrates toward high-efficiency (high-k) substrates:[8](#ref-8)
+**Wealth Concentration:** Piketty's World Inequality Database shows capital concentrates toward high-efficiency (high-k) substrates:{#cite-8}[8](#ref-8)
 - Top 1% wealth share correlates with substrate efficiency at r = 0.78
 - Tech sector (high-k) attracted 85% of venture capital growth (2010-2024)
 - This matches prediction: resources flow toward k-optimized systems
 
-**Financial Crises:** Historical data (1789-2024) reveals crisis patterns:[9](#ref-9)
+**Financial Crises:** Historical data (1789-2024) reveals crisis patterns:{#cite-9}[9](#ref-9)
 - 47 major financial crises tracked
 - Average lag from market density peak to visible crisis: 11.2 ± 2.1 years
 - Lag correlates with predicted r²-dependent timescale: r = 0.87
@@ -83,28 +83,28 @@ The quadratic term is critical to the framework's predictive power. When reach d
 
 ### Psychology & Learning
 
-**Claim:** Stress impairs learning by reducing system adaptability (k).[10](#ref-10)
+**Claim:** Stress impairs learning by reducing system adaptability (k).{#cite-10}[10](#ref-10)
 
-**Evidence:** Neuroscience research shows:[11](#ref-11)
+**Evidence:** Neuroscience research shows:{#cite-11}[11](#ref-11)
 - Elevated cortisol reduces BDNF (brain-derived neurotrophic factor) expression
 - BDNF reduction decreases dendritic spine density in the hippocampus
 - Learning efficiency drops 40-60% during high-stress conditions
 - Mechanism: High ρ (stress) exceeds system's k (neural plasticity), preventing adaptation
 
-**Cognitive Load:** Sweller's cognitive load research demonstrates:[12](#ref-12)
+**Cognitive Load:** Sweller's cognitive load research demonstrates:{#cite-12}[12](#ref-12)
 - Performance drops sharply when task complexity (ρ) exceeds working memory capacity
 - Critical threshold: ~7±2 items in working memory
 - Beyond threshold: error rates increase exponentially
 - Interpretation: Matches E = k·ρ·r² where high ρ exceeds available k
 
-**Age and Plasticity:** Neural plasticity (k) declines with age, reducing adaptation capacity:[13](#ref-13)
+**Age and Plasticity:** Neural plasticity (k) declines with age, reducing adaptation capacity:{#cite-13}[13](#ref-13)
 - Learning rates decline by ~1-2% per year after age 30
 - Prediction: Systems with lower k require proportionally more effort (higher E) to adapt
 - Verified: Older adults show extended learning periods despite equivalent effort
 
 ### Evolution & Extinction
 
-**Claim:** Extinction cascades follow density-dependent dynamics matching E = k·ρ·r².[14](#ref-14)
+**Claim:** Extinction cascades follow density-dependent dynamics matching E = k·ρ·r².{#cite-14}[14](#ref-14)
 
 **Evidence:**
 - Major extinction events over 540 million years show predicted cascade patterns
@@ -114,9 +114,9 @@ The quadratic term is critical to the framework's predictive power. When reach d
 
 ### Politics & Revolutions
 
-**Claim:** Revolutions follow population/complexity density (ρ) spikes with r²-dependent lag.[15](#ref-15)
+**Claim:** Revolutions follow population/complexity density (ρ) spikes with r²-dependent lag.{#cite-15}[15](#ref-15)
 
-**Evidence:** Historical analysis of 200+ revolutions (1500-2000):[16](#ref-16)
+**Evidence:** Historical analysis of 200+ revolutions (1500-2000):{#cite-16}[16](#ref-16)
 - Average lag from density spike to visible revolution: 8-14 years
 - Matches r²-dependent prediction (median country size)
 - Examples:
@@ -124,14 +124,14 @@ The quadratic term is critical to the framework's predictive power. When reach d
   - Russian Revolution: ~9 years after population surge
   - Chinese Revolution: ~12 years after modernization pressure
 
-**Imperial Collapse:** Tainter's analysis of complex societies shows:[17](#ref-17)
+**Imperial Collapse:** Tainter's analysis of complex societies shows:{#cite-17}[17](#ref-17)
 - Roman Empire fragmentation: Administrative costs grew as r² of empire size
 - Eventually exceeded available resources (E_required > E_available)
 - Similar collapse patterns observed in Mongol, Ottoman, Soviet empires
 
 ### Medicine & Disease
 
-**Claim:** Disease outcome depends on E_required vs E_available, not pathogen virulence alone.[18](#ref-18)
+**Claim:** Disease outcome depends on E_required vs E_available, not pathogen virulence alone.{#cite-18}[18](#ref-18)
 
 **Evidence:**
 - Immune response energy cost increases with pathogen complexity (ρ)
@@ -141,9 +141,9 @@ The quadratic term is critical to the framework's predictive power. When reach d
 
 ### Technology & Innovation
 
-**Claim:** All major technologies follow logistic (S-curve) adoption patterns with consistent r²-dependent inflection points.[19](#ref-19)
+**Claim:** All major technologies follow logistic (S-curve) adoption patterns with consistent r²-dependent inflection points.{#cite-19}[19](#ref-19)
 
-**Evidence:** Rogers' Diffusion of Innovations research documents:[20](#ref-20)
+**Evidence:** Rogers' Diffusion of Innovations research documents:{#cite-20}[20](#ref-20)
 - Electricity adoption: Innovation (1879) → Market shift (1920s-1930s, ~40-50 years)
 - Internet: Innovation (1969) → Market disruption (1995-2010, ~25-40 years)
 - Smartphones: Innovation (2007) → Market shift (2015+, ~8 years)
@@ -199,45 +199,45 @@ The E = k·ρ·r² formula explains why:
 
 ## References
 
-[1] Zurek, W. H. (2003). "Decoherence and the transition from quantum to classical." *Reviews of Modern Physics*, 75(3), 715-775. {#ref-1}
+[1] Zurek, W. H. (2003). "Decoherence and the transition from quantum to classical." *Reviews of Modern Physics*, 75(3), 715-775. {#ref-1} [↑](#cite-1)
 
-[2] Einstein, A. (1905). "On the electrodynamics of moving bodies." *Annalen der Physik*, 17(10), 891-921. [General principle of energy minimization in physical systems] {#ref-2}
+[2] Einstein, A. (1905). "On the electrodynamics of moving bodies." *Annalen der Physik*, 17(10), 891-921. [General principle of energy minimization in physical systems] {#ref-2} [↑](#cite-2)
 
-[3] Tainter, J. A. (1988). *The Collapse of Complex Societies*. Cambridge University Press. {#ref-3}
+[3] Tainter, J. A. (1988). *The Collapse of Complex Societies*. Cambridge University Press. {#ref-3} [↑](#cite-3)
 
-[4] NIST Atomic Spectra Database. Accessed at: https://physics.nist.gov/cgi-bin/ASD/lines1.pl. [Planck-Einstein validation across electromagnetic spectrum] {#ref-4}
+[4] NIST Atomic Spectra Database. Accessed at: https://physics.nist.gov/cgi-bin/ASD/lines1.pl. [Planck-Einstein validation across electromagnetic spectrum] {#ref-4} [↑](#cite-4)
 
-[5] Zurek, W. H. (2003). Op. cit. [Decoherence scaling with environmental density] {#ref-5}
+[5] Zurek, W. H. (2003). Op. cit. [Decoherence scaling with environmental density] {#ref-5} [↑](#cite-5)
 
-[6] Verhulst, P. F. (1838). "Notice sur la loi que la population suit dans son accroissement." *Correspondance Mathématique et Physique*, 10, 113-121. [Logistic growth model] {#ref-6}
+[6] Verhulst, P. F. (1838). "Notice sur la loi que la population suit dans son accroissement." *Correspondance Mathématique et Physique*, 10, 113-121. [Logistic growth model] {#ref-6} [↑](#cite-6)
 
-[7] World Bank Open Data. (2024). GDP Indicator NY.GDP.MKTP.CD. Retrieved from: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD. [1960-2024 data, 195 countries, correlation with Verhulst: r=0.94] {#ref-7}
+[7] World Bank Open Data. (2024). GDP Indicator NY.GDP.MKTP.CD. Retrieved from: https://data.worldbank.org/indicator/NY.GDP.MKTP.CD. [1960-2024 data, 195 countries, correlation with Verhulst: r=0.94] {#ref-7} [↑](#cite-7)
 
-[8] Piketty, T., et al. (2018). *World Inequality Database*. Retrieved from: https://wir2018.wir2018.eu/. [Wealth concentration analysis, 1980-2020] {#ref-8}
+[8] Piketty, T., et al. (2018). *World Inequality Database*. Retrieved from: https://wir2018.wir2018.eu/. [Wealth concentration analysis, 1980-2020] {#ref-8} [↑](#cite-8)
 
-[9] Rogoff, K. S., & Reinhart, C. M. (2009). *This Time is Different: Eight Centuries of Financial Folly*. Princeton University Press. [47 major financial crises, 1789-2024] {#ref-9}
+[9] Rogoff, K. S., & Reinhart, C. M. (2009). *This Time is Different: Eight Centuries of Financial Folly*. Princeton University Press. [47 major financial crises, 1789-2024] {#ref-9} [↑](#cite-9)
 
-[10] McEwen, B. S., & Morrison, J. H. (2013). "The Brain on Stress: Vulnerability and Plasticity." *Cell*, 153(4), 896-910. {#ref-10}
+[10] McEwen, B. S., & Morrison, J. H. (2013). "The Brain on Stress: Vulnerability and Plasticity." *Cell*, 153(4), 896-910. {#ref-10} [↑](#cite-10)
 
-[11] Joëls, M., Fernandez, G., & Roozendaal, B. (2011). "Stress and emotional memory: A matter of timing." *Trends in Cognitive Sciences*, 15(6), 280-288. {#ref-11}
+[11] Joëls, M., Fernandez, G., & Roozendaal, B. (2011). "Stress and emotional memory: A matter of timing." *Trends in Cognitive Sciences*, 15(6), 280-288. {#ref-11} [↑](#cite-11)
 
-[12] Sweller, J. (1988). "Cognitive load during problem solving: Effects on learning." *Cognitive Science*, 12(2), 257-285. {#ref-12}
+[12] Sweller, J. (1988). "Cognitive load during problem solving: Effects on learning." *Cognitive Science*, 12(2), 257-285. {#ref-12} [↑](#cite-12)
 
-[13] Nyberg, L., et al. (2012). "Cognitive aging." In *Handbook of Psychology*, Second Edition. John Wiley & Sons, 504-522. {#ref-13}
+[13] Nyberg, L., et al. (2012). "Cognitive aging." In *Handbook of Psychology*, Second Edition. John Wiley & Sons, 504-522. {#ref-13} [↑](#cite-13)
 
-[14] Raup, D. M., & Sepkoski Jr, J. J. (1982). "Mass extinctions in the marine fossil record." *Science*, 215(4539), 1501-1503. {#ref-14}
+[14] Raup, D. M., & Sepkoski Jr, J. J. (1982). "Mass extinctions in the marine fossil record." *Science*, 215(4539), 1501-1503. {#ref-14} [↑](#cite-14)
 
-[15] Goldstone, J. A. (1991). *Revolution and Rebellion in the Early Modern World*. University of California Press. [200+ revolutions analysis, 1500-2000] {#ref-15}
+[15] Goldstone, J. A. (1991). *Revolution and Rebellion in the Early Modern World*. University of California Press. [200+ revolutions analysis, 1500-2000] {#ref-15} [↑](#cite-15)
 
-[16] Ibid. [8-14 year lag verification] {#ref-16}
+[16] Ibid. [8-14 year lag verification] {#ref-16} [↑](#cite-16)
 
-[17] Tainter, J. A. (1988). Op. cit. [Imperial collapse analysis] {#ref-17}
+[17] Tainter, J. A. (1988). Op. cit. [Imperial collapse analysis] {#ref-17} [↑](#cite-17)
 
-[18] Straub, R. H., & Cutolo, M. (2018). "Psychoneuroimmunology—developments in stress research." *Wiley Interdisciplinary Reviews: Systems Biology and Medicine*, 10(2), e1409. {#ref-18}
+[18] Straub, R. H., & Cutolo, M. (2018). "Psychoneuroimmunology—developments in stress research." *Wiley Interdisciplinary Reviews: Systems Biology and Medicine*, 10(2), e1409. {#ref-18} [↑](#cite-18)
 
-[19] Rogers, E. M. (2003). *Diffusion of Innovations*, 5th Edition. Free Press. {#ref-19}
+[19] Rogers, E. M. (2003). *Diffusion of Innovations*, 5th Edition. Free Press. {#ref-19} [↑](#cite-19)
 
-[20] Ibid. [Technology adoption S-curve documentation] {#ref-20}
+[20] Ibid. [Technology adoption S-curve documentation] {#ref-20} [↑](#cite-20)
 
 ---
 
