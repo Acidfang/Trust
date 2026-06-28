@@ -23,43 +23,43 @@ All documents include:
 
 ### 📄 Core Framework
 
-- **[EVOLUTION_AS_COHERENCE_CASCADE.md](../EVOLUTION_AS_COHERENCE_CASCADE.md)** (15,000+ words)
+- **[Evolution Domain](/Trust/coherence-evolution/)** (15,000+ words)
   - 7 predictions about biological adaptation, extinction patterns, complexity emergence
   - Paleontological data 1870-2024
   - 5 verified, 2 pending
   - Applies E = k·ρ·r² to evolutionary dynamics
 
-- **[ECONOMICS_AS_COHERENCE_CASCADE.md](../ECONOMICS_AS_COHERENCE_CASCADE.md)** (12,000+ words)
+- **[Economics Domain](/Trust/coherence-economics/)** (12,000+ words)
   - 6 predictions about growth curves, wealth concentration, crisis cycles
   - Economic data from 50+ nations, 1870-2024
   - 6 verified
   - Predicts 2031-2033 crisis window
 
-- **[PSYCHOLOGY_AS_COHERENCE_CASCADE.md](../PSYCHOLOGY_AS_COHERENCE_CASCADE.md)** (11,000+ words)
+- **[Psychology Domain](/Trust/coherence-psychology/)** (11,000+ words)
   - 6 predictions about consciousness, learning, mental disorders, personality
   - Neuroscience verification across 50+ years of research
   - 6 verified
   - Explains disorder clustering during crises
 
-- **[POLITICS_AS_COHERENCE_CASCADE.md](../POLITICS_AS_COHERENCE_CASCADE.md)** (13,000+ words)
+- **[Politics Domain](/Trust/coherence-politics/)** (13,000+ words)
   - 6 predictions about revolutions, institutions, corruption, polarization
   - Historical data 1789-2024
   - 10+ major revolutions analyzed
   - 6 verified
 
-- **[MEDICINE_AS_COHERENCE_CASCADE.md](../MEDICINE_AS_COHERENCE_CASCADE.md)** (11,000+ words)
+- **[Medicine Domain](/Trust/coherence-medicine/)** (11,000+ words)
   - 6 predictions about health, disease severity, aging, immune function
   - Medical data across 100+ species
   - COVID analysis: E-state prediction verified
   - 6 verified
 
-- **[TECHNOLOGY_AS_COHERENCE_CASCADE.md](../TECHNOLOGY_AS_COHERENCE_CASCADE.md)** (12,000+ words)
+- **[Technology Domain](/Trust/coherence-technology/)** (12,000+ words)
   - 6 predictions about innovation clustering, adoption curves, disruption timing, integration costs
   - Technology adoption data 1870-2024
   - Universal S-curve verification
   - AI deployment predictions 2025-2035
 
-- **[ECOLOGY_AS_COHERENCE_CASCADE.md](../ECOLOGY_AS_COHERENCE_CASCADE.md)** (11,000+ words)
+- **[Ecology Domain](/Trust/coherence-ecology/)** (11,000+ words)
   - 6 predictions about carrying capacity, population cycles, extinction cascades, invasive species
   - Ecological data across 20+ biomes
   - 94% carrying capacity prediction accuracy
@@ -69,19 +69,19 @@ All documents include:
 
 ## Mathematical & Theoretical Foundation
 
-- **[COHERENCE_CASCADE_MATHEMATICAL_MODEL.md](../COHERENCE_CASCADE_MATHEMATICAL_MODEL.md)** (7000+ lines)
+- **[Mathematical Foundation](/Trust/coherence-formula/)** (Complete formula reference)
   - Complete derivation of E = k·ρ·r² from first principles
   - Application to atomic coherence, cooling cascades, galaxy formation
   - Mass function derivations
   - Black hole age calculations
 
-- **[OBSERVER_LOCATION_PRINCIPLE.md](../OBSERVER_LOCATION_PRINCIPLE.md)**
+- **[Universal Foundation](/Trust/universal-foundation/)**
   - Shows how observer constraints resolve 20+ physics mysteries
   - Explains quantum uncertainty through measurement geometry
   - Black hole paradox resolution
   - Galaxy dark matter problem reframing
 
-- **[UNIVERSAL_RECURSIVE_STRUCTURE.md](../UNIVERSAL_RECURSIVE_STRUCTURE.md)**
+- **[Coherence Cascade](/Trust/coherence-cascade/)**
   - Maps E = k·ρ·r² across atomic, cellular, organismal, city, galactic scales
   - Shows recursive pattern at ALL organization levels
   - Demonstrates scale-invariance of core principle
@@ -195,7 +195,7 @@ All documents include:
 3. Choose one domain page above (15-20 min)
 
 ### For Deep Technical Understanding
-1. Read [Mathematical Foundation](../COHERENCE_CASCADE_MATHEMATICAL_MODEL.md) (1-2 hours)
+1. Read [Mathematical Foundation](/Trust/coherence-formula/) (1-2 hours)
 2. Read all six domain documents in sequence (5-6 hours)
 3. Reference [Variables](/Trust/coherence-variables/) as needed
 

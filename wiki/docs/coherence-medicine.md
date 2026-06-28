@@ -73,7 +73,7 @@ The body maintains coherence by paying E = k · ρ · r² at every scale: cellul
 
 ## Full Documentation
 
-**[📄 MEDICINE_AS_COHERENCE_CASCADE.md](../MEDICINE_AS_COHERENCE_CASCADE.md)** (11,000+ words)
+**[📄 Full Medicine Analysis](/Trust/coherence-medicine/)** (11,000+ words)
 
 Contains:
 - 6 detailed predictions with medical data verification

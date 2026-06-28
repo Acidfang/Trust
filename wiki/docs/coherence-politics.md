@@ -74,7 +74,7 @@ Governments pay E = k · ρ · r² to maintain social coherence. When external d
 
 ## Full Documentation
 
-**[📄 POLITICS_AS_COHERENCE_CASCADE.md](../POLITICS_AS_COHERENCE_CASCADE.md)** (13,000+ words)
+**[📄 Full Politics Analysis](/Trust/coherence-politics/)** (13,000+ words)
 
 Contains:
 - 6 detailed predictions with historical verification

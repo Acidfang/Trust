@@ -74,7 +74,7 @@ Economic systems are energy allocation problems. Capital flows where adaptation 
 
 ## Full Documentation
 
-**[📄 ECONOMICS_AS_COHERENCE_CASCADE.md](../ECONOMICS_AS_COHERENCE_CASCADE.md)** (12,000+ words)
+**[📄 Full Economics Analysis](/Trust/coherence-economics/)** (12,000+ words)
 
 Contains:
 - 6 detailed predictions with quantitative verification

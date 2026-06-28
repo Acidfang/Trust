@@ -74,7 +74,7 @@ Innovation = forcing the system to pay adaptation cost E to jump to higher-k sub
 
 ## Full Documentation
 
-**[📄 TECHNOLOGY_AS_COHERENCE_CASCADE.md](../TECHNOLOGY_AS_COHERENCE_CASCADE.md)** (12,000+ words)
+**[📄 Full Technology Analysis](/Trust/coherence-technology/)** (12,000+ words)
 
 Contains:
 - 6 detailed predictions with adoption curve data

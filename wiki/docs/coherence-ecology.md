@@ -84,7 +84,7 @@ Ecosystems distribute available E (energy from sun) through trophic levels. Popu
 
 ## Full Documentation
 
-**[📄 ECOLOGY_AS_COHERENCE_CASCADE.md](../ECOLOGY_AS_COHERENCE_CASCADE.md)** (11,000+ words)
+**[📄 Full Ecology Analysis](/Trust/coherence-ecology/)** (11,000+ words)
 
 Contains:
 - 6 detailed predictions with ecological data

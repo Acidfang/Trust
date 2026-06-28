@@ -70,7 +70,7 @@ Sections [3] and [4] completely rewritten to reflect photon-primitive model:
 
 ### Supporting Document
 
-✅ **[Photon Primitive Model Test](/Trust/PHOTON_PRIMITIVE_MODEL_TEST.md)**
+✅ **[Photon Primitive Model Test](/Trust/whitepaper/)**
 
 (In workspace, not yet in wiki)
 
@@ -210,7 +210,7 @@ Cross-Domain Application:
 
 **For seeing how it applies to cosmic evolution**: Read [Cosmic Unfolding](/Trust/cosmic-unfolding/)
 
-**For logical verification that model works**: See [Photon Primitive Model Test](PHOTON_PRIMITIVE_MODEL_TEST.md)
+**For logical verification that model works**: See [Photon Primitive Model Test](/Trust/whitepaper/)
 
 **For everything integrated**: [Complete Document](/Trust/complete-document/) (updated with model)
 
