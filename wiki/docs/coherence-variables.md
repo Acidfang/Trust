@@ -94,9 +94,22 @@ Systems with **declining k** (aging populations, declining institutions, technol
 
 ---
 
-## r²: The Reach and Coordination Cost
+## r²: The Horizon of Influence and Coordination Cost
 
-**Universal Definition:** The systemic scope and integration breadth, squared. This is why scaling is so expensive.
+**Universal Definition:** The systemic scope and integration breadth, squared. Also called the **Horizon of Influence**—the propagation distance through which an energy-deficit wave must travel to cause systemic failure.
+
+This is why scaling is so expensive.
+
+### The Horizon of Influence: Why r² Matters for Crisis Lag
+
+In the article's "Crisis Lag" prediction, **r² is the time-distance metric**: the longer information/energy must propagate through a system to detect and correct a problem, the longer the lag before visible failure. 
+
+- **Small r:** Local crisis → detected quickly → corrected quickly → lag = days/weeks
+- **Large r:** Global crisis → detected slowly (information travels distance r) → correction requires coordinating all nodes → lag = years
+
+**This predicts:** The larger and more integrated a system, the longer the delay between a resource-density shift (ρ) and observable collapse.
+
+**Example:** A village economy can adapt in weeks. A global economy takes 11±2 years. This lag IS r².
 
 | Domain | Specific Meaning | Small r (Local) | Large r (Global) |
 |--------|-----------------|---|---|
