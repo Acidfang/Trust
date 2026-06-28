@@ -54,6 +54,36 @@ navigation:
       - name: "Integration Summary"
         url: "/wiki-integration-summary/"
 
+  - name: "COHERENCE CASCADE"
+    icon: "🔄"
+    children:
+      - name: "Core Framework"
+        url: "/coherence-cascade/"
+      - name: "The Formula"
+        children:
+          - name: "E = k · ρ · r²"
+            url: "/coherence-formula/"
+          - name: "Variables Explained"
+            url: "/coherence-variables/"
+      - name: "Six Domains"
+        children:
+          - name: "Evolution"
+            url: "/coherence-evolution/"
+          - name: "Economics"
+            url: "/coherence-economics/"
+          - name: "Psychology"
+            url: "/coherence-psychology/"
+          - name: "Politics"
+            url: "/coherence-politics/"
+          - name: "Medicine"
+            url: "/coherence-medicine/"
+          - name: "Technology"
+            url: "/coherence-technology/"
+          - name: "Ecology"
+            url: "/coherence-ecology/"
+      - name: "Complete Analysis"
+        url: "/coherence-complete/"
+
   - name: "THE COLD HARD TRUTH"
     icon: "🎯"
     children:

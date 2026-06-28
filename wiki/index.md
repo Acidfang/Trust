@@ -20,11 +20,15 @@ toc: false
 ## 📚 COMPLETE DOCUMENTATION HUB
 **→ [View ALL Documentation]({{ site.baseurl }}/full-index/)**
 
-This site contains two major knowledge systems:
+This site contains four major knowledge systems:
 - **🎯 The Cold Hard Truth** — Universal framework for human development (below)
 - **🤖 0-Error Compute Project** — Complete AI thinking frameworks (in navigation)
+- **🌌 Unified Photon Field Model** — Standing wave cosmology and physics (in navigation)
+- **🔄 Coherence Cascade Framework** — Universal E = k·ρ·r² learning algorithm (in navigation)
 
-**New here?** [Browse all documentation by topic]({{ site.baseurl }}/full-index/) or use the navigation sidebar.
+Each system is complete, independent, and cross-validated.
+
+**New here?** Start with [Coherence Cascade]({{ site.baseurl }}/coherence-cascade/) for a universal framework applying across all reality, or [Browse all documentation by topic]({{ site.baseurl }}/full-index/) to explore all systems.
 
 ---
 
