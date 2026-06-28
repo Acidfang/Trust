@@ -72,20 +72,6 @@ Economic systems are energy allocation problems. Capital flows where adaptation 
 
 ---
 
-## Full Documentation
-
-**[📄 Full Economics Analysis](/Trust/coherence-economics/)** (12,000+ words)
-
-Contains:
-- 6 detailed predictions with quantitative verification
-- Historical data 1870-2024
-- GDP deceleration curves across 50+ nations
-- Wealth concentration analysis
-- Crisis cycle quantification
-- Comparative analysis to competing economic theories
-
----
-
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains

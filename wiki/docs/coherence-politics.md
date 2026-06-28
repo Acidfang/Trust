@@ -72,20 +72,6 @@ Governments pay E = k · ρ · r² to maintain social coherence. When external d
 
 ---
 
-## Full Documentation
-
-**[📄 Full Politics Analysis](/Trust/coherence-politics/)** (13,000+ words)
-
-Contains:
-- 6 detailed predictions with historical verification
-- Revolution timing analysis (1789-2024)
-- Institutional lifespan curves
-- Corruption vs. wealth analysis (180+ nations)
-- Polarization timeline correlation
-- Comparative analysis to political science models
-
----
-
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains

@@ -72,20 +72,6 @@ Innovation = forcing the system to pay adaptation cost E to jump to higher-k sub
 
 ---
 
-## Full Documentation
-
-**[📄 Full Technology Analysis](/Trust/coherence-technology/)** (12,000+ words)
-
-Contains:
-- 6 detailed predictions with adoption curve data
-- Historical technology replacement analysis
-- Patent data clustering
-- S-curve universality verification
-- Productivity paradox quantification
-- Innovation rate vs. deployment lag analysis
-
----
-
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains

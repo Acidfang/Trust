@@ -82,20 +82,6 @@ Ecosystems distribute available E (energy from sun) through trophic levels. Popu
 
 ---
 
-## Full Documentation
-
-**[📄 Full Ecology Analysis](/Trust/coherence-ecology/)** (11,000+ words)
-
-Contains:
-- 6 detailed predictions with ecological data
-- Carrying capacity analysis across 20+ biomes
-- Population cycle verification (lynx, larch budworm, voles)
-- Extinction sequence documentation
-- Invasive species analysis (100+ species studied)
-- Biodiversity-heterogeneity correlation analysis
-
----
-
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains

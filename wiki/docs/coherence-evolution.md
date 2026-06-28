@@ -93,20 +93,6 @@ Oxygen rose dramatically. This increased available E (energy). Previously, organ
 
 ---
 
-## Full Documentation
-
-This is a summary. For complete analysis with all equations, data compilations, and detailed predictions:
-
-**[📄 Full Evolution Analysis](/Trust/coherence-evolution/)** (15,000+ words)
-
-Contains:
-- 7 detailed predictions with verification
-- 50+ years of paleontological data analyzed
-- Mathematical derivation of scaling laws
-- Comparison to alternative evolutionary theories
-
----
-
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — See all six domains

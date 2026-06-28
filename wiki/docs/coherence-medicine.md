@@ -71,20 +71,6 @@ The body maintains coherence by paying E = k · ρ · r² at every scale: cellul
 
 ---
 
-## Full Documentation
-
-**[📄 Full Medicine Analysis](/Trust/coherence-medicine/)** (11,000+ words)
-
-Contains:
-- 6 detailed predictions with medical data verification
-- COVID analysis (E-state prediction verification)
-- Lifespan analysis across 100+ species
-- Chronic disease progression models
-- Aging rate analysis
-- Immune system energy allocation framework
-
----
-
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains
