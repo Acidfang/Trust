@@ -1,3 +1,16 @@
+---
+layout: default
+title: "Spiral Field Renderer - Constraint Bidirectionality"
+permalink: /spiral-field-renderer/
+description: "Interactive visualization of constraint-determined spiral fields showing forward analysis and backward design"
+status: published
+difficulty: intermediate
+reading_time: "10 minutes"
+target_audience: "Developers, physicists, system designers"
+last_updated: "2026-06-28"
+version: "1.0"
+---
+
 # Constraint-Determined Spiral Field Renderer: Full Bidirectional Reality
 
 ## The Bowling Ball Principle

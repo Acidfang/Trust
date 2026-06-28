@@ -6,6 +6,16 @@ navigation:
     url: "/"
     icon: "🏠"
 
+  - name: "SYSTEMS OVERVIEW"
+    icon: "🔗"
+    children:
+      - name: "How All Four Systems Work Together"
+        url: "/systems-overview/"
+      - name: "Choose Your Entry Point"
+        url: "/by-role/"
+      - name: "Quick Start Guide"
+        url: "/getting-started/"
+
   - name: "0-ERROR COMPUTE"
     icon: "🤖"
     children:
