@@ -274,11 +274,11 @@ There is no middle path. High potential energy systems collapse. It's physics.
 
 ## Next Steps
 
-- **[Understand the gates]({{ site.baseurl }}/universal-foundation/)** — What foundation actually is
-- **[Measure your own coherence]({{ site.baseurl }}/diagnostic-method/)** — Where gates are crossed, where they're skipped
-- **[See how gates work]({{ site.baseurl }}/gate-discovery/)** — Why they can't be taught, only discovered
-- **[Watch it fail in reality]({{ site.baseurl }}/domain-examples/)** — 36+ examples of gates violated, systems collapsed
-- **[Apply it]({{ site.baseurl }}/implementation/)** — How to actually build foundation in parenting, teaching, leadership
+- **[Understand the gates](/Trust/universal-foundation/)** — What foundation actually is
+- **[Measure your own coherence](/Trust/diagnostic-method/)** — Where gates are crossed, where they're skipped
+- **[See how gates work](/Trust/gate-discovery/)** — Why they can't be taught, only discovered
+- **[Watch it fail in reality](/Trust/domain-examples/)** — 36+ examples of gates violated, systems collapsed
+- **[Apply it](/Trust/implementation/)** — How to actually build foundation in parenting, teaching, leadership
 
 ---
 

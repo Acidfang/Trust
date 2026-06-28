@@ -172,13 +172,13 @@ The framework has been applied to six major domains. Across all domains:
 
 ### Domains:
 
-1. **[Evolution]({{ site.baseurl }}/coherence-evolution/)** — Life optimizes energy throughput
-2. **[Economics]({{ site.baseurl }}/coherence-economics/)** — Markets allocate energy under constraints
-3. **[Psychology]({{ site.baseurl }}/coherence-psychology/)** — Consciousness is recursive feedback loop
-4. **[Politics]({{ site.baseurl }}/coherence-politics/)** — Governance is collective energy allocation
-5. **[Medicine]({{ site.baseurl }}/coherence-medicine/)** — Health maintains coherence under metabolic limits
-6. **[Technology]({{ site.baseurl }}/coherence-technology/)** — Innovation accelerates learning cycles
-7. **[Ecology]({{ site.baseurl }}/coherence-ecology/)** — Ecosystems cascade through trophic levels
+1. **[Evolution](/Trust/coherence-evolution/)** — Life optimizes energy throughput
+2. **[Economics](/Trust/coherence-economics/)** — Markets allocate energy under constraints
+3. **[Psychology](/Trust/coherence-psychology/)** — Consciousness is recursive feedback loop
+4. **[Politics](/Trust/coherence-politics/)** — Governance is collective energy allocation
+5. **[Medicine](/Trust/coherence-medicine/)** — Health maintains coherence under metabolic limits
+6. **[Technology](/Trust/coherence-technology/)** — Innovation accelerates learning cycles
+7. **[Ecology](/Trust/coherence-ecology/)** — Ecosystems cascade through trophic levels
 
 ---
 
@@ -198,8 +198,8 @@ History suggests most cannot.
 
 ## Getting Started
 
-- **[The Formula Explained]({{ site.baseurl }}/coherence-formula/)** — Understand E = k · ρ · r²
-- **[Variables Deep Dive]({{ site.baseurl }}/coherence-variables/)** — How each variable works across domains
+- **[The Formula Explained](/Trust/coherence-formula/)** — Understand E = k · ρ · r²
+- **[Variables Deep Dive](/Trust/coherence-variables/)** — How each variable works across domains
 - **[Six Domains]({{ site.baseurl }}/coherence-evolution/)** — Choose a domain and see the predictions verified
 - **[Complete Analysis]({{ site.baseurl }}/coherence-complete/)** — Full technical documentation with all predictions and data
 

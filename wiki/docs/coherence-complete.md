@@ -190,14 +190,14 @@ All documents include:
 ## How to Use These Documents
 
 ### For Quick Overview
-1. Start with [Coherence Cascade homepage]({{ site.baseurl }}/coherence-cascade/)
-2. Read [The Formula]({{ site.baseurl }}/coherence-formula/) (5 min)
+1. Start with [Coherence Cascade homepage](/Trust/coherence-cascade/)
+2. Read [The Formula](/Trust/coherence-formula/) (5 min)
 3. Choose one domain page above (15-20 min)
 
 ### For Deep Technical Understanding
 1. Read [Mathematical Foundation](../COHERENCE_CASCADE_MATHEMATICAL_MODEL.md) (1-2 hours)
 2. Read all six domain documents in sequence (5-6 hours)
-3. Reference [Variables]({{ site.baseurl }}/coherence-variables/) as needed
+3. Reference [Variables](/Trust/coherence-variables/) as needed
 
 ### For Domain-Specific Application
 1. Go directly to domain page (15 min summary)
@@ -244,8 +244,8 @@ Open issues on the GitHub repository: [Acidfang/Trust](https://github.com/Acidfa
 
 ## Questions?
 
-- **General framework questions** → See [The Formula]({{ site.baseurl }}/coherence-formula/)
-- **How does variable X work?** → See [Variables Explained]({{ site.baseurl }}/coherence-variables/)
+- **General framework questions** → See [The Formula](/Trust/coherence-formula/)
+- **How does variable X work?** → See [Variables Explained](/Trust/coherence-variables/)
 - **Does it apply to [my domain]?** → Check domain pages; framework applies universally
 - **What about [competing theory]?** → Each domain document includes comparative analysis
 - **Is this testable?** → Yes. Every prediction is falsifiable against published data.
