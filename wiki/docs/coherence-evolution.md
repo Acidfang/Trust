@@ -93,6 +93,14 @@ Oxygen rose dramatically. This increased available E (energy). Previously, organ
 
 ---
 
+## Full Documentation
+
+**[📄 Complete Evolution Analysis](/Trust/coherence-evolution-full/)** (15,000+ words)
+
+Comprehensive framework application with all mathematical models, predictions, verifications, data sources.
+
+---
+
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — See all six domains

@@ -82,6 +82,22 @@ Ecosystems distribute available E (energy from sun) through trophic levels. Popu
 
 ---
 
+## Full Documentation
+
+**[📄 Ecology Analysis - Complete](/Trust/coherence-ecology-full/)** (11,000+ words)
+
+Comprehensive framework application including:
+- Carrying capacity prediction from net primary productivity
+- Population cycling frequency and amplitude dynamics
+- Extinction cascade sequences from trophic structure
+- Invasive species success from k-advantage mechanisms
+- Biodiversity maintenance through ρ-heterogeneity
+- Extinction lag from energy buffer depletion
+- Climate-driven extinction timeline predictions
+- All verified predictions with ecological data
+
+---
+
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains

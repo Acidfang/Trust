@@ -72,6 +72,22 @@ Governments pay E = k · ρ · r² to maintain social coherence. When external d
 
 ---
 
+## Full Documentation
+
+**[📄 Politics Analysis - Complete](/Trust/coherence-politics-full/)** (13,000+ words)
+
+Comprehensive framework application including:
+- Political system coherence and stability dynamics
+- Revolution clustering during ρ-spikes with historical examples
+- Hierarchy legitimacy from resource density
+- Corruption inverse correlation with wealth
+- Institutional lifespan from expansion rates
+- Political polarization from k-substrate divergence
+- Decentralization as necessary response to r² growth
+- All verified predictions with historical data
+
+---
+
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains

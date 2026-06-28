@@ -72,6 +72,14 @@ The mind is a coherence-maintenance system. Consciousness intensity ∝ task com
 
 ---
 
+## Full Documentation
+
+**[📄 Complete Psychology Analysis](/Trust/coherence-psychology-full/)** (11,000+ words)
+
+Comprehensive framework application with all mathematical models, predictions, verifications, data sources.
+
+---
+
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains

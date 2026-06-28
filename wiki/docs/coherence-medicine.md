@@ -71,6 +71,22 @@ The body maintains coherence by paying E = k · ρ · r² at every scale: cellul
 
 ---
 
+## Full Documentation
+
+**[📄 Medicine Analysis - Complete](/Trust/coherence-medicine-full/)** (11,000+ words)
+
+Comprehensive framework application including:
+- Lifespan as function of resource density vs. genetics
+- Disease susceptibility as E-depletion phenomenon
+- Immune suppression from competing metabolic demands
+- Aging rate correlation with metabolic intensity
+- Chronic disease progression as exponential cascade
+- Inflammation as E-insufficiency signal
+- Treatment efficacy from E and ρ management
+- All verified predictions with medical data
+
+---
+
 ## Next Steps
 
 - **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains
