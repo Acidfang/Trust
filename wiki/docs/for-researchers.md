@@ -241,7 +241,7 @@ Test whether gate-restoration improves outcomes
 ## Get Started
 
 1. Read [Universal Foundation](/Trust/universal-foundation/) — Theoretical framework
-2. Review [Evidence](/Trust/evidence-why-undeniables-are-real/) — Current evidence base
+2. Review [Verification Data](/Trust/coherence-formula/) — Current evidence base
 3. Study [Domain Examples](/Trust/domain-examples/) — Cross-domain patterns
 4. Examine [Implementation](/Trust/implementation/) — Mechanism details
 

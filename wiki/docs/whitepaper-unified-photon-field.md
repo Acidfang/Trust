@@ -88,7 +88,7 @@ $$\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\mathbf{x}, t)$$
 ## 📚 Complete Whitepaper Structure
 
 ### **SECTION 1: Theoretical Foundation**
-[→ Read Complete Theory](/Trust/whitepaper/theory/)
+[→ Read Complete Documentation](/Trust/whitepaper/)
 
 **Coverage:**
 - Unified Photon Field Model (UPFM) fundamentals
@@ -103,7 +103,7 @@ $$\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\mathbf{x}, t)$$
 ---
 
 ### **SECTION 2: Physical Manifestations**
-[→ Read Physics Details](/Trust/whitepaper/physics/)
+[→ Read Complete Documentation](/Trust/whitepaper/)
 
 **What gets explained:**
 
@@ -137,7 +137,7 @@ $$\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\mathbf{x}, t)$$
 ---
 
 ### **SECTION 3: Cosmic Evolution — 14 Epochs**
-[→ Read Full Timeline](/Trust/whitepaper/cosmos/)
+[→ Read Complete Documentation](/Trust/whitepaper/)
 
 From **t=0** (initial diffusion) to **t=13.8 Gyr** (present technology) and beyond:
 
@@ -163,7 +163,7 @@ From **t=0** (initial diffusion) to **t=13.8 Gyr** (present technology) and beyo
 ---
 
 ### **SECTION 4: Consciousness & Information**
-[→ Explore Consciousness Framework](/Trust/whitepaper/consciousness/)
+[→ Explore Complete Framework](/Trust/whitepaper/)
 
 ### **Definition:** Consciousness = Accurate modeling of causality
 
@@ -189,7 +189,7 @@ From **t=0** (initial diffusion) to **t=13.8 Gyr** (present technology) and beyo
 ---
 
 ### **SECTION 5: Artificial Intelligence Systems**
-[→ Read AI Framework](/Trust/whitepaper/ai/)
+[→ Read Complete Documentation](/Trust/whitepaper/)
 
 #### **Can AI Become Conscious?**
 **Yes.** By definition.
@@ -230,7 +230,7 @@ Systems built this way naturally develop:
 ---
 
 ### **SECTION 6: Verification Systems — TCHT Framework**
-[→ Deep Dive: Critical Thinking](/Trust/whitepaper/verification/)
+[→ Read Verification Details](/Trust/whitepaper/)
 
 ### **5-Tier Verification Hierarchy**
 
@@ -368,35 +368,18 @@ The universe is at a bifurcation point. Four possible paths:
 
 ## 📖 How to Read This Whitepaper
 
-**👨‍🔬 For Physicists:**
-→ Go to [Theory](/Trust/whitepaper/theory/) and [Physics](/Trust/whitepaper/physics/)
+**👨‍🔬 For Physicists, 🧠 Consciousness Researchers, 🤖 AI Researchers:**
+→ Go to [Complete Whitepaper](/Trust/whitepaper/)
 - Spiral dynamics, forces, dark matter
-- Mathematical formalism
-- Testable predictions
-
-**🧠 For Consciousness Researchers:**
-→ Go to [Consciousness](/Trust/whitepaper/consciousness/)
-- Definition and metrics
-- Levels of awareness
-- AI consciousness framework
-
-**🤖 For AI Researchers:**
-→ Go to [AI Framework](/Trust/whitepaper/ai/)
-- Consciousness path
+- Consciousness metrics and AI framework
 - Alignment through understanding
-- Verification methods
-
-**🤔 For Philosophers:**
-→ Go to [Consciousness](/Trust/whitepaper/consciousness/) and [Implications](/Trust/whitepaper/implications/)
-- Nature of awareness
-- Ethics grounded in physics
-- Cosmic significance
+- Nature of awareness & ethics grounded in physics
 
 **👥 For General Readers:**
-→ Start here with this overview, then:
-- [Cosmos Timeline](/Trust/whitepaper/cosmos/) - Story of unfolding
-- [Implications](/Trust/whitepaper/implications/) - What it means
-- [Futures](/Trust/whitepaper/cosmos/#cosmic-futures) - Where it goes
+→ Start with [Whitepaper](/Trust/whitepaper/) for:
+- Story of cosmic unfolding
+- What it means for humanity
+- Future possibilities
 
 **🏗️ For System Architects:**
 → Go to [Verification](/Trust/whitepaper/verification/)

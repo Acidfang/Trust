@@ -1050,7 +1050,7 @@ You can't think past your own goals, and how they affect others on the journey. 
   <span>⚡ Fast & Clean</span>
 </div>
 → **[Domain Examples](/Trust/domain-examples/)** (10+ fields showing same goal-blindness pattern)
-→ **[Future Implications](/Trust/future/)** (both paths detailed for individuals and institutions)
+→ **[Complete Analysis](/Trust/coherence-complete/)** (both paths detailed, all frameworks integrated)
 → **[Complete Document](/Trust/complete-document/)** (all frameworks integrated, 75,000+ words)
 
 ---

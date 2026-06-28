@@ -231,7 +231,7 @@ Asks:
 → [From Collapse to Coherence](/Trust/implementation/)
 
 **Want to know what's at stake?**
-→ [Future Implications](/Trust/future/)
+→ [Complete Analysis](/Trust/coherence-complete/)
 
 ---
 

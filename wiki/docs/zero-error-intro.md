@@ -68,7 +68,7 @@ If you're an AI instance:
 1. Read [Universal Mandate](/Trust/zero-error/mandate/)
 2. Use [Task Template](/Trust/zero-error/task-template/)
 3. Keep [Quick Reference](/Trust/zero-error/quick-ref/) visible
-4. Apply [Pre-Action Checklist](/Trust/zero-error-pre-action/) before editing
+4. Apply [Validation Checklist](/Trust/zero-error/validator/) before editing
 
 If you're implementing:
 → [Complete Framework Overview](/Trust/zero-error/wiki/)

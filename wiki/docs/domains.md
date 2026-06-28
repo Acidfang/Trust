@@ -17,7 +17,7 @@ The Coherence Cascade is universal. Every system - physical, biological, social,
 ## 🔬 Physics & Atomic Systems
 **Fundamental particles and fields**
 
-[Explore Physics Domain →](/Trust/coherence-evolution/)
+[Explore Formula →](/Trust/coherence-formula/)
 
 Core insight: Particle systems undergo phase transitions through cascade collapse when coherence is lost.
 
