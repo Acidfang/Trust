@@ -109,8 +109,9 @@ Contains:
 
 ## Next Steps
 
-- **[Return to Coherence Cascade]({{ site.baseurl }}/coherence-cascade/)** — See all six domains
-- **[Economics Domain]({{ site.baseurl }}/coherence-economics/)** — Markets as energy allocation
-- **[Psychology Domain]({{ site.baseurl }}/coherence-psychology/)** — Consciousness as recursive adaptation
-- **[Variables]({{ site.baseurl }}/coherence-variables/)** — Understand E, k, ρ, r² in detail
+- **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — See all six domains
+- **[Economics Domain](/Trust/coherence-economics/)** — Markets as energy allocation
+- **[Psychology Domain](/Trust/coherence-psychology/)** — Consciousness as recursive adaptation
+- **[Variables](/Trust/coherence-variables/)** — Understand E, k, ρ, r² in detail
+
 

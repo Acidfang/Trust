@@ -27,13 +27,13 @@ start with these core insights:
 
 People in therapy for years become MORE dependent on therapists, not less. People with coaches rely on external guidance instead of developing judgment.
 
-**Why?** → Read [Internal Coherence Failure]({{ site.baseurl }}/internal-coherence/)
+**Why?** → Read [Internal Coherence Failure](/Trust/internal-coherence/)
 
 **Observation 2**: Better parenting, education, and management often create weaker people
 
 The most helpful parents often raise the most dependent children. The most attentive teachers often teach helplessness. Managers who help the most create the least capable teams.
 
-**Why?** → Read[Help Systems as Gate-Skippers]({{ site.baseurl }}/help-systems/)
+**Why?** → Read[Help Systems as Gate-Skippers](/Trust/help-systems/)
 
 **Observation 3**: There's a universal pattern across ALL domains
 
@@ -43,7 +43,7 @@ This isn't psychology-specific. It's true in:
 - Technology (debugging for people prevents learning)
 - Parenting, education, leadership...
 
-**Why?** → Read [Goal-Blindness]({{ site.baseurl }}/goal-blindness/)
+**Why?** → Read [Goal-Blindness](/Trust/goal-blindness/)
 
 ---
 
@@ -141,7 +141,7 @@ When help systems prevent the need to pass through gates, you never develop. You
 
 ### Take the Assessment
 
-→ **[Self-Assessment Tool]({{ site.baseurl }}/internal-coherence/)** (Coming soon)
+→ **[Self-Assessment Tool](/Trust/internal-coherence/)** (Coming soon)
 
 Asks:
 - Do you rely on external approval?
@@ -163,10 +163,10 @@ Asks:
 **You can restore them.**
 
 **How**:
-1. **Understand what you're missing** → [Self-Assessment]({{ site.baseurl }}/internal-coherence/)
-2. **Identify what help systems prevented** → [Help Systems Analysis]({{ site.baseurl }}/help-systems/)
-3. **Deliberately encounter consequences** → [Implementation Guide]({{ site.baseurl }}/implementation/)
-4. **Integrate what you learn** → [Domain Examples]({{ site.baseurl }}/domain-examples/)
+1. **Understand what you're missing** → [Self-Assessment](/Trust/internal-coherence/)
+2. **Identify what help systems prevented** → [Help Systems Analysis](/Trust/help-systems/)
+3. **Deliberately encounter consequences** → [Implementation Guide](/Trust/implementation/)
+4. **Integrate what you learn** → [Domain Examples](/Trust/domain-examples/)
 
 **Example**: If you rely on others for decisions:
 - Stop asking for approval
@@ -186,10 +186,10 @@ Asks:
 - Restore gate-passage (creates competence)
 
 **How to shift**:
-1. Understand gate-passage → [10 Gates]({{ site.baseurl }}/internal-coherence/)
-2. Identify which gates you're blocking → [Diagnostic Framework]({{ site.baseurl }}/diagnostic-method/)
-3. Stop blocking them → [Implementation Examples]({{ site.baseurl }}/implementation/)
-4. Let people experience consequences → [Domain Examples]({{ site.baseurl }}/domain-examples/)
+1. Understand gate-passage → [10 Gates](/Trust/internal-coherence/)
+2. Identify which gates you're blocking → [Diagnostic Framework](/Trust/diagnostic-method/)
+3. Stop blocking them → [Implementation Examples](/Trust/implementation/)
+4. Let people experience consequences → [Domain Examples](/Trust/domain-examples/)
 5. Watch competence develop → Compare before/after
 
 ---
@@ -222,26 +222,26 @@ Asks:
 ## Deep Dives
 
 **Want to understand the science?**
-→ [Universal Foundation]({{ site.baseurl }}/universal-foundation/)
+→ [Universal Foundation](/Trust/universal-foundation/)
 
 **Want to see this across multiple domains?**
-→ [Domain Examples]({{ site.baseurl }}/domain-examples/)
+→ [Domain Examples](/Trust/domain-examples/)
 
 **Want real case studies?**
-→ [From Collapse to Coherence]({{ site.baseurl }}/implementation/)
+→ [From Collapse to Coherence](/Trust/implementation/)
 
 **Want to know what's at stake?**
-→ [Future Implications]({{ site.baseurl }}/future/)
+→ [Future Implications](/Trust/future/)
 
 ---
 
 ## Start Here
 
-1. Read [Internal Coherence Failure]({{ site.baseurl }}/internal-coherence/) (30 min) — Understand the root problem
-2. Read [Help Systems Analysis]({{ site.baseurl }}/help-systems/) (45 min) — See how it appears everywhere
-3. Take [Self-Assessment]({{ site.baseurl }}/internal-coherence/) (15 min) — Understand your own gates
-4. Review [Domain Examples]({{ site.baseurl }}/domain-examples/) (1 hour) — See it in your domain
-5. Read [Implementation]({{ site.baseurl }}/implementation/) (1 hour) — Know how to fix it
+1. Read [Internal Coherence Failure](/Trust/internal-coherence/) (30 min) — Understand the root problem
+2. Read [Help Systems Analysis](/Trust/help-systems/) (45 min) — See how it appears everywhere
+3. Take [Self-Assessment](/Trust/internal-coherence/) (15 min) — Understand your own gates
+4. Review [Domain Examples](/Trust/domain-examples/) (1 hour) — See it in your domain
+5. Read [Implementation](/Trust/implementation/) (1 hour) — Know how to fix it
 
 **Total: ~3 hours to complete understanding**
 
@@ -249,4 +249,5 @@ Asks:
 
 You now know what genuine competence looks like and how to get there.
 
-**Ready to understand?** Start with [Internal Coherence Failure]({{ site.baseurl }}/internal-coherence/)
+**Ready to understand?** Start with [Internal Coherence Failure](/Trust/internal-coherence/)
+

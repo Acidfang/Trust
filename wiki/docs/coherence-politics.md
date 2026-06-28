@@ -88,7 +88,8 @@ Contains:
 
 ## Next Steps
 
-- **[Return to Coherence Cascade]({{ site.baseurl }}/coherence-cascade/)** — All six domains
-- **[Medicine Domain]({{ site.baseurl }}/coherence-medicine/)** — Physiological adaptation
-- **[Technology Domain]({{ site.baseurl }}/coherence-technology/)** — Innovation adaptation
-- **[Variables]({{ site.baseurl }}/coherence-variables/)** — How E, k, ρ, r² apply to politics
+- **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains
+- **[Medicine Domain](/Trust/coherence-medicine/)** — Physiological adaptation
+- **[Technology Domain](/Trust/coherence-technology/)** — Innovation adaptation
+- **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to politics
+

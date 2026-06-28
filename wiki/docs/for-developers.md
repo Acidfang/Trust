@@ -363,4 +363,5 @@ python decision_logger.py
 7. Run automation suite
 8. Review results
 
-**Ready?** → Start with [Universal Mandate]({{ site.baseurl }}/zero-error/mandate/)
+**Ready?** → Start with [Universal Mandate](/Trust/zero-error/mandate/)
+

@@ -371,7 +371,7 @@ The universe doesn't just happen to expand. The universe is **fundamentally asym
 
 **Unless Election 5 intervenes...**
 
-→ **[Meta-Election: Time]({{ site.baseurl }}/election-meta-time/)**
+→ **[Meta-Election: Time](/Trust/election-meta-time/)**
 
 ---
 
@@ -390,4 +390,5 @@ The universe doesn't just happen to expand. The universe is **fundamentally asym
 ---
 
 *The universe expands. It always has. It always will. This is not accident. This is Election 4.*
+
 

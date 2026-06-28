@@ -34,9 +34,9 @@ Verify:
 **Goal**: Load all relevant frameworks
 
 What to do:
-- Read [Universal Mandate]({{ site.baseurl }}/zero-error/mandate/)
-- Read [Pre-Action Checklist]({{ site.baseurl }}/zero-error/pre-action/)
-- Review [Quick Reference]({{ site.baseurl }}/zero-error/quick-ref/) 
+- Read [Universal Mandate](/Trust/zero-error/mandate/)
+- Read [Pre-Action Checklist](/Trust/zero-error/pre-action/)
+- Review [Quick Reference](/Trust/zero-error/quick-ref/) 
 - Know your tools
 
 Verify:
@@ -160,4 +160,5 @@ What to do:
 
 ---
 
-**Next:** [Quick Reference — Keep This Visible]({{ site.baseurl }}/zero-error/quick-ref/)
+**Next:** [Quick Reference — Keep This Visible](/Trust/zero-error/quick-ref/)
+

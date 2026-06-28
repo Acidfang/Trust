@@ -181,4 +181,5 @@ To avoid duplicates:
 
 ---
 
-**Complete 0-Error Compute:** [Introduction]({{ site.baseurl }}/zero-error/intro/)
+**Complete 0-Error Compute:** [Introduction](/Trust/zero-error/intro/)
+

@@ -19,7 +19,7 @@ entry_point: Systems thinkers
 
 **Last Updated**: April 20, 2026 (comprehensive detail added)
 
-**Foundation Theory**: See [Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/) for the underlying physics that explains all epochs below.
+**Foundation Theory**: See [Unified Photon Field Model](/Trust/unified-photon-field/) for the underlying physics that explains all epochs below.
 
 ## The Fundamental Principle: ONE Universal Photon Field
 
@@ -1210,9 +1210,9 @@ You are literally a resonance pattern learning to know itself.
 
 **Want to explore further?**
 
-- **Interactive Timeline**: [Explore each era interactively]({{ site.baseurl }}/timeline-navigator/) with clickable stages
-- **See Connections**: [Framework Map]({{ site.baseurl }}/framework-map/) shows how all systems unify under one law
-- **Understand Structure**: [Universal Foundation]({{ site.baseurl }}/universal-foundation/) explains the mathematical basis
+- **Interactive Timeline**: [Explore each era interactively](/Trust/timeline-navigator/) with clickable stages
+- **See Connections**: [Framework Map](/Trust/framework-map/) shows how all systems unify under one law
+- **Understand Structure**: [Universal Foundation](/Trust/universal-foundation/) explains the mathematical basis
 
 ---
 
@@ -1250,3 +1250,4 @@ This is not coincidence. This is **universality**—the sign of a fundamental pr
   font-size: 0.9rem;
 }
 </style>
+

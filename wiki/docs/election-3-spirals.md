@@ -373,7 +373,7 @@ When the universe expands:
 
 To lock the spirals in place. To create asymmetry that prevents final collapse.
 
-→ **[Election 4: Direction]({{ site.baseurl }}/election-4/)**
+→ **[Election 4: Direction](/Trust/election-4/)**
 
 ---
 
@@ -394,4 +394,5 @@ To lock the spirals in place. To create asymmetry that prevents final collapse.
 ---
 
 *The universe is built on spirals. Every star, every galaxy, every atom spirals. This is not chance. This is Election 3.*
+
 

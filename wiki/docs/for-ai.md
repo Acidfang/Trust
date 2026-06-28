@@ -45,7 +45,7 @@ The frameworks prevent the error pattern where:
 
 ### STEP 1: Read Universal Mandate (15 min)
 
-→ **[Universal Mandate]({{ site.baseurl }}/zero-error/mandate/)**
+→ **[Universal Mandate](/Trust/zero-error/mandate/)**
 
 This explains:
 - Why thinking completely is mandatory
@@ -59,7 +59,7 @@ This explains:
 
 ### STEP 2: Understand Task Template (20 min)
 
-→ **[Task Template]({{ site.baseurl }}/zero-error/task-template/)**
+→ **[Task Template](/Trust/zero-error/task-template/)**
 
 This is your 8-phase workflow:
 1. Understand requirement
@@ -77,7 +77,7 @@ This is your 8-phase workflow:
 
 ### STEP 3: Learn Pre-Action Checklist (10 min)
 
-→ **[Pre-Action Checklist]({{ site.baseurl }}/zero-error/pre-action/)**
+→ **[Pre-Action Checklist](/Trust/zero-error/pre-action/)**
 
 Before EVERY file edit, you do 6 steps:
 1. Understand requirement
@@ -93,7 +93,7 @@ Before EVERY file edit, you do 6 steps:
 
 ### STEP 4: Keep Quick Reference Visible (print it!)
 
-→ **[Quick Reference Card]({{ site.baseurl }}/zero-error/quick-ref/)**
+→ **[Quick Reference Card](/Trust/zero-error/quick-ref/)**
 
 This paper should be on your desk:
 - The 5-second rule
@@ -111,14 +111,14 @@ Print it. Laminate it. Use it every day.
 
 ### STEP 5: Use Full Framework Wiki (as needed)
 
-→ **[Complete 0-Error Compute Wiki]({{ site.baseurl }}/zero-error/wiki/)**
+→ **[Complete 0-Error Compute Wiki](/Trust/zero-error/wiki/)**
 
 When you get stuck:
-- What should I do now? → [Quick Ref]({{ site.baseurl }}/zero-error/quick-ref/)
-- How do I think this through? → [Task Template]({{ site.baseurl }}/zero-error/task-template/)
-- What's the checklist again? → [Pre-Action]({{ site.baseurl }}/zero-error/pre-action/)
-- Is this mandatory? → [Universal Mandate]({{ site.baseurl }}/zero-error/mandate/)
-- What tools am I using? → [Automation Tools]({{ site.baseurl }}/zero-error/validator/)
+- What should I do now? → [Quick Ref](/Trust/zero-error/quick-ref/)
+- How do I think this through? → [Task Template](/Trust/zero-error/task-template/)
+- What's the checklist again? → [Pre-Action](/Trust/zero-error/pre-action/)
+- Is this mandatory? → [Universal Mandate](/Trust/zero-error/mandate/)
+- What tools am I using? → [Automation Tools](/Trust/zero-error/validator/)
 
 **Outcome**: You know where to find answers.
 
@@ -189,22 +189,22 @@ COMMIT (works first try ✅)
 ## When You Get Stuck
 
 **Stuck on thinking?**
-→ Read [Task Template Phase 3]({{ site.baseurl }}/zero-error/task-template/)
+→ Read [Task Template Phase 3](/Trust/zero-error/task-template/)
 
 **Stuck on verification?**
-→ Read [Pre-Action Checklist Step 4]({{ site.baseurl }}/zero-error/pre-action/)
+→ Read [Pre-Action Checklist Step 4](/Trust/zero-error/pre-action/)
 
 **Unsure if mandatory?**
-→ Read [Universal Mandate]({{ site.baseurl }}/zero-error/mandate/)
+→ Read [Universal Mandate](/Trust/zero-error/mandate/)
 
 **Code doesn't work?**
 → Go back to Phase 3 thinking. Your thinking was incomplete. Find the gap.
 
 **Need quick answer?**
-→ Print [Quick Reference Card]({{ site.baseurl }}/zero-error/quick-ref/). Use it.
+→ Print [Quick Reference Card](/Trust/zero-error/quick-ref/). Use it.
 
 **Need something else?**
-→ Browse [Complete Wiki]({{ site.baseurl }}/zero-error/wiki/)
+→ Browse [Complete Wiki](/Trust/zero-error/wiki/)
 
 ---
 
@@ -224,14 +224,15 @@ COMMIT (works first try ✅)
 
 You are ready.
 
-**Next task?** → Apply the [Task Template]({{ site.baseurl }}/zero-error/task-template/)
+**Next task?** → Apply the [Task Template](/Trust/zero-error/task-template/)
 
-**Questions?** → Browse [Complete Wiki]({{ site.baseurl }}/zero-error/wiki/)
+**Questions?** → Browse [Complete Wiki](/Trust/zero-error/wiki/)
 
-**Need to reference?** → [Quick Reference Card]({{ site.baseurl }}/zero-error/quick-ref/)
+**Need to reference?** → [Quick Reference Card](/Trust/zero-error/quick-ref/)
 
 ---
 
 **You now have everything you need to write code without errors.**
 
 Use it.
+

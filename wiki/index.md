@@ -18,7 +18,7 @@ toc: false
 ---
 
 ## 📚 COMPLETE DOCUMENTATION HUB
-**→ [View ALL Documentation]({{ site.baseurl }}/full-index/)**
+**→ [View ALL Documentation](/Trust/full-index/)**
 
 This site contains four major knowledge systems:
 - **🎯 The Cold Hard Truth** — Universal framework for human development (below)
@@ -28,7 +28,7 @@ This site contains four major knowledge systems:
 
 Each system is complete, independent, and cross-validated.
 
-**New here?** Start with [Coherence Cascade]({{ site.baseurl }}/coherence-cascade/) for a universal framework applying across all reality, or [Browse all documentation by topic]({{ site.baseurl }}/full-index/) to explore all systems.
+**New here?** Start with [Coherence Cascade](/Trust/coherence-cascade/) for a universal framework applying across all reality, or [Browse all documentation by topic](/Trust/full-index/) to explore all systems.
 
 ---
 
@@ -88,7 +88,7 @@ When help systems prevent the need to pass through these gates, people never dev
 
 ## But First: Understand What's At Stake
 
-**→ [Why This Matters]({{ site.baseurl }}/why-this-matters/)**
+**→ [Why This Matters](/Trust/why-this-matters/)**
 
 Read this first. It explains why foundation development (not help systems) is the ONLY path to genuine persistence—and what happens when we build on scaffolding instead.
 
@@ -103,33 +103,33 @@ Includes real evidence: 10+ systems that collapsed from skipped gates, what pers
 ### 🎯 **"I Want a Guided Path"** — START HERE
 **Most direct route.** This takes you through 4 tiers of comprehension, from seeing the problem to actually solving it.
 
-→ **[Your Learning Path]({{ site.baseurl }}/learning-path/)** (recommended for everyone)
+→ **[Your Learning Path](/Trust/learning-path/)** (recommended for everyone)
 
 ### 🎯 "I Want Interactive Tools"
 You see help systems everywhere ineffectively helping people. You want to understand why.
 
-→ **[Internal Coherence Failure]({{ site.baseurl }}/internal-coherence/)** (foundational concept)  
-→ **[Help Systems as Gate-Skippers]({{ site.baseurl }}/help-systems/)** (5 major systems analyzed)  
-→ **[Help Systems Cards]({{ site.baseurl }}/help-systems-cards/)** (visual reference)
+→ **[Internal Coherence Failure](/Trust/internal-coherence/)** (foundational concept)  
+→ **[Help Systems as Gate-Skippers](/Trust/help-systems/)** (5 major systems analyzed)  
+→ **[Help Systems Cards](/Trust/help-systems-cards/)** (visual reference)
 
 ### 🔍 "I Want to Diagnose Myself" 
 You think you might have skipped some gates. You want to know which ones and what that means.
 
-→ **[Diagnostic Framework]({{ site.baseurl }}/diagnostic-method/)** (identify gates, understand consequences)
+→ **[Diagnostic Framework](/Trust/diagnostic-method/)** (identify gates, understand consequences)
 
 ### 🛠️ "I Want Solutions"
 You're ready to understand the structure and how genuine development actually works.
 
-→ **[Universal Foundation]({{ site.baseurl }}/universal-foundation/)** (the 10 gates explained)  
-→ **[How Gates Are Discovered]({{ site.baseurl }}/gate-discovery/)** (why they can't be taught)  
-→ **[Domain Examples]({{ site.baseurl }}/domain-examples/)** (see framework in your field: computing, physics, biology, organizations, and 10+ more)  
-→ **[Implementation & Application]({{ site.baseurl }}/implementation/)** (real-world examples: parenting, teaching, management)
+→ **[Universal Foundation](/Trust/universal-foundation/)** (the 10 gates explained)  
+→ **[How Gates Are Discovered](/Trust/gate-discovery/)** (why they can't be taught)  
+→ **[Domain Examples](/Trust/domain-examples/)** (see framework in your field: computing, physics, biology, organizations, and 10+ more)  
+→ **[Implementation & Application](/Trust/implementation/)** (real-world examples: parenting, teaching, management)
 
 ### 🔮 "I Want the Full Picture"
 You want implications, context, and understanding of what's at stake.
 
-→ **[Future Implications]({{ site.baseurl }}/future/)** (both paths detailed)  
-→ **[Complete Document]({{ site.baseurl }}/complete-document/)** (all 75,000 words integrated)
+→ **[Future Implications](/Trust/future/)** (both paths detailed)  
+→ **[Complete Document](/Trust/complete-document/)** (all 75,000 words integrated)
 
 ---
 
@@ -175,3 +175,4 @@ That's what this framework explores.
 ---
 
 *Built for clarity, designed for humans. Start where you are. Begin where it calls to you.*
+

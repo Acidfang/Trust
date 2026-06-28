@@ -248,36 +248,36 @@ They're teaching the **same structure** in three different domains.
   <h3>🎯 I Want the Foundation</h3>
   <p>Understand the core concepts that explain everything else.</p>
   <p><strong>Perfect for:</strong> First-time readers, need big picture</p>
-  <a href="{{ site.baseurl }}/for-humans/">Start Here</a>
-  <a href="{{ site.baseurl }}/goal-blindness/">The Problem</a>
-  <a href="{{ site.baseurl }}/universal-foundation/">The Solution</a>
+  <a href="/Trust/for-humans/">Start Here</a>
+  <a href="/Trust/goal-blindness/">The Problem</a>
+  <a href="/Trust/universal-foundation/">The Solution</a>
 </div>
 
 <div class="access-card systems">
   <h3>⚙️ I Want System 2: Zero-Error</h3>
   <p>Learn how to verify logic and catch errors before they matter.</p>
   <p><strong>Perfect for:</strong> Developers, builders, anyone shipping code</p>
-  <a href="{{ site.baseurl }}/zero-error-wiki/">Overview</a>
-  <a href="{{ site.baseurl }}/zero-error-mandate/">Mandates</a>
-  <a href="{{ site.baseurl }}/zero-error-task-template/">Getting Started</a>
+  <a href="/Trust/zero-error-wiki/">Overview</a>
+  <a href="/Trust/zero-error-mandate/">Mandates</a>
+  <a href="/Trust/zero-error-task-template/">Getting Started</a>
 </div>
 
 <div class="access-card picture">
   <h3>🔮 I Want the Complete Picture</h3>
   <p>Understanding the stakes and where both paths lead.</p>
   <p><strong>Perfect for:</strong> Strategic thinkers, want full context</p>
-  <a href="{{ site.baseurl }}/why-this-matters/">Why This Matters</a>
-  <a href="{{ site.baseurl }}/help-systems/">The Help Paradox</a>
-  <a href="{{ site.baseurl }}/complete-document/">Full Document</a>
+  <a href="/Trust/why-this-matters/">Why This Matters</a>
+  <a href="/Trust/help-systems/">The Help Paradox</a>
+  <a href="/Trust/complete-document/">Full Document</a>
 </div>
 
 <div class="access-card physics">
   <h3>🌌 I Want the Physics</h3>
   <p>See how this structure appears in the universe itself.</p>
   <p><strong>Perfect for:</strong> Curious minds, love visuals and animations</p>
-  <a href="{{ site.baseurl }}/whitepaper-unified-photon-field/">Whitepaper</a>
-  <a href="{{ site.baseurl }}/elections-roadmap/">5 Elections</a>
-  <a href="{{ site.baseurl }}/cosmic-unfolding/">Cosmic Evolution</a>
+  <a href="/Trust/whitepaper-unified-photon-field/">Whitepaper</a>
+  <a href="/Trust/elections-roadmap/">5 Elections</a>
+  <a href="/Trust/cosmic-unfolding/">Cosmic Evolution</a>
 </div>
 
 </div>
@@ -374,7 +374,7 @@ They're teaching the **same structure** in three different domains.
   </div>
 </div>
 
-<a href="{{ site.baseurl }}/universal-foundation/" style="display: inline-block; margin-top: 20px; padding: 10px 25px; background: rgba(255,255,255,0.2); color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">Learn All 10 Gates →</a>
+<a href="/Trust/universal-foundation/" style="display: inline-block; margin-top: 20px; padding: 10px 25px; background: rgba(255,255,255,0.2); color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">Learn All 10 Gates →</a>
 </div>
 
 ---
@@ -426,7 +426,7 @@ They're teaching the **same structure** in three different domains.
 <div class="cta-section">
 <h2>Take the Diagnostic Quiz</h2>
 <p>Answer 3 questions. Get a personalized path through the wiki.</p>
-<a href="{{ site.baseurl }}/getting-started/" class="cta-button">Start the Quiz →</a>
+<a href="/Trust/getting-started/" class="cta-button">Start the Quiz →</a>
 </div>
 
 ---
@@ -766,34 +766,34 @@ You can't think past your own goals, and how they affect others on the journey. 
   <h3>🎯 I Want the Foundation</h3>
   <p>Start with core concepts that explain everything else.</p>
   <p><strong>Learn why:</strong> Goal-blindness drives every pattern</p>
-  <a href="{{ site.baseurl }}/goal-blindness/">Goal-Blindness</a>
-  <a href="{{ site.baseurl }}/internal-coherence/">Internal Coherence</a>
-  <a href="{{ site.baseurl }}/universal-foundation/">The 10 Gates</a>
+  <a href="/Trust/goal-blindness/">Goal-Blindness</a>
+  <a href="/Trust/internal-coherence/">Internal Coherence</a>
+  <a href="/Trust/universal-foundation/">The 10 Gates</a>
 </div>
 
 <div class="access-card systems">
   <h3>⚙️ I Want to See Help Systems</h3>
   <p>Help systems everywhere. But they prevent the thing they claim to enable.</p>
   <p><strong>See the structure:</strong> 5 systems, same root cause</p>
-  <a href="{{ site.baseurl }}/help-systems/">Overview</a>
-  <a href="{{ site.baseurl }}/help-systems-cards/">Visual Cards</a>
+  <a href="/Trust/help-systems/">Overview</a>
+  <a href="/Trust/help-systems-cards/">Visual Cards</a>
 </div>
 
 <div class="access-card picture">
   <h3>🔮 I Want the Complete Picture</h3>
   <p>Understanding what's at stake and where both paths lead.</p>
   <p><strong>Get evidence:</strong> What persists vs. what collapses</p>
-  <a href="{{ site.baseurl }}/why-this-matters/">Why This Matters</a>
-  <a href="{{ site.baseurl }}/complete-document/">Full Document</a>
+  <a href="/Trust/why-this-matters/">Why This Matters</a>
+  <a href="/Trust/complete-document/">Full Document</a>
 </div>
 
 <div class="access-card physics">
   <h3>🌌 I Want the Physics</h3>
   <p>The Unified Photon Field Model shows this structure at every scale.</p>
   <p><strong>See the universe:</strong> From particles to civilization</p>
-  <a href="{{ site.baseurl }}/whitepaper/">Whitepaper</a>
-  <a href="{{ site.baseurl }}/elections-roadmap/">5 Elections</a>
-  <a href="{{ site.baseurl }}/cosmic-unfolding/">Cosmic Evolution</a>
+  <a href="/Trust/whitepaper/">Whitepaper</a>
+  <a href="/Trust/elections-roadmap/">5 Elections</a>
+  <a href="/Trust/cosmic-unfolding/">Cosmic Evolution</a>
 </div>
 
 </div>
@@ -925,34 +925,34 @@ You can't think past your own goals, and how they affect others on the journey. 
   <h3>🎯 I Want the Foundation</h3>
   <p>Start with core concepts that explain everything else.</p>
   <p><strong>Learn why:</strong> Goal-blindness drives every pattern</p>
-  <a href="{{ site.baseurl }}/goal-blindness/">Goal-Blindness</a>
-  <a href="{{ site.baseurl }}/internal-coherence/">Internal Coherence</a>
-  <a href="{{ site.baseurl }}/universal-foundation/">The 10 Gates</a>
+  <a href="/Trust/goal-blindness/">Goal-Blindness</a>
+  <a href="/Trust/internal-coherence/">Internal Coherence</a>
+  <a href="/Trust/universal-foundation/">The 10 Gates</a>
 </div>
 
 <div class="access-card systems">
   <h3>⚙️ I Want to See Help Systems</h3>
   <p>Help systems everywhere. But they prevent the thing they claim to enable.</p>
   <p><strong>See the structure:</strong> 5 systems, same root cause</p>
-  <a href="{{ site.baseurl }}/help-systems/">Overview</a>
-  <a href="{{ site.baseurl }}/help-systems-cards/">Visual Cards</a>
+  <a href="/Trust/help-systems/">Overview</a>
+  <a href="/Trust/help-systems-cards/">Visual Cards</a>
 </div>
 
 <div class="access-card picture">
   <h3>🔮 I Want the Complete Picture</h3>
   <p>Understanding what's at stake and where both paths lead.</p>
   <p><strong>Get evidence:</strong> What persists vs. what collapses</p>
-  <a href="{{ site.baseurl }}/why-this-matters/">Why This Matters</a>
-  <a href="{{ site.baseurl }}/complete-document/">Full Document</a>
+  <a href="/Trust/why-this-matters/">Why This Matters</a>
+  <a href="/Trust/complete-document/">Full Document</a>
 </div>
 
 <div class="access-card physics">
   <h3>🌌 I Want the Physics</h3>
   <p>The Unified Photon Field Model shows this structure at every scale.</p>
   <p><strong>See the universe:</strong> From particles to civilization</p>
-  <a href="{{ site.baseurl }}/whitepaper/">Whitepaper</a>
-  <a href="{{ site.baseurl }}/elections-roadmap/">5 Elections</a>
-  <a href="{{ site.baseurl }}/cosmic-unfolding/">Cosmic Evolution</a>
+  <a href="/Trust/whitepaper/">Whitepaper</a>
+  <a href="/Trust/elections-roadmap/">5 Elections</a>
+  <a href="/Trust/cosmic-unfolding/">Cosmic Evolution</a>
 </div>
 
 </div>
@@ -1049,9 +1049,9 @@ You can't think past your own goals, and how they affect others on the journey. 
   <span>📱 Mobile Responsive</span>
   <span>⚡ Fast & Clean</span>
 </div>
-→ **[Domain Examples]({{ site.baseurl }}/domain-examples/)** (10+ fields showing same goal-blindness pattern)
-→ **[Future Implications]({{ site.baseurl }}/future/)** (both paths detailed for individuals and institutions)
-→ **[Complete Document]({{ site.baseurl }}/complete-document/)** (all frameworks integrated, 75,000+ words)
+→ **[Domain Examples](/Trust/domain-examples/)** (10+ fields showing same goal-blindness pattern)
+→ **[Future Implications](/Trust/future/)** (both paths detailed for individuals and institutions)
+→ **[Complete Document](/Trust/complete-document/)** (all frameworks integrated, 75,000+ words)
 
 ---
 
@@ -1101,3 +1101,4 @@ The solution isn't to find better people. **It's to measure externally what peop
 ---
 
 *Built for clarity, designed for humans. Start with goal-blindness. Everything else follows.*
+

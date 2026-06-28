@@ -508,7 +508,7 @@ Two separated regions with no way to move between them creates a frozen universe
 
 **Election 2** introduces what allows change within this distinction:
 
-→ **[Election 2: Movement]({{ site.baseurl }}/election-2/)**
+→ **[Election 2: Movement](/Trust/election-2/)**
 
 ---
 
@@ -527,4 +527,5 @@ Two separated regions with no way to move between them creates a frozen universe
 ---
 
 *The universe's first moment was not an explosion. It was a distinction.*
+
 

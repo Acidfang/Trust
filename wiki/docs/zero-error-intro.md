@@ -50,7 +50,7 @@ This project implements complete thinking discipline through:
 6. **Pre-Action Checklist** — 6-step verification before edits
 7. **Unified Operating System** — Complete system integration
 
-→ [See all 7 frameworks]({{ site.baseurl }}/zero-error/mandate/)
+→ [See all 7 frameworks](/Trust/zero-error/mandate/)
 
 ## The 6 Automation Tools
 
@@ -65,13 +65,13 @@ Automated validation and decision logging:
 ## Getting Started
 
 If you're an AI instance:
-1. Read [Universal Mandate]({{ site.baseurl }}/zero-error/mandate/)
-2. Use [Task Template]({{ site.baseurl }}/zero-error/task-template/)
-3. Keep [Quick Reference]({{ site.baseurl }}/zero-error/quick-ref/) visible
-4. Apply [Pre-Action Checklist]({{ site.baseurl }}/zero-error-pre-action/) before editing
+1. Read [Universal Mandate](/Trust/zero-error/mandate/)
+2. Use [Task Template](/Trust/zero-error/task-template/)
+3. Keep [Quick Reference](/Trust/zero-error/quick-ref/) visible
+4. Apply [Pre-Action Checklist](/Trust/zero-error-pre-action/) before editing
 
 If you're implementing:
-→ [Complete Framework Overview]({{ site.baseurl }}/zero-error/wiki/)
+→ [Complete Framework Overview](/Trust/zero-error/wiki/)
 
 ## The Guarantee
 
@@ -89,4 +89,5 @@ If you're implementing:
 
 ---
 
-**Next:** [Universal Mandate — Non-negotiable Requirements]({{ site.baseurl }}/zero-error/mandate/)
+**Next:** [Universal Mandate — Non-negotiable Requirements](/Trust/zero-error/mandate/)
+

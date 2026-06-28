@@ -31,7 +31,7 @@ The person cannot be given the gate. They must pass through it.
 
 All gates rest on one foundation: **internal coherence**.
 
-![The Spiral Model: Development Through Tier -1]({{ site.baseurl }}/assets/spiral-model.svg)
+![The Spiral Model: Development Through Tier -1](/Trust/assets/spiral-model.svg)
 {: .diagram}
 
 ### What Tier -1 Provides
@@ -108,7 +108,7 @@ Where:
 
 These principles apply everywhere. Want to see how the 10 gates develop in computing, physics, biology, organizations, or another field?
 
-**[→ Explore All Domains]({{ site.baseurl }}/domain-examples/)** — Interactive examples showing how coherence develops across 13+ fields.
+**[→ Explore All Domains](/Trust/domain-examples/)** — Interactive examples showing how coherence develops across 13+ fields.
 
 ---
 
@@ -149,4 +149,5 @@ A person must discover each gate through direct experience:
 
 To understand how gates are actually discovered and environments that enable discovery:
 
-→ **[How Gates Are Discovered]({{ site.baseurl }}/gate-discovery/)** — The learning cycle and why it's essential
+→ **[How Gates Are Discovered](/Trust/gate-discovery/)** — The learning cycle and why it's essential
+

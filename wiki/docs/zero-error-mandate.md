@@ -104,12 +104,13 @@ All 6 must answer YES before code is written.
 
 ## Frameworks That Implement This
 
-- [Task Template]({{ site.baseurl }}/zero-error/task-template/) — 8-phase execution with thinking + verification
-- [Pre-Action Checklist]({{ site.baseurl }}/zero-error/pre-action/) — 6-step gate before every edit
+- [Task Template](/Trust/zero-error/task-template/) — 8-phase execution with thinking + verification
+- [Pre-Action Checklist](/Trust/zero-error/pre-action/) — 6-step gate before every edit
 
 
 ---
 
 **This is not a suggestion. This is the requirement.**
 
-**Next:** [Task Template — How to Execute This]({{ site.baseurl }}/zero-error/task-template/)
+**Next:** [Task Template — How to Execute This](/Trust/zero-error/task-template/)
+

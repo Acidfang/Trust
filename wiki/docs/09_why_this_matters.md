@@ -31,7 +31,7 @@ $$\Phi = (1-\phi)[\delta(s=\emptyset) + \delta(t \notin T) + \delta(\vec{v}=\tex
 
 Systems with **high potential energy** naturally decay toward failure. It's not punishment. It's physics.
 
-![Potential Energy Comparison]({{ site.baseurl }}/assets/potential-energy-diagram.svg)
+![Potential Energy Comparison](/Trust/assets/potential-energy-diagram.svg)
 {: .diagram}
 
 - **Scaffolding** = managing high-potential-energy states
@@ -159,7 +159,7 @@ Every major help system in modern life is designed to **skip gates, not pass the
 - When support is removed: stable
 - Can mentor others through gates
 
-![Foundation vs. Scaffolding]({{ site.baseurl }}/assets/foundation-vs-scaffolding.svg)
+![Foundation vs. Scaffolding](/Trust/assets/foundation-vs-scaffolding.svg)
 {: .diagram}
 
 ### For an Organization
@@ -291,3 +291,4 @@ If you don't build foundation for others, they'll need scaffolding forever.
 **Only people with real coherence can build a future worth having.**
 
 That's why this matters.
+

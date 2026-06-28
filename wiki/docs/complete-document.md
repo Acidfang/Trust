@@ -90,11 +90,12 @@ The wiki is designed to print beautifully with:
 
 ## Next Steps
 
-- **New to the framework?** → Start with [Internal Coherence Failure]({{ site.baseurl }}/internal-coherence/)
+- **New to the framework?** → Start with [Internal Coherence Failure](/Trust/internal-coherence/)
 - **Want the whole picture?** → Download the complete document above
-- **Ready to apply it?** → Go to [Implementation & Application]({{ site.baseurl }}/implementation/)
+- **Ready to apply it?** → Go to [Implementation & Application](/Trust/implementation/)
 
 ---
 
 *This wiki was generated from THE_COLD_HARD_TRUTH_THE_PATH_TO_PERFECTION_MASTER.md*  
 *Last updated: 2026-04-16*
+

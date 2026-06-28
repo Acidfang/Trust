@@ -154,7 +154,7 @@ Low: 0
 - **April 22, 2026**: Confirmed all Liquid tags properly processed
 
 ### Submitted Bugs
-→ **[Submit a Bug Report]({{ site.baseurl }}/wiki-bug-report/)**
+→ **[Submit a Bug Report](/Trust/wiki-bug-report/)**
 
 ---
 
@@ -217,11 +217,11 @@ Current streak: 0 days downtime
 
 | Need | Resource |
 |------|----------|
-| Found a bug? | [Bug Report Template]({{ site.baseurl }}/wiki-bug-report/) |
-| Want to suggest improvement? | [Bug Report Template]({{ site.baseurl }}/wiki-bug-report/) - Use "Enhancement" type |
-| Questions about content? | [For AI]({{ site.baseurl }}/for-ai/) / [For Humans]({{ site.baseurl }}/for-humans/) / [For Developers]({{ site.baseurl }}/for-developers/) |
-| Detailed metrics? | [Verification Report]({{ site.baseurl }}/wiki-verification/) |
-| Need to understand a framework? | [Complete Index]({{ site.baseurl }}/full-index/) |
+| Found a bug? | [Bug Report Template](/Trust/wiki-bug-report/) |
+| Want to suggest improvement? | [Bug Report Template](/Trust/wiki-bug-report/) - Use "Enhancement" type |
+| Questions about content? | [For AI](/Trust/for-ai/) / [For Humans](/Trust/for-humans/) / [For Developers](/Trust/for-developers/) |
+| Detailed metrics? | [Verification Report](/Trust/wiki-verification/) |
+| Need to understand a framework? | [Complete Index](/Trust/full-index/) |
 
 ---
 
@@ -284,9 +284,10 @@ Current streak: 0 days downtime
 
 ---
 
-**Questions?** → [Bug Report / Feedback]({{ site.baseurl }}/wiki-bug-report/)  
-**Want Details?** → [Full Verification Report]({{ site.baseurl }}/wiki-verification/)  
-**Need to Start?** → [For AI Instances]({{ site.baseurl }}/for-ai/)  
+**Questions?** → [Bug Report / Feedback](/Trust/wiki-bug-report/)  
+**Want Details?** → [Full Verification Report](/Trust/wiki-verification/)  
+**Need to Start?** → [For AI Instances](/Trust/for-ai/)  
 
 **Last Generated**: April 23, 2026 at 00:00 UTC  
 **Status**: Live and Maintained
+

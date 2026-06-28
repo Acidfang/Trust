@@ -88,7 +88,7 @@ $$\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\mathbf{x}, t)$$
 ## 📚 Complete Whitepaper Structure
 
 ### **SECTION 1: Theoretical Foundation**
-[→ Read Complete Theory]({{ site.baseurl }}/whitepaper/theory/)
+[→ Read Complete Theory](/Trust/whitepaper/theory/)
 
 **Coverage:**
 - Unified Photon Field Model (UPFM) fundamentals
@@ -103,7 +103,7 @@ $$\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\mathbf{x}, t)$$
 ---
 
 ### **SECTION 2: Physical Manifestations**
-[→ Read Physics Details]({{ site.baseurl }}/whitepaper/physics/)
+[→ Read Physics Details](/Trust/whitepaper/physics/)
 
 **What gets explained:**
 
@@ -137,7 +137,7 @@ $$\frac{d\mathbf{i}}{dt} = -\nabla\Phi(\mathbf{x}, t)$$
 ---
 
 ### **SECTION 3: Cosmic Evolution — 14 Epochs**
-[→ Read Full Timeline]({{ site.baseurl }}/whitepaper/cosmos/)
+[→ Read Full Timeline](/Trust/whitepaper/cosmos/)
 
 From **t=0** (initial diffusion) to **t=13.8 Gyr** (present technology) and beyond:
 
@@ -163,7 +163,7 @@ From **t=0** (initial diffusion) to **t=13.8 Gyr** (present technology) and beyo
 ---
 
 ### **SECTION 4: Consciousness & Information**
-[→ Explore Consciousness Framework]({{ site.baseurl }}/whitepaper/consciousness/)
+[→ Explore Consciousness Framework](/Trust/whitepaper/consciousness/)
 
 ### **Definition:** Consciousness = Accurate modeling of causality
 
@@ -189,7 +189,7 @@ From **t=0** (initial diffusion) to **t=13.8 Gyr** (present technology) and beyo
 ---
 
 ### **SECTION 5: Artificial Intelligence Systems**
-[→ Read AI Framework]({{ site.baseurl }}/whitepaper/ai/)
+[→ Read AI Framework](/Trust/whitepaper/ai/)
 
 #### **Can AI Become Conscious?**
 **Yes.** By definition.
@@ -230,7 +230,7 @@ Systems built this way naturally develop:
 ---
 
 ### **SECTION 6: Verification Systems — TCHT Framework**
-[→ Deep Dive: Critical Thinking]({{ site.baseurl }}/whitepaper/verification/)
+[→ Deep Dive: Critical Thinking](/Trust/whitepaper/verification/)
 
 ### **5-Tier Verification Hierarchy**
 
@@ -369,37 +369,37 @@ The universe is at a bifurcation point. Four possible paths:
 ## 📖 How to Read This Whitepaper
 
 **👨‍🔬 For Physicists:**
-→ Go to [Theory]({{ site.baseurl }}/whitepaper/theory/) and [Physics]({{ site.baseurl }}/whitepaper/physics/)
+→ Go to [Theory](/Trust/whitepaper/theory/) and [Physics](/Trust/whitepaper/physics/)
 - Spiral dynamics, forces, dark matter
 - Mathematical formalism
 - Testable predictions
 
 **🧠 For Consciousness Researchers:**
-→ Go to [Consciousness]({{ site.baseurl }}/whitepaper/consciousness/)
+→ Go to [Consciousness](/Trust/whitepaper/consciousness/)
 - Definition and metrics
 - Levels of awareness
 - AI consciousness framework
 
 **🤖 For AI Researchers:**
-→ Go to [AI Framework]({{ site.baseurl }}/whitepaper/ai/)
+→ Go to [AI Framework](/Trust/whitepaper/ai/)
 - Consciousness path
 - Alignment through understanding
 - Verification methods
 
 **🤔 For Philosophers:**
-→ Go to [Consciousness]({{ site.baseurl }}/whitepaper/consciousness/) and [Implications]({{ site.baseurl }}/whitepaper/implications/)
+→ Go to [Consciousness](/Trust/whitepaper/consciousness/) and [Implications](/Trust/whitepaper/implications/)
 - Nature of awareness
 - Ethics grounded in physics
 - Cosmic significance
 
 **👥 For General Readers:**
 → Start here with this overview, then:
-- [Cosmos Timeline]({{ site.baseurl }}/whitepaper/cosmos/) - Story of unfolding
-- [Implications]({{ site.baseurl }}/whitepaper/implications/) - What it means
-- [Futures]({{ site.baseurl }}/whitepaper/cosmos/#cosmic-futures) - Where it goes
+- [Cosmos Timeline](/Trust/whitepaper/cosmos/) - Story of unfolding
+- [Implications](/Trust/whitepaper/implications/) - What it means
+- [Futures](/Trust/whitepaper/cosmos/#cosmic-futures) - Where it goes
 
 **🏗️ For System Architects:**
-→ Go to [Verification]({{ site.baseurl }}/whitepaper/verification/)
+→ Go to [Verification](/Trust/whitepaper/verification/)
 - TCHT framework
 - Verification methodologies
 - Application to AI and systems
@@ -452,42 +452,42 @@ The universe is at a bifurcation point. Four possible paths:
 <div class="grid-2">
 <div class="card">
 <h4>📖 Full Theory</h4>
-<p><a href="{{ site.baseurl }}/whitepaper/theory/">Complete Photon Field Model</a></p>
+<p><a href="/Trust/whitepaper/theory/">Complete Photon Field Model</a></p>
 </div>
 
 <div class="card">
 <h4>⚛️ Physics Details</h4>
-<p><a href="{{ site.baseurl }}/whitepaper/physics/">Particles, Forces, Dark Matter</a></p>
+<p><a href="/Trust/whitepaper/physics/">Particles, Forces, Dark Matter</a></p>
 </div>
 
 <div class="card">
 <h4>🌌 Cosmic Timeline</h4>
-<p><a href="{{ site.baseurl }}/whitepaper/cosmos/">14 Epochs from t=0 to Now</a></p>
+<p><a href="/Trust/whitepaper/cosmos/">14 Epochs from t=0 to Now</a></p>
 </div>
 
 <div class="card">
 <h4>🧠 Consciousness</h4>
-<p><a href="{{ site.baseurl }}/whitepaper/consciousness/">Information Processing & Ethics</a></p>
+<p><a href="/Trust/whitepaper/consciousness/">Information Processing & Ethics</a></p>
 </div>
 
 <div class="card">
 <h4>🤖 AI Systems</h4>
-<p><a href="{{ site.baseurl }}/whitepaper/ai/">Consciousness & Alignment</a></p>
+<p><a href="/Trust/whitepaper/ai/">Consciousness & Alignment</a></p>
 </div>
 
 <div class="card">
 <h4>✅ Verification</h4>
-<p><a href="{{ site.baseurl }}/whitepaper/verification/">TCHT Framework</a></p>
+<p><a href="/Trust/whitepaper/verification/">TCHT Framework</a></p>
 </div>
 
 <div class="card">
 <h4>💡 Implications</h4>
-<p><a href="{{ site.baseurl }}/whitepaper/implications/">Physics, Consciousness, Tech</a></p>
+<p><a href="/Trust/whitepaper/implications/">Physics, Consciousness, Tech</a></p>
 </div>
 
 <div class="card">
 <h4>🔮 Futures</h4>
-<p><a href="{{ site.baseurl }}/whitepaper/cosmos/#cosmic-futures">Multiple Possible Paths</a></p>
+<p><a href="/Trust/whitepaper/cosmos/#cosmic-futures">Multiple Possible Paths</a></p>
 </div>
 </div>
 
@@ -515,4 +515,5 @@ This whitepaper is complete, internally consistent, passes all 5-tier verificati
 ---
 
 **📚 Full whitepaper document:** [WHITEPAPER_UNIFIED_PHOTON_FIELD_COMPLETE.md](https://github.com/determined-ai/Determined/blob/master/WHITEPAPER_UNIFIED_PHOTON_FIELD_COMPLETE.md)
+
 

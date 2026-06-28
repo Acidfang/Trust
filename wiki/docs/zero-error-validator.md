@@ -197,4 +197,5 @@ This shows:
 
 ---
 
-**For complete 0-Error Compute framework:** [Introduction]({{ site.baseurl }}/zero-error/intro/)
+**For complete 0-Error Compute framework:** [Introduction](/Trust/zero-error/intro/)
+

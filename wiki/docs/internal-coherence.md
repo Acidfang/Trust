@@ -135,4 +135,5 @@ The real problem is not that humans demand narrative confirmation.
 
 To understand how this unresolved Tier -1 became civilization's problem:
 
-→ **[Help Systems as Gate-Skippers]({{ site.baseurl }}/help-systems/)** — How 5 major help systems prevent the development that would resolve Tier -1
+→ **[Help Systems as Gate-Skippers](/Trust/help-systems/)** — How 5 major help systems prevent the development that would resolve Tier -1
+

@@ -23,7 +23,7 @@ entry_point: Site admins
 ## Latest Updates (April 22)
 
 ### New Visualization System
-✅ **[Bidirectional Constraint Systems]({{ site.baseurl }}/bidirectional-constraints/)** (NEW)
+✅ **[Bidirectional Constraint Systems](/Trust/bidirectional-constraints/)** (NEW)
 
 Interactive 3D renderer demonstrating constraint-determined reality:
 - **Forward analysis**: Given constraints → system computes required center position
@@ -32,7 +32,7 @@ Interactive 3D renderer demonstrating constraint-determined reality:
 - **Visual feedback**: 3D spirals, coherence detection, multi-object interaction
 - **Physical principle**: The bowling ball principle—engineer constraints to achieve external behavior
 
-Live interactive experience at: [Spiral Field Renderer]({{ site.baseurl }}/spiral-field-renderer/)
+Live interactive experience at: [Spiral Field Renderer](/Trust/spiral-field-renderer/)
 
 **Key insight**: Both directions (forward and backward) are equally real and equally constrained by physics. This demonstrates the fundamental principle that **reality is constraint-determined**.
 
@@ -41,7 +41,7 @@ Live interactive experience at: [Spiral Field Renderer]({{ site.baseurl }}/spira
 ## What Changed
 
 ### New Document Created
-✅ **[Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/)**
+✅ **[Unified Photon Field Model](/Trust/unified-photon-field/)**
 
 Comprehensive formalization of the photon-primitive framework:
 - Photon as the only fundamental entity
@@ -53,7 +53,7 @@ Comprehensive formalization of the photon-primitive framework:
 
 ### Documents Updated
 
-✅ **[Cosmic Unfolding]({{ site.baseurl }}/cosmic-unfolding/)**
+✅ **[Cosmic Unfolding](/Trust/cosmic-unfolding/)**
 
 Sections [3] and [4] completely rewritten to reflect photon-primitive model:
 - [3] Hadron Epoch → "Photons lock to electron spiral frequencies"
@@ -61,7 +61,7 @@ Sections [3] and [4] completely rewritten to reflect photon-primitive model:
 - Living document marker added
 - Links to unified model established
 
-✅ **[Full Index]({{ site.baseurl }}/full-index/)**
+✅ **[Full Index](/Trust/full-index/)**
 
 - Added Unified Photon Field Model entry
 - Updated Cosmic Evolution description (photon-based language)
@@ -70,7 +70,7 @@ Sections [3] and [4] completely rewritten to reflect photon-primitive model:
 
 ### Supporting Document
 
-✅ **[Photon Primitive Model Test]({{ site.baseurl }}/PHOTON_PRIMITIVE_MODEL_TEST.md)**
+✅ **[Photon Primitive Model Test](/Trust/PHOTON_PRIMITIVE_MODEL_TEST.md)**
 
 (In workspace, not yet in wiki)
 
@@ -206,13 +206,13 @@ Cross-Domain Application:
 
 ## How to Use This Ecosystem
 
-**For understanding the physical model**: Start with [Unified Photon Field Model]({{ site.baseurl }}/unified-photon-field/)
+**For understanding the physical model**: Start with [Unified Photon Field Model](/Trust/unified-photon-field/)
 
-**For seeing how it applies to cosmic evolution**: Read [Cosmic Unfolding]({{ site.baseurl }}/cosmic-unfolding/)
+**For seeing how it applies to cosmic evolution**: Read [Cosmic Unfolding](/Trust/cosmic-unfolding/)
 
 **For logical verification that model works**: See [Photon Primitive Model Test](PHOTON_PRIMITIVE_MODEL_TEST.md)
 
-**For everything integrated**: [Complete Document]({{ site.baseurl }}/complete-document/) (updated with model)
+**For everything integrated**: [Complete Document](/Trust/complete-document/) (updated with model)
 
 ---
 
@@ -230,3 +230,4 @@ This wiki is not static reference material. It's a **map of understanding as it 
 **The method**: Test every prediction, fill every gap, integrate all domains under one law.
 
 **The constraint**: Never accept contradiction. If something doesn't fit, either the model is wrong or understanding is incomplete. Both are correctable.
+

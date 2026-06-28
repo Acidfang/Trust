@@ -248,6 +248,7 @@ This is not just about the elections. This is about learning to **visualize real
 
 ## Next Step
 
-→ **[Election 2: Movement]({{ site.baseurl }}/election-2/)**
+→ **[Election 2: Movement](/Trust/election-2/)**
 
 *Start building Election 2: Vector fields, gradients, flow.*
+

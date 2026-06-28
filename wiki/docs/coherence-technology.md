@@ -88,7 +88,8 @@ Contains:
 
 ## Next Steps
 
-- **[Return to Coherence Cascade]({{ site.baseurl }}/coherence-cascade/)** — All six domains
-- **[Ecology Domain]({{ site.baseurl }}/coherence-ecology/)** — Ecosystem-level coherence
-- **[Variables]({{ site.baseurl }}/coherence-variables/)** — How E, k, ρ, r² apply to technology
-- **[Complete Analysis]({{ site.baseurl }}/coherence-complete/)** — All predictions and verification data
+- **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains
+- **[Ecology Domain](/Trust/coherence-ecology/)** — Ecosystem-level coherence
+- **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to technology
+- **[Complete Analysis](/Trust/coherence-complete/)** — All predictions and verification data
+

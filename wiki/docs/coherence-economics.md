@@ -88,7 +88,8 @@ Contains:
 
 ## Next Steps
 
-- **[Return to Coherence Cascade]({{ site.baseurl }}/coherence-cascade/)** — All six domains
-- **[Psychology Domain]({{ site.baseurl }}/coherence-psychology/)** — Individual adaptation costs
-- **[Politics Domain]({{ site.baseurl }}/coherence-politics/)** — Institutional adaptation failures
-- **[Variables]({{ site.baseurl }}/coherence-variables/)** — How E, k, ρ, r² apply to economics
+- **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains
+- **[Psychology Domain](/Trust/coherence-psychology/)** — Individual adaptation costs
+- **[Politics Domain](/Trust/coherence-politics/)** — Institutional adaptation failures
+- **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to economics
+

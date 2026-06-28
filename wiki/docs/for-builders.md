@@ -296,14 +296,15 @@ For each gate, verify:
 
 ## Getting Started
 
-1. Read [Universal Foundation]({{ site.baseurl }}/universal-foundation/) — Understand the principles
-2. Review [10 Gates]({{ site.baseurl }}/internal-coherence/) — Know what to preserve
-3. Study [Domain Examples]({{ site.baseurl }}/domain-examples/) — See them applied
-4. Use [System Design Checklist]({{ site.baseurl }}/for-builders/) — Above on this page
+1. Read [Universal Foundation](/Trust/universal-foundation/) — Understand the principles
+2. Review [10 Gates](/Trust/internal-coherence/) — Know what to preserve
+3. Study [Domain Examples](/Trust/domain-examples/) — See them applied
+4. Use [System Design Checklist](/Trust/for-builders/) — Above on this page
 5. Start small — One system or subsystem first
 
 ---
 
 **You now know how to build systems that develop competence instead of dependency.**
 
-Ready to redesign? Start with [Universal Foundation]({{ site.baseurl }}/universal-foundation/)
+Ready to redesign? Start with [Universal Foundation](/Trust/universal-foundation/)
+

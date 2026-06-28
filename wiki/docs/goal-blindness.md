@@ -366,6 +366,7 @@ The solution is:
 
 ---
 
-**Next**: [Help Systems as Gate-Skippers]({{ site.baseurl }}/help-systems/) — See how this happens
+**Next**: [Help Systems as Gate-Skippers](/Trust/help-systems/) — See how this happens
 
-**Or**: [For Humans]({{ site.baseurl }}/for-humans/) — What to do about it in your life
+**Or**: [For Humans](/Trust/for-humans/) — What to do about it in your life
+

@@ -128,11 +128,12 @@ TIMESTAMP: [When decided]
 
 ## Links to Full Frameworks
 
-- [Universal Mandate]({{ site.baseurl }}/zero-error/mandate/) — Complete requirements
-- [Task Template]({{ site.baseurl }}/zero-error/task-template/) — Full 8-phase details
-- [Pre-Action Checklist]({{ site.baseurl }}/zero-error/pre-action/) — 6-step gate details
+- [Universal Mandate](/Trust/zero-error/mandate/) — Complete requirements
+- [Task Template](/Trust/zero-error/task-template/) — Full 8-phase details
+- [Pre-Action Checklist](/Trust/zero-error/pre-action/) — 6-step gate details
 
 
 ---
 
 **Use this card. Every task. No exceptions.**
+

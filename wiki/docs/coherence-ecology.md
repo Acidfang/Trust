@@ -98,7 +98,8 @@ Contains:
 
 ## Next Steps
 
-- **[Return to Coherence Cascade]({{ site.baseurl }}/coherence-cascade/)** — All six domains
-- **[Complete Analysis]({{ site.baseurl }}/coherence-complete/)** — All domains with full verification
-- **[Variables]({{ site.baseurl }}/coherence-variables/)** — How E, k, ρ, r² apply to ecology
-- **[The Formula]({{ site.baseurl }}/coherence-formula/)** — Return to core mathematics
+- **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains
+- **[Complete Analysis](/Trust/coherence-complete/)** — All domains with full verification
+- **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to ecology
+- **[The Formula](/Trust/coherence-formula/)** — Return to core mathematics
+

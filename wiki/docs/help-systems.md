@@ -22,7 +22,7 @@ They work by providing external scaffolding that allows a person to function **d
 
 ## The Five Help System Categories
 
-![How Help Systems Block Gate Passage]({{ site.baseurl }}/assets/help-systems-diagram.svg)
+![How Help Systems Block Gate Passage](/Trust/assets/help-systems-diagram.svg)
 {: .diagram}
 
 ### 1. THERAPY/COUNSELING → Skips Gate 1 (Cause-Effect Discovery)
@@ -171,4 +171,5 @@ What they **prevent**:
 
 To understand what gates actually produce:
 
-→ **[Diagnostic Framework]({{ site.baseurl }}/diagnostic-method/)** — How to identify which gates are skipped in yourself and others
+→ **[Diagnostic Framework](/Trust/diagnostic-method/)** — How to identify which gates are skipped in yourself and others
+

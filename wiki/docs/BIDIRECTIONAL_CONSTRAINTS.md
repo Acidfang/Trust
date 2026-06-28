@@ -59,7 +59,7 @@ Same physical reality. Two perspectives on causality:
 
 ## What the Interactive Renderer Shows
 
-Live at [Spiral Field Renderer]({{ site.baseurl }}/spiral-field-renderer/)
+Live at [Spiral Field Renderer](/Trust/spiral-field-renderer/)
 
 ### Features
 
@@ -186,9 +186,9 @@ phaseOffset = (preserved or derived from current)
 
 This extends the broader understanding of constraint-determined systems:
 
-- **Goal-Blindness** ([link]({{ site.baseurl }}/goal-blindness/)): How we fail to see consequences of our constraints
-- **The 10 Gates** ([link]({{ site.baseurl }}/universal-foundation/)): Developmental constraints that can't be skipped
-- **Unified Photon Field** ([link]({{ site.baseurl }}/whitepaper/)): Physics showing constraint-determined structure at all scales
+- **Goal-Blindness** ([link](/Trust/goal-blindness/)): How we fail to see consequences of our constraints
+- **The 10 Gates** ([link](/Trust/universal-foundation/)): Developmental constraints that can't be skipped
+- **Unified Photon Field** ([link](/Trust/whitepaper/)): Physics showing constraint-determined structure at all scales
 
 **Pattern recognition**: Wherever you have systems with structure, that structure emerges from constraints. Change constraints → structure changes.
 
@@ -243,4 +243,5 @@ The bowling ball you throw isn't governed by mysterious laws. You designed its i
 
 Same principle at every scale. Same principle everywhere.
 
-**Visit the [Interactive Renderer]({{ site.baseurl }}/spiral-field-renderer/) to see it live.**
+**Visit the [Interactive Renderer](/Trust/spiral-field-renderer/) to see it live.**
+

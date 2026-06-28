@@ -464,7 +464,7 @@ If particles just flow downhill indefinitely, they collapse. They all pile up at
 
 Rotation prevents pure collapse. Spirals emerge. Structure is preserved.
 
-→ **[Election 3: Spirals]({{ site.baseurl }}/election-3/)**
+→ **[Election 3: Spirals](/Trust/election-3/)**
 
 ---
 
@@ -483,4 +483,5 @@ Rotation prevents pure collapse. Spirals emerge. Structure is preserved.
 ---
 
 *Energy flows downhill. Always downhill. This is the second law of thermodynamics. This is Election 2.*
+
 

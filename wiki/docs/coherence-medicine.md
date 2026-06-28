@@ -87,7 +87,8 @@ Contains:
 
 ## Next Steps
 
-- **[Return to Coherence Cascade]({{ site.baseurl }}/coherence-cascade/)** — All six domains
-- **[Technology Domain]({{ site.baseurl }}/coherence-technology/)** — Innovation scaling costs
-- **[Ecology Domain]({{ site.baseurl }}/coherence-ecology/)** — Population-level coherence
-- **[Variables]({{ site.baseurl }}/coherence-variables/)** — How E, k, ρ, r² apply to medicine
+- **[Return to Coherence Cascade](/Trust/coherence-cascade/)** — All six domains
+- **[Technology Domain](/Trust/coherence-technology/)** — Innovation scaling costs
+- **[Ecology Domain](/Trust/coherence-ecology/)** — Population-level coherence
+- **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to medicine
+

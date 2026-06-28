@@ -240,11 +240,12 @@ Test whether gate-restoration improves outcomes
 
 ## Get Started
 
-1. Read [Universal Foundation]({{ site.baseurl }}/universal-foundation/) — Theoretical framework
-2. Review [Evidence]({{ site.baseurl }}/evidence-why-undeniables-are-real/) — Current evidence base
-3. Study [Domain Examples]({{ site.baseurl }}/domain-examples/) — Cross-domain patterns
-4. Examine [Implementation]({{ site.baseurl }}/implementation/) — Mechanism details
+1. Read [Universal Foundation](/Trust/universal-foundation/) — Theoretical framework
+2. Review [Evidence](/Trust/evidence-why-undeniables-are-real/) — Current evidence base
+3. Study [Domain Examples](/Trust/domain-examples/) — Cross-domain patterns
+4. Examine [Implementation](/Trust/implementation/) — Mechanism details
 
 ---
 
 **Ready for research?** Contact [Research Coordination] to discuss studies
+

@@ -410,7 +410,7 @@ But they cycle forever:
 
 ## Full Circle
 
-→ **Back to [Election 1: Distinction]({{ site.baseurl }}/election-1/)**
+→ **Back to [Election 1: Distinction](/Trust/election-1/)**
 
 *The cycle completes. And begins again.*
 
@@ -429,4 +429,5 @@ But they cycle forever:
 **These are not separate events. They are a cycle that repeats at every scale, forever.**
 
 *And that cycle IS time itself.*
+
 

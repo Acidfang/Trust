@@ -238,9 +238,10 @@ To understand any system, measure four things:
 
 ## Next Steps
 
-- **[The Formula]({{ site.baseurl }}/coherence-formula/)** — Return to formula overview
-- **[Evolution Domain]({{ site.baseurl }}/coherence-evolution/)** — See how E, k, ρ, r² work in biology
-- **[Economics Domain]({{ site.baseurl }}/coherence-economics/)** — See predictions in market data
-- **[Politics Domain]({{ site.baseurl }}/coherence-politics/)** — See revolution predictions
-- **[Complete Analysis]({{ site.baseurl }}/coherence-complete/)** — All six domains with full data
+- **[The Formula](/Trust/coherence-formula/)** — Return to formula overview
+- **[Evolution Domain](/Trust/coherence-evolution/)** — See how E, k, ρ, r² work in biology
+- **[Economics Domain](/Trust/coherence-economics/)** — See predictions in market data
+- **[Politics Domain](/Trust/coherence-politics/)** — See revolution predictions
+- **[Complete Analysis](/Trust/coherence-complete/)** — All six domains with full data
+
 

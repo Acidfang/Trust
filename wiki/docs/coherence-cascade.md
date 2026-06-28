@@ -200,8 +200,8 @@ History suggests most cannot.
 
 - **[The Formula Explained](/Trust/coherence-formula/)** — Understand E = k · ρ · r²
 - **[Variables Deep Dive](/Trust/coherence-variables/)** — How each variable works across domains
-- **[Six Domains]({{ site.baseurl }}/coherence-evolution/)** — Choose a domain and see the predictions verified
-- **[Complete Analysis]({{ site.baseurl }}/coherence-complete/)** — Full technical documentation with all predictions and data
+- **[Six Domains](/Trust/coherence-evolution/)** — Choose a domain and see the predictions verified
+- **[Complete Analysis](/Trust/coherence-complete/)** — Full technical documentation with all predictions and data
 
 ---
 
@@ -216,4 +216,5 @@ History suggests most cannot.
 - Why do institutions have characteristic lifespans?
 
 **Every prediction is falsifiable against data.**
+
 
