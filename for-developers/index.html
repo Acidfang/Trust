@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Developers - Implementation Guide - The Cold Hard Truth, The Path To Perfection</title>
+    <meta name="description" content="A Complete Framework for Understanding Human Development, Gate-Passage, and Civilization's Future">
+    <link rel="stylesheet" href="/Trust/assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/Trust/assets/favicon.ico">
+</head>
+<body class="light-mode">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="site-title">The Cold Hard Truth, The Path To Perfection</h1>
+            <p class="site-subtitle">A Complete Framework for Understanding Human Development, Gate-Passage, and Civilization's Future</p>
+        </div>
+
+        <div class="theme-toggle">
+            <button id="dark-mode-toggle" class="theme-btn" title="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <!-- Unified Navigation based on navigation.yml data -->
+<div class="unified-nav">
+    <ul class="nav-list primary-nav">
+        
+        <!-- Home Link -->
+        <li class="nav-item nav-home">
+            <a href="/Trust/" class="nav-link nav-home-link">
+                🏠 Home
+            </a>
+        </li>
+
+        <!-- CHOOSE YOUR JOURNEY SECTION -->
+        <li class="nav-section">
+            <div class="nav-section-title">🚀 CHOOSE YOUR JOURNEY</div>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="/Trust/goal-blindness/" class="nav-link">📖 Foundation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Trust/help-systems/" class="nav-link">🔧 Help Systems</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Trust/whitepaper/" class="nav-link">⚛️ Physics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Trust/elections-roadmap/" class="nav-link">✨ Complete Picture</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- 0-ERROR COMPUTE SECTION -->
+        <li class="nav-section">
+            <div class="nav-section-title">🤖 0-ERROR COMPUTE</div>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="/Trust/zero-error/intro/" class="nav-link ">Introduction</a>
+                </li>
+                
+                <li class="nav-item nav-collapsible">
+                    <div class="nav-toggle">
+                        <span class="nav-toggle-icon">▸</span>
+                        <span class="nav-toggle-text">Core Frameworks</span>
+                    </div>
+                    <ul class="nav-children">
+                        <li><a href="/Trust/zero-error/mandate/" class="nav-link ">Universal Mandate</a></li>
+                        <li><a href="/Trust/zero-error/task-template/" class="nav-link ">Task Template</a></li>
+                        <li><a href="/Trust/zero-error/quick-ref/" class="nav-link ">Quick Reference</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item nav-collapsible">
+                    <div class="nav-toggle">
+                        <span class="nav-toggle-icon">▸</span>
+                        <span class="nav-toggle-text">Automation Tools</span>
+                    </div>
+                    <ul class="nav-children">
+                        <li><a href="/Trust/zero-error/validator/" class="nav-link ">Pre-commit Validator</a></li>
+                        <li><a href="/Trust/zero-error/logger/" class="nav-link ">Decision Logger</a></li>
+                        <li><a href="/Trust/zero-error/detector/" class="nav-link ">Duplicate Detector</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/Trust/zero-error/wiki/" class="nav-link ">Complete Wiki</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- UNIFIED PHOTON FIELD MODEL SECTION -->
+        <li class="nav-section">
+            <div class="nav-section-title">🌌 UNIFIED PHOTON FIELD MODEL</div>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="/Trust/whitepaper/" class="nav-link ">First Principles</a>
+                </li>
+                
+                <li class="nav-item nav-collapsible">
+                    <div class="nav-toggle">
+                        <span class="nav-toggle-icon">▸</span>
+                        <span class="nav-toggle-text">The Five Elections</span>
+                    </div>
+                    <ul class="nav-children">
+                        <li><a href="/Trust/elections-roadmap/" class="nav-link ">Elections Roadmap</a></li>
+                        <li><a href="/Trust/election-1/" class="nav-link ">Election 1: Distinction</a></li>
+                        <li><a href="/Trust/election-2/" class="nav-link ">Election 2: Movement</a></li>
+                        <li><a href="/Trust/election-3/" class="nav-link ">Election 3: Spirals</a></li>
+                        <li><a href="/Trust/election-4/" class="nav-link ">Election 4: Direction</a></li>
+                        <li><a href="/Trust/election-meta-time/" class="nav-link ">Meta-Election: Time</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/Trust/cosmic-unfolding/" class="nav-link ">Cosmic Evolution</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/Trust/wiki-integration-summary/" class="nav-link ">Integration Summary</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- THE COLD HARD TRUTH SECTION -->
+        <li class="nav-section">
+            <div class="nav-section-title">🎯 THE COLD HARD TRUTH</div>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="/Trust/why-this-matters/" class="nav-link ">Why This Matters</a>
+                </li>
+                
+                <li class="nav-item nav-collapsible">
+                    <div class="nav-toggle">
+                        <span class="nav-toggle-icon">▸</span>
+                        <span class="nav-toggle-text">Core Concepts</span>
+                    </div>
+                    <ul class="nav-children">
+                        <li><a href="/Trust/internal-coherence/" class="nav-link ">Internal Coherence</a></li>
+                        <li><a href="/Trust/goal-blindness/" class="nav-link ">Goal-Blindness</a></li>
+                        <li><a href="/Trust/universal-foundation/" class="nav-link ">Universal Foundation</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item nav-collapsible">
+                    <div class="nav-toggle">
+                        <span class="nav-toggle-icon">▸</span>
+                        <span class="nav-toggle-text">Help Systems</span>
+                    </div>
+                    <ul class="nav-children">
+                        <li><a href="/Trust/help-systems/" class="nav-link ">Overview</a></li>
+                        <li><a href="/Trust/help-systems-cards/" class="nav-link ">Visual Cards</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="/Trust/complete-document/" class="nav-link ">Complete Document</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- BY ROLE SECTION -->
+        <li class="nav-section">
+            <div class="nav-section-title">👥 BY ROLE</div>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="/Trust/for-ai/" class="nav-link ">AI Instance</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Trust/for-developers/" class="nav-link active">Developer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Trust/for-humans/" class="nav-link ">Human User</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Trust/for-researchers/" class="nav-link ">Researcher</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Trust/for-builders/" class="nav-link ">System Builder</a>
+                </li>
+            </ul>
+        </li>
+
+        <!-- REFERENCE SECTION -->
+        <li class="nav-section">
+            <div class="nav-section-title">📚 REFERENCE</div>
+            <ul class="nav-sublist">
+                <li class="nav-item">
+                    <a href="/Trust/full-index/" class="nav-link ">Complete Index</a>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+</div>
+
+<!-- Navigation Styles -->
+<style>
+:root {
+    --nav-bg: #f8f9fa;
+    --nav-border: #e0e0e0;
+    --nav-text: #2c3e50;
+    --nav-text-secondary: #5a6c7d;
+    --nav-hover-bg: #e8eef5;
+    --nav-active-bg: #2c5aa0;
+    --nav-active-text: #ffffff;
+    --nav-section-border: #d4d4d8;
+    --nav-indent: 1.2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --nav-bg: #1e2a35;
+        --nav-border: #3a4a56;
+        --nav-text: #e4e9f0;
+        --nav-text-secondary: #a8b5c4;
+        --nav-hover-bg: #2d3f50;
+        --nav-active-bg: #3b82f6;
+        --nav-active-text: #ffffff;
+        --nav-section-border: #4a5a6a;
+    }
+}
+
+.unified-nav {
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-home {
+    margin-bottom: 0.5rem;
+}
+
+.nav-home-link {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+    display: block;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.nav-home-link:hover {
+    transform: translateX(2px);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.nav-section {
+    margin: 1.5rem 0;
+    list-style: none;
+    border-top: 1px solid var(--nav-section-border);
+    padding-top: 1rem;
+}
+
+.nav-section:first-of-type {
+    border-top: none;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.nav-section-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--nav-text-secondary);
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .nav-section-title {
+        background: rgba(255, 255, 255, 0.03);
+    }
+}
+
+.nav-sublist,
+.nav-children {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-children {
+    padding-left: var(--nav-indent);
+    margin-top: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0;
+}
+
+.nav-item.nav-collapsible.expanded .nav-children {
+    max-height: 999px;
+}
+
+.nav-item.nav-collapsible.expanded .nav-toggle-icon {
+    transform: rotate(90deg);
+}
+
+.nav-toggle {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    color: var(--nav-text);
+    font-weight: 500;
+}
+
+.nav-toggle:hover {
+    background: var(--nav-hover-bg);
+    color: var(--nav-text);
+}
+
+.nav-toggle-icon {
+    display: inline-block;
+    width: 1.2rem;
+    margin-right: 0.4rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.nav-toggle-text {
+    flex: 1;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem 0;
+    color: var(--nav-text);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.15s ease;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    background: var(--nav-hover-bg);
+    color: var(--nav-text);
+    padding-left: 1.2rem;
+}
+
+.nav-link.active {
+    background: var(--nav-active-bg);
+    color: var(--nav-active-text);
+    font-weight: 600;
+}
+
+.nav-link.active:hover {
+    background: var(--nav-active-bg);
+    padding-left: 1.2rem;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav-link,
+    .nav-toggle {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .nav-section-title {
+        font-size: 0.8rem;
+        margin: 0 0 0.75rem 0;
+    }
+}
+
+/* Smooth transitions */
+.nav-item {
+    transition: background 0.15s ease;
+}
+</style>
+
+<!-- Navigation Interactivity -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle collapsible sections
+    const toggles = document.querySelectorAll('.nav-collapsible .nav-toggle');
+    
+    toggles.forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            const parent = this.closest('.nav-collapsible');
+            parent.classList.toggle('expanded');
+        });
+        
+        // Expand if current page is in this section
+        const section = toggle.closest('.nav-collapsible');
+        const links = section.querySelectorAll('.nav-link.active');
+        if (links.length > 0) {
+            section.classList.add('expanded');
+        }
+    });
+    
+    // Auto-expand sections with active links
+    const activeLinks = document.querySelectorAll('.nav-link.active');
+    activeLinks.forEach(function(link) {
+        let parent = link.closest('.nav-collapsible');
+        while (parent) {
+            parent.classList.add('expanded');
+            parent = parent.parentElement.closest('.nav-collapsible');
+        }
+    });
+});
+</script>
+
+        </nav>
+
+        
+        <nav class="sidebar-toc">
+            <h3>On this page</h3>
+            <ul id="toc-list" class="toc-list"></ul>
+        </nav>
+        
+
+        <div class="sidebar-footer">
+            <p class="updated">Last updated: <span id="last-update"></span></p>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="content-header">
+            
+            <h1 class="page-title">For Developers - Implementation Guide</h1>
+            
+        </div>
+
+        <div class="content-body">
+            <h1 id="for-developers-implementing-0-error-compute">For Developers: Implementing 0-Error Compute</h1>
+
+<p><strong>You are integrating 0-Error Compute into development workflows.</strong></p>
+
+<p>This page explains implementation, integration points, and how to use the automation suite.</p>
+
+<hr />
+
+<h2 id="what-youre-implementing">What You’re Implementing</h2>
+
+<p>A complete system that makes errors impossible by:</p>
+<ol>
+  <li><strong>Requiring complete thinking</strong> before coding</li>
+  <li><strong>Verifying logic while thinking</strong> (not after)</li>
+  <li><strong>Automating validation</strong> before commits</li>
+  <li><strong>Logging decisions</strong> for audit trail</li>
+  <li><strong>Detecting gaps</strong> automatically</li>
+</ol>
+
+<hr />
+
+<h2 id="integration-points">Integration Points</h2>
+
+<h3 id="git-pre-commit-hook">Git Pre-Commit Hook</h3>
+
+<p>The pre-commit validator runs automatically before every commit.</p>
+
+<p><strong>What it does</strong>:</p>
+<ul>
+  <li>Prevents commits with syntax errors</li>
+  <li>Validates YAML and JSON</li>
+  <li>Runs framework compliance checks</li>
+  <li>Logs decisions</li>
+</ul>
+
+<p><strong>What it blocks</strong>:</p>
+<ul>
+  <li>Broken Python code</li>
+  <li>Invalid configuration</li>
+  <li>Incomplete YAML/JSON</li>
+  <li>Non-compliant framework usage</li>
+</ul>
+
+<h3 id="working-directory">Working Directory</h3>
+
+<p>Before editing ANY file:</p>
+
+<ol>
+  <li>Run framework verification</li>
+  <li>Apply 6-step pre-action checklist</li>
+  <li>Complete thinking phase</li>
+  <li>Code implementation</li>
+  <li>Commit (auto-validated)</li>
+</ol>
+
+<h3 id="automation-suite">Automation Suite</h3>
+
+<p>6 tools available:</p>
+<ul>
+  <li><strong>pre_commit_validator.py</strong> — Syntax/structure validation</li>
+  <li><strong>decision_logger.py</strong> — Log decisions</li>
+  <li><strong>duplicate_detector.py</strong> — Find redundancy</li>
+  <li><strong>framework_compliance_checker.py</strong> — Verify frameworks applied</li>
+  <li><strong>gate_discovery_system.py</strong> — Find gaps</li>
+  <li><strong>automation_runner.py</strong> — Run all 5 above</li>
+</ul>
+
+<h3 id="decision-log">Decision Log</h3>
+
+<p>All decisions recorded in <code class="language-plaintext highlighter-rouge">DECISION_LOG.jsonl</code></p>
+
+<p><strong>What to log</strong>:</p>
+<ul>
+  <li>Architecture decisions</li>
+  <li>Algorithm selections</li>
+  <li>Verification approaches</li>
+  <li>Framework application</li>
+  <li>Design choices</li>
+</ul>
+
+<p><strong>How to query</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Find decisions for a file</span>
+<span class="nb">grep</span> <span class="s2">"state_manager"</span> DECISION_LOG.jsonl
+
+<span class="c"># Find unverified decisions</span>
+<span class="nb">grep</span> <span class="s1">'"verified": false'</span> DECISION_LOG.jsonl
+
+<span class="c"># Find decisions in date range</span>
+<span class="nb">grep</span> <span class="s2">"2026-04"</span> DECISION_LOG.jsonl
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="workflow-for-developers">Workflow for Developers</h2>
+
+<h3 id="before-starting-any-feature">Before Starting Any Feature</h3>
+
+<ol>
+  <li><strong>Read requirement</strong> completely</li>
+  <li><strong>Load framework context</strong> (quick reference)</li>
+  <li><strong>Plan architecture</strong> using binary thinking</li>
+  <li><strong>Document decisions</strong> as you plan</li>
+  <li><strong>Get approval</strong> before coding</li>
+</ol>
+
+<h3 id="during-development">During Development</h3>
+
+<ol>
+  <li><strong>Apply 6-step checklist</strong> before every edit</li>
+  <li><strong>Think completely</strong> before coding</li>
+  <li><strong>Verify logic</strong> while thinking</li>
+  <li><strong>Log decisions</strong> as you make them</li>
+  <li><strong>Run automation suite</strong> regularly</li>
+</ol>
+
+<h3 id="before-commit">Before Commit</h3>
+
+<ol>
+  <li><strong>Pre-commit validator</strong> runs (automatic)</li>
+  <li><strong>Review what you’re committing</strong></li>
+  <li><strong>Verify no duplicates</strong> added</li>
+  <li><strong>Check decision log</strong> complete</li>
+  <li><strong>Confirm all 6 checklist items</strong> done</li>
+</ol>
+
+<h3 id="after-commit">After Commit</h3>
+
+<p>Questions:</p>
+<ul>
+  <li>Did code work first try?</li>
+  <li>Were all tests green?</li>
+  <li>Is documentation complete?</li>
+  <li>Is decision log current?</li>
+</ul>
+
+<p>If NO to any → Went wrong. Review what happened.</p>
+
+<hr />
+
+<h2 id="using-automation-tools">Using Automation Tools</h2>
+
+<h3 id="pre-commit-validator">Pre-Commit Validator</h3>
+
+<p><strong>Run</strong>: Automatic (via git hook)</p>
+
+<p><strong>Manual run</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python pre_commit_validator.py
+</code></pre></div></div>
+
+<p><strong>Prevents</strong>:</p>
+<ul>
+  <li>Broken syntax</li>
+  <li>Invalid configuration</li>
+  <li>Framework non-compliance</li>
+  <li>Incomplete YAML/JSON</li>
+</ul>
+
+<h3 id="decision-logger">Decision Logger</h3>
+
+<p><strong>Log a decision</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python decision_logger.py
+</code></pre></div></div>
+
+<p>Prompts you for:</p>
+<ul>
+  <li>Decision description</li>
+  <li>Problem context</li>
+  <li>Reasoning</li>
+  <li>Alternatives</li>
+  <li>Verification method</li>
+</ul>
+
+<p><strong>Query decisions</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="s2">"search term"</span> DECISION_LOG.jsonl
+</code></pre></div></div>
+
+<h3 id="duplicate-detector">Duplicate Detector</h3>
+
+<p><strong>Run</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python duplicate_detector.py
+</code></pre></div></div>
+
+<p><strong>Output</strong>: Report of all duplicates found with fix suggestions</p>
+
+<h3 id="framework-compliance">Framework Compliance</h3>
+
+<p><strong>Run</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python framework_compliance_checker.py
+</code></pre></div></div>
+
+<p><strong>Checks</strong>:</p>
+<ul>
+  <li>THINKING_FIRST references</li>
+  <li>TCHT framework usage</li>
+  <li>6-step checklist application</li>
+  <li>Universal Mandate compliance</li>
+</ul>
+
+<h3 id="automation-runner">Automation Runner</h3>
+
+<p><strong>Run all tools</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python automation_runner.py
+</code></pre></div></div>
+
+<p><strong>Output</strong>: Combined report showing:</p>
+<ul>
+  <li>Syntax validation status</li>
+  <li>Framework compliance</li>
+  <li>Decision log status</li>
+  <li>Duplicate analysis</li>
+  <li>Gap identification</li>
+</ul>
+
+<hr />
+
+<h2 id="common-scenarios">Common Scenarios</h2>
+
+<h3 id="scenario-1-complex-feature">Scenario 1: Complex Feature</h3>
+
+<p><strong>Time allocation</strong>:</p>
+<ul>
+  <li>Thinking: 40%</li>
+  <li>Verification: 30%</li>
+  <li>Coding: 20%</li>
+  <li>Testing: 10%</li>
+</ul>
+
+<p><strong>Process</strong>:</p>
+<ol>
+  <li>Think completely (all states, transitions)</li>
+  <li>Verify while thinking (checklist all items)</li>
+  <li>Get approval to code</li>
+  <li>Code (mechanically trivial if thinking is complete)</li>
+  <li>Test (should all pass)</li>
+  <li>Commit</li>
+</ol>
+
+<h3 id="scenario-2-bug-fix">Scenario 2: Bug Fix</h3>
+
+<p><strong>Quick thinking</strong> (10 min):</p>
+<ul>
+  <li>What’s the bug?</li>
+  <li>Which states trigger it?</li>
+  <li>How to fix without breaking others?</li>
+</ul>
+
+<p><strong>Verify</strong> (5 min):</p>
+<ul>
+  <li>Does fix work on edge cases?</li>
+  <li>Does fix not break happy path?</li>
+</ul>
+
+<p><strong>Code</strong> (5 min):</p>
+<ul>
+  <li>Small, surgical fix</li>
+  <li>Focused test</li>
+</ul>
+
+<p><strong>Commit</strong> (automated)</p>
+
+<h3 id="scenario-3-refactoring">Scenario 3: Refactoring</h3>
+
+<p><strong>Think before refacto</strong>ring:</p>
+<ul>
+  <li>What’s the current logic?</li>
+  <li>How should it change?</li>
+  <li>Will all states still work?</li>
+</ul>
+
+<p><strong>Verify</strong> (extensive):</p>
+<ul>
+  <li>Every path still valid?</li>
+  <li>All edge cases still handled?</li>
+  <li>Integration points unaffected?</li>
+</ul>
+
+<p><strong>Code minimally</strong>:</p>
+<ul>
+  <li>Change only what’s necessary</li>
+  <li>Keep interface the same if possible</li>
+</ul>
+
+<p><strong>Test thoroughly</strong>:</p>
+<ul>
+  <li>All original tests still pass?</li>
+  <li>New organized code still works?</li>
+</ul>
+
+<hr />
+
+<h2 id="measuring-success">Measuring Success</h2>
+
+<p><strong>Individual commits</strong>:</p>
+<ul>
+  <li>✅ Code works first try</li>
+  <li>✅ No debugging needed</li>
+  <li>✅ Decision log current</li>
+  <li>✅ Pre-commit passes</li>
+  <li>✅ Tests green</li>
+</ul>
+
+<p><strong>Feature level</strong>:</p>
+<ul>
+  <li>✅ No bug reports during testing</li>
+  <li>✅ Edge cases handled automatically</li>
+  <li>✅ Error cases managed</li>
+  <li>✅ Documentation complete</li>
+</ul>
+
+<p><strong>System level</strong>:</p>
+<ul>
+  <li>✅ Near-zero runtime errors</li>
+  <li>✅ Decreased debugging time</li>
+  <li>✅ Increased code quality</li>
+  <li>✅ Higher team productivity</li>
+  <li>✅ Shorter cycle times</li>
+</ul>
+
+<hr />
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="pre-commit-validator-fails">Pre-commit validator fails</h3>
+
+<p><strong>Check</strong>:</p>
+<ul>
+  <li>Python syntax errors?</li>
+  <li>YAML/JSON format issues?</li>
+  <li>Missing required frameworks?</li>
+</ul>
+
+<p><strong>Fix</strong>:</p>
+<ul>
+  <li>Address the specific error</li>
+  <li>Re-run validator</li>
+  <li>Commit when green</li>
+</ul>
+
+<h3 id="decision-log-incomplete">Decision log incomplete</h3>
+
+<p><strong>Add missing decisions</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python decision_logger.py
+</code></pre></div></div>
+
+<p><strong>Log</strong>:</p>
+<ul>
+  <li>What decided?</li>
+  <li>Why that choice?</li>
+  <li>How verified?</li>
+</ul>
+
+<p><strong>Commit</strong> after updating</p>
+
+<h3 id="duplicates-detected">Duplicates detected</h3>
+
+<p><strong>Review</strong>:</p>
+<ul>
+  <li>Which functions are duplicated?</li>
+  <li>Can they be merged?</li>
+  <li>Or should they be separate?</li>
+</ul>
+
+<p><strong>Fix</strong>:</p>
+<ul>
+  <li>Merge where appropriate</li>
+  <li>Update references</li>
+  <li>Re-run detector to verify</li>
+</ul>
+
+<h3 id="framework-compliance-low">Framework compliance low</h3>
+
+<p><strong>Check</strong>:</p>
+<ul>
+  <li>Was thinking documented?</li>
+  <li>Was verification checklist applied?</li>
+  <li>Were frameworks referenced?</li>
+</ul>
+
+<p><strong>Improve</strong>:</p>
+<ul>
+  <li>Add thinking documentation</li>
+  <li>Log decisions</li>
+  <li>Reference frameworks explicitly</li>
+</ul>
+
+<hr />
+
+<h2 id="best-practices">Best Practices</h2>
+
+<ol>
+  <li><strong>Think before every edit</strong> — Even small changes</li>
+  <li><strong>Log decisions as you make them</strong> — Don’t batch later</li>
+  <li><strong>Run automation suite frequently</strong> — Weekly minimum</li>
+  <li><strong>Review decision log</strong> — Learn from past decisions</li>
+  <li><strong>Mentor new team members</strong> — On 0-error compute approach</li>
+  <li><strong>Share successful patterns</strong> — Document what works</li>
+  <li><strong>Automate what you can</strong> — Use the tools provided</li>
+</ol>
+
+<hr />
+
+<h2 id="next-steps">Next Steps</h2>
+
+<ol>
+  <li>Install automation tools</li>
+  <li>Set up git hooks</li>
+  <li>Start with one feature</li>
+  <li>Follow 8-phase template</li>
+  <li>Use pre-action checklist</li>
+  <li>Log decisions</li>
+  <li>Run automation suite</li>
+  <li>Review results</li>
+</ol>
+
+<p><strong>Ready?</strong> → Start with <a href="/Trust/zero-error/mandate/">Universal Mandate</a></p>
+
+
+        </div>
+
+        <div class="content-footer">
+            <div class="next-prev-nav">
+                
+            </div>
+            <p class="print-note">💡 Tip: Use your browser's print function (Ctrl+P) or "Print to PDF" for static copies</p>
+        </div>
+    </main>
+
+    <script src="/Trust/assets/js/theme.js"></script>
+    <script src="/Trust/assets/js/toc.js"></script>
+    <script>
+        // Set last update timestamp
+        document.getElementById('last-update').textContent = new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric'});
+    </script>
+</body>
+</html>

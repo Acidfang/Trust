@@ -1,0 +1,88 @@
+<svg viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="1000" fill="#1a1a1a"/>
+  
+  <!-- Title -->
+  <text x="600" y="35" font-size="26" fill="#ffffff" font-family="Arial" text-anchor="middle" font-weight="bold">Diagnostic: Which Gates Are Skipped?</text>
+  
+  <!-- Start -->
+  <circle cx="600" cy="90" r="30" fill="#66ff66" stroke="#44ff44" stroke-width="2"/>
+  <text x="600" y="100" font-size="12" fill="#1a1a1a" font-family="Arial" text-anchor="middle" font-weight="bold">START</text>
+  
+  <!-- Arrow down -->
+  <line x1="600" y1="120" x2="600" y2="160" stroke="#888" stroke-width="2"/>
+  <polygon points="600,160 595,150 605,150" fill="#888"/>
+  
+  <!-- Gate 1: Do you understand your actions cause outcomes? -->
+  <rect x="420" y="170" width="360" height="60" fill="#2a1a1a" stroke="#ff6666" stroke-width="2" rx="5"/>
+  <text x="600" y="195" font-size="12" fill="#ff6666" font-family="Arial" text-anchor="middle" font-weight="bold">Gate 1: Do you understand your actions</text>
+  <text x="600" y="213" font-size="12" fill="#ff6666" font-family="Arial" text-anchor="middle">produce consequences you live with?</text>
+  
+  <!-- No path (left) -->
+  <text x="480" y="260" font-size="11" fill="#ff6666" font-family="Arial" font-weight="bold">NO →</text>
+  <rect x="320" y="275" width="280" height="50" fill="#2a1a1a" stroke="#ff6666" stroke-width="1" rx="3"/>
+  <text x="460" y="297" font-size="10" fill="#ff6666" font-family="Arial" text-anchor="middle">SKIPPED: Gate 1</text>
+  <text x="460" y="312" font-size="9" fill="#888" font-family="Arial" text-anchor="middle">See: Therapy/Counseling blocking</text>
+  
+  <!-- Yes path (right) -->
+  <text x="700" y="260" font-size="11" fill="#66ff66" font-family="Arial" font-weight="bold">YES →</text>
+  <line x1="700" y1="240" x2="700" y2="400" stroke="#66ff66" stroke-width="2"/>
+  
+  <!-- Gate 2: Do you take responsibility for your outcomes? -->
+  <rect x="520" y="410" width="360" height="60" fill="#2a1a1a" stroke="#ff9933" stroke-width="2" rx="5"/>
+  <text x="700" y="435" font-size="12" fill="#ff9933" font-family="Arial" text-anchor="middle" font-weight="bold">Gate 2: Do you take responsibility</text>
+  <text x="700" y="453" font-size="12" fill="#ff9933" font-family="Arial" text-anchor="middle">for your outcomes, or blame others?</text>
+  
+  <!-- No path -->
+  <text x="480" y="500" font-size="11" fill="#ff9933" font-family="Arial" font-weight="bold">NO →</text>
+  <rect x="320" y="515" width="280" height="50" fill="#2a1a1a" stroke="#ff9933" stroke-width="1" rx="3"/>
+  <text x="460" y="537" font-size="10" fill="#ff9933" font-family="Arial" text-anchor="middle">SKIPPED: Gate 2</text>
+  <text x="460" y="552" font-size="9" fill="#888" font-family="Arial" text-anchor="middle">See: Coaching enabling blame</text>
+  
+  <!-- Yes path -->
+  <text x="900" y="500" font-size="11" fill="#66ff66" font-family="Arial" font-weight="bold">YES →</text>
+  <line x1="800" y1="480" x2="900" y2="640" stroke="#66ff66" stroke-width="2"/>
+  
+  <!-- Gate 3: Do you understand mastery requires iteration? -->
+  <rect x="720" y="650" width="360" height="60" fill="#2a1a1a" stroke="#ffdd44" stroke-width="2" rx="5"/>
+  <text x="900" y="675" font-size="12" fill="#ffdd44" font-family="Arial" text-anchor="middle" font-weight="bold">Gate 3: Do you understand that</text>
+  <text x="900" y="693" font-size="12" fill="#ffdd44" font-family="Arial" text-anchor="middle">mastery requires many attempts?</text>
+  
+  <!-- No path -->
+  <text x="680" y="740" font-size="11" fill="#ffdd44" font-family="Arial" font-weight="bold">NO →</text>
+  <rect x="520" y="755" width="280" height="50" fill="#2a1a1a" stroke="#ffdd44" stroke-width="1" rx="3"/>
+  <text x="660" y="777" font-size="10" fill="#ffdd44" font-family="Arial" text-anchor="middle">SKIPPED: Gate 3</text>
+  <text x="660" y="792" font-size="9" fill="#888" font-family="Arial" text-anchor="middle">See: Education teaching but not practicing</text>
+  
+  <!-- Yes path -->
+  <text x="1050" y="740" font-size="11" fill="#66ff66" font-family="Arial" font-weight="bold">YES →</text>
+  <line x1="1000" y1="720" x2="1050" y2="880" stroke="#66ff66" stroke-width="2"/>
+  
+  <!-- Gate 5: Do you live with full consequences of your choices? -->
+  <rect x="870" y="890" width="360" height="60" fill="#2a1a1a" stroke="#44ddff" stroke-width="2" rx="5"/>
+  <text x="1050" y="915" font-size="12" fill="#44ddff" font-family="Arial" text-anchor="middle" font-weight="bold">Gate 5: Do you live with FULL consequences</text>
+  <text x="1050" y="933" font-size="12" fill="#44ddff" font-family="Arial" text-anchor="middle">of your choices, or rescue yourself?</text>
+  
+  <!-- No path -->
+  <text x="830" y="980" font-size="11" fill="#44ddff" font-family="Arial" font-weight="bold">NO →</text>
+  <rect x="670" y="995" width="280" height="50" fill="#2a1a1a" stroke="#44ddff" stroke-width="1" rx="3"/>
+  <text x="810" y="1017" font-size="10" fill="#44ddff" font-family="Arial" text-anchor="middle">SKIPPED: Gate 5</text>
+  <text x="810" y="1032" font-size="9" fill="#888" font-family="Arial" text-anchor="middle">See: Parenting rescue enabling</text>
+  
+  <!-- Continue indicator -->
+  <text x="1050" y="980" font-size="11" fill="#66ff66" font-family="Arial" font-weight="bold">YES → Continue to Gates 6-10...</text>
+  
+  <!-- Legend/Note -->
+  <rect x="20" y="850" width="300" height="130" fill="#222" stroke="#666" stroke-width="1" rx="4"/>
+  <text x="40" y="875" font-size="11" fill="#aaa" font-family="Arial" font-weight="bold">Quick Check:</text>
+  <text x="40" y="895" font-size="9" fill="#888" font-family="Arial">Does this describe you?</text>
+  <circle cx="50" cy="920" r="3" fill="#ff6666"/>
+  <text x="65" y="923" font-size="9" fill="#888" font-family="Arial">Need external validation</text>
+  <circle cx="50" cy="945" r="3" fill="#ff6666"/>
+  <text x="65" y="948" font-size="9" fill="#888" font-family="Arial">Blame others for problems</text>
+  <circle cx="50" cy="970" r="3" fill="#ff6666"/>
+  <text x="65" y="973" font-size="9" fill="#888" font-family="Arial">Can't sit with frustration</text>
+  
+  <text x="40" y="1000" font-size="9" fill="#ff6666" font-family="Arial">→ You have skipped gates</text>
+  <text x="40" y="1015" font-size="9" fill="#ff6666" font-family="Arial">→ Help systems feel necessary</text>
+</svg>

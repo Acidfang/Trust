@@ -1,0 +1,70 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#1a1a1a"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-size="28" fill="#ffffff" font-family="Arial" text-anchor="middle" font-weight="bold">Foundation vs. Scaffolding</text>
+  
+  <!-- LEFT SIDE: SCAFFOLDING -->
+  <g id="scaffolding">
+    <!-- Title -->
+    <text x="250" y="80" font-size="18" fill="#ff6666" font-family="Arial" text-anchor="middle" font-weight="bold">SCAFFOLDING (Path 1)</text>
+    
+    <!-- Building/person -->
+    <rect x="150" y="200" width="200" height="200" fill="none" stroke="#ff6666" stroke-width="2"/>
+    <text x="250" y="305" font-size="14" fill="#ff6666" font-family="Arial" text-anchor="middle">Person</text>
+    
+    <!-- Scaffolding supports -->
+    <line x1="100" y1="400" x2="150" y2="200" stroke="#ff6666" stroke-width="3" stroke-dasharray="5,5"/>
+    <line x1="150" y1="400" x2="200" y2="200" stroke="#ff6666" stroke-width="3" stroke-dasharray="5,5"/>
+    <line x1="250" y1="420" x2="250" y2="200" stroke="#ff6666" stroke-width="3" stroke-dasharray="5,5"/>
+    <line x1="350" y1="400" x2="300" y2="200" stroke="#ff6666" stroke-width="3" stroke-dasharray="5,5"/>
+    <line x1="400" y1="400" x2="350" y2="200" stroke="#ff6666" stroke-width="3" stroke-dasharray="5,5"/>
+    
+    <!-- Support labels -->
+    <text x="75" y="410" font-size="10" fill="#ff9999" font-family="Arial" text-anchor="middle">Therapy</text>
+    <text x="125" y="420" font-size="10" fill="#ff9999" font-family="Arial" text-anchor="middle">Coaching</text>
+    <text x="250" y="445" font-size="10" fill="#ff9999" font-family="Arial" text-anchor="middle">Mentoring</text>
+    <text x="375" y="420" font-size="10" fill="#ff9999" font-family="Arial" text-anchor="middle">Parental help</text>
+    <text x="425" y="410" font-size="10" fill="#ff9999" font-family="Arial" text-anchor="middle">Services</text>
+    
+    <!-- Foundation (weak) -->
+    <rect x="100" y="400" width="300" height="30" fill="#333333" stroke="#ff6666" stroke-width="1"/>
+    <text x="250" y="420" font-size="11" fill="#ff6666" font-family="Arial" text-anchor="middle" font-style="italic">Weak/Skipped Gates</text>
+    
+    <!-- Characteristics -->
+    <text x="250" y="480" font-size="12" fill="#aaa" font-family="Arial" text-anchor="middle" font-weight="bold">Characteristics:</text>
+    <text x="250" y="500" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">✗ Dependent on support</text>
+    <text x="250" y="520" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">✗ Collapses when removed</text>
+    <text x="250" y="540" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">✗ High potential energy</text>
+  </g>
+  
+  <!-- RIGHT SIDE: FOUNDATION -->
+  <g id="foundation">
+    <!-- Title -->
+    <text x="750" y="80" font-size="18" fill="#66ff66" font-family="Arial" text-anchor="middle" font-weight="bold">FOUNDATION (Path 2)</text>
+    
+    <!-- Building/person -->
+    <rect x="650" y="200" width="200" height="200" fill="none" stroke="#66ff66" stroke-width="2"/>
+    <text x="750" y="305" font-size="14" fill="#66ff66" font-family="Arial" text-anchor="middle">Person</text>
+    
+    <!-- Strong foundation -->
+    <rect x="600" y="400" width="300" height="60" fill="#1a3a1a" stroke="#66ff66" stroke-width="3"/>
+    <text x="750" y="425" font-size="12" fill="#66ff66" font-family="Arial" text-anchor="middle" font-weight="bold">INTERNAL COHERENCE</text>
+    <text x="750" y="445" font-size="10" fill="#88ff88" font-family="Arial" text-anchor="middle">All 10 Gates Passed</text>
+    
+    <!-- Growth indicator -->
+    <path d="M 650 200 L 600 150 L 700 100 L 750 80 L 800 100 L 900 150 L 850 200" 
+          fill="none" stroke="#66ff66" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="750" y="120" font-size="11" fill="#66ff66" font-family="Arial" text-anchor="middle">Continuous growth</text>
+    
+    <!-- Characteristics -->
+    <text x="750" y="480" font-size="12" fill="#aaa" font-family="Arial" text-anchor="middle" font-weight="bold">Characteristics:</text>
+    <text x="750" y="500" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">✓ Independent capability</text>
+    <text x="750" y="520" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">✓ Stable without support</text>
+    <text x="750" y="540" font-size="11" fill="#aaa" font-family="Arial" text-anchor="middle">✓ Low potential energy</text>
+  </g>
+  
+  <!-- Dividing line -->
+  <line x1="500" y1="60" x2="500" y2="560" stroke="#666" stroke-width="2"/>
+</svg>

@@ -1,0 +1,91 @@
+{
+  "frameworks": [
+    {
+      "name": "universal-physics",
+      "title": "Universal Physics Engine",
+      "description": "All coherent physical systems obey this single law: dℹ/dt = -∇Φ(x,t)",
+      "path": "framework/universal-physics",
+      "systems": ["photon", "electron", "atom", "molecule", "cell", "galaxy"],
+      "readme": "/framework/universal-physics/README.md"
+    },
+    {
+      "name": "cosmology-reversal",
+      "title": "Cosmology Reversal Module",
+      "description": "Time-reverses galaxy trajectories to find the origin point using the universal law",
+      "path": "framework/cosmology-reversal",
+      "systems": ["cosmology", "temporal", "gravitational", "reversal"],
+      "readme": "/framework/cosmology-reversal/README.md"
+    }
+  ],
+  "visualization": {
+    "nodes": [
+      {
+        "id": "universal-law",
+        "label": "Universal Law: dℹ/dt = -∇Φ",
+        "systems": ["all"],
+        "description": "The fundamental evolution principle obeyed by all coherent systems",
+        "color": "#ff6b6b",
+        "isCenter": true,
+        "tier": "TIER 0: Foundation"
+      },
+      {
+        "id": "universal-physics",
+        "label": "Universal Physics Engine",
+        "systems": ["photon", "electron", "atom", "molecule", "cell", "galaxy"],
+        "description": "Implements dℹ/dt = -∇Φ for any physical system",
+        "color": "#4CAF50",
+        "url": "/framework/universal-physics/README.md",
+        "tier": "TIER 1: Core Implementation",
+        "verificationStatus": "UFM-Verified Tiers 1-4"
+      },
+      {
+        "id": "cosmology-reversal",
+        "label": "Cosmology Reversal Module",
+        "systems": ["cosmology", "temporal", "gravitational", "reversal"],
+        "description": "Time-reverses systems using the universal law",
+        "color": "#2196F3",
+        "url": "/framework/cosmology-reversal/README.md",
+        "tier": "TIER 1: Applications",
+        "verificationStatus": "UFM-Verified Tiers 1-3"
+      }
+    ],
+    "edges": [
+      {
+        "source": "universal-law",
+        "target": "universal-physics",
+        "isUniversal": true,
+        "strength": 1,
+        "label": "Implements",
+        "description": "Universal Physics Engine implements the universal law"
+      },
+      {
+        "source": "universal-law",
+        "target": "cosmology-reversal",
+        "isUniversal": true,
+        "strength": 1,
+        "label": "Foundation",
+        "description": "Cosmology Reversal uses the universal law with sign-flipped integration"
+      },
+      {
+        "source": "universal-physics",
+        "target": "cosmology-reversal",
+        "label": "cosmology, gravitational, temporal",
+        "strength": 3,
+        "description": "Both frameworks model gravitational and temporal systems. Cosmology Reversal applies time-reversal to galaxy dynamics from Universal Physics Engine inputs."
+      }
+    ],
+    "metadata": {
+      "version": "1.0",
+      "generatedDate": "2026-04-19",
+      "totalFrameworks": 2,
+      "totalSystems": 10,
+      "universalLawEquation": "dℹ/dt = -∇Φ(x,t)",
+      "verificationTiers": {
+        "tier1": "Input validation - frameworks have required fields",
+        "tier2": "Compute - system relationships calculated correctly",
+        "tier3": "Output - visualization structure valid",
+        "tier4": "Meta - all systems map coherently, no contradictions"
+      }
+    }
+  }
+}
