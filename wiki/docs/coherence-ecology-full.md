@@ -254,4 +254,4 @@ Ecological phenomena predicted by energy flow and density heterogeneity without 
 
 ---
 
-![Hits](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-ecology-full/&title=views)
+<img alt="views" src="https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-ecology-full">

@@ -231,4 +231,4 @@ Political outcomes predicted by ρ and E without invoking ideology, culture, or 
 
 ---
 
-![Hits](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-politics-full/&title=views)
+<img alt="views" src="https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-politics-full">
