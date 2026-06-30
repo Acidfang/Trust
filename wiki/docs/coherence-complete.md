@@ -252,5 +252,5 @@ Open issues on the GitHub repository: [Acidfang/Trust](https://github.com/Acidfa
 
 ---
 
-![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-complete/&color=36b81c)
+![Hits](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-complete/&title=views)
 

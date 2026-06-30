@@ -383,4 +383,4 @@ The fossil record, population genetics, and modern biology all show remarkable c
 
 ---
 
-![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-evolution-full/&color=36b81c)
+![Hits](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-evolution-full/&title=views)

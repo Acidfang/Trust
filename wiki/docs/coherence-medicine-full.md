@@ -245,4 +245,4 @@ Medical phenomena predicted by ρ and E without invoking genetic determinism or 
 
 ---
 
-![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-medicine-full/&color=36b81c)
+![Hits](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-medicine-full/&title=views)

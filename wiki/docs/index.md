@@ -1104,5 +1104,5 @@ The solution isn't to find better people. **It's to measure externally what peop
 
 ---
 
-![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/&color=36b81c)
+![Hits](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/&title=views)
 

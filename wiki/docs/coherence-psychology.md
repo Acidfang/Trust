@@ -89,5 +89,5 @@ Comprehensive framework application with all mathematical models, predictions, v
 
 ---
 
-![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-psychology/&color=36b81c)
+![Hits](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-psychology/&title=views)
 
