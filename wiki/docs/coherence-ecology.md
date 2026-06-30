@@ -105,3 +105,7 @@ Comprehensive framework application including:
 - **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to ecology
 - **[The Formula](/Trust/coherence-formula/)** — Return to core mathematics
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-ecology/&color=36b81c)
+

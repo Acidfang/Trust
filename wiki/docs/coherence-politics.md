@@ -95,3 +95,7 @@ Comprehensive framework application including:
 - **[Technology Domain](/Trust/coherence-technology/)** — Innovation adaptation
 - **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to politics
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-politics/&color=36b81c)
+

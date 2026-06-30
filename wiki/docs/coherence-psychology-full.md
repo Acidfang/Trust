@@ -208,3 +208,7 @@ Psychology is consistent with coherence cascade model. Mental phenomena predicte
 ---
 
 **Return to:** [Coherence Psychology Domain](/Trust/coherence-psychology/) | [Complete Framework](/Trust/coherence-complete/) | [All Domains](/Trust/coherence-cascade/)
+
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-psychology-full/&color=36b81c)

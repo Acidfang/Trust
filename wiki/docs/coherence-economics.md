@@ -87,3 +87,7 @@ Comprehensive framework application with all mathematical models, predictions, v
 - **[Politics Domain](/Trust/coherence-politics/)** — Institutional adaptation failures
 - **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to economics
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-economics/&color=36b81c)
+

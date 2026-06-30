@@ -240,3 +240,7 @@ Technology adoption is consistent with coherence cascade model. Adoption predict
 ---
 
 **Return to:** [Coherence Technology Domain](/Trust/coherence-technology/) | [Complete Framework](/Trust/coherence-complete/) | [All Domains](/Trust/coherence-cascade/)
+
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-technology-full/&color=36b81c)

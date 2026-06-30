@@ -380,3 +380,7 @@ The fossil record, population genetics, and modern biology all show remarkable c
 ---
 
 **Return to:** [Coherence Evolution Domain](/Trust/coherence-evolution/) | [Complete Framework](/Trust/coherence-complete/) | [All Domains](/Trust/coherence-cascade/)
+
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-evolution-full/&color=36b81c)

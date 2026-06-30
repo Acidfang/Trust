@@ -250,3 +250,7 @@ Open issues on the GitHub repository: [Acidfang/Trust](https://github.com/Acidfa
 - **What about [competing theory]?** → Each domain document includes comparative analysis
 - **Is this testable?** → Yes. Every prediction is falsifiable against published data.
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-complete/&color=36b81c)
+

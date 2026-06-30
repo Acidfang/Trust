@@ -228,3 +228,7 @@ Political outcomes predicted by ρ and E without invoking ideology, culture, or 
 ---
 
 **Return to:** [Coherence Politics Domain](/Trust/coherence-politics/) | [Complete Framework](/Trust/coherence-complete/) | [All Domains](/Trust/coherence-cascade/)
+
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-politics-full/&color=36b81c)

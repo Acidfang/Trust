@@ -242,3 +242,7 @@ Medical phenomena predicted by ρ and E without invoking genetic determinism or 
 ---
 
 **Return to:** [Coherence Medicine Domain](/Trust/coherence-medicine/) | [Complete Framework](/Trust/coherence-complete/) | [All Domains](/Trust/coherence-cascade/)
+
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-medicine-full/&color=36b81c)

@@ -95,3 +95,7 @@ Comprehensive framework application including:
 - **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to technology
 - **[Complete Analysis](/Trust/coherence-complete/)** — All predictions and verification data
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-technology/&color=36b81c)
+

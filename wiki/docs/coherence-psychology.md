@@ -87,3 +87,7 @@ Comprehensive framework application with all mathematical models, predictions, v
 - **[Medicine Domain](/Trust/coherence-medicine/)** — Physiological adaptation
 - **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to psychology
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-psychology/&color=36b81c)
+

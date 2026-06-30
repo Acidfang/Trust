@@ -108,4 +108,8 @@ Comprehensive framework application with all mathematical models, predictions, v
 - **[Psychology Domain](/Trust/coherence-psychology/)** — Consciousness as recursive adaptation
 - **[Variables](/Trust/coherence-variables/)** — Understand E, k, ρ, r² in detail
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-evolution/&color=36b81c)
+
 

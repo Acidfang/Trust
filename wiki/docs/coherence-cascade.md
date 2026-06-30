@@ -217,4 +217,8 @@ History suggests most cannot.
 
 **Every prediction is falsifiable against data.**
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-cascade/&color=36b81c)
+
 

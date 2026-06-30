@@ -250,3 +250,7 @@ Economics is consistent with coherence cascade model. Historical economic phenom
 ---
 
 **Return to:** [Coherence Economics Domain](/Trust/coherence-economics/) | [Complete Framework](/Trust/coherence-complete/) | [All Domains](/Trust/coherence-cascade/)
+
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-economics-full/&color=36b81c)

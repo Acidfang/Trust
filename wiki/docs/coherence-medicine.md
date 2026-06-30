@@ -94,3 +94,7 @@ Comprehensive framework application including:
 - **[Ecology Domain](/Trust/coherence-ecology/)** — Population-level coherence
 - **[Variables](/Trust/coherence-variables/)** — How E, k, ρ, r² apply to medicine
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/coherence-medicine/&color=36b81c)
+

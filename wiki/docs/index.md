@@ -1102,3 +1102,7 @@ The solution isn't to find better people. **It's to measure externally what peop
 
 *Built for clarity, designed for humans. Start with goal-blindness. Everything else follows.*
 
+---
+
+![Page Views](https://hits.seeyoufarm.com/api/count/incr?path=https://acidfang.github.io/Trust/&color=36b81c)
+
